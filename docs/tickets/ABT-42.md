@@ -458,7 +458,7 @@ Hi [人名12] ([人名12])，
 airlog
 
 14:31:39左右，partner link loss
-[附件: [ABT-42](ABT-42/)_14_31_39.rar]
+[附件: [ABT-42](ABT-42.md)_14_31_39.rar]
 
 </div>
 
@@ -494,7 +494,7 @@ Hi [人名12] ([人名12])，
 
 Hi @[邮箱已隐藏],
 
-    这题需要换[附件: libpka_ull_[ABT-42](ABT-42/).rar]这份lib重新抓airlog，我这周除了周三都有空，看看你们什么时候方便过来抓一下airlog。
+    这题需要换[附件: libpka_ull_[ABT-42](ABT-42.md).rar]这份lib重新抓airlog，我这周除了周三都有空，看看你们什么时候方便过来抓一下airlog。
 
 Thanks.
 

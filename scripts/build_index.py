@@ -41,7 +41,7 @@ def build():
              "|---|---|---|---|"]
     for t in tickets:
         title = t["title"].replace("|", "｜").replace("[", "［").replace("]", "］")
-        link = f"{t['id']}/"  # 目录形式（MkDocs 不重写 .md 链接）
+        link = f"{t['id']}.md"  # MkDocs 构建时自动转换为正确 URL
         lines.append(f"| [{t['id']}]({link}) | [{title}]({link}) | {t['date']} | {t['status']} |")
     LIST_FILE.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
