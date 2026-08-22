@@ -25,6 +25,7 @@ BASE_URL = "https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUI
 ROOT = Path(__file__).resolve().parent.parent
 COOKIE_FILE = ROOT / "cookies.txt"
 RAW_DIR = ROOT / "raw"
+TICKETS_DIR = ROOT / "docs" / "tickets"  # 已入库工单（增量跳过依据）
 LOGIN_TITLE_PATTERN = re.compile(r"Log into", re.IGNORECASE)
 
 
@@ -111,7 +112,8 @@ def main():
     ok = fail = 0
     for i, ticket_id in enumerate(ids, 1):
         out = RAW_DIR / f"MIUIX1565-{ticket_id}.html"
-        if out.exists():
+        # 增量跳过：raw 已存在（本地）或已入库为 ABT-{id}.md（CI 中 raw 不入库）
+        if out.exists() or (TICKETS_DIR / f"ABT-{ticket_id}.md").exists():
             print(f"[跳过] {i}/{len(ids)} MIUIX1565-{ticket_id}（已存在）")
             continue
         try:
