@@ -261,11 +261,16 @@ def render_markdown(t: dict) -> str:
     ]
     if t["comments"]:
         lines += ["## 回复记录", ""]
-        for c in t["comments"]:
+        for i, c in enumerate(t["comments"]):
+            cls = "odd" if i % 2 == 0 else "even"  # 灰白交替
             lines += [
+                f'<div class="reply {cls}">',
+                "",
                 f"### {c['date']} — {c['author'] or c['role']}",
                 "",
                 c["body"],
+                "",
+                "</div>",
                 "",
             ]
     return "\n".join(lines)

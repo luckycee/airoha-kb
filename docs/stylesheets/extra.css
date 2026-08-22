@@ -1,0 +1,20 @@
+/* 工单回复斑马纹：灰白交替 + 圆角间隔 */
+.reply {
+    padding: 14px 18px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+.reply.odd {
+    background-color: var(--md-default-fg-color--lightest);
+}
+.reply.even {
+    background-color: var(--md-default-bg-color);
+}
+.reply h3 {
+    margin-top: 0;
+    font-size: 0.95rem;
+    opacity: 0.85;
+}
+.reply:last-child {
+    margin-bottom: 0;
+}

@@ -40,8 +40,12 @@ exclude_docs: |
 
 markdown_extensions:
   - admonition
+  - md_in_html
   - toc:
       permalink: true
+
+extra_css:
+  - stylesheets/extra.css
 
 extra:
   social: []
