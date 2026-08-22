@@ -26,7 +26,10 @@ def read_frontmatter(path: Path) -> dict:
 
 def build():
     tickets = []
-    for p in sorted(TICKETS_DIR.glob("ABT-*.md")):
+    # 按工单号数字倒序（最新在前；避免字符串排序出现 100→15→200 的乱序）
+    files = sorted(TICKETS_DIR.glob("ABT-*.md"),
+                   key=lambda p: int(p.stem.split("-")[-1]), reverse=True)
+    for p in files:
         t = read_frontmatter(p)
         if t["id"]:
             tickets.append(t)
@@ -40,7 +43,8 @@ def build():
              "| 工单号 | 主题 | 日期 | 状态 |",
              "|---|---|---|---|"]
     for t in tickets:
-        title = t["title"].replace("|", "｜").replace("[", "［").replace("]", "］")
+        # 链接文本内：竖线替换为全角；方括号用 Markdown 转义（占位符 [客户A] 等不会被误解为嵌套链接）
+        title = t["title"].replace("|", "｜").replace("[", "\\[").replace("]", "\\]")
         link = f"{t['id']}.md"  # MkDocs 构建时自动转换为正确 URL
         lines.append(f"| [{t['id']}]({link}) | [{title}]({link}) | {t['date']} | {t['status']} |")
     LIST_FILE.write_text("\n".join(lines) + "\n", encoding="utf-8")
