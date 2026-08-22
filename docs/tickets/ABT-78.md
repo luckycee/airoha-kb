@@ -68,7 +68,7 @@ hi customer,
 
 Hi jianhua,
 
-在 [ABT-4](ABT-4.md) 已经提供了LDAC codec lib，并且你们已经提供patch 集成，软件测试也没有问题了；
+在 MIUIX1565-4 已经提供了LDAC codec lib，并且你们已经提供patch 集成，软件测试也没有问题了；
 
 现在客户要做认证，这个ID 下 2022/09/06 11:27 客户要的文档有部分内容需要完善，另外帝木那边有资料需要你的approve 。
 

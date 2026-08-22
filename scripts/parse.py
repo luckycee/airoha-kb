@@ -118,7 +118,12 @@ def mask_sensitive(text: str) -> str:
     text = mask_terms(text, PROJECT_TERMS, "项目")   # 项目/代号
     text = re.sub(r"\[~([^\]]*)\]", r"@\1", text)  # Jira 提及 [~xxx] → @xxx
     # 工单引用 → 代号 + 交叉链接（.md 相对链接，MkDocs 构建时自动转换为正确 URL）
-    text = re.sub(r"MIUIX1565-(\d+)", rf"[{TICKET_PREFIX}-\1]({TICKET_PREFIX}-\1.md)", text)
+    def _crosslink(m):
+        num = int(m.group(1))
+        if 15 <= num <= 760:  # 范围内才生成链接（范围外引用保持纯文本，避免死链）
+            return f"[{TICKET_PREFIX}-{num}]({TICKET_PREFIX}-{num}.md)"
+        return m.group(0)
+    text = re.sub(r"MIUIX1565-(\d+)", _crosslink, text)
     return text
 
 

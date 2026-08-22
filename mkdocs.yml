@@ -32,6 +32,11 @@ theme:
 plugins:
   - search:
       separator: '[\s​\-–—,，。;；:：、！？!?/\\()\[\]{}"'']+'
+  # 自定义插件：导航页（工单列表/首页）不进入搜索索引，避免搜索噪音
+  - search_exclude:
+      pages:
+        - tickets/list
+        - index
 
 # 内部文档（设计文档等）不进入公开站点
 exclude_docs: |
