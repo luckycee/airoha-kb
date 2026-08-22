@@ -33,6 +33,11 @@ plugins:
   - search:
       separator: '[\s​\-–—,，。;；:：、！？!?/\\()\[\]{}"'']+'
 
+# 内部文档（设计文档等）不进入公开站点
+exclude_docs: |
+  superpowers/
+
+
 markdown_extensions:
   - admonition
   - toc:
