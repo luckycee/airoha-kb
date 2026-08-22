@@ -29,20 +29,34 @@ LOGIN_TITLE_PATTERN = re.compile(r"Log into", re.IGNORECASE)
 
 
 def load_cookies(path: Path) -> dict:
-    """解析 Netscape 格式 cookies.txt，返回 {name: value}。"""
+    """解析 Cookie 文件，返回 {name: value}。
+
+    支持两种格式：
+      1. Netscape 格式（Cookie-Editor 导出的 cookies.txt，Tab 分隔）
+      2. HTTP Cookie 头格式（浏览器 DevTools 复制的 "name=value; name=value"）
+    """
     cookies = {}
     if not path.exists():
         print(f"[错误] 未找到 {path}，请先导出浏览器 Cookie 并保存为 cookies.txt")
         sys.exit(1)
     for line in path.read_text(encoding="utf-8", errors="ignore").splitlines():
         line = line.strip()
-        if not line or line.startswith("#") or line.startswith("HttpOnly"):
+        if not line or line.startswith("#"):
             continue
-        parts = line.split("\t")
-        if len(parts) >= 7:
-            cookies[parts[5]] = parts[6]
+        if "\t" in line:  # Netscape 格式
+            parts = line.split("\t")
+            if len(parts) >= 7:
+                cookies[parts[5]] = parts[6]
+        elif "=" in line:  # HTTP Cookie 头格式
+            for item in line.split(";"):
+                item = item.strip()
+                if "=" in item:
+                    name, _, value = item.partition("=")
+                    name, value = name.strip(), value.strip()
+                    if name:
+                        cookies[name] = value
     if not cookies:
-        print("[错误] cookies.txt 中没有解析到任何 Cookie，请检查格式（Netscape 格式）")
+        print("[错误] cookies.txt 中没有解析到任何 Cookie，请检查格式")
         sys.exit(1)
     print(f"[信息] 已加载 {len(cookies)} 个 Cookie")
     return cookies
@@ -73,9 +87,8 @@ def fetch_one(session: requests.Session, ticket_id: int, max_retries: int = 3) -
 
 def main():
     parser = argparse.ArgumentParser(description="下载 Airoha JIRA 工单原始 HTML")
-    group = parser.add_mutually_exclusive_group(required=True)
-    group.add_argument("ids", nargs="*", type=int, help="工单号列表（不带 MIUIX1565- 前缀）")
-    group.add_argument("--range", nargs=2, type=int, metavar=("START", "END"), help="下载范围内的所有工单")
+    parser.add_argument("ids", nargs="*", type=int, help="工单号列表（不带 MIUIX1565- 前缀）；与 --range 二选一，--range 优先")
+    parser.add_argument("--range", nargs=2, type=int, metavar=("START", "END"), help="下载范围内的所有工单")
     parser.add_argument("--delay", type=float, default=1.5, help="请求间隔秒数（默认 1.5）")
     args = parser.parse_args()
 
