@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/01/13 16:47　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-17)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名1]，
+[← 上一个工单：ABT-16](ABT-16.md)　[→ 下一个工单：ABT-18](ABT-18.md)
 
-客户先要测试一下自己的dongle板子的RF 性能，软件上我开机就触发了 key action (KEY_TEST_MODE_ENTER_DUT_MODE)，并在配置工具上 enable DUT mode，但是触发后就关机了，这个如何测试？
-
----
+</div>
 
 ## 回复记录
 
@@ -81,5 +79,11 @@ Hi, 
 Hi youwei，
 
 可以了，不过只能在Android 手机上搜索到，iPhone 怎么也搜索不到。
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-16](ABT-16.md)　[→ 下一个工单：ABT-18](ABT-18.md)
 
 </div>

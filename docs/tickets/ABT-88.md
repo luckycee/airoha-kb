@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/09/26 10:38　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-88)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-HI [人名5]，
+[← 上一个工单：ABT-87](ABT-87.md)　[→ 下一个工单：ABT-89](ABT-89.md)
 
-请帮忙提供一下 adaptive ANC 的使用指导，客户拿到我提供的AB1565AM V3.3.0 headset的软件后，不知道如何使用。
-
----
+</div>
 
 ## 回复记录
 
@@ -196,5 +194,11 @@ FFmic
 3，三组滤波器是洛达帮我们调整还是我们自己调整？
 
 你们自己给客户调，调到客户需要的performance即可，还是像以前一样的调法
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-87](ABT-87.md)　[→ 下一个工单：ABT-89](ABT-89.md)
 
 </div>

@@ -10,15 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/08/05 15:39　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-67)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi fason，
+[← 上一个工单：ABT-66](ABT-66.md)　[→ 下一个工单：ABT-68](ABT-68.md)
 
-请帮忙确认下AB1565 SDK 中设置为I2S输出后，能否做到即使是在无连接、没有播放的音乐状态，也有I2S audio信号输出，即使输出0信号也没有关系。
-
-现在的测试情况是，只要不播放音乐或者提示音，I2S的输出就会关闭。附件是  DATA \ LRCK \ BICK 的输出情况；
-
----
+</div>
 
 ## 回复记录
 
@@ -57,5 +53,11 @@ Hi [人名5]，
 Hi @[邮箱已隐藏],
 
 这边确认了，可以做到，到时候有需求再重新tiJIRA吧
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-66](ABT-66.md)　[→ 下一个工单：ABT-68](ABT-68.md)
 
 </div>

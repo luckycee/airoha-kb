@@ -10,15 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/05/07 15:57　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-45)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-44](ABT-44.md)　[→ 下一个工单：ABT-46](ABT-46.md)
 
-使用dongle FOTA，发现是无法把新增的PEQ参数升级进去，不知道是否我的FotaPackage.bin 生成是否有问题？
-
-是否其他参数，如ANC、通话参数也是FOTA的？
-
----
+</div>
 
 ## 回复记录
 
@@ -37,5 +33,11 @@ Hi [人名5]，
 @[邮箱已隐藏]
 
 1565 FOTA是不可以升级 NVDM的,如果需要FOTA更新NV，只能FW hard code update。
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-44](ABT-44.md)　[→ 下一个工单：ABT-46](ABT-46.md)
 
 </div>

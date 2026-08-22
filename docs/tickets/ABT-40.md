@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/04/28 18:30　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-40)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5] / [人名8],
+[← 上一个工单：ABT-39](ABT-39.md)　[→ 下一个工单：ABT-41](ABT-41.md)
 
-客户使用的SENSOR需要使用外部中断，请帮忙提供一下1565中断注册、设置回调函数等内容的demo code给我参考一下，附件是AB1562x系列的，在1565上有些接口没有。
-
----
+</div>
 
 ## 回复记录
 
@@ -57,5 +55,11 @@ Hi @[邮箱已隐藏]
 可参考这个function，里面有GPIO，EINT的配置，谢谢
 
 hal_smart_charger_status_t DRV_SmartCharger_Init_GPIO(hal_gpio_pin_t gpio_index)
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-39](ABT-39.md)　[→ 下一个工单：ABT-41](ABT-41.md)
 
 </div>

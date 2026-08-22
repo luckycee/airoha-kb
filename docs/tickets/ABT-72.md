@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/08/22 10:59　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-72)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名21]hua / fason，
+[← 上一个工单：ABT-71](ABT-71.md)　[→ 下一个工单：ABT-73](ABT-73.md)
 
-请帮忙提供以上内容给[客户A]；
-
----
+</div>
 
 ## 回复记录
 
@@ -61,5 +59,11 @@ Hi jianhua，
 ### 2022/08/30 08:22 — [人名18]
 
 [附件: IoT_SDK_for_BT_Audio_V3.2.0.AB1565_AB1568_adaptive_anc.7z]
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-71](ABT-71.md)　[→ 下一个工单：ABT-73](ABT-73.md)
 
 </div>

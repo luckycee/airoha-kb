@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/08/22 17:56　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-73)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-72](ABT-72.md)　[→ 下一个工单：ABT-74](ABT-74.md)
 
-1565的config tool 是否没有vp 和音乐占空比地方？我没有找到，客户想按照1562那样做。
-
----
+</div>
 
 ## 回复记录
 
@@ -39,5 +37,11 @@ Hi @[邮箱已隐藏]
 请看截图的那一栏，谢谢
 
 [图片: image-2022-08-23-11-12-31-571.png]
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-72](ABT-72.md)　[→ 下一个工单：ABT-74](ABT-74.md)
 
 </div>

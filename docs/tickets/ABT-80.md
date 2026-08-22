@@ -10,15 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/09/08 15:25　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-80)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-79](ABT-79.md)　[→ 下一个工单：ABT-81](ABT-81.md)
 
-支持dongle的 earbuds ull，默认开启了EMP的，但是我在测试的时候，怎么都只能连接一个耳机，连接了B手机，A手机自动就断开。但是普通的earbuds 又能连接两个，是不是你们软件上做了限制，必须留一个位置给dongle 啊？如果是的话，连接了dongle， 手机也不能连接了。
-
-./build.sh ab1565_evk earbuds_ref_design_ull
-
----
+</div>
 
 ## 回复记录
 
@@ -53,5 +49,11 @@ Hi Sir
 earbuds有dongle only和dongle + 1SP两种link mode。
 
 需要用映射按键ULL_EVENTS_SWITCH_LINK_MODE来切mode
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-79](ABT-79.md)　[→ 下一个工单：ABT-81](ABT-81.md)
 
 </div>

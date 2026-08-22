@@ -10,17 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/01/19 15:03　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-19)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名1]，
+[← 上一个工单：ABT-18](ABT-18.md)　[→ 下一个工单：ABT-20](ABT-20.md)
 
-TWS状态下自动进入了手机配对，然后在此状态下我触发了Ull pairing，最后通过按键关机；
-
-发现关机之后，LED灯还有几秒钟的异常闪烁；请帮忙看下哪里出了问题，这部分我没有修改源码；
-
-附件有一个未连接状态下的关机，此时LED正常；
-
----
+</div>
 
 ## 回复记录
 
@@ -45,5 +39,11 @@ Hi,
    你可以在关机流程开始的时候, 先手动取消各种配对.
 
 [图片: image-2022-01-28-09-47-26-358.png]
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-18](ABT-18.md)　[→ 下一个工单：ABT-20](ABT-20.md)
 
 </div>

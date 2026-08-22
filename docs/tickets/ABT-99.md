@@ -10,17 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/10/14 18:28　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-99)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-98](ABT-98.md)　[→ 下一个工单：ABT-100](ABT-100.md)
 
-1. 有像1562x那样，在配置工具上的FW_Information 那样设置版本的地方吗？
-
-2. 我尝试通过 fota_version_write() 直接写版本，但是通过Flash Tool 甚至MP Tool 烧录之后，再去读取居然写的内容还保持着，这是为什么？
-
-3. 通过 FOTA Package Tool 生产的升级文件，升级后，再用Flash Tool 和MP Tool 烧录，读取到的还是 FOTA中设置的版本，这是为什么？
-
----
+</div>
 
 ## 回复记录
 
@@ -184,5 +178,11 @@ Hi @[邮箱已隐藏]，
 Hi [人名5]，
 
 好的，搞清楚原理就知道怎么弄了。问题关闭。
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-98](ABT-98.md)　[→ 下一个工单：ABT-100](ABT-100.md)
 
 </div>

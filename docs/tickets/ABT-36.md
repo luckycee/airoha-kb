@@ -10,15 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/04/22 12:07　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-36)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-35](ABT-35.md)　[→ 下一个工单：ABT-37](ABT-37.md)
 
-你们的demo code（nvkey.xml）默认开机之后，是ANC开启的模式，请指导一下如何设置为默认为关闭的模式；
-
-以及看一下附件的接口，修改的是那个nvkey；
-
----
+</div>
 
 ## 回复记录
 
@@ -61,5 +57,11 @@ Hi @[邮箱已隐藏]，
 最后一个byte 改成 04
 
 [图片: image-2022-04-22-16-16-14-757.png]
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-35](ABT-35.md)　[→ 下一个工单：ABT-37](ABT-37.md)
 
 </div>

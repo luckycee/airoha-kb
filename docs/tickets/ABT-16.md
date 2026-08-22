@@ -10,15 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/01/11 20:11　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-16)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名1]，
+[← 上一个工单：ABT-15](ABT-15.md)　[→ 下一个工单：ABT-17](ABT-17.md)
 
-我在eService doc上看到 dongle 连接电脑可以修改图标，但是我的dongle （使用的是EVK）连接电脑却没有东西出来，是驱动还是哪里地方设置不对？
-
-https://eservicedocs.airoha.com.tw/pages/viewpage.action?pageId=61899363
-
----
+</div>
 
 ## 回复记录
 
@@ -99,5 +95,11 @@ Hi,
    如果是老版本的SDK,建议你检查一下修改的地方, 是不是改错了.
 
 谢谢.
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-15](ABT-15.md)　[→ 下一个工单：ABT-17](ABT-17.md)
 
 </div>

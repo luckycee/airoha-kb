@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/02/10 10:42　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-20)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名1]，
+[← 上一个工单：ABT-19](ABT-19.md)　[→ 下一个工单：ABT-21](ABT-21.md)
 
-可以想测试一下dongle跟earbuds之间的延迟，看看具体是多少？能够提供一下具体的测试方法。
-
----
+</div>
 
 ## 回复记录
 
@@ -39,5 +37,11 @@ Hi,
 Hi youwei，
 
 感谢，我先给客户验证一下。
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-19](ABT-19.md)　[→ 下一个工单：ABT-21](ABT-21.md)
 
 </div>

@@ -10,25 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/02/10 12:08　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-21)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-HI [人名1]，
+[← 上一个工单：ABT-20](ABT-20.md)　[→ 下一个工单：ABT-22](ABT-22.md)
 
-客户有个疑问，加了MFi之后编译生成的固件已经达到2MB了，那么要同时支持OTA的话是不是要使用8M的flash？
-
-但奇怪的是编译使用的feature mk文件时feature_65_evk.mk也没有报错，这个mk文件不是只针对4M flash吗？
-
-如果用8M flash的IC是不是要用feature_65_8m_evk.mk这个mk文件编译？
-
-即 AB1565 AB1565A
-
-./build.sh ab1565_evk earbuds_ref_design ?
-
-AB1565M AB1565AM
-
-./build.sh ab1565_8m_evk earbuds_ref_design ?
-
----
+</div>
 
 ## 回复记录
 
@@ -51,5 +37,11 @@ Hi,  
 [图片: image-2022-02-11-15-24-36-617.png]
 
 谢谢
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-20](ABT-20.md)　[→ 下一个工单：ABT-22](ABT-22.md)
 
 </div>

@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/09/05 11:04　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-77)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-76](ABT-76.md)　[→ 下一个工单：ABT-78](ABT-78.md)
 
-客户测试到耳机在播放使用中，发现播放到提示音低电了，手机那边显示的电池电量都还是100%，比较概率性10%，还没有抓到log，抓的时候又次次正常，如果有相关补丁，请帮忙提供。
-
----
+</div>
 
 ## 回复记录
 
@@ -77,5 +75,11 @@ Hi @[邮箱已隐藏]，
 如微信沟通，把hfp connect 的判断拿掉试试
 
 [图片: image-2022-09-08-14-32-55-567.png]
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-76](ABT-76.md)　[→ 下一个工单：ABT-78](ABT-78.md)
 
 </div>

@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/08/22 10:31　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-70)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-69](ABT-69.md)　[→ 下一个工单：ABT-71](ABT-71.md)
 
-客户想利用TWS来做音箱，问是否能够独立控制左右声道的音量？目前使用的软件，默认是两边同时变大变小的。
-
----
+</div>
 
 ## 回复记录
 
@@ -63,5 +61,11 @@ dev->volume_change_status = true; 删除或者修改为false
 再加个修改，这些黄色的标注的都不要了，这个函数值做回复response就好
 
 bt_avrcp_send_set_absoulte_volume_response(absolute_volume_event->handle, absolute_volume_event->volume);
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-69](ABT-69.md)　[→ 下一个工单：ABT-71](ABT-71.md)
 
 </div>

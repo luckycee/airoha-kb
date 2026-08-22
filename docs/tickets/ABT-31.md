@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/03/31 14:04　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-31)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi  [人名5],
+[← 上一个工单：ABT-30](ABT-30.md)　[→ 下一个工单：ABT-32](ABT-32.md)
 
-请指导下如，如何让dongle支持line-in的音源；
-
----
+</div>
 
 ## 回复记录
 
@@ -97,5 +95,11 @@ Hi fason，
 Hi @[邮箱已隐藏]，
 
 MTK_LINEIN_PLAYBACK_ENABLE 这个是耳机side的line-in playback feature
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-30](ABT-30.md)　[→ 下一个工单：ABT-32](ABT-32.md)
 
 </div>

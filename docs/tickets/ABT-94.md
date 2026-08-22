@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/10/08 10:42　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-94)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi fason，
+[← 上一个工单：ABT-93](ABT-93.md)　[→ 下一个工单：ABT-95](ABT-95.md)
 
-配置工具上，看到是支持VAD的，请问支持的关键词有哪些？是否可以自定义？调试文档有吗？
-
----
+</div>
 
 ## 回复记录
 
@@ -65,5 +63,11 @@ Hi @[邮箱已隐藏]，
 Hi [人名5]，
 
 好的，问题关闭，客户只是想要确认功能；
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-93](ABT-93.md)　[→ 下一个工单：ABT-95](ABT-95.md)
 
 </div>

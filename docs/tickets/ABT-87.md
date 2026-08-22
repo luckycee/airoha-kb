@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/09/26 10:35　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-87)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-86](ABT-86.md)　[→ 下一个工单：ABT-88](ABT-88.md)
 
-断开手机连接后，发现disconnect 有概率性出现差3秒的情况，问题出现在17:21:08 附近，这会和什么有关系？如何改善？
-
----
+</div>
 
 ## 回复记录
 
@@ -107,5 +105,11 @@ Hi @[邮箱已隐藏]，
 Hi [人名5]，
 
 客户接受，问题关闭；
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-86](ABT-86.md)　[→ 下一个工单：ABT-88](ABT-88.md)
 
 </div>

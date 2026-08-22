@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/09/13 18:10　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-84)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-83](ABT-83.md)　[→ 下一个工单：ABT-85](ABT-85.md)
 
-[客户A]想用AB1585 TWS + dongle，但是看到只有earbuds 和 headset的project，没有dongle的，这个如何处理？
-
----
+</div>
 
 ## 回复记录
 
@@ -101,5 +99,11 @@ V3.3.0 也有下载，但是里面没有dongle project。
 ### 2022/09/19 17:42 — [人名18]
 
 Download Link: https://transfer.mediatek.com/Detail/Received/Mail30018382227
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-83](ABT-83.md)　[→ 下一个工单：ABT-85](ABT-85.md)
 
 </div>

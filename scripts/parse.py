@@ -288,8 +288,20 @@ def parse_ticket(ticket_id: int) -> dict:
     }
 
 
+def ticket_nav(ticket_id: int) -> str:
+    """生成"上一个/下一个工单"导航（按工单号 ±1，超出范围显示禁用态）。"""
+    def btn(n: int, label: str, arrow: str) -> str:
+        if 15 <= n <= 760:
+            return f"[{arrow} {label}：{TICKET_PREFIX}-{n}]({TICKET_PREFIX}-{n}.md)"
+        return f'<span class="nav-disabled">{arrow} {label}</span>'
+    prev = btn(ticket_id - 1, "上一个工单", "←")
+    nxt = btn(ticket_id + 1, "下一个工单", "→")
+    return f'<div class="ticket-nav" markdown="1">\n\n{prev}　{nxt}\n\n</div>'
+
+
 def render_markdown(t: dict) -> str:
     """工单 dict → Markdown 文本。"""
+    ticket_id = int(t["id"].split("-")[-1])
     lines = [
         "---",
         f"id: {t['id']}",
@@ -303,11 +315,7 @@ def render_markdown(t: dict) -> str:
         "",
         f"> 📅 {t['date']}　🔗 [原始工单链接]({t['source']})",
         "",
-        "## 问题描述",
-        "",
-        t["description"] or "（无描述）",
-        "",
-        "---",
+        ticket_nav(ticket_id),  # 页面开头导航
         "",
     ]
     if t["comments"]:
@@ -324,6 +332,7 @@ def render_markdown(t: dict) -> str:
                 "</div>",
                 "",
             ]
+    lines += [ticket_nav(ticket_id), ""]  # 页面末尾导航
     return "\n".join(lines)
 
 

@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/06/21 12:14　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-57)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi 帝木，
+[← 上一个工单：ABT-56](ABT-56.md)　[→ 下一个工单：ABT-58](ABT-58.md)
 
-请帮忙确认下，是否dongle支持I2S作为dongle的音源，我看datasheet和配置工具上都有这个对象的项目。但参考设计上，只有AB1565M的，谨慎起见还是找你确认一下；
-
----
+</div>
 
 ## 回复记录
 
@@ -37,5 +35,11 @@ Hi @[邮箱已隐藏]，
 Hi [人名5]，
 
 感谢；
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-56](ABT-56.md)　[→ 下一个工单：ABT-58](ABT-58.md)
 
 </div>

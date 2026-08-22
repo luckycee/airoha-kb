@@ -10,23 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/04/02 15:55　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-32)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi  [人名5] ,
+[← 上一个工单：ABT-31](ABT-31.md)　[→ 下一个工单：ABT-33](ABT-33.md)
 
-在feature.mak 中，1wrie的设定需要三个define。
-
-1wire charger
-
-MTK_SMART_CHARGER_ENABLE            = y
-
-MTK_SMART_CHARGER_1WIRE_ENABLE      = y
-
-MTK_SMART_CHARGER_1WIRE_RACE_ENABLE = y
-
-我把后面两个改为n，发现还是无法接受 V1或者V2的pattern，请帮忙确认是否不支持。客户想在已有的项目底座上做耳机软件，不希望改充电仓。
-
----
+</div>
 
 ## 回复记录
 
@@ -51,5 +39,11 @@ Hi @[邮箱已隐藏]
 HI [人名5]，
 
 客户目前已经转到1wire，暂不讨论了。
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-31](ABT-31.md)　[→ 下一个工单：ABT-33](ABT-33.md)
 
 </div>

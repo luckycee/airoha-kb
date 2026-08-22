@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/09/06 11:27　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-78)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-77](ABT-77.md)　[→ 下一个工单：ABT-79](ABT-79.md)
 
-客户要在日本做LDAC的Hi-Res认证，附件是一些文档，你帮忙看看。附件的文件的黃色部分的資料麻煩提供一下。
-
----
+</div>
 
 ## 回复记录
 
@@ -156,5 +154,11 @@ Hi 帝木，
 Hi 帝木，
 
 好的，我叫客户准备好整机，去你那边测试吧。
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-77](ABT-77.md)　[→ 下一个工单：ABT-79](ABT-79.md)
 
 </div>

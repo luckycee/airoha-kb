@@ -10,17 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/05/06 14:26　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-43)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-42](ABT-42.md)　[→ 下一个工单：ABT-44](ABT-44.md)
 
-客户在使用dongle时，遇到几个兼容性问题，我这边看了发送的内容都是正确的，是手机识别的问题，但客户不接受我的解释，请帮忙看看；
-
-5. dongle连接了小米MIX 2X，上下曲变成音量加减，但是实际上的音量并没有变化。
-
-6. dongle连接了小米MIX 2X，通话过程中单击没有结束电话，而是变成了静音，在单击就是取消静音。
-
----
+</div>
 
 ## 回复记录
 
@@ -77,5 +71,11 @@ Thanks.
 Hi [人名12],
 
 好的，我已经将你的回复转给客户了，确认客户接受后，再关闭问题；
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-42](ABT-42.md)　[→ 下一个工单：ABT-44](ABT-44.md)
 
 </div>

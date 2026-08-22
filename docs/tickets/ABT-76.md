@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/09/02 10:48　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-76)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-75](ABT-75.md)　[→ 下一个工单：ABT-77](ABT-77.md)
 
-你们之前给过dongle的测试方式（[ABT-17](ABT-17.md)），但是现在客户的产品是没有按键的，是否可以通过5V 发码的方式让它进入DUT mode，或者已经量产的客户怎么做。
-
----
+</div>
 
 ## 回复记录
 
@@ -57,5 +55,11 @@ race cmd发哪个指令？还是需要自己写？
 Hi @[邮箱已隐藏]，
 
 就key 的race cmd 就可以啊，之前你们不是实体按键触发吗？现在改成race cmd跑key对应的功能函数。
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-75](ABT-75.md)　[→ 下一个工单：ABT-77](ABT-77.md)
 
 </div>

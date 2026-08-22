@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/03/01 14:39　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-23)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-22](ABT-22.md)　[→ 下一个工单：ABT-24](ABT-24.md)
 
-请帮忙确认下，AB1565 headset 是否支持 Hi-Res 解码。
-
----
+</div>
 
 ## 回复记录
 
@@ -43,5 +41,11 @@ Hi @[邮箱已隐藏]，
 Hi [人名5]，
 
 问题关闭，客户不做了；
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-22](ABT-22.md)　[→ 下一个工单：ABT-24](ABT-24.md)
 
 </div>

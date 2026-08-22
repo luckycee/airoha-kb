@@ -10,15 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/08/23 19:16　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-74)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]：
+[← 上一个工单：ABT-73](ABT-73.md)　[→ 下一个工单：ABT-75](ABT-75.md)
 
-编译AB1565 V3.2.0 8m headset后，使用v3.1.5_20220530_112718 Tool打开软件时会报错，
-
-移除报错的文件后可以正常打开软件。MOL上65的ATK最新是v3.1.5_20220530_112718，ATK是要更新吗？
-
----
+</div>
 
 ## 回复记录
 
@@ -63,5 +59,11 @@ MOL的部分已申請上傳，尚在處理中。
 
 Hi [人名22]：
 已确认可以打开，谢谢！
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-73](ABT-73.md)　[→ 下一个工单：ABT-75](ABT-75.md)
 
 </div>

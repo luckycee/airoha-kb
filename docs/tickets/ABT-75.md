@@ -10,15 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/08/24 15:57　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-75)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-74](ABT-74.md)　[→ 下一个工单：ABT-76](ABT-76.md)
 
-这题跟 [ABT-71](ABT-71.md) 相关，同是[客户A]的终端客户提出来的。他们的App想通过利用发送指令的方式，让BT产生一些信号，并且自己播放，为了测试频响用，他们的App想做一些PEQ补偿。
-
-附件pdf是他们详细的功能需求；
-
----
+</div>
 
 ## 回复记录
 
@@ -119,5 +115,11 @@ VP满足不了客户的要求，频点、增益、间隔都要求变化的。而
 Hi @[邮箱已隐藏]，
 
 那做不到啊，耳机自身发不了这种声音，只能是连接手机才能发。
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-74](ABT-74.md)　[→ 下一个工单：ABT-76](ABT-76.md)
 
 </div>

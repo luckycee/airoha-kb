@@ -10,17 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/06/20 16:38　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-56)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-55](ABT-55.md)　[→ 下一个工单：ABT-57](ABT-57.md)
 
-请看看DSP 为什么编译不过。初始demo，没有做任何修改；
-
-指令 ./build.sh ab1585_evk earbuds_ref_design_ull2 
-
-客户想做earbuds+dongle ；
-
----
+</div>
 
 ## 回复记录
 
@@ -179,5 +173,11 @@ Hi @[邮箱已隐藏]，
 Hi [人名5]，
 
 你们MOL上发布了V3.2.0，我会用那个版本试，这题关掉；
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-55](ABT-55.md)　[→ 下一个工单：ABT-57](ABT-57.md)
 
 </div>

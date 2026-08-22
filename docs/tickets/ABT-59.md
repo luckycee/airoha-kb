@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/07/01 12:21　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-59)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-58](ABT-58.md)　[→ 下一个工单：ABT-60](ABT-60.md)
 
-编译1585出现问题，在重新安装了all in one的环境之后，发现需要License，之前编译V2.9.0的时候没有这个提醒；
-
----
+</div>
 
 ## 回复记录
 
@@ -82,5 +80,11 @@ Hi [人名5]，
 ### 2022/07/01 17:15 — [人名2]
 
 [附件: AB158x(Windows)_5800E3DB1EBF.lic]
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-58](ABT-58.md)　[→ 下一个工单：ABT-60](ABT-60.md)
 
 </div>

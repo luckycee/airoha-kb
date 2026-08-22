@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/04/27 16:44　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-38)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-37](ABT-37.md)　[→ 下一个工单：ABT-39](ABT-39.md)
 
-请帮忙确认下65的SDK 知否支持iGO；
-
----
+</div>
 
 ## 回复记录
 
@@ -122,5 +120,11 @@ Hi [人名8],
 @[邮箱已隐藏]
 
 headset 和 earbud 这块空间差别不大的，iGO都需要上到1565AM才行了，谢谢！
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-37](ABT-37.md)　[→ 下一个工单：ABT-39](ABT-39.md)
 
 </div>

@@ -10,17 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/05/06 18:21　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-44)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-43](ABT-43.md)　[→ 下一个工单：ABT-45](ABT-45.md)
 
-外加的光感控制器，使用的中断、回调函数处理，客户要求，光感检测到入耳之后，播放一个提示音。但是你们的eService Docs 中提示，在中断中加入vp会导致死机；实测不单加vp会死机，加timer也会死机。有方法可以规避死机吗？
-
-加timer，主要是为了做消抖，防止客户快速出入耳导致功能错乱；
-
-https://eservicedocs.airoha.com.tw/pages/viewpage.action?pageId=54035258
-
----
+</div>
 
 ## 回复记录
 
@@ -188,5 +182,11 @@ Hi [人名11]Huang,
 好的，我知道如何实现想要的功能了。
 
 感谢支持；
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-43](ABT-43.md)　[→ 下一个工单：ABT-45](ABT-45.md)
 
 </div>

@@ -13,3 +13,32 @@
 .reply:last-child {
     margin-bottom: 0;
 }
+
+/* 工单页上下篇导航 */
+.ticket-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 14px 0 6px;
+}
+.ticket-nav a {
+    flex: 1;
+    padding: 10px 14px;
+    border-radius: 8px;
+    background-color: var(--md-default-fg-color--lightest);
+    text-align: center;
+    text-decoration: none;
+    transition: opacity .25s, transform .25s;
+}
+.ticket-nav a:hover {
+    opacity: .8;
+    transform: translateY(-1px);
+}
+.ticket-nav .nav-disabled {
+    flex: 1;
+    padding: 10px 14px;
+    border-radius: 8px;
+    background-color: var(--md-default-fg-color--lightest);
+    text-align: center;
+    opacity: .4;
+}

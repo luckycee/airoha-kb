@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/09/07 11:11　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-79)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-HI [人名5]，
+[← 上一个工单：ABT-78](ABT-78.md)　[→ 下一个工单：ABT-80](ABT-80.md)
 
-5V常在方案，充慢点之后，不会进入深睡，配置工具上没有 deep sleep mode，只有 low power mode，使用了测试都不充电了；
-
----
+</div>
 
 ## 回复记录
 
@@ -201,5 +199,11 @@ Hi [人名5]，
 Hi @[邮箱已隐藏]，
 
 没有过热的情况就没问题了，显示4是在前面，前面能进就好了。
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-78](ABT-78.md)　[→ 下一个工单：ABT-80](ABT-80.md)
 
 </div>

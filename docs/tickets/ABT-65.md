@@ -10,15 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/07/26 16:13　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-65)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi，
+[← 上一个工单：ABT-64](ABT-64.md)　[→ 下一个工单：ABT-66](ABT-66.md)
 
-使用V2.11.2 的工具发现ANC 调试的地方缺少 Limiter， 而V2.9.0 是含有的。使用最新的V3.1.5 提示音无法打开download文件夹，提示音缺省nvkey_chip.xml 文件；
-
-希望V2.11.2 的工具支持Limiter；
-
----
+</div>
 
 ## 回复记录
 
@@ -69,5 +65,11 @@ Hi @[邮箱已隐藏],
 v2.11.4 [附件: AB1565_AB1568_Airoha_Tool_Kit(ATK)_v2.11.4_20220420_141504.7z]
 
 ^ANC limter is in engineer mode.^
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-64](ABT-64.md)　[→ 下一个工单：ABT-66](ABT-66.md)
 
 </div>

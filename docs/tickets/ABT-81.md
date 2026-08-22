@@ -10,15 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/09/08 18:50　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-81)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-80](ABT-80.md)　[→ 下一个工单：ABT-82](ABT-82.md)
 
-1. 更新了vp，怎么FOTA到整机上；
-
-2. 更新了  customerized_key_config.c ，FOTA到整机上无效；
-
----
+</div>
 
 ## 回复记录
 
@@ -300,5 +296,11 @@ Hi [人名10] ([人名10])，
 Hi [人名10] ([人名10])，
 
 如沟通，更新 customerized_key_config.c，FOTA 不到耳机中，是因为我使用的key table会保留在 nvkey 中，下次初始化会从nvkey获取，不是在  customerized_key_config.c 的设定中。
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-80](ABT-80.md)　[→ 下一个工单：ABT-82](ABT-82.md)
 
 </div>

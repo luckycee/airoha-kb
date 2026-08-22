@@ -10,23 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/06/14 15:59　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-53)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-52](ABT-52.md)　[→ 下一个工单：ABT-54](ABT-54.md)
 
-见附件log con74：
-
-15:42:54 进入ull 配对
-
-15:43:24 ull配对超时，TWS回连上
-
-15:43:27 进入手机配对
-
-但是发现手机无法搜索得到配对名，我看了log和流程都是正常的，请帮忙看看为什么。
-
-com74 主机，com56副机；
-
----
+</div>
 
 ## 回复记录
 
@@ -59,5 +47,11 @@ Hi @[邮箱已隐藏]，
 Hi [人名5]，
 
 问题解决；
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-52](ABT-52.md)　[→ 下一个工单：ABT-54](ABT-54.md)
 
 </div>

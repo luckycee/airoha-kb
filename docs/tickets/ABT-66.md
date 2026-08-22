@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/07/27 18:53　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-66)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-65](ABT-65.md)　[→ 下一个工单：ABT-67](ABT-67.md)
 
-请看一下如何关闭长按power key导致的sys reset，客户需要支持10秒以上的长按功能键；
-
----
+</div>
 
 ## 回复记录
 
@@ -81,5 +79,11 @@ Hi  [人名5],
 Hi @[邮箱已隐藏],
 
 开机之后不会跑这里，需要你们开机之后自己调用，我这边调用一下，再长按10s 都不会reset了
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-65](ABT-65.md)　[→ 下一个工单：ABT-67](ABT-67.md)
 
 </div>

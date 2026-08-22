@@ -10,17 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/08/17 10:33　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-69)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-68](ABT-68.md)　[→ 下一个工单：ABT-70](ABT-70.md)
 
-1,1565D的USB Audio 是Class D还是？
-
-2,1565D的USB支持的是Full Speed还是High Speed ；
-
-我记得之前给过一个补丁，只改为full speed的；
-
----
+</div>
 
 ## 回复记录
 
@@ -57,5 +51,11 @@ Hi [人名5]，
 Hi @[邮箱已隐藏]，
 
 还是 V1.0
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-68](ABT-68.md)　[→ 下一个工单：ABT-70](ABT-70.md)
 
 </div>

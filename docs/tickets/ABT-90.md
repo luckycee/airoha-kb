@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/09/27 11:06　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-90)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi 帝木，
+[← 上一个工单：ABT-89](ABT-89.md)　[→ 下一个工单：ABT-91](ABT-91.md)
 
-你们的demo FW编译出来，默认 PEQ1\PEQ2都是开启的，并且播放音乐的时候，PEQ也是有效的，调试了PEQ1的频点后，也是有效的。但是，如果我把PEQ2关闭之后，还剩下PEQ1，发现PEQ不起效果了，再加回又有了，这是什么回事？你们这个PEQ的逻辑跟1562x不同吗？
-
----
+</div>
 
 ## 回复记录
 
@@ -107,5 +105,11 @@ Hi 帝木，
 Hi 帝木，
 
 按照贵司同仁的指导，修改好LDAC支持PEQ后，即使关闭PEQ2，PEQ也起效，问题关闭；
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-89](ABT-89.md)　[→ 下一个工单：ABT-91](ABT-91.md)
 
 </div>

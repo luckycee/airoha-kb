@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/02/17 10:24　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-22)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-HI [人名5]，
+[← 上一个工单：ABT-21](ABT-21.md)　[→ 下一个工单：ABT-23](ABT-23.md)
 
-客户在咨询dongle是否支持苹果Lightning 接口？如果支持是否需要做MFi认证？需要做的话，你们有相关的经验和文档支持吗？
-
----
+</div>
 
 ## 回复记录
 
@@ -27,5 +25,11 @@ HI [人名5]，
 Hi @[邮箱已隐藏],
 
 我们dongle 没有 lightning接口
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-21](ABT-21.md)　[→ 下一个工单：ABT-23](ABT-23.md)
 
 </div>

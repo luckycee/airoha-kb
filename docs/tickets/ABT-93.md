@@ -10,23 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/10/08 10:29　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-93)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-92](ABT-92.md)　[→ 下一个工单：ABT-94](ABT-94.md)
 
-请帮忙提供一下Teams认证的相关资料/指导，[客户A]想做这个认证。
-
-从AZ.Zhang处了解到，目前MP的方案：
-
-AB1565D for Dongle
-
-AB1565M for 头戴 & TWS Non-ANC
-
-AB1565AM for 头戴 & TWS with Hybrid ANC
-
-AB1585D + AB1585(M)  ；
-
----
+</div>
 
 ## 回复记录
 
@@ -106,5 +94,11 @@ Teams 認證在TWS 的基本要求是2+1, 頭戴還沒有MP 經驗
 ### 2022/10/13 15:00 — [人名4]
 
 若无问题先 close
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-92](ABT-92.md)　[→ 下一个工单：ABT-94](ABT-94.md)
 
 </div>

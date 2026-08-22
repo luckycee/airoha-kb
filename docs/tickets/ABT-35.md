@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/04/15 19:45　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-35)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-34](ABT-34.md)　[→ 下一个工单：ABT-36](ABT-36.md)
 
-软件的 customerized_key_config.c 没有开机的时长设置，每次按键开机都是差不多1s就起来了。客户希望跟之前的UI保持一致，改为长按3s才能开机，请帮忙看看如何实现；
-
----
+</div>
 
 ## 回复记录
 
@@ -81,5 +79,11 @@ Hi 黄工，
 我们耳机在充电状态下，耳机已经唤醒，所以会跑key 开机。
 
 假如没有充电，这时候按power key 1s 钟，就会触发硬件开机。这部分功能是硬件控制的，软件已经改不了了，麻烦跟客户解释，感谢~
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-34](ABT-34.md)　[→ 下一个工单：ABT-36](ABT-36.md)
 
 </div>

@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/09/27 11:15　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-91)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi 帝木，
+[← 上一个工单：ABT-90](ABT-90.md)　[→ 下一个工单：ABT-92](ABT-92.md)
 
-客户调试PEQ，在AAC和SBC这两个编码格式下，PEQ都是起效的，换到LDAC就无效了，请看看这是为什么？
-
----
+</div>
 
 ## 回复记录
 
@@ -183,5 +181,11 @@ Hi @[邮箱已隐藏]，
 该题如果没有其他疑问就先关掉了，后续有问题再提jira分析
 
 Thanks！
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-90](ABT-90.md)　[→ 下一个工单：ABT-92](ABT-92.md)
 
 </div>

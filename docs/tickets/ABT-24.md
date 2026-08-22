@@ -10,17 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/03/01 16:51　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-24)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-23](ABT-23.md)　[→ 下一个工单：ABT-25](ABT-25.md)
 
-根据之前youwei提供的测试文档，客户发现有几个问题：
-
-1. 没有 test_wave.pcm 文件，请提供；
-
-2. dongle的GPIO13 没有信号出来，通过检查代码，是两位两个电平一致导致的，请也看看这是为什么。
-
----
+</div>
 
 ## 回复记录
 
@@ -108,5 +102,11 @@ Hi [人名5]，
 Hi @[邮箱已隐藏]，
 
 测试手法没问题，以实测为准吧，22ms已经很低了。
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-23](ABT-23.md)　[→ 下一个工单：ABT-25](ABT-25.md)
 
 </div>

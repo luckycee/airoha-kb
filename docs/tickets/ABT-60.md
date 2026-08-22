@@ -10,15 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/07/04 18:09　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-60)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]
+[← 上一个工单：ABT-59](ABT-59.md)　[→ 下一个工单：ABT-61](ABT-61.md)
 
-可以个性化软件，ANC的切换顺序为 降噪>通透>风声抑制>关闭，切换顺序和使用的参数见图片。另外客户，加入了光感，要求双耳佩戴时，一个出耳需要直接切换到通透。
-
-在实际测试的光感控制的过程中，从ANC到通透，效果不明显；从风声抑制到通透，效果明显，调用的接口都是一样的，不明白为什么有这样的区别；
-
----
+</div>
 
 ## 回复记录
 
@@ -82,5 +78,11 @@ Hi [人名5],
 ### 2022/07/05 16:50 — [人名5]
 
 OK~
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-59](ABT-59.md)　[→ 下一个工单：ABT-61](ABT-61.md)
 
 </div>

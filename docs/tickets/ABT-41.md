@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/04/28 20:23　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-41)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名8],
+[← 上一个工单：ABT-40](ABT-40.md)　[→ 下一个工单：ABT-42](ABT-42.md)
 
-从哪个地址段开始，可以让我添加使用，在AB1562x系列上，0xFE00 后面都能自由使用；
-
----
+</div>
 
 ## 回复记录
 
@@ -185,5 +183,11 @@ Hi  @[邮箱已隐藏],
 Hi Hi [人名11]Huang,
 
 是的，已经解决；
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-40](ABT-40.md)　[→ 下一个工单：ABT-42](ABT-42.md)
 
 </div>

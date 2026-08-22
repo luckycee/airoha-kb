@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/09/13 17:32　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-83)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-82](ABT-82.md)　[→ 下一个工单：ABT-84](ABT-84.md)
 
-客户测试，在音乐播放状态下回连后，发现音乐不会流转到耳机端。在来电状态下回连后（客制化UI，回连后来电状态自动接听），发现话音信号仍在手机端，不会流转到耳机端。概率大约是30次有2次 。
-
----
+</div>
 
 ## 回复记录
 
@@ -133,5 +131,11 @@ Hi, @[邮箱已隐藏]
 Hi [人名1] ([人名1])，
 
 问题关闭，待客户重新验证；
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-82](ABT-82.md)　[→ 下一个工单：ABT-84](ABT-84.md)
 
 </div>

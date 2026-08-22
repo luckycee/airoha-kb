@@ -10,15 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/07/22 12:06　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-64)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-63](ABT-63.md)　[→ 下一个工单：ABT-65](ABT-65.md)
 
-附件是使用IQOO Neo5手机测试播放暂停，连续测试几次之后，发现暂停后无法播放，看log发现暂停后key发送的居然是0x55（KEY_AVRCP_PAUSE），也就是发送了两次0x55，这是手机还是耳机的问题？荣耀V20也有这问题，iPhone 7、荣耀V30、Google Pixel 4a、Samsung Galaxy On7 均没有问题；
-
-问题在COM74 11:50:38 ;
-
----
+</div>
 
 ## 回复记录
 
@@ -237,5 +233,11 @@ Air log 分析
 可以看到耳机发送的两次AVRCP Operation 已经送出去了，至于手机端为什么不响应，可能手机这时候有其他的事情在忙没有及时的去处理，这是手机的问题
 
 [图片: image-2022-07-28-11-11-51-850.png]
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-63](ABT-63.md)　[→ 下一个工单：ABT-65](ABT-65.md)
 
 </div>

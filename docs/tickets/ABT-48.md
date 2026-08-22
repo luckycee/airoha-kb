@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/05/26 11:36　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-48)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-47](ABT-47.md)　[→ 下一个工单：ABT-49](ABT-49.md)
 
-我看到默认有开启了 MTK_BT_CM_SUPPORT 和 MTK_PORT_SERVICE_BT_ENABLE，但是Android 上的SPP调试App“蓝牙调试宝”还是无法连接，请看看问题出在哪里。
-
----
+</div>
 
 ## 回复记录
 
@@ -63,5 +61,11 @@ ok~
 Hi [人名5]，
 
 问题关闭，SPP指令已经打通；
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-47](ABT-47.md)　[→ 下一个工单：ABT-49](ABT-49.md)
 
 </div>

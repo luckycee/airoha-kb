@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/04/28 15:39　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-39)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-38](ABT-38.md)　[→ 下一个工单：ABT-40](ABT-40.md)
 
-使用Android 手机，激活语音助手后，无法退出到正常的 APP_CONNECTED，导致了按键无效；
-
----
+</div>
 
 ## 回复记录
 
@@ -105,5 +103,11 @@ Hi [人名8],
 Hi [人名8],
 
 客户验证了问题解决；
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-38](ABT-38.md)　[→ 下一个工单：ABT-40](ABT-40.md)
 
 </div>

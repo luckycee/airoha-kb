@@ -10,15 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/08/09 17:17　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-68)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-67](ABT-67.md)　[→ 下一个工单：ABT-69](ABT-69.md)
 
-在配置工具中设置了硬件区分左右声道（默认GPIO19），虽然TWS能够连接，但是通过声道测试发现左右两边都为L边的声音。通过在 NVKEYID_APP_AUDIO_CHANNEL 这个nvkey相关位置加log，但是都没有显示出来。
-
-如果设置回来软件的模式，则没有问题；请看看这是为什么？
-
----
+</div>
 
 ## 回复记录
 
@@ -75,5 +71,11 @@ Hi [人名5],
 每次烧录结束之后，你们的初始化到设置的是“HW mode” GPIO决定声道后，会根据对应的实际的情况获取到值，转为“SW mode”并写入nvkey中，并且只有第一次执行，后面再开机就一直是SW mode了。如果第一次上电没有弄对（一只耳机GPIO 为低，一只耳机GPIO 为高），那么他们的声道就一直是错的。也因为，你们的log必须是开机之后能有，所以第一次上电时没有录制得到，后面再录到也是修改后的SW mode；
 
 [图片: Snipaste_2022-08-10_11-22-39.png]
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-67](ABT-67.md)　[→ 下一个工单：ABT-69](ABT-69.md)
 
 </div>

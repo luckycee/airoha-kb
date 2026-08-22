@@ -10,19 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/03/03 14:39　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-25)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi fason，
+[← 上一个工单：ABT-24](ABT-24.md)　[→ 下一个工单：ABT-26](ABT-26.md)
 
-请帮忙回复以下内容：
-
-1： 1565D是否支持USB输入，模拟输出，做有线立体声耳机
-
-2：1565D是否支持做普通蓝牙适配器（能够听音乐，通话，连接其他家的蓝牙设备）
-
-3：1565D是否支持过Teams认证
-
----
+</div>
 
 ## 回复记录
 
@@ -91,5 +83,11 @@ Hi 帝木，
 ### 2022/03/10 10:13 — [人名4]
 
 若没问题先close
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-24](ABT-24.md)　[→ 下一个工单：ABT-26](ABT-26.md)
 
 </div>

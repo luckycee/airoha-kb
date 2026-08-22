@@ -10,17 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/04/26 10:56　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-37)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-36](ABT-36.md)　[→ 下一个工单：ABT-38](ABT-38.md)
 
-在添加了拒绝电话之后，引起了问题。在earbuds 这端，我是在 APP_CONNECTED 给出了reject指令的，因为客户在 APP_ULTRA_LOW_LATENCY_PLAYING 相同的长按是上下一曲。
-
-客户在连续测试上下曲，在网络环境比较不好的时候，streaming 会停止，state会变为APP_CONNECTED，此时就发送 reject给dongle了，dongle收到后有概率出现earbuds断开连接、earbuds 操作没有反应等奇奇怪怪的问题。
-
-还有什么变量可以区分来电和已连接？不然就没有办法把reject放进去；
-
----
+</div>
 
 ## 回复记录
 
@@ -81,5 +75,11 @@ Hi @[邮箱已隐藏]，
 @[邮箱已隐藏]
 
 线控耳机和 USB audio的耳机是无法对比的，需要同样拿支持USB HID的耳机对比测试.
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-36](ABT-36.md)　[→ 下一个工单：ABT-38](ABT-38.md)
 
 </div>

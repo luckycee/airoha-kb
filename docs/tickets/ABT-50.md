@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/05/27 17:27　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-50)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-49](ABT-49.md)　[→ 下一个工单：ABT-51](ABT-51.md)
 
-请帮忙看看，开机后TWS连接上，进入手机配对，此时插入dongle，出现了连接失败的情况；
-
----
+</div>
 
 ## 回复记录
 
@@ -190,5 +188,11 @@ Hi @[邮箱已隐藏]，
 麻烦添加附件patch，然后APP 层 bt_cm_get_reconnect_profile 这个接口 参考 V2.11.0 直接copy 整个函数定义过去就好了~
 
 [附件: bt_connection_manager.diff]
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-49](ABT-49.md)　[→ 下一个工单：ABT-51](ABT-51.md)
 
 </div>

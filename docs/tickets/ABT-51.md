@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/05/27 17:27　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-51)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-50](ABT-50.md)　[→ 下一个工单：ABT-52](ABT-52.md)
 
-请帮忙看看，开机后TWS连接上，进入手机配对，此时插入dongle，出现了连接失败的情况；
-
----
+</div>
 
 ## 回复记录
 
@@ -37,5 +35,11 @@ Hi [人名5]，
 ### 2022/05/27 17:32 — [人名12]
 
 重复
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-50](ABT-50.md)　[→ 下一个工单：ABT-52](ABT-52.md)
 
 </div>

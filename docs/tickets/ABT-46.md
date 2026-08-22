@@ -10,55 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/05/16 10:18　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-46)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-45](ABT-45.md)　[→ 下一个工单：ABT-47](ABT-47.md)
 
-客户的终端客户，对软件中一些参数有疑问。
-
-Firmware identifier
-
->> ？
-
-Firmware name (in Chinese) 
-
->> 软件文件名可由客户自定义，不要有中文字符；
-
-Firmware name (in English) 
-
->> 软件文件名可由客户自定义，不要有中文字符；
-
-Firmware type 
-
->> bin文件
-
-Update channel
-
->> 支持FOTA和有线烧录；
-
-Flash size of 1565A
-
->> 4M 
-
-Protocol size 
-
->> ？
-
-Update timeout
-
->> 无特别限时，FOTA 时在设置的无连接自动关机时间内完成即可
-
-Chipset platform 
-
->> 基于洛达AB1565A
-
-一个Dongle（1565D）是否可以连接两个耳机？
-
->> ？
-
-以上打了问号的请帮忙回复，如果我写的回复不正确，也请更正，感谢；
-
----
+</div>
 
 ## 回复记录
 
@@ -90,5 +46,11 @@ Hi 杜工，
 好的，我先回复给客户，看是否解决他们的疑问。
 
 感谢支持。
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-45](ABT-45.md)　[→ 下一个工单：ABT-47](ABT-47.md)
 
 </div>

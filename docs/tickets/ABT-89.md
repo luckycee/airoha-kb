@@ -10,15 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/09/26 20:07　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-89)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi 帝木，
+[← 上一个工单：ABT-88](ABT-88.md)　[→ 下一个工单：ABT-90](ABT-90.md)
 
-发现去掉PEQ频点之后，无法保存到软件中；
-
-使用V2.5.4，V2.11.2，V2.11.4都验证过，有次问题；
-
----
+</div>
 
 ## 回复记录
 
@@ -79,5 +75,11 @@ nvdm driver不允許寫入長度為0的nv key
  
 
 之後再勾選無法存檔的問題TW还要再查一下
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-88](ABT-88.md)　[→ 下一个工单：ABT-90](ABT-90.md)
 
 </div>

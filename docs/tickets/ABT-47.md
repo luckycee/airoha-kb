@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/05/23 17:28　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-47)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-46](ABT-46.md)　[→ 下一个工单：ABT-48](ABT-48.md)
 
-请指导一下，如何实现组合按键？如：POWER_KEY+EINT_KEY_1 短按、长按；
-
----
+</div>
 
 ## 回复记录
 
@@ -27,5 +25,11 @@ Hi [人名5]，
 Hi @[邮箱已隐藏]，
 
 我们公版没有做组合按键的，需要你们自己做给客户~
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-46](ABT-46.md)　[→ 下一个工单：ABT-48](ABT-48.md)
 
 </div>

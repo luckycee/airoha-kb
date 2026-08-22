@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/01/11 20:06　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-15)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-HI [人名1]，
+<span class="nav-disabled">← 上一个工单</span>　[→ 下一个工单：ABT-16](ABT-16.md)
 
-客户要求dongle在ULL Pairing一直配对，默认的时间为30，我改为3600或者300都是进入ULL pairing就被强制退出了，请看看这是为什么。
-
----
+</div>
 
 ## 回复记录
 
@@ -39,5 +37,11 @@ Hi,  
     inquiry的最长时间是60几秒, 如果想要一直inquiry ,可以在完成这次之后, 继续调用.
 
 谢谢.
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+<span class="nav-disabled">← 上一个工单</span>　[→ 下一个工单：ABT-16](ABT-16.md)
 
 </div>

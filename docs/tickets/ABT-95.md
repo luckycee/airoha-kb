@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/10/09 11:28　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-95)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-94](ABT-94.md)　[→ 下一个工单：ABT-96](ABT-96.md)
 
-之前解决过，在config tool 上调试PEQ， 使用LDAC无效的问题，此问题解决了（见 [ABT-91](ABT-91.md)），现在客户发现使用App 新增自定义PEQ时，也无效；但是使用AAC和SBC有效，请继续指导，如何解决；
-
----
+</div>
 
 ## 回复记录
 
@@ -80,5 +78,11 @@ boolean IS_SUPPORT_LDAC = {color:#d04437}true{color};
 Hi [人名31] ([人名31]),
 
 解决了，问题关闭；
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-94](ABT-94.md)　[→ 下一个工单：ABT-96](ABT-96.md)
 
 </div>

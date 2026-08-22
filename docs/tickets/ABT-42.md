@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/04/29 10:50　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-42)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名8]，
+[← 上一个工单：ABT-41](ABT-41.md)　[→ 下一个工单：ABT-43](ABT-43.md)
 
-客户连接了dongle后，手机播放音乐，连续操作执行上一曲，大约十多次就有一次出现link loss，单纯的partner 断开手机，操作主机能让partner回连，时间比较长。请看看是什么问题。
-
----
+</div>
 
 ## 回复记录
 
@@ -599,5 +597,11 @@ airlog:
 update:
 
 合入[附件: libpka_ull_merge_false_ack_bugfix.rar]后用常复现该问题的手机+EVK压测一小时，未复现。
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-41](ABT-41.md)　[→ 下一个工单：ABT-43](ABT-43.md)
 
 </div>

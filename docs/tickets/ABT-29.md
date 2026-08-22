@@ -10,15 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/03/15 15:07　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-29)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-28](ABT-28.md)　[→ 下一个工单：ABT-30](ABT-30.md)
 
-客户参考了你们代码中播放hex 文件使用方法，发现在SDK V2.7.1 播放的声音失真的问题，相同的代码在SDK V2.9.0 中我试了OK，请帮忙看看为什么，比较奇怪；
-
-附加有参考代码，可以自行添加测试验证；
-
----
+</div>
 
 ## 回复记录
 
@@ -118,5 +114,11 @@ FYI
 
 [附件: VP.wmv]
 [附件: VP.pdf]
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-28](ABT-28.md)　[→ 下一个工单：ABT-30](ABT-30.md)
 
 </div>

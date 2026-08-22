@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/09/22 16:00　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-86)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-HI [人名5]，
+[← 上一个工单：ABT-85](ABT-85.md)　[→ 下一个工单：ABT-87](ABT-87.md)
 
-编译指令为 ./build.sh ab1585_evk earbuds_ref_design_ull2 ，找到对应下的 apps_config_event_list.h 没有发现有 KEY_LE_ULL_PAIRING 这个 key action , 而指令 ./build.sh ab1585_evk dongle_ref_design_ull2 下的apps_config_event_list.h  则有，请问ull2 应该如何配对？
-
----
+</div>
 
 ## 回复记录
 
@@ -165,5 +163,11 @@ Hi @[邮箱已隐藏]，
 
 上午发错文件了，麻烦用附件软件测试
 [附件: ab1585_evk.rar]
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-85](ABT-85.md)　[→ 下一个工单：ABT-87](ABT-87.md)
 
 </div>

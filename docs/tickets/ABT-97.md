@@ -10,17 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/10/11 18:22　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-97)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-96](ABT-96.md)　[→ 下一个工单：ABT-98](ABT-98.md)
 
-1. 客户有设定，开机回连之后，来电状态会自动接听；
-
-2. 客户有开启EMP ；
-
-问题发生在COM100 17:37:22 ，回连手机后，耳机检查到在来电状态发送了 KEY_ACCEPT_CALL ，但是耳机的状态一直没有转换过来保持在来电状态，直到17:37:34 才转到了 APP_[人名9]P_CALLACTIVE ，但是实际上话音信号在手机上(应该在耳机上的)。在22秒到24秒过程中，我发现耳机在不停跟iPhone 13 Pro Max 在AT CMD 通讯，并且在不断对已经配对过的另外一个手机发起回连，这是否有影响；概率十几次有一次；
-
----
+</div>
 
 ## 回复记录
 
@@ -148,5 +142,11 @@ Hi  @[邮箱已隐藏]
 Hi [人名17]，
 
 加入阻止回连的请求后，客户接受了目前效果。问题先关闭，等他们继续反馈，我处理不好再请教，感谢。
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-96](ABT-96.md)　[→ 下一个工单：ABT-98](ABT-98.md)
 
 </div>

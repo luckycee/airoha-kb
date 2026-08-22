@@ -10,17 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/09/30 11:08　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-92)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-HI [人名5]，
+[← 上一个工单：ABT-91](ABT-91.md)　[→ 下一个工单：ABT-93](ABT-93.md)
 
-dongle连接电脑后，会新增显示两个声卡，是否可以隐藏一个？显示的名字是否能够自定义？
-
-有找到一个文档，当时以上两个问题没有说到；
-
-https://eservicedocs.airoha.com.tw/pages/viewpage.action?pageId=61899363
-
----
+</div>
 
 ## 回复记录
 
@@ -99,5 +93,11 @@ AIR_USB_AUDIO_2ND_SPEAKER_ENABLE
 HI all，
 
 解决；问题关闭
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-91](ABT-91.md)　[→ 下一个工单：ABT-93](ABT-93.md)
 
 </div>

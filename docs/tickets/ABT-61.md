@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/07/06 17:13　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-61)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-60](ABT-60.md)　[→ 下一个工单：ABT-62](ABT-62.md)
 
-默认有开启power saving的，系统上电之后load的是 nvkey的内容，请问配置工具上可以修改这个nvkey 吗？我没有找到，要修改的话只能改code吗？
-
----
+</div>
 
 ## 回复记录
 
@@ -35,5 +33,11 @@ Hi [人名5]，
 Hi @[邮箱已隐藏]，
 
 这个我们tool没有开出来哦。
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-60](ABT-60.md)　[→ 下一个工单：ABT-62](ABT-62.md)
 
 </div>

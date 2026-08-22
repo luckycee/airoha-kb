@@ -10,21 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/01/17 10:58　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-18)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名1]，
+[← 上一个工单：ABT-17](ABT-17.md)　[→ 下一个工单：ABT-19](ABT-19.md)
 
-V2.9.0 客户有关  [人名3] ANC几个问题，请帮忙回复；
-
-1.     自动检测当前环境，根据不同环境自动调整ANC
-
-2.     检测到Windnoise自动调整ANC
-
-3.     ear canal calibration，根据不同佩戴人的耳管环境自动调整ANC
-
-根据我之前看到的培训文档，自适应ANC需要使用使用AB1568并配合App做的，不知道是否有改变。
-
----
+</div>
 
 ## 回复记录
 
@@ -140,5 +130,11 @@ Hi 帝木，
 ok 
 
 若有其他问题请再提出
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-17](ABT-17.md)　[→ 下一个工单：ABT-19](ABT-19.md)
 
 </div>

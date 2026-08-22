@@ -10,13 +10,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 > 📅 2022/10/14 10:28　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-98)
 
-## 问题描述
+<div class="ticket-nav" markdown="1">
 
-Hi [人名5]，
+[← 上一个工单：ABT-97](ABT-97.md)　[→ 下一个工单：ABT-99](ABT-99.md)
 
-相同的手机，用dongle和蓝牙连接输出（音量最大，播放1KhZ信号， AP测的），有差异，dongle输出的声音小，如何调整到一致？
-
----
+</div>
 
 ## 回复记录
 
@@ -201,5 +199,11 @@ Hi 帝木，
 客户改到了15，问题解决；
 
 [图片: 微信图片_[序列号已隐藏].jpg]
+
+</div>
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-97](ABT-97.md)　[→ 下一个工单：ABT-99](ABT-99.md)
 
 </div>
