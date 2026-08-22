@@ -1,6 +1,6 @@
 # 敏感信息 - 绝不提交
 cookies.txt
-sensitive_names.txt
+sensitive_words.txt
 
 # 原始 HTML（中间产物，不入库）
 raw/

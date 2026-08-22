@@ -106,13 +106,16 @@ def normalize(groups: dict) -> dict:
 
 def main():
     groups = {}
+    other_lines = []  # 非人名行（@客户/@项目 等），原样保留
     # 读取已有词库（合并，保留手工别名）
     if NAMES_FILE.exists():
         for line in NAMES_FILE.read_text(encoding="utf-8").splitlines():
             line = line.strip()
             if not line or line.startswith("#"):
-                continue
-            if "=" in line:
+                other_lines.append(line)
+            elif line.startswith("@"):
+                other_lines.append(line)
+            elif "=" in line:
                 main, _, aliases = line.partition("=")
                 groups[main.strip()] = [a.strip() for a in aliases.split(",") if a.strip()]
             else:
@@ -120,13 +123,20 @@ def main():
     for p in sorted(RAW_DIR.glob("MIUIX1565-*.html")):
         collect_from_ticket(p, groups)
     groups = normalize(groups)
-    # 写回（主名排序）
+    # 写回
     with NAMES_FILE.open("w", encoding="utf-8") as f:
-        f.write("# 人名词库：主名=别名1,别名2（同组视为同一人）。可手工补充。\n")
+        f.write("# 敏感词库：\n")
+        f.write("#   人名：主名=别名1,别名2（同组视为同一人，替换为 [人名N]）\n")
+        f.write("#   客户名：@客户 某某公司（替换为 [客户A]）\n")
+        f.write("#   项目/代号：@项目 XXX（替换为 [项目A]）\n")
+        f.write("# 可手工补充任意条目。\n")
+        for line in other_lines:
+            if not line.startswith("# 敏感词库") and line != "# 人名词库：主名=别名1,别名2（同组视为同一人）。可手工补充。":
+                f.write(line + "\n")
         for main in sorted(groups, key=str.lower):
             aliases = groups[main]
             f.write(f"{main}=" + ",".join(aliases) + "\n")
-    print(f"[成功] 词库已更新：{len(groups)} 人 → {NAMES_FILE.name}")
+    print(f"[成功] 词库已更新：{len(groups)} 个人名组 → {NAMES_FILE.name}")
     for main in sorted(groups, key=str.lower):
         print(f"  - {main}  (别名: {', '.join(groups[main]) if groups[main] else '无'})")
 

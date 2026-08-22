@@ -15,17 +15,20 @@ from bs4 import BeautifulSoup
 ROOT = Path(__file__).resolve().parent.parent
 RAW_DIR = ROOT / "raw"
 OUT_DIR = ROOT / "docs" / "tickets"
-NAMES_FILE = ROOT / "sensitive_names.txt"  # 人名词库（不入库，见 .gitignore）
+NAMES_FILE = ROOT / "sensitive_words.txt"  # 敏感词库（不入库，见 .gitignore）
 
 # 系统自动通知账号（回复无人工内容，整条忽略）
 AUTHOR_SKIP = re.compile(r"sysadmin|bot|notification|support-team|admin", re.IGNORECASE)
 # 自动提醒内容关键词（兜底过滤）
 AUTO_REPLY_PATTERN = re.compile(r"gentle reminder|automated|do not reply|noreply", re.IGNORECASE)
 
-NAMES = []          # 词库（长名优先）
-NAME_GROUPS = []    # 别名组：[[名字...], ...] 同组视为同一人
+NAMES = []          # 人名（长名优先）
+NAME_GROUPS = []    # 人名别名组：[[名字...], ...] 同组视为同一人
 NAME_TO_GROUP = {}  # 名字 -> 所属组
 NAME_MAP = {}       # 组(排序后小写元组) -> [人名N]
+CUSTOMER_TERMS = [] # 客户名
+PROJECT_TERMS = []  # 项目/代号
+TERM_MAP = {}       # 类型 -> {词(小写): 占位符}
 
 # ---------- 通用工具 ----------
 
@@ -109,31 +112,46 @@ def mask_sensitive(text: str) -> str:
     text = re.sub(r"09\d{2}[- ]?\d{3}[- ]?\d{3}", "[电话已隐藏]", text)
     text = re.sub(r"(?<!\d)\d{12,}(?!\d)", "[序列号已隐藏]", text)
     text = mask_names(text)  # 人名词库
+    text = mask_terms(text, CUSTOMER_TERMS, "客户")  # 客户名
+    text = mask_terms(text, PROJECT_TERMS, "项目")   # 项目/代号
     text = re.sub(r"\[~([^\]]*)\]", r"@\1", text)  # Jira 提及 [~xxx] → @xxx
     return text
 
 
 def load_names():
-    """加载人名词库。
+    """加载敏感词库。
 
-    文件格式（sensitive_names.txt）：
-        王友巍=Youwei,Youwei Wang   # 主名=别名1,别名2，同组视为同一人
-        Fason Wu                    # 无 = 的独立名字
+    文件格式（sensitive_words.txt）：
+        # 人名：主名=别名1,别名2，同组视为同一人（同一编号 [人名N]）
+        王友巍=Youwei,Youwei Wang
+        Fason Wu
+        # 客户名（[客户A]、[客户B]...）
+        @客户 某某电子科技有限公司
+        # 项目/代号（[项目A]、[项目B]...）
+        @项目 ABC-Project
     """
-    global NAMES, NAME_GROUPS, NAME_TO_GROUP
-    NAME_GROUPS = []
+    global NAMES, NAME_GROUPS, NAME_TO_GROUP, CUSTOMER_TERMS, PROJECT_TERMS
+    NAME_GROUPS, CUSTOMER_TERMS, PROJECT_TERMS = [], [], []
     if NAMES_FILE.exists():
         for line in NAMES_FILE.read_text(encoding="utf-8").splitlines():
             line = line.strip()
             if not line or line.startswith("#"):
                 continue
-            if "=" in line:
+            if line.startswith("@客户"):
+                term = line[len("@客户"):].strip()
+                if term:
+                    CUSTOMER_TERMS.append(term)
+            elif line.startswith("@项目"):
+                term = line[len("@项目"):].strip()
+                if term:
+                    PROJECT_TERMS.append(term)
+            elif "=" in line:
                 main, _, aliases = line.partition("=")
                 group = [main.strip()] + [a.strip() for a in aliases.split(",") if a.strip()]
+                if group:
+                    NAME_GROUPS.append(group)
             else:
-                group = [line]
-            if group:
-                NAME_GROUPS.append(group)
+                NAME_GROUPS.append([line])
     NAMES = sorted((n for g in NAME_GROUPS for n in g), key=len, reverse=True)
     NAME_TO_GROUP = {n: g for g in NAME_GROUPS for n in g}
 
@@ -147,6 +165,18 @@ def mask_names(text: str) -> str:
             if key not in NAME_MAP:
                 NAME_MAP[key] = f"[人名{len(NAME_MAP) + 1}]"
             text = text.replace(name, NAME_MAP[key])
+    return text
+
+
+def mask_terms(text: str, terms: list, kind: str) -> str:
+    """客户/项目词 → [客户A]/[项目A]，按字母编号。"""
+    for term in sorted(terms, key=len, reverse=True):
+        if term in text:
+            key = term.lower()
+            if key not in TERM_MAP.setdefault(kind, {}):
+                n = len(TERM_MAP[kind]) + 1
+                TERM_MAP[kind][key] = f"[{kind}{chr(64 + n) if n <= 26 else n}]"
+            text = text.replace(term, TERM_MAP[kind][key])
     return text
 
 
@@ -289,8 +319,9 @@ def render_markdown(t: dict) -> str:
 
 
 def main():
-    global NAME_MAP
+    global NAME_MAP, TERM_MAP
     NAME_MAP = {}
+    TERM_MAP = {}
     load_names()
     ids = [int(a) for a in sys.argv[1:]] if len(sys.argv) > 1 else None
     if ids is None:
