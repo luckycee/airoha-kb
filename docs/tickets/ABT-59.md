@@ -49,7 +49,7 @@ Hi [人名5]，
 Hi [人名5]，
 
 *The installation guidance video (online and offline) can be found in 
- https://eservicedocs.airoha.com.tw/display/DC/0001+AB158x_Dev_Env_Setup. Search AB158x_Windows_Dev_Env_Setup.mp4.
+ https://eservicedocs.ABT.com.tw/display/DC/0001+AB158x_Dev_Env_Setup. Search AB158x_Windows_Dev_Env_Setup.mp4.
 
 请把这个视频给我，我没有权限；
 

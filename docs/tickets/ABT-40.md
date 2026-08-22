@@ -30,7 +30,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ### 2022/04/28 18:54 — [人名8]
 
-mcu/doc/Airoha_IoT_SDK_for_1565_1568_API_Reference_Manual
+mcu/doc/ABT_IoT_SDK_for_1565_1568_API_Reference_Manual
 
 这里面有使用说明和sample code
 

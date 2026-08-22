@@ -53,7 +53,7 @@ Hi @[邮箱已隐藏]，
 Hi [人名5]，
 
 AB1565AM参考这个链接方法得出
-https://eservicedocs.airoha.com.tw/pages/viewpage.action?pageId=32606040
+https://eservicedocs.ABT.com.tw/pages/viewpage.action?pageId=32606040
 
 </div>
 

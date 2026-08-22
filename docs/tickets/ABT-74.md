@@ -33,7 +33,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 Hi @[邮箱已隐藏],
 
 我用的是附件tool。
-[附件: AB1565_AB1568_Airoha_Tool_Kit(ATK)_v3.2.2_20220628_145201.7z]
+[附件: AB1565_AB1568_ABT_Tool_Kit(ATK)_v3.2.2_20220628_145201.7z]
 
 </div>
 

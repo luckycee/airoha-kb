@@ -69,7 +69,7 @@ Hi @[邮箱已隐藏]，
 
  
 
-[https://eservicedocs.airoha.com.tw/pages/viewpage.action?pageId=69274566]
+[https://eservicedocs.ABT.com.tw/pages/viewpage.action?pageId=69274566]
 
 </div>
 

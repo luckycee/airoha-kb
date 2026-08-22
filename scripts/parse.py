@@ -116,6 +116,7 @@ def mask_sensitive(text: str) -> str:
     text = mask_names(text)  # 人名词库
     text = mask_terms(text, CUSTOMER_TERMS, "客户")  # 客户名
     text = mask_terms(text, PROJECT_TERMS, "项目")   # 项目/代号
+    text = re.sub(r"(?i)airoha", "ABT", text)  # 公司名 → ABT（注：source URL 不走此函数，保留原始地址）
     text = re.sub(r"\[~([^\]]*)\]", r"@\1", text)  # Jira 提及 [~xxx] → @xxx
     # 工单引用 → 代号 + 交叉链接（.md 相对链接，MkDocs 构建时自动转换为正确 URL）
     def _crosslink(m):

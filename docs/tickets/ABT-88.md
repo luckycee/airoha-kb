@@ -101,7 +101,7 @@ ED 文件如附件
 每组调节不一样的FB 深度，达到使用者体验不一样的场景
 
  
-[附件: Airoha_Adaptive_ANC_2021_ED_for Mixiu.pdf]
+[附件: ABT_Adaptive_ANC_2021_ED_for Mixiu.pdf]
 
 </div>
 

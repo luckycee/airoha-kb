@@ -62,7 +62,7 @@ Hi 帝木，
 
 Hi @[邮箱已隐藏],
 
-v2.11.4 [附件: AB1565_AB1568_Airoha_Tool_Kit(ATK)_v2.11.4_20220420_141504.7z]
+v2.11.4 [附件: AB1565_AB1568_ABT_Tool_Kit(ATK)_v2.11.4_20220420_141504.7z]
 
 ^ANC limter is in engineer mode.^
 

@@ -263,7 +263,7 @@
 | [ABT-504](ABT-504.md) | [\[ABT-500\](ABT-500.md) AB1571D dongle 播放失真问题（后续）](ABT-504.md) | 2025/02/11 16:31 | Closed |
 | [ABT-503](ABT-503.md) | [AB1585 Lossless 相关资讯](ABT-503.md) | 2025/02/11 15:57 | Closed |
 | [ABT-502](ABT-502.md) | [LE audio 使用咨询](ABT-502.md) | 2025/02/10 17:56 | Closed |
-| [ABT-501](ABT-501.md) | [AirohaUnifyUT 无法显示 PEQ102](ABT-501.md) | 2025/01/16 15:45 | Closed |
+| [ABT-501](ABT-501.md) | [ABTUnifyUT 无法显示 PEQ102](ABT-501.md) | 2025/01/16 15:45 | Closed |
 | [ABT-500](ABT-500.md) | [AB1571D dongle 播放失真问题](ABT-500.md) | 2025/01/16 15:26 | Closed |
 | [ABT-499](ABT-499.md) | [AB1571D dongle 无法进行 audio dump](ABT-499.md) | 2025/01/16 15:15 | Closed |
 | [ABT-498](ABT-498.md) | [AB1565 使用USB audio 是不能mute mic](ABT-498.md) | 2025/01/15 18:14 | Closed |
