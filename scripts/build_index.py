@@ -38,8 +38,9 @@ def build():
              "| 工单号 | 主题 | 日期 | 状态 |",
              "|---|---|---|---|"]
     for t in tickets:
-        title = t["title"].replace("|", "｜")
-        lines.append(f"| [{t['id']}]({t['id']}.md) | {title} | {t['date']} | {t['status']} |")
+        title = t["title"].replace("|", "｜").replace("[", "［").replace("]", "］")
+        link = f"{t['id']}/"  # 目录形式（MkDocs 不重写 .md 链接）
+        lines.append(f"| [{t['id']}]({link}) | [{title}]({link}) | {t['date']} | {t['status']} |")
     LIST_FILE.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
     # 首页统计信息
