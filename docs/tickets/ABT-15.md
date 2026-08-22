@@ -1,12 +1,12 @@
 ---
-id: MIUIX1565-15
+id: ABT-15
 title: ULL 被强制退出
 date: 2022/01/11 20:06
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-15
 ---
 
-# MIUIX1565-15 ULL 被强制退出
+# ABT-15 ULL 被强制退出
 
 > 📅 2022/01/11 20:06　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-15)
 

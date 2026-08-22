@@ -17,6 +17,8 @@ RAW_DIR = ROOT / "raw"
 OUT_DIR = ROOT / "docs" / "tickets"
 NAMES_FILE = ROOT / "sensitive_words.txt"  # 敏感词库（不入库，见 .gitignore）
 
+TICKET_PREFIX = "ABT"  # 工单代号（脱敏用途：MIUIX1565 → ABT，展示与文件名使用）
+
 # 系统自动通知账号（回复无人工内容，整条忽略）
 AUTHOR_SKIP = re.compile(r"sysadmin|bot|notification|support-team|admin", re.IGNORECASE)
 # 自动提醒内容关键词（兜底过滤）
@@ -115,6 +117,8 @@ def mask_sensitive(text: str) -> str:
     text = mask_terms(text, CUSTOMER_TERMS, "客户")  # 客户名
     text = mask_terms(text, PROJECT_TERMS, "项目")   # 项目/代号
     text = re.sub(r"\[~([^\]]*)\]", r"@\1", text)  # Jira 提及 [~xxx] → @xxx
+    # 工单引用 → 代号 + 交叉链接（MIUIX1565-499 → [ABT-499](ABT-499.md)）
+    text = re.sub(r"MIUIX1565-(\d+)", rf"[{TICKET_PREFIX}-\1]({TICKET_PREFIX}-\1.md)", text)
     return text
 
 
@@ -269,7 +273,7 @@ def parse_ticket(ticket_id: int) -> dict:
     comments.reverse()  # 原厂数据最新在前，转为正序（最旧在前，阅读习惯）
 
     return {
-        "id": f"MIUIX1565-{ticket_id}",
+        "id": f"{TICKET_PREFIX}-{ticket_id}",
         "title": summary,
         "date": friendly_date,
         "status": status,

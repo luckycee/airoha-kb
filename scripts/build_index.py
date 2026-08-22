@@ -26,7 +26,7 @@ def read_frontmatter(path: Path) -> dict:
 
 def build():
     tickets = []
-    for p in sorted(TICKETS_DIR.glob("MIUIX1565-*.md")):
+    for p in sorted(TICKETS_DIR.glob("ABT-*.md")):
         t = read_frontmatter(p)
         if t["id"]:
             tickets.append(t)
