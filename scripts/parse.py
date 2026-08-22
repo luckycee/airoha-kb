@@ -17,6 +17,11 @@ RAW_DIR = ROOT / "raw"
 OUT_DIR = ROOT / "docs" / "tickets"
 NAMES_FILE = ROOT / "sensitive_names.txt"  # 人名词库（不入库，见 .gitignore）
 
+# 系统自动通知账号（回复无人工内容，整条忽略）
+AUTHOR_SKIP = re.compile(r"sysadmin|bot|notification|support-team|admin", re.IGNORECASE)
+# 自动提醒内容关键词（兜底过滤）
+AUTO_REPLY_PATTERN = re.compile(r"gentle reminder|automated|do not reply|noreply", re.IGNORECASE)
+
 NAMES = []          # 词库（长名优先）
 NAME_GROUPS = []    # 别名组：[[名字...], ...] 同组视为同一人
 NAME_TO_GROUP = {}  # 名字 -> 所属组
@@ -217,15 +222,20 @@ def parse_ticket(ticket_id: int) -> dict:
         if not isinstance(item, dict):
             continue
         itype = item.get("type", "")
-        if itype.endswith("-comment"):  # worker-comment / requester-comment / customer-comment ...
-            body = content_text(item)
-            if body:
-                comments.append({
-                    "date": item.get("friendlyDate", ""),
-                    "author": mask_author(item.get("author", ""),
-                                         "支持工程师" if itype.startswith("worker") else "客户"),
-                    "body": body,
-                })
+        if not itype.endswith("-comment"):  # worker-comment / requester-comment / customer-comment ...
+            continue
+        author_raw = item.get("author", "")
+        if AUTHOR_SKIP.search(author_raw):
+            continue  # 系统自动通知（sysadmin 等），忽略
+        body = content_text(item)
+        if not body or AUTO_REPLY_PATTERN.search(body):
+            continue  # 自动提醒内容，忽略
+        comments.append({
+            "date": item.get("friendlyDate", ""),
+            "author": mask_author(author_raw,
+                                 "支持工程师" if itype.startswith("worker") else "客户"),
+            "body": body,
+        })
     comments.reverse()  # 原厂数据最新在前，转为正序（最旧在前，阅读习惯）
 
     return {
@@ -257,6 +267,8 @@ def render_markdown(t: dict) -> str:
         "## 问题描述",
         "",
         t["description"] or "（无描述）",
+        "",
+        "---",
         "",
     ]
     if t["comments"]:
