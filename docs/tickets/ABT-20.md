@@ -1,0 +1,43 @@
+---
+id: ABT-20
+title: AB1565 测试donle跟earbuds之间延迟
+date: 2022/02/10 10:42
+status: Closed
+source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-20
+---
+
+# ABT-20 AB1565 测试donle跟earbuds之间延迟
+
+> 📅 2022/02/10 10:42　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-20)
+
+## 问题描述
+
+Hi [人名1]，
+
+可以想测试一下dongle跟earbuds之间的延迟，看看具体是多少？能够提供一下具体的测试方法。
+
+---
+
+## 回复记录
+
+<div class="reply odd" markdown="1">
+
+### 2022/02/10 11:15 — [人名1]
+
+Hi,
+
+  可以参考:
+
+  [附件: AB1565_1568 Gaming latency measurement SOP_20210125.pdf]
+
+</div>
+
+<div class="reply even" markdown="1">
+
+### 2022/02/10 11:25 — [人名2]
+
+Hi youwei，
+
+感谢，我先给客户验证一下。
+
+</div>

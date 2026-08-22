@@ -1,0 +1,57 @@
+---
+id: ABT-80
+title: 1565 earbuds_ref_design_ull 不能连接两个手机
+date: 2022/09/08 15:25
+status: Closed
+source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-80
+---
+
+# ABT-80 1565 earbuds_ref_design_ull 不能连接两个手机
+
+> 📅 2022/09/08 15:25　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-80)
+
+## 问题描述
+
+Hi [人名5]，
+
+支持dongle的 earbuds ull，默认开启了EMP的，但是我在测试的时候，怎么都只能连接一个耳机，连接了B手机，A手机自动就断开。但是普通的earbuds 又能连接两个，是不是你们软件上做了限制，必须留一个位置给dongle 啊？如果是的话，连接了dongle， 手机也不能连接了。
+
+./build.sh ab1565_evk earbuds_ref_design_ull
+
+---
+
+## 回复记录
+
+<div class="reply odd" markdown="1">
+
+### 2022/09/09 09:57 — [人名8]
+
+@[邮箱已隐藏]
+
+ULL项目是不可以连2个手机，但可以支持dongle + 1xSP
+
+</div>
+
+<div class="reply even" markdown="1">
+
+### 2022/09/09 10:30 — [人名2]
+
+Hi 杜工，
+
+dongle + 1xSP 需要特别的修改吗？我测试连接dongle就不能手机了。
+
+</div>
+
+<div class="reply odd" markdown="1">
+
+### 2022/09/09 15:18 — [人名9]
+
+Hi Sir
+
+ 
+
+earbuds有dongle only和dongle + 1SP两种link mode。
+
+需要用映射按键ULL_EVENTS_SWITCH_LINK_MODE来切mode
+
+</div>

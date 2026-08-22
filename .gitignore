@@ -16,3 +16,4 @@ site/
 # 系统
 .DS_Store
 Thumbs.db
+full_download.log

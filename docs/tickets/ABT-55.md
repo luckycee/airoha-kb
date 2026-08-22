@@ -1,0 +1,33 @@
+---
+id: ABT-55
+title: AB1565 ull配对问题和回连咨询
+date: 2022/06/20 15:49
+status: Closed
+source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-55
+---
+
+# ABT-55 AB1565 ull配对问题和回连咨询
+
+> 📅 2022/06/20 15:49　🔗 [原始工单链接](https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-55)
+
+## 问题描述
+
+Hi [人名5]，
+
+客户在耳机执行ull配对的时候，插入dongle，发现只有副机回连了，主机要等到ull配对超时才能回连。（现象#1）
+
+他们提出，希望在ull配对时也要回连dongle，我回复做不到。现象#1 我给他们解释是合理的，但是他们需要你们原厂的回复，请看看确认下；
+
+---
+
+## 回复记录
+
+<div class="reply odd" markdown="1">
+
+### 2022/06/21 11:37 — [人名5]
+
+Hi @[邮箱已隐藏]，
+
+麻烦跟客户解释这个需求做不了吧，耳机进入ull pariing后，打的是专门进行配对的包。不是普通的page 包，只能退出了ull paring才能连接
+
+</div>
