@@ -1,0 +1,17 @@
+# 敏感信息 - 绝不提交
+cookies.txt
+
+# 原始 HTML（中间产物，不入库）
+raw/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# MkDocs 构建产物
+site/
+
+# 系统
+.DS_Store
+Thumbs.db

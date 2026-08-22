@@ -1,0 +1,47 @@
+site_name: Airoha 工单知识库
+site_description: Airoha JIRA 服务台工单知识库（MIUIX1565 系列）
+repo_url: https://github.com/yourname/your-repo
+repo_name: 源码仓库
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.instant
+    - navigation.expand
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - toc.integrate
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: 切换深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: 切换浅色模式
+
+plugins:
+  - search:
+      separator: '[\s​\-–—,，。;；:：、！？!?/\\()\[\]{}"'']+'
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+
+extra:
+  social: []
+
+nav:
+  - 首页: index.md
+  - 工单分类: tickets/index.md
+  - 工单列表: tickets/list.md
