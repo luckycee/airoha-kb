@@ -1,0 +1,609 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="ABT 服务台工单知识库（ABT 系列）">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>【[客户L]】 GFP ring device 问题 - ABT 工单知识库</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#abt-602-l-gfp-ring-device" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="ABT 工单知识库" class="md-header__button md-logo" aria-label="ABT 工单知识库" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ABT 工单知识库
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              【[客户L]】 GFP ring device 问题
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换深色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换深色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换浅色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换浅色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/luckycee/airoha-kb" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    源码仓库
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ABT 工单知识库" class="md-nav__button md-logo" aria-label="ABT 工单知识库" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    ABT 工单知识库
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/luckycee/airoha-kb" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    源码仓库
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    工单分类
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    工单列表
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="abt-602-l-gfp-ring-device">ABT-602 【[客户L]】 GFP ring device 问题<a class="headerlink" href="#abt-602-l-gfp-ring-device" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>📅 2025/08/25 20:39　🔗 <a href="https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-602">原始工单链接</a></p>
+</blockquote>
+<div class="ticket-nav">
+<p><a href="../ABT-601/">← 上一个工单：ABT-601</a>　<a href="../ABT-603/">→ 下一个工单：ABT-603</a></p>
+</div>
+<h2 id="_1">回复记录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<div class="reply odd">
+<h3 id="20250825-2040-2">2025/08/25 20:40 — [人名2]<a class="headerlink" href="#20250825-2040-2" title="Permanent link">&para;</a></h3>
+<p>[附件: log.7z]</p>
+<p>[图片: PixPin_2025-08-25_20-24-35.png]</p>
+</div>
+<div class="reply even">
+<h3 id="20250826-1826-100">2025/08/26 18:26 — [人名100]<a class="headerlink" href="#20250826-1826-100" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] </p>
+<p>这是正常行为</p>
+</div>
+<div class="reply odd">
+<h3 id="20250827-1050-2">2025/08/27 10:50 — [人名2]<a class="headerlink" href="#20250827-1050-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名100] ([人名100])，</p>
+<p>Google PixelBuds 没有问题，是他们做了什么特殊处理吗？我们能否改成一样？</p>
+</div>
+<div class="reply even">
+<h3 id="20250827-1826-2">2025/08/27 18:26 — [人名2]<a class="headerlink" href="#20250827-1826-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名100] ([人名100])，</p>
+<p>客户拿到了[客户L] 使用AB1565AM 做的前一代样机，发现不会有这个问题，但是是整机我无法提供log。</p>
+<p>我看到停止 ring 的时候，message 的确下发了两条，能否过滤一下group id ？</p>
+<p>[图片: PixPin_2025-08-27_18-21-31.png]</p>
+<p>[附件: Logging250827_174752_COM43.7z]</p>
+</div>
+<div class="reply odd">
+<h3 id="20250828-0920-100">2025/08/28 09:20 — [人名100]<a class="headerlink" href="#20250828-0920-100" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] </p>
+<p>请问SDK、build cmd是用的什么？</p>
+</div>
+<div class="reply even">
+<h3 id="20250828-0947-100">2025/08/28 09:47 — [人名100]<a class="headerlink" href="#20250828-0947-100" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] </p>
+<p>麻烦用最新的SDK试下呢</p>
+</div>
+<div class="reply odd">
+<h3 id="20250901-0932-100">2025/09/01 09:32 — [人名100]<a class="headerlink" href="#20250901-0932-100" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] </p>
+<p>请问这题还有问题吗？换最新的SDK是否能解决呢？</p>
+<p>谢谢</p>
+</div>
+<div class="reply even">
+<h3 id="20250901-0954-2">2025/09/01 09:54 — [人名2]<a class="headerlink" href="#20250901-0954-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名100] ([人名100])</p>
+<p>上周四、五请假了，SDK5.5.0</p>
+<p>./build.sh ab1571am_evk earbuds_ref_design</p>
+</div>
+<div class="reply odd">
+<h3 id="20250901-0955-2">2025/09/01 09:55 — [人名2]<a class="headerlink" href="#20250901-0955-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名100] ([人名100])，</p>
+<p>需要add-on的，目前的最新的SDK5.6.0 我没有add-on</p>
+</div>
+<div class="reply even">
+<h3 id="20250901-1424-107">2025/09/01 14:24 — [人名107]<a class="headerlink" href="#20250901-1424-107" title="Permanent link">&para;</a></h3>
+<p>hi @[邮箱已隐藏] 你好，目前我们的版本是1.3.0版本，不支持左右耳响铃，需要等到1.3.1版本，才支持左右耳各自响铃，请耐心等待，thanks。</p>
+</div>
+<div class="reply odd">
+<h3 id="20250901-1432-2">2025/09/01 14:32 — [人名2]<a class="headerlink" href="#20250901-1432-2" title="Permanent link">&para;</a></h3>
+<p>Hi yongkang zhao (qq)，</p>
+<p>[客户L] 使用AB1565AM SDK3.8.0 做的前一代样机是支持的，这会是什么情况？</p>
+</div>
+<div class="reply even">
+<h3 id="20250901-1453-107">2025/09/01 14:53 — [人名107]<a class="headerlink" href="#20250901-1453-107" title="Permanent link">&para;</a></h3>
+<p>hi @[邮箱已隐藏] 请问你图中的log文件在哪，找不到你那个时间段的，麻烦说明一下，如果缺了补充一下，如果有发送ring cmd命令也一并发一下，thanks。 [图片: image-2025-09-01-14-52-12-440.png]</p>
+</div>
+<div class="reply odd">
+<h3 id="20250901-1512-2">2025/09/01 15:12 — [人名2]<a class="headerlink" href="#20250901-1512-2" title="Permanent link">&para;</a></h3>
+<p>Hi yongkang zhao (qq)，</p>
+<p>见附件；</p>
+<p>[附件: Logging250827_174752_COM43 (2).7z]</p>
+</div>
+<div class="reply even">
+<h3 id="20250905-1624-2">2025/09/05 16:24 — [人名2]<a class="headerlink" href="#20250905-1624-2" title="Permanent link">&para;</a></h3>
+<p>Hi yongkang zhao (qq)，</p>
+<p>这题还行继续看看</p>
+</div>
+<div class="reply odd">
+<h3 id="20250905-1736-56">2025/09/05 17:36 — [人名56]<a class="headerlink" href="#20250905-1736-56" title="Permanent link">&para;</a></h3>
+<p>HI @[邮箱已隐藏] </p>
+<p>请问是用什么测试的，validator app？ 请提供tool 测试时fail 地方的手机截图 和双耳的log</p>
+<p>thanks</p>
+</div>
+<div class="reply even">
+<h3 id="20250908-0934-100">2025/09/08 09:34 — [人名100]<a class="headerlink" href="#20250908-0934-100" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] </p>
+<p>这题帮忙回答下我们的问题，感谢</p>
+<p>[图片: image-2025-09-08-09-33-37-732.png]</p>
+</div>
+<div class="reply odd">
+<h3 id="20250908-1113-2">2025/09/08 11:13 — [人名2]<a class="headerlink" href="#20250908-1113-2" title="Permanent link">&para;</a></h3>
+<p>[人名56] ([人名56])，</p>
+<p>使用的是Google Pixel 7 手机通过GFP 弹窗连接后，在蓝牙设置界面发起的ring device，稍晚我提供双耳log和截图。</p>
+</div>
+<div class="reply even">
+<h3 id="20250908-1149-2">2025/09/08 11:49 — [人名2]<a class="headerlink" href="#20250908-1149-2" title="Permanent link">&para;</a></h3>
+<p>com41 是右边，con43 是左边。</p>
+<p>如视频，先操作右边，再操作左边，最后取消右边，结果两边都自动取消了；</p>
+<p>[附件: log (2).7z]</p>
+<p>[附件: c1293b97c30a26cfdb60db93b2cf8ff2.mp4]</p>
+</div>
+<div class="reply odd">
+<h3 id="20250908-1733-56">2025/09/08 17:33 — [人名56]<a class="headerlink" href="#20250908-1733-56" title="Permanent link">&para;</a></h3>
+<p>HI @[邮箱已隐藏] </p>
+<p>看log 和 视频 没有看到问题，而且现在我们的ring device 是支持双耳单独控制的了。</p>
+<p>双耳单独控制，SDK 有专门做一个app_find_me_send_find_me_action。 </p>
+<p>看最后你点取消右耳响铃，手机那边自动也把左耳取消了。 你前面接入那个group id  0xff 那个跟这个ring device message 没有关系</p>
+<p>5447    2025-09-08 11:45:28.108199    173917    MCU        255    8    28    [M:apps C:info F: L: ]: [app_fast_pair]  Received ring request from remote device R:0, L:1, duration:255</p>
+<p>6109    2025-09-08 11:45:28.227411    174017    MCU        255    8    28    [M:apps C:info F: L: ]: [app_fast_pair]  Received ring request from remote device R:0, L:0, duration:255</p>
+</div>
+<div class="reply even">
+<h3 id="20250908-1748-2">2025/09/08 17:48 — [人名2]<a class="headerlink" href="#20250908-1748-2" title="Permanent link">&para;</a></h3>
+<p>[人名56] ([人名56])，</p>
+<p>所以问题在手机吗？我不太理解这里</p>
+</div>
+<div class="reply odd">
+<h3 id="20250908-1838-56">2025/09/08 18:38 — [人名56]<a class="headerlink" href="#20250908-1838-56" title="Permanent link">&para;</a></h3>
+<p>HI @[邮箱已隐藏] </p>
+<p>可能手机这里的行为 容易让人 觉得 有点问题把。 目前看视频和 耳机log 是能对上的</p>
+<p>Thanks</p>
+</div>
+<div class="reply even">
+<h3 id="20250908-1903-2">2025/09/08 19:03 — [人名2]<a class="headerlink" href="#20250908-1903-2" title="Permanent link">&para;</a></h3>
+<p>[人名56] ([人名56])，</p>
+<p>是这样的，客户使用AB1565AM SDK3.8.0 做的前一代样机，在相同的手机上是能够只控制自己来暂停的。</p>
+<p>[附件: 185a8d9b09218f76426b8ee572e7f703.mp4]</p>
+</div>
+<div class="reply odd">
+<h3 id="20250909-0904-56">2025/09/09 09:04 — [人名56]<a class="headerlink" href="#20250909-0904-56" title="Permanent link">&para;</a></h3>
+<p>HI @[邮箱已隐藏] </p>
+<p>3，8，0  和现在的5.5.0 的 gfp ring tone 的行为是一样的 【这一块一直没有修改】。 同时看log 没看出来耳机问题，耳机这边处理主要看手机发送的 ring device message 去处理【而且耳机是支持双耳 单独控制的】</p>
+<p>thanks</p>
+</div>
+<div class="reply even">
+<h3 id="20250909-1028-2">2025/09/09 10:28 — [人名2]<a class="headerlink" href="#20250909-1028-2" title="Permanent link">&para;</a></h3>
+<p>[人名56] ([人名56])，</p>
+<p>还有什么可以需要找的问题吗？前代样机能做到，更新的SDK和芯片反而做不到，客户接受不了呀。这个问题需要解决。</p>
+</div>
+<div class="reply odd">
+<h3 id="20250910-1736-56">2025/09/10 17:36 — [人名56]<a class="headerlink" href="#20250910-1736-56" title="Permanent link">&para;</a></h3>
+<p>HI @[邮箱已隐藏] </p>
+<p>请直接升级到SDK5.7.0 </p>
+<p>thanks</p>
+</div>
+<div class="reply even">
+<h3 id="20250910-1755-2">2025/09/10 17:55 — [人名2]<a class="headerlink" href="#20250910-1755-2" title="Permanent link">&para;</a></h3>
+<p>[人名56] ([人名56])，</p>
+<p>客户已经试产两次了，再换SDK的话所有的功能、性能测试全部得重来，能通过patch更新吗？</p>
+</div>
+<div class="reply odd">
+<h3 id="20250910-1759-56">2025/09/10 17:59 — [人名56]<a class="headerlink" href="#20250910-1759-56" title="Permanent link">&para;</a></h3>
+<p>HI @[邮箱已隐藏] </p>
+<p>试看看这个。这个在新SDK 有fix 过的问题，就是GFP这边在ring device 的时候没有notify status 给手机，先看看是不是这个问题 导致的</p>
+<p>patch apply path： mcu\project\ab15xx\apps\bt_audio_common</p>
+<p>[附件: fast_pair_ring_device_notify_patch-[序列号已隐藏].diff]</p>
+</div>
+<div class="reply even">
+<h3 id="20250910-1908-2">2025/09/10 19:08 — [人名2]<a class="headerlink" href="#20250910-1908-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名56] ([人名56])，</p>
+<p>添加了，还是一样的情况；</p>
+<p>[图片: PixPin_2025-09-10_18-53-13.png]</p>
+<p>[图片: PixPin_2025-09-10_18-52-58.png]</p>
+</div>
+<div class="reply odd">
+<h3 id="20250911-1000-56">2025/09/11 10:00 — [人名56]<a class="headerlink" href="#20250911-1000-56" title="Permanent link">&para;</a></h3>
+<p>HI @[邮箱已隐藏] </p>
+<p>我刚用pixel 8内部试了SDK5.5.0 .我们没有测试到你说的这个问题，客户是否自己改了什么？</p>
+<p>[附件: screen-2025[电话已隐藏].mp4]</p>
+</div>
+<div class="reply even">
+<h3 id="20250911-1037-2">2025/09/11 10:37 — [人名2]<a class="headerlink" href="#20250911-1037-2" title="Permanent link">&para;</a></h3>
+<p>[人名56] ([人名56])，</p>
+<p>好的，我再试一下demo code</p>
+</div>
+<div class="reply odd">
+<h3 id="20250911-1324-56">2025/09/11 13:24 — [人名56]<a class="headerlink" href="#20250911-1324-56" title="Permanent link">&para;</a></h3>
+<p>HI @[邮箱已隐藏] </p>
+<p>ok，你们再看看把。我直接用5.5.0 SDK 跑起来是没有问题的</p>
+<p>thanks</p>
+</div>
+<div class="reply even">
+<h3 id="20250911-1813-2">2025/09/11 18:13 — [人名2]<a class="headerlink" href="#20250911-1813-2" title="Permanent link">&para;</a></h3>
+<p>[人名56] ([人名56])，</p>
+<p>是客制化导致的问题，感谢。</p>
+</div>
+<div class="ticket-nav">
+<p><a href="../ABT-601/">← 上一个工单：ABT-601</a>　<a href="../ABT-603/">→ 下一个工单：ABT-603</a></p>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.expand", "navigation.indexes", "search.suggest", "search.highlight", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

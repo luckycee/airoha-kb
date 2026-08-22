@@ -1,0 +1,6349 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="ABT 服务台工单知识库（ABT 系列）">
+      
+      
+      
+      
+        <link rel="prev" href="../">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>工单列表 - ABT 工单知识库</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="ABT 工单知识库" class="md-header__button md-logo" aria-label="ABT 工单知识库" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ABT 工单知识库
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              工单列表
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换深色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换深色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换浅色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换浅色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/luckycee/airoha-kb" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    源码仓库
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ABT 工单知识库" class="md-nav__button md-logo" aria-label="ABT 工单知识库" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    ABT 工单知识库
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/luckycee/airoha-kb" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    源码仓库
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    工单分类
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    工单列表
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="_1">工单列表<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>共 985 条工单（ABT-999 ~ ABT-15）。</p>
+<table>
+<thead>
+<tr>
+<th>工单号</th>
+<th>主题</th>
+<th>日期</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../ABT-999/">ABT-999</a></td>
+<td><a href="../ABT-999/">MIUIX1565-999</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-998/">ABT-998</a></td>
+<td><a href="../ABT-998/">MIUIX1565-998</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-997/">ABT-997</a></td>
+<td><a href="../ABT-997/">MIUIX1565-997</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-996/">ABT-996</a></td>
+<td><a href="../ABT-996/">MIUIX1565-996</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-995/">ABT-995</a></td>
+<td><a href="../ABT-995/">MIUIX1565-995</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-994/">ABT-994</a></td>
+<td><a href="../ABT-994/">MIUIX1565-994</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-993/">ABT-993</a></td>
+<td><a href="../ABT-993/">MIUIX1565-993</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-992/">ABT-992</a></td>
+<td><a href="../ABT-992/">MIUIX1565-992</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-991/">ABT-991</a></td>
+<td><a href="../ABT-991/">MIUIX1565-991</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-990/">ABT-990</a></td>
+<td><a href="../ABT-990/">MIUIX1565-990</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-989/">ABT-989</a></td>
+<td><a href="../ABT-989/">MIUIX1565-989</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-988/">ABT-988</a></td>
+<td><a href="../ABT-988/">MIUIX1565-988</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-987/">ABT-987</a></td>
+<td><a href="../ABT-987/">MIUIX1565-987</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-986/">ABT-986</a></td>
+<td><a href="../ABT-986/">MIUIX1565-986</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-985/">ABT-985</a></td>
+<td><a href="../ABT-985/">MIUIX1565-985</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-984/">ABT-984</a></td>
+<td><a href="../ABT-984/">MIUIX1565-984</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-983/">ABT-983</a></td>
+<td><a href="../ABT-983/">MIUIX1565-983</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-982/">ABT-982</a></td>
+<td><a href="../ABT-982/">MIUIX1565-982</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-981/">ABT-981</a></td>
+<td><a href="../ABT-981/">MIUIX1565-981</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-980/">ABT-980</a></td>
+<td><a href="../ABT-980/">MIUIX1565-980</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-979/">ABT-979</a></td>
+<td><a href="../ABT-979/">MIUIX1565-979</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-978/">ABT-978</a></td>
+<td><a href="../ABT-978/">MIUIX1565-978</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-977/">ABT-977</a></td>
+<td><a href="../ABT-977/">MIUIX1565-977</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-976/">ABT-976</a></td>
+<td><a href="../ABT-976/">MIUIX1565-976</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-975/">ABT-975</a></td>
+<td><a href="../ABT-975/">MIUIX1565-975</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-974/">ABT-974</a></td>
+<td><a href="../ABT-974/">MIUIX1565-974</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-973/">ABT-973</a></td>
+<td><a href="../ABT-973/">MIUIX1565-973</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-972/">ABT-972</a></td>
+<td><a href="../ABT-972/">MIUIX1565-972</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-971/">ABT-971</a></td>
+<td><a href="../ABT-971/">MIUIX1565-971</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-970/">ABT-970</a></td>
+<td><a href="../ABT-970/">MIUIX1565-970</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-969/">ABT-969</a></td>
+<td><a href="../ABT-969/">MIUIX1565-969</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-968/">ABT-968</a></td>
+<td><a href="../ABT-968/">MIUIX1565-968</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-967/">ABT-967</a></td>
+<td><a href="../ABT-967/">MIUIX1565-967</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-966/">ABT-966</a></td>
+<td><a href="../ABT-966/">MIUIX1565-966</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-965/">ABT-965</a></td>
+<td><a href="../ABT-965/">MIUIX1565-965</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-964/">ABT-964</a></td>
+<td><a href="../ABT-964/">MIUIX1565-964</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-963/">ABT-963</a></td>
+<td><a href="../ABT-963/">MIUIX1565-963</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-962/">ABT-962</a></td>
+<td><a href="../ABT-962/">MIUIX1565-962</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-961/">ABT-961</a></td>
+<td><a href="../ABT-961/">MIUIX1565-961</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-960/">ABT-960</a></td>
+<td><a href="../ABT-960/">MIUIX1565-960</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-959/">ABT-959</a></td>
+<td><a href="../ABT-959/">MIUIX1565-959</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-958/">ABT-958</a></td>
+<td><a href="../ABT-958/">MIUIX1565-958</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-957/">ABT-957</a></td>
+<td><a href="../ABT-957/">MIUIX1565-957</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-956/">ABT-956</a></td>
+<td><a href="../ABT-956/">MIUIX1565-956</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-955/">ABT-955</a></td>
+<td><a href="../ABT-955/">MIUIX1565-955</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-954/">ABT-954</a></td>
+<td><a href="../ABT-954/">MIUIX1565-954</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-953/">ABT-953</a></td>
+<td><a href="../ABT-953/">MIUIX1565-953</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-952/">ABT-952</a></td>
+<td><a href="../ABT-952/">MIUIX1565-952</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-951/">ABT-951</a></td>
+<td><a href="../ABT-951/">MIUIX1565-951</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-950/">ABT-950</a></td>
+<td><a href="../ABT-950/">MIUIX1565-950</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-949/">ABT-949</a></td>
+<td><a href="../ABT-949/">MIUIX1565-949</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-948/">ABT-948</a></td>
+<td><a href="../ABT-948/">MIUIX1565-948</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-947/">ABT-947</a></td>
+<td><a href="../ABT-947/">MIUIX1565-947</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-946/">ABT-946</a></td>
+<td><a href="../ABT-946/">MIUIX1565-946</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-945/">ABT-945</a></td>
+<td><a href="../ABT-945/">MIUIX1565-945</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-944/">ABT-944</a></td>
+<td><a href="../ABT-944/">MIUIX1565-944</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-943/">ABT-943</a></td>
+<td><a href="../ABT-943/">MIUIX1565-943</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-942/">ABT-942</a></td>
+<td><a href="../ABT-942/">MIUIX1565-942</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-941/">ABT-941</a></td>
+<td><a href="../ABT-941/">MIUIX1565-941</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-940/">ABT-940</a></td>
+<td><a href="../ABT-940/">MIUIX1565-940</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-939/">ABT-939</a></td>
+<td><a href="../ABT-939/">MIUIX1565-939</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-938/">ABT-938</a></td>
+<td><a href="../ABT-938/">MIUIX1565-938</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-937/">ABT-937</a></td>
+<td><a href="../ABT-937/">MIUIX1565-937</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-936/">ABT-936</a></td>
+<td><a href="../ABT-936/">MIUIX1565-936</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-935/">ABT-935</a></td>
+<td><a href="../ABT-935/">MIUIX1565-935</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-934/">ABT-934</a></td>
+<td><a href="../ABT-934/">MIUIX1565-934</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-933/">ABT-933</a></td>
+<td><a href="../ABT-933/">MIUIX1565-933</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-932/">ABT-932</a></td>
+<td><a href="../ABT-932/">MIUIX1565-932</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-931/">ABT-931</a></td>
+<td><a href="../ABT-931/">MIUIX1565-931</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-930/">ABT-930</a></td>
+<td><a href="../ABT-930/">MIUIX1565-930</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-929/">ABT-929</a></td>
+<td><a href="../ABT-929/">MIUIX1565-929</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-928/">ABT-928</a></td>
+<td><a href="../ABT-928/">MIUIX1565-928</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-927/">ABT-927</a></td>
+<td><a href="../ABT-927/">MIUIX1565-927</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-926/">ABT-926</a></td>
+<td><a href="../ABT-926/">MIUIX1565-926</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-925/">ABT-925</a></td>
+<td><a href="../ABT-925/">MIUIX1565-925</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-924/">ABT-924</a></td>
+<td><a href="../ABT-924/">MIUIX1565-924</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-923/">ABT-923</a></td>
+<td><a href="../ABT-923/">MIUIX1565-923</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-922/">ABT-922</a></td>
+<td><a href="../ABT-922/">MIUIX1565-922</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-921/">ABT-921</a></td>
+<td><a href="../ABT-921/">MIUIX1565-921</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-920/">ABT-920</a></td>
+<td><a href="../ABT-920/">MIUIX1565-920</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-919/">ABT-919</a></td>
+<td><a href="../ABT-919/">MIUIX1565-919</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-918/">ABT-918</a></td>
+<td><a href="../ABT-918/">MIUIX1565-918</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-917/">ABT-917</a></td>
+<td><a href="../ABT-917/">MIUIX1565-917</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-916/">ABT-916</a></td>
+<td><a href="../ABT-916/">MIUIX1565-916</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-915/">ABT-915</a></td>
+<td><a href="../ABT-915/">MIUIX1565-915</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-914/">ABT-914</a></td>
+<td><a href="../ABT-914/">MIUIX1565-914</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-913/">ABT-913</a></td>
+<td><a href="../ABT-913/">MIUIX1565-913</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-912/">ABT-912</a></td>
+<td><a href="../ABT-912/">MIUIX1565-912</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-911/">ABT-911</a></td>
+<td><a href="../ABT-911/">MIUIX1565-911</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-910/">ABT-910</a></td>
+<td><a href="../ABT-910/">MIUIX1565-910</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-909/">ABT-909</a></td>
+<td><a href="../ABT-909/">MIUIX1565-909</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-908/">ABT-908</a></td>
+<td><a href="../ABT-908/">MIUIX1565-908</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-907/">ABT-907</a></td>
+<td><a href="../ABT-907/">MIUIX1565-907</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-906/">ABT-906</a></td>
+<td><a href="../ABT-906/">MIUIX1565-906</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-905/">ABT-905</a></td>
+<td><a href="../ABT-905/">MIUIX1565-905</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-904/">ABT-904</a></td>
+<td><a href="../ABT-904/">MIUIX1565-904</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-903/">ABT-903</a></td>
+<td><a href="../ABT-903/">MIUIX1565-903</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-902/">ABT-902</a></td>
+<td><a href="../ABT-902/">MIUIX1565-902</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-901/">ABT-901</a></td>
+<td><a href="../ABT-901/">MIUIX1565-901</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-900/">ABT-900</a></td>
+<td><a href="../ABT-900/">MIUIX1565-900</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-899/">ABT-899</a></td>
+<td><a href="../ABT-899/">MIUIX1565-899</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-898/">ABT-898</a></td>
+<td><a href="../ABT-898/">MIUIX1565-898</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-897/">ABT-897</a></td>
+<td><a href="../ABT-897/">MIUIX1565-897</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-896/">ABT-896</a></td>
+<td><a href="../ABT-896/">MIUIX1565-896</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-895/">ABT-895</a></td>
+<td><a href="../ABT-895/">MIUIX1565-895</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-894/">ABT-894</a></td>
+<td><a href="../ABT-894/">MIUIX1565-894</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-893/">ABT-893</a></td>
+<td><a href="../ABT-893/">MIUIX1565-893</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-892/">ABT-892</a></td>
+<td><a href="../ABT-892/">MIUIX1565-892</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-891/">ABT-891</a></td>
+<td><a href="../ABT-891/">MIUIX1565-891</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-890/">ABT-890</a></td>
+<td><a href="../ABT-890/">MIUIX1565-890</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-889/">ABT-889</a></td>
+<td><a href="../ABT-889/">MIUIX1565-889</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-888/">ABT-888</a></td>
+<td><a href="../ABT-888/">MIUIX1565-888</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-887/">ABT-887</a></td>
+<td><a href="../ABT-887/">MIUIX1565-887</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-886/">ABT-886</a></td>
+<td><a href="../ABT-886/">MIUIX1565-886</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-885/">ABT-885</a></td>
+<td><a href="../ABT-885/">MIUIX1565-885</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-884/">ABT-884</a></td>
+<td><a href="../ABT-884/">MIUIX1565-884</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-883/">ABT-883</a></td>
+<td><a href="../ABT-883/">MIUIX1565-883</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-882/">ABT-882</a></td>
+<td><a href="../ABT-882/">MIUIX1565-882</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-881/">ABT-881</a></td>
+<td><a href="../ABT-881/">MIUIX1565-881</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-880/">ABT-880</a></td>
+<td><a href="../ABT-880/">MIUIX1565-880</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-879/">ABT-879</a></td>
+<td><a href="../ABT-879/">MIUIX1565-879</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-878/">ABT-878</a></td>
+<td><a href="../ABT-878/">MIUIX1565-878</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-877/">ABT-877</a></td>
+<td><a href="../ABT-877/">MIUIX1565-877</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-876/">ABT-876</a></td>
+<td><a href="../ABT-876/">MIUIX1565-876</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-875/">ABT-875</a></td>
+<td><a href="../ABT-875/">MIUIX1565-875</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-874/">ABT-874</a></td>
+<td><a href="../ABT-874/">MIUIX1565-874</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-873/">ABT-873</a></td>
+<td><a href="../ABT-873/">MIUIX1565-873</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-872/">ABT-872</a></td>
+<td><a href="../ABT-872/">MIUIX1565-872</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-871/">ABT-871</a></td>
+<td><a href="../ABT-871/">MIUIX1565-871</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-870/">ABT-870</a></td>
+<td><a href="../ABT-870/">MIUIX1565-870</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-869/">ABT-869</a></td>
+<td><a href="../ABT-869/">MIUIX1565-869</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-868/">ABT-868</a></td>
+<td><a href="../ABT-868/">MIUIX1565-868</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-867/">ABT-867</a></td>
+<td><a href="../ABT-867/">MIUIX1565-867</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-866/">ABT-866</a></td>
+<td><a href="../ABT-866/">MIUIX1565-866</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-865/">ABT-865</a></td>
+<td><a href="../ABT-865/">MIUIX1565-865</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-864/">ABT-864</a></td>
+<td><a href="../ABT-864/">MIUIX1565-864</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-863/">ABT-863</a></td>
+<td><a href="../ABT-863/">MIUIX1565-863</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-862/">ABT-862</a></td>
+<td><a href="../ABT-862/">MIUIX1565-862</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-861/">ABT-861</a></td>
+<td><a href="../ABT-861/">MIUIX1565-861</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-860/">ABT-860</a></td>
+<td><a href="../ABT-860/">MIUIX1565-860</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-859/">ABT-859</a></td>
+<td><a href="../ABT-859/">MIUIX1565-859</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-858/">ABT-858</a></td>
+<td><a href="../ABT-858/">MIUIX1565-858</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-857/">ABT-857</a></td>
+<td><a href="../ABT-857/">MIUIX1565-857</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-856/">ABT-856</a></td>
+<td><a href="../ABT-856/">MIUIX1565-856</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-855/">ABT-855</a></td>
+<td><a href="../ABT-855/">MIUIX1565-855</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-854/">ABT-854</a></td>
+<td><a href="../ABT-854/">MIUIX1565-854</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-853/">ABT-853</a></td>
+<td><a href="../ABT-853/">MIUIX1565-853</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-852/">ABT-852</a></td>
+<td><a href="../ABT-852/">MIUIX1565-852</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-851/">ABT-851</a></td>
+<td><a href="../ABT-851/">MIUIX1565-851</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-850/">ABT-850</a></td>
+<td><a href="../ABT-850/">MIUIX1565-850</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-849/">ABT-849</a></td>
+<td><a href="../ABT-849/">MIUIX1565-849</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-848/">ABT-848</a></td>
+<td><a href="../ABT-848/">MIUIX1565-848</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-847/">ABT-847</a></td>
+<td><a href="../ABT-847/">MIUIX1565-847</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-846/">ABT-846</a></td>
+<td><a href="../ABT-846/">MIUIX1565-846</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-845/">ABT-845</a></td>
+<td><a href="../ABT-845/">MIUIX1565-845</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-844/">ABT-844</a></td>
+<td><a href="../ABT-844/">MIUIX1565-844</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-843/">ABT-843</a></td>
+<td><a href="../ABT-843/">MIUIX1565-843</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-842/">ABT-842</a></td>
+<td><a href="../ABT-842/">MIUIX1565-842</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-841/">ABT-841</a></td>
+<td><a href="../ABT-841/">MIUIX1565-841</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-840/">ABT-840</a></td>
+<td><a href="../ABT-840/">MIUIX1565-840</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-839/">ABT-839</a></td>
+<td><a href="../ABT-839/">MIUIX1565-839</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-838/">ABT-838</a></td>
+<td><a href="../ABT-838/">MIUIX1565-838</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-837/">ABT-837</a></td>
+<td><a href="../ABT-837/">MIUIX1565-837</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-836/">ABT-836</a></td>
+<td><a href="../ABT-836/">MIUIX1565-836</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-835/">ABT-835</a></td>
+<td><a href="../ABT-835/">MIUIX1565-835</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-834/">ABT-834</a></td>
+<td><a href="../ABT-834/">MIUIX1565-834</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-833/">ABT-833</a></td>
+<td><a href="../ABT-833/">MIUIX1565-833</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-832/">ABT-832</a></td>
+<td><a href="../ABT-832/">MIUIX1565-832</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-831/">ABT-831</a></td>
+<td><a href="../ABT-831/">MIUIX1565-831</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-830/">ABT-830</a></td>
+<td><a href="../ABT-830/">MIUIX1565-830</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-829/">ABT-829</a></td>
+<td><a href="../ABT-829/">MIUIX1565-829</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-828/">ABT-828</a></td>
+<td><a href="../ABT-828/">MIUIX1565-828</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-827/">ABT-827</a></td>
+<td><a href="../ABT-827/">MIUIX1565-827</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-826/">ABT-826</a></td>
+<td><a href="../ABT-826/">MIUIX1565-826</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-825/">ABT-825</a></td>
+<td><a href="../ABT-825/">MIUIX1565-825</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-824/">ABT-824</a></td>
+<td><a href="../ABT-824/">MIUIX1565-824</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-823/">ABT-823</a></td>
+<td><a href="../ABT-823/">MIUIX1565-823</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-822/">ABT-822</a></td>
+<td><a href="../ABT-822/">MIUIX1565-822</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-821/">ABT-821</a></td>
+<td><a href="../ABT-821/">MIUIX1565-821</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-820/">ABT-820</a></td>
+<td><a href="../ABT-820/">MIUIX1565-820</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-819/">ABT-819</a></td>
+<td><a href="../ABT-819/">MIUIX1565-819</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-818/">ABT-818</a></td>
+<td><a href="../ABT-818/">MIUIX1565-818</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-817/">ABT-817</a></td>
+<td><a href="../ABT-817/">MIUIX1565-817</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-816/">ABT-816</a></td>
+<td><a href="../ABT-816/">MIUIX1565-816</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-815/">ABT-815</a></td>
+<td><a href="../ABT-815/">MIUIX1565-815</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-814/">ABT-814</a></td>
+<td><a href="../ABT-814/">MIUIX1565-814</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-813/">ABT-813</a></td>
+<td><a href="../ABT-813/">MIUIX1565-813</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-812/">ABT-812</a></td>
+<td><a href="../ABT-812/">MIUIX1565-812</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-811/">ABT-811</a></td>
+<td><a href="../ABT-811/">MIUIX1565-811</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-810/">ABT-810</a></td>
+<td><a href="../ABT-810/">MIUIX1565-810</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-809/">ABT-809</a></td>
+<td><a href="../ABT-809/">MIUIX1565-809</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-808/">ABT-808</a></td>
+<td><a href="../ABT-808/">MIUIX1565-808</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-807/">ABT-807</a></td>
+<td><a href="../ABT-807/">MIUIX1565-807</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-806/">ABT-806</a></td>
+<td><a href="../ABT-806/">MIUIX1565-806</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-805/">ABT-805</a></td>
+<td><a href="../ABT-805/">MIUIX1565-805</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-804/">ABT-804</a></td>
+<td><a href="../ABT-804/">MIUIX1565-804</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-803/">ABT-803</a></td>
+<td><a href="../ABT-803/">MIUIX1565-803</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-802/">ABT-802</a></td>
+<td><a href="../ABT-802/">MIUIX1565-802</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-801/">ABT-801</a></td>
+<td><a href="../ABT-801/">MIUIX1565-801</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-800/">ABT-800</a></td>
+<td><a href="../ABT-800/">MIUIX1565-800</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-799/">ABT-799</a></td>
+<td><a href="../ABT-799/">MIUIX1565-799</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-798/">ABT-798</a></td>
+<td><a href="../ABT-798/">MIUIX1565-798</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-797/">ABT-797</a></td>
+<td><a href="../ABT-797/">MIUIX1565-797</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-796/">ABT-796</a></td>
+<td><a href="../ABT-796/">MIUIX1565-796</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-795/">ABT-795</a></td>
+<td><a href="../ABT-795/">MIUIX1565-795</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-794/">ABT-794</a></td>
+<td><a href="../ABT-794/">MIUIX1565-794</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-793/">ABT-793</a></td>
+<td><a href="../ABT-793/">MIUIX1565-793</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-792/">ABT-792</a></td>
+<td><a href="../ABT-792/">MIUIX1565-792</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-791/">ABT-791</a></td>
+<td><a href="../ABT-791/">MIUIX1565-791</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-790/">ABT-790</a></td>
+<td><a href="../ABT-790/">MIUIX1565-790</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-789/">ABT-789</a></td>
+<td><a href="../ABT-789/">MIUIX1565-789</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-788/">ABT-788</a></td>
+<td><a href="../ABT-788/">MIUIX1565-788</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-787/">ABT-787</a></td>
+<td><a href="../ABT-787/">MIUIX1565-787</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-786/">ABT-786</a></td>
+<td><a href="../ABT-786/">MIUIX1565-786</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-785/">ABT-785</a></td>
+<td><a href="../ABT-785/">MIUIX1565-785</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-784/">ABT-784</a></td>
+<td><a href="../ABT-784/">MIUIX1565-784</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-783/">ABT-783</a></td>
+<td><a href="../ABT-783/">【[客户B]】AB1571AM smart adaptive ANC 切换</a></td>
+<td>2026/08/21 14:49</td>
+<td>Working</td>
+</tr>
+<tr>
+<td><a href="../ABT-782/">ABT-782</a></td>
+<td><a href="../ABT-782/">Teufel 项目请求 smart adaptive ANC</a></td>
+<td>2026/08/21 14:14</td>
+<td>Working</td>
+</tr>
+<tr>
+<td><a href="../ABT-781/">ABT-781</a></td>
+<td><a href="../ABT-781/">【[客户B]】AB1571AM VIVI_PT无法调试</a></td>
+<td>2026/08/20 16:19</td>
+<td>Working</td>
+</tr>
+<tr>
+<td><a href="../ABT-780/">ABT-780</a></td>
+<td><a href="../ABT-780/">【[客户B]】提供网络安全认证</a></td>
+<td>2026/08/13 17:11</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-779/">ABT-779</a></td>
+<td><a href="../ABT-779/">【[客户A]】修改ULD bitrate</a></td>
+<td>2026/08/06 15:47</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-778/">ABT-778</a></td>
+<td><a href="../ABT-778/">Teufel 项目请求viviPT add  on</a></td>
+<td>2026/08/06 11:10</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-777/">ABT-777</a></td>
+<td><a href="../ABT-777/">AB1577M line in 输入到输出的延时咨询</a></td>
+<td>2026/08/05 10:59</td>
+<td>Working</td>
+</tr>
+<tr>
+<td><a href="../ABT-776/">ABT-776</a></td>
+<td><a href="../ABT-776/">【[客户B]】AB1571AM LE audio 测试咨询</a></td>
+<td>2026/08/03 17:33</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-775/">ABT-775</a></td>
+<td><a href="../ABT-775/">AB1571AM earbuds_ref_design 支持ULL3</a></td>
+<td>2026/08/03 10:20</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-774/">ABT-774</a></td>
+<td><a href="../ABT-774/">Android App 连接TWS的单边无法获取版本号</a></td>
+<td>2026/07/24 16:07</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-773/">ABT-773</a></td>
+<td><a href="../ABT-773/">【[客户A]】加入Dolby 之后宕机</a></td>
+<td>2026/07/23 18:10</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-772/">ABT-772</a></td>
+<td><a href="../ABT-772/">【[客户B]】Teufel 申请 Xtensa license</a></td>
+<td>2026/07/21 20:36</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-771/">ABT-771</a></td>
+<td><a href="../ABT-771/">【[客户B]】AB1592 ABT_BUDS_LINK_[人名5]P 功能咨询</a></td>
+<td>2026/07/20 15:12</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-770/">ABT-770</a></td>
+<td><a href="../ABT-770/">【[客户B]】SBC 修改MTU</a></td>
+<td>2026/07/20 11:15</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-769/">ABT-769</a></td>
+<td><a href="../ABT-769/">松下（Panasonic）1577S 项目申请adaptive ANC</a></td>
+<td>2026/07/15 17:10</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-768/">ABT-768</a></td>
+<td><a href="../ABT-768/">AB1565 在ANC on 下切换ANC off 后，通话无声</a></td>
+<td>2026/07/15 14:37</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-767/">ABT-767</a></td>
+<td><a href="../ABT-767/">【[客户B]】添加第三方通话算法dump录音数据</a></td>
+<td>2026/07/08 19:27</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-766/">ABT-766</a></td>
+<td><a href="../ABT-766/">AB1577M line in 改为 SLAVE_IN（后续2）</a></td>
+<td>2026/07/08 11:30</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-765/">ABT-765</a></td>
+<td><a href="../ABT-765/">AB157x系列License申请(Ubuntu)</a></td>
+<td>2026/07/07 11:00</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-764/">ABT-764</a></td>
+<td><a href="../ABT-764/">AB1577S 自适应降噪SDK</a></td>
+<td>2026/07/06 11:40</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-763/">ABT-763</a></td>
+<td><a href="../ABT-763/">【[客户A]】AB1577AM SDK5.7.0 动态修改LDAC sample rate(后续)</a></td>
+<td>2026/07/03 20:19</td>
+<td>Working</td>
+</tr>
+<tr>
+<td><a href="../ABT-762/">ABT-762</a></td>
+<td><a href="../ABT-762/">AB1565系列License申请</a></td>
+<td>2026/07/02 11:14</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-761/">ABT-761</a></td>
+<td><a href="../ABT-761/">AB157x系列License申请</a></td>
+<td>2026/07/01 11:07</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-760/">ABT-760</a></td>
+<td><a href="../ABT-760/">AB1565系列License申请</a></td>
+<td>2026/07/01 11:06</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-759/">ABT-759</a></td>
+<td><a href="../ABT-759/">【[客户N]】USB Audio 通话mic 不起作用</a></td>
+<td>2026/06/29 13:01</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-758/">ABT-758</a></td>
+<td><a href="../ABT-758/">AB1577M line in 改为 SLAVE_IN（后续）</a></td>
+<td>2026/06/29 10:12</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-757/">ABT-757</a></td>
+<td><a href="../ABT-757/">AB1577M USB Audio I2S输出 96K问题</a></td>
+<td>2026/06/25 13:57</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-756/">ABT-756</a></td>
+<td><a href="../ABT-756/">【[客户N]】AB1577AM SDK5.7.0 line in信号检测</a></td>
+<td>2026/06/24 15:29</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-755/">ABT-755</a></td>
+<td><a href="../ABT-755/">【[客户L]】咨询GPL V3, LGPL v3</a></td>
+<td>2026/06/24 11:19</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-754/">ABT-754</a></td>
+<td><a href="../ABT-754/">【[客户F]】AB1571AM DSP porting SOP</a></td>
+<td>2026/06/23 14:09</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-753/">ABT-753</a></td>
+<td><a href="../ABT-753/">AB1571D I2S output 咨询</a></td>
+<td>2026/06/22 17:31</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-752/">ABT-752</a></td>
+<td><a href="../ABT-752/">【[客户N]】[DSP Occurs Exception: Stack Overflow, PC Address:0x0806a6ba,Func:Reserve]</a></td>
+<td>2026/06/16 15:50</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-751/">ABT-751</a></td>
+<td><a href="../ABT-751/">AB1571AM sidetone 无法开启</a></td>
+<td>2026/06/16 15:07</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-750/">ABT-750</a></td>
+<td><a href="../ABT-750/">AB1577M line in 改为 SLAVE_IN</a></td>
+<td>2026/06/12 15:16</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-749/">ABT-749</a></td>
+<td><a href="../ABT-749/">AB1565系列License申请</a></td>
+<td>2026/06/11 17:12</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-748/">ABT-748</a></td>
+<td><a href="../ABT-748/">AB1585 使用I2S出现error log</a></td>
+<td>2026/06/11 16:09</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-747/">ABT-747</a></td>
+<td><a href="../ABT-747/">AB1571AM 网络安全认证EN 18031-1:2024</a></td>
+<td>2026/06/11 15:07</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-746/">ABT-746</a></td>
+<td><a href="../ABT-746/">AB1571AM  LC3 频响异常</a></td>
+<td>2026/06/09 18:24</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-745/">ABT-745</a></td>
+<td><a href="../ABT-745/">AB1565AM config tool 设置 WND 参数无效</a></td>
+<td>2026/06/09 14:58</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-744/">ABT-744</a></td>
+<td><a href="../ABT-744/">[客户F]_A162_AB1571AM调三麦通话麦克风无法加大</a></td>
+<td>2026/06/09 14:48</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-743/">ABT-743</a></td>
+<td><a href="../ABT-743/">AB1565A 空间音频咨询</a></td>
+<td>2026/06/08 10:58</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-742/">ABT-742</a></td>
+<td><a href="../ABT-742/">AB1571AM 关盖后再开盖出现 assert 宕机</a></td>
+<td>2026/06/05 17:54</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-741/">ABT-741</a></td>
+<td><a href="../ABT-741/">【[客户N]】添加LDAC后不同source 表现不一致</a></td>
+<td>2026/06/05 15:06</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-740/">ABT-740</a></td>
+<td><a href="../ABT-740/">[DSP Assert: Assert Failed, filename:peq_interface_sw.c,line:521]</a></td>
+<td>2026/06/05 11:37</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-739/">ABT-739</a></td>
+<td><a href="../ABT-739/">AB1565AM 充电指示灯慢</a></td>
+<td>2026/06/03 15:31</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-738/">ABT-738</a></td>
+<td><a href="../ABT-738/">AB1571AM 手机兼容性测试报告</a></td>
+<td>2026/06/03 11:00</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-737/">ABT-737</a></td>
+<td><a href="../ABT-737/">AB1577AM+AB1571D ULL2/ULL3 兼容性报告</a></td>
+<td>2026/06/01 10:20</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-736/">ABT-736</a></td>
+<td><a href="../ABT-736/">Auracast 功能咨询</a></td>
+<td>2026/05/29 15:18</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-735/">ABT-735</a></td>
+<td><a href="../ABT-735/">AB1565AM headset link loss 回来之后播放没有声音</a></td>
+<td>2026/05/19 12:18</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-734/">ABT-734</a></td>
+<td><a href="../ABT-734/">AB1571AM captouch 样机一致性和校准</a></td>
+<td>2026/05/14 16:10</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-733/">ABT-733</a></td>
+<td><a href="../ABT-733/">Auracast 无法控制音量大小</a></td>
+<td>2026/05/14 14:49</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-732/">ABT-732</a></td>
+<td><a href="../ABT-732/">AB1571AM SDK5.9.0 关闭AAC 后播放音乐宕机</a></td>
+<td>2026/05/06 18:08</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-731/">ABT-731</a></td>
+<td><a href="../ABT-731/">AB1577S_V5.8.0 自适应ANC相关咨询</a></td>
+<td>2026/04/28 17:45</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-730/">ABT-730</a></td>
+<td><a href="../ABT-730/">【[客户N]】LDAC+Dolby 概率性没有声音</a></td>
+<td>2026/04/27 16:45</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-729/">ABT-729</a></td>
+<td><a href="../ABT-729/">【[客户N]】AB1577AM SDK5.7.0 动态修改LDAC sample rate</a></td>
+<td>2026/04/23 17:59</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-728/">ABT-728</a></td>
+<td><a href="../ABT-728/">AB1565X SDK5.9.0 开启AINR 后宕机</a></td>
+<td>2026/04/21 11:10</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-727/">ABT-727</a></td>
+<td><a href="../ABT-727/">AB157X 设置 2+1 mic 宕机</a></td>
+<td>2026/04/16 15:31</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-726/">ABT-726</a></td>
+<td><a href="../ABT-726/">AB1565AM_KC认证LE 2M模式，2402 MHz, 2426 MHz, 2480 MHz  这3个信号 没有出来，这个问题是怎么解决？</a></td>
+<td>2026/04/13 17:03</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-725/">ABT-725</a></td>
+<td><a href="../ABT-725/">【[客户N]】ANC 调试切换降噪曲线不一致</a></td>
+<td>2026/04/03 15:25</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-724/">ABT-724</a></td>
+<td><a href="../ABT-724/">AB1585 ULL2 multi mode 下能够相互抢播</a></td>
+<td>2026/04/02 18:08</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-723/">ABT-723</a></td>
+<td><a href="../ABT-723/">AB1577M 通过SPI来接收和发送音频</a></td>
+<td>2026/04/01 16:28</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-722/">ABT-722</a></td>
+<td><a href="../ABT-722/">【[客户N]】添加LDAC周其他source 的问题</a></td>
+<td>2026/04/01 11:40</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-721/">ABT-721</a></td>
+<td><a href="../ABT-721/">AB1595 新项目问题咨询</a></td>
+<td>2026/04/01 11:36</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-720/">ABT-720</a></td>
+<td><a href="../ABT-720/">AB1585 headset USB 连接电脑录音有杂音（后续）</a></td>
+<td>2026/04/01 10:52</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-719/">ABT-719</a></td>
+<td><a href="../ABT-719/">【[客户F]】AB1565AM 设置通透增益效果反馈慢</a></td>
+<td>2026/03/26 11:06</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-718/">ABT-718</a></td>
+<td><a href="../ABT-718/">AB1585 headset USB 连接电脑录音有杂音</a></td>
+<td>2026/03/18 11:34</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-717/">ABT-717</a></td>
+<td><a href="../ABT-717/">【[客户N]】AB157X SDK5.7.0 申请LDAC add on</a></td>
+<td>2026/03/13 19:28</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-716/">ABT-716</a></td>
+<td><a href="../ABT-716/">AB156XE Android app 更新 16KB page后PEQ异常</a></td>
+<td>2026/03/12 14:21</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-715/">ABT-715</a></td>
+<td><a href="../ABT-715/">【[客户L]】GFP 测试fail</a></td>
+<td>2026/03/12 11:55</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-714/">ABT-714</a></td>
+<td><a href="../ABT-714/">AB1565 V5.5.0打开1wire充电问题</a></td>
+<td>2026/03/12 11:46</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-713/">ABT-713</a></td>
+<td><a href="../ABT-713/">AB1565AM wired audio 调试自定义PEQ异常</a></td>
+<td>2026/03/11 19:42</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-712/">ABT-712</a></td>
+<td><a href="../ABT-712/">STREAM MIX 功能关闭LC3PLUS咨询</a></td>
+<td>2026/03/11 19:00</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-711/">ABT-711</a></td>
+<td><a href="../ABT-711/">AB1565AM wired audio App 调试PEQ 有杂音</a></td>
+<td>2026/03/10 16:57</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-710/">ABT-710</a></td>
+<td><a href="../ABT-710/">【[客户F]】AB1571AM 支持内置touch做按键咨询</a></td>
+<td>2026/03/09 18:06</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-709/">ABT-709</a></td>
+<td><a href="../ABT-709/">SDK5.9.0 开启 STREAM_MIX 编译fail 咨询</a></td>
+<td>2026/03/04 14:52</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-708/">ABT-708</a></td>
+<td><a href="../ABT-708/">ULL2 使用功能FEM 后没有声音</a></td>
+<td>2026/03/02 16:17</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-707/">ABT-707</a></td>
+<td><a href="../ABT-707/">USB audio 在iPhone 17系列有电流声杂音</a></td>
+<td>2026/02/28 11:57</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-706/">ABT-706</a></td>
+<td><a href="../ABT-706/">【[客户L]】GFP 新增测试</a></td>
+<td>2026/02/28 11:52</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-705/">ABT-705</a></td>
+<td><a href="../ABT-705/">ULL3 AB1571D 加FEM</a></td>
+<td>2026/02/25 10:48</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-704/">ABT-704</a></td>
+<td><a href="../ABT-704/">AB1571D dongle 添加FEM</a></td>
+<td>2026/02/10 11:58</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-703/">ABT-703</a></td>
+<td><a href="../ABT-703/">【[客户L]】GAP device name 设置</a></td>
+<td>2026/02/04 11:33</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-702/">ABT-702</a></td>
+<td><a href="../ABT-702/">【[客户N]】AB1577 充电支持BC1.2,DCP</a></td>
+<td>2026/02/02 14:47</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-701/">ABT-701</a></td>
+<td><a href="../ABT-701/">【[客户N]】获取 metadata</a></td>
+<td>2026/01/28 16:31</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-700/">ABT-700</a></td>
+<td><a href="../ABT-700/">【[客户N]】手动选择 USB audio （后续）</a></td>
+<td>2026/01/28 11:26</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-699/">ABT-699</a></td>
+<td><a href="../ABT-699/">【咨询】AB1595 咨询</a></td>
+<td>2026/01/27 11:04</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-698/">ABT-698</a></td>
+<td><a href="../ABT-698/">【[客户N]】Dolby DAW算法遇到杂音问题（后续）</a></td>
+<td>2026/01/27 10:22</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-697/">ABT-697</a></td>
+<td><a href="../ABT-697/">【[客户N]】BIS 切换上一个频道</a></td>
+<td>2026/01/26 15:02</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-696/">ABT-696</a></td>
+<td><a href="../ABT-696/">AB1595 build</a></td>
+<td>2026/01/23 14:35</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-695/">ABT-695</a></td>
+<td><a href="../ABT-695/">1wire race mode 无法退出</a></td>
+<td>2026/01/22 17:08</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-694/">ABT-694</a></td>
+<td><a href="../ABT-694/">【[客户N]】手动选择 USB audio</a></td>
+<td>2026/01/14 15:52</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-693/">ABT-693</a></td>
+<td><a href="../ABT-693/">Android App 通过BLE连接没有OTA选项</a></td>
+<td>2026/01/14 10:34</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-692/">ABT-692</a></td>
+<td><a href="../ABT-692/">AB1565 encoder rotary功能快速滑动旋钮音量调节会乱</a></td>
+<td>2026/01/13 17:16</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-691/">ABT-691</a></td>
+<td><a href="../ABT-691/">【[客户N]】Dolby DAW算法遇到杂音问题</a></td>
+<td>2026/01/13 14:19</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-690/">ABT-690</a></td>
+<td><a href="../ABT-690/">ULL2 记录情况咨询</a></td>
+<td>2026/01/08 12:09</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-689/">ABT-689</a></td>
+<td><a href="../ABT-689/">【[客户L]】AVRCP 音量咨询</a></td>
+<td>2026/01/06 10:48</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-688/">ABT-688</a></td>
+<td><a href="../ABT-688/">通透切换无效问题</a></td>
+<td>2025/12/30 21:42</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-687/">ABT-687</a></td>
+<td><a href="../ABT-687/">【[客户F]】充电控制咨询</a></td>
+<td>2025/12/30 20:57</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-686/">ABT-686</a></td>
+<td><a href="../ABT-686/">【[客户O]】代码PIN脚咨询</a></td>
+<td>2025/12/30 10:48</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-685/">ABT-685</a></td>
+<td><a href="../ABT-685/">【[客户N]】修改 downlink bitrate 后续</a></td>
+<td>2025/12/30 10:07</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-684/">ABT-684</a></td>
+<td><a href="../ABT-684/">【[客户N]】[DSP Assert: Assert Failed, filename:scenario_ull_audio_v2.c,line:7631]</a></td>
+<td>2025/12/26 12:23</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-683/">ABT-683</a></td>
+<td><a href="../ABT-683/">【[客户L]】获取和设置当前通话音量</a></td>
+<td>2025/12/25 21:16</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-682/">ABT-682</a></td>
+<td><a href="../ABT-682/">AB1565AM 添加杜比音效</a></td>
+<td>2025/12/25 16:05</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-681/">ABT-681</a></td>
+<td><a href="../ABT-681/">【[客户N]】dongle 播放无声音</a></td>
+<td>2025/12/25 14:24</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-680/">ABT-680</a></td>
+<td><a href="../ABT-680/">【[客户N]】开启CTKD 功能后BLE 广播异常</a></td>
+<td>2025/12/25 11:34</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-679/">ABT-679</a></td>
+<td><a href="../ABT-679/">【[客户N]】USB in 跟Class BT切换</a></td>
+<td>2025/12/24 19:35</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-678/">ABT-678</a></td>
+<td><a href="../ABT-678/">【[客户N]】dual chip USB in咨询</a></td>
+<td>2025/12/23 10:46</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-677/">ABT-677</a></td>
+<td><a href="../ABT-677/">16级音量等级中有输出相同的问题</a></td>
+<td>2025/12/22 15:31</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-676/">ABT-676</a></td>
+<td><a href="../ABT-676/">[MCU Assert: Assert Failed, filename:bt_ull_le_audio_manager.c,line:1816]</a></td>
+<td>2025/12/19 15:48</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-675/">ABT-675</a></td>
+<td><a href="../ABT-675/">【[客户N]】AB1577AM+AB1571 dual chip talk mic</a></td>
+<td>2025/12/19 12:14</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-674/">ABT-674</a></td>
+<td><a href="../ABT-674/">AB1571AM NTC 电阻使用100K</a></td>
+<td>2025/12/17 17:39</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-673/">ABT-673</a></td>
+<td><a href="../ABT-673/">AB1565AM 如何设置AB1565 某个GPIO口关机后保持拉高</a></td>
+<td>2025/12/16 15:02</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-672/">ABT-672</a></td>
+<td><a href="../ABT-672/">【[客户L]】BQB认证重新提供QDID</a></td>
+<td>2025/12/16 10:26</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-671/">ABT-671</a></td>
+<td><a href="../ABT-671/">[DSP Assert: Assert Failed, filename:hal_audio_control.c,line:810]</a></td>
+<td>2025/12/15 15:38</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-670/">ABT-670</a></td>
+<td><a href="../ABT-670/">[客户A] LC3plus 申请</a></td>
+<td>2025/12/15 15:20</td>
+<td>Declined</td>
+</tr>
+<tr>
+<td><a href="../ABT-669/">ABT-669</a></td>
+<td><a href="../ABT-669/">AB1565 V5.5.0 dongle随电脑一起关机再开机有概率dongle不回连耳机问题</a></td>
+<td>2025/12/12 16:35</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-668/">ABT-668</a></td>
+<td><a href="../ABT-668/">【[客户N]】RTC mode 下 RTC_GPIO的控制</a></td>
+<td>2025/12/12 11:37</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-667/">ABT-667</a></td>
+<td><a href="../ABT-667/">【[客户N]】dual chip mic test</a></td>
+<td>2025/12/12 11:18</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-666/">ABT-666</a></td>
+<td><a href="../ABT-666/">AB1571AM QDID</a></td>
+<td>2025/12/11 15:53</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-665/">ABT-665</a></td>
+<td><a href="../ABT-665/">【[客户O]】XBOX 无法识别 AB1571D dongle</a></td>
+<td>2025/12/11 10:37</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-664/">ABT-664</a></td>
+<td><a href="../ABT-664/">【[客户L]】支持Android FAST 查找 功能（SPOT）</a></td>
+<td>2025/12/10 10:22</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-663/">ABT-663</a></td>
+<td><a href="../ABT-663/">WIRE AUDIO 使用单个mic 做通透</a></td>
+<td>2025/12/09 14:35</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-662/">ABT-662</a></td>
+<td><a href="../ABT-662/">AB1577AM QDID咨询</a></td>
+<td>2025/12/09 14:25</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-661/">ABT-661</a></td>
+<td><a href="../ABT-661/">【[客户N]】添加杜比和MIMI 咨询</a></td>
+<td>2025/12/08 12:04</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-660/">ABT-660</a></td>
+<td><a href="../ABT-660/">dongle 通过BLE 连接手机App</a></td>
+<td>2025/12/05 15:50</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-659/">ABT-659</a></td>
+<td><a href="../ABT-659/">【[客户N]】dongle 连接PS5相关补丁</a></td>
+<td>2025/12/05 10:18</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-658/">ABT-658</a></td>
+<td><a href="../ABT-658/">【GFP】提供 evk 连接信息</a></td>
+<td>2025/12/05 10:11</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-657/">ABT-657</a></td>
+<td><a href="../ABT-657/">【[客户N]】PS 上dongle 显示问题</a></td>
+<td>2025/12/03 20:16</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-656/">ABT-656</a></td>
+<td><a href="../ABT-656/">【[客户L]】[MCU Assert: Assert Failed, filename:airo_key_event_internal.c,line:498]</a></td>
+<td>2025/12/03 20:08</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-655/">ABT-655</a></td>
+<td><a href="../ABT-655/">【[客户L]】单耳连接手机App后同步问题</a></td>
+<td>2025/11/30 15:00</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-654/">ABT-654</a></td>
+<td><a href="../ABT-654/">【[客户L]】sidetone 左右不同步问题</a></td>
+<td>2025/11/29 18:09</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-653/">ABT-653</a></td>
+<td><a href="../ABT-653/">【[客户L]】EMP状态后，无法恢复音乐播放</a></td>
+<td>2025/11/28 15:59</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-652/">ABT-652</a></td>
+<td><a href="../ABT-652/">【[客户L]】App 连接无法耳机问题</a></td>
+<td>2025/11/27 16:48</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-651/">ABT-651</a></td>
+<td><a href="../ABT-651/">【[客户L]】WND功能设定开始关闭</a></td>
+<td>2025/11/27 15:07</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-650/">ABT-650</a></td>
+<td><a href="../ABT-650/">【[客户L]】TWS回连设定主副机问题</a></td>
+<td>2025/11/25 21:51</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-649/">ABT-649</a></td>
+<td><a href="../ABT-649/">【[客户L]】EMP 通话后，异常状态</a></td>
+<td>2025/11/24 17:34</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-648/">ABT-648</a></td>
+<td><a href="../ABT-648/">【[客户L]】开启 WND 之后出现宕机[DSP Assert: Assert Failed, filename:dsp_scenario.c,line:7687]</a></td>
+<td>2025/11/24 16:52</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-647/">ABT-647</a></td>
+<td><a href="../ABT-647/">【[客户N]】dual chip audio tuning</a></td>
+<td>2025/11/21 14:58</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-646/">ABT-646</a></td>
+<td><a href="../ABT-646/">【[客户N]】发送race cmd 异常</a></td>
+<td>2025/11/20 20:58</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-645/">ABT-645</a></td>
+<td><a href="../ABT-645/">【[客户N]】[DSP Assert: Assert Failed, filename:dsp_stream_task.c,line:543]</a></td>
+<td>2025/11/20 12:21</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-644/">ABT-644</a></td>
+<td><a href="../ABT-644/">【[客户L]】App 调整PEQ后无法保存</a></td>
+<td>2025/11/19 17:40</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-643/">ABT-643</a></td>
+<td><a href="../ABT-643/">【[客户L]】【11/28 外ENC 10:00-18:00 】sidetone 使用没有效果（sidetone调试）</a></td>
+<td>2025/11/19 15:34</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-642/">ABT-642</a></td>
+<td><a href="../ABT-642/">[客户L] A110T AB1571AM Wind Detection Settings</a></td>
+<td>2025/11/19 14:33</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-641/">ABT-641</a></td>
+<td><a href="../ABT-641/">【[客户N]】开启CTKD功能</a></td>
+<td>2025/11/17 10:23</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-640/">ABT-640</a></td>
+<td><a href="../ABT-640/">【[客户L]】air pairing 状态时喇叭有杂音</a></td>
+<td>2025/11/14 15:01</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-639/">ABT-639</a></td>
+<td><a href="../ABT-639/">【[客户L]】修改WND算法为单mic</a></td>
+<td>2025/11/14 14:26</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-638/">ABT-638</a></td>
+<td><a href="../ABT-638/">【咨询】AB157X 升级BT6.1</a></td>
+<td>2025/11/11 15:20</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-637/">ABT-637</a></td>
+<td><a href="../ABT-637/">【[客户G]】AB1565AM SDK3.4.0 添加ECPM-92</a></td>
+<td>2025/11/11 15:05</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-636/">ABT-636</a></td>
+<td><a href="../ABT-636/">【[客户L]】AB1571AM LDAC测试报告</a></td>
+<td>2025/11/11 11:47</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-635/">ABT-635</a></td>
+<td><a href="../ABT-635/">【[客户L]】32BIT符号整数溢出 unix计时到2038年到期问题</a></td>
+<td>2025/11/11 11:25</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-634/">ABT-634</a></td>
+<td><a href="../ABT-634/">【[客户L]】DTM UART0发送指令问题</a></td>
+<td>2025/11/10 15:03</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-633/">ABT-633</a></td>
+<td><a href="../ABT-633/">【[客户N]】SPI 使用问题（后续）</a></td>
+<td>2025/11/10 11:45</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-632/">ABT-632</a></td>
+<td><a href="../ABT-632/">【[客户N]】SPI 使用问题</a></td>
+<td>2025/11/06 16:08</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-631/">ABT-631</a></td>
+<td><a href="../ABT-631/">【[客户L]】BQB 认证profile fail整改</a></td>
+<td>2025/11/06 11:58</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-630/">ABT-630</a></td>
+<td><a href="../ABT-630/">【[客户L]】FOSSS 文档完善</a></td>
+<td>2025/11/05 17:55</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-629/">ABT-629</a></td>
+<td><a href="../ABT-629/">SDK2.9.0 旧项目修改</a></td>
+<td>2025/10/31 15:40</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-628/">ABT-628</a></td>
+<td><a href="../ABT-628/">【[客户O]】dual chip 测试DUT</a></td>
+<td>2025/10/31 11:32</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-627/">ABT-627</a></td>
+<td><a href="../ABT-627/">AB1565AM wired audio 调试自定义PEQ 无效</a></td>
+<td>2025/10/29 20:48</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-626/">ABT-626</a></td>
+<td><a href="../ABT-626/">【[客户L]】GFP ticket (90T)</a></td>
+<td>2025/10/29 16:14</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-625/">ABT-625</a></td>
+<td><a href="../ABT-625/">【[客户L]】AB1571AM 连接iPhone 17Pro 待机发现连接丢失再回连</a></td>
+<td>2025/10/28 16:07</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-624/">ABT-624</a></td>
+<td><a href="../ABT-624/">【[客户L]】power key 和charge 同时发生后无法充电</a></td>
+<td>2025/10/28 15:49</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-623/">ABT-623</a></td>
+<td><a href="../ABT-623/">dual chip方案 在1577AM听不到dongle音频流</a></td>
+<td>2025/10/28 15:26</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-622/">ABT-622</a></td>
+<td><a href="../ABT-622/">AB1565AM WIRED AUDIO+BT call， I2S异常</a></td>
+<td>2025/10/28 15:04</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-621/">ABT-621</a></td>
+<td><a href="../ABT-621/">【咨询】强制性安全性、IP 保护和固件完整性要求</a></td>
+<td>2025/10/28 14:04</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-620/">ABT-620</a></td>
+<td><a href="../ABT-620/">【[客户L]】AB1571AM 修改 analog gain 无效</a></td>
+<td>2025/10/28 11:55</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-619/">ABT-619</a></td>
+<td><a href="../ABT-619/">【[客户L]】 GFP ticket</a></td>
+<td>2025/10/21 12:21</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-618/">ABT-618</a></td>
+<td><a href="../ABT-618/">【[客户L]】AB1571AM game mode latency 没有立刻起效</a></td>
+<td>2025/10/21 12:15</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-617/">ABT-617</a></td>
+<td><a href="../ABT-617/">【[客户L]】AB1571AM SDK5.5.0 ECPM-91 patch</a></td>
+<td>2025/10/20 14:24</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-616/">ABT-616</a></td>
+<td><a href="../ABT-616/">Android App 上架 Google Play 商店新要求</a></td>
+<td>2025/10/16 17:27</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-615/">ABT-615</a></td>
+<td><a href="../ABT-615/">【[客户L]】GFP 测试 Personalized Name with Provider First Time Pairing 失败</a></td>
+<td>2025/10/14 16:18</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-614/">ABT-614</a></td>
+<td><a href="../ABT-614/">AB1565AM 添加 Dolby 对 DSP资源评估</a></td>
+<td>2025/10/09 15:39</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-613/">ABT-613</a></td>
+<td><a href="../ABT-613/">【[客户L]】Google Fast Pair Self-help Test Report</a></td>
+<td>2025/10/09 10:54</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-612/">ABT-612</a></td>
+<td><a href="../ABT-612/">【[客户M]】AB157x V5.7.0 lc3plus addon</a></td>
+<td>2025/10/09 10:37</td>
+<td>Declined</td>
+</tr>
+<tr>
+<td><a href="../ABT-611/">ABT-611</a></td>
+<td><a href="../ABT-611/">【[客户M]】AB157x V5.7.0 lc3plus addon</a></td>
+<td>2025/10/07 12:03</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-610/">ABT-610</a></td>
+<td><a href="../ABT-610/">【[客户L]】AB1571AM 添加GFP 补丁</a></td>
+<td>2025/09/19 17:02</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-609/">ABT-609</a></td>
+<td><a href="../ABT-609/">AB1571AM IED 软件设置咨询</a></td>
+<td>2025/09/16 17:10</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-608/">ABT-608</a></td>
+<td><a href="../ABT-608/">AB1565AM WIRED AUDIO I2S输出异常</a></td>
+<td>2025/09/11 19:40</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-607/">ABT-607</a></td>
+<td><a href="../ABT-607/">AB1577M BLE 认证咨询</a></td>
+<td>2025/09/11 18:21</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-606/">ABT-606</a></td>
+<td><a href="../ABT-606/">【[客户L]】充电电流异常</a></td>
+<td>2025/09/04 10:25</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-605/">ABT-605</a></td>
+<td><a href="../ABT-605/">EN 18031-2 欧盟认证标准</a></td>
+<td>2025/09/03 14:49</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-604/">ABT-604</a></td>
+<td><a href="../ABT-604/">【[客户L]】BLINK_MODE 修改LED 亮度无效</a></td>
+<td>2025/09/02 17:13</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-603/">ABT-603</a></td>
+<td><a href="../ABT-603/">【[客户L]】更新错误[人名9]P 电量给手机</a></td>
+<td>2025/09/02 16:11</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-602/">ABT-602</a></td>
+<td><a href="../ABT-602/">【[客户L]】 GFP ring device 问题</a></td>
+<td>2025/08/25 20:39</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-601/">ABT-601</a></td>
+<td><a href="../ABT-601/">AB1565AM 支持杜比音效</a></td>
+<td>2025/08/25 20:24</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-600/">ABT-600</a></td>
+<td><a href="../ABT-600/">multi-link 超距回连问题</a></td>
+<td>2025/08/25 11:02</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-599/">ABT-599</a></td>
+<td><a href="../ABT-599/">【[客户M]】Auration 功能支持咨询</a></td>
+<td>2025/08/22 15:57</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-598/">ABT-598</a></td>
+<td><a href="../ABT-598/">CLONE - AB1565_V5.5.0 multi-link mode A2DP播放暂停的切换时间问题</a></td>
+<td>2025/08/22 14:58</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-597/">ABT-597</a></td>
+<td><a href="../ABT-597/">AB1577AM ANC config Dmic 导致功耗大的问题</a></td>
+<td>2025/08/21 18:22</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-596/">ABT-596</a></td>
+<td><a href="../ABT-596/">【[客户L]】[MCU Occurs Exception: illegal Address:0x00000008,Func:Reserve]</a></td>
+<td>2025/08/20 14:18</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-595/">ABT-595</a></td>
+<td><a href="../ABT-595/">AB1531 加入Waves算法增加RACE cmd</a></td>
+<td>2025/08/18 10:40</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-594/">ABT-594</a></td>
+<td><a href="../ABT-594/">AB1565 wired only 连接iPhone 问题</a></td>
+<td>2025/08/15 16:41</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-593/">ABT-593</a></td>
+<td><a href="../ABT-593/">AB1577AM 异常链接断开有回连</a></td>
+<td>2025/08/14 19:03</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-592/">ABT-592</a></td>
+<td><a href="../ABT-592/">AB1565_V5.5.0 multi-link mode 蓝牙播放音乐需暂停</a></td>
+<td>2025/08/14 17:29</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-591/">ABT-591</a></td>
+<td><a href="../ABT-591/">AB1571AM SLIDE_TWO_WAYS 支持</a></td>
+<td>2025/08/12 11:20</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-590/">ABT-590</a></td>
+<td><a href="../ABT-590/">AB1567X 开启 Fuel gauge问题</a></td>
+<td>2025/08/11 19:48</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-589/">ABT-589</a></td>
+<td><a href="../ABT-589/">AB1565X 7X 通透模式延迟</a></td>
+<td>2025/08/07 17:09</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-588/">ABT-588</a></td>
+<td><a href="../ABT-588/">AB1577 LEA连接手机播放音乐的延时</a></td>
+<td>2025/08/04 10:55</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-587/">ABT-587</a></td>
+<td><a href="../ABT-587/">AB1577AM passthru 咨询</a></td>
+<td>2025/07/30 16:48</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-586/">ABT-586</a></td>
+<td><a href="../ABT-586/">AB1577AM-SDK5.4   蓝牙模式插入usb后按键切换自适应ANC 不成功（[客户F]）</a></td>
+<td>2025/07/29 14:28</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-585/">ABT-585</a></td>
+<td><a href="../ABT-585/">AB1571D MP 烧录之后初始化失败问题</a></td>
+<td>2025/07/28 15:46</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-584/">ABT-584</a></td>
+<td><a href="../ABT-584/">【[客户L]】SPP 连接异常问题</a></td>
+<td>2025/07/28 11:50</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-583/">ABT-583</a></td>
+<td><a href="../ABT-583/">【[客户L]】充电时不需要ADC 更加精准的读取</a></td>
+<td>2025/07/21 15:43</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-582/">ABT-582</a></td>
+<td><a href="../ABT-582/">【[客户L]】单耳连接播放音乐自动断开又回连</a></td>
+<td>2025/07/18 17:26</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-581/">ABT-581</a></td>
+<td><a href="../ABT-581/">【[客户L]】关闭短按开机功能</a></td>
+<td>2025/07/18 15:08</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-580/">ABT-580</a></td>
+<td><a href="../ABT-580/">AB1565 系列SPP/BLE 速率</a></td>
+<td>2025/07/18 12:17</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-579/">ABT-579</a></td>
+<td><a href="../ABT-579/">AB1585 支持空间音频</a></td>
+<td>2025/07/15 17:59</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-578/">ABT-578</a></td>
+<td><a href="../ABT-578/">【[客户L]】FOTA 之后无法重启问题，RTC mode功耗高问题</a></td>
+<td>2025/07/11 16:25</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-577/">ABT-577</a></td>
+<td><a href="../ABT-577/">AB1565 连接电脑问题</a></td>
+<td>2025/07/04 19:17</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-576/">ABT-576</a></td>
+<td><a href="../ABT-576/">AB1565M headset project进入手机配对无法被搜索到</a></td>
+<td>2025/07/04 11:36</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-575/">ABT-575</a></td>
+<td><a href="../ABT-575/">AB1577AM Headset USB Audio高速模式和192K</a></td>
+<td>2025/07/03 12:03</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-574/">ABT-574</a></td>
+<td><a href="../ABT-574/">【[客户L]】 RTC mode功耗高问题</a></td>
+<td>2025/07/02 14:37</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-573/">ABT-573</a></td>
+<td><a href="../ABT-573/">【咨询】dongle+headset ，区分媒体和聊天音量</a></td>
+<td>2025/06/23 19:10</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-572/">ABT-572</a></td>
+<td><a href="../ABT-572/">【[客户L]】给LONGPRESS SHUTDOWN 设置条件</a></td>
+<td>2025/06/20 12:01</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-571/">ABT-571</a></td>
+<td><a href="../ABT-571/">【咨询】dongle 通过USB-C连接手机通讯</a></td>
+<td>2025/06/19 17:57</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-570/">ABT-570</a></td>
+<td><a href="../ABT-570/">【咨询】AB1565AM 或者mic raw data</a></td>
+<td>2025/06/17 15:13</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-569/">ABT-569</a></td>
+<td><a href="../ABT-569/">【[客户L]】AB1571 Voice prompt 修改确认</a></td>
+<td>2025/06/16 16:47</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-568/">ABT-568</a></td>
+<td><a href="../ABT-568/">AB1585 两路I2S共用CLK（[客户M]）</a></td>
+<td>2025/06/13 11:01</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-567/">ABT-567</a></td>
+<td><a href="../ABT-567/">ECPM-89 咨询</a></td>
+<td>2025/06/11 10:42</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-566/">ABT-566</a></td>
+<td><a href="../ABT-566/">【咨询】提供漏洞扫描报告</a></td>
+<td>2025/06/10 15:33</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-565/">ABT-565</a></td>
+<td><a href="../ABT-565/">【咨询】dongle 通过无线连接手机</a></td>
+<td>2025/06/10 12:02</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-564/">ABT-564</a></td>
+<td><a href="../ABT-564/">如何降低Mic-SPK loopback链路延迟</a></td>
+<td>2025/06/09 14:58</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-563/">ABT-563</a></td>
+<td><a href="../ABT-563/">【[客户G]】dongle 连接电脑听音乐有杂音，声音刚进dongle 1KHz以上就已经有尖波</a></td>
+<td>2025/06/06 14:34</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-562/">ABT-562</a></td>
+<td><a href="../ABT-562/">AB1585 ble传输语音数据做翻译（[客户F]）</a></td>
+<td>2025/06/04 16:21</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-561/">ABT-561</a></td>
+<td><a href="../ABT-561/">AB1585 dongle接入手机usb后，如何升级软件（[客户F]）</a></td>
+<td>2025/06/04 15:41</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-560/">ABT-560</a></td>
+<td><a href="../ABT-560/">【[客户L]】AB1571AM EMP +PC Teams call 问题</a></td>
+<td>2025/05/29 16:17</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-559/">ABT-559</a></td>
+<td><a href="../ABT-559/">AB1577S 通话中切换mic 需求</a></td>
+<td>2025/05/28 20:24</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-558/">ABT-558</a></td>
+<td><a href="../ABT-558/">【[客户L]】 AB1571AM 连接电脑后外放问题</a></td>
+<td>2025/05/28 20:20</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-557/">ABT-557</a></td>
+<td><a href="../ABT-557/">AB1565 wired_only是否支持通话enc</a></td>
+<td>2025/05/28 20:14</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-556/">ABT-556</a></td>
+<td><a href="../ABT-556/">AB1585 通话调用4mic（[客户F]）</a></td>
+<td>2025/05/28 14:15</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-555/">ABT-555</a></td>
+<td><a href="../ABT-555/">AB1565_V5.5.0 蓝牙连接电脑微信通话挂断后状态错误</a></td>
+<td>2025/05/27 17:01</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-554/">ABT-554</a></td>
+<td><a href="../ABT-554/">【[客户L]】 AB1571AM 连接电脑使用微信语音通话无法使用mic mute</a></td>
+<td>2025/05/26 18:35</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-553/">ABT-553</a></td>
+<td><a href="../ABT-553/">【[客户L]】AB1571AM  已连接下闪灯LED左右两边不同步</a></td>
+<td>2025/05/26 10:36</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-552/">ABT-552</a></td>
+<td><a href="../ABT-552/">【[客户L]】AB1571AM 充电两分钟左右自动停充了</a></td>
+<td>2025/05/22 11:23</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-551/">ABT-551</a></td>
+<td><a href="../ABT-551/">【[客户L]】AB1571AM 第一次连接手机确认</a></td>
+<td>2025/05/22 10:27</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-550/">ABT-550</a></td>
+<td><a href="../ABT-550/">AB1565_V5.5.0 Dongle连接华为手机接听电话声音在手机</a></td>
+<td>2025/05/21 11:40</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-549/">ABT-549</a></td>
+<td><a href="../ABT-549/">【[客户L]】GFP生成的加密内容 adv 的内容不对</a></td>
+<td>2025/05/16 17:30</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-548/">ABT-548</a></td>
+<td><a href="../ABT-548/">copy [ABT-529](ABT-529.md) - AB1571AM game mode latency 咨询</a></td>
+<td>2025/05/16 10:38</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-547/">ABT-547</a></td>
+<td><a href="../ABT-547/">AB1585+AB1577S 做ULL2项目</a></td>
+<td>2025/05/16 10:26</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-546/">ABT-546</a></td>
+<td><a href="../ABT-546/">AB1565_V5.5.0 连接电脑端蓝牙Mute Mic无效</a></td>
+<td>2025/05/15 18:00</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-545/">ABT-545</a></td>
+<td><a href="../ABT-545/">AB1565 Dongle外加PA（external FEM）不起效</a></td>
+<td>2025/05/12 17:24</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-544/">ABT-544</a></td>
+<td><a href="../ABT-544/">【[客户L]】AB1571AM GFP使用问题</a></td>
+<td>2025/05/12 14:57</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-543/">ABT-543</a></td>
+<td><a href="../ABT-543/">AB1565_V5.5.0 播放暂停问题</a></td>
+<td>2025/05/08 15:47</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-542/">ABT-542</a></td>
+<td><a href="../ABT-542/">咨询是否有Dongle+OWS方案</a></td>
+<td>2025/05/08 10:35</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-541/">ABT-541</a></td>
+<td><a href="../ABT-541/">【[客户L]】AB1571AM SW-NTC 设置</a></td>
+<td>2025/05/08 10:33</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-540/">ABT-540</a></td>
+<td><a href="../ABT-540/">【[客户L]】AB1571 获取手机连接上之后使用的codec</a></td>
+<td>2025/05/07 15:36</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-539/">ABT-539</a></td>
+<td><a href="../ABT-539/">AB1565 系列MP tool无法烧录BT4 地址</a></td>
+<td>2025/04/29 11:22</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-538/">ABT-538</a></td>
+<td><a href="../ABT-538/">AB1571M audio 接口咨询</a></td>
+<td>2025/04/23 20:48</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-537/">ABT-537</a></td>
+<td><a href="../ABT-537/">AB1565系列支持MPEG4 咨询</a></td>
+<td>2025/04/23 10:48</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-536/">ABT-536</a></td>
+<td><a href="../ABT-536/">AB1565X MFi add-on 咨询</a></td>
+<td>2025/04/17 17:33</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-535/">ABT-535</a></td>
+<td><a href="../ABT-535/">AB157X voice prompt 对应关系</a></td>
+<td>2025/04/15 11:07</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-534/">ABT-534</a></td>
+<td><a href="../ABT-534/">【[客户L]】 LDAC和audio 接口咨询</a></td>
+<td>2025/04/14 14:27</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-533/">ABT-533</a></td>
+<td><a href="../ABT-533/">AB1565系列usb audio下做空间音频</a></td>
+<td>2025/04/10 10:42</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-532/">ABT-532</a></td>
+<td><a href="../ABT-532/">AB1565系列usb audio支持hi-res和ldac</a></td>
+<td>2025/04/08 11:29</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-531/">ABT-531</a></td>
+<td><a href="../ABT-531/">AB1571AM SDK5.5.0 相关 add on 请求</a></td>
+<td>2025/04/07 20:11</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-530/">ABT-530</a></td>
+<td><a href="../ABT-530/">【咨询】获取噪声暴露等级应用</a></td>
+<td>2025/04/07 20:03</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-529/">ABT-529</a></td>
+<td><a href="../ABT-529/">AB1571AM game mode latency 咨询</a></td>
+<td>2025/04/02 17:27</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-528/">ABT-528</a></td>
+<td><a href="../ABT-528/">AAC codec 认证流程</a></td>
+<td>2025/04/02 15:51</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-527/">ABT-527</a></td>
+<td><a href="../ABT-527/">AB1565M_V3.10.0 升级BT6.0</a></td>
+<td>2025/04/02 15:37</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-526/">ABT-526</a></td>
+<td><a href="../ABT-526/">AB1571AM NTC 充电保护后不支持迟滞</a></td>
+<td>2025/04/02 15:20</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-525/">ABT-525</a></td>
+<td><a href="../ABT-525/">ab1577s ULL3 低音量有杂音问题后续</a></td>
+<td>2025/04/01 16:38</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-524/">ABT-524</a></td>
+<td><a href="../ABT-524/">AB1565 V5.5.0 Dongle在windows图示修改</a></td>
+<td>2025/03/31 14:26</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-523/">ABT-523</a></td>
+<td><a href="../ABT-523/">ULL2 组合确认</a></td>
+<td>2025/03/19 10:45</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-522/">ABT-522</a></td>
+<td><a href="../ABT-522/">AB1571D dongle 支持 I2S 作为输入</a></td>
+<td>2025/03/17 17:28</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-521/">ABT-521</a></td>
+<td><a href="../ABT-521/">AB1577M CHG-THM 设置NTC</a></td>
+<td>2025/03/13 11:16</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-520/">ABT-520</a></td>
+<td><a href="../ABT-520/">AB1577S 连接dongle USB-C 并连接BLE 出现杂音</a></td>
+<td>2025/03/11 17:43</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-519/">ABT-519</a></td>
+<td><a href="../ABT-519/">AB1577S SDK5.3.0 添加音源切换的时候PEQ跟随切换的补丁</a></td>
+<td>2025/03/11 15:14</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-518/">ABT-518</a></td>
+<td><a href="../ABT-518/">AB1577S 连接dongle 插入Mac 电脑听音乐有杂音</a></td>
+<td>2025/03/11 10:44</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-517/">ABT-517</a></td>
+<td><a href="../ABT-517/">AB157x V550 Configtool保存软件失败</a></td>
+<td>2025/03/06 20:17</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-516/">ABT-516</a></td>
+<td><a href="../ABT-516/">AB157x_V5.5.0 编译不过</a></td>
+<td>2025/03/06 16:17</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-515/">ABT-515</a></td>
+<td><a href="../ABT-515/">AB1585 line in和USB audio问题</a></td>
+<td>2025/03/04 17:50</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-514/">ABT-514</a></td>
+<td><a href="../ABT-514/">AB1577S V5.5.0 自适应ANC add on</a></td>
+<td>2025/03/04 11:43</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-513/">ABT-513</a></td>
+<td><a href="../ABT-513/">AB1571AM V5.4.0 BT Core版本确认方法</a></td>
+<td>2025/02/25 12:21</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-512/">ABT-512</a></td>
+<td><a href="../ABT-512/">1565 关机后无法快速开机</a></td>
+<td>2025/02/25 10:57</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-511/">ABT-511</a></td>
+<td><a href="../ABT-511/">AB1565 TWS mic收集环境音输出另一路DAC（[客户F]）</a></td>
+<td>2025/02/20 18:27</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-510/">ABT-510</a></td>
+<td><a href="../ABT-510/">支持杜比音效 Dolby Atom 咨询</a></td>
+<td>2025/02/20 14:44</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-509/">ABT-509</a></td>
+<td><a href="../ABT-509/">AB1565 支持 one-wire reset pattern</a></td>
+<td>2025/02/20 11:54</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-508/">ABT-508</a></td>
+<td><a href="../ABT-508/">AB1577S PEQ101 预设</a></td>
+<td>2025/02/18 14:18</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-507/">ABT-507</a></td>
+<td><a href="../ABT-507/">flash tool CODA 指令咨询</a></td>
+<td>2025/02/17 15:06</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-506/">ABT-506</a></td>
+<td><a href="../ABT-506/">AB1577S 通话支持Super Wide Band</a></td>
+<td>2025/02/13 18:44</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-505/">ABT-505</a></td>
+<td><a href="../ABT-505/">AB1565 dongle输入源是否支持SPDIF/HDMI</a></td>
+<td>2025/02/11 17:56</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-504/">ABT-504</a></td>
+<td><a href="../ABT-504/">[ABT-500](ABT-500.md) AB1571D dongle 播放失真问题（后续）</a></td>
+<td>2025/02/11 16:31</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-503/">ABT-503</a></td>
+<td><a href="../ABT-503/">AB1585 Lossless 相关资讯</a></td>
+<td>2025/02/11 15:57</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-502/">ABT-502</a></td>
+<td><a href="../ABT-502/">LE audio 使用咨询</a></td>
+<td>2025/02/10 17:56</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-501/">ABT-501</a></td>
+<td><a href="../ABT-501/">ABTUnifyUT 无法显示 PEQ102</a></td>
+<td>2025/01/16 15:45</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-500/">ABT-500</a></td>
+<td><a href="../ABT-500/">AB1571D dongle 播放失真问题</a></td>
+<td>2025/01/16 15:26</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-499/">ABT-499</a></td>
+<td><a href="../ABT-499/">AB1571D dongle 无法进行 audio dump</a></td>
+<td>2025/01/16 15:15</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-498/">ABT-498</a></td>
+<td><a href="../ABT-498/">AB1565 使用USB audio 是不能mute mic</a></td>
+<td>2025/01/15 18:14</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-497/">ABT-497</a></td>
+<td><a href="../ABT-497/">AB1565D dongle 连接iPhone 问题</a></td>
+<td>2025/01/10 18:01</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-496/">ABT-496</a></td>
+<td><a href="../ABT-496/">AB1565 SDK5.3.0 开启AINR 后通话无声</a></td>
+<td>2025/01/09 14:36</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-495/">ABT-495</a></td>
+<td><a href="../ABT-495/">AB1571AM ANC（FF）切到AT（PassThrough) mic调用和配置不同</a></td>
+<td>2025/01/08 12:00</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-494/">ABT-494</a></td>
+<td><a href="../ABT-494/">AB1565 数据包长（[客户E]）</a></td>
+<td>2025/01/02 17:24</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-493/">ABT-493</a></td>
+<td><a href="../ABT-493/">AB1565 FOTA 咨询</a></td>
+<td>2024/12/31 15:15</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-492/">ABT-492</a></td>
+<td><a href="../ABT-492/">AB1571 earbuds 打开siri后state很快从va退出</a></td>
+<td>2024/12/26 19:03</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-491/">ABT-491</a></td>
+<td><a href="../ABT-491/">[客户D] 调整mic 的音量增压</a></td>
+<td>2024/12/24 17:56</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-490/">ABT-490</a></td>
+<td><a href="../ABT-490/">AB1577am project 中 evk evb区别</a></td>
+<td>2024/12/20 11:18</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-489/">ABT-489</a></td>
+<td><a href="../ABT-489/">AB1565 flash tool 的 readback 功能</a></td>
+<td>2024/12/18 16:57</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-488/">ABT-488</a></td>
+<td><a href="../ABT-488/">AB1565 SDK5.0.0 不要长按开机</a></td>
+<td>2024/12/17 19:09</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-487/">ABT-487</a></td>
+<td><a href="../ABT-487/">AB1565M EVK 使用 FLASH Tool 烧录不了</a></td>
+<td>2024/12/13 19:09</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-486/">ABT-486</a></td>
+<td><a href="../ABT-486/">蓝牙5.4/6.0的支持</a></td>
+<td>2024/12/13 10:44</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-485/">ABT-485</a></td>
+<td><a href="../ABT-485/">【[客户D]】SDK5.0.0 AB1565 dongle+earbuds 设置bitrate</a></td>
+<td>2024/12/11 18:52</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-484/">ABT-484</a></td>
+<td><a href="../ABT-484/">【[客户D]】SDK5.3.0 AB1585 设置 USB audio的analog gain</a></td>
+<td>2024/12/10 10:46</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-483/">ABT-483</a></td>
+<td><a href="../ABT-483/">【[客户D]】SDK5.3.0 AB1585 设置 High Pass Filter</a></td>
+<td>2024/12/09 11:36</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-482/">ABT-482</a></td>
+<td><a href="../ABT-482/">【[客户D]】SDK5.3.0 AB1571AM ULL3 回连LEA 失败</a></td>
+<td>2024/12/06 20:12</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-481/">ABT-481</a></td>
+<td><a href="../ABT-481/">【[客户D]】SDK5.0.0 AB1565 ULL2 延迟测试</a></td>
+<td>2024/11/29 12:21</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-480/">ABT-480</a></td>
+<td><a href="../ABT-480/">AB1585X 系列license 申请</a></td>
+<td>2024/11/21 11:25</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-479/">ABT-479</a></td>
+<td><a href="../ABT-479/">【[客户A]】AB1565 GPIO 输出 us 级的时序</a></td>
+<td>2024/11/19 16:52</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-478/">ABT-478</a></td>
+<td><a href="../ABT-478/">【[客户E]】修改bitrate 后有概率出现杂音</a></td>
+<td>2024/11/14 16:42</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-477/">ABT-477</a></td>
+<td><a href="../ABT-477/">AB1565 SDK3.9.0 使用 3RD_PARTY_AI_NR 通话中宕机</a></td>
+<td>2024/11/13 14:31</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-476/">ABT-476</a></td>
+<td><a href="../ABT-476/">AB1565 不同的输入，RF表现不一样</a></td>
+<td>2024/11/07 17:08</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-475/">ABT-475</a></td>
+<td><a href="../ABT-475/">【[客户E]】修改codec的sharenum 次数</a></td>
+<td>2024/11/07 11:57</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-474/">ABT-474</a></td>
+<td><a href="../ABT-474/">SDK5.2.0 AB1577S earbuds 通话宕机</a></td>
+<td>2024/11/05 12:10</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-473/">ABT-473</a></td>
+<td><a href="../ABT-473/">AB1565 系列 MS Teams 认证</a></td>
+<td>2024/11/04 18:15</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-472/">ABT-472</a></td>
+<td><a href="../ABT-472/">【[客户E]】AB1565 修改 single link mode 的延时</a></td>
+<td>2024/11/01 15:25</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-471/">ABT-471</a></td>
+<td><a href="../ABT-471/">【[客户E]】AB1565 调整上下单宽</a></td>
+<td>2024/11/01 14:46</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-470/">ABT-470</a></td>
+<td><a href="../ABT-470/">AB1565 ATK Configtool调整EQ101的band type（[客户G]）</a></td>
+<td>2024/10/31 18:04</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-469/">ABT-469</a></td>
+<td><a href="../ABT-469/">【[客户E]】AB1565 调整DMIC的时钟频率</a></td>
+<td>2024/10/23 15:42</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-468/">ABT-468</a></td>
+<td><a href="../ABT-468/">【[客户E]】headset 连接dongle,dongle 切换 USB 和 line in 有杂音</a></td>
+<td>2024/10/21 17:49</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-467/">ABT-467</a></td>
+<td><a href="../ABT-467/">AB1565AM Headset 开机异常，且log自动停止（[客户A]）</a></td>
+<td>2024/10/18 18:10</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-466/">ABT-466</a></td>
+<td><a href="../ABT-466/">AB1571D linein输入底噪大([客户G])</a></td>
+<td>2024/10/18 15:59</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-465/">ABT-465</a></td>
+<td><a href="../ABT-465/">AB1565 LDAC认证信息（[客户A]）</a></td>
+<td>2024/10/18 10:28</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-464/">ABT-464</a></td>
+<td><a href="../ABT-464/">AB1565AM Headset GPIO电平</a></td>
+<td>2024/10/17 17:32</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-463/">ABT-463</a></td>
+<td><a href="../ABT-463/">AB1571D Linein input gain调整无效</a></td>
+<td>2024/10/16 19:08</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-462/">ABT-462</a></td>
+<td><a href="../ABT-462/">【[客户E]】earbuds 开机有概率无法回连</a></td>
+<td>2024/10/15 19:44</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-461/">ABT-461</a></td>
+<td><a href="../ABT-461/">【[客户E]】修改bitrate 后低音量播放出现概率性丢失</a></td>
+<td>2024/10/15 18:03</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-460/">ABT-460</a></td>
+<td><a href="../ABT-460/">AB157x V5.3.0 lc3plus addon</a></td>
+<td>2024/10/15 17:40</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-459/">ABT-459</a></td>
+<td><a href="../ABT-459/">AB1565AM Dongle V5.0.0 ECPM-77 patch</a></td>
+<td>2024/10/14 15:45</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-458/">ABT-458</a></td>
+<td><a href="../ABT-458/">AB1565 headset切到蓝牙模式回连手机慢（[客户E]）</a></td>
+<td>2024/10/12 12:16</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-457/">ABT-457</a></td>
+<td><a href="../ABT-457/">AB1565 regen脚长按10s复位相关文档（[客户E]）</a></td>
+<td>2024/10/12 10:17</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-456/">ABT-456</a></td>
+<td><a href="../ABT-456/">AB1565AM Headset和Dongle连接后，待机功耗高（[客户E]）</a></td>
+<td>2024/10/12 10:15</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-455/">ABT-455</a></td>
+<td><a href="../ABT-455/">AB1565AM 充电进入深睡改REGEN不唤醒</a></td>
+<td>2024/10/10 10:50</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-454/">ABT-454</a></td>
+<td><a href="../ABT-454/">AB1565AM 蓝牙core版本（[客户A]）</a></td>
+<td>2024/10/10 10:34</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-453/">ABT-453</a></td>
+<td><a href="../ABT-453/">AB1565AM AMP口充电状态一直是高电平（[客户A]）</a></td>
+<td>2024/10/09 12:07</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-452/">ABT-452</a></td>
+<td><a href="../ABT-452/">AB1565AM Headset ClassAB 开机有pop音（[客户A]）</a></td>
+<td>2024/09/27 18:58</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-451/">ABT-451</a></td>
+<td><a href="../ABT-451/">【[客户E]】headset 连接dongle 只保留downlink 不要uplink</a></td>
+<td>2024/09/06 11:59</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-450/">ABT-450</a></td>
+<td><a href="../ABT-450/">AB157x V5.2.0 lc3plus addon（[客户G]）</a></td>
+<td>2024/08/30 14:15</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-449/">ABT-449</a></td>
+<td><a href="../ABT-449/">AB1565/7x ULL Codec疑问</a></td>
+<td>2024/08/26 19:01</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-448/">ABT-448</a></td>
+<td><a href="../ABT-448/">AB1571D BatteryManager 如何支持?([客户A])</a></td>
+<td>2024/08/23 14:23</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-447/">ABT-447</a></td>
+<td><a href="../ABT-447/">【[客户K]】 headset 和dongle 项目关闭内部充电</a></td>
+<td>2024/08/22 17:55</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-446/">ABT-446</a></td>
+<td><a href="../ABT-446/">【[客户K]】播放音乐中出现卡顿问题</a></td>
+<td>2024/08/22 11:33</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-445/">ABT-445</a></td>
+<td><a href="../ABT-445/">AB157x 测试donle跟Headset之间ULL3.0延迟</a></td>
+<td>2024/08/20 17:11</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-444/">ABT-444</a></td>
+<td><a href="../ABT-444/">【[客户E]】TWS左右配对有概率无法配对上</a></td>
+<td>2024/08/19 18:23</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-443/">ABT-443</a></td>
+<td><a href="../ABT-443/">AB1571D接入linein后，77M headset端死机</a></td>
+<td>2024/08/16 10:52</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-442/">ABT-442</a></td>
+<td><a href="../ABT-442/">AB157x V5.2.0 gaming addon</a></td>
+<td>2024/08/15 12:17</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-441/">ABT-441</a></td>
+<td><a href="../ABT-441/">AB157x 替代71D做dongle应用（[客户A]）</a></td>
+<td>2024/08/13 10:59</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-440/">ABT-440</a></td>
+<td><a href="../ABT-440/">【[客户A]】GAP测试</a></td>
+<td>2024/08/13 10:25</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-439/">ABT-439</a></td>
+<td><a href="../ABT-439/">约实验室测DMIC 数据（内）实验室 20240809 13：30-18：00</a></td>
+<td>2024/08/08 09:11</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-438/">ABT-438</a></td>
+<td><a href="../ABT-438/">AB1565 三方通话切换</a></td>
+<td>2024/08/07 19:20</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-437/">ABT-437</a></td>
+<td><a href="../ABT-437/">【[客户A]】关闭dongle 跟headset 连接时的 up link</a></td>
+<td>2024/08/07 17:49</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-436/">ABT-436</a></td>
+<td><a href="../ABT-436/">【[客户A]】修改dongle和headset的bitrate</a></td>
+<td>2024/08/07 17:47</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-435/">ABT-435</a></td>
+<td><a href="../ABT-435/">【[客户A]】修改dongle和headset的latency</a></td>
+<td>2024/08/07 17:45</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-434/">ABT-434</a></td>
+<td><a href="../ABT-434/">【[客户A]】 dongle 待机功耗高(MP)</a></td>
+<td>2024/08/06 19:18</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-433/">ABT-433</a></td>
+<td><a href="../ABT-433/">AB1577AM FB mic调试时，realtime后会切到FF mic</a></td>
+<td>2024/08/06 16:29</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-432/">ABT-432</a></td>
+<td><a href="../ABT-432/">AB1565 linein i2s sample rate设置问题</a></td>
+<td>2024/08/05 19:05</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-431/">ABT-431</a></td>
+<td><a href="../ABT-431/">【[客户A]】 BLE的pairing 测试模式指导</a></td>
+<td>2024/08/02 16:20</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-430/">ABT-430</a></td>
+<td><a href="../ABT-430/">【[客户A]】1565M dongle + headset的播放距离短</a></td>
+<td>2024/08/02 11:14</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-429/">ABT-429</a></td>
+<td><a href="../ABT-429/">AB1571D 电池供电，无法开机</a></td>
+<td>2024/07/31 20:27</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-428/">ABT-428</a></td>
+<td><a href="../ABT-428/">【[客户A]】配置 ULL_CONFIG</a></td>
+<td>2024/07/31 10:51</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-427/">ABT-427</a></td>
+<td><a href="../ABT-427/">【[客户A]】earbuds 连接dongle 不能被抢断</a></td>
+<td>2024/07/24 20:42</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-426/">ABT-426</a></td>
+<td><a href="../ABT-426/">AB1577AM Dmic用做ANC mic无效（[客户F]）</a></td>
+<td>2024/07/24 10:14</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-425/">ABT-425</a></td>
+<td><a href="../ABT-425/">【[客户A]】自适应ANC 更新</a></td>
+<td>2024/07/22 11:26</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-424/">ABT-424</a></td>
+<td><a href="../ABT-424/">【[客户A]】 USB audio mic 输出 96Khz/16bit、48Khz/24bit、96Khz/24bit</a></td>
+<td>2024/07/22 11:00</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-423/">ABT-423</a></td>
+<td><a href="../ABT-423/">【[客户A]】切换vp语言</a></td>
+<td>2024/07/18 19:42</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-422/">ABT-422</a></td>
+<td><a href="../ABT-422/">[ABT-422](ABT-422.md)</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-421/">ABT-421</a></td>
+<td><a href="../ABT-421/">【[客户A]】dongle 控制耳机和给耳机升级</a></td>
+<td>2024/07/17 15:45</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-420/">ABT-420</a></td>
+<td><a href="../ABT-420/">【[客户A]】AB1585 line-out 功能设置</a></td>
+<td>2024/07/15 11:23</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-419/">ABT-419</a></td>
+<td><a href="../ABT-419/">【[客户A]】iOS 发送race cmd</a></td>
+<td>2024/07/11 16:45</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-418/">ABT-418</a></td>
+<td><a href="../ABT-418/">【[客户A]】headset 连接dongle 出现无声问题</a></td>
+<td>2024/07/10 18:19</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-417/">ABT-417</a></td>
+<td><a href="../ABT-417/">【[客户A]】AB1565 AINR add on</a></td>
+<td>2024/07/10 18:15</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-416/">ABT-416</a></td>
+<td><a href="../ABT-416/">【[客户A]】PC桌面端应用</a></td>
+<td>2024/07/09 20:41</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-415/">ABT-415</a></td>
+<td><a href="../ABT-415/">【[客户A]】BQB [人名9]P/[人名9]/ACS/BV-07-C, [人名9]P/[人名9]/TCA/BV-04-C fail</a></td>
+<td>2024/07/09 14:53</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-414/">ABT-414</a></td>
+<td><a href="../ABT-414/">【[客户A]】dongle 无法区分三方通话</a></td>
+<td>2024/07/09 10:34</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-413/">ABT-413</a></td>
+<td><a href="../ABT-413/">讯通联AB1565AM 头戴式2MIC+ENC 通话调试(9:00~18:00)</a></td>
+<td>2024/07/08 17:13</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-412/">ABT-412</a></td>
+<td><a href="../ABT-412/">AB1565 系列通过按键切换通话参数</a></td>
+<td>2024/07/08 12:49</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-411/">ABT-411</a></td>
+<td><a href="../ABT-411/">App 无法正确识别软件版本</a></td>
+<td>2024/07/08 12:23</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-410/">ABT-410</a></td>
+<td><a href="../ABT-410/">dongle  BQB调制和连接方式咨询</a></td>
+<td>2024/07/05 12:00</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-409/">ABT-409</a></td>
+<td><a href="../ABT-409/">【[客户A]】dongle 连接iPhone 15播放有杂音</a></td>
+<td>2024/07/04 17:03</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-408/">ABT-408</a></td>
+<td><a href="../ABT-408/">AB1565_V3.10.0 骨传导耳机通话声音小</a></td>
+<td>2024/07/02 14:49</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-407/">ABT-407</a></td>
+<td><a href="../ABT-407/">讯通联AB1565-glass  2mic  通话调试(外9:00~18:00)</a></td>
+<td>2024/07/02 10:07</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-406/">ABT-406</a></td>
+<td><a href="../ABT-406/">AB1565D dongle 量产写SIRK咨询</a></td>
+<td>2024/06/26 16:28</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-405/">ABT-405</a></td>
+<td><a href="../ABT-405/">AB157x V5.1.0 lea、gaming、lc3 plus addon</a></td>
+<td>2024/06/26 10:28</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-404/">ABT-404</a></td>
+<td><a href="../ABT-404/">AB1565 voice prompt 更高码率</a></td>
+<td>2024/06/25 19:01</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-403/">ABT-403</a></td>
+<td><a href="../ABT-403/">【[客户E]】AB1565 设置 A2DP latency 修复卡顿后续</a></td>
+<td>2024/06/24 11:03</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-402/">ABT-402</a></td>
+<td><a href="../ABT-402/">AB1565 headset dongle 项目支持EMP</a></td>
+<td>2024/06/18 11:48</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-401/">ABT-401</a></td>
+<td><a href="../ABT-401/">AB1565M dongle 无法获取通话信号</a></td>
+<td>2024/06/17 15:52</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-400/">ABT-400</a></td>
+<td><a href="../ABT-400/">dongle 项目USB跟line in连接同一个电脑有低噪</a></td>
+<td>2024/06/12 19:47</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-399/">ABT-399</a></td>
+<td><a href="../ABT-399/">AB1565D dongle 支持AFE</a></td>
+<td>2024/06/11 16:25</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-398/">ABT-398</a></td>
+<td><a href="../ABT-398/">AB1565 SPI 使用文档</a></td>
+<td>2024/06/07 14:29</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-397/">ABT-397</a></td>
+<td><a href="../ABT-397/">AB1565 switch key开关机应用</a></td>
+<td>2024/06/03 19:03</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-396/">ABT-396</a></td>
+<td><a href="../ABT-396/">AB1565 LE 速率和调制类型</a></td>
+<td>2024/06/03 14:45</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-395/">ABT-395</a></td>
+<td><a href="../ABT-395/">AB1565 headset linein input i2s卡顿</a></td>
+<td>2024/05/30 16:10</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-394/">ABT-394</a></td>
+<td><a href="../ABT-394/">Auracast 的使用说明</a></td>
+<td>2024/05/29 15:13</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-393/">ABT-393</a></td>
+<td><a href="../ABT-393/">AB1565 headset_wired_only相关文档</a></td>
+<td>2024/05/27 20:15</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-392/">ABT-392</a></td>
+<td><a href="../ABT-392/">AB1565 拒绝连接请求</a></td>
+<td>2024/05/23 11:15</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-391/">ABT-391</a></td>
+<td><a href="../ABT-391/">AB1571D V3.10.0从ULL2切到CIS后，不会自动连接的问题</a></td>
+<td>2024/05/22 20:06</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-390/">ABT-390</a></td>
+<td><a href="../ABT-390/">AB1565 实现5击</a></td>
+<td>2024/05/21 20:12</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-389/">ABT-389</a></td>
+<td><a href="../ABT-389/">AB157x V3.8.0 lea、gaming、lc3 plus addon</a></td>
+<td>2024/05/20 19:39</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-388/">ABT-388</a></td>
+<td><a href="../ABT-388/">AB1565 V3.7.0 概率耳机工作异常（不回连，不配对）（[客户F]）</a></td>
+<td>2024/05/17 10:19</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-387/">ABT-387</a></td>
+<td><a href="../ABT-387/">AB1565 V3.7.0 概率没有BLE广播（[客户F]）</a></td>
+<td>2024/05/16 17:11</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-386/">ABT-386</a></td>
+<td><a href="../ABT-386/">AB1565 RTC-GPIO作为普通按键IO（[客户F]）</a></td>
+<td>2024/05/16 12:12</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-385/">ABT-385</a></td>
+<td><a href="../ABT-385/">AB1571 调试PEQ 后无法保存</a></td>
+<td>2024/05/16 10:52</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-384/">ABT-384</a></td>
+<td><a href="../ABT-384/">【咨询】AB1565M dongle ULL2 低延迟问题</a></td>
+<td>2024/05/16 10:24</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-383/">ABT-383</a></td>
+<td><a href="../ABT-383/">【[客户J]】EMP时，手机音乐被提示打断</a></td>
+<td>2024/05/15 18:56</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-382/">ABT-382</a></td>
+<td><a href="../ABT-382/">【[客户J]】AB1562E启用绝对音量手无法控制音量</a></td>
+<td>2024/05/14 15:56</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-381/">ABT-381</a></td>
+<td><a href="../ABT-381/">【[客户I]】使用过程中出现log_dro 和assert</a></td>
+<td>2024/05/11 19:04</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-380/">ABT-380</a></td>
+<td><a href="../ABT-380/">AB1565D dongle 播放的时候assert</a></td>
+<td>2024/05/11 15:10</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-379/">ABT-379</a></td>
+<td><a href="../ABT-379/">AB1565 三方通话</a></td>
+<td>2024/05/11 11:47</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-378/">ABT-378</a></td>
+<td><a href="../ABT-378/">AB1571 通透开启时的PEQ选择</a></td>
+<td>2024/05/10 14:16</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-377/">ABT-377</a></td>
+<td><a href="../ABT-377/">AB1585+AB1565D 组合</a></td>
+<td>2024/05/09 14:27</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-376/">ABT-376</a></td>
+<td><a href="../ABT-376/">AB1565AM headset 设置功放控制</a></td>
+<td>2024/05/07 18:38</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-375/">ABT-375</a></td>
+<td><a href="../ABT-375/">adaptive EQ和ANC的调试介绍</a></td>
+<td>2024/04/30 11:51</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-374/">ABT-374</a></td>
+<td><a href="../ABT-374/">【[客户I]】使用过程中出现了asset</a></td>
+<td>2024/04/29 12:13</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-373/">ABT-373</a></td>
+<td><a href="../ABT-373/">【[客户I]】3.10.0 RHO后触发Siri异常</a></td>
+<td>2024/04/29 12:03</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-372/">ABT-372</a></td>
+<td><a href="../ABT-372/">AB157x gaming + lc3 plus addon</a></td>
+<td>2024/04/26 20:00</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-371/">ABT-371</a></td>
+<td><a href="../ABT-371/">AB1565AM设置PC蓝牙加串口调试助手调试蓝牙问题</a></td>
+<td>2024/04/26 16:58</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-370/">ABT-370</a></td>
+<td><a href="../ABT-370/">AB1571D dongle模式切换后连接问题</a></td>
+<td>2024/04/24 20:41</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-369/">ABT-369</a></td>
+<td><a href="../ABT-369/">AB1565 dongle 判断usb data</a></td>
+<td>2024/04/23 18:09</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-368/">ABT-368</a></td>
+<td><a href="../ABT-368/">【[客户E]】AB1565AM 听音乐有轻微卡音</a></td>
+<td>2024/04/19 18:20</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-367/">ABT-367</a></td>
+<td><a href="../ABT-367/">【[客户I]】 AB1577S 在RHO 是BLE 发生了连接断开</a></td>
+<td>2024/04/16 10:41</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-366/">ABT-366</a></td>
+<td><a href="../ABT-366/">AB1577s 耳机连接dongle死机（[客户I] X2）</a></td>
+<td>2024/04/02 19:38</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-365/">ABT-365</a></td>
+<td><a href="../ABT-365/">【[客户E]】AB1565 播放音乐卡顿问题</a></td>
+<td>2024/04/02 17:01</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-364/">ABT-364</a></td>
+<td><a href="../ABT-364/">AB1565 使用内部flash 存储log</a></td>
+<td>2024/04/02 15:28</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-363/">ABT-363</a></td>
+<td><a href="../ABT-363/">AB157x ull stream走空间音频算法（[客户I] X2）</a></td>
+<td>2024/04/02 11:16</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-362/">ABT-362</a></td>
+<td><a href="../ABT-362/">AB1565 通过App来控制codec</a></td>
+<td>2024/03/29 16:59</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-361/">ABT-361</a></td>
+<td><a href="../ABT-361/">AB1577s音乐声从dongle切到耳机时间问题</a></td>
+<td>2024/03/27 11:33</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-360/">ABT-360</a></td>
+<td><a href="../ABT-360/">AB1565 支持 96K 24bit 咨询</a></td>
+<td>2024/03/27 10:40</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-359/">ABT-359</a></td>
+<td><a href="../ABT-359/">AB157x leaudio dongle和Earbuds连接</a></td>
+<td>2024/03/25 20:02</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-358/">ABT-358</a></td>
+<td><a href="../ABT-358/">【[客户I]】 AB1577S App 写 PEQ</a></td>
+<td>2024/03/22 16:29</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-357/">ABT-357</a></td>
+<td><a href="../ABT-357/">AB1565AM获取FFmic 数据DSP patch申请【[客户F]】</a></td>
+<td>2024/03/22 16:01</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-356/">ABT-356</a></td>
+<td><a href="../ABT-356/">AB1577S log level</a></td>
+<td>2024/03/22 09:54</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-355/">ABT-355</a></td>
+<td><a href="../ABT-355/">AB1565 LDAC add on</a></td>
+<td>2024/03/21 16:53</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-354/">ABT-354</a></td>
+<td><a href="../ABT-354/">AB1577S [客户I] X2 Pro 项目咨询</a></td>
+<td>2024/03/21 11:33</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-353/">ABT-353</a></td>
+<td><a href="../ABT-353/">AB1577S 支持 ULL2.1 lossless</a></td>
+<td>2024/03/20 15:15</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-352/">ABT-352</a></td>
+<td><a href="../ABT-352/">AB1577S LHDC addon</a></td>
+<td>2024/03/18 11:15</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-351/">ABT-351</a></td>
+<td><a href="../ABT-351/">dongle 电脑端显示咨询</a></td>
+<td>2024/03/15 10:40</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-350/">ABT-350</a></td>
+<td><a href="../ABT-350/">AB1577S 支持 unique id</a></td>
+<td>2024/03/15 10:22</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-349/">ABT-349</a></td>
+<td><a href="../ABT-349/">【[客户E]】Google Pixel 7 相关补丁</a></td>
+<td>2024/03/14 16:33</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-348/">ABT-348</a></td>
+<td><a href="../ABT-348/">ab1585 [客户C]新项目咨询</a></td>
+<td>2024/03/12 14:39</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-347/">ABT-347</a></td>
+<td><a href="../ABT-347/">AB1565 SDK3.6.0 连个手机播放速度慢</a></td>
+<td>2024/03/11 17:16</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-346/">ABT-346</a></td>
+<td><a href="../ABT-346/">ab1565 V3.10.0 add on  (lc3plus / gaming_mode)</a></td>
+<td>2024/03/06 10:20</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-345/">ABT-345</a></td>
+<td><a href="../ABT-345/">AB157X MIMI 支持</a></td>
+<td>2024/02/28 16:29</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-344/">ABT-344</a></td>
+<td><a href="../ABT-344/">AB1565 1wire RACE CMD 推出指令</a></td>
+<td>2024/02/26 15:06</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-343/">ABT-343</a></td>
+<td><a href="../ABT-343/">WirelessMic录音有静音问题</a></td>
+<td>2024/02/22 15:51</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-342/">ABT-342</a></td>
+<td><a href="../ABT-342/">AB1577M + AB1571D ULL3 add on</a></td>
+<td>2024/02/22 14:26</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-341/">ABT-341</a></td>
+<td><a href="../ABT-341/">AB1565 修改蓝牙地址</a></td>
+<td>2024/02/22 14:13</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-340/">ABT-340</a></td>
+<td><a href="../ABT-340/">LC3 Plus费用问题咨询</a></td>
+<td>2024/02/20 11:35</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-339/">ABT-339</a></td>
+<td><a href="../ABT-339/">AB1585 headset 音源处理问题</a></td>
+<td>2024/02/20 10:06</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-338/">ABT-338</a></td>
+<td><a href="../ABT-338/">AB158X license 申请</a></td>
+<td>2024/02/05 15:24</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-337/">ABT-337</a></td>
+<td><a href="../ABT-337/">AB1565 wireless mic 跟dongle的延时测试</a></td>
+<td>2024/02/01 18:45</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-336/">ABT-336</a></td>
+<td><a href="../ABT-336/">AB1565 wirelessmic 通话相关</a></td>
+<td>2024/01/30 11:04</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-335/">ABT-335</a></td>
+<td><a href="../ABT-335/">AB1571 短按 Power key 就能开机</a></td>
+<td>2024/01/25 19:31</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-334/">ABT-334</a></td>
+<td><a href="../ABT-334/">【[客户E]】跨SDK FOTA升级</a></td>
+<td>2024/01/23 16:41</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-333/">ABT-333</a></td>
+<td><a href="../ABT-333/">AB1565 1+1MIC，或者2+1mic 咨询</a></td>
+<td>2024/01/19 12:03</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-332/">ABT-332</a></td>
+<td><a href="../ABT-332/">[客户E]】Pixel 7 连接后在LE Audio 下音量控制只有单边有效</a></td>
+<td>2024/01/16 19:42</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-331/">ABT-331</a></td>
+<td><a href="../ABT-331/">【[客户E]】经典蓝牙使用概率性断开连接后播放无声</a></td>
+<td>2024/01/16 10:29</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-330/">ABT-330</a></td>
+<td><a href="../ABT-330/">AB1585 PSAP 和 Vivid PT add on</a></td>
+<td>2024/01/15 10:34</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-329/">ABT-329</a></td>
+<td><a href="../ABT-329/">ab1565 gdb 调试问题</a></td>
+<td>2024/01/09 12:25</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-328/">ABT-328</a></td>
+<td><a href="../ABT-328/">AB1565 License 申请</a></td>
+<td>2024/01/08 18:37</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-327/">ABT-327</a></td>
+<td><a href="../ABT-327/">AB1562X系列，AB1565系列支持的AAC</a></td>
+<td>2024/01/05 18:37</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-326/">ABT-326</a></td>
+<td><a href="../ABT-326/">AB1571X RTC_GPIO0 做普通按键设置</a></td>
+<td>2024/01/04 15:29</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-325/">ABT-325</a></td>
+<td><a href="../ABT-325/">【[客户E]】LE Audio下概率性无法控制播放暂停</a></td>
+<td>2023/12/28 17:09</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-324/">ABT-324</a></td>
+<td><a href="../ABT-324/">AB1585 windows license</a></td>
+<td>2023/12/28 11:18</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-323/">ABT-323</a></td>
+<td><a href="../ABT-323/">DCHS 咨询</a></td>
+<td>2023/12/27 16:24</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-322/">ABT-322</a></td>
+<td><a href="../ABT-322/">dongle 修改电脑端的显示后宕机</a></td>
+<td>2023/12/27 15:50</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-321/">ABT-321</a></td>
+<td><a href="../ABT-321/">SDK V3.9.0 Android App兼容旧SDK</a></td>
+<td>2023/12/26 14:56</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-320/">ABT-320</a></td>
+<td><a href="../ABT-320/">speaker project 显示图片不对问题</a></td>
+<td>2023/12/26 11:40</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-319/">ABT-319</a></td>
+<td><a href="../ABT-319/">【[客户E]】Pixel 7 使用LE audio 播放音乐左右大小声</a></td>
+<td>2023/12/25 18:46</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-318/">ABT-318</a></td>
+<td><a href="../ABT-318/">重新评估[ABT-155](ABT-155.md)的需求</a></td>
+<td>2023/12/25 16:55</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-317/">ABT-317</a></td>
+<td><a href="../ABT-317/">AB1565 bt_source_dongle 咨询</a></td>
+<td>2023/12/25 11:50</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-316/">ABT-316</a></td>
+<td><a href="../ABT-316/">AB1565 WirelessMic 会交叉回连</a></td>
+<td>2023/12/22 16:57</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-315/">ABT-315</a></td>
+<td><a href="../ABT-315/">AB1565 wirelessMic 电脑关机，mic端也关机</a></td>
+<td>2023/12/22 15:55</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-314/">ABT-314</a></td>
+<td><a href="../ABT-314/">关于AB1571D  dongle支持line in提供参考设计</a></td>
+<td>2023/12/22 12:13</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-313/">ABT-313</a></td>
+<td><a href="../ABT-313/">[ABT-313](ABT-313.md)</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-312/">ABT-312</a></td>
+<td><a href="../ABT-312/">AB1565M 修改ld文件增加ROFS的空间</a></td>
+<td>2023/12/21 19:05</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-311/">ABT-311</a></td>
+<td><a href="../ABT-311/">AB1577M + AB1571D ull3支持</a></td>
+<td>2023/12/21 16:02</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-310/">ABT-310</a></td>
+<td><a href="../ABT-310/">【[客户E]】Pixel 7 开启LE audio后右边无声</a></td>
+<td>2023/12/21 15:24</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-309/">ABT-309</a></td>
+<td><a href="../ABT-309/">AB1565 LED当做普通GPIO来控制</a></td>
+<td>2023/12/21 10:30</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-308/">ABT-308</a></td>
+<td><a href="../ABT-308/">【[客户E]】播放音乐中出现卡顿</a></td>
+<td>2023/12/20 16:12</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-307/">ABT-307</a></td>
+<td><a href="../ABT-307/">【[客户E]】Pixel 7 连接后开关LE 音频出现外放</a></td>
+<td>2023/12/15 17:09</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-306/">ABT-306</a></td>
+<td><a href="../ABT-306/">【[客户E]】Pixel 7 连接后的VP提示音错误</a></td>
+<td>2023/12/15 17:00</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-305/">ABT-305</a></td>
+<td><a href="../ABT-305/">DSP和MCU JTAG debug tool</a></td>
+<td>2023/12/13 19:05</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-304/">ABT-304</a></td>
+<td><a href="../ABT-304/">AB1565 Audio dump 指导</a></td>
+<td>2023/12/13 18:49</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-303/">ABT-303</a></td>
+<td><a href="../ABT-303/">AB1565 输出需求</a></td>
+<td>2023/11/30 16:00</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-302/">ABT-302</a></td>
+<td><a href="../ABT-302/">修改adaptive ANC参数后导致宕机</a></td>
+<td>2023/11/28 10:51</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-301/">ABT-301</a></td>
+<td><a href="../ABT-301/">【[客户E]】左右两边声音大小不一样</a></td>
+<td>2023/11/27 19:41</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-300/">ABT-300</a></td>
+<td><a href="../ABT-300/">AB1565x wireless mic rx死机问题</a></td>
+<td>2023/11/27 16:50</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-299/">ABT-299</a></td>
+<td><a href="../ABT-299/">【[客户E]】连续出发语音助手等动作后宕机</a></td>
+<td>2023/11/27 16:29</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-298/">ABT-298</a></td>
+<td><a href="../ABT-298/">OTA过程中宕机</a></td>
+<td>2023/11/24 17:52</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-297/">ABT-297</a></td>
+<td><a href="../ABT-297/">【[客户E]】连接蓝牙使用有一边无声</a></td>
+<td>2023/11/23 10:20</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-296/">ABT-296</a></td>
+<td><a href="../ABT-296/">【[客户E]】LEA 开启后 已连接还能被搜索和连接的问题</a></td>
+<td>2023/11/21 15:39</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-295/">ABT-295</a></td>
+<td><a href="../ABT-295/">AB1565 App 接口</a></td>
+<td>2023/11/15 16:47</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-294/">ABT-294</a></td>
+<td><a href="../ABT-294/">AB1565 V3.2.0 添加了新lib 后宕机</a></td>
+<td>2023/11/13 15:44</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-293/">ABT-293</a></td>
+<td><a href="../ABT-293/">speaker project 修改手机的显示图片</a></td>
+<td>2023/11/13 15:36</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-292/">ABT-292</a></td>
+<td><a href="../ABT-292/">AB1565 off mode 下开机慢，导致BT on pattern 无法收取</a></td>
+<td>2023/11/13 11:33</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-291/">ABT-291</a></td>
+<td><a href="../ABT-291/">讯通联AB1562M-BP60 (2MIC +IGO  )通话调试（外 ENC实验室 2023/11/14  10:00-18:00）</a></td>
+<td>2023/11/10 14:21</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-290/">ABT-290</a></td>
+<td><a href="../ABT-290/">AB1571 LED灯UI</a></td>
+<td>2023/11/10 14:17</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-289/">ABT-289</a></td>
+<td><a href="../ABT-289/">AB1565 移植第三方算法问题</a></td>
+<td>2023/11/10 10:22</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-288/">ABT-288</a></td>
+<td><a href="../ABT-288/">SDK V2.9.0 Ubuntu 下编译不过</a></td>
+<td>2023/11/08 20:46</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-287/">ABT-287</a></td>
+<td><a href="../ABT-287/">SDK V2.9.0 license</a></td>
+<td>2023/11/08 20:21</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-286/">ABT-286</a></td>
+<td><a href="../ABT-286/">【[客户E]】AB1565 概率性无法识别关机pattern</a></td>
+<td>2023/11/04 10:42</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-285/">ABT-285</a></td>
+<td><a href="../ABT-285/">【[客户E]】AB1565 修改了充电逻辑问题</a></td>
+<td>2023/11/04 10:10</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-284/">ABT-284</a></td>
+<td><a href="../ABT-284/">AB158x License申请</a></td>
+<td>2023/11/03 12:24</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-283/">ABT-283</a></td>
+<td><a href="../ABT-283/">AB1565 移植lib文件</a></td>
+<td>2023/11/03 11:28</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-282/">ABT-282</a></td>
+<td><a href="../ABT-282/">AB157X 系列license 申请</a></td>
+<td>2023/11/03 11:15</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-281/">ABT-281</a></td>
+<td><a href="../ABT-281/">AB157x License申请</a></td>
+<td>2023/11/02 19:27</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-280/">ABT-280</a></td>
+<td><a href="../ABT-280/">AB158x License申请</a></td>
+<td>2023/11/02 19:24</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-279/">ABT-279</a></td>
+<td><a href="../ABT-279/">AB1571 License申请</a></td>
+<td>2023/11/02 19:18</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-278/">ABT-278</a></td>
+<td><a href="../ABT-278/">AB157X 系列license 申请</a></td>
+<td>2023/10/31 15:47</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-277/">ABT-277</a></td>
+<td><a href="../ABT-277/">AB1565 系列license申请</a></td>
+<td>2023/10/31 15:45</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-276/">ABT-276</a></td>
+<td><a href="../ABT-276/">AB1565 无线麦配对和回连</a></td>
+<td>2023/10/30 18:16</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-275/">ABT-275</a></td>
+<td><a href="../ABT-275/">Auracast 技术支持</a></td>
+<td>2023/10/19 15:34</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-274/">ABT-274</a></td>
+<td><a href="../ABT-274/">AB1565 License 申请</a></td>
+<td>2023/10/18 20:07</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-273/">ABT-273</a></td>
+<td><a href="../ABT-273/">AB1565 SDK V3.9.0 LDAC 和 AINR add on</a></td>
+<td>2023/10/17 14:44</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-272/">ABT-272</a></td>
+<td><a href="../ABT-272/">【[客户E]】Pixel 7 LEA 补丁</a></td>
+<td>2023/10/17 10:24</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-271/">ABT-271</a></td>
+<td><a href="../ABT-271/">带空间音频的OWS耳机咨询</a></td>
+<td>2023/10/12 15:42</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-270/">ABT-270</a></td>
+<td><a href="../ABT-270/">AB1565 发送话音信号给App</a></td>
+<td>2023/10/12 10:07</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-269/">ABT-269</a></td>
+<td><a href="../ABT-269/">AB1565 SDK V3.9.0 LEA 和dongle add on</a></td>
+<td>2023/10/09 18:26</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-268/">ABT-268</a></td>
+<td><a href="../ABT-268/">silence detect 功能异常</a></td>
+<td>2023/10/08 11:49</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-267/">ABT-267</a></td>
+<td><a href="../ABT-267/">iOS App 多次切换PEQ后，左右耳PEQ不再同步</a></td>
+<td>2023/10/08 11:15</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-266/">ABT-266</a></td>
+<td><a href="../ABT-266/">【[客户E]】App 异常弹窗问题</a></td>
+<td>2023/10/07 15:53</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-265/">ABT-265</a></td>
+<td><a href="../ABT-265/">【[客户E]】BIS切换到CIS，earbuds状态不对了</a></td>
+<td>2023/09/28 14:49</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-264/">ABT-264</a></td>
+<td><a href="../ABT-264/">【[客户E]】耳机连接dongle 触发了语音助手问题</a></td>
+<td>2023/09/27 16:35</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-263/">ABT-263</a></td>
+<td><a href="../ABT-263/">【[客户E]】BIS 下关机再开机回连声音出得慢问题</a></td>
+<td>2023/09/27 11:38</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-262/">ABT-262</a></td>
+<td><a href="../ABT-262/">AB1565 外挂FLASH 功能咨询</a></td>
+<td>2023/09/27 11:28</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-261/">ABT-261</a></td>
+<td><a href="../ABT-261/">AB1565无线麦feature</a></td>
+<td>2023/09/25 15:35</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-260/">ABT-260</a></td>
+<td><a href="../ABT-260/">【[客户E]】ULL和CIS 切换会导致无声</a></td>
+<td>2023/09/20 19:32</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-259/">ABT-259</a></td>
+<td><a href="../ABT-259/">【[客户E]】LEA连接Google Pixel 7手机</a></td>
+<td>2023/09/20 11:49</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-258/">ABT-258</a></td>
+<td><a href="../ABT-258/">蓝牙5.4的支持</a></td>
+<td>2023/09/20 11:44</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-257/">ABT-257</a></td>
+<td><a href="../ABT-257/">【[客户E]】连接dongle 输出小</a></td>
+<td>2023/09/19 12:19</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-256/">ABT-256</a></td>
+<td><a href="../ABT-256/">【[客户E]】BIS 连接和播放问题</a></td>
+<td>2023/09/18 20:21</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-255/">ABT-255</a></td>
+<td><a href="../ABT-255/">【[客户E]】BIS 概率性出现音质变差</a></td>
+<td>2023/09/18 17:11</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-254/">ABT-254</a></td>
+<td><a href="../ABT-254/">【[客户E]】ULL下左右耳之间延时测试</a></td>
+<td>2023/09/18 16:04</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-253/">ABT-253</a></td>
+<td><a href="../ABT-253/">【[客户E]】音量等级为0时，状态不对</a></td>
+<td>2023/09/18 14:11</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-252/">ABT-252</a></td>
+<td><a href="../ABT-252/">AB1565 无线麦回连</a></td>
+<td>2023/09/16 16:20</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-251/">ABT-251</a></td>
+<td><a href="../ABT-251/">【[客户E]】SIRK 的设置问题</a></td>
+<td>2023/09/14 20:01</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-250/">ABT-250</a></td>
+<td><a href="../ABT-250/">【[客户E]】BIS下关闭一只耳机，再回连，dongle宕机</a></td>
+<td>2023/09/12 16:16</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-249/">ABT-249</a></td>
+<td><a href="../ABT-249/">【[客户E]】LONG PRESS SHUTDOWN 时间设置</a></td>
+<td>2023/09/12 14:26</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-248/">ABT-248</a></td>
+<td><a href="../ABT-248/">【[客户E]】CIS/BIS 切换，遇到没有声音问题</a></td>
+<td>2023/09/11 17:37</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-247/">ABT-247</a></td>
+<td><a href="../ABT-247/">【[客户E]】earbuds 改变降噪状态，App没有立刻变化</a></td>
+<td>2023/09/09 11:48</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-246/">ABT-246</a></td>
+<td><a href="../ABT-246/">【[客户E]】CIS/BIS 切换，副机状态不对</a></td>
+<td>2023/09/08 12:32</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-245/">ABT-245</a></td>
+<td><a href="../ABT-245/">【[客户E]】播放VP 导致了宕机</a></td>
+<td>2023/09/08 12:18</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-244/">ABT-244</a></td>
+<td><a href="../ABT-244/">【[客户E]】LEA 连接性，没有声音问题</a></td>
+<td>2023/09/08 12:11</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-243/">ABT-243</a></td>
+<td><a href="../ABT-243/">【[客户E]】LEA 播放下无法连接App</a></td>
+<td>2023/09/07 20:23</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-242/">ABT-242</a></td>
+<td><a href="../ABT-242/">【[客户E]】ULL或者LEA 下 进行通话 earbuds 状态不对</a></td>
+<td>2023/09/07 15:30</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-241/">ABT-241</a></td>
+<td><a href="../ABT-241/">【[客户E]】 ULL连接下耳机左右耳之间延时</a></td>
+<td>2023/09/05 19:41</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-240/">ABT-240</a></td>
+<td><a href="../ABT-240/">【[客户E]】LEA CIS和BIS 扫频曲线不一致(外部ANC实验室 202309014：14：00-18：00)</a></td>
+<td>2023/09/05 16:30</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-239/">ABT-239</a></td>
+<td><a href="../ABT-239/">【[客户E]】dongle 第一次连接没有声音问题</a></td>
+<td>2023/09/04 15:39</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-238/">ABT-238</a></td>
+<td><a href="../ABT-238/">dongle LEA 跟[人名9]P共存问题咨询</a></td>
+<td>2023/08/31 16:23</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-237/">ABT-237</a></td>
+<td><a href="../ABT-237/">【[客户E]】dongle 从ULL2切换到BIS</a></td>
+<td>2023/08/30 15:04</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-236/">ABT-236</a></td>
+<td><a href="../ABT-236/">AB1565AM 第三方NR算法</a></td>
+<td>2023/08/30 14:27</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-235/">ABT-235</a></td>
+<td><a href="../ABT-235/">AB1565 ISINK 呼吸灯</a></td>
+<td>2023/08/29 12:18</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-234/">ABT-234</a></td>
+<td><a href="../ABT-234/">iOS App V3.8.0 源码</a></td>
+<td>2023/08/28 10:34</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-233/">ABT-233</a></td>
+<td><a href="../ABT-233/">【[客户E]】AB1565AM SDK V3.6.0 ClassAB 改ClassD导致降噪无效</a></td>
+<td>2023/08/18 11:58</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-232/">ABT-232</a></td>
+<td><a href="../ABT-232/">【[客户E]】dongle 回连顺序问题</a></td>
+<td>2023/08/25 16:25</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-231/">ABT-231</a></td>
+<td><a href="../ABT-231/">【[客户E]】不明情况的log error</a></td>
+<td>2023/08/23 14:31</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-230/">ABT-230</a></td>
+<td><a href="../ABT-230/">SDK V3.8.0 dongle add on</a></td>
+<td>2023/08/04 16:52</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-229/">ABT-229</a></td>
+<td><a href="../ABT-229/">AB1565AM SDK V3.6.0 LE audio BIS和CIS切换</a></td>
+<td>2023/08/04 15:36</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-228/">ABT-228</a></td>
+<td><a href="../ABT-228/">AB1565AM V3.6.0 LE Audio 连接问题</a></td>
+<td>2023/08/04 14:59</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-227/">ABT-227</a></td>
+<td><a href="../ABT-227/">AB1565 SDK V3.8.0 dongle add on</a></td>
+<td>2023/08/04 10:00</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-226/">ABT-226</a></td>
+<td><a href="../ABT-226/">AB1585 无线mic支持咨询</a></td>
+<td>2023/08/03 14:59</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-225/">ABT-225</a></td>
+<td><a href="../ABT-225/">AB1565 earbuds 连接dongle，无法区分来电和音乐状态</a></td>
+<td>2023/08/03 11:41</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-224/">ABT-224</a></td>
+<td><a href="../ABT-224/">SDK V3.6.0 ULL2连接dognle 播放音乐没有声音</a></td>
+<td>2023/08/03 10:48</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-223/">ABT-223</a></td>
+<td><a href="../ABT-223/">AB1565 Android App 宕机</a></td>
+<td>2023/08/01 11:28</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-222/">ABT-222</a></td>
+<td><a href="../ABT-222/">AB1565 V3.4.0 iOS App没有收到RHO后的指令</a></td>
+<td>2023/08/01 11:12</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-221/">ABT-221</a></td>
+<td><a href="../ABT-221/">AB1565 无线麦打开PC-声音会死机</a></td>
+<td>2023/07/31 14:55</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-220/">ABT-220</a></td>
+<td><a href="../ABT-220/">AB1565 SDK V3.7.0 LE Audio  add on</a></td>
+<td>2023/07/31 12:07</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-219/">ABT-219</a></td>
+<td><a href="../ABT-219/">AB1562 NTC高温电流会跳变</a></td>
+<td>2023/07/31 10:58</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-218/">ABT-218</a></td>
+<td><a href="../ABT-218/">AB1565 无线麦文档</a></td>
+<td>2023/07/27 18:35</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-217/">ABT-217</a></td>
+<td><a href="../ABT-217/">AB1565 V3.7.0 IGO addon</a></td>
+<td>2023/07/27 15:54</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-216/">ABT-216</a></td>
+<td><a href="../ABT-216/">V3.7.0 断开一个设备后提醒</a></td>
+<td>2023/07/25 20:06</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-215/">ABT-215</a></td>
+<td><a href="../ABT-215/">AB1565 SDK V3.4.0 BQB 问题</a></td>
+<td>2023/07/25 19:34</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-214/">ABT-214</a></td>
+<td><a href="../ABT-214/">SDK V3.6.0 earbuds 连接性问题</a></td>
+<td>2023/07/25 16:13</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-213/">ABT-213</a></td>
+<td><a href="../ABT-213/">AB1565 App查看RSSI</a></td>
+<td>2023/07/24 15:43</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-212/">ABT-212</a></td>
+<td><a href="../ABT-212/">关于AB1565AM  ANC功能应用咨询</a></td>
+<td>2023/07/24 14:39</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-211/">ABT-211</a></td>
+<td><a href="../ABT-211/">AB1565M 无线麦编译咨询</a></td>
+<td>2023/07/21 19:51</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-210/">ABT-210</a></td>
+<td><a href="../ABT-210/">AB1565 V3.4.0 LE audio add on</a></td>
+<td>2023/07/21 18:50</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-209/">ABT-209</a></td>
+<td><a href="../ABT-209/">AB1565 死机log</a></td>
+<td>2023/07/21 16:01</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-208/">ABT-208</a></td>
+<td><a href="../ABT-208/">AB1565 SDK V3.7.0 dongle add on</a></td>
+<td>2023/07/20 17:22</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-207/">ABT-207</a></td>
+<td><a href="../ABT-207/">AB1565 1-WIRE Lab Test Tool</a></td>
+<td>2023/07/20 16:25</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-206/">ABT-206</a></td>
+<td><a href="../ABT-206/">iOS App V3.7.0 升级到50%提示失败</a></td>
+<td>2023/07/20 12:12</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-205/">ABT-205</a></td>
+<td><a href="../ABT-205/">【[客户A]】ULL2连接后频响测试要求40K</a></td>
+<td>2023/07/19 11:10</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-204/">ABT-204</a></td>
+<td><a href="../ABT-204/">AB1565AM  待机功耗高问题</a></td>
+<td>2023/07/13 18:21</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-203/">ABT-203</a></td>
+<td><a href="../ABT-203/">AB1565 earbuds 一拖三功能</a></td>
+<td>2023/07/13 16:59</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-202/">ABT-202</a></td>
+<td><a href="../ABT-202/">AM1565M 做无线mic 功能咨询</a></td>
+<td>2023/07/12 11:00</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-201/">ABT-201</a></td>
+<td><a href="../ABT-201/">AB1565AM 头戴功能咨询</a></td>
+<td>2023/07/06 15:04</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-200/">ABT-200</a></td>
+<td><a href="../ABT-200/">AB157X License 申请</a></td>
+<td>2023/06/30 17:04</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-199/">ABT-199</a></td>
+<td><a href="../ABT-199/">AB1586 DCHS 规格支持</a></td>
+<td>2023/06/30 15:14</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-198/">ABT-198</a></td>
+<td><a href="../ABT-198/">AB1565 支持苹果Lightning 接口</a></td>
+<td>2023/06/30 14:50</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-197/">ABT-197</a></td>
+<td><a href="../ABT-197/">AB1565AM I2S输出修改【[客户A]】</a></td>
+<td>2023/06/28 17:33</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-196/">ABT-196</a></td>
+<td><a href="../ABT-196/">AB1565 SDK V3.6.0 LE Audio add on</a></td>
+<td>2023/06/26 11:10</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-195/">ABT-195</a></td>
+<td><a href="../ABT-195/">AB1585 SDK V3.5.1 ANC没有效果</a></td>
+<td>2023/06/25 17:12</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-194/">ABT-194</a></td>
+<td><a href="../ABT-194/">AB1565AM BLE 修改UUID</a></td>
+<td>2023/06/16 14:43</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-193/">ABT-193</a></td>
+<td><a href="../ABT-193/">[客户A]AB1565AM-C085  头戴式耳机  2MIC  通话调试（外10：00~18：00）</a></td>
+<td>2023/06/15 10:31</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-192/">ABT-192</a></td>
+<td><a href="../ABT-192/">UART 接收信息错误</a></td>
+<td>2023/06/14 17:59</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-191/">ABT-191</a></td>
+<td><a href="../ABT-191/">通透开启后，通话mic会从Dmic 切到FF mic_L</a></td>
+<td>2023/06/13 11:32</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-190/">ABT-190</a></td>
+<td><a href="../ABT-190/">SDK V3.5.1 开启了multiple mode问题</a></td>
+<td>2023/06/12 19:52</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-189/">ABT-189</a></td>
+<td><a href="../ABT-189/">AB1565AM I2S输出问题</a></td>
+<td>2023/06/07 16:17</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-188/">ABT-188</a></td>
+<td><a href="../ABT-188/">AB1565系列参数咨询</a></td>
+<td>2023/06/06 10:10</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-187/">ABT-187</a></td>
+<td><a href="../ABT-187/">SDK V3.6.0 使用AB1565A 做earbuds问题咨询</a></td>
+<td>2023/06/05 10:21</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-186/">ABT-186</a></td>
+<td><a href="../ABT-186/">AB1565AM I2S输出问题</a></td>
+<td>2023/06/02 19:53</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-185/">ABT-185</a></td>
+<td><a href="../ABT-185/">AB1565AM SDK V3.6.0 LC3 Plus add on</a></td>
+<td>2023/05/30 18:26</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-184/">ABT-184</a></td>
+<td><a href="../ABT-184/">通过LE Audio连接dongle</a></td>
+<td>2023/05/30 14:57</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-183/">ABT-183</a></td>
+<td><a href="../ABT-183/">汉科 AB1562U-E06 (2MIC+IGO)  ENC通话调试（外部10：00~18：00）</a></td>
+<td>2023/05/30 10:09</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-182/">ABT-182</a></td>
+<td><a href="../ABT-182/">SDK V3.2.0 headset 在配对中自动退出</a></td>
+<td>2023/05/26 18:39</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-181/">ABT-181</a></td>
+<td><a href="../ABT-181/">LC3 跟 LC3 Plus咨询</a></td>
+<td>2023/05/26 14:58</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-180/">ABT-180</a></td>
+<td><a href="../ABT-180/">AB1565 uart中发送SPP数据导致死机</a></td>
+<td>2023/05/25 12:26</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-179/">ABT-179</a></td>
+<td><a href="../ABT-179/">BLE 无法通过notify 发送数据</a></td>
+<td>2023/05/24 19:09</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-178/">ABT-178</a></td>
+<td><a href="../ABT-178/">AB1565M+AB1565D dongle + 无线mic</a></td>
+<td>2023/05/24 11:04</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-177/">ABT-177</a></td>
+<td><a href="../ABT-177/">AB1565AM GPIO2/3 改为DMIC2</a></td>
+<td>2023/05/19 17:33</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-176/">ABT-176</a></td>
+<td><a href="../ABT-176/">测试mic 指令找不到Dmic0 信号</a></td>
+<td>2023/05/10 18:52</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-175/">ABT-175</a></td>
+<td><a href="../ABT-175/">AB1565AM headset line in信号检测</a></td>
+<td>2023/05/10 18:49</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-174/">ABT-174</a></td>
+<td><a href="../ABT-174/">LDAC 和LHDC的咨询</a></td>
+<td>2023/05/10 15:57</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-173/">ABT-173</a></td>
+<td><a href="../ABT-173/">AB1565AM 支持 DNN AI</a></td>
+<td>2023/05/04 19:31</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-172/">ABT-172</a></td>
+<td><a href="../ABT-172/">AB1565 ULL 参数咨询</a></td>
+<td>2023/05/04 17:03</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-171/">ABT-171</a></td>
+<td><a href="../ABT-171/">AB1565A 外挂Flash 支持更多功能</a></td>
+<td>2023/05/04 16:04</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-170/">ABT-170</a></td>
+<td><a href="../ABT-170/">AB1565M 多次切换ANC后mic无效了，没有听感</a></td>
+<td>2023/04/26 17:31</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-169/">ABT-169</a></td>
+<td><a href="../ABT-169/">AB1565D dongle 支持I2S作为源</a></td>
+<td>2023/04/26 16:30</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-168/">ABT-168</a></td>
+<td><a href="../ABT-168/">[客户A]AB1565-C085  头戴式耳机  2MIC  通话调试</a></td>
+<td>2023/04/26 15:22</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-167/">ABT-167</a></td>
+<td><a href="../ABT-167/">AB1565 SDK V3.6.0 dongle 和 line in add on</a></td>
+<td>2023/04/24 17:54</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-166/">ABT-166</a></td>
+<td><a href="../ABT-166/">AB1565AM-AiroThru增益调大会被限制</a></td>
+<td>2023/04/23 18:53</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-165/">ABT-165</a></td>
+<td><a href="../ABT-165/">AB1565D dongle source问题</a></td>
+<td>2023/04/21 12:11</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-164/">ABT-164</a></td>
+<td><a href="../ABT-164/">AB1565AM headset D-mic和A-mic问题(外部实验室10：00~18：00)</a></td>
+<td>2023/04/21 11:37</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-163/">ABT-163</a></td>
+<td><a href="../ABT-163/">AB1565AM 自适应ANC调试</a></td>
+<td>2023/04/19 14:52</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-162/">ABT-162</a></td>
+<td><a href="../ABT-162/">AB1565AM headset 充电后关机进入深睡</a></td>
+<td>2023/04/11 16:15</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-161/">ABT-161</a></td>
+<td><a href="../ABT-161/">AB1585 line in 模拟转I2S问题</a></td>
+<td>2023/04/07 16:26</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-160/">ABT-160</a></td>
+<td><a href="../ABT-160/">AB1565 连dongle之后出现[人名9]P断连</a></td>
+<td>2023/04/07 15:23</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-159/">ABT-159</a></td>
+<td><a href="../ABT-159/">AB1585 设置了输入无法拉高</a></td>
+<td>2023/04/03 19:16</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-158/">ABT-158</a></td>
+<td><a href="../ABT-158/">AB1565A 半入耳式自适应降噪</a></td>
+<td>2023/03/31 15:50</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-157/">ABT-157</a></td>
+<td><a href="../ABT-157/">AB1565 开启multi mode之后连接问题</a></td>
+<td>2023/03/29 17:17</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-156/">ABT-156</a></td>
+<td><a href="../ABT-156/">XBOX IC申请规格书</a></td>
+<td>2023/03/29 11:34</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-155/">ABT-155</a></td>
+<td><a href="../ABT-155/">AB1565 V3.5.1 dongle无法回连耳机</a></td>
+<td>2023/03/28 16:40</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-154/">ABT-154</a></td>
+<td><a href="../ABT-154/">AB1585 line in 设置指导</a></td>
+<td>2023/03/28 14:41</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-153/">ABT-153</a></td>
+<td><a href="../ABT-153/">【[客户A]】AB1565AM adaptive ANC 调试指引</a></td>
+<td>2023/03/27 10:24</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-152/">ABT-152</a></td>
+<td><a href="../ABT-152/">AB1565\AB1585 算力确认</a></td>
+<td>2023/03/20 16:49</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-151/">ABT-151</a></td>
+<td><a href="../ABT-151/">SDK V2.9.0 LDAC 输出发生变化问题</a></td>
+<td>2023/03/15 10:49</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-150/">ABT-150</a></td>
+<td><a href="../ABT-150/">AB1565 耳机项目技术咨询</a></td>
+<td>2023/03/09 10:14</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-149/">ABT-149</a></td>
+<td><a href="../ABT-149/">AB1565 MP Tool source code</a></td>
+<td>2023/03/08 14:26</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-148/">ABT-148</a></td>
+<td><a href="../ABT-148/">AB1565AM 添加空间音频需求咨询</a></td>
+<td>2023/03/08 10:30</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-147/">ABT-147</a></td>
+<td><a href="../ABT-147/">SDK V3.5.1 dongle连接后播放音乐没有声音</a></td>
+<td>2023/03/03 16:45</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-146/">ABT-146</a></td>
+<td><a href="../ABT-146/">AB1585 SDK V3.5.1 ULL add on</a></td>
+<td>2023/02/28 10:55</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-145/">ABT-145</a></td>
+<td><a href="../ABT-145/">AB1565 SDK V3.5.1 ULL add on</a></td>
+<td>2023/02/27 17:12</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-144/">ABT-144</a></td>
+<td><a href="../ABT-144/">AB1565 ULL 技术咨询</a></td>
+<td>2023/02/24 16:37</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-143/">ABT-143</a></td>
+<td><a href="../ABT-143/">AB1585 SDK V3.5.0 ULL add on</a></td>
+<td>2023/02/15 16:46</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-142/">ABT-142</a></td>
+<td><a href="../ABT-142/">AB1565 V3.5.0 dongle+SP takeover 问题</a></td>
+<td>2023/02/08 15:36</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-141/">ABT-141</a></td>
+<td><a href="../ABT-141/">AB1565M 安规问题咨询</a></td>
+<td>2023/02/03 15:04</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-140/">ABT-140</a></td>
+<td><a href="../ABT-140/">AB1565 使用LDAC，开启游戏模式咨询</a></td>
+<td>2023/02/01 15:31</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-139/">ABT-139</a></td>
+<td><a href="../ABT-139/">AB1585 修改IO后无法开机</a></td>
+<td>2023/01/31 19:12</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-138/">ABT-138</a></td>
+<td><a href="../ABT-138/">ULL2.0 使用KEY 去跟dongle配对问题</a></td>
+<td>2023/01/31 12:01</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-137/">ABT-137</a></td>
+<td><a href="../ABT-137/">SDK V3.2.0 HW_DECTEC_PIN</a></td>
+<td>2023/01/16 10:47</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-136/">ABT-136</a></td>
+<td><a href="../ABT-136/">SDK V3.5.0 earbuds 连接了dongle，播放就断开连接</a></td>
+<td>2023/01/10 14:54</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-135/">ABT-135</a></td>
+<td><a href="../ABT-135/">AB1565 V3.5.0 PEQ 无法切换</a></td>
+<td>2023/01/10 10:54</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-134/">ABT-134</a></td>
+<td><a href="../ABT-134/">AB1585 one-wire EVK 接线问题</a></td>
+<td>2023/01/06 11:44</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-133/">ABT-133</a></td>
+<td><a href="../ABT-133/">AB1565 SDK V3.5.0 ULL add on</a></td>
+<td>2023/01/06 11:10</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-132/">ABT-132</a></td>
+<td><a href="../ABT-132/">AB1565 UART 概率性无法响应消息</a></td>
+<td>2023/01/04 10:48</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-131/">ABT-131</a></td>
+<td><a href="../ABT-131/">AB1565 修改App端 降噪和通透的RealTime Gain</a></td>
+<td>2022/12/29 10:26</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-130/">ABT-130</a></td>
+<td><a href="../ABT-130/">AB1585 ULL2.0 dongle+earbuds行为表现</a></td>
+<td>2022/12/15 18:00</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-129/">ABT-129</a></td>
+<td><a href="../ABT-129/">AB1586 dongle 无法通过USB-HID的方式写入SIRK</a></td>
+<td>2022/12/15 16:34</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-128/">ABT-128</a></td>
+<td><a href="../ABT-128/">SDK V3.4.0 关闭HSP和[人名9]P profile</a></td>
+<td>2022/12/09 18:22</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-127/">ABT-127</a></td>
+<td><a href="../ABT-127/">AB1565 SDK V3.4.0 修改I2S 需求</a></td>
+<td>2022/12/09 18:19</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-126/">ABT-126</a></td>
+<td><a href="../ABT-126/">V2.9.0 充电问题</a></td>
+<td>2022/12/08 18:50</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-125/">ABT-125</a></td>
+<td><a href="../ABT-125/">AV1565A 支持ULL2.0 问题</a></td>
+<td>2022/12/08 11:45</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-124/">ABT-124</a></td>
+<td><a href="../ABT-124/">AB1585 V3.4.0 celt_encoder add on</a></td>
+<td>2022/12/07 18:23</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-123/">ABT-123</a></td>
+<td><a href="../ABT-123/">dongle 量产地址码问题</a></td>
+<td>2022/12/07 10:24</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-122/">ABT-122</a></td>
+<td><a href="../ABT-122/">AB1585 V3.4.0 LC3PLUS add on</a></td>
+<td>2022/12/06 12:01</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-121/">ABT-121</a></td>
+<td><a href="../ABT-121/">SDK V2.9.0 充电挂机进入深睡不会记录ANC 和 PEQ</a></td>
+<td>2022/12/02 18:14</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-120/">ABT-120</a></td>
+<td><a href="../ABT-120/">1585 Ull 跟earbuds配对</a></td>
+<td>2022/11/28 17:22</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-119/">ABT-119</a></td>
+<td><a href="../ABT-119/">SDK V3.4.0 没有dongle FOTA的选项</a></td>
+<td>2022/11/24 11:01</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-118/">ABT-118</a></td>
+<td><a href="../ABT-118/">AB1565 SDK V3.4.0 EMP 无法抢播</a></td>
+<td>2022/11/23 17:32</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-117/">ABT-117</a></td>
+<td><a href="../ABT-117/">SDK V2.9.0 App端控制ANC gain值导致无效</a></td>
+<td>2022/11/23 14:43</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-116/">ABT-116</a></td>
+<td><a href="../ABT-116/">SDK V3.4.0 AB1585 dongle add on</a></td>
+<td>2022/11/22 15:33</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-115/">ABT-115</a></td>
+<td><a href="../ABT-115/">MP Tool 1-to-8 显示配对名</a></td>
+<td>2022/11/16 20:02</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-114/">ABT-114</a></td>
+<td><a href="../ABT-114/">在App端快速切换ANC 概率性出现啸叫</a></td>
+<td>2022/11/09 18:37</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-113/">ABT-113</a></td>
+<td><a href="../ABT-113/">dongle 兼容性问题</a></td>
+<td>2022/11/07 16:23</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-112/">ABT-112</a></td>
+<td><a href="../ABT-112/">V2.9.0 来电时回连导致了死机</a></td>
+<td>2022/11/03 14:32</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-111/">ABT-111</a></td>
+<td><a href="../ABT-111/">V2.9.0 parnter 单独出提示音</a></td>
+<td>2022/11/02 19:44</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-110/">ABT-110</a></td>
+<td><a href="../ABT-110/">触发Siri后，移植保持在VA状态</a></td>
+<td>2022/11/02 18:40</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-109/">ABT-109</a></td>
+<td><a href="../ABT-109/">earbuds ull 的软件，dongle + [人名9]P 卡顿</a></td>
+<td>2022/11/02 14:25</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-108/">ABT-108</a></td>
+<td><a href="../ABT-108/">耳机端通知 App更新了ANC状态</a></td>
+<td>2022/10/27 17:15</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-107/">ABT-107</a></td>
+<td><a href="../ABT-107/">连接手机后，进入深睡，再次开机无法回连</a></td>
+<td>2022/10/26 19:10</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-106/">ABT-106</a></td>
+<td><a href="../ABT-106/">支持Ull 的earbuds 连接Mac电脑问题</a></td>
+<td>2022/10/21 12:07</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-105/">ABT-105</a></td>
+<td><a href="../ABT-105/">EMP link loss 回连问题</a></td>
+<td>2022/10/20 18:10</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-104/">ABT-104</a></td>
+<td><a href="../ABT-104/">Android App 获取 Long Press按键识别</a></td>
+<td>2022/10/19 19:26</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-103/">ABT-103</a></td>
+<td><a href="../ABT-103/">dognle在通话中的音量等级问题</a></td>
+<td>2022/10/19 11:12</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-102/">ABT-102</a></td>
+<td><a href="../ABT-102/">iOS 获取按键失败</a></td>
+<td>2022/10/18 11:43</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-101/">ABT-101</a></td>
+<td><a href="../ABT-101/">LDAC测试报告</a></td>
+<td>2022/10/18 11:31</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-100/">ABT-100</a></td>
+<td><a href="../ABT-100/">App 修改ANC 添加提示音</a></td>
+<td>2022/10/17 14:47</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-99/">ABT-99</a></td>
+<td><a href="../ABT-99/">FOTA 版本的设置</a></td>
+<td>2022/10/14 18:28</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-98/">ABT-98</a></td>
+<td><a href="../ABT-98/">dongle跟BT输出有差异</a></td>
+<td>2022/10/14 10:28</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-97/">ABT-97</a></td>
+<td><a href="../ABT-97/">AB1565 V2.9.0 回连接听电话问题</a></td>
+<td>2022/10/11 18:22</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-96/">ABT-96</a></td>
+<td><a href="../ABT-96/">AB1565AM 同时FOTA左右耳</a></td>
+<td>2022/10/10 15:20</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-95/">ABT-95</a></td>
+<td><a href="../ABT-95/">App 端自定义PEQ调整，LDAC解码无效</a></td>
+<td>2022/10/09 11:28</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-94/">ABT-94</a></td>
+<td><a href="../ABT-94/">AB1565AM VAD咨询</a></td>
+<td>2022/10/08 10:42</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-93/">ABT-93</a></td>
+<td><a href="../ABT-93/">Microsoft Teams 认证资料</a></td>
+<td>2022/10/08 10:29</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-92/">ABT-92</a></td>
+<td><a href="../ABT-92/">dongle 修改电脑端的显示</a></td>
+<td>2022/09/30 11:08</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-91/">ABT-91</a></td>
+<td><a href="../ABT-91/">LDAC下调试PEQ无效</a></td>
+<td>2022/09/27 11:15</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-90/">ABT-90</a></td>
+<td><a href="../ABT-90/">关闭了PEQ2 PEQ无效</a></td>
+<td>2022/09/27 11:06</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-89/">ABT-89</a></td>
+<td><a href="../ABT-89/">去掉了PEQ后无法保存</a></td>
+<td>2022/09/26 20:07</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-88/">ABT-88</a></td>
+<td><a href="../ABT-88/">adaptive ANC的使用指导</a></td>
+<td>2022/09/26 10:38</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-87/">ABT-87</a></td>
+<td><a href="../ABT-87/">1565 断开连接后提示音不同步</a></td>
+<td>2022/09/26 10:35</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-86/">ABT-86</a></td>
+<td><a href="../ABT-86/">AB1585 V3.3.0 earbuds_ref_design_ull2 跟dongle配对</a></td>
+<td>2022/09/22 16:00</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-85/">ABT-85</a></td>
+<td><a href="../ABT-85/">I2S Audio 信号处理需求</a></td>
+<td>2022/09/16 15:57</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-84/">ABT-84</a></td>
+<td><a href="../ABT-84/">AB1585 dognle project</a></td>
+<td>2022/09/13 18:10</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-83/">ABT-83</a></td>
+<td><a href="../ABT-83/">AB1565 回连后profile没有连接</a></td>
+<td>2022/09/13 17:32</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-82/">ABT-82</a></td>
+<td><a href="../ABT-82/">AB1565 的 share mode和Broadcast Audio</a></td>
+<td>2022/09/13 11:11</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-81/">ABT-81</a></td>
+<td><a href="../ABT-81/">AB1565 FOTA 问题</a></td>
+<td>2022/09/08 18:50</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-80/">ABT-80</a></td>
+<td><a href="../ABT-80/">1565 earbuds_ref_design_ull 不能连接两个手机</a></td>
+<td>2022/09/08 15:25</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-79/">ABT-79</a></td>
+<td><a href="../ABT-79/">AB1565 5V常在方案满电进入深睡</a></td>
+<td>2022/09/07 11:11</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-78/">ABT-78</a></td>
+<td><a href="../ABT-78/">Hi-Res 小金标认证指导</a></td>
+<td>2022/09/06 11:27</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-77/">ABT-77</a></td>
+<td><a href="../ABT-77/">V2.9.0 earbuds 手机显示电池电量不更新</a></td>
+<td>2022/09/05 11:04</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-76/">ABT-76</a></td>
+<td><a href="../ABT-76/">dongle测试DUT mode</a></td>
+<td>2022/09/02 10:48</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-75/">ABT-75</a></td>
+<td><a href="../ABT-75/">1565 开放dsp的功能需求</a></td>
+<td>2022/08/24 15:57</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-74/">ABT-74</a></td>
+<td><a href="../ABT-74/">AB1565 V3.2.0 ConfigTool打不开软件</a></td>
+<td>2022/08/23 19:16</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-73/">ABT-73</a></td>
+<td><a href="../ABT-73/">1565 设置 vp/ringtone ratio</a></td>
+<td>2022/08/22 17:56</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-72/">ABT-72</a></td>
+<td><a href="../ABT-72/">SDK V3.2.0 headset 请求 adaptive ANC add on</a></td>
+<td>2022/08/22 10:59</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-71/">ABT-71</a></td>
+<td><a href="../ABT-71/">1565 请求race cmd 写PEQ的详细数据格式</a></td>
+<td>2022/08/22 10:56</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-70/">ABT-70</a></td>
+<td><a href="../ABT-70/">1565 独立控制左右声道的音量</a></td>
+<td>2022/08/22 10:31</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-69/">ABT-69</a></td>
+<td><a href="../ABT-69/">dongle 技术指标咨询</a></td>
+<td>2022/08/17 10:33</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-68/">ABT-68</a></td>
+<td><a href="../ABT-68/">设置硬件IO区分左右声道</a></td>
+<td>2022/08/09 17:17</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-67/">ABT-67</a></td>
+<td><a href="../ABT-67/">I2S Audio 信号处理问题</a></td>
+<td>2022/08/05 15:39</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-66/">ABT-66</a></td>
+<td><a href="../ABT-66/">关闭POWER KEY 长按10秒的reset</a></td>
+<td>2022/07/27 18:53</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-65/">ABT-65</a></td>
+<td><a href="../ABT-65/">V2.11.2 TOOL 缺少Limiter</a></td>
+<td>2022/07/26 16:13</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-64/">ABT-64</a></td>
+<td><a href="../ABT-64/">暂停后立刻播放，发现无法播放</a></td>
+<td>2022/07/22 12:06</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-63/">ABT-63</a></td>
+<td><a href="../ABT-63/">V2.9.0 IGO 算法 add on【[客户B]】</a></td>
+<td>2022/07/21 14:28</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-62/">ABT-62</a></td>
+<td><a href="../ABT-62/">AB1565A DUT 模式</a></td>
+<td>2022/07/18 17:14</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-61/">ABT-61</a></td>
+<td><a href="../ABT-61/">AB1565 SDK 配置power saving</a></td>
+<td>2022/07/06 17:13</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-60/">ABT-60</a></td>
+<td><a href="../ABT-60/">切换通透问题的问题</a></td>
+<td>2022/07/04 18:09</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-59/">ABT-59</a></td>
+<td><a href="../ABT-59/">AB1585 V3.2.0 DSP编译不过</a></td>
+<td>2022/07/01 12:21</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-58/">ABT-58</a></td>
+<td><a href="../ABT-58/">AB1565 earbuds EMP 连接两个手机出现噪音</a></td>
+<td>2022/06/27 17:38</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-57/">ABT-57</a></td>
+<td><a href="../ABT-57/">AB1565D dongle 支持I2S作为源</a></td>
+<td>2022/06/21 12:14</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-56/">ABT-56</a></td>
+<td><a href="../ABT-56/">AB1585 SDK V3.1.0 DSP编译不过</a></td>
+<td>2022/06/20 16:38</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-55/">ABT-55</a></td>
+<td><a href="../ABT-55/">AB1565 ull配对问题和回连咨询</a></td>
+<td>2022/06/20 15:49</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-54/">ABT-54</a></td>
+<td><a href="../ABT-54/">AB1565 拒绝回连</a></td>
+<td>2022/06/17 14:27</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-53/">ABT-53</a></td>
+<td><a href="../ABT-53/">AB1565 ULL配对超时后进入手机配对后无法搜索到名字</a></td>
+<td>2022/06/14 15:59</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-52/">ABT-52</a></td>
+<td><a href="../ABT-52/">AB1565 uart0需改波特率</a></td>
+<td>2022/05/30 11:16</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-51/">ABT-51</a></td>
+<td><a href="../ABT-51/">AB1565A dongle回连不成功</a></td>
+<td>2022/05/27 17:27</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-50/">ABT-50</a></td>
+<td><a href="../ABT-50/">AB1565A dongle回连不成功</a></td>
+<td>2022/05/27 17:27</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-49/">ABT-49</a></td>
+<td><a href="../ABT-49/">AB1565D dongle更新补丁</a></td>
+<td>2022/05/27 16:14</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-48/">ABT-48</a></td>
+<td><a href="../ABT-48/">AB1565 SPP无法连接</a></td>
+<td>2022/05/26 11:36</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-47/">ABT-47</a></td>
+<td><a href="../ABT-47/">AB1565AM headset 实现组合按键</a></td>
+<td>2022/05/23 17:28</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-46/">ABT-46</a></td>
+<td><a href="../ABT-46/">AB1565A 客户问题咨询</a></td>
+<td>2022/05/16 10:18</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-45/">ABT-45</a></td>
+<td><a href="../ABT-45/">1565 通过OTA无法修改PEQ的参数</a></td>
+<td>2022/05/07 15:57</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-44/">ABT-44</a></td>
+<td><a href="../ABT-44/">1565 中断使用VP或者timer会导致死机</a></td>
+<td>2022/05/06 18:21</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-43/">ABT-43</a></td>
+<td><a href="../ABT-43/">1565 dongle兼容性问题</a></td>
+<td>2022/05/06 14:26</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-42/">ABT-42</a></td>
+<td><a href="../ABT-42/">AB1565 连接dongle使用联系操作后导致link loss</a></td>
+<td>2022/04/29 10:50</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-41/">ABT-41</a></td>
+<td><a href="../ABT-41/">AB1565 读写nvkey的地址</a></td>
+<td>2022/04/28 20:23</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-40/">ABT-40</a></td>
+<td><a href="../ABT-40/">AB1565 中断的使用方式</a></td>
+<td>2022/04/28 18:30</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-39/">ABT-39</a></td>
+<td><a href="../ABT-39/">AB1565 无法退出 APP_STATE_VA</a></td>
+<td>2022/04/28 15:39</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-38/">ABT-38</a></td>
+<td><a href="../ABT-38/">AB1565 SDK支持iGO</a></td>
+<td>2022/04/27 16:44</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-37/">ABT-37</a></td>
+<td><a href="../ABT-37/">AB1565 dongle获取来电信号状态</a></td>
+<td>2022/04/26 10:56</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-36/">ABT-36</a></td>
+<td><a href="../ABT-36/">AB1565 修改默认ANC模式</a></td>
+<td>2022/04/22 12:07</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-35/">ABT-35</a></td>
+<td><a href="../ABT-35/">AB1565 设置按键开机</a></td>
+<td>2022/04/15 19:45</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-34/">ABT-34</a></td>
+<td><a href="../ABT-34/">ULL dongle通话问题</a></td>
+<td>2022/04/11 11:05</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-33/">ABT-33</a></td>
+<td><a href="../ABT-33/">AB1565 race cmd开启ANC 后没有输出</a></td>
+<td>2022/04/07 18:14</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-32/">ABT-32</a></td>
+<td><a href="../ABT-32/">AB1565 是否支持smart case V1/V2</a></td>
+<td>2022/04/02 15:55</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-31/">ABT-31</a></td>
+<td><a href="../ABT-31/">dongle 设置支持line-in</a></td>
+<td>2022/03/31 14:04</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-30/">ABT-30</a></td>
+<td><a href="../ABT-30/">AB1565 dongle + earbuds 咨询</a></td>
+<td>2022/03/30 15:20</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-29/">ABT-29</a></td>
+<td><a href="../ABT-29/">SDK V2.7.1 AB1565A earbuds_ref_design 使用hex文件播放异常</a></td>
+<td>2022/03/15 15:07</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-28/">ABT-28</a></td>
+<td><a href="../ABT-28/">[ABT-28](ABT-28.md)</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-27/">ABT-27</a></td>
+<td><a href="../ABT-27/">AB1565 添加第三方算法和空间问题</a></td>
+<td>2022/03/11 12:01</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-26/">ABT-26</a></td>
+<td><a href="../ABT-26/">[ABT-26](ABT-26.md)</a></td>
+<td>未知时间</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../ABT-25/">ABT-25</a></td>
+<td><a href="../ABT-25/">AB1565D 问题咨询</a></td>
+<td>2022/03/03 14:39</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-24/">ABT-24</a></td>
+<td><a href="../ABT-24/">AB1565 dongle测试latency error</a></td>
+<td>2022/03/01 16:51</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-23/">ABT-23</a></td>
+<td><a href="../ABT-23/">AB1565 headset支持 Hi-Res 解码</a></td>
+<td>2022/03/01 14:39</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-22/">ABT-22</a></td>
+<td><a href="../ABT-22/">AB1565 dongle 是否支持苹果 Lightning 接口</a></td>
+<td>2022/02/17 10:24</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-21/">ABT-21</a></td>
+<td><a href="../ABT-21/">AB1565 与AB1565M 的编译区别</a></td>
+<td>2022/02/10 12:08</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-20/">ABT-20</a></td>
+<td><a href="../ABT-20/">AB1565 测试donle跟earbuds之间延迟</a></td>
+<td>2022/02/10 10:42</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-19/">ABT-19</a></td>
+<td><a href="../ABT-19/">ull pairing下关机后指示灯异常</a></td>
+<td>2022/01/19 15:03</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-18/">ABT-18</a></td>
+<td><a href="../ABT-18/">AB1565 [人名3] ANC咨询</a></td>
+<td>2022/01/17 10:58</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-17/">ABT-17</a></td>
+<td><a href="../ABT-17/">ULL dongle测试RF</a></td>
+<td>2022/01/13 16:47</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-16/">ABT-16</a></td>
+<td><a href="../ABT-16/">ULL dongle连接电脑显示图标</a></td>
+<td>2022/01/11 20:11</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td><a href="../ABT-15/">ABT-15</a></td>
+<td><a href="../ABT-15/">ULL 被强制退出</a></td>
+<td>2022/01/11 20:06</td>
+<td>Closed</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.expand", "navigation.indexes", "search.suggest", "search.highlight", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

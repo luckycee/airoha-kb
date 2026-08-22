@@ -1,0 +1,591 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="ABT 服务台工单知识库（ABT 系列）">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>【[客户E]】连接dongle 输出小 - ABT 工单知识库</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#abt-257-edongle" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="ABT 工单知识库" class="md-header__button md-logo" aria-label="ABT 工单知识库" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ABT 工单知识库
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              【[客户E]】连接dongle 输出小
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换深色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换深色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换浅色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换浅色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/luckycee/airoha-kb" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    源码仓库
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ABT 工单知识库" class="md-nav__button md-logo" aria-label="ABT 工单知识库" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    ABT 工单知识库
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/luckycee/airoha-kb" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    源码仓库
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    工单分类
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    工单列表
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="abt-257-edongle">ABT-257 【[客户E]】连接dongle 输出小<a class="headerlink" href="#abt-257-edongle" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>📅 2023/09/19 12:19　🔗 <a href="https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-257">原始工单链接</a></p>
+</blockquote>
+<div class="ticket-nav">
+<p><a href="../ABT-256/">← 上一个工单：ABT-256</a>　<a href="../ABT-258/">→ 下一个工单：ABT-258</a></p>
+</div>
+<h2 id="_1">回复记录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<div class="reply odd">
+<h3 id="20230919-1219-2">2023/09/19 12:19 — [人名2]<a class="headerlink" href="#20230919-1219-2" title="Permanent link">&para;</a></h3>
+<p>[附件: C115_Megapods2_1565AM_[客户D]_V1.0.230915.1900_L.7z]</p>
+<p>[附件: C115_Megapods2_1565AM_[客户D]_V1.0.230915.1900_R.7z]</p>
+<p>[图片: Snipaste_2023-09-19_12-18-05.jpg]</p>
+<p>[图片: 微信图片_2023[电话已隐藏].png]</p>
+</div>
+<div class="reply even">
+<h3 id="20230919-1452-5">2023/09/19 14:52 — [人名5]<a class="headerlink" href="#20230919-1452-5" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏]，</p>
+<p>这是测试ULL 还是 LEA 是 dongle 声音小?</p>
+</div>
+<div class="reply odd">
+<h3 id="20230919-1501-2">2023/09/19 15:01 — [人名2]<a class="headerlink" href="#20230919-1501-2" title="Permanent link">&para;</a></h3>
+<p>HI [人名5]，</p>
+<p>只要是dongle 输出的，都比A2DP 小</p>
+</div>
+<div class="reply even">
+<h3 id="20230919-1538-5">2023/09/19 15:38 — [人名5]<a class="headerlink" href="#20230919-1538-5" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏]，</p>
+<p>你是在dongle端调节音量还是在earbuds端调节，dongle 端可以改一下
+[图片: image-2023-09-19-15-38-04-282.png]</p>
+</div>
+<div class="reply odd">
+<h3 id="20230919-1646-2">2023/09/19 16:46 — [人名2]<a class="headerlink" href="#20230919-1646-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名5]，</p>
+<p>dongle 和earbuds 两边都调整过，测试是一样结果，依然差3-4dB；</p>
+</div>
+<div class="reply even">
+<h3 id="20230919-1704-5">2023/09/19 17:04 — [人名5]<a class="headerlink" href="#20230919-1704-5" title="Permanent link">&para;</a></h3>
+<p>dongle这边调高3-4db可以生效吗</p>
+<p>[图片: image-2023-09-19-15-38-04-282.png]</p>
+</div>
+<div class="reply odd">
+<h3 id="20230919-1712-2">2023/09/19 17:12 — [人名2]<a class="headerlink" href="#20230919-1712-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名5]，</p>
+<p>可以了，搞清楚关系了。</p>
+<p>[图片: Snipaste_2023-09-19_17-11-52.jpg]</p>
+</div>
+<div class="reply even">
+<h3 id="20230919-1722-5">2023/09/19 17:22 — [人名5]<a class="headerlink" href="#20230919-1722-5" title="Permanent link">&para;</a></h3>
+<p>好</p>
+</div>
+<div class="reply odd">
+<h3 id="20230919-2022-2">2023/09/19 20:22 — [人名2]<a class="headerlink" href="#20230919-2022-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名5]，</p>
+<p>他们的dongle 搭配之前做的AB1568 做的 headset 没有这样的问题，如果改 dongle的输出gain 那么那些已经出货的会有问题的，A2DP和dongle 就无法对齐了。可以修改耳机这边的输出吗？</p>
+</div>
+<div class="reply even">
+<h3 id="20230920-0933-5">2023/09/20 09:33 — [人名5]<a class="headerlink" href="#20230920-0933-5" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏]，</p>
+<p>你们把耳机的A2DP gain改小点试试？</p>
+</div>
+<div class="reply odd">
+<h3 id="20230920-1010-2">2023/09/20 10:10 — [人名2]<a class="headerlink" href="#20230920-1010-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名5]，</p>
+<p>不能，A2DP的输出已经做了什么认证，不能改。</p>
+</div>
+<div class="reply even">
+<h3 id="20230920-1101-2">2023/09/20 11:01 — [人名2]<a class="headerlink" href="#20230920-1101-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名5]，</p>
+<p>这里是不是有关的？</p>
+<p>[图片: Snipaste_2023-09-20_11-00-32.jpg]</p>
+</div>
+<div class="reply odd">
+<h3 id="20230921-1124-5">2023/09/21 11:24 — [人名5]<a class="headerlink" href="#20230921-1124-5" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏],</p>
+<p>那还怎么改，耳机跟dongle都不能改gain了，没办法对齐</p>
+<p>你们的疑点可以自行修改试一下</p>
+</div>
+<div class="reply even">
+<h3 id="20230922-1528-2">2023/09/22 15:28 — [人名2]<a class="headerlink" href="#20230922-1528-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名5]，</p>
+<p>有说明吗？数值不太直观，修改起来没有方向。</p>
+</div>
+<div class="reply odd">
+<h3 id="20230927-1503-9">2023/09/27 15:03 — [人名9]<a class="headerlink" href="#20230927-1503-9" title="Permanent link">&para;</a></h3>
+<p>Hi Sir</p>
+<p>你的需求是什么？ 耳机连接dongle和耳机连接手机的最大音量要一致?</p>
+</div>
+<div class="reply even">
+<h3 id="20230927-1516-2">2023/09/27 15:16 — [人名2]<a class="headerlink" href="#20230927-1516-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名9] ([人名9])，</p>
+<p>耳机连接dongle和耳机连接手机的最大音量要一致?</p>
+<blockquote>
+<blockquote>
+<p>是的。</p>
+</blockquote>
+</blockquote>
+<p>目前测试，LEA和ULL 下播放，比A2DP 下低了3dB左右，但是客户不希望修改dongle 和earbuds A2DP 的gain table 。客户希望修改 LEA或者 ULL 下的earbuds。</p>
+</div>
+<div class="reply odd">
+<h3 id="20230927-1723-9">2023/09/27 17:23 — [人名9]<a class="headerlink" href="#20230927-1723-9" title="Permanent link">&para;</a></h3>
+<p>A2DP和LEA/ULL用的不是相同的gain table。 你可以试着修改LEA/ULL的gain table，向A2DP靠拢。</p>
+<p>其gain table如你之前截图：General Purpose SW Gain Setting。  USB IN LEVEL Setting就是设定音量等级，例如 volume level 0， volume level 15，其对于的percentage和Digital Gain就来自General Purpose SW Gain Setting这个gain table</p>
+<p>[图片: image-2023-09-27-17-18-18-815.png]</p>
+</div>
+<div class="reply even">
+<h3 id="20230927-1738-2">2023/09/27 17:38 — [人名2]<a class="headerlink" href="#20230927-1738-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名9] ([人名9])，</p>
+<p>我的截图修改的是dongle 端FW，客户要求dongle 端不能更改，只能修改earbuds端。earbuds 连接dongle 播放时，使用是A2DP gain table 吗？</p>
+</div>
+<div class="reply odd">
+<h3 id="20230928-0935-9">2023/09/28 09:35 — [人名9]<a class="headerlink" href="#20230928-0935-9" title="Permanent link">&para;</a></h3>
+<p>请问你们的dongle 类型是LEA还是ULL？</p>
+</div>
+<div class="reply even">
+<h3 id="20230928-0950-2">2023/09/28 09:50 — [人名2]<a class="headerlink" href="#20230928-0950-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名9] ([人名9])，</p>
+<p>两个类型都有的，我测试了LEA和ULL 输出一致；</p>
+</div>
+<div class="reply odd">
+<h3 id="20230928-1340-9">2023/09/28 13:40 — [人名9]<a class="headerlink" href="#20230928-1340-9" title="Permanent link">&para;</a></h3>
+<p>Hi Sir</p>
+<p>dongle + earbuds和earbuds + smart phone跑的audio patch不同。</p>
+<p>dongle + earbuds音量调整是dongle和earbuds同时修改，而earbuds+ smart phone是仅eardbus音量动。 要想相同，就得先固定dongle端音量不变。</p>
+</div>
+<div class="reply even">
+<h3 id="20230928-1427-2">2023/09/28 14:27 — [人名2]<a class="headerlink" href="#20230928-1427-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名9] ([人名9])，</p>
+<p>所以earbuds 这端是不存在一个地方（假定叫ULL gain table setting），去独立修改earbuds + dongle的输出，是这个意思吗？我在扫频的时候，earbuds + dongle的方式，跟 earbuds + smart phone 的"曲线走向"是一致的。是不是不管那种方式都是走相同的PEQ ？</p>
+</div>
+<div class="reply odd">
+<h3 id="20230928-1610-9">2023/09/28 16:10 — [人名9]<a class="headerlink" href="#20230928-1610-9" title="Permanent link">&para;</a></h3>
+<p>Hi Sir</p>
+<p>所以earbuds 这端是不存在一个地方（假定叫ULL gain table setting），去独立修改earbuds + dongle的输出，是这个意思吗？</p>
+<p>-&gt; 你没明白我上面讲的“dongle + earbuds音量调整是dongle和earbuds同时修改，而earbuds+ smart phone是仅eardbus音量动”，  这里的dongle + earbuds是表示，dongle可以自己调音量，同时earbuds也会相应的调音量，两者是连动的，且各自有各自的gain table。而earbuds + smart phone，只动earbuds，用的gain table和“dongle和earbuds”中的earbuds是同一个gain table而已。</p>
+<p>是不是不管那种方式都是走相同的PEQ ？</p>
+<p>-&gt;是的</p>
+</div>
+<div class="reply even">
+<h3 id="20230928-1626-2">2023/09/28 16:26 — [人名2]<a class="headerlink" href="#20230928-1626-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名9] ([人名9])，</p>
+<p>是的，dongle 也有自己的gain table。保持earbuds A2DP gain table setting，修改 dongle 的gain table 也能做到连接dongle 使用时[#1]，跟连接手机A2DP 时[#2]输出幅度一致，我已经验证。但是[客户E]那边dongle 已经（搭配AB1568 做的headset）出货，不能修改dongle的内容了，为了保证#1 向#2 靠拢，他们要求我修改earbuds 。当然，让#2 向#1 靠拢也是可以的，但是[客户E]不允许这样做。</p>
+</div>
+<div class="reply odd">
+<h3 id="20230928-1737-9">2023/09/28 17:37 — [人名9]<a class="headerlink" href="#20230928-1737-9" title="Permanent link">&para;</a></h3>
+<p>不明白这里讲的”#2 “”#1“是分别代表什么</p>
+</div>
+<div class="reply even">
+<h3 id="20231007-1102-2">2023/10/07 11:02 — [人名2]<a class="headerlink" href="#20231007-1102-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名9] ([人名9])，</p>
+<p>回复的内容有被强制转换了。见附件图片</p>
+<p>[图片: Snipaste_2023-10-07_11-00-50.jpg]</p>
+</div>
+<div class="reply odd">
+<h3 id="20231008-1108-9">2023/10/08 11:08 — [人名9]<a class="headerlink" href="#20231008-1108-9" title="Permanent link">&para;</a></h3>
+<p>也不太明白这里的#1 和 #2 是代表什么？</p>
+<p>有两张gain table:</p>
+<p>一个是dongle端的gain table 1, dongle端到earbuds的声音，会经过这里调整音量</p>
+<p>一张是earbuds端的gain table 2，用于调整到喇叭的音量调</p>
+<p>[图片: image-2023-10-08-11-06-12-156.png]</p>
+<p>想要不修改dongle端的gain table，那就试试在earbuds端BLE Audio 场景不用 gain table 2。 然后调整 gain table 2向 gain table 1靠拢。</p>
+</div>
+<div class="reply even">
+<h3 id="20231008-1117-9">2023/10/08 11:17 — [人名9]<a class="headerlink" href="#20231008-1117-9" title="Permanent link">&para;</a></h3>
+<p>这是另外项目上固定ULL LEA Audio下earbuds端gain的patch，可以参考之： [附件: daba814.diff.zip]</p>
+</div>
+<div class="reply odd">
+<h3 id="20231010-1848-2">2023/10/10 18:48 — [人名2]<a class="headerlink" href="#20231010-1848-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名9] ([人名9])，</p>
+<p>问题关闭。已经跟客户沟通情况，dongle 不更改无法达到要求。</p>
+<p>earbuds 这端无论是连接手机还是连接 dongle 使用的均只有一张 gain table，做不到只针对earbuds 连接dongle变化，而earbuds 连接手机不变化。</p>
+</div>
+<div class="ticket-nav">
+<p><a href="../ABT-256/">← 上一个工单：ABT-256</a>　<a href="../ABT-258/">→ 下一个工单：ABT-258</a></p>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.expand", "navigation.indexes", "search.suggest", "search.highlight", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

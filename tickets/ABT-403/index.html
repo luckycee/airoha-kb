@@ -1,0 +1,1068 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="ABT 服务台工单知识库（ABT 系列）">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>【[客户E]】AB1565 设置 A2DP latency 修复卡顿后续 - ABT 工单知识库</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#abt-403-eab1565-a2dp-latency" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="ABT 工单知识库" class="md-header__button md-logo" aria-label="ABT 工单知识库" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ABT 工单知识库
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              【[客户E]】AB1565 设置 A2DP latency 修复卡顿后续
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换深色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换深色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换浅色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换浅色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/luckycee/airoha-kb" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    源码仓库
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ABT 工单知识库" class="md-nav__button md-logo" aria-label="ABT 工单知识库" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    ABT 工单知识库
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/luckycee/airoha-kb" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    源码仓库
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    工单分类
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    工单列表
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="abt-403-eab1565-a2dp-latency">ABT-403 【[客户E]】AB1565 设置 A2DP latency 修复卡顿后续<a class="headerlink" href="#abt-403-eab1565-a2dp-latency" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>📅 2024/06/24 11:03　🔗 <a href="https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-403">原始工单链接</a></p>
+</blockquote>
+<div class="ticket-nav">
+<p><a href="../ABT-402/">← 上一个工单：ABT-402</a>　<a href="../ABT-404/">→ 下一个工单：ABT-404</a></p>
+</div>
+<h2 id="_1">回复记录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<div class="reply odd">
+<h3 id="20240624-1327-5">2024/06/24 13:27 — [人名5]<a class="headerlink" href="#20240624-1327-5" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] ，</p>
+<p>如沟通，可以改成 280 560 试试</p>
+</div>
+<div class="reply even">
+<h3 id="20240625-1135-2">2024/06/25 11:35 — [人名2]<a class="headerlink" href="#20240625-1135-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名5]，</p>
+<p>已经改为280了，还是遇到，需要专门看看这两款手机。</p>
+</div>
+<div class="reply odd">
+<h3 id="20240625-1324-5">2024/06/25 13:24 — [人名5]<a class="headerlink" href="#20240625-1324-5" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] ，</p>
+<p>这两款手机换个干净环境是否好一些呢</p>
+<p>遇到时候rssi 是否很差呢</p>
+<p>EVK 可以测试到吗</p>
+</div>
+<div class="reply even">
+<h3 id="20240625-1424-2">2024/06/25 14:24 — [人名2]<a class="headerlink" href="#20240625-1424-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名5]，</p>
+<p>附件时[客户E]的测试情况，大部分手机测试有改善。我看了他们提供的log，复现问题是，RSSI值正常的。EVK 需要拿到他们手机才能测试。</p>
+<p>[图片: 微信图片_[序列号已隐藏].png]</p>
+</div>
+<div class="reply odd">
+<h3 id="20240625-1431-5">2024/06/25 14:31 — [人名5]<a class="headerlink" href="#20240625-1431-5" title="Permanent link">&para;</a></h3>
+<p>测试一下吧，好复现的话可以来录一下air log看看</p>
+</div>
+<div class="reply even">
+<h3 id="20240629-1629-2">2024/06/29 16:29 — [人名2]<a class="headerlink" href="#20240629-1629-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名5]，</p>
+<p>EVK 每个手机测试了一个小时，没有复现问题。他们的样机和手机好复现的，下周安排个时间过去录air log 吧？周二下午如何？</p>
+</div>
+<div class="reply odd">
+<h3 id="20240701-1428-5">2024/07/01 14:28 — [人名5]<a class="headerlink" href="#20240701-1428-5" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] ，</p>
+<p>可以，明天下午过来吧</p>
+</div>
+<div class="reply even">
+<h3 id="20240702-1436-2">2024/07/02 14:36 — [人名2]<a class="headerlink" href="#20240702-1436-2" title="Permanent link">&para;</a></h3>
+<p>Hi fason，</p>
+<p>[图片: 微信图片_[序列号已隐藏].png]</p>
+</div>
+<div class="reply odd">
+<h3 id="20240703-1539-5">2024/07/03 15:39 — [人名5]<a class="headerlink" href="#20240703-1539-5" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] ，</p>
+<p>看下客户用别家样机是否可以复现问题呢</p>
+</div>
+<div class="reply even">
+<h3 id="20240703-1607-2">2024/07/03 16:07 — [人名2]<a class="headerlink" href="#20240703-1607-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名5]，</p>
+<p>这是他们第一次用洛达，没有其他支持GFP的样机。我们也没有62E支持GFP的项目。</p>
+</div>
+<div class="reply odd">
+<h3 id="20240703-1608-2">2024/07/03 16:08 — [人名2]<a class="headerlink" href="#20240703-1608-2" title="Permanent link">&para;</a></h3>
+<p>HI fason，</p>
+<p>串台了。。。</p>
+</div>
+<div class="reply even">
+<h3 id="20240703-1614-2">2024/07/03 16:14 — [人名2]<a class="headerlink" href="#20240703-1614-2" title="Permanent link">&para;</a></h3>
+<p>HI fason，</p>
+<p>测试过BES的样机，不卡。</p>
+</div>
+<div class="reply odd">
+<h3 id="20240704-1040-5">2024/07/04 10:40 — [人名5]<a class="headerlink" href="#20240704-1040-5" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] ，</p>
+<p>这周都没时间了，下周看看呢，看客户是否能在深圳这边复现呢</p>
+</div>
+<div class="reply even">
+<h3 id="20240705-1453-2">2024/07/05 14:53 — [人名2]<a class="headerlink" href="#20240705-1453-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名5]，</p>
+<p>他们还是建议去他们那边，我下周除了周二约了BQB，其他时间都可以。</p>
+</div>
+<div class="reply odd">
+<h3 id="20240708-1546-5">2024/07/08 15:46 — [人名5]<a class="headerlink" href="#20240708-1546-5" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] ，</p>
+<p>那周三去吧~</p>
+</div>
+<div class="reply even">
+<h3 id="20240708-1651-2">2024/07/08 16:51 — [人名2]<a class="headerlink" href="#20240708-1651-2" title="Permanent link">&para;</a></h3>
+<p>Hi fason，</p>
+<p>好的，我这边通知客户。</p>
+</div>
+<div class="reply odd">
+<h3 id="20240709-0930-5">2024/07/09 09:30 — [人名5]<a class="headerlink" href="#20240709-0930-5" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏],</p>
+<p>好的</p>
+</div>
+<div class="reply even">
+<h3 id="20240709-1052-5">2024/07/09 10:52 — [人名5]<a class="headerlink" href="#20240709-1052-5" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] ，</p>
+<p>周三这边支持时间跟其他事情冲突了，可以改周四过去吗</p>
+</div>
+<div class="reply odd">
+<h3 id="20240709-1054-2">2024/07/09 10:54 — [人名2]<a class="headerlink" href="#20240709-1054-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名5]，</p>
+<p>跟客户确认了，周四可以。</p>
+</div>
+<div class="reply even">
+<h3 id="20240709-1102-5">2024/07/09 11:02 — [人名5]<a class="headerlink" href="#20240709-1102-5" title="Permanent link">&para;</a></h3>
+<p>好的</p>
+</div>
+<div class="reply odd">
+<h3 id="20240711-1039-5">2024/07/11 10:39 — [人名5]<a class="headerlink" href="#20240711-1039-5" title="Permanent link">&para;</a></h3>
+<p>IDS</p>
+<p>[图片: image-2024-07-11-10-39-34-538.png]</p>
+</div>
+<div class="reply even">
+<h3 id="20240711-1052-2">2024/07/11 10:52 — [人名2]<a class="headerlink" href="#20240711-1052-2" title="Permanent link">&para;</a></h3>
+<p>12355   10:51:32.954741 [M:BT_DM_EDR C:info F: L: ]: [BT_DM] link key:40,7e,e6,cd,  00,05,16,1b,  a3,bc,1a,81,  d2,46,de,17</p>
+</div>
+<div class="reply odd">
+<h3 id="20240711-1140-2">2024/07/11 11:40 — [人名2]<a class="headerlink" href="#20240711-1140-2" title="Permanent link">&para;</a></h3>
+<p>43406   11:39:05.789751 [M:BT_DM_EDR C:info F: L: ]: [BT_DM] link key:cd,11,2e,a4,  13,68,c8,27,  c7,c7,71,7e,  c6,3a,63,51</p>
+</div>
+<div class="reply even">
+<h3 id="20240711-1542-5">2024/07/11 15:42 — [人名5]<a class="headerlink" href="#20240711-1542-5" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] ，</p>
+<p>麻煩請客戶合入這版測試看看，加上debug log跟MIC error判斷條件，感謝!</p>
+<p>[附件: libpka_ull_g2_aws_leaudio_emp_<a href="./">ABT-403</a>_MicErrorConditionFix.rar]</p>
+</div>
+<div class="reply odd">
+<h3 id="20240711-1550-2">2024/07/11 15:50 — [人名2]<a class="headerlink" href="#20240711-1550-2" title="Permanent link">&para;</a></h3>
+<p>[附件: err.log]</p>
+</div>
+<div class="reply even">
+<h3 id="20240711-1616-5">2024/07/11 16:16 — [人名5]<a class="headerlink" href="#20240711-1616-5" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] ，</p>
+<p>麻煩請客戶合入這版測試看看，加上debug log跟修改special SBC判斷條件，感謝!</p>
+<p>[附件: libpka_ull_g2_aws_leaudio_emp_<a href="./">ABT-403</a>_a2dp_debuglog_and_SpecialSBCcondition.rar]</p>
+</div>
+<div class="reply odd">
+<h3 id="20240711-1905-2">2024/07/11 19:05 — [人名2]<a class="headerlink" href="#20240711-1905-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名5]，</p>
+<p>下午这部分修改，请在SDK5.0.0 上也提供一下，他们有其他客户也碰到。</p>
+</div>
+<div class="reply even">
+<h3 id="20240711-1941-2">2024/07/11 19:41 — [人名2]<a class="headerlink" href="#20240711-1941-2" title="Permanent link">&para;</a></h3>
+<p>3971    19:40:59.369907 [M:BT_DM_EDR C:info F: L: ]: [BT_DM] link key:2a,8f,99,2b,  78,30,92,84,  48,40,ee,e7,  30,5f,0d,58</p>
+</div>
+<div class="reply odd">
+<h3 id="20240712-1330-5">2024/07/12 13:30 — [人名5]<a class="headerlink" href="#20240712-1330-5" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] ，</p>
+<p>麻烦再确认最新patch是否测试pass</p>
+</div>
+<div class="reply even">
+<h3 id="20240712-1410-2">2024/07/12 14:10 — [人名2]<a class="headerlink" href="#20240712-1410-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名5] ,</p>
+<p>没有pass，还是有样机遇到有问题的。下周有时间吗？我叫他们来你这里，昨天测试的样机有改善，其他样机有问题。</p>
+</div>
+<div class="reply odd">
+<h3 id="20240712-1411-5">2024/07/12 14:11 — [人名5]<a class="headerlink" href="#20240712-1411-5" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] ，</p>
+<p>下周可以过来</p>
+</div>
+<div class="reply even">
+<h3 id="20240712-1412-2">2024/07/12 14:12 — [人名2]<a class="headerlink" href="#20240712-1412-2" title="Permanent link">&para;</a></h3>
+<p>HI [人名5]，</p>
+<p>那暂定下周二下午。</p>
+</div>
+<div class="reply odd">
+<h3 id="20240712-1456-5">2024/07/12 14:56 — [人名5]<a class="headerlink" href="#20240712-1456-5" title="Permanent link">&para;</a></h3>
+<p>好</p>
+</div>
+<div class="reply even">
+<h3 id="20240716-1600-2">2024/07/16 16:00 — [人名2]<a class="headerlink" href="#20240716-1600-2" title="Permanent link">&para;</a></h3>
+<p>COM4 15:49:26.59    enter BCM packet loss, pasi:55654400 Jump to asi:55655424 (seqn:36609) Wo:3 Ro:36</p>
+<p>[附件: Logging240716_144005_COM4.7z]</p>
+<p>[附件: Logging240716_143953_COM32.7z]</p>
+</div>
+<div class="reply odd">
+<h3 id="20240716-1606-2">2024/07/16 16:06 — [人名2]<a class="headerlink" href="#20240716-1606-2" title="Permanent link">&para;</a></h3>
+<p>[附件: 16点49分26秒 耳机中听到了卡顿.7z]</p>
+</div>
+<div class="reply even">
+<h3 id="20240716-1607-2">2024/07/16 16:07 — [人名2]<a class="headerlink" href="#20240716-1607-2" title="Permanent link">&para;</a></h3>
+<p>[图片: Snipaste_2024-07-16_16-06-50.png]</p>
+</div>
+<div class="reply odd">
+<h3 id="20240717-0931-5">2024/07/17 09:31 — [人名5]<a class="headerlink" href="#20240717-0931-5" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] ，</p>
+<p>这题看起来一小时卡顿那一下sp rssi 确实很差，到-80了，不像是客户想要报的持续卡顿的问题，麻烦继续复现</p>
+</div>
+<div class="reply even">
+<h3 id="20240717-1243-2">2024/07/17 12:43 — [人名2]<a class="headerlink" href="#20240717-1243-2" title="Permanent link">&para;</a></h3>
+<p>[附件: 耳机中听到了卡顿.7z.002]</p>
+<p>[附件: 耳机中听到了卡顿.7z.001]</p>
+</div>
+<div class="reply odd">
+<h3 id="20240717-1247-2">2024/07/17 12:47 — [人名2]<a class="headerlink" href="#20240717-1247-2" title="Permanent link">&para;</a></h3>
+<p>C0M4 出现问题的时间点
+77220   11:47:57.65
+36169   11:55:38.12
+38437   11:55:50.12
+57088   11:57:28.97
+94466   12:12:04.74
+6555    12:15:39.38</p>
+<p>[附件: Logging240717_104941_COM4.7z]</p>
+<p>[附件: Logging240717_104930_COM32.7z]</p>
+</div>
+<div class="reply even">
+<h3 id="20240717-1637-2">2024/07/17 16:37 — [人名2]<a class="headerlink" href="#20240717-1637-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名5]，</p>
+<p>包含init 开机的log；</p>
+<p>[附件: log.7z]</p>
+</div>
+<div class="reply odd">
+<h3 id="20240717-1650-5">2024/07/17 16:50 — [人名5]<a class="headerlink" href="#20240717-1650-5" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] </p>
+<p>麻烦再确认这里|| 是否改成 &amp;&amp;</p>
+<p>[图片: image-2024-05-09-16-37-34-007.png]</p>
+</div>
+<div class="reply even">
+<h3 id="20240717-1745-2">2024/07/17 17:45 — [人名2]<a class="headerlink" href="#20240717-1745-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名5]，</p>
+<p>pka_Get_EDR_Security_Connection_Enable() 里面的两个define 都是没有开启的，开启的是 <em>AIR_LE_AUDIO_DUAL_MODE_ENABLE</em> ， 不是 <em>AIR_LE_AUDIO_DUALMODE_ENABLE，</em>根据 </p>
+<p>{quote}Security_Connection:cod = 0,0,0
+Security_Connection:LMP_Version = 12{quote}</p>
+<p>没有 #if 来算的话，无论使用 &amp;&amp; 还是 || 都的确会跑到 return true；</p>
+</div>
+<div class="reply odd">
+<h3 id="20240717-1758-5">2024/07/17 17:58 — [人名5]<a class="headerlink" href="#20240717-1758-5" title="Permanent link">&para;</a></h3>
+<p>Hi @[人名86] 哥，</p>
+<p>看起来之前的patch都有加了，有空再麻烦帮忙分析下哈~</p>
+</div>
+<div class="reply even">
+<h3 id="20240722-1448-2">2024/07/22 14:48 — [人名2]<a class="headerlink" href="#20240722-1448-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名5]，</p>
+<p>这题还需继续帮忙分析。</p>
+</div>
+<div class="reply odd">
+<h3 id="20240725-1544-2">2024/07/25 15:44 — [人名2]<a class="headerlink" href="#20240725-1544-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名5]，</p>
+<p>又是周四了，快又下周😂</p>
+</div>
+<div class="reply even">
+<h3 id="20240729-1748-5">2024/07/29 17:48 — [人名5]<a class="headerlink" href="#20240729-1748-5" title="Permanent link">&para;</a></h3>
+<p>Hi @[人名85] ，</p>
+<p>客户现在只有GPIO12  19  可以用了</p>
+</div>
+<div class="reply odd">
+<h3 id="20240729-2059-84">2024/07/29 20:59 — [人名84]<a class="headerlink" href="#20240729-2059-84" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] ,</p>
+<p>很抱歉近期本人因為身體不適無法立刻處理貴司的問題, 在此深表歉意。</p>
+<p>本人再確認重新復盤此issue後, 此issue問題根源主要是在AES-CCM encryption mode下, 耳機partner因接收不到agent所給予的加密相關資訊</p>
+<p>, 因此無法自己獨立接收手機打的packet, 必須agent持續補包給partner才能接收成功, 而貴司所聽到的斷訊是在持續補包過程中不可避免的, </p>
+<p>我已修正partner接收加密資訊的問題, 麻煩再請您將以下lib合入測試, thanks.</p>
+<p>SW:</p>
+<p>[附件: libpka_leaudio_emp_20240729.rar]</p>
+</div>
+<div class="reply even">
+<h3 id="20240806-1042-2">2024/08/06 10:42 — [人名2]<a class="headerlink" href="#20240806-1042-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名5]，</p>
+<p>情况有改善，但是还是有概率出现连续出现卡顿，请帮忙再约时间抓log 处理，感谢。</p>
+</div>
+<div class="reply odd">
+<h3 id="20240806-1044-5">2024/08/06 10:44 — [人名5]<a class="headerlink" href="#20240806-1044-5" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] ，</p>
+<p>有空可以过来录air log 哈</p>
+</div>
+<div class="reply even">
+<h3 id="20240806-1045-2">2024/08/06 10:45 — [人名2]<a class="headerlink" href="#20240806-1045-2" title="Permanent link">&para;</a></h3>
+<p>Hi fason，</p>
+<p>那就周四下午？</p>
+</div>
+<div class="reply odd">
+<h3 id="20240806-1045-5">2024/08/06 10:45 — [人名5]<a class="headerlink" href="#20240806-1045-5" title="Permanent link">&para;</a></h3>
+<p>可以</p>
+</div>
+<div class="reply even">
+<h3 id="20240808-1541-2">2024/08/08 15:41 — [人名2]<a class="headerlink" href="#20240808-1541-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名5]，</p>
+<p>问题在 11:39:26</p>
+<p>[附件: 2_听歌卡顿.zip]</p>
+</div>
+<div class="reply odd">
+<h3 id="20240808-1559-5">2024/08/08 15:59 — [人名5]<a class="headerlink" href="#20240808-1559-5" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] ，</p>
+<p>可以调取一下一开始连线的log吗？</p>
+<p>最新的log也要从一开始连线开始录哈~</p>
+</div>
+<div class="reply even">
+<h3 id="20240808-1904-2">2024/08/08 19:04 — [人名2]<a class="headerlink" href="#20240808-1904-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名5]，</p>
+<p>有抓到一个，请看看。</p>
+<p>[附件: power on log.7z]</p>
+<p>[附件: log-1.7z]</p>
+<p>[附件: 18点03分54秒 耳机中听到了卡顿.7z]</p>
+</div>
+<div class="reply odd">
+<h3 id="20240809-1725-5">2024/08/09 17:25 — [人名5]<a class="headerlink" href="#20240809-1725-5" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] ,</p>
+<p>以下這版是merge 完encryption code的版本, 麻煩幫我試試, thanks</p>
+<p>[附件: libpka_ull_g2_aws_leaudio_emp_20240809.rar]</p>
+</div>
+<div class="reply even">
+<h3 id="20240809-1848-2">2024/08/09 18:48 — [人名2]<a class="headerlink" href="#20240809-1848-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名5],</p>
+<p>我使用EVK 都有问题。partner 非常多卡顿。</p>
+<p>[附件: log (2)-1.7z]</p>
+<p>[图片: Snipaste_2024-08-09_18-47-36.png]</p>
+</div>
+<div class="reply odd">
+<h3 id="20240812-1401-84">2024/08/12 14:01 — [人名84]<a class="headerlink" href="#20240812-1401-84" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] ,</p>
+<p>我剛剛拿Evk板跟One plus 8 測試新的lib檔, 目前看起來好像沒有復現你說的情況, 你能幫我用以下面這版加了log的lib, 再試試嗎? thanks</p>
+<p>SW:</p>
+<p>[附件: libpka_ull_g2_aws_leaudio_emp_20240812.rar]</p>
+</div>
+<div class="reply even">
+<h3 id="20240812-1444-2">2024/08/12 14:44 — [人名2]<a class="headerlink" href="#20240812-1444-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名84] ([人名84])，</p>
+<p>我是用 Google Pixel 7 ，还是很容易试到的。</p>
+<p>COM32 为partner ；</p>
+<p>[附件: log-2.7z]</p>
+</div>
+<div class="reply odd">
+<h3 id="20240812-2006-18">2024/08/12 20:06 — [人名18]<a class="headerlink" href="#20240812-2006-18" title="Permanent link">&para;</a></h3>
+<p>Dear @[邮箱已隐藏] ,</p>
+<p>請問你們方便提供你們現在在用的firmware給我內部測試嗎? 從提供的log看起來理論上partner所有數據都顯示應該不會有嚴重收包問題, 但不知為何會有收包問題, 我今天拿了pixel 7, zenfone 9跟其他手機用EVK目前都沒有斷音的問題, 我想請我們內部測試讓我比較方便debug, thanks</p>
+</div>
+<div class="reply even">
+<h3 id="20240813-1019-2">2024/08/13 10:19 — [人名2]<a class="headerlink" href="#20240813-1019-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名18] ([人名18])，</p>
+<p>download_L、download_R 是我烧录测试的FW，download 是build 出来的；</p>
+<p>[附件: earbuds_ref_design_ull2.7z]</p>
+</div>
+<div class="reply odd">
+<h3 id="20240814-0939-5">2024/08/14 09:39 — [人名5]<a class="headerlink" href="#20240814-0939-5" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] ,</p>
+<p>这题还需要录air log，请问什么时候方便过来录一下air log吗</p>
+</div>
+<div class="reply even">
+<h3 id="20240814-1519-2">2024/08/14 15:19 — [人名2]<a class="headerlink" href="#20240814-1519-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名5]，</p>
+<p>这次是EVK 都出现卡的情况？我自己过去用EVK 录制可以？</p>
+</div>
+<div class="reply odd">
+<h3 id="20240814-1606-5">2024/08/14 16:06 — [人名5]<a class="headerlink" href="#20240814-1606-5" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] ，</p>
+<p>可以呀</p>
+</div>
+<div class="reply even">
+<h3 id="20240814-1710-2">2024/08/14 17:10 — [人名2]<a class="headerlink" href="#20240814-1710-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名5]，</p>
+<p>好的，我明天下午两点半到</p>
+</div>
+<div class="reply odd">
+<h3 id="20240814-1710-5">2024/08/14 17:10 — [人名5]<a class="headerlink" href="#20240814-1710-5" title="Permanent link">&para;</a></h3>
+<p>好的</p>
+</div>
+<div class="reply even">
+<h3 id="20240814-1731-84">2024/08/14 17:31 — [人名84]<a class="headerlink" href="#20240814-1731-84" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] ,</p>
+<p>麻煩樣機也一起帶來測試, 到時候麻煩使用以下lib, 並拉GPIO 12, 19, 分別對應 TIM0 與 Rx Window, thanks</p>
+<p>SW:</p>
+<p>[附件: libpka_ull_g2_aws_leaudio_emp_20240812withGPIO.rar]</p>
+</div>
+<div class="reply odd">
+<h3 id="20240815-1459-5">2024/08/15 14:59 — [人名5]<a class="headerlink" href="#20240815-1459-5" title="Permanent link">&para;</a></h3>
+<p>[图片: screenshot-1.png]</p>
+</div>
+<div class="reply even">
+<h3 id="20240815-1523-2">2024/08/15 15:23 — [人名2]<a class="headerlink" href="#20240815-1523-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名5],</p>
+<p>见附件。</p>
+<p>[附件: 确认收包情况.7z]</p>
+</div>
+<div class="reply odd">
+<h3 id="20240815-1531-2">2024/08/15 15:31 — [人名2]<a class="headerlink" href="#20240815-1531-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名5]，</p>
+<p>airlog + syslog </p>
+<p>[附件: log-3.7z]</p>
+<p>[附件: Untitled099.7z]</p>
+</div>
+<div class="reply even">
+<h3 id="20240815-1543-5">2024/08/15 15:43 — [人名5]<a class="headerlink" href="#20240815-1543-5" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] ，</p>
+<p>可以复现问题的话，麻烦RHO 之后再试试</p>
+<p>原本agent的耳機下</p>
+<p>AT+EAUDIO=AUD_SET_DEVICE_RIGHT</p>
+<p>AT+BTCMIT=start_air_pair</p>
+<p>原本partner的耳機下</p>
+<p>AT+EAUDIO=AUD_SET_DEVICE_LEFT</p>
+<p>AT+BTCMIT=start_air_pair</p>
+<p>下完後用 AT+BTAWSROLE=GET</p>
+<p>確認兩邊的role是不是互換</p>
+<p>[图片: image-2024-08-15-15-43-06-695.png]</p>
+</div>
+<div class="reply odd">
+<h3 id="20240815-1615-2">2024/08/15 16:15 — [人名2]<a class="headerlink" href="#20240815-1615-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名5]</p>
+<p>16:08:03 出现卡了一下；C0M16</p>
+<p>[附件: log (2).7z]</p>
+<p>[附件: 出现卡顿.7z]</p>
+</div>
+<div class="reply even">
+<h3 id="20240815-1734-84">2024/08/15 17:34 — [人名84]<a class="headerlink" href="#20240815-1734-84" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] ,</p>
+<p>以下這版是加了log跟IDS的, 麻煩幫我用Evk復現看看, GPIO分別拉5/6/7/12/14/15, 14/15對應到rx/tx window, thanks</p>
+<p>SW:</p>
+<p>[附件: libpka_ull_g2_aws_leaudio_emp_20240815_GPIO5_6_7_12_14_15.rar]</p>
+</div>
+<div class="reply odd">
+<h3 id="20240815-1739-5">2024/08/15 17:39 — [人名5]<a class="headerlink" href="#20240815-1739-5" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] ，</p>
+<p>麻烦开wireless spectrum测试</p>
+<p>[图片: image-2024-08-15-17-39-08-980.png]</p>
+</div>
+<div class="reply even">
+<h3 id="20240815-1933-2">2024/08/15 19:33 — [人名2]<a class="headerlink" href="#20240815-1933-2" title="Permanent link">&para;</a></h3>
+<p>Hi fason</p>
+<p>download 是编译出来的，_L _R 加入了我的config；执行了 clean 在build</p>
+<p>[附件: earbuds_ref_design_ull2-1.7z]</p>
+</div>
+<div class="reply odd">
+<h3 id="20240815-2056-84">2024/08/15 20:56 — [人名84]<a class="headerlink" href="#20240815-2056-84" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] </p>
+<p>麻煩幫我拉IDS GPIO 10, 11, 14,15,16,17, thanks</p>
+<p>SW:</p>
+<p>[附件: libpka_ull_g2_aws_leaudio_emp_20240815_GPIO10_11_14_15_16_17.rar]</p>
+</div>
+<div class="reply even">
+<h3 id="20240815-2112-5">2024/08/15 21:12 — [人名5]<a class="headerlink" href="#20240815-2112-5" title="Permanent link">&para;</a></h3>
+<p>AT+EREG=1,0xB0010880,0x4
+AT+EREG=1,0xA2010008,0x011B</p>
+<p>AT+EREG=1,0xA20B0038,0x111AA111</p>
+<p>AT+EREG=1,0xA20B003C,0x111AA111</p>
+<p>下這四個cmd直接設看看</p>
+</div>
+<div class="reply odd">
+<h3 id="20240815-2114-2">2024/08/15 21:14 — [人名2]<a class="headerlink" href="#20240815-2114-2" title="Permanent link">&para;</a></h3>
+<p>[附件: L是agent，R是partner.btt]</p>
+</div>
+<div class="reply even">
+<h3 id="20240815-2119-2">2024/08/15 21:19 — [人名2]<a class="headerlink" href="#20240815-2119-2" title="Permanent link">&para;</a></h3>
+<p>[附件: after AT cmd.btt]</p>
+</div>
+<div class="reply odd">
+<h3 id="20240815-2135-84">2024/08/15 21:35 — [人名84]<a class="headerlink" href="#20240815-2135-84" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] ,</p>
+<p>麻煩幫我拉IDS GPIO 10, 11, 4,5,16,17, thanks</p>
+<p>SW</p>
+<p>[附件: Final_ver_libpka_ull_g2_aws_leaudio_emp.rar]</p>
+</div>
+<div class="reply even">
+<h3 id="20240815-2151-2">2024/08/15 21:51 — [人名2]<a class="headerlink" href="#20240815-2151-2" title="Permanent link">&para;</a></h3>
+<p>[附件: airlog.7z]</p>
+</div>
+<div class="reply odd">
+<h3 id="20240816-1702-5">2024/08/16 17:02 — [人名5]<a class="headerlink" href="#20240816-1702-5" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] ，</p>
+<p>麻烦发给客户测试确认一下呢。</p>
+<p>测试同时需要拿对比机同步测试，看看是不是对比机也卡，排除环境干扰影响。</p>
+</div>
+<div class="reply even">
+<h3 id="20240819-1557-2">2024/08/19 15:57 — [人名2]<a class="headerlink" href="#20240819-1557-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名5]，</p>
+<p>他们样机通过FOTA 升级 2024/08/12 14:01 ，还是有问题 ，2024/08/15 16:15 这个时间点的airlog log 和 syslog 可以分析出问题吗？EVK 我复现不出来问题。</p>
+</div>
+<div class="reply odd">
+<h3 id="20240820-1529-2">2024/08/20 15:29 — [人名2]<a class="headerlink" href="#20240820-1529-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名5]，</p>
+<p>样机和手机已经提供给了汪工，请提供lib，我生成FW给汪工测试。</p>
+</div>
+<div class="reply even">
+<h3 id="20240821-1422-84">2024/08/21 14:22 — [人名84]<a class="headerlink" href="#20240821-1422-84" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] ,</p>
+<p>以下為拉GPIO 12/19分別對應CRC error與Rx Window, thanks</p>
+<p>SW:</p>
+<p>[附件: libpka_ull_g2_aws_leaudio_emp_20240821_GPIO_12_19.rar]</p>
+</div>
+<div class="reply odd">
+<h3 id="20240821-1437-2">2024/08/21 14:37 — [人名2]<a class="headerlink" href="#20240821-1437-2" title="Permanent link">&para;</a></h3>
+<p>Hi 汪工，</p>
+<p>附件 fotaPackage 对应 [人名84] ([人名84]) 2024/08/21 14:22 提供的lib 生成的FW ；</p>
+<p>此项目SPP UUID：9BB9AA1A-0E6E-47F6-AC48-CB86C575EC22 ，使用ABT UT 升级的时候需要注意修改；</p>
+<p>[附件: debug.240821.1402.7z]</p>
+<p>[附件: C115_FotaPackage_20240821_1402.bin]</p>
+</div>
+<div class="reply even">
+<h3 id="20240822-1521-2">2024/08/22 15:21 — [人名2]<a class="headerlink" href="#20240822-1521-2" title="Permanent link">&para;</a></h3>
+<p>Hi 汪工，</p>
+<p>附件为6月3号，GPIO12 GPIO19 有信号的FW ；</p>
+<p>開啟wireless spectrum跟audio dump追蹤收包狀況</p>
+<p>GPIO 12 : Rx</p>
+<p>GOIO 19 : HEC/CRC/MIC error</p>
+<p>[附件: C115_FotaPackage_20240603_IDS_OK.bin]</p>
+<p>[附件: debug_IDS_OK.7z]</p>
+</div>
+<div class="reply odd">
+<h3 id="20240826-1626-84">2024/08/26 16:26 — [人名84]<a class="headerlink" href="#20240826-1626-84" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] ,</p>
+<p>我修正了一些加密相關問題, 麻煩你幫忙build 以下lib給QA測試, thanks</p>
+<p>SW:</p>
+<p>[附件: libpka_ull_g2_aws_leaudio_emp_20240826-1.rar]</p>
+</div>
+<div class="reply even">
+<h3 id="20240826-1711-2">2024/08/26 17:11 — [人名2]<a class="headerlink" href="#20240826-1711-2" title="Permanent link">&para;</a></h3>
+<p>Hi 汪工，</p>
+<p>附件已经使用 2024/08/26 16:26 提供的lib；</p>
+<p>[附件: debug.7z]</p>
+<p>[附件: C115_FotaPackage_20240826_fix_encrp.bin]</p>
+</div>
+<div class="reply odd">
+<h3 id="20240827-1518-84">2024/08/27 15:18 — [人名84]<a class="headerlink" href="#20240827-1518-84" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] ,</p>
+<p>我昨天加太多log造成timing 問題, 麻煩幫我build以下lib, 謝謝</p>
+<p>SW:</p>
+<p>[附件: libpka_ull_g2_aws_leaudio_emp_20240827.rar]</p>
+</div>
+<div class="reply even">
+<h3 id="20240827-1951-2">2024/08/27 19:51 — [人名2]<a class="headerlink" href="#20240827-1951-2" title="Permanent link">&para;</a></h3>
+<p>Hi 汪工，</p>
+<p>附件已经使用 2024/08/27 15:18 提供的lib；</p>
+<p>[附件: debug-1.7z]</p>
+<p>[附件: C115_FotaPackage_20240827_fix_timing.bin]</p>
+</div>
+<div class="reply odd">
+<h3 id="20240828-1144-84">2024/08/28 11:44 — [人名84]<a class="headerlink" href="#20240828-1144-84" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] ,</p>
+<p>目前有時候partner會來不及開Rx window收包, 我添加一些新feature到encrpytion lib內, 麻煩幫我build, thanks</p>
+<p>SW:</p>
+<p>[附件: libpka_ull_g2_aws_leaudio_emp_20240828.rar]</p>
+</div>
+<div class="reply even">
+<h3 id="20240828-1413-2">2024/08/28 14:13 — [人名2]<a class="headerlink" href="#20240828-1413-2" title="Permanent link">&para;</a></h3>
+<p>Hi 汪工，</p>
+<p>附件已经使用 2024/08/28 11:44 提供的lib；</p>
+<p>[附件: debug-2.7z]</p>
+<p>[附件: C115_FotaPackage_20240828_fix_encrp.bin]</p>
+</div>
+<div class="reply odd">
+<h3 id="20240828-1949-84">2024/08/28 19:49 — [人名84]<a class="headerlink" href="#20240828-1949-84" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] ,</p>
+<p>我又添加feature幫助Rho斷音的問題, thanks</p>
+<p>SW:</p>
+<p>[附件: libpka_ull_g2_aws_leaudio_emp_20240828_v2.rar]</p>
+</div>
+<div class="reply even">
+<h3 id="20240828-2010-2">2024/08/28 20:10 — [人名2]<a class="headerlink" href="#20240828-2010-2" title="Permanent link">&para;</a></h3>
+<p>Hi 汪工，</p>
+<p>附件已经使用 2024/08/28 19:49 提供的lib；</p>
+<p>[附件: C115_FotaPackage_20240828_fix_RHO.bin]</p>
+<p>[附件: debug-3.7z]</p>
+</div>
+<div class="reply odd">
+<h3 id="20240830-1156-2">2024/08/30 11:56 — [人名2]<a class="headerlink" href="#20240830-1156-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名84] ([人名84]),</p>
+<p>汪工帮我确认了，目前没有再测试到卡顿的问题，这里lib 是否可以直接给客户测试和量产？</p>
+</div>
+<div class="reply even">
+<h3 id="20240902-1148-84">2024/09/02 11:48 — [人名84]<a class="headerlink" href="#20240902-1148-84" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] ,</p>
+<p>我今天請QA拿iphone測試, 如果沒問題我上完code後就可交給客戶了, thanks</p>
+</div>
+<div class="reply odd">
+<h3 id="20240902-1153-2">2024/09/02 11:53 — [人名2]<a class="headerlink" href="#20240902-1153-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名84] ([人名84])，</p>
+<p>好的，那就等汪工的测试情况了。</p>
+</div>
+<div class="reply even">
+<h3 id="20240902-1611-2">2024/09/02 16:11 — [人名2]<a class="headerlink" href="#20240902-1611-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名84] ([人名84])，</p>
+<p>这是 1577s的 FW，需要我做测试吗？但这是 1565 的项目</p>
+</div>
+<div class="reply odd">
+<h3 id="20240902-1618-84">2024/09/02 16:18 — [人名84]<a class="headerlink" href="#20240902-1618-84" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] ,</p>
+<p>抱歉剛剛丟到別題的firmware, 以下為此次要驗證的lib, thanks</p>
+<p>SW:</p>
+<p>[附件: libpka_ull_g2_aws_leaudio_emp_20240902.rar]</p>
+</div>
+<div class="reply even">
+<h3 id="20240902-1656-2">2024/09/02 16:56 — [人名2]<a class="headerlink" href="#20240902-1656-2" title="Permanent link">&para;</a></h3>
+<p>Hi 汪工，</p>
+<p>见附件更新；</p>
+<p>[附件: debug-5.7z]</p>
+<p>[附件: C115_FotaPackage_20240902_check.bin]</p>
+</div>
+<div class="reply odd">
+<h3 id="20240902-1843-2">2024/09/02 18:43 — [人名2]<a class="headerlink" href="#20240902-1843-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名84] ([人名84])，</p>
+<p>可以把下面这些修改，加到 <a href="../ABT-446/">ABT-446</a> SDK5.0.0 吗？使用相同的硬件，不同的SDK ；</p>
+<p>V1.0.240816.1200</p>
+<h1 id="libpka_leaudio_empa-abt-403-20240812-1401">加入原厂新提供的补丁 libpka_leaudio_emp.a ，解决连接一加手机播放音乐卡顿的问题；<a href="./">ABT-403</a> 2024/08/12 14:01<a class="headerlink" href="#libpka_leaudio_empa-abt-403-20240812-1401" title="Permanent link">&para;</a></h1>
+<p>V1.0.240730.1100</p>
+<h1 id="libpka_leaudio_empa-abt-403-20240729-2059">加入原厂新提供的补丁 libpka_leaudio_emp.a ，解决连接一加手机播放音乐卡顿的问题；<a href="./">ABT-403</a> 2024/07/29 20:59 。<a class="headerlink" href="#libpka_leaudio_empa-abt-403-20240729-2059" title="Permanent link">&para;</a></h1>
+<p>“此 issue 問題根源主要是在 AES-CCM encryption mode下, 耳機 partner 因接收不到 agent所給予的加密相關資訊, 因此無法自己獨立接收手機打的packet,
+必須 agent 持續補包給 partner 才能接收成功, 而貴司所聽到的斷訊是在持續補包過程中不可避免的, lib已修正 partner 接收加密資訊的問題”。</p>
+<p>V1.0.240711.1601</p>
+<h1 id="abt-403-20240711-1616">加入原厂提供的补丁，解决连接一加手机播放音乐卡顿的问题；<a href="./">ABT-403</a> 2024/07/11 16:16<a class="headerlink" href="#abt-403-20240711-1616" title="Permanent link">&para;</a></h1>
+</div>
+<div class="reply even">
+<h3 id="20240903-1836-2">2024/09/03 18:36 — [人名2]<a class="headerlink" href="#20240903-1836-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名84] ([人名84])，</p>
+<p>非常感谢，辛苦你和汪工，我已经更新给客户测试。</p>
+<p>另外，是否可以把修改同步到  <a href="../ABT-446/">ABT-446</a> SDK5.0.0 上？再次感谢；</p>
+</div>
+<div class="reply odd">
+<h3 id="20240903-1843-84">2024/09/03 18:43 — [人名84]<a class="headerlink" href="#20240903-1843-84" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] ,</p>
+<p>抱歉久等了, 今天我們內部沒法復現之前E0加密下出現的jumpiness問題, 麻煩你幫我把以下lib交給客戶測試, 以下lib是修正AES-CCM加密下 partner無法獨立收包的問題, 我們這次添加new feature讓agent可以在收到音樂包後提供partner加密相關information提高獨立收包的成功率, thanks!</p>
+<p>(麻煩忽略前一則留言, 我給到別issue的lib)</p>
+<p>我晚點確認SDK 5.0是否需要加新 feature
+[附件: 20240903_libpka_ull_g2_aws_leaudio_emp.rar]</p>
+</div>
+<div class="reply even">
+<h3 id="20240903-1850-2">2024/09/03 18:50 — [人名2]<a class="headerlink" href="#20240903-1850-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名84] ([人名84])，</p>
+<p>好的，我再build 过一次。</p>
+</div>
+<div class="reply odd">
+<h3 id="20240909-1418-2">2024/09/09 14:18 — [人名2]<a class="headerlink" href="#20240909-1418-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名84] ([人名84])，</p>
+<p>GPIO19 客户使用来做ship mode，拉高后外部IC 会把BAT 断开，测试 2024/09/03 18:36 的lib，客户的样机总是进入ship mode，需要把IDS debug 去掉才能验证。</p>
+</div>
+<div class="reply even">
+<h3 id="20240909-1432-84">2024/09/09 14:32 — [人名84]<a class="headerlink" href="#20240909-1432-84" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] ,</p>
+<p>此版已移除 GPIO 12, 19訊號, thanks
+[附件: 20240909_libpka_ull_g2_aws_leaudio_emp-1.rar]</p>
+</div>
+<div class="reply odd">
+<h3 id="20240909-1531-2">2024/09/09 15:31 — [人名2]<a class="headerlink" href="#20240909-1531-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名2] (Miuix) ,</p>
+<p>MCU 有error ；</p>
+<p>[附件: err-1.log]</p>
+</div>
+<div class="reply even">
+<h3 id="20240909-1555-84">2024/09/09 15:55 — [人名84]<a class="headerlink" href="#20240909-1555-84" title="Permanent link">&para;</a></h3>
+<p>Hi @[邮箱已隐藏] , </p>
+<p>我這版跟上一版沒有做甚麼改變, code size都沒變, 應該不會有把記憶體撐爆的問題, 請問之前還沒拔掉GPIO的那版code可以build pass嗎?</p>
+<p>下面這版是pull至最新code後重build的
+SW:
+[附件: 20240909_libpka_ull_g2_aws_leaudio_emp-2.rar]</p>
+</div>
+<div class="reply odd">
+<h3 id="20240909-1610-2">2024/09/09 16:10 — [人名2]<a class="headerlink" href="#20240909-1610-2" title="Permanent link">&para;</a></h3>
+<p>Hi [人名84] ([人名84])，</p>
+<p>不好意思，我看错了问题。2024/09/03 18:36 没有问题，这是SDK3.6.0 ，客户正在测试中。 2024/09/09 14:18 这个回复，应该放在 <a href="../ABT-446/">ABT-446</a> 中。抱歉。</p>
+</div>
+<div class="ticket-nav">
+<p><a href="../ABT-402/">← 上一个工单：ABT-402</a>　<a href="../ABT-404/">→ 下一个工单：ABT-404</a></p>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.expand", "navigation.indexes", "search.suggest", "search.highlight", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
