@@ -264,7 +264,7 @@ def render_markdown(t: dict) -> str:
         for i, c in enumerate(t["comments"]):
             cls = "odd" if i % 2 == 0 else "even"  # 灰白交替
             lines += [
-                f'<div class="reply {cls}">',
+                f'<div class="reply {cls}" markdown="1">',
                 "",
                 f"### {c['date']} — {c['author'] or c['role']}",
                 "",
