@@ -32,8 +32,10 @@ def build():
             tickets.append(t)
 
     # 列表页（表格，按工单号排序）
+    first = tickets[0]["id"] if tickets else "?"
+    last = tickets[-1]["id"] if tickets else "?"
     lines = ["# 工单列表", "",
-             f"共 {len(tickets)} 条工单（MIUIX1565-15 ~ MIUIX1565-{tickets[-1]['id'].split('-')[-1] if tickets else '?'}）。",
+             f"共 {len(tickets)} 条工单（{first} ~ {last}）。",
              "",
              "| 工单号 | 主题 | 日期 | 状态 |",
              "|---|---|---|---|"]
