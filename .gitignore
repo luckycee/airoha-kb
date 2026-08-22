@@ -9,6 +9,7 @@ raw/
 __pycache__/
 *.pyc
 .venv/
+*.egg-info/
 
 # MkDocs 构建产物
 site/
