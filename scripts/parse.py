@@ -117,8 +117,8 @@ def mask_sensitive(text: str) -> str:
     text = mask_terms(text, CUSTOMER_TERMS, "客户")  # 客户名
     text = mask_terms(text, PROJECT_TERMS, "项目")   # 项目/代号
     text = re.sub(r"\[~([^\]]*)\]", r"@\1", text)  # Jira 提及 [~xxx] → @xxx
-    # 工单引用 → 代号 + 交叉链接（MIUIX1565-499 → [ABT-499](ABT-499.md)）
-    text = re.sub(r"MIUIX1565-(\d+)", rf"[{TICKET_PREFIX}-\1]({TICKET_PREFIX}-\1.md)", text)
+    # 工单引用 → 代号 + 交叉链接（MIUIX1565-499 → [ABT-499](ABT-499/)；MkDocs 不重写 .md 链接，须用目录形式）
+    text = re.sub(r"MIUIX1565-(\d+)", rf"[{TICKET_PREFIX}-\1]({TICKET_PREFIX}-\1/)", text)
     return text
 
 
