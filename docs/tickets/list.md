@@ -4,38 +4,38 @@
 
 | 工单号 | 主题 | 日期 | 状态 |
 |---|---|---|---|
-| [ABT-783](ABT-783.md) | [【\[客户B\]】AB1571AM smart adaptive ANC 切换](ABT-783.md) | 2026/08/21 14:49 | Working |
-| [ABT-782](ABT-782.md) | [Teufel 项目请求 smart adaptive ANC](ABT-782.md) | 2026/08/21 14:14 | Working |
-| [ABT-781](ABT-781.md) | [【\[客户B\]】AB1571AM VIVI_PT无法调试](ABT-781.md) | 2026/08/20 16:19 | Working |
-| [ABT-780](ABT-780.md) | [【\[客户B\]】提供网络安全认证](ABT-780.md) | 2026/08/13 17:11 | Closed |
-| [ABT-779](ABT-779.md) | [【\[客户A\]】修改ULD bitrate](ABT-779.md) | 2026/08/06 15:47 | Closed |
-| [ABT-778](ABT-778.md) | [Teufel 项目请求viviPT add  on](ABT-778.md) | 2026/08/06 11:10 | Closed |
+| [ABT-783](ABT-783.md) | [【\[客户F\]】AB1571AM smart adaptive ANC 切换](ABT-783.md) | 2026/08/21 14:49 | Working |
+| [ABT-782](ABT-782.md) | [\[客户N\] 项目请求 smart adaptive ANC](ABT-782.md) | 2026/08/21 14:14 | Working |
+| [ABT-781](ABT-781.md) | [【\[客户F\]】AB1571AM VIVI_PT无法调试](ABT-781.md) | 2026/08/20 16:19 | Working |
+| [ABT-780](ABT-780.md) | [【\[客户F\]】提供网络安全认证](ABT-780.md) | 2026/08/13 17:11 | Closed |
+| [ABT-779](ABT-779.md) | [【\[客户O\]】修改ULD bitrate](ABT-779.md) | 2026/08/06 15:47 | Closed |
+| [ABT-778](ABT-778.md) | [\[客户N\] 项目请求viviPT add  on](ABT-778.md) | 2026/08/06 11:10 | Closed |
 | [ABT-777](ABT-777.md) | [AB1577M line in 输入到输出的延时咨询](ABT-777.md) | 2026/08/05 10:59 | Working |
-| [ABT-776](ABT-776.md) | [【\[客户B\]】AB1571AM LE audio 测试咨询](ABT-776.md) | 2026/08/03 17:33 | Closed |
+| [ABT-776](ABT-776.md) | [【\[客户F\]】AB1571AM LE audio 测试咨询](ABT-776.md) | 2026/08/03 17:33 | Closed |
 | [ABT-775](ABT-775.md) | [AB1571AM earbuds_ref_design 支持ULL3](ABT-775.md) | 2026/08/03 10:20 | Closed |
 | [ABT-774](ABT-774.md) | [Android App 连接TWS的单边无法获取版本号](ABT-774.md) | 2026/07/24 16:07 | Closed |
-| [ABT-773](ABT-773.md) | [【\[客户A\]】加入Dolby 之后宕机](ABT-773.md) | 2026/07/23 18:10 | Closed |
-| [ABT-772](ABT-772.md) | [【\[客户B\]】Teufel 申请 Xtensa license](ABT-772.md) | 2026/07/21 20:36 | Closed |
-| [ABT-771](ABT-771.md) | [【\[客户B\]】AB1592 ABT_BUDS_LINK_\[人名5\]P 功能咨询](ABT-771.md) | 2026/07/20 15:12 | Closed |
-| [ABT-770](ABT-770.md) | [【\[客户B\]】SBC 修改MTU](ABT-770.md) | 2026/07/20 11:15 | Closed |
+| [ABT-773](ABT-773.md) | [【\[客户O\]】加入Dolby 之后宕机](ABT-773.md) | 2026/07/23 18:10 | Closed |
+| [ABT-772](ABT-772.md) | [【\[客户F\]】\[客户N\] 申请 Xtensa license](ABT-772.md) | 2026/07/21 20:36 | Closed |
+| [ABT-771](ABT-771.md) | [【\[客户F\]】AB1592 ABT_BUDS_LINK_\[人名9\]P 功能咨询](ABT-771.md) | 2026/07/20 15:12 | Closed |
+| [ABT-770](ABT-770.md) | [【\[客户F\]】SBC 修改MTU](ABT-770.md) | 2026/07/20 11:15 | Closed |
 | [ABT-769](ABT-769.md) | [松下（Panasonic）1577S 项目申请adaptive ANC](ABT-769.md) | 2026/07/15 17:10 | Closed |
 | [ABT-768](ABT-768.md) | [AB1565 在ANC on 下切换ANC off 后，通话无声](ABT-768.md) | 2026/07/15 14:37 | Closed |
-| [ABT-767](ABT-767.md) | [【\[客户B\]】添加第三方通话算法dump录音数据](ABT-767.md) | 2026/07/08 19:27 | Closed |
+| [ABT-767](ABT-767.md) | [【\[客户F\]】添加第三方通话算法dump录音数据](ABT-767.md) | 2026/07/08 19:27 | Closed |
 | [ABT-766](ABT-766.md) | [AB1577M line in 改为 SLAVE_IN（后续2）](ABT-766.md) | 2026/07/08 11:30 | Closed |
 | [ABT-765](ABT-765.md) | [AB157x系列License申请(Ubuntu)](ABT-765.md) | 2026/07/07 11:00 | Closed |
 | [ABT-764](ABT-764.md) | [AB1577S 自适应降噪SDK](ABT-764.md) | 2026/07/06 11:40 | Closed |
-| [ABT-763](ABT-763.md) | [【\[客户A\]】AB1577AM SDK5.7.0 动态修改LDAC sample rate(后续)](ABT-763.md) | 2026/07/03 20:19 | Working |
+| [ABT-763](ABT-763.md) | [【\[客户O\]】AB1577AM SDK5.7.0 动态修改LDAC sample rate(后续)](ABT-763.md) | 2026/07/03 20:19 | Working |
 | [ABT-762](ABT-762.md) | [AB1565系列License申请](ABT-762.md) | 2026/07/02 11:14 | Closed |
 | [ABT-761](ABT-761.md) | [AB157x系列License申请](ABT-761.md) | 2026/07/01 11:07 | Closed |
 | [ABT-760](ABT-760.md) | [AB1565系列License申请](ABT-760.md) | 2026/07/01 11:06 | Closed |
-| [ABT-759](ABT-759.md) | [【\[客户N\]】USB Audio 通话mic 不起作用](ABT-759.md) | 2026/06/29 13:01 | Closed |
+| [ABT-759](ABT-759.md) | [【\[客户O\]】USB Audio 通话mic 不起作用](ABT-759.md) | 2026/06/29 13:01 | Closed |
 | [ABT-758](ABT-758.md) | [AB1577M line in 改为 SLAVE_IN（后续）](ABT-758.md) | 2026/06/29 10:12 | Closed |
 | [ABT-757](ABT-757.md) | [AB1577M USB Audio I2S输出 96K问题](ABT-757.md) | 2026/06/25 13:57 | Closed |
-| [ABT-756](ABT-756.md) | [【\[客户N\]】AB1577AM SDK5.7.0 line in信号检测](ABT-756.md) | 2026/06/24 15:29 | Closed |
+| [ABT-756](ABT-756.md) | [【\[客户O\]】AB1577AM SDK5.7.0 line in信号检测](ABT-756.md) | 2026/06/24 15:29 | Closed |
 | [ABT-755](ABT-755.md) | [【\[客户L\]】咨询GPL V3, LGPL v3](ABT-755.md) | 2026/06/24 11:19 | Closed |
 | [ABT-754](ABT-754.md) | [【\[客户F\]】AB1571AM DSP porting SOP](ABT-754.md) | 2026/06/23 14:09 | Closed |
 | [ABT-753](ABT-753.md) | [AB1571D I2S output 咨询](ABT-753.md) | 2026/06/22 17:31 | Closed |
-| [ABT-752](ABT-752.md) | [【\[客户N\]】\[DSP Occurs Exception: Stack Overflow, PC Address:0x0806a6ba,Func:Reserve\]](ABT-752.md) | 2026/06/16 15:50 | Closed |
+| [ABT-752](ABT-752.md) | [【\[客户O\]】\[DSP Occurs Exception: Stack Overflow, PC Address:0x0806a6ba,Func:Reserve\]](ABT-752.md) | 2026/06/16 15:50 | Closed |
 | [ABT-751](ABT-751.md) | [AB1571AM sidetone 无法开启](ABT-751.md) | 2026/06/16 15:07 | Closed |
 | [ABT-750](ABT-750.md) | [AB1577M line in 改为 SLAVE_IN](ABT-750.md) | 2026/06/12 15:16 | Closed |
 | [ABT-749](ABT-749.md) | [AB1565系列License申请](ABT-749.md) | 2026/06/11 17:12 | Closed |
@@ -46,7 +46,7 @@
 | [ABT-744](ABT-744.md) | [\[客户F\]_A162_AB1571AM调三麦通话麦克风无法加大](ABT-744.md) | 2026/06/09 14:48 | Closed |
 | [ABT-743](ABT-743.md) | [AB1565A 空间音频咨询](ABT-743.md) | 2026/06/08 10:58 | Closed |
 | [ABT-742](ABT-742.md) | [AB1571AM 关盖后再开盖出现 assert 宕机](ABT-742.md) | 2026/06/05 17:54 | Closed |
-| [ABT-741](ABT-741.md) | [【\[客户N\]】添加LDAC后不同source 表现不一致](ABT-741.md) | 2026/06/05 15:06 | Closed |
+| [ABT-741](ABT-741.md) | [【\[客户O\]】添加LDAC后不同source 表现不一致](ABT-741.md) | 2026/06/05 15:06 | Closed |
 | [ABT-740](ABT-740.md) | [\[DSP Assert: Assert Failed, filename:peq_interface_sw.c,line:521\]](ABT-740.md) | 2026/06/05 11:37 | Closed |
 | [ABT-739](ABT-739.md) | [AB1565AM 充电指示灯慢](ABT-739.md) | 2026/06/03 15:31 | Closed |
 | [ABT-738](ABT-738.md) | [AB1571AM 手机兼容性测试报告](ABT-738.md) | 2026/06/03 11:00 | Closed |
@@ -57,20 +57,20 @@
 | [ABT-733](ABT-733.md) | [Auracast 无法控制音量大小](ABT-733.md) | 2026/05/14 14:49 | Closed |
 | [ABT-732](ABT-732.md) | [AB1571AM SDK5.9.0 关闭AAC 后播放音乐宕机](ABT-732.md) | 2026/05/06 18:08 | Closed |
 | [ABT-731](ABT-731.md) | [AB1577S_V5.8.0 自适应ANC相关咨询](ABT-731.md) | 2026/04/28 17:45 | Closed |
-| [ABT-730](ABT-730.md) | [【\[客户N\]】LDAC+Dolby 概率性没有声音](ABT-730.md) | 2026/04/27 16:45 | Closed |
-| [ABT-729](ABT-729.md) | [【\[客户N\]】AB1577AM SDK5.7.0 动态修改LDAC sample rate](ABT-729.md) | 2026/04/23 17:59 | Closed |
+| [ABT-730](ABT-730.md) | [【\[客户O\]】LDAC+Dolby 概率性没有声音](ABT-730.md) | 2026/04/27 16:45 | Closed |
+| [ABT-729](ABT-729.md) | [【\[客户O\]】AB1577AM SDK5.7.0 动态修改LDAC sample rate](ABT-729.md) | 2026/04/23 17:59 | Closed |
 | [ABT-728](ABT-728.md) | [AB1565X SDK5.9.0 开启AINR 后宕机](ABT-728.md) | 2026/04/21 11:10 | Closed |
 | [ABT-727](ABT-727.md) | [AB157X 设置 2+1 mic 宕机](ABT-727.md) | 2026/04/16 15:31 | Closed |
 | [ABT-726](ABT-726.md) | [AB1565AM_KC认证LE 2M模式，2402 MHz, 2426 MHz, 2480 MHz  这3个信号 没有出来，这个问题是怎么解决？](ABT-726.md) | 2026/04/13 17:03 | Closed |
-| [ABT-725](ABT-725.md) | [【\[客户N\]】ANC 调试切换降噪曲线不一致](ABT-725.md) | 2026/04/03 15:25 | Closed |
+| [ABT-725](ABT-725.md) | [【\[客户O\]】ANC 调试切换降噪曲线不一致](ABT-725.md) | 2026/04/03 15:25 | Closed |
 | [ABT-724](ABT-724.md) | [AB1585 ULL2 multi mode 下能够相互抢播](ABT-724.md) | 2026/04/02 18:08 | Closed |
 | [ABT-723](ABT-723.md) | [AB1577M 通过SPI来接收和发送音频](ABT-723.md) | 2026/04/01 16:28 | Closed |
-| [ABT-722](ABT-722.md) | [【\[客户N\]】添加LDAC周其他source 的问题](ABT-722.md) | 2026/04/01 11:40 | Closed |
+| [ABT-722](ABT-722.md) | [【\[客户O\]】添加LDAC周其他source 的问题](ABT-722.md) | 2026/04/01 11:40 | Closed |
 | [ABT-721](ABT-721.md) | [AB1595 新项目问题咨询](ABT-721.md) | 2026/04/01 11:36 | Closed |
 | [ABT-720](ABT-720.md) | [AB1585 headset USB 连接电脑录音有杂音（后续）](ABT-720.md) | 2026/04/01 10:52 | Closed |
 | [ABT-719](ABT-719.md) | [【\[客户F\]】AB1565AM 设置通透增益效果反馈慢](ABT-719.md) | 2026/03/26 11:06 | Closed |
 | [ABT-718](ABT-718.md) | [AB1585 headset USB 连接电脑录音有杂音](ABT-718.md) | 2026/03/18 11:34 | Closed |
-| [ABT-717](ABT-717.md) | [【\[客户N\]】AB157X SDK5.7.0 申请LDAC add on](ABT-717.md) | 2026/03/13 19:28 | Closed |
+| [ABT-717](ABT-717.md) | [【\[客户O\]】AB157X SDK5.7.0 申请LDAC add on](ABT-717.md) | 2026/03/13 19:28 | Closed |
 | [ABT-716](ABT-716.md) | [AB156XE Android app 更新 16KB page后PEQ异常](ABT-716.md) | 2026/03/12 14:21 | Closed |
 | [ABT-715](ABT-715.md) | [【\[客户L\]】GFP 测试fail](ABT-715.md) | 2026/03/12 11:55 | Closed |
 | [ABT-714](ABT-714.md) | [AB1565 V5.5.0打开1wire充电问题](ABT-714.md) | 2026/03/12 11:46 | Closed |
@@ -85,52 +85,52 @@
 | [ABT-705](ABT-705.md) | [ULL3 AB1571D 加FEM](ABT-705.md) | 2026/02/25 10:48 | Closed |
 | [ABT-704](ABT-704.md) | [AB1571D dongle 添加FEM](ABT-704.md) | 2026/02/10 11:58 | Closed |
 | [ABT-703](ABT-703.md) | [【\[客户L\]】GAP device name 设置](ABT-703.md) | 2026/02/04 11:33 | Closed |
-| [ABT-702](ABT-702.md) | [【\[客户N\]】AB1577 充电支持BC1.2,DCP](ABT-702.md) | 2026/02/02 14:47 | Closed |
-| [ABT-701](ABT-701.md) | [【\[客户N\]】获取 metadata](ABT-701.md) | 2026/01/28 16:31 | Closed |
-| [ABT-700](ABT-700.md) | [【\[客户N\]】手动选择 USB audio （后续）](ABT-700.md) | 2026/01/28 11:26 | Closed |
+| [ABT-702](ABT-702.md) | [【\[客户O\]】AB1577 充电支持BC1.2,DCP](ABT-702.md) | 2026/02/02 14:47 | Closed |
+| [ABT-701](ABT-701.md) | [【\[客户O\]】获取 metadata](ABT-701.md) | 2026/01/28 16:31 | Closed |
+| [ABT-700](ABT-700.md) | [【\[客户O\]】手动选择 USB audio （后续）](ABT-700.md) | 2026/01/28 11:26 | Closed |
 | [ABT-699](ABT-699.md) | [【咨询】AB1595 咨询](ABT-699.md) | 2026/01/27 11:04 | Closed |
-| [ABT-698](ABT-698.md) | [【\[客户N\]】Dolby DAW算法遇到杂音问题（后续）](ABT-698.md) | 2026/01/27 10:22 | Closed |
-| [ABT-697](ABT-697.md) | [【\[客户N\]】BIS 切换上一个频道](ABT-697.md) | 2026/01/26 15:02 | Closed |
+| [ABT-698](ABT-698.md) | [【\[客户O\]】Dolby DAW算法遇到杂音问题（后续）](ABT-698.md) | 2026/01/27 10:22 | Closed |
+| [ABT-697](ABT-697.md) | [【\[客户O\]】BIS 切换上一个频道](ABT-697.md) | 2026/01/26 15:02 | Closed |
 | [ABT-696](ABT-696.md) | [AB1595 build](ABT-696.md) | 2026/01/23 14:35 | Closed |
 | [ABT-695](ABT-695.md) | [1wire race mode 无法退出](ABT-695.md) | 2026/01/22 17:08 | Closed |
-| [ABT-694](ABT-694.md) | [【\[客户N\]】手动选择 USB audio](ABT-694.md) | 2026/01/14 15:52 | Closed |
+| [ABT-694](ABT-694.md) | [【\[客户O\]】手动选择 USB audio](ABT-694.md) | 2026/01/14 15:52 | Closed |
 | [ABT-693](ABT-693.md) | [Android App 通过BLE连接没有OTA选项](ABT-693.md) | 2026/01/14 10:34 | Closed |
 | [ABT-692](ABT-692.md) | [AB1565 encoder rotary功能快速滑动旋钮音量调节会乱](ABT-692.md) | 2026/01/13 17:16 | Closed |
-| [ABT-691](ABT-691.md) | [【\[客户N\]】Dolby DAW算法遇到杂音问题](ABT-691.md) | 2026/01/13 14:19 | Closed |
+| [ABT-691](ABT-691.md) | [【\[客户O\]】Dolby DAW算法遇到杂音问题](ABT-691.md) | 2026/01/13 14:19 | Closed |
 | [ABT-690](ABT-690.md) | [ULL2 记录情况咨询](ABT-690.md) | 2026/01/08 12:09 | Closed |
 | [ABT-689](ABT-689.md) | [【\[客户L\]】AVRCP 音量咨询](ABT-689.md) | 2026/01/06 10:48 | Closed |
 | [ABT-688](ABT-688.md) | [通透切换无效问题](ABT-688.md) | 2025/12/30 21:42 | Closed |
 | [ABT-687](ABT-687.md) | [【\[客户F\]】充电控制咨询](ABT-687.md) | 2025/12/30 20:57 | Closed |
-| [ABT-686](ABT-686.md) | [【\[客户O\]】代码PIN脚咨询](ABT-686.md) | 2025/12/30 10:48 | Closed |
-| [ABT-685](ABT-685.md) | [【\[客户N\]】修改 downlink bitrate 后续](ABT-685.md) | 2025/12/30 10:07 | Closed |
-| [ABT-684](ABT-684.md) | [【\[客户N\]】\[DSP Assert: Assert Failed, filename:scenario_ull_audio_v2.c,line:7631\]](ABT-684.md) | 2025/12/26 12:23 | Closed |
+| [ABT-686](ABT-686.md) | [【\[客户P\]】代码PIN脚咨询](ABT-686.md) | 2025/12/30 10:48 | Closed |
+| [ABT-685](ABT-685.md) | [【\[客户O\]】修改 downlink bitrate 后续](ABT-685.md) | 2025/12/30 10:07 | Closed |
+| [ABT-684](ABT-684.md) | [【\[客户O\]】\[DSP Assert: Assert Failed, filename:scenario_ull_audio_v2.c,line:7631\]](ABT-684.md) | 2025/12/26 12:23 | Closed |
 | [ABT-683](ABT-683.md) | [【\[客户L\]】获取和设置当前通话音量](ABT-683.md) | 2025/12/25 21:16 | Closed |
 | [ABT-682](ABT-682.md) | [AB1565AM 添加杜比音效](ABT-682.md) | 2025/12/25 16:05 | Closed |
-| [ABT-681](ABT-681.md) | [【\[客户N\]】dongle 播放无声音](ABT-681.md) | 2025/12/25 14:24 | Closed |
-| [ABT-680](ABT-680.md) | [【\[客户N\]】开启CTKD 功能后BLE 广播异常](ABT-680.md) | 2025/12/25 11:34 | Closed |
-| [ABT-679](ABT-679.md) | [【\[客户N\]】USB in 跟Class BT切换](ABT-679.md) | 2025/12/24 19:35 | Closed |
-| [ABT-678](ABT-678.md) | [【\[客户N\]】dual chip USB in咨询](ABT-678.md) | 2025/12/23 10:46 | Closed |
+| [ABT-681](ABT-681.md) | [【\[客户O\]】dongle 播放无声音](ABT-681.md) | 2025/12/25 14:24 | Closed |
+| [ABT-680](ABT-680.md) | [【\[客户O\]】开启CTKD 功能后BLE 广播异常](ABT-680.md) | 2025/12/25 11:34 | Closed |
+| [ABT-679](ABT-679.md) | [【\[客户O\]】USB in 跟Class BT切换](ABT-679.md) | 2025/12/24 19:35 | Closed |
+| [ABT-678](ABT-678.md) | [【\[客户O\]】dual chip USB in咨询](ABT-678.md) | 2025/12/23 10:46 | Closed |
 | [ABT-677](ABT-677.md) | [16级音量等级中有输出相同的问题](ABT-677.md) | 2025/12/22 15:31 | Closed |
 | [ABT-676](ABT-676.md) | [\[MCU Assert: Assert Failed, filename:bt_ull_le_audio_manager.c,line:1816\]](ABT-676.md) | 2025/12/19 15:48 | Closed |
-| [ABT-675](ABT-675.md) | [【\[客户N\]】AB1577AM+AB1571 dual chip talk mic](ABT-675.md) | 2025/12/19 12:14 | Closed |
+| [ABT-675](ABT-675.md) | [【\[客户O\]】AB1577AM+AB1571 dual chip talk mic](ABT-675.md) | 2025/12/19 12:14 | Closed |
 | [ABT-674](ABT-674.md) | [AB1571AM NTC 电阻使用100K](ABT-674.md) | 2025/12/17 17:39 | Closed |
 | [ABT-673](ABT-673.md) | [AB1565AM 如何设置AB1565 某个GPIO口关机后保持拉高](ABT-673.md) | 2025/12/16 15:02 | Closed |
 | [ABT-672](ABT-672.md) | [【\[客户L\]】BQB认证重新提供QDID](ABT-672.md) | 2025/12/16 10:26 | Closed |
 | [ABT-671](ABT-671.md) | [\[DSP Assert: Assert Failed, filename:hal_audio_control.c,line:810\]](ABT-671.md) | 2025/12/15 15:38 | Closed |
 | [ABT-670](ABT-670.md) | [\[客户A\] LC3plus 申请](ABT-670.md) | 2025/12/15 15:20 | Declined |
 | [ABT-669](ABT-669.md) | [AB1565 V5.5.0 dongle随电脑一起关机再开机有概率dongle不回连耳机问题](ABT-669.md) | 2025/12/12 16:35 | Closed |
-| [ABT-668](ABT-668.md) | [【\[客户N\]】RTC mode 下 RTC_GPIO的控制](ABT-668.md) | 2025/12/12 11:37 | Closed |
-| [ABT-667](ABT-667.md) | [【\[客户N\]】dual chip mic test](ABT-667.md) | 2025/12/12 11:18 | Closed |
+| [ABT-668](ABT-668.md) | [【\[客户O\]】RTC mode 下 RTC_GPIO的控制](ABT-668.md) | 2025/12/12 11:37 | Closed |
+| [ABT-667](ABT-667.md) | [【\[客户O\]】dual chip mic test](ABT-667.md) | 2025/12/12 11:18 | Closed |
 | [ABT-666](ABT-666.md) | [AB1571AM QDID](ABT-666.md) | 2025/12/11 15:53 | Closed |
-| [ABT-665](ABT-665.md) | [【\[客户O\]】XBOX 无法识别 AB1571D dongle](ABT-665.md) | 2025/12/11 10:37 | Closed |
+| [ABT-665](ABT-665.md) | [【\[客户P\]】XBOX 无法识别 AB1571D dongle](ABT-665.md) | 2025/12/11 10:37 | Closed |
 | [ABT-664](ABT-664.md) | [【\[客户L\]】支持Android FAST 查找 功能（SPOT）](ABT-664.md) | 2025/12/10 10:22 | Closed |
 | [ABT-663](ABT-663.md) | [WIRE AUDIO 使用单个mic 做通透](ABT-663.md) | 2025/12/09 14:35 | Closed |
 | [ABT-662](ABT-662.md) | [AB1577AM QDID咨询](ABT-662.md) | 2025/12/09 14:25 | Closed |
-| [ABT-661](ABT-661.md) | [【\[客户N\]】添加杜比和MIMI 咨询](ABT-661.md) | 2025/12/08 12:04 | Closed |
+| [ABT-661](ABT-661.md) | [【\[客户O\]】添加杜比和MIMI 咨询](ABT-661.md) | 2025/12/08 12:04 | Closed |
 | [ABT-660](ABT-660.md) | [dongle 通过BLE 连接手机App](ABT-660.md) | 2025/12/05 15:50 | Closed |
-| [ABT-659](ABT-659.md) | [【\[客户N\]】dongle 连接PS5相关补丁](ABT-659.md) | 2025/12/05 10:18 | Closed |
+| [ABT-659](ABT-659.md) | [【\[客户O\]】dongle 连接PS5相关补丁](ABT-659.md) | 2025/12/05 10:18 | Closed |
 | [ABT-658](ABT-658.md) | [【GFP】提供 evk 连接信息](ABT-658.md) | 2025/12/05 10:11 | Closed |
-| [ABT-657](ABT-657.md) | [【\[客户N\]】PS 上dongle 显示问题](ABT-657.md) | 2025/12/03 20:16 | Closed |
+| [ABT-657](ABT-657.md) | [【\[客户O\]】PS 上dongle 显示问题](ABT-657.md) | 2025/12/03 20:16 | Closed |
 | [ABT-656](ABT-656.md) | [【\[客户L\]】\[MCU Assert: Assert Failed, filename:airo_key_event_internal.c,line:498\]](ABT-656.md) | 2025/12/03 20:08 | Closed |
 | [ABT-655](ABT-655.md) | [【\[客户L\]】单耳连接手机App后同步问题](ABT-655.md) | 2025/11/30 15:00 | Closed |
 | [ABT-654](ABT-654.md) | [【\[客户L\]】sidetone 左右不同步问题](ABT-654.md) | 2025/11/29 18:09 | Closed |
@@ -140,13 +140,13 @@
 | [ABT-650](ABT-650.md) | [【\[客户L\]】TWS回连设定主副机问题](ABT-650.md) | 2025/11/25 21:51 | Closed |
 | [ABT-649](ABT-649.md) | [【\[客户L\]】EMP 通话后，异常状态](ABT-649.md) | 2025/11/24 17:34 | Closed |
 | [ABT-648](ABT-648.md) | [【\[客户L\]】开启 WND 之后出现宕机\[DSP Assert: Assert Failed, filename:dsp_scenario.c,line:7687\]](ABT-648.md) | 2025/11/24 16:52 | Closed |
-| [ABT-647](ABT-647.md) | [【\[客户N\]】dual chip audio tuning](ABT-647.md) | 2025/11/21 14:58 | Closed |
-| [ABT-646](ABT-646.md) | [【\[客户N\]】发送race cmd 异常](ABT-646.md) | 2025/11/20 20:58 | Closed |
-| [ABT-645](ABT-645.md) | [【\[客户N\]】\[DSP Assert: Assert Failed, filename:dsp_stream_task.c,line:543\]](ABT-645.md) | 2025/11/20 12:21 | Closed |
+| [ABT-647](ABT-647.md) | [【\[客户O\]】dual chip audio tuning](ABT-647.md) | 2025/11/21 14:58 | Closed |
+| [ABT-646](ABT-646.md) | [【\[客户O\]】发送race cmd 异常](ABT-646.md) | 2025/11/20 20:58 | Closed |
+| [ABT-645](ABT-645.md) | [【\[客户O\]】\[DSP Assert: Assert Failed, filename:dsp_stream_task.c,line:543\]](ABT-645.md) | 2025/11/20 12:21 | Closed |
 | [ABT-644](ABT-644.md) | [【\[客户L\]】App 调整PEQ后无法保存](ABT-644.md) | 2025/11/19 17:40 | Closed |
 | [ABT-643](ABT-643.md) | [【\[客户L\]】【11/28 外ENC 10:00-18:00 】sidetone 使用没有效果（sidetone调试）](ABT-643.md) | 2025/11/19 15:34 | Closed |
 | [ABT-642](ABT-642.md) | [\[客户L\] A110T AB1571AM Wind Detection Settings](ABT-642.md) | 2025/11/19 14:33 | Closed |
-| [ABT-641](ABT-641.md) | [【\[客户N\]】开启CTKD功能](ABT-641.md) | 2025/11/17 10:23 | Closed |
+| [ABT-641](ABT-641.md) | [【\[客户O\]】开启CTKD功能](ABT-641.md) | 2025/11/17 10:23 | Closed |
 | [ABT-640](ABT-640.md) | [【\[客户L\]】air pairing 状态时喇叭有杂音](ABT-640.md) | 2025/11/14 15:01 | Closed |
 | [ABT-639](ABT-639.md) | [【\[客户L\]】修改WND算法为单mic](ABT-639.md) | 2025/11/14 14:26 | Closed |
 | [ABT-638](ABT-638.md) | [【咨询】AB157X 升级BT6.1](ABT-638.md) | 2025/11/11 15:20 | Closed |
@@ -154,12 +154,12 @@
 | [ABT-636](ABT-636.md) | [【\[客户L\]】AB1571AM LDAC测试报告](ABT-636.md) | 2025/11/11 11:47 | Closed |
 | [ABT-635](ABT-635.md) | [【\[客户L\]】32BIT符号整数溢出 unix计时到2038年到期问题](ABT-635.md) | 2025/11/11 11:25 | Closed |
 | [ABT-634](ABT-634.md) | [【\[客户L\]】DTM UART0发送指令问题](ABT-634.md) | 2025/11/10 15:03 | Closed |
-| [ABT-633](ABT-633.md) | [【\[客户N\]】SPI 使用问题（后续）](ABT-633.md) | 2025/11/10 11:45 | Closed |
-| [ABT-632](ABT-632.md) | [【\[客户N\]】SPI 使用问题](ABT-632.md) | 2025/11/06 16:08 | Closed |
+| [ABT-633](ABT-633.md) | [【\[客户O\]】SPI 使用问题（后续）](ABT-633.md) | 2025/11/10 11:45 | Closed |
+| [ABT-632](ABT-632.md) | [【\[客户O\]】SPI 使用问题](ABT-632.md) | 2025/11/06 16:08 | Closed |
 | [ABT-631](ABT-631.md) | [【\[客户L\]】BQB 认证profile fail整改](ABT-631.md) | 2025/11/06 11:58 | Closed |
 | [ABT-630](ABT-630.md) | [【\[客户L\]】FOSSS 文档完善](ABT-630.md) | 2025/11/05 17:55 | Closed |
 | [ABT-629](ABT-629.md) | [SDK2.9.0 旧项目修改](ABT-629.md) | 2025/10/31 15:40 | Closed |
-| [ABT-628](ABT-628.md) | [【\[客户O\]】dual chip 测试DUT](ABT-628.md) | 2025/10/31 11:32 | Closed |
+| [ABT-628](ABT-628.md) | [【\[客户P\]】dual chip 测试DUT](ABT-628.md) | 2025/10/31 11:32 | Closed |
 | [ABT-627](ABT-627.md) | [AB1565AM wired audio 调试自定义PEQ 无效](ABT-627.md) | 2025/10/29 20:48 | Closed |
 | [ABT-626](ABT-626.md) | [【\[客户L\]】GFP ticket (90T)](ABT-626.md) | 2025/10/29 16:14 | Closed |
 | [ABT-625](ABT-625.md) | [【\[客户L\]】AB1571AM 连接iPhone 17Pro 待机发现连接丢失再回连](ABT-625.md) | 2025/10/28 16:07 | Closed |

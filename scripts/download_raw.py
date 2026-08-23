@@ -127,9 +127,10 @@ def main():
     ok = fail = 0
     for i, ticket_id in enumerate(ids, 1):
         out = RAW_DIR / f"MIUIX1565-{ticket_id}.html"
-        # 增量跳过：raw 已存在（本地）或已入库为 ABT-{id}.md（CI 中 raw 不入库）
-        if out.exists() or (TICKETS_DIR / f"ABT-{ticket_id}.md").exists():
-            print(f"[跳过] {i}/{len(ids)} MIUIX1565-{ticket_id}（已存在）")
+        # 增量跳过：只以 raw 是否存在为准（raw 是解析的数据源；
+        # 若以 md 为准会永远缺失 raw，导致词库更新后无法重新解析）
+        if out.exists():
+            print(f"[跳过] {i}/{len(ids)} MIUIX1565-{ticket_id}（raw 已存在）")
             continue
         try:
             html = fetch_one(session, ticket_id)
