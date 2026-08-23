@@ -241,7 +241,11 @@ def parse_ticket(ticket_id: int) -> dict:
     decoded = html_mod.unescape(payload_div.get_text())
 
     # 主题 / 时间 / 状态（主题也需脱敏：客户名可能出现在标题里）
-    summary = mask_sensitive(extract_value(decoded, "summary") or f"MIUIX1565-{ticket_id}")
+    summary_raw = extract_value(decoded, "summary")
+    if not summary_raw:
+        print(f"[跳过] MIUIX1565-{ticket_id}: 无工单数据（占位页/不存在）")
+        return None
+    summary = mask_sensitive(summary_raw)
     friendly_date = extract_value(decoded, "friendlyDate", "未知时间")
     status = extract_value(decoded, "status", "")
 

@@ -8,6 +8,7 @@
     cookies.txt 必须存在于项目根目录（Netscape 格式，浏览器导出）
 """
 import argparse
+import html as html_mod
 import os
 import random
 import re
@@ -15,6 +16,7 @@ import sys
 import time
 from pathlib import Path
 
+from bs4 import BeautifulSoup
 import requests
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
@@ -63,8 +65,19 @@ def load_cookies(path: Path) -> dict:
     return cookies
 
 
+def is_valid_ticket(html_text: str) -> bool:
+    """验证页面是否为有效工单：jsonPayload 必须含工单数据（summary/issueKey）。
+    Jira 对不存在的工单返回 HTTP 200 + 占位页（无工单数据），需显式排除。"""
+    soup = BeautifulSoup(html_text, "lxml")
+    div = soup.find(id="jsonPayload")
+    if not div:
+        return False
+    decoded = html_mod.unescape(div.get_text())
+    return '"summary"' in decoded or '"issueKey"' in decoded
+
+
 def fetch_one(session: requests.Session, ticket_id: int, max_retries: int = 3) -> str:
-    """下载单个工单页面，返回 HTML 文本；失败抛出异常。"""
+    """下载单个工单页面，返回 HTML 文本；无效工单/失败抛出异常。"""
     url = BASE_URL.format(id=ticket_id)
     for attempt in range(1, max_retries + 1):
         try:
@@ -75,9 +88,11 @@ def fetch_one(session: requests.Session, ticket_id: int, max_retries: int = 3) -
             match = re.search(r"<title>(.*?)</title>", text, re.DOTALL | re.IGNORECASE)
             if match and LOGIN_TITLE_PATTERN.search(match.group(1)):
                 raise PermissionError("会话已失效（页面跳转到登录页），请更新 cookies.txt")
+            if not is_valid_ticket(text):
+                raise ValueError(f"工单 {ticket_id} 不存在（占位页无工单数据）")
             return text
-        except PermissionError:
-            raise
+        except (PermissionError, ValueError):
+            raise  # 登录失效/无效工单：无需重试（页面稳定返回）
         except Exception as e:
             if attempt == max_retries:
                 raise
