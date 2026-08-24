@@ -363,20 +363,20 @@
 </div>
 <h2 id="_1">回复记录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
-<h3 id="20260807-1602-6">2026/08/07 16:02 — [人名6]<a class="headerlink" href="#20260807-1602-6" title="Permanent link">&para;</a></h3>
+<h3 id="20260807-1602-5">2026/08/07 16:02 — [人名5]<a class="headerlink" href="#20260807-1602-5" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>客户关注这个的原因是？他们对latency有要求？</p>
 </div>
 <div class="reply even">
 <h3 id="20260807-1807-2">2026/08/07 18:07 — [人名2]<a class="headerlink" href="#20260807-1807-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名6]</p>
+<p>Hi [人名5]</p>
 <p>见附件图片，客户外围自己加了MCU+UWB来传输数据，他们这么做的目的有两个，一是支持更高的码率，二是更低的延迟。</p>
 <p>他们内部的 latency 只有5~7ms，但是整体 ab 两点我测试下来约25ms，假设UWB的延时正确，属于我们这边的延迟就大约 18~20ms了，再分下来dongle和headset 两端就是9~10ms，他们希望我们内部的延时尽可能小，目标是做到1ms；</p>
 <p>[图片: PixPin_2026-08-07_18-01-12.jpg]</p>
 <p>[图片: 2026-08-07_180507_345.png]</p>
 </div>
 <div class="reply odd">
-<h3 id="20260818-1652-6">2026/08/18 16:52 — [人名6]<a class="headerlink" href="#20260818-1652-6" title="Permanent link">&para;</a></h3>
+<h3 id="20260818-1652-5">2026/08/18 16:52 — [人名5]<a class="headerlink" href="#20260818-1652-5" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>以下是我们理论估算值，具体要以测试为准哈</p>
 <p>48K(i2s)</p>
@@ -388,17 +388,17 @@
 </div>
 <div class="reply even">
 <h3 id="20260819-1052-2">2026/08/19 10:52 — [人名2]<a class="headerlink" href="#20260819-1052-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名6]</p>
+<p>Hi [人名5]</p>
 <p>客户期望能降到1ms以内，能做到吗？怎么做能降低这个latency？</p>
 </div>
 <div class="reply odd">
-<h3 id="20260820-2003-6">2026/08/20 20:03 — [人名6]<a class="headerlink" href="#20260820-2003-6" title="Permanent link">&para;</a></h3>
+<h3 id="20260820-2003-5">2026/08/20 20:03 — [人名5]<a class="headerlink" href="#20260820-2003-5" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>hw loopback 可以，不过DSP算法，直接hw i2s-&gt;dac</p>
 </div>
 <div class="reply even">
 <h3 id="20260821-1027-2">2026/08/21 10:27 — [人名2]<a class="headerlink" href="#20260821-1027-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名6]</p>
+<p>Hi [人名5]</p>
 <p>可以的，请帮忙指导一下如何修改；</p>
 <p>line in下的这两种都不经过DSP算法。</p>
 <p>I2S in -&gt; dac</p>
