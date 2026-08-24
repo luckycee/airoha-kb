@@ -1,6 +1,6 @@
 ---
 id: ABT-76
-title: dongle测试DUT mode
+title: "dongle测试DUT mode"
 date: 2022/09/02 10:48
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-76
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名5]，
+Hi [人名6]，
 
 你们之前给过dongle的测试方式（[ABT-17](ABT-17.md)），但是现在客户的产品是没有按键的，是否可以通过5V 发码的方式让它进入DUT mode，或者已经量产的客户怎么做。
 
@@ -28,7 +28,7 @@ Hi [人名5]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/09/02 12:33 — [人名5]
+### 2022/09/02 12:33 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -50,7 +50,7 @@ Dongle 可以通过USB 连接电脑，然后在logging tool上把设置改成USB
 
 ### 2022/09/02 12:55 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 race cmd发哪个指令？还是需要自己写？
 
@@ -58,7 +58,7 @@ race cmd发哪个指令？还是需要自己写？
 
 <div class="reply odd" markdown="1">
 
-### 2022/09/02 13:38 — [人名5]
+### 2022/09/02 13:38 — [人名6]
 
 Hi @[邮箱已隐藏]，
 

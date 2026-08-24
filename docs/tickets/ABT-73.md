@@ -1,6 +1,6 @@
 ---
 id: ABT-73
-title: 1565 设置 vp/ringtone ratio
+title: "1565 设置 vp/ringtone ratio"
 date: 2022/08/22 17:56
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-73
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名5]，
+Hi [人名6]，
 
 1565的config tool 是否没有vp 和音乐占空比地方？我没有找到，客户想按照1562那样做。
 
@@ -36,7 +36,7 @@ Hi [人名5]，
 
 <div class="reply even" markdown="1">
 
-### 2022/08/23 11:12 — [人名10]
+### 2022/08/23 11:12 — [人名12]
 
 Hi @[邮箱已隐藏]
 

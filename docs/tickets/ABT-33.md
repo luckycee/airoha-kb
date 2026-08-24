@@ -1,6 +1,6 @@
 ---
 id: ABT-33
-title: AB1565 race cmd开启ANC 后没有输出
+title: "AB1565 race cmd开启ANC 后没有输出"
 date: 2022/04/07 18:14
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-33
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi 帝木，
+Hi [人名4]，
 
 客户使用附件的指令来做量产测试，发现发完ANC_ON后DSP没有输出，找了log我发现在有5V的时候DSP mute掉，没有输出。
 
@@ -62,7 +62,7 @@ EXIT_TEST_MODE_RESPONSE =		'055B0400060E0011';
 
 ### 2022/04/08 11:01 — [人名2]
 
-Hi 帝木，
+Hi [人名4]，
 
 客户发完指令，掉5V就有输出了，他们认为这样能够解决问题。此题关闭；
 

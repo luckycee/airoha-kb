@@ -1,6 +1,6 @@
 ---
 id: ABT-59
-title: AB1585 V3.2.0 DSP编译不过
+title: "AB1585 V3.2.0 DSP编译不过"
 date: 2022/07/01 12:21
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-59
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名5]，
+Hi [人名6]，
 
 编译1585出现问题，在重新安装了all in one的环境之后，发现需要License，之前编译V2.9.0的时候没有这个提醒；
 
@@ -30,7 +30,7 @@ Hi [人名5]，
 
 ### 2022/07/01 12:22 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 通过对比两个环境 Xtensa的内容，发现新的没有License ；
 
@@ -42,7 +42,7 @@ Hi [人名5]，
 
 ### 2022/07/01 12:23 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 补充提示error；
 
@@ -54,7 +54,7 @@ Hi [人名5]，
 
 ### 2022/07/01 15:45 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 *The installation guidance video (online and offline) can be found in 
  https://eservicedocs.ABT.com.tw/display/DC/0001+AB158x_Dev_Env_Setup. Search AB158x_Windows_Dev_Env_Setup.mp4.
@@ -65,7 +65,7 @@ Hi [人名5]，
 
 <div class="reply even" markdown="1">
 
-### 2022/07/01 16:23 — [人名5]
+### 2022/07/01 16:23 — [人名6]
 
 没有这个视频啊，你去哪弄的网站啊
 
@@ -75,7 +75,7 @@ Hi [人名5]，
 
 ### 2022/07/01 17:06 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 按照readme，使用了新申请的License，修改了 install.sh ，可以编译DSP 了；
 

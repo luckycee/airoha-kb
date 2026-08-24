@@ -1,6 +1,6 @@
 ---
 id: ABT-40
-title: AB1565 中断的使用方式
+title: "AB1565 中断的使用方式"
 date: 2022/04/28 18:30
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-40
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名5] / [人名8],
+Hi [人名6] / [人名9],
 
 客户使用的SENSOR需要使用外部中断，请帮忙提供一下1565中断注册、设置回调函数等内容的demo code给我参考一下，附件是AB1562x系列的，在1565上有些接口没有。
 
@@ -36,7 +36,7 @@ Hi [人名5] / [人名8],
 
 <div class="reply even" markdown="1">
 
-### 2022/04/28 18:54 — [人名8]
+### 2022/04/28 18:54 — [人名9]
 
 mcu/doc/ABT_IoT_SDK_for_1565_1568_API_Reference_Manual
 
@@ -48,7 +48,7 @@ mcu/doc/ABT_IoT_SDK_for_1565_1568_API_Reference_Manual
 
 ### 2022/04/28 20:18 — [人名2]
 
-Hi [人名8]，
+Hi [人名9]，
 
 看到；
 
@@ -56,7 +56,7 @@ Hi [人名8]，
 
 <div class="reply even" markdown="1">
 
-### 2022/04/29 09:36 — [人名10]
+### 2022/04/29 09:36 — [人名12]
 
 Hi @[邮箱已隐藏]
 

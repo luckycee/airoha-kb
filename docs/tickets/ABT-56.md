@@ -1,6 +1,6 @@
 ---
 id: ABT-56
-title: AB1585 SDK V3.1.0 DSP编译不过
+title: "AB1585 SDK V3.1.0 DSP编译不过"
 date: 2022/06/20 16:38
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-56
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名5]，
+Hi [人名6]，
 
 请看看DSP 为什么编译不过。初始demo，没有做任何修改；
 
@@ -42,7 +42,7 @@ Hi [人名5]，
 
 <div class="reply even" markdown="1">
 
-### 2022/06/24 15:21 — [人名5]
+### 2022/06/24 15:21 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -54,7 +54,7 @@ Hi @[邮箱已隐藏]，
 
 ### 2022/06/24 16:46 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 这个。
 
@@ -64,7 +64,7 @@ Hi [人名5]，
 
 <div class="reply even" markdown="1">
 
-### 2022/06/27 14:56 — [人名5]
+### 2022/06/27 14:56 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -76,7 +76,7 @@ Hi @[邮箱已隐藏]，
 
 ### 2022/06/27 17:57 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 err 是 ./build.sh ab1585_evk earbuds_ref_design 的
 err1 是 ./build.sh ab1585_evk earbuds_ref_design_ull2 的
@@ -89,7 +89,7 @@ err1 是 ./build.sh ab1585_evk earbuds_ref_design_ull2 的
 
 <div class="reply even" markdown="1">
 
-### 2022/06/28 15:20 — [人名5]
+### 2022/06/28 15:20 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -104,7 +104,7 @@ AIR_BT_FAST_PAIR_ENABLE = n
 
 ### 2022/06/29 10:42 — [人名2]
 
-Hi [人名5] ,
+Hi [人名6] ,
 
 还是过不了；
 
@@ -114,7 +114,7 @@ Hi [人名5] ,
 
 <div class="reply even" markdown="1">
 
-### 2022/06/29 11:10 — [人名5]
+### 2022/06/29 11:10 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -126,7 +126,7 @@ Hi @[邮箱已隐藏]，
 
 ### 2022/06/29 11:25 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 DSP 的；
 
@@ -136,7 +136,7 @@ DSP 的；
 
 <div class="reply even" markdown="1">
 
-### 2022/06/29 13:34 — [人名5]
+### 2022/06/29 13:34 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -148,7 +148,7 @@ Hi @[邮箱已隐藏]，
 
 ### 2022/06/29 16:04 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 能够直接的code给我对比吗？我还是编译不过
 
@@ -158,7 +158,7 @@ Hi [人名5]，
 
 ### 2022/06/29 16:35 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 我的code；
 
@@ -170,7 +170,7 @@ Hi [人名5]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/06/29 16:35 — [人名5]
+### 2022/06/29 16:35 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -182,7 +182,7 @@ Hi @[邮箱已隐藏]，
 
 ### 2022/07/01 10:52 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 你们MOL上发布了V3.2.0，我会用那个版本试，这题关掉；
 

@@ -1,6 +1,6 @@
 ---
 id: ABT-66
-title: 关闭POWER KEY 长按10秒的reset
+title: "关闭POWER KEY 长按10秒的reset"
 date: 2022/07/27 18:53
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-66
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名5]，
+Hi [人名6]，
 
 请看一下如何关闭长按power key导致的sys reset，客户需要支持10秒以上的长按功能键；
 
@@ -28,7 +28,7 @@ Hi [人名5]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/07/29 15:04 — [人名5]
+### 2022/07/29 15:04 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -40,7 +40,7 @@ Hi @[邮箱已隐藏]，
 
 ### 2022/08/01 10:18 — [人名2]
 
-Hi fason,
+Hi [人名6],
 
 这个接口是我可以看到的嘛？搜索不出来。
 
@@ -48,7 +48,7 @@ Hi fason,
 
 <div class="reply odd" markdown="1">
 
-### 2022/08/01 11:18 — [人名5]
+### 2022/08/01 11:18 — [人名6]
 
 Hi @[邮箱已隐藏],
 
@@ -60,7 +60,7 @@ Hi @[邮箱已隐藏],
 
 ### 2022/08/01 11:40 — [人名2]
 
-Hi [人名5],
+Hi [人名6],
 
 找到了 V3.2.0 是你写，V2.9.0、V2.11.0 是 void pmu_enable_lpsd_2565(void)；
 
@@ -70,7 +70,7 @@ Hi [人名5],
 
 ### 2022/08/01 12:10 — [人名2]
 
-Hi  [人名5],
+Hi  [人名6],
 
 修改了，没有作用；
 
@@ -82,7 +82,7 @@ Hi  [人名5],
 
 <div class="reply even" markdown="1">
 
-### 2022/08/01 16:11 — [人名5]
+### 2022/08/01 16:11 — [人名6]
 
 Hi @[邮箱已隐藏],
 

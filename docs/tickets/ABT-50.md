@@ -1,6 +1,6 @@
 ---
 id: ABT-50
-title: AB1565A dongle回连不成功
+title: "AB1565A dongle回连不成功"
 date: 2022/05/27 17:27
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-50
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名5]，
+Hi [人名6]，
 
 请帮忙看看，开机后TWS连接上，进入手机配对，此时插入dongle，出现了连接失败的情况；
 
@@ -40,7 +40,7 @@ Hi [人名5]，
 
 <div class="reply even" markdown="1">
 
-### 2022/05/30 09:23 — [人名5]
+### 2022/05/30 09:23 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -52,7 +52,7 @@ Hi @[邮箱已隐藏]，
 
 ### 2022/05/30 10:00 — [人名2]
 
-Hi  [人名5],
+Hi  [人名6],
 
 没有，spp还没有加入我的代码，是demo状态
 
@@ -60,9 +60,9 @@ Hi  [人名5],
 
 <div class="reply even" markdown="1">
 
-### 2022/06/01 19:21 — [人名15]
+### 2022/06/01 19:21 — [人名18]
 
-Dear @[人名16] and @[人名13]
+Dear @[人名19] and @[人名16]
 
 \src\apps\app_ull\app_ull_idle_activity.c里面, 有一段app_ull_proc_bt_cm_group函数 中
 case BT_CM_EVENT_REMOTE_INFO_UPDATE: \{
@@ -81,7 +81,7 @@ case BT_CM_EVENT_REMOTE_INFO_UPDATE: \{
 
 <div class="reply odd" markdown="1">
 
-### 2022/06/02 08:56 — [人名5]
+### 2022/06/02 08:56 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -103,7 +103,7 @@ case BT_CM_EVENT_REMOTE_INFO_UPDATE: \{
 
 ### 2022/06/06 17:54 — [人名2]
 
-Hi [人名5]
+Hi [人名6]
 
 还是有问题；
 
@@ -118,7 +118,7 @@ com11 副机
 
 <div class="reply odd" markdown="1">
 
-### 2022/06/07 10:10 — [人名15]
+### 2022/06/07 10:10 — [人名18]
 
 Dear @[邮箱已隐藏]
 
@@ -149,7 +149,7 @@ COM17耳机端:
 
 ### 2022/06/08 10:20 — [人名2]
 
-Hi [人名15] ([人名15])，
+Hi [人名18] ([人名18])，
 
 昨天的客户有多余的操作，请看这一份；
 
@@ -167,7 +167,7 @@ com10 副机；
 
 ### 2022/06/10 14:33 — [人名2]
 
-Hi [人名15] ([人名15])，
+Hi [人名18] ([人名18])，
 
 的确，我使用的是SDK V2.9.0 ，没有这个API ；如何添加？在哪里调用？
 
@@ -175,9 +175,9 @@ Hi [人名15] ([人名15])，
 
 <div class="reply even" markdown="1">
 
-### 2022/06/13 13:43 — [人名14]
+### 2022/06/13 13:43 — [人名17]
 
-hi @[人名13]
+hi @[人名16]
 
 请帮忙整理这份patch 与上层app 的patch 提供给客户测试
 
@@ -189,7 +189,7 @@ hi @[人名13]
 
 <div class="reply odd" markdown="1">
 
-### 2022/06/13 15:23 — [人名5]
+### 2022/06/13 15:23 — [人名6]
 
 Hi @[邮箱已隐藏]，
 

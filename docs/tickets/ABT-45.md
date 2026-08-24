@@ -1,6 +1,6 @@
 ---
 id: ABT-45
-title: 1565 通过OTA无法修改PEQ的参数
+title: "1565 通过OTA无法修改PEQ的参数"
 date: 2022/05/07 15:57
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-45
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名5]，
+Hi [人名6]，
 
 使用dongle FOTA，发现是无法把新增的PEQ参数升级进去，不知道是否我的FotaPackage.bin 生成是否有问题？
 
@@ -38,7 +38,7 @@ Hi [人名5]，
 
 <div class="reply even" markdown="1">
 
-### 2022/05/07 17:14 — [人名8]
+### 2022/05/07 17:14 — [人名9]
 
 @[邮箱已隐藏]
 

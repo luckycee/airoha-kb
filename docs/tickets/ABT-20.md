@@ -1,6 +1,6 @@
 ---
 id: ABT-20
-title: AB1565 测试donle跟earbuds之间延迟
+title: "AB1565 测试donle跟earbuds之间延迟"
 date: 2022/02/10 10:42
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-20

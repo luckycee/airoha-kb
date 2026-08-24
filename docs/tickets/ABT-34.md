@@ -1,6 +1,6 @@
 ---
 id: ABT-34
-title: ULL dongle通话问题
+title: "ULL dongle通话问题"
 date: 2022/04/11 11:05
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-34
@@ -18,11 +18,11 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名5]，
+Hi [人名6]，
 
 发现在通话状态有几个问题：
 
-1. 通过log看到，音乐播放状态，来电，state 由APP_ULTRA_LOW_LATENCY_PLAYING 改为 APP_CONNECTED，不是在APP_[人名9]P_INCOMING ；
+1. 通过log看到，音乐播放状态，来电，state 由APP_ULTRA_LOW_LATENCY_PLAYING 改为 APP_CONNECTED，不是在APP_[人名10]P_INCOMING ；
 
 2. 接听的短按，看到发送的KeyEvent 是0x53，但是实际又能跟接听电话，但是长按无法拒绝电话；
 
@@ -44,7 +44,7 @@ Hi [人名5]，
 
 ### 2022/04/11 11:58 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 来电没有同步铃声，是不是也因为state 不对？
 
@@ -52,7 +52,7 @@ Hi [人名5]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/04/12 15:14 — [人名5]
+### 2022/04/12 15:14 — [人名6]
 
 !https://statics.teams.cdn.office.net/evergreen-assets/personal-expressions/v1/assets/emoticons/cwl/default/100_f.png|width=50!
 
@@ -60,11 +60,11 @@ Hi [人名5]，
 
 <div class="reply even" markdown="1">
 
-### 2022/04/14 09:32 — [人名5]
+### 2022/04/14 09:32 — [人名6]
 
-Hi 黄工，
+Hi [人名11]，
 
-我们ULL dongle 连接电脑之后，在跟耳机连接就没有[人名9]P 跟 A2DP 协议了，所以不支持这些状态。
+我们ULL dongle 连接电脑之后，在跟耳机连接就没有[人名10]P 跟 A2DP 协议了，所以不支持这些状态。
 
 </div>
 
@@ -72,7 +72,7 @@ Hi 黄工，
 
 ### 2022/04/14 10:07 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 啊，这样子的话，我该如何处理客户的问题：
 
@@ -84,11 +84,11 @@ Hi [人名5]，
 
 <div class="reply even" markdown="1">
 
-### 2022/04/14 14:26 — [人名5]
+### 2022/04/14 14:26 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
-没得做，手机通过USB传给dongle就没得[人名9]P协议，你看你客户有什么其他产品是有得做的，可以提需求给PLM评估。
+没得做，手机通过USB传给dongle就没得[人名10]P协议，你看你客户有什么其他产品是有得做的，可以提需求给PLM评估。
 
 </div>
 
@@ -96,7 +96,7 @@ Hi @[邮箱已隐藏]，
 
 ### 2022/04/15 14:44 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 有结果吗？我需要回复客户。
 
@@ -114,7 +114,7 @@ Hi [人名5]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/04/17 16:12 — [人名5]
+### 2022/04/17 16:12 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -178,7 +178,7 @@ if (ctx->is_ull_connected) \{
 
 ### 2022/04/18 17:38 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 dongle端怎么发消息给耳机端？
 
@@ -186,7 +186,7 @@ dongle端怎么发消息给耳机端？
 
 <div class="reply odd" markdown="1">
 
-### 2022/04/20 14:27 — [人名5]
+### 2022/04/20 14:27 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -200,7 +200,7 @@ Hi @[邮箱已隐藏]，
 
 <div class="reply even" markdown="1">
 
-### 2022/04/27 10:03 — [人名8]
+### 2022/04/27 10:03 — [人名9]
 
 @[邮箱已隐藏]
 
@@ -212,7 +212,7 @@ Hi @[邮箱已隐藏]，
 
 ### 2022/04/27 11:05 — [人名2]
 
-Hi [人名8],
+Hi [人名9],
 
 没有了，问题关闭；
 

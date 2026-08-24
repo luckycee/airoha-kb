@@ -1,6 +1,6 @@
 ---
 id: ABT-68
-title: 设置硬件IO区分左右声道
+title: "设置硬件IO区分左右声道"
 date: 2022/08/09 17:17
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-68
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名5]，
+Hi [人名6]，
 
 在配置工具中设置了硬件区分左右声道（默认GPIO19），虽然TWS能够连接，但是通过声道测试发现左右两边都为L边的声音。通过在 NVKEYID_APP_AUDIO_CHANNEL 这个nvkey相关位置加log，但是都没有显示出来。
 
@@ -40,7 +40,7 @@ Hi [人名5]，
 
 <div class="reply even" markdown="1">
 
-### 2022/08/09 17:48 — [人名5]
+### 2022/08/09 17:48 — [人名6]
 
 ？？？
 
@@ -52,7 +52,7 @@ Hi [人名5]，
 
 ### 2022/08/09 18:27 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 我为了做测试，两边都选为L，没有关系的，实际一边L，一边R也是不行；
 
@@ -60,7 +60,7 @@ Hi [人名5]，
 
 <div class="reply even" markdown="1">
 
-### 2022/08/10 09:32 — [人名5]
+### 2022/08/10 09:32 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -74,7 +74,7 @@ Hi @[邮箱已隐藏]，
 
 ### 2022/08/10 11:23 — [人名2]
 
-Hi [人名5],
+Hi [人名6],
 
 是我这边的问题，确实是连接并且声道对的，手法需要注意。
 

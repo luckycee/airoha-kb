@@ -1,6 +1,6 @@
 ---
 id: ABT-72
-title: SDK V3.2.0 headset 请求 adaptive ANC add on
+title: "SDK V3.2.0 headset 请求 adaptive ANC add on"
 date: 2022/08/22 10:59
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-72
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名21]hua / fason，
+Hi [人名24]hua / [人名6]，
 
 请帮忙提供以上内容给[客户A]；
 
@@ -28,7 +28,7 @@ Hi [人名21]hua / fason，
 
 <div class="reply odd" markdown="1">
 
-### 2022/08/22 14:36 — [人名18]
+### 2022/08/22 14:36 — [人名21]
 
 请问这是headset 吗？  如果是headset 需要更新到SDK3.2.0
 
@@ -38,7 +38,7 @@ Hi [人名21]hua / fason，
 
 ### 2022/08/22 14:48 — [人名2]
 
-Hi jianhua，
+Hi [人名5]，
 
 是的，headset。那么我更新的SDK 3.2.0 ，是否需要我关闭此题，另外提一笔？
 
@@ -46,7 +46,7 @@ Hi jianhua，
 
 <div class="reply odd" markdown="1">
 
-### 2022/08/22 14:52 — [人名18]
+### 2022/08/22 14:52 — [人名21]
 
 不需要，我直接申请SDK3.2.0 吧
 
@@ -56,7 +56,7 @@ Hi jianhua，
 
 ### 2022/08/22 14:57 — [人名2]
 
-Hi jianhua，
+Hi [人名5]，
 
 好的，还是放到此id上；
 
@@ -64,7 +64,7 @@ Hi jianhua，
 
 <div class="reply odd" markdown="1">
 
-### 2022/08/30 08:22 — [人名18]
+### 2022/08/30 08:22 — [人名21]
 
 [附件: IoT_SDK_for_BT_Audio_V3.2.0.AB1565_AB1568_adaptive_anc.7z]
 

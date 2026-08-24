@@ -1,6 +1,6 @@
 ---
 id: ABT-27
-title: AB1565 添加第三方算法和空间问题
+title: "AB1565 添加第三方算法和空间问题"
 date: 2022/03/11 12:01
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-27
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名5]，
+Hi [人名6]，
 
 因为现在ABT 的方案还不支持空间音频，所以客户想使用第三方算法来实现，但是第三方算法消耗的RAM资源预计超过300KB。
 
@@ -38,7 +38,7 @@ Hi [人名5]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/03/11 13:47 — [人名5]
+### 2022/03/11 13:47 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -48,7 +48,7 @@ Hi @[邮箱已隐藏]，
 
 <div class="reply even" markdown="1">
 
-### 2022/03/11 13:50 — [人名5]
+### 2022/03/11 13:50 — [人名6]
 
 86KB 你们怎么算的？
 
@@ -56,7 +56,7 @@ Hi @[邮箱已隐藏]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/03/11 14:22 — [人名5]
+### 2022/03/11 14:22 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -68,7 +68,7 @@ Hi @[邮箱已隐藏]，
 
 ### 2022/03/11 14:27 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 AB1565AM参考这个链接方法得出
 https://eservicedocs.ABT.com.tw/pages/viewpage.action?pageId=32606040
@@ -77,7 +77,7 @@ https://eservicedocs.ABT.com.tw/pages/viewpage.action?pageId=32606040
 
 <div class="reply odd" markdown="1">
 
-### 2022/03/11 14:32 — [人名5]
+### 2022/03/11 14:32 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -89,7 +89,7 @@ Hi @[邮箱已隐藏]，
 
 ### 2022/03/11 17:39 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 那我这边回复客户做不了？？
 
@@ -97,7 +97,7 @@ Hi [人名5]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/03/14 09:34 — [人名5]
+### 2022/03/14 09:34 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -107,7 +107,7 @@ Hi @[邮箱已隐藏]，
 
 <div class="reply even" markdown="1">
 
-### 2022/03/16 14:43 — [人名7]
+### 2022/03/16 14:43 — [人名8]
 
 Dear all,
 

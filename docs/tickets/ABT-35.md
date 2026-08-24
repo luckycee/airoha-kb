@@ -1,6 +1,6 @@
 ---
 id: ABT-35
-title: AB1565 设置按键开机
+title: "AB1565 设置按键开机"
 date: 2022/04/15 19:45
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-35
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名5]，
+Hi [人名6]，
 
 软件的 customerized_key_config.c 没有开机的时长设置，每次按键开机都是差不多1s就起来了。客户希望跟之前的UI保持一致，改为长按3s才能开机，请帮忙看看如何实现；
 
@@ -28,7 +28,7 @@ Hi [人名5]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/04/16 16:17 — [人名5]
+### 2022/04/16 16:17 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -41,7 +41,7 @@ Hi @[邮箱已隐藏]，
 
 ### 2022/04/19 14:30 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 我试过了，即使关闭1wire也是一样的开机时间。
 
@@ -58,7 +58,7 @@ Hi [人名5]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/04/19 15:12 — [人名5]
+### 2022/04/19 15:12 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -72,7 +72,7 @@ Hi @[邮箱已隐藏]，
 
 ### 2022/04/19 15:57 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 请使用电池测试；
 
@@ -80,9 +80,9 @@ Hi [人名5]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/04/19 16:54 — [人名5]
+### 2022/04/19 16:54 — [人名6]
 
-Hi 黄工，
+Hi [人名11]，
 
 我们耳机在充电状态下，耳机已经唤醒，所以会跑key 开机。
 

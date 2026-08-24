@@ -1,6 +1,6 @@
 ---
 id: ABT-52
-title: AB1565 uart0需改波特率
+title: "AB1565 uart0需改波特率"
 date: 2022/05/30 11:16
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-52
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi 帝木，
+Hi [人名4]，
 
 客户做的headset，支持ANC的。他们想把TWS那一套调试ANC的设备和指令放到headset上，但是TWS是1wire，headset是5V常在。他们想用uart0来发送接收指令，uart1和uart2都被他们的key用去了；
 
@@ -34,7 +34,7 @@ Hi 帝木，
 
 <div class="reply odd" markdown="1">
 
-### 2022/05/30 16:46 — [人名5]
+### 2022/05/30 16:46 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -60,7 +60,7 @@ DisableCpuLog （两条cmd对应两颗mcu，可以都试一下看哪个有用）
 
 ### 2022/05/30 17:32 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 关不掉，还是会有出来；
 
@@ -70,7 +70,7 @@ Hi [人名5]，
 
 ### 2022/05/30 17:36 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 准确来说应该是可以了，关了部分的log（MCU的？），但是仍有一些出来（DSP的？）。
 
@@ -82,7 +82,7 @@ Hi [人名5]，
 
 ### 2022/05/30 17:56 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 本次开机有效
 AT+SYSLOG=0,0,1,1 关mcu log
@@ -96,7 +96,7 @@ AT+SYSLOG=2 将关log设定存到nvdm，下次开机也生效
 
 <div class="reply odd" markdown="1">
 
-### 2022/05/30 18:20 — [人名8]
+### 2022/05/30 18:20 — [人名9]
 
 @[邮箱已隐藏]
 
@@ -106,7 +106,7 @@ AT+SYSLOG=2 将关log设定存到nvdm，下次开机也生效
 
 <div class="reply even" markdown="1">
 
-### 2022/05/31 09:33 — [人名5]
+### 2022/05/31 09:33 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -118,7 +118,7 @@ Hi @[邮箱已隐藏]，
 
 ### 2022/05/31 09:55 — [人名2]
 
-hi  [人名5],
+hi  [人名6],
 
 可以了！
 

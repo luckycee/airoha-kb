@@ -1,6 +1,6 @@
 ---
 id: ABT-29
-title: SDK V2.7.1 AB1565A earbuds_ref_design 使用hex文件播放异常 
+title: "SDK V2.7.1 AB1565A earbuds_ref_design 使用hex文件播放异常 "
 date: 2022/03/15 15:07
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-29
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名5]，
+Hi [人名6]，
 
 客户参考了你们代码中播放hex 文件使用方法，发现在SDK V2.7.1 播放的声音失真的问题，相同的代码在SDK V2.9.0 中我试了OK，请帮忙看看为什么，比较奇怪；
 
@@ -62,7 +62,7 @@ Hi [人名5]，
 
 ### 2022/03/17 16:34 — [人名2]
 
-Hi  [人名5],
+Hi  [人名6],
 
 长按开机之后，短按一下power_key，就能听到三声失真的提示音；
 
@@ -72,7 +72,7 @@ Hi  [人名5],
 
 <div class="reply odd" markdown="1">
 
-### 2022/03/17 18:44 — [人名5]
+### 2022/03/17 18:44 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -84,7 +84,7 @@ Hi @[邮箱已隐藏]，
 
 ### 2022/03/17 20:59 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 一样失真；
 
@@ -92,7 +92,7 @@ Hi [人名5]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/04/01 17:20 — [人名5]
+### 2022/04/01 17:20 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -108,7 +108,7 @@ Hi @[邮箱已隐藏]，
 
 ### 2022/04/01 17:43 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 直接使用MP3 吗？怎么直接使用？
 
@@ -116,7 +116,7 @@ Hi [人名5]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/04/06 09:59 — [人名5]
+### 2022/04/06 09:59 — [人名6]
 
 Hi @[邮箱已隐藏],
 

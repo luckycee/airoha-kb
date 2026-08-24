@@ -1,6 +1,6 @@
 ---
 id: ABT-92
-title: dongle 修改电脑端的显示
+title: "dongle 修改电脑端的显示"
 date: 2022/09/30 11:08
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-92
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-HI [人名5]，
+HI [人名6]，
 
 dongle连接电脑后，会新增显示两个声卡，是否可以隐藏一个？显示的名字是否能够自定义？
 
@@ -40,7 +40,7 @@ https://eservicedocs.ABT.com.tw/pages/viewpage.action?pageId=61899363
 
 <div class="reply even" markdown="1">
 
-### 2022/09/30 14:53 — [人名5]
+### 2022/09/30 14:53 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -54,7 +54,7 @@ Hi @[邮箱已隐藏]，
 
 ### 2022/09/30 18:10 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 你截图是1585，客户使用的是1565 ，配置工具上，这个地方什么也没有；
 
@@ -66,9 +66,9 @@ Hi [人名5]，
 
 <div class="reply even" markdown="1">
 
-### 2022/10/09 11:33 — [人名5]
+### 2022/10/09 11:33 — [人名6]
 
-Hi 黄工，
+Hi [人名11]，
 
 要不试试，85 这里改的是哪条nvkey，在65 code里也改一下试试咯
 
@@ -78,7 +78,7 @@ Hi 黄工，
 
 ### 2022/10/09 16:01 — [人名2]
 
-Hi fason，
+Hi [人名6]，
 
 找到并设置对应nvkey，烧录后还是显示两个；
 
@@ -88,7 +88,7 @@ Hi fason，
 
 <div class="reply even" markdown="1">
 
-### 2022/10/09 16:51 — [人名8]
+### 2022/10/09 16:51 — [人名9]
 
 1、这个是通过 feature option :
 

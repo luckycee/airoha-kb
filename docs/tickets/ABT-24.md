@@ -1,6 +1,6 @@
 ---
 id: ABT-24
-title: AB1565 dongle测试latency error
+title: "AB1565 dongle测试latency error"
 date: 2022/03/01 16:51
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-24
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名5]，
+Hi [人名6]，
 
 根据之前youwei提供的测试文档，客户发现有几个问题：
 
@@ -52,7 +52,7 @@ Hi [人名5]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/03/01 17:01 — [人名5]
+### 2022/03/01 17:01 — [人名6]
 
 FYI
 [附件: test_wave.wav]
@@ -63,7 +63,7 @@ FYI
 
 ### 2022/03/01 17:33 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 就是文件导致的，现在测试到有22ms，但是跟文档中的16.2ms，大约有30%多的差距，这是为什么？
 
@@ -73,7 +73,7 @@ Hi [人名5]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/03/02 10:02 — [人名5]
+### 2022/03/02 10:02 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -87,7 +87,7 @@ Hi @[邮箱已隐藏]，
 
 <div class="reply even" markdown="1">
 
-### 2022/03/02 10:11 — [人名5]
+### 2022/03/02 10:11 — [人名6]
 
 具体数据：
 
@@ -99,7 +99,7 @@ Hi @[邮箱已隐藏]，
 
 ### 2022/03/02 10:41 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 回复见图片；
 
@@ -109,7 +109,7 @@ Hi [人名5]，
 
 <div class="reply even" markdown="1">
 
-### 2022/03/02 13:37 — [人名5]
+### 2022/03/02 13:37 — [人名6]
 
 Hi @[邮箱已隐藏]，
 

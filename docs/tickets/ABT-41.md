@@ -1,6 +1,6 @@
 ---
 id: ABT-41
-title: AB1565 读写nvkey的地址
+title: "AB1565 读写nvkey的地址"
 date: 2022/04/28 20:23
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-41
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名8],
+Hi [人名9],
 
 从哪个地址段开始，可以让我添加使用，在AB1562x系列上，0xFE00 后面都能自由使用；
 
@@ -28,7 +28,7 @@ Hi [人名8],
 
 <div class="reply odd" markdown="1">
 
-### 2022/04/29 10:57 — [人名11]
+### 2022/04/29 10:57 — [人名13]
 
 Hi @[邮箱已隐藏],
 
@@ -42,7 +42,7 @@ thanks
 
 ### 2022/04/29 11:13 — [人名2]
 
-Hi [人名11]Huang,
+Hi [人名13]Huang,
 
 暂时没有遇到问题，就是确认这个其实地址。
 
@@ -52,7 +52,7 @@ Hi [人名11]Huang,
 
 ### 2022/04/29 20:32 — [人名2]
 
-Hi [人名11]Huang,
+Hi [人名13]Huang,
 
 新增的0xFE00 放在什么地方，如果放在 ..\mcu\project\ab1565_ab1568_evk\apps\earbuds_ref_design\config_bin\ab1565_evk\nvkey.xml 编译不过；
 
@@ -62,7 +62,7 @@ Hi [人名11]Huang,
 
 <div class="reply even" markdown="1">
 
-### 2022/05/05 08:59 — [人名11]
+### 2022/05/05 08:59 — [人名13]
 
 Hi  @[邮箱已隐藏],
 
@@ -80,7 +80,7 @@ thanks
 
 ### 2022/05/05 10:40 — [人名2]
 
-Hi [人名11]Huang,
+Hi [人名13]Huang,
 
 可以编译pass了；
 
@@ -100,7 +100,7 @@ Hi [人名11]Huang,
 
 <div class="reply even" markdown="1">
 
-### 2022/05/05 13:29 — [人名11]
+### 2022/05/05 13:29 — [人名13]
 
 Hi @[邮箱已隐藏]，
 
@@ -114,7 +114,7 @@ Hi @[邮箱已隐藏]，
 
 ### 2022/05/05 15:05 — [人名2]
 
-Hi [人名11]Huang,
+Hi [人名13]Huang,
 
 可以了，代码没有问题；
 
@@ -126,7 +126,7 @@ Hi [人名11]Huang,
 
 <div class="reply even" markdown="1">
 
-### 2022/05/05 15:49 — [人名11]
+### 2022/05/05 15:49 — [人名13]
 
 Hi  @[邮箱已隐藏],
 
@@ -147,7 +147,7 @@ thanks
 
 <div class="reply odd" markdown="1">
 
-### 2022/05/06 10:24 — [人名11]
+### 2022/05/06 10:24 — [人名13]
 
 Hi  @[邮箱已隐藏],
 
@@ -163,7 +163,7 @@ thanks
 
 ### 2022/05/06 11:47 — [人名2]
 
-Hi [人名11]Huang,
+Hi [人名13]Huang,
 
 在config tool上选择“save file”在对应的目录下，就会有一个 system.xml
 
@@ -173,7 +173,7 @@ Hi [人名11]Huang,
 
 <div class="reply odd" markdown="1">
 
-### 2022/05/06 16:57 — [人名11]
+### 2022/05/06 16:57 — [人名13]
 
 Hi  @[邮箱已隐藏],
  # 编译后我们会得到一个新的nvdm.bin，
@@ -188,7 +188,7 @@ Hi  @[邮箱已隐藏],
 
 ### 2022/05/06 17:04 — [人名2]
 
-Hi Hi [人名11]Huang,
+Hi Hi [人名13]Huang,
 
 是的，已经解决；
 

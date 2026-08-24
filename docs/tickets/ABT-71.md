@@ -1,6 +1,6 @@
 ---
 id: ABT-71
-title: 1565 请求race cmd 写PEQ的详细数据格式
+title: "1565 请求race cmd 写PEQ的详细数据格式"
 date: 2022/08/22 10:56
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-71
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi  [人名5],
+Hi  [人名6],
 
 EQ filter的系数数据格式是否和ANC filter的系数系数数据格式相同，如果系数数据格式不相同，能否提供系数数据格式？并且命令格式细节是什么？
 
@@ -30,7 +30,7 @@ EQ filter的系数数据格式是否和ANC filter的系数系数数据格式相�
 
 <div class="reply odd" markdown="1">
 
-### 2022/08/24 15:35 — [人名5]
+### 2022/08/24 15:35 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -44,7 +44,7 @@ Hi @[邮箱已隐藏]，
 
 <div class="reply even" markdown="1">
 
-### 2022/08/24 15:36 — [人名5]
+### 2022/08/24 15:36 — [人名6]
 
 [附件: AB156x_Series_PEQ_Coefficient_Update_Application_Note_v1.4_watermark.pdf]
 

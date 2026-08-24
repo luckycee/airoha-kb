@@ -1,6 +1,6 @@
 ---
 id: ABT-53
-title: AB1565 ULL配对超时后进入手机配对后无法搜索到名字
+title: "AB1565 ULL配对超时后进入手机配对后无法搜索到名字"
 date: 2022/06/14 15:59
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-53
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名5]，
+Hi [人名6]，
 
 见附件log con74：
 
@@ -48,7 +48,7 @@ com74 主机，com56副机；
 
 <div class="reply even" markdown="1">
 
-### 2022/06/15 09:26 — [人名5]
+### 2022/06/15 09:26 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -62,7 +62,7 @@ Hi @[邮箱已隐藏]，
 
 ### 2022/06/16 16:13 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 问题解决；
 

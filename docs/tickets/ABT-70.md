@@ -1,6 +1,6 @@
 ---
 id: ABT-70
-title: 1565 独立控制左右声道的音量
+title: "1565 独立控制左右声道的音量"
 date: 2022/08/22 10:31
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-70
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名5]，
+Hi [人名6]，
 
 客户想利用TWS来做音箱，问是否能够独立控制左右声道的音量？目前使用的软件，默认是两边同时变大变小的。
 
@@ -28,7 +28,7 @@ Hi [人名5]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/08/24 15:08 — [人名5]
+### 2022/08/24 15:08 — [人名6]
 
 Hi @[邮箱已隐藏],
 
@@ -40,7 +40,7 @@ app_aws_sync_event_send 这个是sync 的api ，可以搜一下在哪里sync 按
 
 ### 2022/08/25 10:15 — [人名2]
 
-Hi fason，
+Hi [人名6]，
 
 怎么关闭手机绝对音量？
 
@@ -48,7 +48,7 @@ Hi fason，
 
 <div class="reply odd" markdown="1">
 
-### 2022/08/25 11:47 — [人名5]
+### 2022/08/25 11:47 — [人名6]
 
 [图片: image-2022-08-25-11-47-11-902.png]
 
@@ -62,7 +62,7 @@ dev->volume_change_status = true; 删除或者修改为false
 
 <div class="reply even" markdown="1">
 
-### 2022/08/25 15:53 — [人名5]
+### 2022/08/25 15:53 — [人名6]
 
 [图片: image-2022-08-25-15-53-42-454.png]
 

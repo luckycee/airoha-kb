@@ -1,6 +1,6 @@
 ---
 id: ABT-36
-title: AB1565 修改默认ANC模式
+title: "AB1565 修改默认ANC模式"
 date: 2022/04/22 12:07
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-36
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名5]，
+Hi [人名6]，
 
 你们的demo code（nvkey.xml）默认开机之后，是ANC开启的模式，请指导一下如何设置为默认为关闭的模式；
 
@@ -38,7 +38,7 @@ Hi [人名5]，
 
 <div class="reply even" markdown="1">
 
-### 2022/04/22 15:43 — [人名5]
+### 2022/04/22 15:43 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -50,7 +50,7 @@ Hi @[邮箱已隐藏]，
 
 ### 2022/04/22 15:55 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 可以了。
 
@@ -60,7 +60,7 @@ Hi [人名5]，
 
 <div class="reply even" markdown="1">
 
-### 2022/04/22 16:16 — [人名5]
+### 2022/04/22 16:16 — [人名6]
 
 Hi @[邮箱已隐藏]，
 

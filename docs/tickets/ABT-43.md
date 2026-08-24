@@ -1,6 +1,6 @@
 ---
 id: ABT-43
-title: 1565 dongle兼容性问题
+title: "1565 dongle兼容性问题"
 date: 2022/05/06 14:26
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-43
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名5]，
+Hi [人名6]，
 
 客户在使用dongle时，遇到几个兼容性问题，我这边看了发送的内容都是正确的，是手机识别的问题，但客户不接受我的解释，请帮忙看看；
 
@@ -50,7 +50,7 @@ Hi [人名5]，
 
 <div class="reply even" markdown="1">
 
-### 2022/05/07 11:37 — [人名12]
+### 2022/05/07 11:37 — [人名14]
 
 Hi @[邮箱已隐藏]，
 
@@ -66,7 +66,7 @@ Thanks.
 
 <div class="reply odd" markdown="1">
 
-### 2022/05/07 11:43 — [人名12]
+### 2022/05/07 11:43 — [人名14]
 
 Hi @[邮箱已隐藏],
 
@@ -80,7 +80,7 @@ Thanks.
 
 ### 2022/05/07 18:12 — [人名2]
 
-Hi [人名12],
+Hi [人名14],
 
 好的，我已经将你的回复转给客户了，确认客户接受后，再关闭问题；
 

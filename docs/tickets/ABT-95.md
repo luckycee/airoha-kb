@@ -1,6 +1,6 @@
 ---
 id: ABT-95
-title: App 端自定义PEQ调整，LDAC解码无效
+title: "App 端自定义PEQ调整，LDAC解码无效"
 date: 2022/10/09 11:28
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-95
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名5]，
+Hi [人名6]，
 
 之前解决过，在config tool 上调试PEQ， 使用LDAC无效的问题，此问题解决了（见 [ABT-91](ABT-91.md)），现在客户发现使用App 新增自定义PEQ时，也无效；但是使用AAC和SBC有效，请继续指导，如何解决；
 
@@ -28,7 +28,7 @@ Hi [人名5]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/10/10 09:50 — [人名5]
+### 2022/10/10 09:50 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -40,7 +40,7 @@ Hi @[邮箱已隐藏]，
 
 ### 2022/10/10 15:06 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 附件有两个log，LDAC的是无效的，SBC是有效的；
 
@@ -52,7 +52,7 @@ Hi [人名5]，
 
 ### 2022/10/10 17:29 — [人名2]
 
-hi  [人名5],
+hi  [人名6],
 
 App设置PEQ101，导出前后的nvkey变化，导入到config tool 是可以看到support 88.2 and 96K是有勾选的；
 
@@ -64,7 +64,7 @@ App设置PEQ101，导出前后的nvkey变化，导入到config tool 是可以看
 
 <div class="reply even" markdown="1">
 
-### 2022/10/12 11:13 — [人名31]
+### 2022/10/12 11:13 — [人名35]
 
 Hi @[邮箱已隐藏]
 
@@ -83,7 +83,7 @@ boolean IS_SUPPORT_LDAC = {color:#d04437}true{color};
 
 ### 2022/10/12 14:43 — [人名2]
 
-Hi [人名31] ([人名31]),
+Hi [人名35] ([人名35]),
 
 解决了，问题关闭；
 

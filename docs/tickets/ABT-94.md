@@ -1,6 +1,6 @@
 ---
 id: ABT-94
-title: AB1565AM VAD咨询
+title: "AB1565AM VAD咨询"
 date: 2022/10/08 10:42
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-94
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi fason，
+Hi [人名6]，
 
 配置工具上，看到是支持VAD的，请问支持的关键词有哪些？是否可以自定义？调试文档有吗？
 
@@ -36,9 +36,9 @@ Hi fason，
 
 <div class="reply even" markdown="1">
 
-### 2022/10/09 11:06 — [人名5]
+### 2022/10/09 11:06 — [人名6]
 
-Hi 黄工，
+Hi [人名11]，
 
 VAD 调试 可以请教硬件，enable 之后，调一下mic ，应该就可以用了，关键词是“Hi Siri”。
 
@@ -48,7 +48,7 @@ VAD 调试 可以请教硬件，enable 之后，调一下mic ，应该就可以�
 
 ### 2022/10/09 11:11 — [人名2]
 
-Hi fason，
+Hi [人名6]，
 
 只有一个关键词吗？比如“OK Google”支持吗？
 
@@ -56,7 +56,7 @@ Hi fason，
 
 <div class="reply even" markdown="1">
 
-### 2022/10/09 11:27 — [人名5]
+### 2022/10/09 11:27 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -68,7 +68,7 @@ Hi @[邮箱已隐藏]，
 
 ### 2022/10/09 14:15 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 好的，问题关闭，客户只是想要确认功能；
 

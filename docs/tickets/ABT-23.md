@@ -1,6 +1,6 @@
 ---
 id: ABT-23
-title: AB1565 headset支持 Hi-Res 解码
+title: "AB1565 headset支持 Hi-Res 解码"
 date: 2022/03/01 14:39
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-23
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名5]，
+Hi [人名6]，
 
 请帮忙确认下，AB1565 headset 是否支持 Hi-Res 解码。
 
@@ -28,7 +28,7 @@ Hi [人名5]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/03/02 10:10 — [人名5]
+### 2022/03/02 10:10 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -46,7 +46,7 @@ Hi @[邮箱已隐藏]，
 
 ### 2022/03/07 19:04 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 问题关闭，客户不做了；
 

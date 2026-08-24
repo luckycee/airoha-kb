@@ -1,6 +1,6 @@
 ---
 id: ABT-63
-title: V2.9.0 IGO 算法 add on【[客户B]】
+title: "V2.9.0 IGO 算法 add on【[客户B]】"
 date: 2022/07/21 14:28
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-63
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名5]，
+Hi [人名6]，
 
 请帮忙提供iGO 算法的add on 包。
 
@@ -28,7 +28,7 @@ Hi [人名5]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/07/21 14:42 — [人名5]
+### 2022/07/21 14:42 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -38,7 +38,7 @@ Hi @[邮箱已隐藏]，
 
 <div class="reply even" markdown="1">
 
-### 2022/07/21 15:12 — [人名18]
+### 2022/07/21 15:12 — [人名21]
 
 见附件
 [附件: IoT_SDK_for_BT_Audio_V2.9.0.ULL_TWS_Headset_ai_nr_premium.7z]
@@ -49,7 +49,7 @@ Hi @[邮箱已隐藏]，
 
 ### 2022/07/21 15:29 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 请帮忙确认下：
 1. 直接拷贝对应内容到文件夹下就可以了吗？ feature.mak 和 Makefile 不用修改？
@@ -60,7 +60,7 @@ Hi [人名5]，
 
 <div class="reply even" markdown="1">
 
-### 2022/07/22 10:20 — [人名5]
+### 2022/07/22 10:20 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -72,7 +72,7 @@ Hi @[邮箱已隐藏]，
 
 ### 2022/07/22 14:14 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 这个 MTK_3RD_PARTY_NR = n ？
 
@@ -80,7 +80,7 @@ Hi [人名5]，
 
 <div class="reply even" markdown="1">
 
-### 2022/07/26 09:33 — [人名11]
+### 2022/07/26 09:33 — [人名13]
 
 Hi @[邮箱已隐藏],
 
@@ -94,7 +94,7 @@ thanks
 
 ### 2022/07/26 09:47 — [人名2]
 
-Hi [人名11]Huang
+Hi [人名13]Huang
 
 ./build.sh ab1565_8m_evk earbuds_ref_design
 
@@ -102,7 +102,7 @@ Hi [人名11]Huang
 
 <div class="reply even" markdown="1">
 
-### 2022/07/26 09:54 — [人名11]
+### 2022/07/26 09:54 — [人名13]
 
 Hi  @[邮箱已隐藏]，
 
@@ -116,7 +116,7 @@ thanks
 
 ### 2022/07/26 09:59 — [人名2]
 
-Hi Hi [人名11]Huang，
+Hi Hi [人名13]Huang，
 
 如何确认我添加成功？
 
@@ -124,7 +124,7 @@ Hi Hi [人名11]Huang，
 
 <div class="reply even" markdown="1">
 
-### 2022/07/26 10:15 — [人名11]
+### 2022/07/26 10:15 — [人名13]
 
 Hi @[邮箱已隐藏]，
 

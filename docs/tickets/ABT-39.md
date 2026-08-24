@@ -1,6 +1,6 @@
 ---
 id: ABT-39
-title: AB1565 无法退出 APP_STATE_VA
+title: "AB1565 无法退出 APP_STATE_VA"
 date: 2022/04/28 15:39
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-39
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名5]，
+Hi [人名6]，
 
 使用Android 手机，激活语音助手后，无法退出到正常的 APP_CONNECTED，导致了按键无效；
 
@@ -42,7 +42,7 @@ Hi [人名5]，
 
 <div class="reply even" markdown="1">
 
-### 2022/04/28 17:34 — [人名8]
+### 2022/04/28 17:34 — [人名9]
 
 @[邮箱已隐藏]
 
@@ -54,7 +54,7 @@ Hi [人名5]，
 
 ### 2022/04/28 17:46 — [人名2]
 
-Hi [人名8]，
+Hi [人名9]，
 
 V2.9.0的
 
@@ -62,7 +62,7 @@ V2.9.0的
 
 <div class="reply even" markdown="1">
 
-### 2022/04/28 17:49 — [人名8]
+### 2022/04/28 17:49 — [人名9]
 
 @[邮箱已隐藏]
 
@@ -76,7 +76,7 @@ V2.9.0的
 
 ### 2022/04/28 19:25 — [人名2]
 
-Hi [人名8],
+Hi [人名9],
 
 编译有问题；
 
@@ -86,7 +86,7 @@ Hi [人名8],
 
 <div class="reply even" markdown="1">
 
-### 2022/04/29 09:56 — [人名8]
+### 2022/04/29 09:56 — [人名9]
 
 你patch加错位置了吧，加到下一条case去了？
 
@@ -98,7 +98,7 @@ Hi [人名8],
 
 ### 2022/04/29 10:25 — [人名2]
 
-Hi [人名8],
+Hi [人名9],
 
 的确加错位置了；
 
@@ -108,7 +108,7 @@ Hi [人名8],
 
 ### 2022/05/05 17:15 — [人名2]
 
-Hi [人名8],
+Hi [人名9],
 
 客户验证了问题解决；
 

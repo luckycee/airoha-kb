@@ -1,6 +1,6 @@
 ---
 id: ABT-30
-title: AB1565 dongle + earbuds 咨询
+title: "AB1565 dongle + earbuds 咨询"
 date: 2022/03/30 15:20
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-30
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名5]，
+Hi [人名6]，
 
 请帮忙回复以下客户问题，有一些我知道，但是大部分都是不清楚的；  
 
@@ -34,7 +34,7 @@ Hi [人名5]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/03/30 17:05 — [人名5]
+### 2022/03/30 17:05 — [人名6]
 
 Hi @[邮箱已隐藏]，
  # PC端编解码到PC从USB 丢数据出去的延时，我们没有数据。我们只保证PC USB output 到 Headset output output之间latency < 25ms
@@ -45,7 +45,7 @@ Hi @[邮箱已隐藏]，
 
 <div class="reply even" markdown="1">
 
-### 2022/03/31 11:16 — [人名5]
+### 2022/03/31 11:16 — [人名6]
 
 Hi !@[邮箱已隐藏],
 

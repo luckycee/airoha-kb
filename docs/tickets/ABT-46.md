@@ -1,6 +1,6 @@
 ---
 id: ABT-46
-title: AB1565A 客户问题咨询
+title: "AB1565A 客户问题咨询"
 date: 2022/05/16 10:18
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-46
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名5]，
+Hi [人名6]，
 
 客户的终端客户，对软件中一些参数有疑问。
 
@@ -70,7 +70,7 @@ Chipset platform
 
 <div class="reply odd" markdown="1">
 
-### 2022/05/16 10:31 — [人名8]
+### 2022/05/16 10:31 — [人名9]
 
 Firmware identifier
 >> ？

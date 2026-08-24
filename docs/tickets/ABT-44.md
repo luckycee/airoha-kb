@@ -1,6 +1,6 @@
 ---
 id: ABT-44
-title: 1565 中断使用VP或者timer会导致死机
+title: "1565 中断使用VP或者timer会导致死机"
 date: 2022/05/06 18:21
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-44
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名5]，
+Hi [人名6]，
 
 外加的光感控制器，使用的中断、回调函数处理，客户要求，光感检测到入耳之后，播放一个提示音。但是你们的eService Docs 中提示，在中断中加入vp会导致死机；实测不单加vp会死机，加timer也会死机。有方法可以规避死机吗？
 
@@ -32,7 +32,7 @@ https://eservicedocs.ABT.com.tw/pages/viewpage.action?pageId=54035258
 
 <div class="reply odd" markdown="1">
 
-### 2022/05/07 14:26 — [人名11]
+### 2022/05/07 14:26 — [人名13]
 
 Hi @[邮箱已隐藏]，
  # 防抖可以用eint 本身的sw deounce timing, 具体参考bsp_gsensor_platform_eint_init 这个func
@@ -46,7 +46,7 @@ thanks
 
 ### 2022/05/07 16:27 — [人名2]
 
-hi  [人名11]Huang,
+hi  [人名13]Huang,
 
 使用 ui_shell_send_event  也会导致死机；
 
@@ -62,7 +62,7 @@ Miuix_SendKeyAction() 参考的bt_race_key_app_event_callback() 来写；
 
 <div class="reply odd" markdown="1">
 
-### 2022/05/07 17:05 — [人名11]
+### 2022/05/07 17:05 — [人名13]
 
 Hi @[邮箱已隐藏]，
 
@@ -78,7 +78,7 @@ Hi @[邮箱已隐藏]，
 
 ### 2022/05/07 17:19 — [人名2]
 
-hi [人名11]Huang,
+hi [人名13]Huang,
 
 你已经在那个event那里做了播放vp的处理了对吧？
 >> 还没有加vp，只是发一个key event出去，希望入耳播放音乐；
@@ -92,7 +92,7 @@ hi [人名11]Huang,
 
 ### 2022/05/07 18:18 — [人名2]
 
-Hi [人名11]Huang,
+Hi [人名13]Huang,
 
 附件是我使用的中断及sendKeyEvent的接口，应该你也能复现问题；
 
@@ -104,7 +104,7 @@ Hi [人名11]Huang,
 
 ### 2022/05/10 11:03 — [人名2]
 
-Hi [人名11]Huang,
+Hi [人名13]Huang,
 
 此题有解决方法了吗？
 
@@ -112,7 +112,7 @@ Hi [人名11]Huang,
 
 <div class="reply odd" markdown="1">
 
-### 2022/05/10 16:49 — [人名11]
+### 2022/05/10 16:49 — [人名13]
 
 Hi  @[邮箱已隐藏],
 
@@ -126,7 +126,7 @@ Hi  @[邮箱已隐藏],
 
 ### 2022/05/10 18:06 — [人名2]
 
-Hi [人名11]Huang,
+Hi [人名13]Huang,
 
 问题解决了；
 
@@ -136,7 +136,7 @@ Hi [人名11]Huang,
 
 ### 2022/05/10 18:11 — [人名2]
 
-Hi [人名11]Huang,
+Hi [人名13]Huang,
 
 好奇问一下，在内部处理，from_isr 这个参数true 和false，处理上有什么不同？
 
@@ -144,7 +144,7 @@ Hi [人名11]Huang,
 
 <div class="reply even" markdown="1">
 
-### 2022/05/10 18:15 — [人名11]
+### 2022/05/10 18:15 — [人名13]
 
 Hi @[邮箱已隐藏]，
 
@@ -160,7 +160,7 @@ freertos 操作系统里面中断和非中断中调用使用的API有些是不�
 
 ### 2022/05/10 19:37 — [人名2]
 
-Hi [人名11]Huang,
+Hi [人名13]Huang,
 
 是不是在中断状态下，左右耳不能sync data，我希望把所有的入耳处理放到agent做处理，在partner入耳时，把data给到agent，让agent来控制。但是我又发现死机了。
 
@@ -172,7 +172,7 @@ Hi [人名11]Huang,
 
 <div class="reply even" markdown="1">
 
-### 2022/05/11 09:00 — [人名11]
+### 2022/05/11 09:00 — [人名13]
 
 Hi @[邮箱已隐藏]，
 
@@ -189,7 +189,7 @@ thanks
 
 ### 2022/05/11 11:22 — [人名2]
 
-Hi [人名11]Huang,
+Hi [人名13]Huang,
 
 好的，我知道如何实现想要的功能了。
 

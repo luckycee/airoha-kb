@@ -1,6 +1,6 @@
 ---
 id: ABT-49
-title: AB1565D dongle更新补丁
+title: "AB1565D dongle更新补丁"
 date: 2022/05/27 16:14
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-49
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名12] ([人名12])，
+Hi [人名14] ([人名14])，
 
 如沟通，请帮提供SDK V2.9.0 dongle的补丁更新；
 
@@ -28,7 +28,7 @@ Hi [人名12] ([人名12])，
 
 <div class="reply odd" markdown="1">
 
-### 2022/05/30 10:34 — [人名12]
+### 2022/05/30 10:34 — [人名14]
 
 如无特殊需求，建议把dongle修改成full speed和单声卡。
 [附件: SDK290_USB_patch.rar]

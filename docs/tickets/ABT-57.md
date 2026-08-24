@@ -1,6 +1,6 @@
 ---
 id: ABT-57
-title: AB1565D dongle 支持I2S作为源
+title: "AB1565D dongle 支持I2S作为源"
 date: 2022/06/21 12:14
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-57
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi 帝木，
+Hi [人名4]，
 
 请帮忙确认下，是否dongle支持I2S作为dongle的音源，我看datasheet和配置工具上都有这个对象的项目。但参考设计上，只有AB1565M的，谨慎起见还是找你确认一下；
 
@@ -28,7 +28,7 @@ Hi 帝木，
 
 <div class="reply odd" markdown="1">
 
-### 2022/06/21 18:02 — [人名5]
+### 2022/06/21 18:02 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -40,7 +40,7 @@ Hi @[邮箱已隐藏]，
 
 ### 2022/06/21 18:12 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 感谢；
 

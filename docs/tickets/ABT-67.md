@@ -1,6 +1,6 @@
 ---
 id: ABT-67
-title: I2S Audio 信号处理问题
+title: "I2S Audio 信号处理问题"
 date: 2022/08/05 15:39
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-67
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi fason，
+Hi [人名6]，
 
 请帮忙确认下AB1565 SDK 中设置为I2S输出后，能否做到即使是在无连接、没有播放的音乐状态，也有I2S audio信号输出，即使输出0信号也没有关系。
 
@@ -38,7 +38,7 @@ Hi fason，
 
 <div class="reply even" markdown="1">
 
-### 2022/08/08 15:05 — [人名5]
+### 2022/08/08 15:05 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -50,7 +50,7 @@ Hi @[邮箱已隐藏]，
 
 ### 2022/08/09 10:19 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 客户想用来做TWS音箱，后面接音效DSP，再输出给数字功放，需要I2S持续输出，否则会有POP声；
 
@@ -58,7 +58,7 @@ Hi [人名5]，
 
 <div class="reply even" markdown="1">
 
-### 2022/08/09 14:38 — [人名5]
+### 2022/08/09 14:38 — [人名6]
 
 Hi @[邮箱已隐藏],
 

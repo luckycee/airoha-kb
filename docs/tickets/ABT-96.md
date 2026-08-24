@@ -1,6 +1,6 @@
 ---
 id: ABT-96
-title: AB1565AM 同时FOTA左右耳
+title: "AB1565AM 同时FOTA左右耳"
 date: 2022/10/10 15:20
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-96
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名5]，
+Hi [人名6]，
 
 在使用你们的官方demo App中，选择了 FOTA MCSync后，只能够选择一个 FotaPackage.bin ，不能像之前1562那样，分别选择左右耳；
 
@@ -42,7 +42,7 @@ Hi [人名5]，
 
 <div class="reply even" markdown="1">
 
-### 2022/10/10 16:36 — [人名5]
+### 2022/10/10 16:36 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -54,7 +54,7 @@ Hi @[邮箱已隐藏]，
 
 ### 2022/10/11 10:02 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 验证了可以；
 

@@ -1,6 +1,6 @@
 ---
 id: ABT-84
-title: AB1585 dognle project
+title: "AB1585 dognle project"
 date: 2022/09/13 18:10
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-84
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名5]，
+Hi [人名6]，
 
 [客户A]想用AB1585 TWS + dongle，但是看到只有earbuds 和 headset的project，没有dongle的，这个如何处理？
 
@@ -36,7 +36,7 @@ Hi [人名5]，
 
 <div class="reply even" markdown="1">
 
-### 2022/09/14 09:55 — [人名5]
+### 2022/09/14 09:55 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -46,7 +46,7 @@ dongle 要找 PLM 申请 add on 包
 
 <div class="reply odd" markdown="1">
 
-### 2022/09/15 14:51 — [人名18]
+### 2022/09/15 14:51 — [人名21]
 
 请问加dongle 做什么功能？  ULL 吗？
 
@@ -56,7 +56,7 @@ dongle 要找 PLM 申请 add on 包
 
 ### 2022/09/15 14:57 — [人名2]
 
-Hi jianhua，
+Hi [人名5]，
 
 是的，[客户A]他们就是要做TWS + dongle ；
 
@@ -64,7 +64,7 @@ Hi jianhua，
 
 <div class="reply odd" markdown="1">
 
-### 2022/09/15 15:08 — [人名18]
+### 2022/09/15 15:08 — [人名21]
 
 hi [人名2]，
 
@@ -76,7 +76,7 @@ hi [人名2]，
 
 ### 2022/09/16 16:28 — [人名2]
 
-Hi jianhua，
+Hi [人名5]，
 
 他们的正式软件，可以到V3.4.0 才使用。
 
@@ -86,7 +86,7 @@ Hi jianhua，
 
 <div class="reply odd" markdown="1">
 
-### 2022/09/16 17:02 — [人名18]
+### 2022/09/16 17:02 — [人名21]
 
 那就先去下载SDK3.3.0，  从这一版开始才有ULL2.0 的相关代码
 
@@ -96,7 +96,7 @@ Hi jianhua，
 
 ### 2022/09/16 17:10 — [人名2]
 
-Hi jianhua，
+Hi [人名5]，
 
 V3.3.0 也有下载，但是里面没有dongle project。
 
@@ -104,7 +104,7 @@ V3.3.0 也有下载，但是里面没有dongle project。
 
 <div class="reply odd" markdown="1">
 
-### 2022/09/19 17:42 — [人名18]
+### 2022/09/19 17:42 — [人名21]
 
 Download Link: https://transfer.mediatek.com/Detail/Received/Mail30018382227
 

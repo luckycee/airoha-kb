@@ -1,6 +1,6 @@
 ---
 id: ABT-54
-title: AB1565 拒绝回连
+title: "AB1565 拒绝回连"
 date: 2022/06/17 14:27
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-54
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名5]，
+Hi [人名6]，
 
 客户在测试ANC的时候，不希望测试仪对耳机进行回连，在哪里设置可以reject 连接请求。
 
@@ -28,7 +28,7 @@ Hi [人名5]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/06/17 15:36 — [人名5]
+### 2022/06/17 15:36 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -38,7 +38,7 @@ Hi @[邮箱已隐藏]，
 
 <div class="reply even" markdown="1">
 
-### 2022/06/17 16:12 — [人名5]
+### 2022/06/17 16:12 — [人名6]
 
 Hi @[邮箱已隐藏]，
 

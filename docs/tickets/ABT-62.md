@@ -1,6 +1,6 @@
 ---
 id: ABT-62
-title: AB1565A DUT 模式
+title: "AB1565A DUT 模式"
 date: 2022/07/18 17:14
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-62
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名5],
+Hi [人名6],
 
 V2.9.0 在config tool上，在RF_Config 上把DUT enable后，开机之后发现系统一直处于 APP_BT_OFF 状态，但是如果关掉则会是 APP_DISCONNECTED，为什么有这个差异？是否DUT 有特别的操作？
 
@@ -36,7 +36,7 @@ V2.9.0 在config tool上，在RF_Config 上把DUT enable后，开机之后发现
 
 <div class="reply even" markdown="1">
 
-### 2022/07/19 10:11 — [人名17]
+### 2022/07/19 10:11 — [人名20]
 
 Hi  @[邮箱已隐藏]
 
@@ -48,7 +48,7 @@ Hi  @[邮箱已隐藏]
 
 ### 2022/07/19 10:43 — [人名2]
 
-Hi [人名17]，
+Hi [人名20]，
 
 清楚！
 

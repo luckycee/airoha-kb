@@ -1,6 +1,6 @@
 ---
 id: ABT-37
-title: AB1565 dongle获取来电信号状态
+title: "AB1565 dongle获取来电信号状态"
 date: 2022/04/26 10:56
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-37
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名5]，
+Hi [人名6]，
 
 在添加了拒绝电话之后，引起了问题。在earbuds 这端，我是在 APP_CONNECTED 给出了reject指令的，因为客户在 APP_ULTRA_LOW_LATENCY_PLAYING 相同的长按是上下一曲。
 
@@ -54,7 +54,7 @@ Hi [人名5]，
 
 ### 2022/04/26 11:16 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 附件是code；
 
@@ -64,7 +64,7 @@ Hi [人名5]，
 
 <div class="reply even" markdown="1">
 
-### 2022/04/26 16:00 — [人名5]
+### 2022/04/26 16:00 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -74,7 +74,7 @@ Hi @[邮箱已隐藏]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/04/26 16:00 — [人名5]
+### 2022/04/26 16:00 — [人名6]
 
 另外，我们耳机没有办法区分来电的状态，麻烦跟客户说明~
 
@@ -82,7 +82,7 @@ Hi @[邮箱已隐藏]，
 
 <div class="reply even" markdown="1">
 
-### 2022/04/27 10:06 — [人名8]
+### 2022/04/27 10:06 — [人名9]
 
 @[邮箱已隐藏]
 

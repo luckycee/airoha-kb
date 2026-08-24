@@ -1,6 +1,6 @@
 ---
 id: ABT-86
-title: AB1585 V3.3.0 earbuds_ref_design_ull2 跟dongle配对
+title: "AB1585 V3.3.0 earbuds_ref_design_ull2 跟dongle配对"
 date: 2022/09/22 16:00
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-86
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-HI [人名5]，
+HI [人名6]，
 
 编译指令为 ./build.sh ab1585_evk earbuds_ref_design_ull2 ，找到对应下的 apps_config_event_list.h 没有发现有 KEY_LE_ULL_PAIRING 这个 key action , 而指令 ./build.sh ab1585_evk dongle_ref_design_ull2 下的apps_config_event_list.h  则有，请问ull2 应该如何配对？
 
@@ -28,7 +28,7 @@ HI [人名5]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/09/23 15:11 — [人名5]
+### 2022/09/23 15:11 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -52,7 +52,7 @@ EVK上要拔掉r1306电阻：
 
 ### 2022/09/26 20:25 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 你的截图是1565AM的，应该是1585才对。
 
@@ -60,7 +60,7 @@ Hi [人名5]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/09/27 09:28 — [人名5]
+### 2022/09/27 09:28 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -72,7 +72,7 @@ Hi @[邮箱已隐藏]，
 
 ### 2022/09/27 19:51 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 可以连接了；但是有问题：
 
@@ -89,7 +89,7 @@ Hi [人名5]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/09/28 10:27 — [人名5]
+### 2022/09/28 10:27 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -101,7 +101,7 @@ Hi @[邮箱已隐藏]，
 
 ### 2022/09/28 10:59 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 好，死机怎么样？
 
@@ -109,7 +109,7 @@ Hi [人名5]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/09/28 11:30 — [人名5]
+### 2022/09/28 11:30 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -123,7 +123,7 @@ Hi @[邮箱已隐藏]，
 
 ### 2022/09/28 11:49 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 确认过的，都有打开，code我只修改了customerized_key_config.c的内容，其他没有动。
 
@@ -133,7 +133,7 @@ Hi [人名5]，
 
 ### 2022/09/28 11:50 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 或者把你的FW给我试一试；
 
@@ -143,7 +143,7 @@ Hi [人名5]，
 
 ### 2022/09/28 18:26 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 有结果吗？
 
@@ -151,7 +151,7 @@ Hi [人名5]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/09/29 11:23 — [人名5]
+### 2022/09/29 11:23 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -165,7 +165,7 @@ dongle:./build.sh ab1585_evk dongle_ref_design_ull2
 
 <div class="reply even" markdown="1">
 
-### 2022/09/29 14:10 — [人名5]
+### 2022/09/29 14:10 — [人名6]
 
 Hi @[邮箱已隐藏]，
 

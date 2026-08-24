@@ -1,6 +1,6 @@
 ---
 id: ABT-47
-title: AB1565AM headset 实现组合按键
+title: "AB1565AM headset 实现组合按键"
 date: 2022/05/23 17:28
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-47
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名5]，
+Hi [人名6]，
 
 请指导一下，如何实现组合按键？如：POWER_KEY+EINT_KEY_1 短按、长按；
 
@@ -28,7 +28,7 @@ Hi [人名5]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/05/24 11:22 — [人名5]
+### 2022/05/24 11:22 — [人名6]
 
 Hi @[邮箱已隐藏]，
 

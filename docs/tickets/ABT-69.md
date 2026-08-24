@@ -1,6 +1,6 @@
 ---
 id: ABT-69
-title: dongle 技术指标咨询
+title: "dongle 技术指标咨询"
 date: 2022/08/17 10:33
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-69
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名5]，
+Hi [人名6]，
 
 1,1565D的USB Audio 是Class D还是？
 
@@ -32,7 +32,7 @@ Hi [人名5]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/08/17 14:03 — [人名5]
+### 2022/08/17 14:03 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -48,7 +48,7 @@ Hi @[邮箱已隐藏]，
 
 ### 2022/08/17 14:53 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 麻烦再确认这个；
 
@@ -58,7 +58,7 @@ Hi [人名5]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/08/18 10:13 — [人名5]
+### 2022/08/18 10:13 — [人名6]
 
 Hi @[邮箱已隐藏]，
 

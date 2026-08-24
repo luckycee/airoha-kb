@@ -28,9 +28,9 @@ NAMES = []          # 人名（长名优先）
 NAME_GROUPS = []    # 人名别名组：[[名字...], ...] 同组视为同一人
 NAME_TO_GROUP = {}  # 名字 -> 所属组
 NAME_MAP = {}       # 组(排序后小写元组) -> [人名N]
-CUSTOMER_TERMS = [] # 客户名
-PROJECT_TERMS = []  # 项目/代号
-TERM_MAP = {}       # 类型 -> {词(小写): 占位符}
+CUSTOMER_GROUPS = []  # 客户名组（同组视为同一客户）
+PROJECT_GROUPS = []   # 项目/代号组
+TERM_MAP = {}         # 类型 -> {组(排序小写元组): 占位符}
 
 # ---------- 通用工具 ----------
 
@@ -114,8 +114,8 @@ def mask_sensitive(text: str) -> str:
     text = re.sub(r"09\d{2}[- ]?\d{3}[- ]?\d{3}", "[电话已隐藏]", text)
     text = re.sub(r"(?<!\d)\d{12,}(?!\d)", "[序列号已隐藏]", text)
     text = mask_names(text)  # 人名词库
-    text = mask_terms(text, CUSTOMER_TERMS, "客户")  # 客户名
-    text = mask_terms(text, PROJECT_TERMS, "项目")   # 项目/代号
+    text = mask_terms(text, CUSTOMER_GROUPS, "客户")  # 客户名
+    text = mask_terms(text, PROJECT_GROUPS, "项目")   # 项目/代号
     text = re.sub(r"(?i)airoha", "ABT", text)  # 公司名 → ABT（注：source URL 不走此函数，保留原始地址）
     text = re.sub(r"\[~([^\]]*)\]", r"@\1", text)  # Jira 提及 [~xxx] → @xxx
     # 工单引用 → 代号 + 交叉链接（.md 相对链接，MkDocs 构建时自动转换为正确 URL）
@@ -135,13 +135,13 @@ def load_names():
         # 人名：主名=别名1,别名2，同组视为同一人（同一编号 [人名N]）
         王友巍=Youwei,Youwei Wang
         Fason Wu
-        # 客户名（[客户A]、[客户B]...）
+        # 客户名（[客户A]、[客户B]...），支持别名组：@客户 松下=Panasonic
         @客户 某某电子科技有限公司
         # 项目/代号（[项目A]、[项目B]...）
         @项目 ABC-Project
     """
-    global NAMES, NAME_GROUPS, NAME_TO_GROUP, CUSTOMER_TERMS, PROJECT_TERMS
-    NAME_GROUPS, CUSTOMER_TERMS, PROJECT_TERMS = [], [], []
+    global NAMES, NAME_GROUPS, NAME_TO_GROUP, CUSTOMER_GROUPS, PROJECT_GROUPS
+    NAME_GROUPS, CUSTOMER_GROUPS, PROJECT_GROUPS = [], [], []
     if NAMES_FILE.exists():
         for line in NAMES_FILE.read_text(encoding="utf-8").splitlines():
             line = line.strip()
@@ -149,12 +149,17 @@ def load_names():
                 continue
             if line.startswith("@客户"):
                 term = line[len("@客户"):].strip()
-                if term:
-                    CUSTOMER_TERMS.append(term)
+                if "=" in term:
+                    main, _, aliases = term.partition("=")
+                    group = [main.strip()] + [a.strip() for a in aliases.split(",") if a.strip()]
+                else:
+                    group = [term]
+                if group:
+                    CUSTOMER_GROUPS.append(group)
             elif line.startswith("@项目"):
                 term = line[len("@项目"):].strip()
                 if term:
-                    PROJECT_TERMS.append(term)
+                    PROJECT_GROUPS.append([term])
             elif "=" in line:
                 main, _, aliases = line.partition("=")
                 group = [main.strip()] + [a.strip() for a in aliases.split(",") if a.strip()]
@@ -178,15 +183,17 @@ def mask_names(text: str) -> str:
     return text
 
 
-def mask_terms(text: str, terms: list, kind: str) -> str:
-    """客户/项目词 → [客户A]/[项目A]，按字母编号。"""
-    for term in sorted(terms, key=len, reverse=True):
-        if term in text:
-            key = term.lower()
+def mask_terms(text: str, groups: list, kind: str) -> str:
+    """客户/项目词 → [客户A]/[项目A]，同组别名共用同一编号。"""
+    words = sorted((w for g in groups for w in g), key=len, reverse=True)
+    for word in words:
+        if word in text:
+            group = next((g for g in groups if word in g), [word])
+            key = tuple(sorted(w.lower() for w in group))
             if key not in TERM_MAP.setdefault(kind, {}):
                 n = len(TERM_MAP[kind]) + 1
                 TERM_MAP[kind][key] = f"[{kind}{chr(64 + n) if n <= 26 else n}]"
-            text = text.replace(term, TERM_MAP[kind][key])
+            text = text.replace(word, TERM_MAP[kind][key])
     return text
 
 
@@ -304,13 +311,18 @@ def ticket_nav(ticket_id: int) -> str:
     return f'<div class="ticket-nav" markdown="1">\n\n{prev}　{nxt}\n\n</div>'
 
 
+def yaml_quote(s: str) -> str:
+    """YAML 双引号字符串（title 可能含 [客户A] 等，YAML 会误判为 flow 序列）。"""
+    return '"' + s.replace("\\", "\\\\").replace('"', '\\"') + '"'
+
+
 def render_markdown(t: dict) -> str:
     """工单 dict → Markdown 文本。"""
     ticket_id = int(t["id"].split("-")[-1])
     lines = [
         "---",
         f"id: {t['id']}",
-        f"title: {t['title']}",
+        f"title: {yaml_quote(t['title'])}",
         f"date: {t['date']}",
         f"status: {t['status']}",
         f"source: {t['source']}",

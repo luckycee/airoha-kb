@@ -1,6 +1,6 @@
 ---
 id: ABT-32
-title: AB1565 是否支持smart case V1/V2
+title: "AB1565 是否支持smart case V1/V2"
 date: 2022/04/02 15:55
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-32
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi  [人名5] ,
+Hi  [人名6] ,
 
 在feature.mak 中，1wrie的设定需要三个define。
 
@@ -38,7 +38,7 @@ MTK_SMART_CHARGER_1WIRE_RACE_ENABLE = y
 
 <div class="reply odd" markdown="1">
 
-### 2022/04/06 09:51 — [人名5]
+### 2022/04/06 09:51 — [人名6]
 
 Hi @[邮箱已隐藏]
 
@@ -54,7 +54,7 @@ Hi @[邮箱已隐藏]
 
 ### 2022/04/07 18:04 — [人名2]
 
-HI [人名5]，
+HI [人名6]，
 
 客户目前已经转到1wire，暂不讨论了。
 

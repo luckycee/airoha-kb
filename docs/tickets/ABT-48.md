@@ -1,6 +1,6 @@
 ---
 id: ABT-48
-title: AB1565 SPP无法连接
+title: "AB1565 SPP无法连接"
 date: 2022/05/26 11:36
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-48
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名5]，
+Hi [人名6]，
 
 我看到默认有开启了 MTK_BT_CM_SUPPORT 和 MTK_PORT_SERVICE_BT_ENABLE，但是Android 上的SPP调试App“蓝牙调试宝”还是无法连接，请看看问题出在哪里。
 
@@ -36,7 +36,7 @@ Hi [人名5]，
 
 <div class="reply even" markdown="1">
 
-### 2022/05/27 11:24 — [人名5]
+### 2022/05/27 11:24 — [人名6]
 
 Hi @[邮箱已隐藏]，
 
@@ -48,7 +48,7 @@ Hi @[邮箱已隐藏]，
 
 ### 2022/05/27 12:04 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 的确没有搞对，使用App读取到的默认值去连接了。
 
@@ -56,7 +56,7 @@ Hi [人名5]，
 
 <div class="reply even" markdown="1">
 
-### 2022/05/27 13:37 — [人名5]
+### 2022/05/27 13:37 — [人名6]
 
 ok~
 
@@ -66,7 +66,7 @@ ok~
 
 ### 2022/06/02 10:08 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 问题关闭，SPP指令已经打通；
 
