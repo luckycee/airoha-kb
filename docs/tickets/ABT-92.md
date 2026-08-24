@@ -16,6 +16,18 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+HI [人名5]，
+
+dongle连接电脑后，会新增显示两个声卡，是否可以隐藏一个？显示的名字是否能够自定义？
+
+有找到一个文档，当时以上两个问题没有说到；
+
+https://eservicedocs.ABT.com.tw/pages/viewpage.action?pageId=61899363
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

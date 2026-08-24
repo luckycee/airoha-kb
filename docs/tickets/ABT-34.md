@@ -16,6 +16,20 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5]，
+
+发现在通话状态有几个问题：
+
+1. 通过log看到，音乐播放状态，来电，state 由APP_ULTRA_LOW_LATENCY_PLAYING 改为 APP_CONNECTED，不是在APP_[人名9]P_INCOMING ；
+
+2. 接听的短按，看到发送的KeyEvent 是0x53，但是实际又能跟接听电话，但是长按无法拒绝电话；
+
+3. 接听电话之后，state 又变为了 APP_ULTRA_LOW_LATENCY_PLAYING ，这个有点困惑啊；
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

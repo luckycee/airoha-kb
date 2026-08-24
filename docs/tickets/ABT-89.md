@@ -16,6 +16,16 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi 帝木，
+
+发现去掉PEQ频点之后，无法保存到软件中；
+
+使用V2.5.4，V2.11.2，V2.11.4都验证过，有次问题；
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

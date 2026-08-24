@@ -16,6 +16,14 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5]，
+
+之前解决过，在config tool 上调试PEQ， 使用LDAC无效的问题，此问题解决了（见 [ABT-91](ABT-91.md)），现在客户发现使用App 新增自定义PEQ时，也无效；但是使用AAC和SBC有效，请继续指导，如何解决；
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

@@ -16,6 +16,14 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名1]，
+
+客户先要测试一下自己的dongle板子的RF 性能，软件上我开机就触发了 key action (KEY_TEST_MODE_ENTER_DUT_MODE)，并在配置工具上 enable DUT mode，但是触发后就关机了，这个如何测试？
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

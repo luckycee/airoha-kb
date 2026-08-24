@@ -16,6 +16,14 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi 帝木，
+
+客户调试PEQ，在AAC和SBC这两个编码格式下，PEQ都是起效的，换到LDAC就无效了，请看看这是为什么？
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

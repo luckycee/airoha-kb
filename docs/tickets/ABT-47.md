@@ -16,6 +16,14 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5]，
+
+请指导一下，如何实现组合按键？如：POWER_KEY+EINT_KEY_1 短按、长按；
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

@@ -16,6 +16,14 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5] / [人名8],
+
+客户使用的SENSOR需要使用外部中断，请帮忙提供一下1565中断注册、设置回调函数等内容的demo code给我参考一下，附件是AB1562x系列的，在1565上有些接口没有。
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

@@ -16,6 +16,16 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5]，
+
+在 [ABT-67](ABT-67.md)，我提出过I2S 在没有音乐的时候，也需要出0信号，现在客户又提出一个要求，是否存在这样一个接口，即在连接手机音乐播放状态，set 为 true则I2S 输出音乐的状态，set 为false 则 I2S 仅输出0信号，但是像voice prompt 出来时则需要加上；
+
+[客户A]拿AB1565AM 来做音箱，他们支持4个音源：BT，其它2.4G，差分Mono Line In，单端Stereo Line In 。在非BT时，他们希望保持BT的连接，但是不要音乐声，只要0信号的I2S ；
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

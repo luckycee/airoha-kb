@@ -16,6 +16,14 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名21]hua / fason，
+
+请帮忙提供以上内容给[客户A]；
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

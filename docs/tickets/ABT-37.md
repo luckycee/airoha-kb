@@ -16,6 +16,18 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5]，
+
+在添加了拒绝电话之后，引起了问题。在earbuds 这端，我是在 APP_CONNECTED 给出了reject指令的，因为客户在 APP_ULTRA_LOW_LATENCY_PLAYING 相同的长按是上下一曲。
+
+客户在连续测试上下曲，在网络环境比较不好的时候，streaming 会停止，state会变为APP_CONNECTED，此时就发送 reject给dongle了，dongle收到后有概率出现earbuds断开连接、earbuds 操作没有反应等奇奇怪怪的问题。
+
+还有什么变量可以区分来电和已连接？不然就没有办法把reject放进去；
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

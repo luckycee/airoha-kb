@@ -16,6 +16,16 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5]，
+
+使用dongle FOTA，发现是无法把新增的PEQ参数升级进去，不知道是否我的FotaPackage.bin 生成是否有问题？
+
+是否其他参数，如ANC、通话参数也是FOTA的？
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

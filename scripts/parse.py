@@ -322,6 +322,12 @@ def render_markdown(t: dict) -> str:
         "",
         ticket_nav(ticket_id),  # 页面开头导航
         "",
+        "## 问题描述",
+        "",
+        t["description"] or "（无描述）",
+        "",
+        "---",
+        "",
     ]
     if t["comments"]:
         lines += ["## 回复记录", ""]

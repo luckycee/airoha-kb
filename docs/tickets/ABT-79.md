@@ -16,6 +16,14 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+HI [人名5]，
+
+5V常在方案，充慢点之后，不会进入深睡，配置工具上没有 deep sleep mode，只有 low power mode，使用了测试都不充电了；
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

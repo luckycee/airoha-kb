@@ -16,6 +16,16 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi  [人名5],
+
+EQ filter的系数数据格式是否和ANC filter的系数系数数据格式相同，如果系数数据格式不相同，能否提供系数数据格式？并且命令格式细节是什么？
+
+[客户A]的田总之前把“通过race cmd写入ANC 参数（滤波、增益等）”调试通了，现在他们想用同样的方式实现机器测试结束后，自动计算合适的PEQ值写到对应的nvkey中。
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

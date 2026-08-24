@@ -16,6 +16,24 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi  [人名5] ,
+
+在feature.mak 中，1wrie的设定需要三个define。
+
+1wire charger
+
+MTK_SMART_CHARGER_ENABLE            = y
+
+MTK_SMART_CHARGER_1WIRE_ENABLE      = y
+
+MTK_SMART_CHARGER_1WIRE_RACE_ENABLE = y
+
+我把后面两个改为n，发现还是无法接受 V1或者V2的pattern，请帮忙确认是否不支持。客户想在已有的项目底座上做耳机软件，不希望改充电仓。
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

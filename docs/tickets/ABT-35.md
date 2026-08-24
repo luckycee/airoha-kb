@@ -16,6 +16,14 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5]，
+
+软件的 customerized_key_config.c 没有开机的时长设置，每次按键开机都是差不多1s就起来了。客户希望跟之前的UI保持一致，改为长按3s才能开机，请帮忙看看如何实现；
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

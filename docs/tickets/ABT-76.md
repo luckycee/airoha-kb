@@ -16,6 +16,14 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5]，
+
+你们之前给过dongle的测试方式（[ABT-17](ABT-17.md)），但是现在客户的产品是没有按键的，是否可以通过5V 发码的方式让它进入DUT mode，或者已经量产的客户怎么做。
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

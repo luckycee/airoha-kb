@@ -16,6 +16,14 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi fason，
+
+配置工具上，看到是支持VAD的，请问支持的关键词有哪些？是否可以自定义？调试文档有吗？
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

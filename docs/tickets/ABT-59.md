@@ -16,6 +16,14 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5]，
+
+编译1585出现问题，在重新安装了all in one的环境之后，发现需要License，之前编译V2.9.0的时候没有这个提醒；
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

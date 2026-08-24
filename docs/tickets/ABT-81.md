@@ -16,6 +16,16 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5]，
+
+1. 更新了vp，怎么FOTA到整机上；
+
+2. 更新了  customerized_key_config.c ，FOTA到整机上无效；
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

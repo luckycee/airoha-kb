@@ -16,6 +16,20 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi fason，
+
+请帮忙回复以下内容：
+
+1： 1565D是否支持USB输入，模拟输出，做有线立体声耳机
+
+2：1565D是否支持做普通蓝牙适配器（能够听音乐，通话，连接其他家的蓝牙设备）
+
+3：1565D是否支持过Teams认证
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

@@ -16,6 +16,18 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5]，
+
+1. 有像1562x那样，在配置工具上的FW_Information 那样设置版本的地方吗？
+
+2. 我尝试通过 fota_version_write() 直接写版本，但是通过Flash Tool 甚至MP Tool 烧录之后，再去读取居然写的内容还保持着，这是为什么？
+
+3. 通过 FOTA Package Tool 生产的升级文件，升级后，再用Flash Tool 和MP Tool 烧录，读取到的还是 FOTA中设置的版本，这是为什么？
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

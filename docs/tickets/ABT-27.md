@@ -16,6 +16,24 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5]，
+
+因为现在ABT 的方案还不支持空间音频，所以客户想使用第三方算法来实现，但是第三方算法消耗的RAM资源预计超过300KB。
+
+客户计算过SDK 2.10.1版本CM4剩余RAM约86KB，DSP DRAM剩余约428KB，第三方算法如果单独使用CM4的RAM肯定不能满足，因此唯一的方法就是只将陀螺仪的驱动部分放到CM4，其它部分放DSP。目的就是想使用DSP部分的ROM/RAM资源，不知是否可行？
+
+客户有看到ABT DSP是可用导入第三方的声音算法，但是空间音频算法应该属于一般控制算法，所以不确定能否导入到DSP FW。
+
+1. 能导入的话该如何导入？导入后CM4如果跟DSP算法进行交互？
+
+2. 不能导入的话DSP内部的DRAM能不能share出来给CM4使用？
+
+3. 如果都可以，请提供方法；
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

@@ -16,6 +16,18 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5]，
+
+请看看DSP 为什么编译不过。初始demo，没有做任何修改；
+
+指令 ./build.sh ab1585_evk earbuds_ref_design_ull2 
+
+客户想做earbuds+dongle ；
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

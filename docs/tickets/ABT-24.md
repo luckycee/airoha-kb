@@ -16,6 +16,18 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5]，
+
+根据之前youwei提供的测试文档，客户发现有几个问题：
+
+1. 没有 test_wave.pcm 文件，请提供；
+
+2. dongle的GPIO13 没有信号出来，通过检查代码，是两位两个电平一致导致的，请也看看这是为什么。
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

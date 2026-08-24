@@ -16,6 +16,14 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5],
+
+V2.9.0 在config tool上，在RF_Config 上把DUT enable后，开机之后发现系统一直处于 APP_BT_OFF 状态，但是如果关掉则会是 APP_DISCONNECTED，为什么有这个差异？是否DUT 有特别的操作？
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

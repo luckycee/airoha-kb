@@ -16,6 +16,14 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5]，
+
+[客户A]想用AB1585 TWS + dongle，但是看到只有earbuds 和 headset的project，没有dongle的，这个如何处理？
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

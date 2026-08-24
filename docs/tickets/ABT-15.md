@@ -16,6 +16,14 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+HI [人名1]，
+
+客户要求dongle在ULL Pairing一直配对，默认的时间为30，我改为3600或者300都是进入ULL pairing就被强制退出了，请看看这是为什么。
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

@@ -16,6 +16,16 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5]，
+
+在配置工具中设置了硬件区分左右声道（默认GPIO19），虽然TWS能够连接，但是通过声道测试发现左右两边都为L边的声音。通过在 NVKEYID_APP_AUDIO_CHANNEL 这个nvkey相关位置加log，但是都没有显示出来。
+
+如果设置回来软件的模式，则没有问题；请看看这是为什么？
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

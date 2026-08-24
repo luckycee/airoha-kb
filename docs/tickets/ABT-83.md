@@ -16,6 +16,14 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5]，
+
+客户测试，在音乐播放状态下回连后，发现音乐不会流转到耳机端。在来电状态下回连后（客制化UI，回连后来电状态自动接听），发现话音信号仍在手机端，不会流转到耳机端。概率大约是30次有2次 。
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

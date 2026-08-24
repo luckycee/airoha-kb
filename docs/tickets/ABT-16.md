@@ -16,6 +16,16 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名1]，
+
+我在eService doc上看到 dongle 连接电脑可以修改图标，但是我的dongle （使用的是EVK）连接电脑却没有东西出来，是驱动还是哪里地方设置不对？
+
+https://eservicedocs.ABT.com.tw/pages/viewpage.action?pageId=61899363
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

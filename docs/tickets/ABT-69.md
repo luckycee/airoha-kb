@@ -16,6 +16,18 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5]，
+
+1,1565D的USB Audio 是Class D还是？
+
+2,1565D的USB支持的是Full Speed还是High Speed ；
+
+我记得之前给过一个补丁，只改为full speed的；
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

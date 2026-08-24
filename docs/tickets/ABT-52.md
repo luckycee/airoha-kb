@@ -16,6 +16,20 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi 帝木，
+
+客户做的headset，支持ANC的。他们想把TWS那一套调试ANC的设备和指令放到headset上，但是TWS是1wire，headset是5V常在。他们想用uart0来发送接收指令，uart1和uart2都被他们的key用去了；
+
+1. 把uart0的波特率改为115200；
+
+2. 把syslog不要，但是发送指令后要有指令的返回；
+
+请看看如何实现；
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

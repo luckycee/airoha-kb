@@ -16,6 +16,14 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名8]，
+
+客户连接了dongle后，手机播放音乐，连续操作执行上一曲，大约十多次就有一次出现link loss，单纯的partner 断开手机，操作主机能让partner回连，时间比较长。请看看是什么问题。
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

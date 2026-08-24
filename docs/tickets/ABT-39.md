@@ -16,6 +16,14 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5]，
+
+使用Android 手机，激活语音助手后，无法退出到正常的 APP_CONNECTED，导致了按键无效；
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

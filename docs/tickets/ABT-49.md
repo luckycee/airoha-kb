@@ -16,6 +16,14 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名12] ([人名12])，
+
+如沟通，请帮提供SDK V2.9.0 dongle的补丁更新；
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

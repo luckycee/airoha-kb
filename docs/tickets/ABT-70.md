@@ -16,6 +16,14 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5]，
+
+客户想利用TWS来做音箱，问是否能够独立控制左右声道的音量？目前使用的软件，默认是两边同时变大变小的。
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

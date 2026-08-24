@@ -16,6 +16,16 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5]，
+
+附件是使用IQOO Neo5手机测试播放暂停，连续测试几次之后，发现暂停后无法播放，看log发现暂停后key发送的居然是0x55（KEY_AVRCP_PAUSE），也就是发送了两次0x55，这是手机还是耳机的问题？荣耀V20也有这问题，iPhone 7、荣耀V30、Google Pixel 4a、Samsung Galaxy On7 均没有问题；
+
+问题在COM74 11:50:38 ;
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

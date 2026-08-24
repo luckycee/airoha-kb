@@ -16,6 +16,14 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名8],
+
+从哪个地址段开始，可以让我添加使用，在AB1562x系列上，0xFE00 后面都能自由使用；
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

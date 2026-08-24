@@ -16,6 +16,16 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5]，
+
+客户在耳机执行ull配对的时候，插入dongle，发现只有副机回连了，主机要等到ull配对超时才能回连。（现象#1）
+
+他们提出，希望在ull配对时也要回连dongle，我回复做不到。现象#1 我给他们解释是合理的，但是他们需要你们原厂的回复，请看看确认下；
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

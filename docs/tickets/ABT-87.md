@@ -16,6 +16,14 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5]，
+
+断开手机连接后，发现disconnect 有概率性出现差3秒的情况，问题出现在17:21:08 附近，这会和什么有关系？如何改善？
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

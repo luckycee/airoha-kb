@@ -16,6 +16,14 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5]，
+
+客户在测试ANC的时候，不希望测试仪对耳机进行回连，在哪里设置可以reject 连接请求。
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

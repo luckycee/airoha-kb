@@ -16,6 +16,24 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5]，
+
+见附件log con74：
+
+15:42:54 进入ull 配对
+
+15:43:24 ull配对超时，TWS回连上
+
+15:43:27 进入手机配对
+
+但是发现手机无法搜索得到配对名，我看了log和流程都是正常的，请帮忙看看为什么。
+
+com74 主机，com56副机；
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

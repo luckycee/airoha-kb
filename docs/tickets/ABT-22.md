@@ -16,6 +16,14 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+HI [人名5]，
+
+客户在咨询dongle是否支持苹果Lightning 接口？如果支持是否需要做MFi认证？需要做的话，你们有相关的经验和文档支持吗？
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

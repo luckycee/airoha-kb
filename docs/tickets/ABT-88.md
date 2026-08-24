@@ -16,6 +16,14 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+HI [人名5]，
+
+请帮忙提供一下 adaptive ANC 的使用指导，客户拿到我提供的AB1565AM V3.3.0 headset的软件后，不知道如何使用。
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

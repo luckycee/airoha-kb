@@ -16,6 +16,20 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5]，
+
+在使用你们的官方demo App中，选择了 FOTA MCSync后，只能够选择一个 FotaPackage.bin ，不能像之前1562那样，分别选择左右耳；
+
+问题：
+
+1. 是否有其他工具生产一个文件，同时升级左右耳？
+
+2. 是否有工程模式还是其他，另外一边的选择才会出现？
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

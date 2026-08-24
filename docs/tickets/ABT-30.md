@@ -16,6 +16,20 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5]，
+
+请帮忙回复以下客户问题，有一些我知道，但是大部分都是不清楚的；  
+
+1. TX   AB1565D 到 RX   AB1565AM 之间延时可以做到多少MS?  全链路传输低延时是否能做到小于50MS（含PC端编解码与耳机接收端编解码时间）
+
+  2. TX   AB1565D 到 RX   AB1565AM 之间传输用的多少G频率？用的什么音频编解码传输协议？
+
+  3. RX   AB1565AM 与手机蓝牙连接，开启低延时模式时，低延时可以多到多少MS? 用的什么音频编解码传输协议？有什么特殊要求？全链路传输低延时是否能做到小于100MS
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

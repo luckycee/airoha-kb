@@ -16,6 +16,14 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5]，
+
+请帮忙看看，开机后TWS连接上，进入手机配对，此时插入dongle，出现了连接失败的情况；
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

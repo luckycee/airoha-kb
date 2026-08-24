@@ -16,6 +16,16 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5]，
+
+你们的demo code（nvkey.xml）默认开机之后，是ANC开启的模式，请指导一下如何设置为默认为关闭的模式；
+
+以及看一下附件的接口，修改的是那个nvkey；
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

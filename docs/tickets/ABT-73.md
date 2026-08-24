@@ -16,6 +16,14 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5]，
+
+1565的config tool 是否没有vp 和音乐占空比地方？我没有找到，客户想按照1562那样做。
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

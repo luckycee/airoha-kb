@@ -16,6 +16,24 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5]，
+
+请帮忙提供一下Teams认证的相关资料/指导，[客户A]想做这个认证。
+
+从AZ.Zhang处了解到，目前MP的方案：
+
+AB1565D for Dongle
+
+AB1565M for 头戴 & TWS Non-ANC
+
+AB1565AM for 头戴 & TWS with Hybrid ANC
+
+AB1585D + AB1585(M)  ；
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

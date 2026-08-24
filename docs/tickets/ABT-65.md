@@ -16,6 +16,16 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi，
+
+使用V2.11.2 的工具发现ANC 调试的地方缺少 Limiter， 而V2.9.0 是含有的。使用最新的V3.1.5 提示音无法打开download文件夹，提示音缺省nvkey_chip.xml 文件；
+
+希望V2.11.2 的工具支持Limiter；
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

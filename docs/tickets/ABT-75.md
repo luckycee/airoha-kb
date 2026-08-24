@@ -16,6 +16,16 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5]，
+
+这题跟 [ABT-71](ABT-71.md) 相关，同是[客户A]的终端客户提出来的。他们的App想通过利用发送指令的方式，让BT产生一些信号，并且自己播放，为了测试频响用，他们的App想做一些PEQ补偿。
+
+附件pdf是他们详细的功能需求；
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

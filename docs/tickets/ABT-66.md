@@ -16,6 +16,14 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5]，
+
+请看一下如何关闭长按power key导致的sys reset，客户需要支持10秒以上的长按功能键；
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

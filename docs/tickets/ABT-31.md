@@ -16,6 +16,14 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi  [人名5],
+
+请指导下如，如何让dongle支持line-in的音源；
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

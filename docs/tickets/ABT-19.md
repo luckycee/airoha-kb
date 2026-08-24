@@ -16,6 +16,18 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名1]，
+
+TWS状态下自动进入了手机配对，然后在此状态下我触发了Ull pairing，最后通过按键关机；
+
+发现关机之后，LED灯还有几秒钟的异常闪烁；请帮忙看下哪里出了问题，这部分我没有修改源码；
+
+附件有一个未连接状态下的关机，此时LED正常；
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

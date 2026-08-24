@@ -16,6 +16,14 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5]，
+
+相同的手机，用dongle和蓝牙连接输出（音量最大，播放1KhZ信号， AP测的），有差异，dongle输出的声音小，如何调整到一致？
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

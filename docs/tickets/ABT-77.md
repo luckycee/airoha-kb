@@ -16,6 +16,14 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5]，
+
+客户测试到耳机在播放使用中，发现播放到提示音低电了，手机那边显示的电池电量都还是100%，比较概率性10%，还没有抓到log，抓的时候又次次正常，如果有相关补丁，请帮忙提供。
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">

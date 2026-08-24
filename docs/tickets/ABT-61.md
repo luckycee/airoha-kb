@@ -16,6 +16,14 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 问题描述
+
+Hi [人名5]，
+
+默认有开启power saving的，系统上电之后load的是 nvkey的内容，请问配置工具上可以修改这个nvkey 吗？我没有找到，要修改的话只能改code吗？
+
+---
+
 ## 回复记录
 
 <div class="reply odd" markdown="1">
