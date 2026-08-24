@@ -9,6 +9,7 @@ permissions:
   contents: write
   pages: write
   id-token: write
+  issues: write   # Cookie 失效时创建通知 issue
 
 jobs:
   sync:
@@ -63,9 +64,10 @@ jobs:
         run: |
           git config user.name "kb-bot"
           git config user.email "kb-bot@users.noreply.github.com"
+          git pull --rebase origin master || echo "rebase 失败，尝试直接提交"
           git add -A
           git commit -m "chore: 增量同步工单 $(date +%F)" || echo "无变更"
-          git push
+          git push --force-with-lease || git push
 
       - name: 部署到 GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
