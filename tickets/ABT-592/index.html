@@ -367,38 +367,38 @@
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
-<h3 id="20250815-1150-102">2025/08/15 11:50 — [人名102]<a class="headerlink" href="#20250815-1150-102" title="Permanent link">&para;</a></h3>
-<p>Hi 李工，</p>
+<h3 id="20250815-1150-109">2025/08/15 11:50 — [人名109]<a class="headerlink" href="#20250815-1150-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名45]，</p>
 <p>可以尝试这样修改：
 当收到手机端过来的BT_A2DP_START_STREAMING_IND时候，判断当前如果处于multi-link Mode状态，则强制发pause的avrcp指令过去给手机，这样来实现强暂停功能。</p>
 </div>
 <div class="reply even">
-<h3 id="20250818-1622-82">2025/08/18 16:22 — [人名82]<a class="headerlink" href="#20250818-1622-82" title="Permanent link">&para;</a></h3>
+<h3 id="20250818-1622-88">2025/08/18 16:22 — [人名88]<a class="headerlink" href="#20250818-1622-88" title="Permanent link">&para;</a></h3>
 <p>Hi 刘工，</p>
 <p>尝试修改还是有问题，麻烦提供对应的接口和修改的地方，谢谢。</p>
 </div>
 <div class="reply odd">
-<h3 id="20250818-1912-102">2025/08/18 19:12 — [人名102]<a class="headerlink" href="#20250818-1912-102" title="Permanent link">&para;</a></h3>
-<p>Hi 李工，</p>
+<h3 id="20250818-1912-109">2025/08/18 19:12 — [人名109]<a class="headerlink" href="#20250818-1912-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名45]，</p>
 <p>测试代码可以reject a2dp在耳机断播放，a2dp会回到手机端播放。
 当时耳机处于multi-link mode，手机上要播放a2dp，强暂停，对应暂停耳机端的播放，让a2dp回到手机上去播，也符合用户需求，用户当下要听，耳机不允许听，就从手机上听，这样看起来也比较合理。</p>
 <p>[图片: screenshot-1.png] 
  [图片: screenshot-2.png]</p>
 </div>
 <div class="reply even">
-<h3 id="20250821-0956-102">2025/08/21 09:56 — [人名102]<a class="headerlink" href="#20250821-0956-102" title="Permanent link">&para;</a></h3>
-<p>Hi 李工，
+<h3 id="20250821-0956-109">2025/08/21 09:56 — [人名109]<a class="headerlink" href="#20250821-0956-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名45]，
 这题有什么进展吗？请帮忙反馈一下，感谢~</p>
 </div>
 <div class="reply odd">
-<h3 id="20250821-1623-82">2025/08/21 16:23 — [人名82]<a class="headerlink" href="#20250821-1623-82" title="Permanent link">&para;</a></h3>
+<h3 id="20250821-1623-88">2025/08/21 16:23 — [人名88]<a class="headerlink" href="#20250821-1623-88" title="Permanent link">&para;</a></h3>
 <p>Hi 刘工，</p>
 <p>按照你的修改，测试连接手机，首次点播放没有声音然后退出与手机的音频连接，手机自动暂停，再次点击的声音会从手机出来，案件切换single-link-mode（纯BT连接）也没有声音；测试连接电脑，点击播放则没有声音，暂停再点击也没有声音。</p>
 <p>这样的修改不符合客户需求。</p>
 </div>
 <div class="reply even">
-<h3 id="20250821-1630-102">2025/08/21 16:30 — [人名102]<a class="headerlink" href="#20250821-1630-102" title="Permanent link">&para;</a></h3>
-<p>Hi 李工，</p>
+<h3 id="20250821-1630-109">2025/08/21 16:30 — [人名109]<a class="headerlink" href="#20250821-1630-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名45]，</p>
 <p>按照你的修改，测试连接手机，首次点播放没有声音然后退出与手机的音频连接，手机自动暂停，再次点击的声音会从手机出来，案件切换single-link-mode（纯BT连接）也没有声音；测试连接电脑，点击播放则没有声音，暂停再点击也没有声音。
 ----&gt;
 本身你这个客制化就不是按照spec来做的，需要你们自行多加上逻辑判断来实现你的客制化需求。</p>
@@ -408,36 +408,36 @@
 你有加上是否multi link mode的判断条件去reject a2dp播放了吗？</p>
 </div>
 <div class="reply odd">
-<h3 id="20250821-1738-82">2025/08/21 17:38 — [人名82]<a class="headerlink" href="#20250821-1738-82" title="Permanent link">&para;</a></h3>
+<h3 id="20250821-1738-88">2025/08/21 17:38 — [人名88]<a class="headerlink" href="#20250821-1738-88" title="Permanent link">&para;</a></h3>
 <p>Hi 刘工，</p>
 <p>有加multi link mode的判断的。</p>
 <p>请教一下，如何获取当前BT链路a2dp的蓝牙地址</p>
 </div>
 <div class="reply even">
-<h3 id="20250821-1743-102">2025/08/21 17:43 — [人名102]<a class="headerlink" href="#20250821-1743-102" title="Permanent link">&para;</a></h3>
-<p>Hi 李工，</p>
+<h3 id="20250821-1743-109">2025/08/21 17:43 — [人名109]<a class="headerlink" href="#20250821-1743-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名45]，</p>
 <p>reject a2dp的时候把这个蓝牙地址保存下来，后面切到single link的时候，去重连这个蓝牙地址，就是下面红色框起来的地址，在dev结构体里面。
  [图片: screenshot-3.png]</p>
 </div>
 <div class="reply odd">
-<h3 id="20250822-1140-82">2025/08/22 11:40 — [人名82]<a class="headerlink" href="#20250822-1140-82" title="Permanent link">&para;</a></h3>
-<p>Hi [人名102] ([人名102]),</p>
+<h3 id="20250822-1140-88">2025/08/22 11:40 — [人名88]<a class="headerlink" href="#20250822-1140-88" title="Permanent link">&para;</a></h3>
+<p>Hi [人名109] ([人名109]),</p>
 <p>那音频输出切换的时间能缩短吗？</p>
 <p>目前测试6S（从ULL暂停开始计时，到BT连接耳机端有音量输出）</p>
 </div>
 <div class="reply even">
-<h3 id="20250822-1143-82">2025/08/22 11:43 — [人名82]<a class="headerlink" href="#20250822-1143-82" title="Permanent link">&para;</a></h3>
-<p>Hi [人名102] ([人名102]),</p>
+<h3 id="20250822-1143-88">2025/08/22 11:43 — [人名88]<a class="headerlink" href="#20250822-1143-88" title="Permanent link">&para;</a></h3>
+<p>Hi [人名109] ([人名109]),</p>
 <p>那如果不做暂停或者reject A2DP处理，音频输出切换的时间能缩短吗？</p>
 <p>目前测试6S（从ULL暂停开始计时，到BT连接耳机端有音量输出）</p>
 </div>
 <div class="reply odd">
-<h3 id="20250822-1152-102">2025/08/22 11:52 — [人名102]<a class="headerlink" href="#20250822-1152-102" title="Permanent link">&para;</a></h3>
-<p>Hi 李工，</p>
+<h3 id="20250822-1152-109">2025/08/22 11:52 — [人名109]<a class="headerlink" href="#20250822-1152-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名45]，</p>
 <p>你的意思是，没有客制化改动的情况下，单纯切换ULL音乐到BT A2DP音乐的时间大概是6s对吗？</p>
 </div>
 <div class="reply even">
-<h3 id="20250822-1209-82">2025/08/22 12:09 — [人名82]<a class="headerlink" href="#20250822-1209-82" title="Permanent link">&para;</a></h3>
+<h3 id="20250822-1209-88">2025/08/22 12:09 — [人名88]<a class="headerlink" href="#20250822-1209-88" title="Permanent link">&para;</a></h3>
 <p>Hi 刘工，</p>
 <p>修改multi link mode连接BT，a2dp_standby_enable。然后ULL和BT都连接的情况下测试。</p>
 <p>修改feature默认为如下：</p>
@@ -445,26 +445,26 @@
 <p>s_a2dp_standby_enable = true;</p>
 </div>
 <div class="reply odd">
-<h3 id="20250822-1342-102">2025/08/22 13:42 — [人名102]<a class="headerlink" href="#20250822-1342-102" title="Permanent link">&para;</a></h3>
-<p>Hi 李工，</p>
+<h3 id="20250822-1342-109">2025/08/22 13:42 — [人名109]<a class="headerlink" href="#20250822-1342-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名45]，</p>
 <p>了解了，可以同步把对应的log发上来看下流程上有没有什么异常。</p>
 </div>
 <div class="reply even">
-<h3 id="20250822-1447-82">2025/08/22 14:47 — [人名82]<a class="headerlink" href="#20250822-1447-82" title="Permanent link">&para;</a></h3>
+<h3 id="20250822-1447-88">2025/08/22 14:47 — [人名88]<a class="headerlink" href="#20250822-1447-88" title="Permanent link">&para;</a></h3>
 <p>Hi 刘工，
 我录了两个种切换的，暂停后自动切换都不快，如附件</p>
 <p>[附件: ULL暂停后切换BT.rar]</p>
 <p>[附件: BT暂停后切ULL.rar]</p>
 </div>
 <div class="reply odd">
-<h3 id="20250822-1502-102">2025/08/22 15:02 — [人名102]<a class="headerlink" href="#20250822-1502-102" title="Permanent link">&para;</a></h3>
-<p>Hi 李工，</p>
+<h3 id="20250822-1502-109">2025/08/22 15:02 — [人名109]<a class="headerlink" href="#20250822-1502-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名45]，</p>
 <p>log已经收到，关于ull和BT的切换时间问题，属于新的问题，后续就在 <a href="../ABT-598/">ABT-598</a> 上继续跟踪。</p>
 <p>另外这题，强暂停的问题，现在已经实现好了对吗？</p>
 </div>
 <div class="reply even">
-<h3 id="20250827-1104-82">2025/08/27 11:04 — [人名82]<a class="headerlink" href="#20250827-1104-82" title="Permanent link">&para;</a></h3>
-<p>客户确认更改需求，multi-link-mode时BT连接只连[人名9]P，此题关闭</p>
+<h3 id="20250827-1104-88">2025/08/27 11:04 — [人名88]<a class="headerlink" href="#20250827-1104-88" title="Permanent link">&para;</a></h3>
+<p>客户确认更改需求，multi-link-mode时BT连接只连[人名10]P，此题关闭</p>
 </div>
 <div class="ticket-nav">
 <p><a href="../ABT-591/">← 上一个工单：ABT-591</a>　<a href="../ABT-593/">→ 下一个工单：ABT-593</a></p>

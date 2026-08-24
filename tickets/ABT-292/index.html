@@ -362,7 +362,7 @@
 <p><a href="../ABT-291/">← 上一个工单：ABT-291</a>　<a href="../ABT-293/">→ 下一个工单：ABT-293</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>HI [人名5]，</p>
+<p>HI [人名6]，</p>
 <ol>
 <li>
 <p>demo code在 power off 之后会进入RTC mode；</p>
@@ -380,41 +380,41 @@
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
-<h3 id="20231113-1616-5">2023/11/13 16:16 — [人名5]<a class="headerlink" href="#20231113-1616-5" title="Permanent link">&para;</a></h3>
+<h3 id="20231113-1616-6">2023/11/13 16:16 — [人名6]<a class="headerlink" href="#20231113-1616-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>麻烦把下面这个值改成0试试</p>
 <p>[图片: image-2023-11-13-16-16-36-100.png]</p>
 </div>
 <div class="reply even">
 <h3 id="20231113-1718-2">2023/11/13 17:18 — [人名2]<a class="headerlink" href="#20231113-1718-2" title="Permanent link">&para;</a></h3>
-<p>HI [人名5]，</p>
+<p>HI [人名6]，</p>
 <p>哪个文件下的？我没有找到。</p>
 </div>
 <div class="reply odd">
-<h3 id="20231114-1002-5">2023/11/14 10:02 — [人名5]<a class="headerlink" href="#20231114-1002-5" title="Permanent link">&para;</a></h3>
+<h3 id="20231114-1002-6">2023/11/14 10:02 — [人名6]<a class="headerlink" href="#20231114-1002-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>\mcu\project\ab156x\apps\bootloader\src\bl_rom_parameter.c 这个文件里看看哈，改完要clean build</p>
 </div>
 <div class="reply even">
 <h3 id="20231114-1121-2">2023/11/14 11:21 — [人名2]<a class="headerlink" href="#20231114-1121-2" title="Permanent link">&para;</a></h3>
-<p>HI [人名5],</p>
+<p>HI [人名6],</p>
 <p>修改了有效，这个地方为什么给1s？改为0之后有什么影响？</p>
 </div>
 <div class="reply odd">
-<h3 id="20231114-1340-5">2023/11/14 13:40 — [人名5]<a class="headerlink" href="#20231114-1340-5" title="Permanent link">&para;</a></h3>
+<h3 id="20231114-1340-6">2023/11/14 13:40 — [人名6]<a class="headerlink" href="#20231114-1340-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>這個參數是為了 BootROM 裡的 USB download 的等待時間，只要從 OFF mode 開機起來時 VBUS 有 5V，BootROM 就會進入這個 flow，改成 0 ，就是不會有 USB download。</p>
 <p>如果客戶產品沒有出 USB PIN，那這裡改0，不會造成影響。</p>
 </div>
 <div class="reply even">
 <h3 id="20231115-1554-2">2023/11/15 15:54 — [人名2]<a class="headerlink" href="#20231115-1554-2" title="Permanent link">&para;</a></h3>
-<p>HI [人名5]，</p>
+<p>HI [人名6]，</p>
 <p>修改后发现OTA 无法更新，看到了FotaPackget.bin 的内容后，才发现没有 bootloader.bin，但是我们的更新却在 bootloader 里面。客户需要OTA，有办法吗？</p>
 <p>[图片: 微信图片_[序列号已隐藏].png]</p>
 <p>[图片: Snipaste_2023-11-15_15-54-00.png]</p>
 </div>
 <div class="reply odd">
-<h3 id="20231115-1643-5">2023/11/15 16:43 — [人名5]<a class="headerlink" href="#20231115-1643-5" title="Permanent link">&para;</a></h3>
+<h3 id="20231115-1643-6">2023/11/15 16:43 — [人名6]<a class="headerlink" href="#20231115-1643-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>没办法了，fota没办法更新BootLoader</p>
 </div>

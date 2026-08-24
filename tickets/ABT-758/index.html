@@ -362,7 +362,7 @@
 <p><a href="../ABT-757/">← 上一个工单：ABT-757</a>　<a href="../ABT-759/">→ 下一个工单：ABT-759</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名99] ([人名99])</p>
+<p>Hi [人名106] ([人名106])</p>
 <p>请帮忙继续看看这一题，line inegaiweI slave in 之后声音不对；</p>
 <p>按照code修改之后，再有个EPT config 了对应I2S0 的GPIO， 测试是有声音的。但是如果在 dsp_feature.mk 加上 AIR_I2S_SLAVE_ENABLE = y 之后，就一点声音都没有了，附件是log，请看看。</p>
 <p>想过id: <a href="../ABT-750/">ABT-750</a></p>
@@ -373,14 +373,14 @@
 <p>[附件: I2S line in 改为 slave in 没有输出；.pcapng]</p>
 </div>
 <div class="reply even">
-<h3 id="20260629-1359-99">2026/06/29 13:59 — [人名99]<a class="headerlink" href="#20260629-1359-99" title="Permanent link">&para;</a></h3>
+<h3 id="20260629-1359-106">2026/06/29 13:59 — [人名106]<a class="headerlink" href="#20260629-1359-106" title="Permanent link">&para;</a></h3>
 <p>Hi,@[邮箱已隐藏]
 在这里补充这个呢，顺便问一哈外部的i2s的sample rate是多少呢？还有data的resolution是多少呢
  [图片: screenshot-1.png]</p>
 </div>
 <div class="reply odd">
 <h3 id="20260629-1411-2">2026/06/29 14:11 — [人名2]<a class="headerlink" href="#20260629-1411-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名99] ([人名99])</p>
+<p>Hi [人名106] ([人名106])</p>
 <p>外部的DSP参数：</p>
 <p>sample rate ： 96KHz</p>
 <p>BCLK ：6.144MHz</p>
@@ -388,13 +388,13 @@
 <p>word length：32bit</p>
 </div>
 <div class="reply even">
-<h3 id="20260629-1509-99">2026/06/29 15:09 — [人名99]<a class="headerlink" href="#20260629-1509-99" title="Permanent link">&para;</a></h3>
+<h3 id="20260629-1509-106">2026/06/29 15:09 — [人名106]<a class="headerlink" href="#20260629-1509-106" title="Permanent link">&para;</a></h3>
 <p>@[邮箱已隐藏]
 在上条comment那张图的地方，除了补上红框的内容，将sample rate改成96000</p>
 </div>
 <div class="reply odd">
 <h3 id="20260629-1635-2">2026/06/29 16:35 — [人名2]<a class="headerlink" href="#20260629-1635-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名99] ([人名99])</p>
+<p>Hi [人名106] ([人名106])</p>
 <p>dsp  feature.mak  中把 AIR_I2S_SLAVE_ENABLE 开启了，则没有声音；</p>
 <p>如果不开启，则出现了宕机。</p>
 <p>[DSP Assert: Assert Failed, filename:src_fixed_ratio_interface.c,line:871]</p>
@@ -407,7 +407,7 @@
 <p>[附件: 新建压缩 (1).7z]</p>
 </div>
 <div class="reply odd">
-<h3 id="20260629-1821-99">2026/06/29 18:21 — [人名99]<a class="headerlink" href="#20260629-1821-99" title="Permanent link">&para;</a></h3>
+<h3 id="20260629-1821-106">2026/06/29 18:21 — [人名106]<a class="headerlink" href="#20260629-1821-106" title="Permanent link">&para;</a></h3>
 <p>@[邮箱已隐藏]
 配置lienin i2s slave需要开启AIR_I2S_SLAVE_ENABLE = y
 还需要开启AIR_WIRED_AUDIO_I2S_SLAVE_ENABLE = y
@@ -420,7 +420,7 @@ AT+EAUDIO=REG_GET,0xC9020038
 </div>
 <div class="reply even">
 <h3 id="20260629-1913-2">2026/06/29 19:13 — [人名2]<a class="headerlink" href="#20260629-1913-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名99] ([人名99])</p>
+<p>Hi [人名106] ([人名106])</p>
 <p>AT+EAUDIO=REG_GET,0xC902003C
 +REG_GET:0xc902003c,0x1f1f
 OK</p>
@@ -440,7 +440,7 @@ OK</p>
 </div>
 <div class="reply odd">
 <h3 id="20260629-1929-2">2026/06/29 19:29 — [人名2]<a class="headerlink" href="#20260629-1929-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名99] ([人名99])</p>
+<p>Hi [人名106] ([人名106])</p>
 <p>上一次回复不太对，没有进入到line in 状态；只要一进入line in 播放就宕机；</p>
 <p>[DSP Assert: Assert Failed, filename:src_fixed_ratio_interface.c,line:871]</p>
 <p>附上我代码修改的截图；</p>
@@ -449,23 +449,23 @@ OK</p>
 <p>[图片: PixPin_2026-06-29_19-29-01.jpg]</p>
 </div>
 <div class="reply even">
-<h3 id="20260630-0958-99">2026/06/30 09:58 — [人名99]<a class="headerlink" href="#20260630-0958-99" title="Permanent link">&para;</a></h3>
+<h3 id="20260630-0958-106">2026/06/30 09:58 — [人名106]<a class="headerlink" href="#20260630-0958-106" title="Permanent link">&para;</a></h3>
 <p>@[邮箱已隐藏]
 你的意思是这与修改后会宕机，可以提供log嘛
  [图片: image-2026-06-30-09-58-20-629.png]</p>
 </div>
 <div class="reply odd">
 <h3 id="20260630-1009-2">2026/06/30 10:09 — [人名2]<a class="headerlink" href="#20260630-1009-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名99] ([人名99])</p>
+<p>Hi [人名106] ([人名106])</p>
 <p>宕机log 在 2026/06/29 16:50， 位置是一样的；</p>
 </div>
 <div class="reply even">
 <h3 id="20260630-1010-2">2026/06/30 10:10 — [人名2]<a class="headerlink" href="#20260630-1010-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名99] ([人名99])</p>
+<p>Hi [人名106] ([人名106])</p>
 <p>以这个为准，宕机log 在 2026/06/29 16:35</p>
 </div>
 <div class="reply odd">
-<h3 id="20260630-1456-99">2026/06/30 14:56 — [人名99]<a class="headerlink" href="#20260630-1456-99" title="Permanent link">&para;</a></h3>
+<h3 id="20260630-1456-106">2026/06/30 14:56 — [人名106]<a class="headerlink" href="#20260630-1456-106" title="Permanent link">&para;</a></h3>
 <p>@[邮箱已隐藏]
 请合入这几笔patch呢，我local基于SDK5.10.0测试是ok的 
 请确认IO有正常配置
@@ -478,7 +478,7 @@ AT+EAUDIO=REG_GET,0xC9020034
 AT+EAUDIO=REG_GET,0xC9020038</p>
 </div>
 <div class="reply even">
-<h3 id="20260630-1519-99">2026/06/30 15:19 — [人名99]<a class="headerlink" href="#20260630-1519-99" title="Permanent link">&para;</a></h3>
+<h3 id="20260630-1519-106">2026/06/30 15:19 — [人名106]<a class="headerlink" href="#20260630-1519-106" title="Permanent link">&para;</a></h3>
 <p>@[邮箱已隐藏]
 要先保证外部dsp（i2s master有clk）再开ABT chip这边的场景
 patch mcu side 的scenario_wired_audio.c
@@ -487,27 +487,27 @@ patch mcu side 的scenario_wired_audio.c
 </div>
 <div class="reply odd">
 <h3 id="20260630-1538-2">2026/06/30 15:38 — [人名2]<a class="headerlink" href="#20260630-1538-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名99] ([人名99])</p>
+<p>Hi [人名106] ([人名106])</p>
 <p>声音正常了，有点雪花声，但手摸到BCK或者LRCK 就消失，我检查一下硬件是不是哪里不对。</p>
 </div>
 <div class="reply even">
-<h3 id="20260630-1543-99">2026/06/30 15:43 — [人名99]<a class="headerlink" href="#20260630-1543-99" title="Permanent link">&para;</a></h3>
+<h3 id="20260630-1543-106">2026/06/30 15:43 — [人名106]<a class="headerlink" href="#20260630-1543-106" title="Permanent link">&para;</a></h3>
 <p>@[邮箱已隐藏]
 之前patch有个地方有些错误，要按照这个修改，有修改嘛 [图片: screenshot-2.png]</p>
 </div>
 <div class="reply odd">
 <h3 id="20260630-1549-2">2026/06/30 15:49 — [人名2]<a class="headerlink" href="#20260630-1549-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名99] ([人名99])</p>
+<p>Hi [人名106] ([人名106])</p>
 <p>有按照修改的，声音也正常的，是电源的问题；</p>
 </div>
 <div class="reply even">
-<h3 id="20260630-1601-99">2026/06/30 16:01 — [人名99]<a class="headerlink" href="#20260630-1601-99" title="Permanent link">&para;</a></h3>
+<h3 id="20260630-1601-106">2026/06/30 16:01 — [人名106]<a class="headerlink" href="#20260630-1601-106" title="Permanent link">&para;</a></h3>
 <p>@[邮箱已隐藏]
 ok的话这题就先关闭了哦</p>
 </div>
 <div class="reply odd">
 <h3 id="20260630-1604-2">2026/06/30 16:04 — [人名2]<a class="headerlink" href="#20260630-1604-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名99] ([人名99])</p>
+<p>Hi [人名106] ([人名106])</p>
 <p>好的，感谢。</p>
 </div>
 <div class="ticket-nav">

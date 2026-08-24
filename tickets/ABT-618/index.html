@@ -21,7 +21,7 @@
     
     
       
-        <title>【[客户L]】AB1571AM game mode latency 没有立刻起效 - ABT 工单知识库</title>
+        <title>【[客户P]】AB1571AM game mode latency 没有立刻起效 - ABT 工单知识库</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#abt-618-lab1571am-game-mode-latency" class="md-skip">
+        <a href="#abt-618-pab1571am-game-mode-latency" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              【[客户L]】AB1571AM game mode latency 没有立刻起效
+              【[客户P]】AB1571AM game mode latency 没有立刻起效
             
           </span>
         </div>
@@ -354,7 +354,7 @@
   
 
 
-<h1 id="abt-618-lab1571am-game-mode-latency">ABT-618 【[客户L]】AB1571AM game mode latency 没有立刻起效<a class="headerlink" href="#abt-618-lab1571am-game-mode-latency" title="Permanent link">&para;</a></h1>
+<h1 id="abt-618-pab1571am-game-mode-latency">ABT-618 【[客户P]】AB1571AM game mode latency 没有立刻起效<a class="headerlink" href="#abt-618-pab1571am-game-mode-latency" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>📅 2025/10/21 12:15　🔗 <a href="https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-618">原始工单链接</a></p>
 </blockquote>
@@ -362,7 +362,7 @@
 <p><a href="../ABT-617/">← 上一个工单：ABT-617</a>　<a href="../ABT-619/">→ 下一个工单：ABT-619</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>经测试发现，切换game mode 之后，延迟没有立刻起效，我也调用了bt_sink_srv_a2dp_reinitial_sync() 这个接口。</p>
 <p>12:04:44 音乐中切换latency</p>
 <p>12:04:56 还维持在195ms</p>
@@ -377,8 +377,8 @@
 <p>[附件: Logging251021_120420_COM43.7z]</p>
 </div>
 <div class="reply even">
-<h3 id="20251022-0959-102">2025/10/22 09:59 — [人名102]<a class="headerlink" href="#20251022-0959-102" title="Permanent link">&para;</a></h3>
-<p>Hi 黄工，</p>
+<h3 id="20251022-0959-109">2025/10/22 09:59 — [人名109]<a class="headerlink" href="#20251022-0959-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名11]，</p>
 <p>latency信息是在A2SP start之前获取到并设置下去的，过程中不会动态调整这个参数的，要启用新的latency参数是需要重新起播的，也就是需要a2dp stop再a2dp start的。</p>
 <p>[图片: image-2025-10-22-09-59-17-284.png]</p>
 </div>
@@ -388,8 +388,8 @@
 <p>所以这是无法在音乐中中更新latency了吗？</p>
 </div>
 <div class="reply even">
-<h3 id="20251022-1110-102">2025/10/22 11:10 — [人名102]<a class="headerlink" href="#20251022-1110-102" title="Permanent link">&para;</a></h3>
-<p>Hi 黄工，</p>
+<h3 id="20251022-1110-109">2025/10/22 11:10 — [人名109]<a class="headerlink" href="#20251022-1110-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名11]，</p>
 <p>是的，音乐播放过程中更新不了latency的，需要重新起播的。</p>
 <p>[图片: image-2025-10-22-11-11-21-715.png]</p>
 <p>[图片: image-2025-10-22-11-11-21-715.png]</p>
@@ -397,17 +397,17 @@
 <div class="reply odd">
 <h3 id="20251023-1111-2">2025/10/23 11:11 — [人名2]<a class="headerlink" href="#20251023-1111-2" title="Permanent link">&para;</a></h3>
 <p>Hi 刘工，</p>
-<p>终端[客户L]反馈，使用ABT芯片的其他机种，在接收到修改latency指令后，可以做到有一次断音但没有停止播放的动作，来实现这个latency的重新起效。请帮忙确认一下是否有这样的手法。</p>
+<p>终端[客户P]反馈，使用ABT芯片的其他机种，在接收到修改latency指令后，可以做到有一次断音但没有停止播放的动作，来实现这个latency的重新起效。请帮忙确认一下是否有这样的手法。</p>
 </div>
 <div class="reply even">
-<h3 id="20251023-1130-102">2025/10/23 11:30 — [人名102]<a class="headerlink" href="#20251023-1130-102" title="Permanent link">&para;</a></h3>
-<p>Hi 黄工，</p>
+<h3 id="20251023-1130-109">2025/10/23 11:30 — [人名109]<a class="headerlink" href="#20251023-1130-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名11]，</p>
 <p>他们的做法就是调用bt_sink_srv_music_set_sink_latency，这个时候sdk会先做a2dp top，然后再做a2dp start的动作，对应到的就是中间有一个断音的过程。</p>
 <p>你这边可以自己操作，可以在a2dp起播后的播放过程中，调用bt_sink_srv_music_set_sink_latency，这个时候sdk就会先做a2dp stop然后a2dp start的动作，这个时候就会有一个断音的过程。</p>
 </div>
 <div class="reply odd">
-<h3 id="20251024-1139-102">2025/10/24 11:39 — [人名102]<a class="headerlink" href="#20251024-1139-102" title="Permanent link">&para;</a></h3>
-<p>Hi 黄工，</p>
+<h3 id="20251024-1139-109">2025/10/24 11:39 — [人名109]<a class="headerlink" href="#20251024-1139-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名11]，</p>
 <p>a2dp播放音乐过程中动态切换latency对应的方法已经提供，如果没有其他疑问，这里就关闭这题了。</p>
 </div>
 <div class="reply even">

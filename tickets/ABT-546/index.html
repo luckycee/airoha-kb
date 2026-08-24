@@ -362,40 +362,40 @@
 <p><a href="../ABT-545/">← 上一个工单：ABT-545</a>　<a href="../ABT-547/">→ 下一个工单：ABT-547</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi  [人名5] ,</p>
+<p>Hi  [人名6] ,</p>
 <p>耳机连接电脑端蓝牙，通讯、录音无法Mute Mic。客户想要在连接电脑的情况下也可以Mute Mic，麻烦指导一下如何修改 ，谢谢！</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
-<h3 id="20250516-1626-102">2025/05/16 16:26 — [人名102]<a class="headerlink" href="#20250516-1626-102" title="Permanent link">&para;</a></h3>
-<p>Hi 李工，</p>
+<h3 id="20250516-1626-109">2025/05/16 16:26 — [人名109]<a class="headerlink" href="#20250516-1626-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名45]，</p>
 <p>耳机连接电脑端蓝牙，通讯、录音无法Mute Mic。
 ---------------&gt;
 电脑系统默认录音设备是使用电脑的MIC，而不是耳机的MIC，请查看确认一下此时电脑上的设置中的MIC设置项，请修改为耳机MIC后再验证反馈一下。</p>
 </div>
 <div class="reply even">
-<h3 id="20250516-1648-82">2025/05/16 16:48 — [人名82]<a class="headerlink" href="#20250516-1648-82" title="Permanent link">&para;</a></h3>
-<p>Hi <em>[人名102] ([人名102])</em>，</p>
+<h3 id="20250516-1648-88">2025/05/16 16:48 — [人名88]<a class="headerlink" href="#20250516-1648-88" title="Permanent link">&para;</a></h3>
+<p>Hi <em>[人名109] ([人名109])</em>，</p>
 <p>刚刚用电脑蓝牙连接耳机，使用微信通话，麦克风手动选耳机，测试Mute Mic功能无效。</p>
 </div>
 <div class="reply odd">
-<h3 id="20250519-1540-102">2025/05/19 15:40 — [人名102]<a class="headerlink" href="#20250519-1540-102" title="Permanent link">&para;</a></h3>
-<p>Hi 李工，</p>
+<h3 id="20250519-1540-109">2025/05/19 15:40 — [人名109]<a class="headerlink" href="#20250519-1540-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名45]，</p>
 <p>请帮忙提供一下log过来查看一下gain值以及当时volume control走的profile，并不是所有的case我们都能够控制mic mute/unmute的。</p>
 <p>log要包含微信通话和录音的过程，记得在电脑上设置里面选择设置使用耳机的mic。</p>
 </div>
 <div class="reply even">
-<h3 id="20250519-1809-82">2025/05/19 18:09 — [人名82]<a class="headerlink" href="#20250519-1809-82" title="Permanent link">&para;</a></h3>
-<p>Hi <em>[人名102] ([人名102])</em>，</p>
+<h3 id="20250519-1809-88">2025/05/19 18:09 — [人名88]<a class="headerlink" href="#20250519-1809-88" title="Permanent link">&para;</a></h3>
+<p>Hi <em>[人名109] ([人名109])</em>，</p>
 <p>附件是按Mute Mic按键无效的两种情况的log，文件名是log录制过程</p>
 <p>[附件: 耳机开机回连电脑，电脑打微信电话，点击微信电话的麦克风选项选到耳机，长按Mute Mic，再长按Mute Mic按键，挂断微信电话.rar]</p>
 <p>[附件: 打开电脑“声音”选项选择耳机属性，打开侦听，长按Mute Mic，再长按Mute Mic按键，关闭侦听关闭“声音”.rar]</p>
 <p>[图片: 电脑的声音选项.png]</p>
 </div>
 <div class="reply odd">
-<h3 id="20250519-2011-102">2025/05/19 20:11 — [人名102]<a class="headerlink" href="#20250519-2011-102" title="Permanent link">&para;</a></h3>
-<p>Hi 李工，
-log核对确认过了，两个场景其实都是走[人名9]P call。
+<h3 id="20250519-2011-109">2025/05/19 20:11 — [人名109]<a class="headerlink" href="#20250519-2011-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名45]，
+log核对确认过了，两个场景其实都是走[人名10]P call。
 mic bias打出来全部都是0，mic应该是没有收声音进来才对。
  [图片: screenshot-1.png] </p>
 <p>接下来请帮忙抓syslog+audio dump过来确认。
@@ -404,22 +404,22 @@ VOICE_TX_MIC_0
 VOICE_TX_OUT</p>
 </div>
 <div class="reply even">
-<h3 id="20250520-1110-82">2025/05/20 11:10 — [人名82]<a class="headerlink" href="#20250520-1110-82" title="Permanent link">&para;</a></h3>
-<p>Hi <em>[人名102] ([人名102])</em>，</p>
+<h3 id="20250520-1110-88">2025/05/20 11:10 — [人名88]<a class="headerlink" href="#20250520-1110-88" title="Permanent link">&para;</a></h3>
+<p>Hi <em>[人名109] ([人名109])</em>，</p>
 <p>刚刚改用手机测试，log的Mic Bias 打印也是0，实际上Mic Mute切换是有效的。</p>
 <p>此软件用的是Mic Bias2，audio dump是否是勾选VOICE_TX_MIC_2和VOICE_TX_OUT。</p>
 </div>
 <div class="reply odd">
-<h3 id="20250520-1120-82">2025/05/20 11:20 — [人名82]<a class="headerlink" href="#20250520-1120-82" title="Permanent link">&para;</a></h3>
-<p>Hi <em>[人名102] ([人名102])</em>，</p>
+<h3 id="20250520-1120-88">2025/05/20 11:20 — [人名88]<a class="headerlink" href="#20250520-1120-88" title="Permanent link">&para;</a></h3>
+<p>Hi <em>[人名109] ([人名109])</em>，</p>
 <p>syslog没有设备录制，附件是audio dump。</p>
 <p>[附件: 微信接通后，点击微信电话的麦克风选项选到耳机，长按Mute Mic，再长按Mute Mic按键，挂断微信电话.rar]</p>
 </div>
 <div class="reply even">
-<h3 id="20250520-1437-102">2025/05/20 14:37 — [人名102]<a class="headerlink" href="#20250520-1437-102" title="Permanent link">&para;</a></h3>
-<p>Hi 李工，
+<h3 id="20250520-1437-109">2025/05/20 14:37 — [人名109]<a class="headerlink" href="#20250520-1437-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名45]，
 你那边操作的时候是操作电脑上登录的微信进行通话对吗？
-log中可以看到电脑上的微信通话前后以及通话过程中对应的mmi_state分别是APP_A2DP_PLAYING及APP_STATE_VA，跟平时连手机时候的通话状态APP_[人名9]P_CALLACTIVE是不同的。
+log中可以看到电脑上的微信通话前后以及通话过程中对应的mmi_state分别是APP_A2DP_PLAYING及APP_STATE_VA，跟平时连手机时候的通话状态APP_[人名10]P_CALLACTIVE是不同的。
 [图片: image-2025-05-20-14-39-43-606.png]</p>
 <p>连电脑的时候，耳机是client角色，没有实作控制mute mic的功能。
 另外，确认一下，默认情况下是使用电脑的mic，电脑上的mic 也无法操作微信通话的mute mic成功吗？
@@ -427,78 +427,78 @@ log中可以看到电脑上的微信通话前后以及通话过程中对应的mm
  [图片: screenshot-6.png]</p>
 </div>
 <div class="reply odd">
-<h3 id="20250520-1511-82">2025/05/20 15:11 — [人名82]<a class="headerlink" href="#20250520-1511-82" title="Permanent link">&para;</a></h3>
-<p>Hi <em>[人名102] ([人名102])</em>，</p>
+<h3 id="20250520-1511-88">2025/05/20 15:11 — [人名88]<a class="headerlink" href="#20250520-1511-88" title="Permanent link">&para;</a></h3>
+<p>Hi <em>[人名109] ([人名109])</em>，</p>
 <p>是操作电脑端进行微信通话。</p>
 <p>只是蓝牙连接电脑的Mute Mic功能无法实现（耳机连接手机或者连接Dongle都可以Mute Mic）。</p>
 <p>耳机应该都控制不了电脑微信通话界面的Mute ，客户想要的应该是控制耳机Mute Mic之后耳机不拾音，来实现Mute Mic功能。</p>
 </div>
 <div class="reply even">
-<h3 id="20250520-1711-102">2025/05/20 17:11 — [人名102]<a class="headerlink" href="#20250520-1711-102" title="Permanent link">&para;</a></h3>
-<p>Hi 李工，</p>
+<h3 id="20250520-1711-109">2025/05/20 17:11 — [人名109]<a class="headerlink" href="#20250520-1711-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名45]，</p>
 <p>是的。
 请与客户说明清楚：
 耳机控制不了电脑微信通话界面的Mute，这个部分的功能没有做。</p>
 </div>
 <div class="reply odd">
-<h3 id="20250520-1832-82">2025/05/20 18:32 — [人名82]<a class="headerlink" href="#20250520-1832-82" title="Permanent link">&para;</a></h3>
-<p>Hi <em>[人名102] ([人名102])</em>，</p>
+<h3 id="20250520-1832-88">2025/05/20 18:32 — [人名88]<a class="headerlink" href="#20250520-1832-88" title="Permanent link">&para;</a></h3>
+<p>Hi <em>[人名109] ([人名109])</em>，</p>
 <p>客户不是想控制通话界面的Mute，是想直接在Headset上实现Mute Mic，就像连接手机一样，只是Mute headset的Mic。就是做到功能一致，我们需要实现的是这个。</p>
 </div>
 <div class="reply even">
-<h3 id="20250521-1555-82">2025/05/21 15:55 — [人名82]<a class="headerlink" href="#20250521-1555-82" title="Permanent link">&para;</a></h3>
-<p>Hi <em>[人名102] ([人名102])</em>，</p>
+<h3 id="20250521-1555-88">2025/05/21 15:55 — [人名88]<a class="headerlink" href="#20250521-1555-88" title="Permanent link">&para;</a></h3>
+<p>Hi <em>[人名109] ([人名109])</em>，</p>
 <p>如何实现蓝牙连接电脑的Mic Mute切换功能。</p>
 </div>
 <div class="reply odd">
-<h3 id="20250521-1558-102">2025/05/21 15:58 — [人名102]<a class="headerlink" href="#20250521-1558-102" title="Permanent link">&para;</a></h3>
-<p>Hi 李工，
+<h3 id="20250521-1558-109">2025/05/21 15:58 — [人名109]<a class="headerlink" href="#20250521-1558-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名45]，
 了解你的意思，现状是，目前SDK上没有实现headset client端连电脑时候的mute mic的功能。
 可以看到，只是做了更新标志位的动作。
   [图片: screenshot-7.png]</p>
 </div>
 <div class="reply even">
-<h3 id="20250521-1616-82">2025/05/21 16:16 — [人名82]<a class="headerlink" href="#20250521-1616-82" title="Permanent link">&para;</a></h3>
-<p>Hi <em>[人名102] ([人名102])</em>，</p>
+<h3 id="20250521-1616-88">2025/05/21 16:16 — [人名88]<a class="headerlink" href="#20250521-1616-88" title="Permanent link">&para;</a></h3>
+<p>Hi <em>[人名109] ([人名109])</em>，</p>
 <p>目前SDK没有实现，可否提供添加修改此功能的patch，以满足客户需求。</p>
 </div>
 <div class="reply odd">
-<h3 id="20250521-1617-102">2025/05/21 16:17 — [人名102]<a class="headerlink" href="#20250521-1617-102" title="Permanent link">&para;</a></h3>
-<p>Hi 李工，
+<h3 id="20250521-1617-109">2025/05/21 16:17 — [人名109]<a class="headerlink" href="#20250521-1617-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名45]，
 如前面所沟通，headset连dongle的时候，UL那一路才有开启。
 headset连电脑的时候UL那路没有开，因此连电脑的时候其实使用的还是电脑的mic（操作设置修改也无效，还是使用的电脑的mic），因此无法操作headset的mute/unmute mic。
  [图片: screenshot-8.png]</p>
 </div>
 <div class="reply even">
-<h3 id="20250522-1112-82">2025/05/22 11:12 — [人名82]<a class="headerlink" href="#20250522-1112-82" title="Permanent link">&para;</a></h3>
-<p>Hi <em>[人名102] ([人名102])</em>，</p>
+<h3 id="20250522-1112-88">2025/05/22 11:12 — [人名88]<a class="headerlink" href="#20250522-1112-88" title="Permanent link">&para;</a></h3>
+<p>Hi <em>[人名109] ([人名109])</em>，</p>
 <p>headset通过蓝牙连接电脑，耳机Mic是可以被选择的。如上面提供的log，Mic的选择已经是选到耳机上了，此时也不能操作 headset 做 Mute Mic。采用的是耳机的Mic，为什么还无法操作headset的mute/unmute mic。</p>
 </div>
 <div class="reply odd">
-<h3 id="20250522-1121-82">2025/05/22 11:21 — [人名82]<a class="headerlink" href="#20250522-1121-82" title="Permanent link">&para;</a></h3>
-<p>Hi <em>[人名102] ([人名102])</em>，</p>
+<h3 id="20250522-1121-88">2025/05/22 11:21 — [人名88]<a class="headerlink" href="#20250522-1121-88" title="Permanent link">&para;</a></h3>
+<p>Hi <em>[人名109] ([人名109])</em>，</p>
 <p>还有一个问题，就是在电脑上微信通话结束后，耳机的state没有变回connected。</p>
 </div>
 <div class="reply even">
-<h3 id="20250522-1539-102">2025/05/22 15:39 — [人名102]<a class="headerlink" href="#20250522-1539-102" title="Permanent link">&para;</a></h3>
-<p>Hi  李工，
+<h3 id="20250522-1539-109">2025/05/22 15:39 — [人名109]<a class="headerlink" href="#20250522-1539-109" title="Permanent link">&para;</a></h3>
+<p>Hi  [人名45]，
 再核对一下，PC那边是没有接dongle的对吗？
 你测试过程中一直都是只有headset连PC对吗？没有dongle的情况下，headset和PC连的是EDR，走传统蓝牙这条路，跟ULL无关，之前看到的log看起来是上层app call到ULL这里了，但是没有效果。</p>
 </div>
 <div class="reply odd">
-<h3 id="20250522-1602-82">2025/05/22 16:02 — [人名82]<a class="headerlink" href="#20250522-1602-82" title="Permanent link">&para;</a></h3>
-<p>Hi <em>[人名102] ([人名102])</em>，</p>
+<h3 id="20250522-1602-88">2025/05/22 16:02 — [人名88]<a class="headerlink" href="#20250522-1602-88" title="Permanent link">&para;</a></h3>
+<p>Hi <em>[人名109] ([人名109])</em>，</p>
 <p>1、没有接Dongle，耳机直接通过传统蓝牙与电脑连接，就是这个方式没有Mute Mic功能；（我们需要实现是这个情况的Mute Mic）</p>
 <p>2、通过Dongle连接电脑或者手机，Mute Mic功能都是有效的；直接通过传统蓝牙连接手机，Mute Mic功能也是有效的。</p>
 </div>
 <div class="reply even">
-<h3 id="20250522-1651-102">2025/05/22 16:51 — [人名102]<a class="headerlink" href="#20250522-1651-102" title="Permanent link">&para;</a></h3>
-<p>Hi 李工，</p>
+<h3 id="20250522-1651-109">2025/05/22 16:51 — [人名109]<a class="headerlink" href="#20250522-1651-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名45]，</p>
 <p>了解了，如前面所说，EDR却跑了BLE的API，这个地方的流程看起来是有问题的，不排除是你们客制化改动引起的，我先对一下代码，如果还需要新的log再跟你说。</p>
 </div>
 <div class="reply odd">
-<h3 id="20250523-1655-102">2025/05/23 16:55 — [人名102]<a class="headerlink" href="#20250523-1655-102" title="Permanent link">&para;</a></h3>
-<p>Hi 李工，
+<h3 id="20250523-1655-109">2025/05/23 16:55 — [人名109]<a class="headerlink" href="#20250523-1655-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名45]，
 这题，再次核对了代码和log，{color:#0747A6}问题的根源在于，电脑上的微信通话，比较特殊，虽然是走sco通路，但告知耳机的是开启语音识别，因此导致耳机端的状态设置为VA 26。{color}
 之后，在VA 26的情况下，去做mute mic的动作，music这边遍寻了各种应用，都无法做mute mic的动作，因为在它看来，VA 26的状态下，是根本就没有UL通路的，因此就不会真正去做mute mic的动作。 </p>
 <p>/////////////////////////////////////////////////////////////////////////////</p>
@@ -517,56 +517,56 @@ Hci log可以看到，
  [图片: screenshot-12.png]</p>
 </div>
 <div class="reply even">
-<h3 id="20250523-1751-82">2025/05/23 17:51 — [人名82]<a class="headerlink" href="#20250523-1751-82" title="Permanent link">&para;</a></h3>
-<p>Hi <em>[人名102] ([人名102])</em>，</p>
+<h3 id="20250523-1751-88">2025/05/23 17:51 — [人名88]<a class="headerlink" href="#20250523-1751-88" title="Permanent link">&para;</a></h3>
+<p>Hi <em>[人名109] ([人名109])</em>，</p>
 <p>所以经典蓝牙连接电脑的Mute Mic功能做不了了吗</p>
 </div>
 <div class="reply odd">
-<h3 id="20250523-1814-102">2025/05/23 18:14 — [人名102]<a class="headerlink" href="#20250523-1814-102" title="Permanent link">&para;</a></h3>
-<p>Hi 李工，</p>
+<h3 id="20250523-1814-109">2025/05/23 18:14 — [人名109]<a class="headerlink" href="#20250523-1814-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名45]，</p>
 <p>请试下，在app_call_va_activity.c中，模仿框起来的地方，加一段代码，加上KEY_MUTE_MIC和KEY_UNMUTE_MIC的处理，看下是否有效。
  [图片: screenshot-13.png]</p>
 </div>
 <div class="reply even">
-<h3 id="20250526-0859-102">2025/05/26 08:59 — [人名102]<a class="headerlink" href="#20250526-0859-102" title="Permanent link">&para;</a></h3>
-<p>Hi 李工，</p>
+<h3 id="20250526-0859-109">2025/05/26 08:59 — [人名109]<a class="headerlink" href="#20250526-0859-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名45]，</p>
 <p>修改app_call_va_activity.c加上KEY_MUTE_MIC和KEY_UNMUTE_MIC的处理后是否有效，请帮忙反馈一下。</p>
 </div>
 <div class="reply odd">
-<h3 id="20250527-0941-102">2025/05/27 09:41 — [人名102]<a class="headerlink" href="#20250527-0941-102" title="Permanent link">&para;</a></h3>
-<p>Hi 李工，</p>
+<h3 id="20250527-0941-109">2025/05/27 09:41 — [人名109]<a class="headerlink" href="#20250527-0941-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名45]，</p>
 <p>请帮忙反馈一下，感谢~</p>
 </div>
 <div class="reply even">
-<h3 id="20250527-1133-82">2025/05/27 11:33 — [人名82]<a class="headerlink" href="#20250527-1133-82" title="Permanent link">&para;</a></h3>
-<p>Hi <em>[人名102] ([人名102])</em></p>
+<h3 id="20250527-1133-88">2025/05/27 11:33 — [人名88]<a class="headerlink" href="#20250527-1133-88" title="Permanent link">&para;</a></h3>
+<p>Hi <em>[人名109] ([人名109])</em></p>
 <p>测试了，修改按键不会跑到这里，修改方式和log见附件。</p>
 <p>主要还是不知道用什么方式或者接口来修改，我在可执行到的地方调用app_call_utils_mute_mic接口，也是没有作用。</p>
 <p>[附件: 连接电脑微信通话mute_mic功能无效.pcapng]</p>
 <p>[图片: mute_mic功能修改无效-1.png]</p>
 </div>
 <div class="reply odd">
-<h3 id="20250527-1200-102">2025/05/27 12:00 — [人名102]<a class="headerlink" href="#20250527-1200-102" title="Permanent link">&para;</a></h3>
-<p>Hi  李工，</p>
+<h3 id="20250527-1200-109">2025/05/27 12:00 — [人名109]<a class="headerlink" href="#20250527-1200-109" title="Permanent link">&para;</a></h3>
+<p>Hi  [人名45]，</p>
 <p>今天新抓的log，状态不对，状态为24，跑到了ULL的API那边去了。
 请重新测试验证，确保连的是BT，状态为26，那个时候应该就会跑到你加的代码中了。
 确认app_call_va_activity.c文件会不会跑最简单的办法就是，状态26情况下的电脑微信通话，操作按键看是否可以控制音量，如果可以控制音量，说明代码跑进来了，那么你加的代码就一定会跑到。
  [图片: screenshot-14.png]</p>
 </div>
 <div class="reply even">
-<h3 id="20250527-1217-82">2025/05/27 12:17 — [人名82]<a class="headerlink" href="#20250527-1217-82" title="Permanent link">&para;</a></h3>
-<p>Hi <em>[人名102] ([人名102])，</em></p>
+<h3 id="20250527-1217-88">2025/05/27 12:17 — [人名88]<a class="headerlink" href="#20250527-1217-88" title="Permanent link">&para;</a></h3>
+<p>Hi <em>[人名109] ([人名109])，</em></p>
 <p>不好意思，是通话测试时没有选择麦克风为耳机的。状态26测试是可以mute。</p>
 </div>
 <div class="reply odd">
-<h3 id="20250527-1227-102">2025/05/27 12:27 — [人名102]<a class="headerlink" href="#20250527-1227-102" title="Permanent link">&para;</a></h3>
-<p>Hi 李工，
+<h3 id="20250527-1227-109">2025/05/27 12:27 — [人名109]<a class="headerlink" href="#20250527-1227-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名45]，
 感谢反馈。
 难怪今天的log中只有建立SLC状态，没有建立SCO连接。</p>
 </div>
 <div class="reply even">
-<h3 id="20250527-1719-102">2025/05/27 17:19 — [人名102]<a class="headerlink" href="#20250527-1719-102" title="Permanent link">&para;</a></h3>
-<p>Hi 李工，
+<h3 id="20250527-1719-109">2025/05/27 17:19 — [人名109]<a class="headerlink" href="#20250527-1719-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名45]，
 这题，在app_call_va_activity.c文件中调用app_call_utils_mute_mic接口，已经实现状态26情况下的mute mic功能，这里就关闭这题了。</p>
 </div>
 <div class="ticket-nav">

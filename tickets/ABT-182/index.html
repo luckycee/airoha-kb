@@ -362,7 +362,7 @@
 <p><a href="../ABT-181/">← 上一个工单：ABT-181</a>　<a href="../ABT-183/">→ 下一个工单：ABT-183</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>开机回连失败后进入手机配对，但是过了20多秒后，自动退出了配对状态。问题是概率性出现是，10-20%这样子。问题出现在L86269 visible 设置为0 ，L87125 ，state 设置为了1。</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
@@ -371,43 +371,43 @@
 <p>[附件: Logging_COM11_00001_[序列号已隐藏].7z]</p>
 </div>
 <div class="reply even">
-<h3 id="20230530-1137-5">2023/05/30 11:37 — [人名5]<a class="headerlink" href="#20230530-1137-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230530-1137-6">2023/05/30 11:37 — [人名6]<a class="headerlink" href="#20230530-1137-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>可以看看在哪里调用了bt_cm_write_scan_mode，把inquiry scan disable 了（第一个传参传BT_CM_COMMON_TYPE_DISABLE）。</p>
 </div>
 <div class="reply odd">
 <h3 id="20230530-1603-2">2023/05/30 16:03 — [人名2]<a class="headerlink" href="#20230530-1603-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>应该是连接上AG，又断开，有连接上，导致的。需要你看看为什么出现这样的问题。</p>
 <p>[图片: Snipaste_2023-05-30_16-02-17.jpg]</p>
 </div>
 <div class="reply even">
-<h3 id="20230530-1718-5">2023/05/30 17:18 — [人名5]<a class="headerlink" href="#20230530-1718-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230530-1718-6">2023/05/30 17:18 — [人名6]<a class="headerlink" href="#20230530-1718-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>耳机配对过程中有回连动作，回连上手机后又主动断连了。这里哪个行为是不符合预期的呢？</p>
 </div>
 <div class="reply odd">
 <h3 id="20230530-1738-2">2023/05/30 17:38 — [人名2]<a class="headerlink" href="#20230530-1738-2" title="Permanent link">&para;</a></h3>
-<p>Hi fason，</p>
+<p>Hi [人名6]，</p>
 <p>跟客户沟通，手机那边蓝牙是关着的状态。</p>
 <p>在出现问题的前面，L25409 visible set 1 L49260  visible set 0（流程#1），L54306 visible set 1 L78127  visible set 0（流程#2），手法都是跟出现问题时一样的，但是流程#1 #2 均是正常的。还是需要找到为什么才行</p>
 </div>
 <div class="reply even">
-<h3 id="20230530-1751-5">2023/05/30 17:51 — [人名5]<a class="headerlink" href="#20230530-1751-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230530-1751-6">2023/05/30 17:51 — [人名6]<a class="headerlink" href="#20230530-1751-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>这台耳机有配对过其他手机吗？能确保这只耳机只连接过一台手机，并且这台手机是关闭蓝牙状态复现这个问题吗</p>
 </div>
 <div class="reply odd">
 <h3 id="20230530-1811-2">2023/05/30 18:11 — [人名2]<a class="headerlink" href="#20230530-1811-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>跟客户沟通过，忘记了连接过多少手机，当时可以确认在场测试的手机蓝牙都是关闭的，问题log是测试两个多小时才抓到的。在log上，也是看到，回连的发起针对了下面两个地址
-connect [人名9]P addr :0x23 0x9a 0x12 0x3c 0x18 0x00
-connect [人名9]P addr :0x46 0x62 0x7c 0x0f 0x2c 0x64</p>
+connect [人名10]P addr :0x23 0x9a 0x12 0x3c 0x18 0x00
+connect [人名10]P addr :0x46 0x62 0x7c 0x0f 0x2c 0x64</p>
 <p>如我上一次回复所说，测试环境没有发生变化，流程#1 #2 也是回连的两个手机（还有更多流程没有发出来），但是前面没有问题。</p>
 <p>[图片: Snipaste_2023-05-30_18-10-28.jpg]</p>
 </div>
 <div class="reply even">
-<h3 id="20230602-1142-5">2023/06/02 11:42 — [人名5]<a class="headerlink" href="#20230602-1142-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230602-1142-6">2023/06/02 11:42 — [人名6]<a class="headerlink" href="#20230602-1142-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>手机问题~</p>
 <p>看起来是因为A2DP 和 hfp 都连线失败了</p>

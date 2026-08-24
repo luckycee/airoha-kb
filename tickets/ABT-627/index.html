@@ -362,7 +362,7 @@
 <p><a href="../ABT-626/">← 上一个工单：ABT-626</a>　<a href="../ABT-628/">→ 下一个工单：ABT-628</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>SDK5.6.0, 支持wired audio的headset 项目，流程如下：</p>
 <p>插入USB 到手机A中，headset 开机并进入手机配对，手机B连接了headset的蓝牙；在手机A上播放音乐，在手机B上使用ABTUnifyUT 调试 Equalizer（时间20:40:00），发现耳机的输出没有发生变化；如果使用手机B播放，则app调试EQ ，耳机输出是有变化的，请帮忙看看是否PEQ101没有被调用？</p>
 <hr />
@@ -375,43 +375,43 @@
 </div>
 <div class="reply even">
 <h3 id="20251031-1550-2">2025/10/31 15:50 — [人名2]<a class="headerlink" href="#20251031-1550-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5],</p>
+<p>Hi [人名6],</p>
 <p>这题帮优先看。</p>
 </div>
 <div class="reply odd">
 <h3 id="20251104-1133-2">2025/11/04 11:33 — [人名2]<a class="headerlink" href="#20251104-1133-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5],</p>
+<p>Hi [人名6],</p>
 <p>这题帮优先看。</p>
 </div>
 <div class="reply even">
-<h3 id="20251104-1412-5">2025/11/04 14:12 — [人名5]<a class="headerlink" href="#20251104-1412-5" title="Permanent link">&para;</a></h3>
+<h3 id="20251104-1412-6">2025/11/04 14:12 — [人名6]<a class="headerlink" href="#20251104-1412-6" title="Permanent link">&para;</a></h3>
 <p>好的~</p>
 </div>
 <div class="reply odd">
-<h3 id="20251104-1549-5">2025/11/04 15:49 — [人名5]<a class="headerlink" href="#20251104-1549-5" title="Permanent link">&para;</a></h3>
+<h3 id="20251104-1549-6">2025/11/04 15:49 — [人名6]<a class="headerlink" href="#20251104-1549-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>wired audio 跟 BT A2DP 用的不是同一套PEQ，手机连接BT 只能调BT A2DP 的EQ，不能调节wired audio的EQ。</p>
 <p>因为bt 和 wired audio 吃完全不同的参数，所以要同时生效，需要对两边都设定</p>
 </div>
 <div class="reply even">
 <h3 id="20251104-1603-2">2025/11/04 16:03 — [人名2]<a class="headerlink" href="#20251104-1603-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5],</p>
+<p>Hi [人名6],</p>
 <p>我这里应该怎么处理？才能让App调试的PEQ101，在wire audio 也起效？</p>
 </div>
 <div class="reply odd">
-<h3 id="20251104-1741-5">2025/11/04 17:41 — [人名5]<a class="headerlink" href="#20251104-1741-5" title="Permanent link">&para;</a></h3>
+<h3 id="20251104-1741-6">2025/11/04 17:41 — [人名6]<a class="headerlink" href="#20251104-1741-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>你们这题的build cmd 是哪个呢？</p>
 </div>
 <div class="reply even">
 <h3 id="20251104-1754-2">2025/11/04 17:54 — [人名2]<a class="headerlink" href="#20251104-1754-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5],</p>
+<p>Hi [人名6],</p>
 <p>./build.sh ab1565_8m_evk headset_ref_design_3in1_universal</p>
 <p>去掉了很多内容</p>
 <p>[附件: new.7z]</p>
 </div>
 <div class="reply odd">
-<h3 id="20251105-1609-5">2025/11/05 16:09 — [人名5]<a class="headerlink" href="#20251105-1609-5" title="Permanent link">&para;</a></h3>
+<h3 id="20251105-1609-6">2025/11/05 16:09 — [人名6]<a class="headerlink" href="#20251105-1609-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>可以研究下下图收到race cmd耳机跑的realtime 部分code哈，在RACE_DSPREALTIME_PEQ_HDR_V2 里面，判断到是A2DP，就把LINE_IN也同时realtime 写一下，就可以跟A2DP 同步了</p>
 <p>[图片: image-2025-11-05-16-06-56-665.png]</p>
@@ -420,7 +420,7 @@
 </div>
 <div class="reply even">
 <h3 id="20251105-1633-2">2025/11/05 16:33 — [人名2]<a class="headerlink" href="#20251105-1633-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>能提供一个直接的补丁吗？我改不好这些</p>
 </div>
 <div class="reply odd">
@@ -428,12 +428,12 @@
 <p>[https://teams.live.com/meet/[序列号已隐藏]?p=LtcIw3ODsCAypciowf|https://teams.live.com/meet/[序列号已隐藏]?p=LtcIw3ODsCAypciowf]</p>
 </div>
 <div class="reply even">
-<h3 id="20251105-1646-5">2025/11/05 16:46 — [人名5]<a class="headerlink" href="#20251105-1646-5" title="Permanent link">&para;</a></h3>
+<h3 id="20251105-1646-6">2025/11/05 16:46 — [人名6]<a class="headerlink" href="#20251105-1646-6" title="Permanent link">&para;</a></h3>
 <p>如沟通，改改看哈</p>
 </div>
 <div class="reply odd">
 <h3 id="20251106-1504-2">2025/11/06 15:04 — [人名2]<a class="headerlink" href="#20251106-1504-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>修改好，赶紧是没有起效；都是在最后的位置；</p>
 <p>[附件: wired audio 下app调试PEQ无效02.pcapng]</p>
 <p>[附件: A2DP 下app调试PEQ有效.pcapng]</p>
@@ -441,29 +441,29 @@
 <p>[图片: PixPin_2025-11-06_15-02-51.png]</p>
 </div>
 <div class="reply even">
-<h3 id="20251106-1527-5">2025/11/06 15:27 — [人名5]<a class="headerlink" href="#20251106-1527-5" title="Permanent link">&para;</a></h3>
+<h3 id="20251106-1527-6">2025/11/06 15:27 — [人名6]<a class="headerlink" href="#20251106-1527-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>写法可以发上来看看吗</p>
 </div>
 <div class="reply odd">
 <h3 id="20251106-1528-2">2025/11/06 15:28 — [人名2]<a class="headerlink" href="#20251106-1528-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>我的代码，是不是有问题？</p>
 <p>[附件: race_cmd_dsprealtime.c]</p>
 <p>[图片: PixPin_2025-11-06_15-27-47.png]</p>
 </div>
 <div class="reply even">
-<h3 id="20251107-0938-5">2025/11/07 09:38 — [人名5]<a class="headerlink" href="#20251107-0938-5" title="Permanent link">&para;</a></h3>
+<h3 id="20251107-0938-6">2025/11/07 09:38 — [人名6]<a class="headerlink" href="#20251107-0938-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>看起来是有问题呢，你加了一个else if，但是跑了上面的if 就不跑下面的else if 了，我们的预期是if 跟 else if 的内容都要跑，所以可以吧else if 的内容放在if 里面</p>
 </div>
 <div class="reply odd">
 <h3 id="20251107-1008-2">2025/11/07 10:08 — [人名2]<a class="headerlink" href="#20251107-1008-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>app 界面有一个开关，支持88.2Khz 和96K和开关，调试的时候把这个开启就行了；</p>
 </div>
 <div class="reply even">
-<h3 id="20251107-1145-5">2025/11/07 11:45 — [人名5]<a class="headerlink" href="#20251107-1145-5" title="Permanent link">&para;</a></h3>
+<h3 id="20251107-1145-6">2025/11/07 11:45 — [人名6]<a class="headerlink" href="#20251107-1145-6" title="Permanent link">&para;</a></h3>
 <p>好的，没问题麻烦关闭JIRA哈</p>
 </div>
 <div class="ticket-nav">

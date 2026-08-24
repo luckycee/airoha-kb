@@ -362,7 +362,7 @@
 <p><a href="../ABT-103/">← 上一个工单：ABT-103</a>　<a href="../ABT-105/">→ 下一个工单：ABT-105</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>HI [人名5]，</p>
+<p>HI [人名6]，</p>
 <p>问题#1 客户的config 中有 long press动作（LONG_PRESS_2，KEY_WAKE_UP_VOICE_ASSISTANT_NOTIFY），但是在Android App获取按键动作是，只能获取动 single\doublue\triple click 这个三个，无法获取 long press，显示为default。（时间对应L 边18:53:24 左右，附件图片）</p>
 <p>问题#2 App中 Long Press中只有“default、disable、wake_up_siri_notify”三个选项，选择了 wake_up_siri_notify 并set 到耳机中（时间对应L 边18:55:14 左右），然后通过按键触发（时间对应L 边18:55:36 左右），而实际上在press_release  时才触发。问：为什么多了这个 release这个动作？</p>
 <p>问题#3 在时间对应L 边18:55:57 一直按住不松手，直到7s后触发关机，但是我的config 里面并没有关机动作，是否为上一步中额外添加的？</p>
@@ -375,7 +375,7 @@
 <p>[图片: 微信图片_[序列号已隐藏].jpg]</p>
 </div>
 <div class="reply even">
-<h3 id="20221024-2236-5">2022/10/24 22:36 — [人名5]<a class="headerlink" href="#20221024-2236-5" title="Permanent link">&para;</a></h3>
+<h3 id="20221024-2236-6">2022/10/24 22:36 — [人名6]<a class="headerlink" href="#20221024-2236-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>SDK 設置 long press 會按照以下設定</p>
 <p>(LONG_PRESS_RELEASE_2, WAKE_UP_VOICE_ASSISTANT_CONFIRM)
@@ -389,21 +389,21 @@
 </div>
 <div class="reply odd">
 <h3 id="20221025-1420-2">2022/10/25 14:20 — [人名2]<a class="headerlink" href="#20221025-1420-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>我在配置中的设置，LONG_PRESS_2 是上下一曲，客户希望播放暂停、上下曲、ANC、通透的的设定，都可以在这个地方识别的修改，跟App的 单击设置一样；</p>
 </div>
 <div class="reply even">
-<h3 id="20221025-1506-5">2022/10/25 15:06 — [人名5]<a class="headerlink" href="#20221025-1506-5" title="Permanent link">&para;</a></h3>
+<h3 id="20221025-1506-6">2022/10/25 15:06 — [人名6]<a class="headerlink" href="#20221025-1506-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>如沟通，可以让客户app 自己改一下~</p>
 </div>
 <div class="reply odd">
 <h3 id="20221025-1535-2">2022/10/25 15:35 — [人名2]<a class="headerlink" href="#20221025-1535-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>是可以设置，但是获取的问题如何处理？连接上App，首先是获取，然后才是设定其他的动作；</p>
 </div>
 <div class="reply even">
-<h3 id="20221025-1543-31">2022/10/25 15:43 — [人名31]<a class="headerlink" href="#20221025-1543-31" title="Permanent link">&para;</a></h3>
+<h3 id="20221025-1543-33">2022/10/25 15:43 — [人名33]<a class="headerlink" href="#20221025-1543-33" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]</p>
 <ol>
 <li>用 App 設置之後，再進行獲取會得到先前設置成功的結果</li>
@@ -413,17 +413,17 @@
 </div>
 <div class="reply odd">
 <h3 id="20221025-2114-2">2022/10/25 21:14 — [人名2]<a class="headerlink" href="#20221025-2114-2" title="Permanent link">&para;</a></h3>
-<p>[人名31] ([人名31])，</p>
+<p>[人名33] ([人名33])，</p>
 <p>连接上demo Android App只有，在“KEY ACTION UT” ，读取到耳机的按键后，我修改了“Single Click”，修改前能够接听电话，修改后不能接听了，是不是在set key的时候，App把其他key action 写了进去？可否只修改我设定的内容？</p>
 <p>[附件: log.7z]</p>
 </div>
 <div class="reply even">
-<h3 id="20221026-0926-5">2022/10/26 09:26 — [人名5]<a class="headerlink" href="#20221026-0926-5" title="Permanent link">&para;</a></h3>
-<p>Hi @[人名34]，</p>
+<h3 id="20221026-0926-6">2022/10/26 09:26 — [人名6]<a class="headerlink" href="#20221026-0926-6" title="Permanent link">&para;</a></h3>
+<p>Hi @[人名37]，</p>
 <p>麻烦协助客户分析下这题~</p>
 </div>
 <div class="reply odd">
-<h3 id="20221026-0951-31">2022/10/26 09:51 — [人名31]<a class="headerlink" href="#20221026-0951-31" title="Permanent link">&para;</a></h3>
+<h3 id="20221026-0951-33">2022/10/26 09:51 — [人名33]<a class="headerlink" href="#20221026-0951-33" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]</p>
 <p>請幫忙提供 App log
 位置：/sdcard/Documents/ABT/Log
@@ -431,12 +431,12 @@
 </div>
 <div class="reply even">
 <h3 id="20221026-1102-2">2022/10/26 11:02 — [人名2]<a class="headerlink" href="#20221026-1102-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名31] ([人名31])，</p>
+<p>Hi [人名33] ([人名33])，</p>
 <p>见附件；</p>
 <p>[附件: NUARL NEXT 1L_20221026_105929.txt]</p>
 </div>
 <div class="reply odd">
-<h3 id="20221027-1520-5">2022/10/27 15:20 — [人名5]<a class="headerlink" href="#20221027-1520-5" title="Permanent link">&para;</a></h3>
+<h3 id="20221027-1520-6">2022/10/27 15:20 — [人名6]<a class="headerlink" href="#20221027-1520-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，
 從 app log裡面看到，客戶是把左耳的單擊改成 play_pause</p>
 <p>state for AVRCP_PLAY:
@@ -448,7 +448,7 @@ A2DP_PLAYING, ULTRA_LOW_LATENCY_PLAYING, WIRED_MUSIC_PLAY</p>
 </div>
 <div class="reply even">
 <h3 id="20221027-1547-2">2022/10/27 15:47 — [人名2]<a class="headerlink" href="#20221027-1547-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>没有的，state不会冲突，接听电话只有在incoming 下有；</p>
 <p>[图片: Snipaste_2022-10-27_15-46-06.jpg]</p>
 </div>
@@ -458,52 +458,52 @@ A2DP_PLAYING, ULTRA_LOW_LATENCY_PLAYING, WIRED_MUSIC_PLAY</p>
 <p>[图片: Snipaste_2022-10-27_15-48-58.jpg]</p>
 </div>
 <div class="reply even">
-<h3 id="20221027-1557-5">2022/10/27 15:57 — [人名5]<a class="headerlink" href="#20221027-1557-5" title="Permanent link">&para;</a></h3>
-<p>Hi @[人名34]，</p>
+<h3 id="20221027-1557-6">2022/10/27 15:57 — [人名6]<a class="headerlink" href="#20221027-1557-6" title="Permanent link">&para;</a></h3>
+<p>Hi @[人名37]，</p>
 <p>看起来 play/pause 跟接聽電話的 state  没有冲突</p>
 </div>
 <div class="reply odd">
 <h3 id="20221101-1438-2">2022/11/01 14:38 — [人名2]<a class="headerlink" href="#20221101-1438-2" title="Permanent link">&para;</a></h3>
-<p>Hi fason，</p>
+<p>Hi [人名6]，</p>
 <p>key的配置，使用的 KEY_UI_CHANGDAXING_D82 这个define内容；</p>
 <p>[附件: customerized_key_config.c]</p>
 </div>
 <div class="reply even">
-<h3 id="20221101-1510-5">2022/11/01 15:10 — [人名5]<a class="headerlink" href="#20221101-1510-5" title="Permanent link">&para;</a></h3>
+<h3 id="20221101-1510-6">2022/11/01 15:10 — [人名6]<a class="headerlink" href="#20221101-1510-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>如沟通，可以请app 端客制化，single click 修改为3组按键事件，然后发同时发3组按键过来，不然只发一组，就会覆盖掉耳机原来的3组。</p>
 </div>
 <div class="reply odd">
 <h3 id="20221101-1523-2">2022/11/01 15:23 — [人名2]<a class="headerlink" href="#20221101-1523-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>需要指导一下怎么加入另外两组才行，客户说没有相关接口；</p>
 </div>
 <div class="reply even">
-<h3 id="20221101-1639-5">2022/11/01 16:39 — [人名5]<a class="headerlink" href="#20221101-1639-5" title="Permanent link">&para;</a></h3>
+<h3 id="20221101-1639-6">2022/11/01 16:39 — [人名6]<a class="headerlink" href="#20221101-1639-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>你们加的3个key都是configable table，可以把不需要改到的2个按键加进temp_key_short_click_configs试试</p>
 </div>
 <div class="reply odd">
 <h3 id="20221102-1535-2">2022/11/02 15:35 — [人名2]<a class="headerlink" href="#20221102-1535-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>附件为修改后的key ，把原来的#if 0掉，在移植到 temp_key_short_click_configs 上，连接了App之后无法读取到按键，都是default ；</p>
 <p>[附件: customerized_key_config.c]</p>
 <p>[图片: 微信图片_[序列号已隐藏].jpg]</p>
 </div>
 <div class="reply even">
-<h3 id="20221102-1550-5">2022/11/02 15:50 — [人名5]<a class="headerlink" href="#20221102-1550-5" title="Permanent link">&para;</a></h3>
+<h3 id="20221102-1550-6">2022/11/02 15:50 — [人名6]<a class="headerlink" href="#20221102-1550-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>如沟通，需要被app 改的按键要放在configable table 上</p>
 </div>
 <div class="reply odd">
 <h3 id="20221107-1011-2">2022/11/07 10:11 — [人名2]<a class="headerlink" href="#20221107-1011-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>通过只把跟App相关的key放在 configurable_table，其他key放在 temp_key_，并在解释key的地方，加上限制，目前已经正常使用了。</p>
 <p>App端获取、设置long press动作还没有回复，问题先保持；</p>
 </div>
 <div class="reply even">
 <h3 id="20221107-1015-2">2022/11/07 10:15 — [人名2]<a class="headerlink" href="#20221107-1015-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>客户反馈，已经可以读取到long press的内容，问题关闭。</p>
 </div>
 <div class="ticket-nav">

@@ -362,48 +362,48 @@
 <p><a href="../ABT-713/">← 上一个工单：ABT-713</a>　<a href="../ABT-715/">→ 下一个工单：ABT-715</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>打开1wire功能，配置的充电电流无效，充电只有2mA（无论配置是多少），验证用的电池电压3.3V。</p>
 <p>我使用的编译指令：./build.sh ab1565_8m_evk earbuds_ref_design_leaudio</p>
 <p>打开宏定义：AIR_SMART_CHARGER_ENABLE 和 AIR_1WIRE_ENABLE</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
-<h3 id="20260312-1146-82">2026/03/12 11:46 — [人名82]<a class="headerlink" href="#20260312-1146-82" title="Permanent link">&para;</a></h3>
+<h3 id="20260312-1146-88">2026/03/12 11:46 — [人名88]<a class="headerlink" href="#20260312-1146-88" title="Permanent link">&para;</a></h3>
 <p>[附件: 充电电流只有2mA.pcapng]</p>
 </div>
 <div class="reply even">
-<h3 id="20260317-1326-100">2026/03/17 13:26 — [人名100]<a class="headerlink" href="#20260317-1326-100" title="Permanent link">&para;</a></h3>
+<h3 id="20260317-1326-107">2026/03/17 13:26 — [人名107]<a class="headerlink" href="#20260317-1326-107" title="Permanent link">&para;</a></h3>
 <p>处理中，有进展会更新</p>
 </div>
 <div class="reply odd">
-<h3 id="20260317-1546-100">2026/03/17 15:46 — [人名100]<a class="headerlink" href="#20260317-1546-100" title="Permanent link">&para;</a></h3>
+<h3 id="20260317-1546-107">2026/03/17 15:46 — [人名107]<a class="headerlink" href="#20260317-1546-107" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] </p>
 <p>“打开1wire功能，配置的充电电流无效，充电只有2mA（无论配置是多少）”</p>
 <p>——请问一下，是在哪里配置的充电电流？充电只有2mA是怎么得来的？</p>
 </div>
 <div class="reply even">
-<h3 id="20260317-1557-82">2026/03/17 15:57 — [人名82]<a class="headerlink" href="#20260317-1557-82" title="Permanent link">&para;</a></h3>
-<p>Hi <em>[人名100] ([人名100])</em>,</p>
+<h3 id="20260317-1557-88">2026/03/17 15:57 — [人名88]<a class="headerlink" href="#20260317-1557-88" title="Permanent link">&para;</a></h3>
+<p>Hi <em>[人名107] ([人名107])</em>,</p>
 <p>如截图配置充电电流。</p>
 <p>用万用表电流档串联电池正极，测试到的2mA。</p>
 <p>验证过关闭宏定义：AIR_SMART_CHARGER_ENABLE 和 AIR_1WIRE_ENABLE，充电电流是会达到配置数值的。另外验证了SDK_V5.8.0是正常的。</p>
 <p>[图片: image.png]</p>
 </div>
 <div class="reply odd">
-<h3 id="20260318-1601-100">2026/03/18 16:01 — [人名100]<a class="headerlink" href="#20260318-1601-100" title="Permanent link">&para;</a></h3>
+<h3 id="20260318-1601-107">2026/03/18 16:01 — [人名107]<a class="headerlink" href="#20260318-1601-107" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] </p>
 <p>请合入这两个patch 看看是否还有问题</p>
 <p>[附件: 59f62bb.diff]</p>
 <p>[附件: a6d2910.diff]</p>
 </div>
 <div class="reply even">
-<h3 id="20260318-1708-82">2026/03/18 17:08 — [人名82]<a class="headerlink" href="#20260318-1708-82" title="Permanent link">&para;</a></h3>
-<p>Hi <em>[人名100] ([人名100])</em>,</p>
+<h3 id="20260318-1708-88">2026/03/18 17:08 — [人名88]<a class="headerlink" href="#20260318-1708-88" title="Permanent link">&para;</a></h3>
+<p>Hi <em>[人名107] ([人名107])</em>,</p>
 <p>合入上面两个patch，充电电流可以达到配置的值了，感谢支持！</p>
 </div>
 <div class="reply odd">
-<h3 id="20260318-1711-100">2026/03/18 17:11 — [人名100]<a class="headerlink" href="#20260318-1711-100" title="Permanent link">&para;</a></h3>
+<h3 id="20260318-1711-107">2026/03/18 17:11 — [人名107]<a class="headerlink" href="#20260318-1711-107" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] </p>
 <p>这题还有其他问题吗？</p>
 <p>若无疑问请帮忙关闭，谢谢</p>

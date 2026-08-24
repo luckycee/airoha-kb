@@ -362,7 +362,7 @@
 <p><a href="../ABT-710/">← 上一个工单：ABT-710</a>　<a href="../ABT-712/">→ 下一个工单：ABT-712</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>使用EVK，USB 接上之后，播放音乐再通过 iOS App 连接上耳机（搜索 SANWEAR HARDWIRE），在App 上调试PEQ，在这个拖拽之后会提到“啪”一声，请看看这是为什么？</p>
 <p>SDK5.6.0</p>
 <p>我试过dump AUDIO_PEQ_OUT_L/R，AUDIO_CPD_OUT_L/R，但是没有发现没有pcm 文件。</p>
@@ -375,7 +375,7 @@
 <p>[图片: 微信图片_[序列号已隐藏]_54_436.jpg]</p>
 </div>
 <div class="reply even">
-<h3 id="20260311-1102-10">2026/03/11 11:02 — [人名10]<a class="headerlink" href="#20260311-1102-10" title="Permanent link">&para;</a></h3>
+<h3 id="20260311-1102-12">2026/03/11 11:02 — [人名12]<a class="headerlink" href="#20260311-1102-12" title="Permanent link">&para;</a></h3>
 <p>Hi  @[邮箱已隐藏] </p>
 <p>你给的fw ,  烧录到evk 上，插入usb 后 vbus 检测好像有问题（同样的evk ， 我烧录公版的软件是没这个问题的），所以声卡没有长出来，没办法直接测试你的固件</p>
 <p>[图片: image-2026-03-11-10-45-27-425.png]</p>
@@ -384,7 +384,7 @@
 </div>
 <div class="reply odd">
 <h3 id="20260311-1923-2">2026/03/11 19:23 — [人名2]<a class="headerlink" href="#20260311-1923-2" title="Permanent link">&para;</a></h3>
-<p>Hi 邓工，</p>
+<p>Hi [人名95]，</p>
 <p>按照你说的两个点，还是没有dump 到data；明天下午有时间吗？主要处理几个事情：</p>
 <h1 id="evk">你的EVK 无法读到声卡，我着这边可以的，需要对一下跳帽<a class="headerlink" href="#evk" title="Permanent link">&para;</a></h1>
 <h1 id="evk_1">杂音问题我当场复现复现给你听，我的样机和EVK；<a class="headerlink" href="#evk_1" title="Permanent link">&para;</a></h1>
@@ -393,7 +393,7 @@
 <p>[附件: headset_ref_design_20260311.7z]</p>
 </div>
 <div class="reply even">
-<h3 id="20260312-1528-10">2026/03/12 15:28 — [人名10]<a class="headerlink" href="#20260312-1528-10" title="Permanent link">&para;</a></h3>
+<h3 id="20260312-1528-12">2026/03/12 15:28 — [人名12]<a class="headerlink" href="#20260312-1528-12" title="Permanent link">&para;</a></h3>
 <p>Hi  @[邮箱已隐藏] </p>
 <p>audio dump 是 1429  , 1433, 1309 , 1313</p>
 <p>按照前面说的，请先帮忙复现抓一份包含audio dump 的log给他确认下呢，谢谢</p>
@@ -402,7 +402,7 @@
 </div>
 <div class="reply odd">
 <h3 id="20260312-1723-2">2026/03/12 17:23 — [人名2]<a class="headerlink" href="#20260312-1723-2" title="Permanent link">&para;</a></h3>
-<p>Hi 邓工，</p>
+<p>Hi [人名95]，</p>
 <p>这次录到了，时间点在</p>
 <p>16:46:34</p>
 <p>16:46:35</p>
@@ -412,7 +412,7 @@
 </div>
 <div class="reply even">
 <h3 id="20260312-1753-2">2026/03/12 17:53 — [人名2]<a class="headerlink" href="#20260312-1753-2" title="Permanent link">&para;</a></h3>
-<p>Hi 邓工，</p>
+<p>Hi [人名95]，</p>
 <p>我好像已经找到确切的点了，是往DSP写 LINE IN 数据的时候才出现的。</p>
 <p>红框里面的数据是我加入的内容；</p>
 <h1 id="app-real-time-path-id-a2dp-wire-audio-race_dsprt_peq_realtime_data">App 在real time的时候只会发 path id 为A2DP的，为了让 wire audio 也起效，我就加了这个内容；race_dsprt_peq_realtime_data（）<a class="headerlink" href="#app-real-time-path-id-a2dp-wire-audio-race_dsprt_peq_realtime_data" title="Permanent link">&para;</a></h1>
@@ -421,7 +421,7 @@
 <p>[图片: PixPin_2026-03-12_17-48-17.png]</p>
 </div>
 <div class="reply odd">
-<h3 id="20260313-0935-10">2026/03/13 09:35 — [人名10]<a class="headerlink" href="#20260313-0935-10" title="Permanent link">&para;</a></h3>
+<h3 id="20260313-0935-12">2026/03/13 09:35 — [人名12]<a class="headerlink" href="#20260313-0935-12" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] </p>
 <p>前面抓的audio dump  有 dump  drop 发生，因此我也没办法听</p>
 <p>但是从syslog 来看设定 EQ参数的时候，看起来是有因为 MIPS 不足了导致Noise,  请帮忙下设定EQ之前，先通过 AT cmd: AT+CPUFSET=2,1\0d\0a ,   把 主频调到最高，再去设定EQ 看下是否就没有 noise 了，谢谢</p>
@@ -441,13 +441,13 @@ DVFS_OPP_LOW  CPU 99.75MHz, DSP 149.625MHz|</p>
 </div>
 <div class="reply even">
 <h3 id="20260313-1021-2">2026/03/13 10:21 — [人名2]<a class="headerlink" href="#20260313-1021-2" title="Permanent link">&para;</a></h3>
-<p>Hi 邓工，</p>
+<p>Hi [人名95]，</p>
 <p>设置EQ 之前发送AT+CPUFSET=2,1\0d\0a ，还是有杂音；</p>
 <p>[附件: Logging260313_101758_COM12.7z]</p>
 </div>
 <div class="reply odd">
 <h3 id="20260316-1633-2">2026/03/16 16:33 — [人名2]<a class="headerlink" href="#20260316-1633-2" title="Permanent link">&para;</a></h3>
-<p>Hi 邓工，</p>
+<p>Hi [人名95]，</p>
 <p>开启了 {{DSP_MIPS_FEATURE_PROFILE}}</p>
 <p>[附件: headset_ref_design_20260316.7z]</p>
 </div>
@@ -460,7 +460,7 @@ DVFS_OPP_LOW  CPU 99.75MHz, DSP 149.625MHz|</p>
 <p>[附件: headset_ref_design_20260316+70.7z]</p>
 </div>
 <div class="reply even">
-<h3 id="20260316-1845-10">2026/03/16 18:45 — [人名10]<a class="headerlink" href="#20260316-1845-10" title="Permanent link">&para;</a></h3>
+<h3 id="20260316-1845-12">2026/03/16 18:45 — [人名12]<a class="headerlink" href="#20260316-1845-12" title="Permanent link">&para;</a></h3>
 <p>截图的 prefill size 修改到70</p>
 <p>[附件: headset_ref_design_20260316+70.7z]</p>
 <p><em>这版fw ，我测试没有 Noise 了，请确认下，谢谢</em></p>
@@ -468,7 +468,7 @@ DVFS_OPP_LOW  CPU 99.75MHz, DSP 149.625MHz|</p>
 </div>
 <div class="reply odd">
 <h3 id="20260317-0950-2">2026/03/17 09:50 — [人名2]<a class="headerlink" href="#20260317-0950-2" title="Permanent link">&para;</a></h3>
-<p>Hi 邓工，</p>
+<p>Hi [人名95]，</p>
 <p>客户确认了，测试没有问题；</p>
 </div>
 <div class="ticket-nav">

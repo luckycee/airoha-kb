@@ -362,7 +362,7 @@
 <p><a href="../ABT-712/">← 上一个工单：ABT-712</a>　<a href="../ABT-714/">→ 下一个工单：ABT-714</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>使用 EVK 连接上USB 播放音乐和 iOS App（5.9.0）（Android 也有问题），在调试自定义PEQ101的时候，设置了PEQ 之后听感声音（output gain）会变大；如果使用 ABT_SDK_UT V3.7.0.2023052 进一步看的话，选择了index101 后set index声音没有变，直接realtime update 就有问题了；</p>
 <p>相关问题：<a href="../ABT-711/">ABT-711</a></p>
 <hr />
@@ -373,7 +373,7 @@
 <p>[图片: 微信图片_[序列号已隐藏]_55_436.jpg]</p>
 </div>
 <div class="reply even">
-<h3 id="20260312-1554-10">2026/03/12 15:54 — [人名10]<a class="headerlink" href="#20260312-1554-10" title="Permanent link">&para;</a></h3>
+<h3 id="20260312-1554-12">2026/03/12 15:54 — [人名12]<a class="headerlink" href="#20260312-1554-12" title="Permanent link">&para;</a></h3>
 <p>Hi  @[邮箱已隐藏] </p>
 <p>1565 是用的SDK5.6.0 ,  请搭配新版的UT app 先看问题哈，先不拿旧版的UT app 来看，避免问题发散开</p>
 <p>在调试自定义PEQ101的时候，设置了PEQ 之后听感声音（output gain）会变大</p>
@@ -383,21 +383,21 @@
 </div>
 <div class="reply odd">
 <h3 id="20260312-1618-2">2026/03/12 16:18 — [人名2]<a class="headerlink" href="#20260312-1618-2" title="Permanent link">&para;</a></h3>
-<p>Hi 邓工，</p>
+<p>Hi [人名95]，</p>
 <p>我这边想表达的是，在最新的的UT App是有问题，新版的App 把 real-time update 和 set index 和在一起了，而旧版的App则是分开的。分开的测试中 set index 没有问题， real-time update才有问题。</p>
 </div>
 <div class="reply even">
-<h3 id="20260316-1903-10">2026/03/16 19:03 — [人名10]<a class="headerlink" href="#20260316-1903-10" title="Permanent link">&para;</a></h3>
+<h3 id="20260316-1903-12">2026/03/16 19:03 — [人名12]<a class="headerlink" href="#20260316-1903-12" title="Permanent link">&para;</a></h3>
 <p>Hi  @[邮箱已隐藏] </p>
 <p>real-time update才有问题 --&gt; 如沟通，请帮忙先确认下是不是master gain 的差异，config tool 配置master gain = 0看下会有音量变大问题不</p>
 </div>
 <div class="reply odd">
 <h3 id="20260317-1003-2">2026/03/17 10:03 — [人名2]<a class="headerlink" href="#20260317-1003-2" title="Permanent link">&para;</a></h3>
-<p>Hi 邓工，</p>
+<p>Hi [人名95]，</p>
 <p>config tool 上面，master gain 设置为0之后，没有听出区别了。会不会是 App 没有读到 master gain 的值，然后写了一个0dB 然后生成 Coefficient的内容？</p>
 </div>
 <div class="reply even">
-<h3 id="20260318-1801-31">2026/03/18 18:01 — [人名31]<a class="headerlink" href="#20260318-1801-31" title="Permanent link">&para;</a></h3>
+<h3 id="20260318-1801-33">2026/03/18 18:01 — [人名33]<a class="headerlink" href="#20260318-1801-33" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] </p>
 <p>請更新 Android SDK 進行驗證
 [附件: ABT_Android_SDK_v5.9.0.6.2_SQC_20260318_175308.7z]
@@ -408,33 +408,33 @@
 </div>
 <div class="reply odd">
 <h3 id="20260318-1917-2">2026/03/18 19:17 — [人名2]<a class="headerlink" href="#20260318-1917-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名31] ([人名31])，</p>
+<p>Hi [人名33] ([人名33])，</p>
 <p>master gain 默认是0dB，我在config tool 设置的是-6dB，App无法读取得到预设的值吗？频点读取的gain 是正确的。</p>
 </div>
 <div class="reply even">
-<h3 id="20260319-1002-31">2026/03/19 10:02 — [人名31]<a class="headerlink" href="#20260319-1002-31" title="Permanent link">&para;</a></h3>
+<h3 id="20260319-1002-33">2026/03/19 10:02 — [人名33]<a class="headerlink" href="#20260319-1002-33" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] </p>
 <p>這版 app 可以讀取的到 config tool 上設置的 master gain，再請你確認是否符合預期
 謝謝</p>
 </div>
 <div class="reply odd">
 <h3 id="20260319-1131-2">2026/03/19 11:31 — [人名2]<a class="headerlink" href="#20260319-1131-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名31] ([人名31])，</p>
+<p>Hi [人名33] ([人名33])，</p>
 <p>确认好了，可以读取 master gain，读取值也是正确的，设置之后也正常。昨晚我没有测试好。</p>
 <p>请帮我再提供iOS 版本的。</p>
 </div>
 <div class="reply even">
 <h3 id="20260323-1530-2">2026/03/23 15:30 — [人名2]<a class="headerlink" href="#20260323-1530-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名31] ([人名31])，</p>
+<p>Hi [人名33] ([人名33])，</p>
 <p>iOS 版本预计什么可以提供；</p>
 </div>
 <div class="reply odd">
-<h3 id="20260323-1544-33">2026/03/23 15:44 — [人名33]<a class="headerlink" href="#20260323-1544-33" title="Permanent link">&para;</a></h3>
+<h3 id="20260323-1544-36">2026/03/23 15:44 — [人名36]<a class="headerlink" href="#20260323-1544-36" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ,</p>
 <p>預計明天提供. 謝謝</p>
 </div>
 <div class="reply even">
-<h3 id="20260324-1749-33">2026/03/24 17:49 — [人名33]<a class="headerlink" href="#20260324-1749-33" title="Permanent link">&para;</a></h3>
+<h3 id="20260324-1749-36">2026/03/24 17:49 — [人名36]<a class="headerlink" href="#20260324-1749-36" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ,</p>
 <p>請更新iOS SDK進行驗證, 新增master gain, auto rescale</p>
 <p>[附件: ABT_iOS_SDK_v5.10.0.1.7z]</p>

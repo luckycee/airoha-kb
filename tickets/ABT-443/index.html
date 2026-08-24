@@ -362,7 +362,7 @@
 <p><a href="../ABT-442/">← 上一个工单：ABT-442</a>　<a href="../ABT-444/">→ 下一个工单：ABT-444</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>HI [人名5]：</p>
+<p>HI [人名6]：</p>
 <p>如附件log，测试AB1571D+AB1577M，71D接入USB Audio后播放音乐，77M端不会死机。但是当71D接入linein线后，77M端就死机了，log如附件。</p>
 <p>SDK版本：V5.2.0，软件都关闭了lc3 plus。</p>
 <p>dongle端开启了linein：AIR_LINE_IN_ENABLE</p>
@@ -371,37 +371,37 @@
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
-<h3 id="20240816-1053-23-24">2024/08/16 10:53 — [人名23] [人名24]<a class="headerlink" href="#20240816-1053-23-24" title="Permanent link">&para;</a></h3>
+<h3 id="20240816-1053-25-26">2024/08/16 10:53 — [人名25] [人名26]<a class="headerlink" href="#20240816-1053-25-26" title="Permanent link">&para;</a></h3>
 <p>[附件: 71D_dongle.pcapng]</p>
 <p>[附件: 77m_13377_死机.pcapng]</p>
 </div>
 <div class="reply even">
-<h3 id="20240819-1011-19">2024/08/19 10:11 — [人名19]<a class="headerlink" href="#20240819-1011-19" title="Permanent link">&para;</a></h3>
+<h3 id="20240819-1011-21">2024/08/19 10:11 — [人名21]<a class="headerlink" href="#20240819-1011-21" title="Permanent link">&para;</a></h3>
 <p>hi @[邮箱已隐藏] </p>
 <p>麻烦帮忙提供一下full dump呢</p>
 <p>Thanks</p>
 </div>
 <div class="reply odd">
-<h3 id="20240819-1022-23-24">2024/08/19 10:22 — [人名23] [人名24]<a class="headerlink" href="#20240819-1022-23-24" title="Permanent link">&para;</a></h3>
-<p>Hi [人名19] ([人名19])：</p>
+<h3 id="20240819-1022-25-26">2024/08/19 10:22 — [人名25] [人名26]<a class="headerlink" href="#20240819-1022-25-26" title="Permanent link">&para;</a></h3>
+<p>Hi [人名21] ([人名21])：</p>
 <p>附件为77m_13377_死机.pcapng对应的fulldump文件。</p>
 <p>[附件: Logging240816_104244_COM104.7z]</p>
 </div>
 <div class="reply even">
-<h3 id="20240821-1406-19">2024/08/21 14:06 — [人名19]<a class="headerlink" href="#20240821-1406-19" title="Permanent link">&para;</a></h3>
+<h3 id="20240821-1406-21">2024/08/21 14:06 — [人名21]<a class="headerlink" href="#20240821-1406-21" title="Permanent link">&para;</a></h3>
 <p>hi @[邮箱已隐藏] </p>
-<p>田工，请问一下</p>
+<p>[人名59]，请问一下</p>
 <p>您们的测试手法是怎么样的？使用默认的SDK 复现的吗？</p>
 <p>Thanks</p>
 </div>
 <div class="reply odd">
-<h3 id="20240821-1419-23-24">2024/08/21 14:19 — [人名23] [人名24]<a class="headerlink" href="#20240821-1419-23-24" title="Permanent link">&para;</a></h3>
-<p>Hi [人名19] ([人名19])：</p>
+<h3 id="20240821-1419-25-26">2024/08/21 14:19 — [人名25] [人名26]<a class="headerlink" href="#20240821-1419-25-26" title="Permanent link">&para;</a></h3>
+<p>Hi [人名21] ([人名21])：</p>
 <p>最开始已经有描述复现步骤。是标准SDK，改动也已有说明。</p>
 <p>[图片: image-1.png]</p>
 </div>
 <div class="reply even">
-<h3 id="20240821-1430-19">2024/08/21 14:30 — [人名19]<a class="headerlink" href="#20240821-1430-19" title="Permanent link">&para;</a></h3>
+<h3 id="20240821-1430-21">2024/08/21 14:30 — [人名21]<a class="headerlink" href="#20240821-1430-21" title="Permanent link">&para;</a></h3>
 <p>hi @[邮箱已隐藏] </p>
 <p>如果是不想要用LC3plus的codec的话，可以build  一下这个project 然后测试看看</p>
 <p>./build.sh ab1577am_evk headset_ref_design_ull3_opus</p>
@@ -418,15 +418,15 @@
 <p>Thanks</p>
 </div>
 <div class="reply odd">
-<h3 id="20240822-1052-23-24">2024/08/22 10:52 — [人名23] [人名24]<a class="headerlink" href="#20240822-1052-23-24" title="Permanent link">&para;</a></h3>
-<p>Hi [人名19] ([人名19])：</p>
+<h3 id="20240822-1052-25-26">2024/08/22 10:52 — [人名25] [人名26]<a class="headerlink" href="#20240822-1052-25-26" title="Permanent link">&para;</a></h3>
+<p>Hi [人名21] ([人名21])：</p>
 <p>我这边使用V5.0.0的SDK测试，同样的修改，同样的测试方法，也会死机。</p>
 <p>但是dongle和headset端都打开lc3 plus后，则不会死机。是ull3 linein一定要用lc3 plus codec吗？</p>
 <p>附件为v5.0.0的死机log。</p>
 <p>[附件: Logging240822_104656_COM104.7z]</p>
 </div>
 <div class="reply even">
-<h3 id="20240822-1338-19">2024/08/22 13:38 — [人名19]<a class="headerlink" href="#20240822-1338-19" title="Permanent link">&para;</a></h3>
+<h3 id="20240822-1338-21">2024/08/22 13:38 — [人名21]<a class="headerlink" href="#20240822-1338-21" title="Permanent link">&para;</a></h3>
 <p>hi  @[邮箱已隐藏] </p>
 <p>分析 [附件: Logging240822_104656_COM104.7z] </p>
 <p>[图片: image-2024-08-22-13-35-45-842.png]</p>
@@ -448,8 +448,8 @@
 <p>Thanks</p>
 </div>
 <div class="reply odd">
-<h3 id="20240822-1458-23-24">2024/08/22 14:58 — [人名23] [人名24]<a class="headerlink" href="#20240822-1458-23-24" title="Permanent link">&para;</a></h3>
-<p>Hi [人名19] ([人名19])：</p>
+<h3 id="20240822-1458-25-26">2024/08/22 14:58 — [人名25] [人名26]<a class="headerlink" href="#20240822-1458-25-26" title="Permanent link">&para;</a></h3>
+<p>Hi [人名21] ([人名21])：</p>
 <p>1、测试opus的project，dongle和headset连接上后，headset端死机了，如附件log（Logging240822_143549_COM104.7z）。</p>
 <p>2、打电话两边都会死机，log（dongle：Logging240822_144439_COM95.7z；headset：Logging240822_144437_COM104.7z）</p>
 <p>[附件: Logging240822_143549_COM104.7z]</p>
@@ -457,18 +457,18 @@
 <p>[附件: Logging240822_144439_COM95.7z]</p>
 </div>
 <div class="reply even">
-<h3 id="20240903-1012-19">2024/09/03 10:12 — [人名19]<a class="headerlink" href="#20240903-1012-19" title="Permanent link">&para;</a></h3>
+<h3 id="20240903-1012-21">2024/09/03 10:12 — [人名21]<a class="headerlink" href="#20240903-1012-21" title="Permanent link">&para;</a></h3>
 <p>[附件: <a href="./">ABT-443</a>.rar]</p>
 </div>
 <div class="reply odd">
-<h3 id="20240903-1013-19">2024/09/03 10:13 — [人名19]<a class="headerlink" href="#20240903-1013-19" title="Permanent link">&para;</a></h3>
+<h3 id="20240903-1013-21">2024/09/03 10:13 — [人名21]<a class="headerlink" href="#20240903-1013-21" title="Permanent link">&para;</a></h3>
 <p>hi @[邮箱已隐藏] </p>
 <p>麻烦参照这个文件：[附件: <a href="./">ABT-443</a>.rar]里面的diff 文件 和 source 文件进行更改然后测试看看呢</p>
 <p>Thanks</p>
 </div>
 <div class="reply even">
-<h3 id="20240903-1059-23-24">2024/09/03 10:59 — [人名23] [人名24]<a class="headerlink" href="#20240903-1059-23-24" title="Permanent link">&para;</a></h3>
-<p>Hi [人名19] ([人名19])：
+<h3 id="20240903-1059-25-26">2024/09/03 10:59 — [人名25] [人名26]<a class="headerlink" href="#20240903-1059-25-26" title="Permanent link">&para;</a></h3>
+<p>Hi [人名21] ([人名21])：
 测试ull3 opus连接不会死机了，使用pc播放音乐也不会死机。</p>
 </div>
 <div class="ticket-nav">

@@ -21,7 +21,7 @@
     
     
       
-        <title>【[客户E]】AB1565 修改了充电逻辑问题 - ABT 工单知识库</title>
+        <title>【[客户H]】AB1565 修改了充电逻辑问题 - ABT 工单知识库</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#abt-285-eab1565" class="md-skip">
+        <a href="#abt-285-hab1565" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              【[客户E]】AB1565 修改了充电逻辑问题
+              【[客户H]】AB1565 修改了充电逻辑问题
             
           </span>
         </div>
@@ -354,7 +354,7 @@
   
 
 
-<h1 id="abt-285-eab1565">ABT-285 【[客户E]】AB1565 修改了充电逻辑问题<a class="headerlink" href="#abt-285-eab1565" title="Permanent link">&para;</a></h1>
+<h1 id="abt-285-hab1565">ABT-285 【[客户H]】AB1565 修改了充电逻辑问题<a class="headerlink" href="#abt-285-hab1565" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>📅 2023/11/04 10:10　🔗 <a href="https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-285">原始工单链接</a></p>
 </blockquote>
@@ -362,7 +362,7 @@
 <p><a href="../ABT-284/">← 上一个工单：ABT-284</a>　<a href="../ABT-286/">→ 下一个工单：ABT-286</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>在demo code中，耳机收到5V就开机，如果在耳机在仓内盒盖充满电了，仓的5V也没有的情况下，插入USB给充电仓充电，这时5V会上来，耳机立刻就开机（场景一）。</p>
 <p>为了规避这个开机的问题，我修改了你们的充电就开机的逻辑，耳机在关机下，上5V充电不开机了。</p>
 <p>但是，在场景一之后，USB 拔掉，等一下充电仓给耳机的5V也会掉下来，掉之前仓也会发一个chg-cmpl的pattern ，此时耳机会开机。这是异常电，请帮忙看看为什么。</p>
@@ -376,13 +376,13 @@
 </div>
 <div class="reply even">
 <h3 id="20231104-1759-2">2023/11/04 17:59 — [人名2]<a class="headerlink" href="#20231104-1759-2" title="Permanent link">&para;</a></h3>
-<p>HI [人名5]，</p>
+<p>HI [人名6]，</p>
 <p>我这边解决了，把 app_smcharger_ui_shell_event(FALSE, SMCHARGER_EVENT_CHARGER_IN_BOOT, NULL, 0);
 改为 app_smcharger_ui_shell_event(FALSE, SMCHARGER_EVENT_LID_CLOSE, NULL, 0); 即可</p>
 </div>
 <div class="reply odd">
 <h3 id="20231104-2034-2">2023/11/04 20:34 — [人名2]<a class="headerlink" href="#20231104-2034-2" title="Permanent link">&para;</a></h3>
-<p>HI [人名5]，</p>
+<p>HI [人名6]，</p>
 <p>发现了另外一个问题，接入5V后，有概率性会识别为chg out，导致了上层接口获取充电信息有误，导致了不符合预期的操作；</p>
 <p>[图片: Snipaste_2023-11-04_20-33-30.png]</p>
 <p>[图片: Snipaste_2023-11-04_20-32-32.png]</p>
@@ -390,7 +390,7 @@
 <p>[附件: 接入5V后，接口获取充电信息错误.pcapng]</p>
 </div>
 <div class="reply even">
-<h3 id="20231106-1556-5">2023/11/06 15:56 — [人名5]<a class="headerlink" href="#20231106-1556-5" title="Permanent link">&para;</a></h3>
+<h3 id="20231106-1556-6">2023/11/06 15:56 — [人名6]<a class="headerlink" href="#20231106-1556-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>这个charge out 也是1wire 的charge out，可以修改充电仓电压com mode到3V 以下再看看</p>
 </div>

@@ -362,12 +362,12 @@
 <p><a href="../ABT-85/">← 上一个工单：ABT-85</a>　<a href="../ABT-87/">→ 下一个工单：ABT-87</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>HI [人名5]，</p>
+<p>HI [人名6]，</p>
 <p>编译指令为 ./build.sh ab1585_evk earbuds_ref_design_ull2 ，找到对应下的 apps_config_event_list.h 没有发现有 KEY_LE_ULL_PAIRING 这个 key action , 而指令 ./build.sh ab1585_evk dongle_ref_design_ull2 下的apps_config_event_list.h  则有，请问ull2 应该如何配对？</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
-<h3 id="20220923-1511-5">2022/09/23 15:11 — [人名5]<a class="headerlink" href="#20220923-1511-5" title="Permanent link">&para;</a></h3>
+<h3 id="20220923-1511-6">2022/09/23 15:11 — [人名6]<a class="headerlink" href="#20220923-1511-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>ULL2.0配对：</p>
 <p>1.dongle和earbuds开机之后，设定相同的SIRK：AT+LEULL=SIRK,SET,1,2,3,4,5,6,7,8,9,0,A,B,C,D,E,F</p>
@@ -379,17 +379,17 @@
 </div>
 <div class="reply even">
 <h3 id="20220926-2025-2">2022/09/26 20:25 — [人名2]<a class="headerlink" href="#20220926-2025-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>你的截图是1565AM的，应该是1585才对。</p>
 </div>
 <div class="reply odd">
-<h3 id="20220927-0928-5">2022/09/27 09:28 — [人名5]<a class="headerlink" href="#20220927-0928-5" title="Permanent link">&para;</a></h3>
+<h3 id="20220927-0928-6">2022/09/27 09:28 — [人名6]<a class="headerlink" href="#20220927-0928-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>85也是一样的，直接测试吧</p>
 </div>
 <div class="reply even">
 <h3 id="20220927-1951-2">2022/09/27 19:51 — [人名2]<a class="headerlink" href="#20220927-1951-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>可以连接了；但是有问题：</p>
 <ol>
 <li>播放音乐就会死机（附件有FW和死机log，时间在19:41:23）；</li>
@@ -400,38 +400,38 @@
 <p>[附件: earbuds_ref_design_ull2.7z]</p>
 </div>
 <div class="reply odd">
-<h3 id="20220928-1027-5">2022/09/28 10:27 — [人名5]<a class="headerlink" href="#20220928-1027-5" title="Permanent link">&para;</a></h3>
+<h3 id="20220928-1027-6">2022/09/28 10:27 — [人名6]<a class="headerlink" href="#20220928-1027-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>我们目前只能通过at cmd 设定 sirk 的方式配对，暂时没办法用key。</p>
 </div>
 <div class="reply even">
 <h3 id="20220928-1059-2">2022/09/28 10:59 — [人名2]<a class="headerlink" href="#20220928-1059-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>好，死机怎么样？</p>
 </div>
 <div class="reply odd">
-<h3 id="20220928-1130-5">2022/09/28 11:30 — [人名5]<a class="headerlink" href="#20220928-1130-5" title="Permanent link">&para;</a></h3>
+<h3 id="20220928-1130-6">2022/09/28 11:30 — [人名6]<a class="headerlink" href="#20220928-1130-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>请咋earbuds端的mcu和dsp两个mk里面开下面的option：</p>
 <p>[图片: image-2022-09-28-11-30-21-350.png]</p>
 </div>
 <div class="reply even">
 <h3 id="20220928-1149-2">2022/09/28 11:49 — [人名2]<a class="headerlink" href="#20220928-1149-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>确认过的，都有打开，code我只修改了customerized_key_config.c的内容，其他没有动。</p>
 </div>
 <div class="reply odd">
 <h3 id="20220928-1150-2">2022/09/28 11:50 — [人名2]<a class="headerlink" href="#20220928-1150-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>或者把你的FW给我试一试；</p>
 </div>
 <div class="reply even">
 <h3 id="20220928-1826-2">2022/09/28 18:26 — [人名2]<a class="headerlink" href="#20220928-1826-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>有结果吗？</p>
 </div>
 <div class="reply odd">
-<h3 id="20220929-1123-5">2022/09/29 11:23 — [人名5]<a class="headerlink" href="#20220929-1123-5" title="Permanent link">&para;</a></h3>
+<h3 id="20220929-1123-6">2022/09/29 11:23 — [人名6]<a class="headerlink" href="#20220929-1123-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>我这边用附件FW测试播放音乐没有宕机，一切正常</p>
 <p>耳机:./build.sh ab1585_evk earbuds_ref_design_ull2
@@ -439,7 +439,7 @@ dongle:./build.sh ab1585_evk dongle_ref_design_ull2
 [附件: ab158x.rar]</p>
 </div>
 <div class="reply even">
-<h3 id="20220929-1410-5">2022/09/29 14:10 — [人名5]<a class="headerlink" href="#20220929-1410-5" title="Permanent link">&para;</a></h3>
+<h3 id="20220929-1410-6">2022/09/29 14:10 — [人名6]<a class="headerlink" href="#20220929-1410-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>上午发错文件了，麻烦用附件软件测试
 [附件: ab1585_evk.rar]</p>

@@ -362,7 +362,7 @@
 <p><a href="../ABT-476/">← 上一个工单：ABT-476</a>　<a href="../ABT-478/">→ 下一个工单：ABT-478</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>请帮看看这是为什么，使用none的时候通话不会宕机；</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
@@ -377,7 +377,7 @@
 <p>./build.sh ab1565_8m_evk earbuds_ref_design</p>
 </div>
 <div class="reply odd">
-<h3 id="20241113-1730-90">2024/11/13 17:30 — [人名90]<a class="headerlink" href="#20241113-1730-90" title="Permanent link">&para;</a></h3>
+<h3 id="20241113-1730-97">2024/11/13 17:30 — [人名97]<a class="headerlink" href="#20241113-1730-97" title="Permanent link">&para;</a></h3>
 <p>Hi, @[邮箱已隐藏] </p>
 <p>宕机的原因是 nvKey 读取失败，DSP 通知 MCU assert </p>
 <p>!image-2024-11-13-17-23-27-021.png|width=1034,height=27[图片: </p>
@@ -388,49 +388,49 @@
 </div>
 <div class="reply even">
 <h3 id="20241113-1742-2">2024/11/13 17:42 — [人名2]<a class="headerlink" href="#20241113-1742-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名90] ([人名90])，</p>
+<p>Hi [人名97] ([人名97])，</p>
 <p>看我的的FW，里面有这个nvkey。</p>
 <p>[附件: earbuds_ref_design.7z]</p>
 </div>
 <div class="reply odd">
-<h3 id="20241113-1807-90">2024/11/13 18:07 — [人名90]<a class="headerlink" href="#20241113-1807-90" title="Permanent link">&para;</a></h3>
+<h3 id="20241113-1807-97">2024/11/13 18:07 — [人名97]<a class="headerlink" href="#20241113-1807-97" title="Permanent link">&para;</a></h3>
 <p>麻烦把你编译用的 feature mk 也传上来，包括 MCU 和 DSP</p>
 </div>
 <div class="reply even">
 <h3 id="20241113-1815-2">2024/11/13 18:15 — [人名2]<a class="headerlink" href="#20241113-1815-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名90] ([人名90])，</p>
+<p>Hi [人名97] ([人名97])，</p>
 <p>FYI</p>
 <p>[附件: feature_65_8m_earbuds_evb.mk]</p>
 <p>[附件: feature_65_8m_evk.mk]</p>
 </div>
 <div class="reply odd">
 <h3 id="20241114-1518-2">2024/11/14 15:18 — [人名2]<a class="headerlink" href="#20241114-1518-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名90] ([人名90])，</p>
+<p>Hi [人名97] ([人名97])，</p>
 <p>有看到为什么？</p>
 </div>
 <div class="reply even">
 <h3 id="20241115-1448-2">2024/11/15 14:48 — [人名2]<a class="headerlink" href="#20241115-1448-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名90] ([人名90])，</p>
+<p>Hi [人名97] ([人名97])，</p>
 <p>麻烦看看，客户比较着急。</p>
 </div>
 <div class="reply odd">
-<h3 id="20241115-1459-90">2024/11/15 14:59 — [人名90]<a class="headerlink" href="#20241115-1459-90" title="Permanent link">&para;</a></h3>
+<h3 id="20241115-1459-97">2024/11/15 14:59 — [人名97]<a class="headerlink" href="#20241115-1459-97" title="Permanent link">&para;</a></h3>
 <p>MCU 没有读到这个 nvkey id，我们正在看原因，尽快回复。</p>
 </div>
 <div class="reply even">
-<h3 id="20241118-1600-90">2024/11/18 16:00 — [人名90]<a class="headerlink" href="#20241118-1600-90" title="Permanent link">&para;</a></h3>
+<h3 id="20241118-1600-97">2024/11/18 16:00 — [人名97]<a class="headerlink" href="#20241118-1600-97" title="Permanent link">&para;</a></h3>
 <p>Hi, @[邮箱已隐藏] </p>
 <p>DSP 各場景需要 MCU 把 nvkey 資訊帶給 DSP，可以看一下此 nvkey 是否有在當時使用的 feature list 裡面，請看
 \mcu\middleware\ABT\audio\port\ab159x\inc\nvdm\ audio_nvdm_coef_default.h :</p>
 <p>!image-2024-11-18-15-42-31-655.png|width=1231,height=272[图片: </p>
-<p>0xE10A 是在 [人名9]P NR 情景，用作几支 init API 的参数。你在 g_dsp_feature_table 对应行的右边，是否有加入（参照图中方法）？还是右边的 LIST 是否包含了此 nvkey id?</p>
+<p>0xE10A 是在 [人名10]P NR 情景，用作几支 init API 的参数。你在 g_dsp_feature_table 对应行的右边，是否有加入（参照图中方法）？还是右边的 LIST 是否包含了此 nvkey id?</p>
 <p>或是可以在這個 function 加 log，看 MCU 帶了哪些 nvkey 給 DSP:
 ]image-2024-11-18-15-56-57-080.png!
  log 里没有的话，请检查是否在某个地方，将参数屏蔽掉了？</p>
 </div>
 <div class="reply odd">
 <h3 id="20241121-1621-2">2024/11/21 16:21 — [人名2]<a class="headerlink" href="#20241121-1621-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名90] ([人名90])，</p>
+<p>Hi [人名97] ([人名97])，</p>
 <p>感谢回复，已经修改为 none ，不要 AINR 给客户送样了。</p>
 <p>按照你图片的地方，我修改为 NVKEY_DSP_PARA_RESERVED ，通话不会发生assert 了，并且我加了log，通话时load 的nvkey 的确不同。过滤 frame matches "feature 0x" 可以看到。</p>
 <p>但是我对比了SDK5.3.0 ，相同文件的位置，发现跟SDK3.9.0 默认是一样的使用 NVKEY_DSP_PARA_POSITIVE_GAIN，SDK5.3.0 开启AINR并会宕机，并不是 NVKEY_DSP_PARA_RESERVED。</p>
@@ -442,7 +442,7 @@
 <p>[附件: 修改之前会宕机.pcapng]</p>
 </div>
 <div class="reply even">
-<h3 id="20241126-1003-90">2024/11/26 10:03 — [人名90]<a class="headerlink" href="#20241126-1003-90" title="Permanent link">&para;</a></h3>
+<h3 id="20241126-1003-97">2024/11/26 10:03 — [人名97]<a class="headerlink" href="#20241126-1003-97" title="Permanent link">&para;</a></h3>
 <p>Hi, @[邮箱已隐藏] </p>
 <p>之前的例子，原意是添加 NVKEY_DSP_PARA_RESERVED，而非修改掉原有的 NVKEY_DSP_PARA_POSITIVE_GAIN</p>
 <p><em>“SDK5.3.0 开启AINR并会宕机，并不是 NVKEY_DSP_PARA_RESERVED。”</em> </p>
@@ -453,7 +453,7 @@
 </div>
 <div class="reply odd">
 <h3 id="20241129-1438-2">2024/11/29 14:38 — [人名2]<a class="headerlink" href="#20241129-1438-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名90] ([人名90])，</p>
+<p>Hi [人名97] ([人名97])，</p>
 <p>5.3.0 在默认情况下，能够打印出相应的 key id</p>
 <blockquote>
 <blockquote>
@@ -468,7 +468,7 @@
 </blockquote>
 </div>
 <div class="reply even">
-<h3 id="20241129-1630-90">2024/11/29 16:30 — [人名90]<a class="headerlink" href="#20241129-1630-90" title="Permanent link">&para;</a></h3>
+<h3 id="20241129-1630-97">2024/11/29 16:30 — [人名97]<a class="headerlink" href="#20241129-1630-97" title="Permanent link">&para;</a></h3>
 <p>Hi, @[邮箱已隐藏] </p>
 <p>目前 SDK 中，AIR_3RD_PARTY_NR_ENABLE 默认有配好，检查你的代码</p>
 <p>确保高亮的部分，有包 NVKEY_DSP_PARA_RESERVED，没有的话要添加一下</p>

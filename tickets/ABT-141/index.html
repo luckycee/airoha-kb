@@ -362,39 +362,39 @@
 <p><a href="../ABT-140/">← 上一个工单：ABT-140</a>　<a href="../ABT-142/">→ 下一个工单：ABT-142</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5],</p>
-<p>客户1565AM安规认证遇到一个问题就是短路SPK端芯片不保护。希望短路后就没输出，不要拉电池电流。跟帝木沟通过，他说能改软件，让播放音乐的时候，功放不输出。请指导一下如何实现：监控这个大电流，如何控制不输出。</p>
+<p>Hi [人名6],</p>
+<p>客户1565AM安规认证遇到一个问题就是短路SPK端芯片不保护。希望短路后就没输出，不要拉电池电流。跟[人名4]沟通过，他说能改软件，让播放音乐的时候，功放不输出。请指导一下如何实现：监控这个大电流，如何控制不输出。</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
-<h3 id="20230206-1138-5">2023/02/06 11:38 — [人名5]<a class="headerlink" href="#20230206-1138-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230206-1138-6">2023/02/06 11:38 — [人名6]<a class="headerlink" href="#20230206-1138-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>我们软件只能读充电电流，其他pin读不了哦。</p>
 </div>
 <div class="reply even">
 <h3 id="20230206-1551-2">2023/02/06 15:51 — [人名2]<a class="headerlink" href="#20230206-1551-2" title="Permanent link">&para;</a></h3>
-<p>Hi fason，</p>
+<p>Hi [人名6]，</p>
 <p>把接口发给我；</p>
 </div>
 <div class="reply odd">
-<h3 id="20230206-1552-5">2023/02/06 15:52 — [人名5]<a class="headerlink" href="#20230206-1552-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230206-1552-6">2023/02/06 15:52 — [人名6]<a class="headerlink" href="#20230206-1552-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>没有读spk pin的接口啊</p>
 </div>
 <div class="reply even">
 <h3 id="20230206-1615-2">2023/02/06 16:15 — [人名2]<a class="headerlink" href="#20230206-1615-2" title="Permanent link">&para;</a></h3>
-<p>@帝木 这个怎么处理的？</p>
+<p>@[人名4] 这个怎么处理的？</p>
 </div>
 <div class="reply odd">
 <h3 id="20230206-1739-4">2023/02/06 17:39 — [人名4]<a class="headerlink" href="#20230206-1739-4" title="Permanent link">&para;</a></h3>
 <p>哈我知道的就是和客户说，软件改了A2DP连接的时候，播放音乐不要打开功放</p>
 <p>其他客户可以实现</p>
-<p>@[人名13]</p>
+<p>@[人名16]</p>
 <p>你要不要问一下RD怎么实现这个需求</p>
 <p>避开实验室验证而已</p>
 </div>
 <div class="reply even">
-<h3 id="20230206-1741-5">2023/02/06 17:41 — [人名5]<a class="headerlink" href="#20230206-1741-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230206-1741-6">2023/02/06 17:41 — [人名6]<a class="headerlink" href="#20230206-1741-6" title="Permanent link">&para;</a></h3>
 <p>RD 说了不行</p>
 </div>
 <div class="reply odd">
@@ -403,27 +403,27 @@
 </div>
 <div class="reply even">
 <h3 id="20230210-1144-2">2023/02/10 11:44 — [人名2]<a class="headerlink" href="#20230210-1144-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>有问到吗？</p>
 </div>
 <div class="reply odd">
-<h3 id="20230210-1339-5">2023/02/10 13:39 — [人名5]<a class="headerlink" href="#20230210-1339-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230210-1339-6">2023/02/10 13:39 — [人名6]<a class="headerlink" href="#20230210-1339-6" title="Permanent link">&para;</a></h3>
 <p>HI @[邮箱已隐藏]，</p>
 <p>APP_VolSetting_SetSpeakerMuteOn(SPKR_MUTE_MASK_CHG_CASE);</p>
 <p>可以在测试的时候调用这个接口去 mute 掉 speaker 看下。</p>
 </div>
 <div class="reply even">
 <h3 id="20230210-1412-2">2023/02/10 14:12 — [人名2]<a class="headerlink" href="#20230210-1412-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>接口清楚了，怎么知道何时调用？</p>
 </div>
 <div class="reply odd">
-<h3 id="20230210-1416-5">2023/02/10 14:16 — [人名5]<a class="headerlink" href="#20230210-1416-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230210-1416-6">2023/02/10 14:16 — [人名6]<a class="headerlink" href="#20230210-1416-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>你们放在按键里面吧，测试的时候，看到短路了，就触发就好了</p>
 </div>
 <div class="reply even">
-<h3 id="20230210-1418-5">2023/02/10 14:18 — [人名5]<a class="headerlink" href="#20230210-1418-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230210-1418-6">2023/02/10 14:18 — [人名6]<a class="headerlink" href="#20230210-1418-6" title="Permanent link">&para;</a></h3>
 <p>客户应该比较清楚吧，或者你们做一个always mute 的软件，或者手动触发</p>
 </div>
 <div class="ticket-nav">

@@ -21,7 +21,7 @@
     
     
       
-        <title>【[客户E]】修改bitrate 后有概率出现杂音 - ABT 工单知识库</title>
+        <title>【[客户H]】修改bitrate 后有概率出现杂音 - ABT 工单知识库</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#abt-478-ebitrate" class="md-skip">
+        <a href="#abt-478-hbitrate" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              【[客户E]】修改bitrate 后有概率出现杂音
+              【[客户H]】修改bitrate 后有概率出现杂音
             
           </span>
         </div>
@@ -354,7 +354,7 @@
   
 
 
-<h1 id="abt-478-ebitrate">ABT-478 【[客户E]】修改bitrate 后有概率出现杂音<a class="headerlink" href="#abt-478-ebitrate" title="Permanent link">&para;</a></h1>
+<h1 id="abt-478-hbitrate">ABT-478 【[客户H]】修改bitrate 后有概率出现杂音<a class="headerlink" href="#abt-478-hbitrate" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>📅 2024/11/14 16:42　🔗 <a href="https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-478">原始工单链接</a></p>
 </blockquote>
@@ -362,7 +362,7 @@
 <p><a href="../ABT-477/">← 上一个工单：ABT-477</a>　<a href="../ABT-479/">→ 下一个工单：ABT-479</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>在把默认的320kbps改为160kbps 之后，发现headset 这边有概率出现杂声，附件有dongle 和headset 的audio dump。dongle 端给的没有问题，headset的 source in 没有问题，在cpd out时出现了杂音。相关联的jira <a href="../ABT-461/">ABT-461</a></p>
 <p>为什么修改为160kbps？</p>
 <blockquote>
@@ -379,55 +379,55 @@
 </div>
 <div class="reply even">
 <h3 id="20241114-1713-2">2024/11/14 17:13 — [人名2]<a class="headerlink" href="#20241114-1713-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>附上手机的录音，建议使用耳机来听，不要使用电脑外放，160kbps的录音，在提示音时能够明显听到类似风吹过麦克风的杂音， 320kbps的则干净许多。</p>
 <p>[附件: 320kbps-.mp3]</p>
 <p>[附件: 160kbps-.mp3]</p>
 </div>
 <div class="reply odd">
 <h3 id="20241114-1721-2">2024/11/14 17:21 — [人名2]<a class="headerlink" href="#20241114-1721-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>在补充一个内容，客户测试对比了320kbps和160kbps的失真，发现在5K的位置，160kbps的要更多；</p>
 <p>[图片: 微信图片_[序列号已隐藏].jpg]</p>
 </div>
 <div class="reply even">
 <h3 id="20241114-1731-2">2024/11/14 17:31 — [人名2]<a class="headerlink" href="#20241114-1731-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>补充了修改的地方， headset 和dongle 两个project 都修改了；</p>
 <p>[图片: PixPin_2024-11-14_17-30-18.png]</p>
 <p>[图片: PixPin_2024-11-14_17-30-36.png]</p>
 </div>
 <div class="reply odd">
 <h3 id="20241114-1735-2">2024/11/14 17:35 — [人名2]<a class="headerlink" href="#20241114-1735-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>补充 320kbps 的dump 发现在cpd out 也有一个杂音在，但是在实际的听听感中 ，没有那种噼里啪啦的杂音。</p>
 <p>[附件: Logging241114_164742_COM16_320kbps_dongle.7z]</p>
 <p>[附件: Logging241114_164709_COM17_320kbps_headset.7z]</p>
 </div>
 <div class="reply even">
-<h3 id="20241115-0948-5">2024/11/15 09:48 — [人名5]<a class="headerlink" href="#20241115-0948-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241115-0948-6">2024/11/15 09:48 — [人名6]<a class="headerlink" href="#20241115-0948-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>麻烦确认是不是这个点呢，看起来红框处有log drop，可以只录一个dump点CPD_OUT看看，先确保没有log drop。</p>
 <p>!image-2024-11-15-09-47-22-531.png|width=1660,height=156!</p>
 </div>
 <div class="reply odd">
 <h3 id="20241115-1101-2">2024/11/15 11:01 — [人名2]<a class="headerlink" href="#20241115-1101-2" title="Permanent link">&para;</a></h3>
-<p>Hi fason,</p>
+<p>Hi [人名6],</p>
 <p>不是，是基本跟播放的同时；</p>
 </div>
 <div class="reply even">
-<h3 id="20241115-1342-5">2024/11/15 13:42 — [人名5]<a class="headerlink" href="#20241115-1342-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241115-1342-6">2024/11/15 13:42 — [人名6]<a class="headerlink" href="#20241115-1342-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>现场听的杂音，CPD out听起来也没有，麻烦录一下sink out1确认一下是否有问题</p>
 </div>
 <div class="reply odd">
 <h3 id="20241115-1400-2">2024/11/15 14:00 — [人名2]<a class="headerlink" href="#20241115-1400-2" title="Permanent link">&para;</a></h3>
-<p>HI fason，</p>
+<p>HI [人名6]，</p>
 <p>听着好像有点啊</p>
 <p>[附件: headset_160kbps_sink_out+source_in loggign.7z]</p>
 </div>
 <div class="reply even">
-<h3 id="20241115-1422-5">2024/11/15 14:22 — [人名5]<a class="headerlink" href="#20241115-1422-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241115-1422-6">2024/11/15 14:22 — [人名6]<a class="headerlink" href="#20241115-1422-6" title="Permanent link">&para;</a></h3>
 <p>ULL2.0 headset</p>
 <p>[图片: image-2024-11-15-14-22-56-516.png]</p>
 <p>ULL2.0 dongle </p>
@@ -435,21 +435,21 @@
 </div>
 <div class="reply odd">
 <h3 id="20241115-1445-2">2024/11/15 14:45 — [人名2]<a class="headerlink" href="#20241115-1445-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>headset 的 codec in[1]，dongle 的 sink out[2]都需要重新转一道，我在 headset 的 source in 听到了那种杂音，但是 dongle 的source in 又没有，需要确认下到底杂音在[1]还是[2]。</p>
 <p>[附件: dognle_source_in + sink out.7z]</p>
 <p>[附件: headset_code_in + source_in.7z]</p>
 </div>
 <div class="reply even">
 <h3 id="20241115-1808-2">2024/11/15 18:08 — [人名2]<a class="headerlink" href="#20241115-1808-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>请帮忙回复一下客户关心的问题：</p>
 <h1 id="_3">这个问题能解决吗？<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h1>
 <h1 id="_4">能的话，需要花多长时间解决？不能的话是为什么？<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h1>
 <p>客户需要根据你这边的回复，来确定是否等这个问题解决，客户要安排生产了。</p>
 </div>
 <div class="reply odd">
-<h3 id="20241116-1744-5">2024/11/16 17:44 — [人名5]<a class="headerlink" href="#20241116-1744-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241116-1744-6">2024/11/16 17:44 — [人名6]<a class="headerlink" href="#20241116-1744-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>bt_ull_le_srv_set_codec_param_by_sample_rate</p>
 <p>这个api，这下面两个函数的 g_ull_le_spk_stream_param_samp_48k_br_320k_stero改成g_ull_le_spk_stream_param_samp_48k_br_160k_stero</p>
@@ -460,7 +460,7 @@
 </div>
 <div class="reply even">
 <h3 id="20241116-1833-2">2024/11/16 18:33 — [人名2]<a class="headerlink" href="#20241116-1833-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>我这么修改应该是改对了，但是听起来没有改善。</p>
 <p>[图片: PixPin_2024-11-16_18-29-49.png]</p>
 <p>[图片: PixPin_2024-11-16_18-27-45.png]</p>
@@ -468,39 +468,39 @@
 <p>[图片: PixPin_2024-11-16_18-26-45.png]</p>
 </div>
 <div class="reply odd">
-<h3 id="20241118-1005-5">2024/11/18 10:05 — [人名5]<a class="headerlink" href="#20241118-1005-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241118-1005-6">2024/11/18 10:05 — [人名6]<a class="headerlink" href="#20241118-1005-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>麻烦再提供一下log</p>
 </div>
 <div class="reply even">
 <h3 id="20241118-1040-2">2024/11/18 10:40 — [人名2]<a class="headerlink" href="#20241118-1040-2" title="Permanent link">&para;</a></h3>
-<p>HI [人名5]，</p>
+<p>HI [人名6]，</p>
 <p>见附件log；</p>
 <p>[附件: headset_Logging241118_103558_COM17.7z]</p>
 <p>[附件: dongle_Logging241118_103529_COM16.7z]</p>
 </div>
 <div class="reply odd">
-<h3 id="20241118-1925-5">2024/11/18 19:25 — [人名5]<a class="headerlink" href="#20241118-1925-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241118-1925-6">2024/11/18 19:25 — [人名6]<a class="headerlink" href="#20241118-1925-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>这边看dongle的log很多log error，麻烦确认一下log bin呢</p>
 <p>[图片: image-2024-11-18-19-25-14-587.png]</p>
 </div>
 <div class="reply even">
 <h3 id="20241118-2005-2">2024/11/18 20:05 — [人名2]<a class="headerlink" href="#20241118-2005-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>COM16 为dongle ，com17 为 headset ；</p>
 <p>[附件: Logging241118_200332_COM17.7z]</p>
 <p>[附件: Logging241118_200312_COM16.7z]</p>
 </div>
 <div class="reply odd">
-<h3 id="20241119-1540-5">2024/11/19 15:40 — [人名5]<a class="headerlink" href="#20241119-1540-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241119-1540-6">2024/11/19 15:40 — [人名6]<a class="headerlink" href="#20241119-1540-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>麻烦替换附件.o 试试
 [附件: pisplit_celt_codec_1565_RI_2019_12_24_1025.rar]</p>
 </div>
 <div class="reply even">
 <h3 id="20241120-1948-2">2024/11/20 19:48 — [人名2]<a class="headerlink" href="#20241120-1948-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>客户问题解决，关闭；</p>
 </div>
 <div class="ticket-nav">

@@ -362,23 +362,23 @@
 <p><a href="../ABT-440/">← 上一个工单：ABT-440</a>　<a href="../ABT-442/">→ 下一个工单：ABT-442</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>HI [人名5]：</p>
+<p>HI [人名6]：</p>
 <p>如<a href="../ABT-429/">ABT-429</a>所述，71D不支持内部电池管理的应用场景。7x是否有其他可以替代71D做dongle应用的芯片，要支持内部电池管理。</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
-<h3 id="20240814-1758-18">2024/08/14 17:58 — [人名18]<a class="headerlink" href="#20240814-1758-18" title="Permanent link">&para;</a></h3>
+<h3 id="20240814-1758-5">2024/08/14 17:58 — [人名5]<a class="headerlink" href="#20240814-1758-5" title="Permanent link">&para;</a></h3>
 <p>Dear @[邮箱已隐藏] </p>
 <p>请教一下这个dongle是要做什么功能？</p>
 <p>LE Audio dongle or ULL2.0 dongle or 其他。</p>
 </div>
 <div class="reply even">
-<h3 id="20240814-1813-23-24">2024/08/14 18:13 — [人名23] [人名24]<a class="headerlink" href="#20240814-1813-23-24" title="Permanent link">&para;</a></h3>
-<p>HI [人名18] ([人名18])：</p>
+<h3 id="20240814-1813-25-26">2024/08/14 18:13 — [人名25] [人名26]<a class="headerlink" href="#20240814-1813-25-26" title="Permanent link">&para;</a></h3>
+<p>HI [人名5] ([人名5])：</p>
 <p>ULL3.0 dongle，并且有linein输入。当dongle端用做linein输入时，需要用bat供电；usb audio时，用usb供电。</p>
 </div>
 <div class="reply odd">
-<h3 id="20240815-1018-18">2024/08/15 10:18 — [人名18]<a class="headerlink" href="#20240815-1018-18" title="Permanent link">&para;</a></h3>
+<h3 id="20240815-1018-5">2024/08/15 10:18 — [人名5]<a class="headerlink" href="#20240815-1018-5" title="Permanent link">&para;</a></h3>
 <p>Dear @[邮箱已隐藏] ,</p>
 <p>请教一下：</p>
 <p>[https://eservice.ABT.com.tw/servicedesk/customer/portal/1038/<a href="../ABT-429/">ABT-429</a>]</p>
@@ -386,14 +386,14 @@
 <p>这个是贵司自行想这样设计的吗？或是贵司从哪看到有这样的设计呀？谢谢。</p>
 </div>
 <div class="reply even">
-<h3 id="20240815-1044-23-24">2024/08/15 10:44 — [人名23] [人名24]<a class="headerlink" href="#20240815-1044-23-24" title="Permanent link">&para;</a></h3>
-<p>HI [人名18] ([人名18])：</p>
+<h3 id="20240815-1044-25-26">2024/08/15 10:44 — [人名25] [人名26]<a class="headerlink" href="#20240815-1044-25-26" title="Permanent link">&para;</a></h3>
+<p>HI [人名5] ([人名5])：</p>
 <p>如<a href="../ABT-429/">ABT-429</a>中下图所示内容，因为有相关引脚，只是参考原理图中未见到接出，客户端以为有这个pin脚，是可以做bat供电的。</p>
 <p>而65D是没有相关pin脚的，并且框图也不一样。</p>
 <p>[图片: QQ20240815-103429.png]</p>
 </div>
 <div class="reply odd">
-<h3 id="20240819-1008-18">2024/08/19 10:08 — [人名18]<a class="headerlink" href="#20240819-1008-18" title="Permanent link">&para;</a></h3>
+<h3 id="20240819-1008-5">2024/08/19 10:08 — [人名5]<a class="headerlink" href="#20240819-1008-5" title="Permanent link">&para;</a></h3>
 <p>Dear @[邮箱已隐藏] ,</p>
 <p>目前SDK仅1571D支持ULL3.0, 若需换成7x其他的Chip，ABT建议用1577M,</p>
 <p>但SDK现在没有ULL3.0的1577M dongle project，需要添加并SQC。</p>
@@ -402,25 +402,25 @@
 <p>若贵司确定用1577M且明确了所需相关功能，ABT再添加相关1577M dongle project并SQC, 谢谢。</p>
 </div>
 <div class="reply even">
-<h3 id="20240819-1029-23-24">2024/08/19 10:29 — [人名23] [人名24]<a class="headerlink" href="#20240819-1029-23-24" title="Permanent link">&para;</a></h3>
-<p>Hi [人名18] ([人名18])：</p>
+<h3 id="20240819-1029-25-26">2024/08/19 10:29 — [人名25] [人名26]<a class="headerlink" href="#20240819-1029-25-26" title="Permanent link">&para;</a></h3>
+<p>Hi [人名5] ([人名5])：</p>
 <p>目前测试的编译选项是：./build.sh ab1571d_evk dongle_ref_design_ull3_afe</p>
 <p>在此基础上添加LINE IN &amp; Internal Charger/Battery management需求。</p>
 </div>
 <div class="reply odd">
-<h3 id="20240819-1031-23-24">2024/08/19 10:31 — [人名23] [人名24]<a class="headerlink" href="#20240819-1031-23-24" title="Permanent link">&para;</a></h3>
-<p>Hi [人名18] ([人名18])：</p>
+<h3 id="20240819-1031-25-26">2024/08/19 10:31 — [人名25] [人名26]<a class="headerlink" href="#20240819-1031-25-26" title="Permanent link">&para;</a></h3>
+<p>Hi [人名5] ([人名5])：</p>
 <p>添加相关1577M dongle project并SQC，大概需要多久？</p>
 </div>
 <div class="reply even">
-<h3 id="20240821-0943-18">2024/08/21 09:43 — [人名18]<a class="headerlink" href="#20240821-0943-18" title="Permanent link">&para;</a></h3>
+<h3 id="20240821-0943-5">2024/08/21 09:43 — [人名5]<a class="headerlink" href="#20240821-0943-5" title="Permanent link">&para;</a></h3>
 <p>Dear @[邮箱已隐藏] ,
 添加相关1577M dongle project并SQC，大概需要多久？
 --&gt;目前计划9/E SDK5.3.0支持.</p>
 </div>
 <div class="reply odd">
-<h3 id="20240823-1511-23-24">2024/08/23 15:11 — [人名23] [人名24]<a class="headerlink" href="#20240823-1511-23-24" title="Permanent link">&para;</a></h3>
-<p>HI [人名18] ([人名18])：
+<h3 id="20240823-1511-25-26">2024/08/23 15:11 — [人名25] [人名26]<a class="headerlink" href="#20240823-1511-25-26" title="Permanent link">&para;</a></h3>
+<p>HI [人名5] ([人名5])：
 好的，此题暂时关闭</p>
 </div>
 <div class="ticket-nav">

@@ -21,7 +21,7 @@
     
     
       
-        <title>【[客户D]】SDK5.3.0 AB1571AM ULL3 回连LEA 失败 - ABT 工单知识库</title>
+        <title>【[客户E]】SDK5.3.0 AB1571AM ULL3 回连LEA 失败 - ABT 工单知识库</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#abt-482-dsdk530-ab1571am-ull3-lea" class="md-skip">
+        <a href="#abt-482-esdk530-ab1571am-ull3-lea" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              【[客户D]】SDK5.3.0 AB1571AM ULL3 回连LEA 失败
+              【[客户E]】SDK5.3.0 AB1571AM ULL3 回连LEA 失败
             
           </span>
         </div>
@@ -354,7 +354,7 @@
   
 
 
-<h1 id="abt-482-dsdk530-ab1571am-ull3-lea">ABT-482 【[客户D]】SDK5.3.0 AB1571AM ULL3 回连LEA 失败<a class="headerlink" href="#abt-482-dsdk530-ab1571am-ull3-lea" title="Permanent link">&para;</a></h1>
+<h1 id="abt-482-esdk530-ab1571am-ull3-lea">ABT-482 【[客户E]】SDK5.3.0 AB1571AM ULL3 回连LEA 失败<a class="headerlink" href="#abt-482-esdk530-ab1571am-ull3-lea" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>📅 2024/12/06 20:12　🔗 <a href="https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-482">原始工单链接</a></p>
 </blockquote>
@@ -362,7 +362,7 @@
 <p><a href="../ABT-481/">← 上一个工单：ABT-481</a>　<a href="../ABT-483/">→ 下一个工单：ABT-483</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>此项目支持LEA
 ULL3，headset + dongle。你们有一个key event ”KEY_ULL_RECONNECT”[1] ，在single mode 下触发之后，headset 可以在dongle 和SP 之间切换；在经典蓝牙模式下，headset 连接dognle时，触发[1]，能回连手机，反之亦可以； 在 LEA下，headset 连接dognle时，触发[1]，不能回连手机，反之则可以。在 LEA下，headset 未连接dognle时，触发[1]，能回连手机。</p>
 <p>需要请你看看这是为什么。</p>
@@ -376,61 +376,61 @@ ULL3，headset + dongle。你们有一个key event ”KEY_ULL_RECONNECT”[1] �
 </div>
 <div class="reply even">
 <h3 id="20241217-1018-2">2024/12/17 10:18 — [人名2]<a class="headerlink" href="#20241217-1018-2" title="Permanent link">&para;</a></h3>
-<p>HI [人名5]，</p>
+<p>HI [人名6]，</p>
 <p>这题有解了吗？</p>
 </div>
 <div class="reply odd">
-<h3 id="20241219-1606-5">2024/12/19 16:06 — [人名5]<a class="headerlink" href="#20241219-1606-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241219-1606-6">2024/12/19 16:06 — [人名6]<a class="headerlink" href="#20241219-1606-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>出现问题是耳机的hci log有吗，麻烦提供一下整个log包</p>
 </div>
 <div class="reply even">
 <h3 id="20241219-1625-2">2024/12/19 16:25 — [人名2]<a class="headerlink" href="#20241219-1625-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>见附件；</p>
 <p>[附件: Logging241206_195648_COM10.7z]</p>
 <p>[附件: Logging241206_194657_COM10.7z]</p>
 </div>
 <div class="reply odd">
-<h3 id="20241219-1758-5">2024/12/19 17:58 — [人名5]<a class="headerlink" href="#20241219-1758-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241219-1758-6">2024/12/19 17:58 — [人名6]<a class="headerlink" href="#20241219-1758-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>耳机看起来有打adv ，但是手机没有过来来连，看起来是手机问题了，LEA耳机只支持打adv，不支持主动发起连接</p>
 <p>[图片: image-2024-12-19-17-57-11-313.png]</p>
 </div>
 <div class="reply even">
 <h3 id="20241219-1802-2">2024/12/19 18:02 — [人名2]<a class="headerlink" href="#20241219-1802-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>感觉不太对呀。</p>
 <h1 id="lea">开机回连，是能够回连到LEA的；<a class="headerlink" href="#lea" title="Permanent link">&para;</a></h1>
 <h1 id="dongle-key-event-key_ull_reconnecta-leaalea">dongle 关闭的情况下，执行key event ”KEY_ULL_RECONNECT”[a] 会断开LEA，再一次执行[a]，LEA也能回连。<a class="headerlink" href="#dongle-key-event-key_ull_reconnecta-leaalea" title="Permanent link">&para;</a></h1>
 </div>
 <div class="reply odd">
-<h3 id="20241220-0926-5">2024/12/20 09:26 — [人名5]<a class="headerlink" href="#20241220-0926-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241220-0926-6">2024/12/20 09:26 — [人名6]<a class="headerlink" href="#20241220-0926-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>确认要ULL2 single mode吗？因为很少客户会用到~</p>
 </div>
 <div class="reply even">
 <h3 id="20241220-1034-2">2024/12/20 10:34 — [人名2]<a class="headerlink" href="#20241220-1034-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>就是single mode，之前有个AB1565M headset + AB1565D dongle 也是single mode，出货了</p>
 </div>
 <div class="reply odd">
 <h3 id="20241224-1418-2">2024/12/24 14:18 — [人名2]<a class="headerlink" href="#20241224-1418-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>有空抽时间看看。</p>
 </div>
 <div class="reply even">
-<h3 id="20241224-1436-5">2024/12/24 14:36 — [人名5]<a class="headerlink" href="#20241224-1436-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241224-1436-6">2024/12/24 14:36 — [人名6]<a class="headerlink" href="#20241224-1436-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>客户着急要这个功能吗，后面新的SDK 会支持</p>
 </div>
 <div class="reply odd">
 <h3 id="20241224-1442-2">2024/12/24 14:42 — [人名2]<a class="headerlink" href="#20241224-1442-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>客户在做的项目，等不到你们新SDK 发布了。</p>
 </div>
 <div class="reply even">
-<h3 id="20241224-1803-5">2024/12/24 18:03 — [人名5]<a class="headerlink" href="#20241224-1803-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241224-1803-6">2024/12/24 18:03 — [人名6]<a class="headerlink" href="#20241224-1803-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>麻烦参考这个，搜 //<a href="./">ABT-482</a> 修改一下 app_bt_conn_mgr_reconnect_last_device 这个api</p>
 <p>调用app manager的api来完成回连SP （以前的code是回连EDR，这个api会回连SP，自己去区分EDR还是LEA)</p>
@@ -441,40 +441,40 @@ ULL3，headset + dongle。你们有一个key event ”KEY_ULL_RECONNECT”[1] �
 </div>
 <div class="reply odd">
 <h3 id="20241224-1954-2">2024/12/24 19:54 — [人名2]<a class="headerlink" href="#20241224-1954-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>已经修好了，但是还是遇到不会连的问题。</p>
 <p>[附件: Logging241224_195104_COM10.7z]</p>
 </div>
 <div class="reply even">
-<h3 id="20241225-0913-5">2024/12/25 09:13 — [人名5]<a class="headerlink" href="#20241225-0913-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241225-0913-6">2024/12/25 09:13 — [人名6]<a class="headerlink" href="#20241225-0913-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>不回连是必现还是概率性的呢？</p>
 </div>
 <div class="reply odd">
 <h3 id="20241225-1020-2">2024/12/25 10:20 — [人名2]<a class="headerlink" href="#20241225-1020-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>100%</p>
 </div>
 <div class="reply even">
-<h3 id="20241225-1756-5">2024/12/25 17:56 — [人名5]<a class="headerlink" href="#20241225-1756-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241225-1756-6">2024/12/25 17:56 — [人名6]<a class="headerlink" href="#20241225-1756-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>时间点是这里之后吗
 1195    365801    RACE_LOG_MSG    19:51:17.618791    [M:apps C:warning F: L: ]: [APP_CONN] reconnect_last_device, [00] exclude_dongle=1 play_vp=1</p>
 </div>
 <div class="reply odd">
 <h3 id="20241225-1809-2">2024/12/25 18:09 — [人名2]<a class="headerlink" href="#20241225-1809-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>差不多，这是出发key event 的时间</p>
 <p>1116    19:51:17.618088 [M:apps C:info F: L: ]: [Key_remap] Current used222 key_id = 0x18, key_event = 0x2, state = 3, action_id = 0x9a, channel = 0</p>
 </div>
 <div class="reply even">
 <h3 id="20241230-1912-2">2024/12/30 19:12 — [人名2]<a class="headerlink" href="#20241230-1912-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5],</p>
+<p>Hi [人名6],</p>
 <p>怎么样？好久了</p>
 </div>
 <div class="reply odd">
-<h3 id="20241230-1924-61">2024/12/30 19:24 — [人名61]<a class="headerlink" href="#20241230-1924-61" title="Permanent link">&para;</a></h3>
-<p>Hi @[人名76] </p>
+<h3 id="20241230-1924-67">2024/12/30 19:24 — [人名67]<a class="headerlink" href="#20241230-1924-67" title="Permanent link">&para;</a></h3>
+<p>Hi @[人名82] </p>
 <p>log [附件: Logging241224_195104_COM10.7z] , 这个操作是断开ULL dongle, 回连SP</p>
 <p>ULL2有断开，EDR连接、encrypted，后续EDR突然0x16断开，没有看到上层call disconnect，帮忙看一下</p>
 <p>1217    2024-12-24 19:51:17.632635    365803    MCU    8    36    [M:apps C:info F: L: ]: [APP_CONN] connect_edr, [00] addr=AC3EB16FB3D6 edr_profile_flag=00 bt_status=0x00000000</p>
@@ -484,30 +484,30 @@ ULL3，headset + dongle。你们有一个key event ”KEY_ULL_RECONNECT”[1] �
 <p>Thanks</p>
 </div>
 <div class="reply even">
-<h3 id="20241231-1757-14">2024/12/31 17:57 — [人名14]<a class="headerlink" href="#20241231-1757-14" title="Permanent link">&para;</a></h3>
-<p>这里主动发起断线的原因是[人名9]P 和 A2DP 都没有连接上所以发起了断线</p>
-<p>@[人名93] </p>
+<h3 id="20241231-1757-17">2024/12/31 17:57 — [人名17]<a class="headerlink" href="#20241231-1757-17" title="Permanent link">&para;</a></h3>
+<p>这里主动发起断线的原因是[人名10]P 和 A2DP 都没有连接上所以发起了断线</p>
+<p>@[人名100] </p>
 <p>请先看下为什么A2DP 连接失败？</p>
 <p>[图片: image-2024-12-31-17-57-01-402.png]</p>
 </div>
 <div class="reply odd">
-<h3 id="20250103-1520-14">2025/01/03 15:20 — [人名14]<a class="headerlink" href="#20250103-1520-14" title="Permanent link">&para;</a></h3>
-<p>@[人名68]  @[人名92] 
+<h3 id="20250103-1520-17">2025/01/03 15:20 — [人名17]<a class="headerlink" href="#20250103-1520-17" title="Permanent link">&para;</a></h3>
+<p>@[人名74]  @[人名99] 
 目前看到EDR 回连失败的原因是手机那边主动把EDR 的profile都给断开了。这个不知道是为什么。</p>
 <p>另外这题客户是在问为什么LEA 回连失败了，最后到我这边怎么变成了回连EDR 失败？看起来是ui 有问题？应该是要打回连LEA 的adv 才对，为什么会变成发起EDR 的回连。</p>
 </div>
 <div class="reply even">
-<h3 id="20250104-1412-61">2025/01/04 14:12 — [人名61]<a class="headerlink" href="#20250104-1412-61" title="Permanent link">&para;</a></h3>
-<p>Hi @[人名68] </p>
+<h3 id="20250104-1412-67">2025/01/04 14:12 — [人名67]<a class="headerlink" href="#20250104-1412-67" title="Permanent link">&para;</a></h3>
+<p>Hi @[人名74] </p>
 <p>这里有发起LEA 回连吗？EDR回连是不是不符合预期呢？</p>
 <p>log [附件: Logging241224_195104_COM10.7z] , 这个操作是断开ULL dongle, 回连SP
- * 因为从目前记录来看，ULL2连接 + Phone EDR 刚刚连接过，ULL2 APP（[人名91] liu）那边断开ULL2，期望回连刚刚连接过的phone (EDR)
+ * 因为从目前记录来看，ULL2连接 + Phone EDR 刚刚连接过，ULL2 APP（[人名98] liu）那边断开ULL2，期望回连刚刚连接过的phone (EDR)
  * phone刚刚连接的是EDR，就回连EDR，不是客户认为的LEA
  * 如果客户觉得不对，需要提供更早之前的log来判断。</p>
 <p>Thanks</p>
 </div>
 <div class="reply odd">
-<h3 id="20250108-0924-5">2025/01/08 09:24 — [人名5]<a class="headerlink" href="#20250108-0924-5" title="Permanent link">&para;</a></h3>
+<h3 id="20250108-0924-6">2025/01/08 09:24 — [人名6]<a class="headerlink" href="#20250108-0924-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>log [附件: Logging241224_195104_COM10.7z] , 这个操作是断开ULL dongle, 回连SP
  * 因为从目前记录来看，ULL2连接 + Phone EDR 刚刚连接过，ULL2 APP那边断开ULL2，期望回连刚刚连接过的phone (EDR)
@@ -516,7 +516,7 @@ ULL3，headset + dongle。你们有一个key event ”KEY_ULL_RECONNECT”[1] �
 </div>
 <div class="reply even">
 <h3 id="20250108-1638-2">2025/01/08 16:38 — [人名2]<a class="headerlink" href="#20250108-1638-2" title="Permanent link">&para;</a></h3>
-<p>HI [人名5]，</p>
+<p>HI [人名6]，</p>
 <p>问题现关闭，客户UI 有变动；</p>
 </div>
 <div class="ticket-nav">

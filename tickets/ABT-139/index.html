@@ -362,7 +362,7 @@
 <p><a href="../ABT-138/">← 上一个工单：ABT-138</a>　<a href="../ABT-140/">→ 下一个工单：ABT-140</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>客户使用了GPIO13\14来做UART1，用来给1wire通讯（遵循参考原理图），但是在文件夹 ept_config 中，使用“Easy PinMux Tool”打开默认的 AB1585_IOT_SDK_11291433.ews 发现UART1 使用功能的是GPIO9\10。我修改为GPIO13\14后重新编译，发现无法开机，log也抓不到，请看看为什么。</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
@@ -372,59 +372,59 @@
 <p>[附件: AB1585_IOT_SDK_11291433-C072L.ews]</p>
 </div>
 <div class="reply even">
-<h3 id="20230202-1144-5">2023/02/02 11:44 — [人名5]<a class="headerlink" href="#20230202-1144-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230202-1144-6">2023/02/02 11:44 — [人名6]<a class="headerlink" href="#20230202-1144-6" title="Permanent link">&para;</a></h3>
 <p>HI @[邮箱已隐藏]，</p>
 <p>这是哪版软件测试的呢？</p>
 </div>
 <div class="reply odd">
 <h3 id="20230202-1442-2">2023/02/02 14:42 — [人名2]<a class="headerlink" href="#20230202-1442-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>V3.4.0</p>
 </div>
 <div class="reply even">
-<h3 id="20230203-1356-5">2023/02/03 13:56 — [人名5]<a class="headerlink" href="#20230203-1356-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230203-1356-6">2023/02/03 13:56 — [人名6]<a class="headerlink" href="#20230203-1356-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>我按照以下修改可以开机</p>
 <p>[图片: image-2023-02-03-13-56-24-475.png]</p>
 </div>
 <div class="reply odd">
 <h3 id="20230203-1420-2">2023/02/03 14:20 — [人名2]<a class="headerlink" href="#20230203-1420-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>这个.ews 发过来给我，你的GPIO10 GPIO14 varname相同，没有报错吗？</p>
 <p>[图片: Snipaste_2023-02-03_14-19-40.jpg]</p>
 </div>
 <div class="reply even">
-<h3 id="20230203-1528-5">2023/02/03 15:28 — [人名5]<a class="headerlink" href="#20230203-1528-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230203-1528-6">2023/02/03 15:28 — [人名6]<a class="headerlink" href="#20230203-1528-6" title="Permanent link">&para;</a></h3>
 <p>FYI
 [附件: miuix.ews]</p>
 </div>
 <div class="reply odd">
 <h3 id="20230203-1629-2">2023/02/03 16:29 — [人名2]<a class="headerlink" href="#20230203-1629-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>你的文件 GPIO10 的VarName 为HAL_UART1_RXD_PIN，GPIO14的VarName为空，实际上对应硬件接线，在你的基础上修改 GPIO14 的VarName 为HAL_UART1_RXD_PIN，GPIO10的VarName为空，这么修改后就无法开机了；</p>
 </div>
 <div class="reply even">
 <h3 id="20230203-1643-2">2023/02/03 16:43 — [人名2]<a class="headerlink" href="#20230203-1643-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>对比EVK，在EVK 上UART1 使用的是GPIO9 GPIO10， 跟默认的 .ews 是对应的。但是参考原理图却使用GPIO13 GPIO14 ，这里有点奇怪；</p>
 <p>[图片: Snipaste_2023-02-03_16-41-15.jpg]</p>
 <p>[图片: Snipaste_2023-02-03_16-42-37.jpg]</p>
 <p>[图片: Snipaste_2023-02-03_16-40-53.jpg]</p>
 </div>
 <div class="reply odd">
-<h3 id="20230206-1109-5">2023/02/06 11:09 — [人名5]<a class="headerlink" href="#20230206-1109-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230206-1109-6">2023/02/06 11:09 — [人名6]<a class="headerlink" href="#20230206-1109-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>GPIO 13 14 是 power key在使用，修改了之后power key 就无效了，不能这么改</p>
 </div>
 <div class="reply even">
 <h3 id="20230206-1119-2">2023/02/06 11:19 — [人名2]<a class="headerlink" href="#20230206-1119-2" title="Permanent link">&para;</a></h3>
-<p>Hi fason，</p>
+<p>Hi [人名6]，</p>
 <p>附件为客户使用的参考原图</p>
 <p>[附件: ab1585_ref_sch_v01_hybrid anc_V01.pdf]</p>
 </div>
 <div class="reply odd">
 <h3 id="20230206-1508-4">2023/02/06 15:08 — [人名4]<a class="headerlink" href="#20230206-1508-4" title="Permanent link">&para;</a></h3>
-<p>和fason 讨论：</p>
+<p>和[人名6] 讨论：</p>
 <p>客户样机由于GPIO13用来做UART1 TX和powerkey 冲突</p>
 <p>先尝试改用其他IO 做powerkey，维持GPIO13做UART1_TX</p>
 </div>
@@ -436,28 +436,28 @@
 <p>[图片: Snipaste_2023-02-06_15-26-04.jpg]</p>
 </div>
 <div class="reply odd">
-<h3 id="20230206-1657-5">2023/02/06 16:57 — [人名5]<a class="headerlink" href="#20230206-1657-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230206-1657-6">2023/02/06 16:57 — [人名6]<a class="headerlink" href="#20230206-1657-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏],</p>
 <p>麻烦修改以下内容看看</p>
 <p>[图片: image-2023-02-06-16-57-22-981.png]</p>
 </div>
 <div class="reply even">
 <h3 id="20230206-1725-2">2023/02/06 17:25 — [人名2]<a class="headerlink" href="#20230206-1725-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>修改了，不能开机；</p>
 </div>
 <div class="reply odd">
-<h3 id="20230207-1114-5">2023/02/07 11:14 — [人名5]<a class="headerlink" href="#20230207-1114-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230207-1114-6">2023/02/07 11:14 — [人名6]<a class="headerlink" href="#20230207-1114-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>我这边改了就可以了，麻烦确认是否有修改正确</p>
 </div>
 <div class="reply even">
 <h3 id="20230207-1153-2">2023/02/07 11:53 — [人名2]<a class="headerlink" href="#20230207-1153-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>还是关不了机；</p>
 </div>
 <div class="reply odd">
-<h3 id="20230207-1359-5">2023/02/07 13:59 — [人名5]<a class="headerlink" href="#20230207-1359-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230207-1359-6">2023/02/07 13:59 — [人名6]<a class="headerlink" href="#20230207-1359-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>客户是仓发1wire cmd 关机吗？</p>
 <p>麻烦提供一下关不了机的log，看是不是1wiire识别错误</p>
@@ -465,39 +465,39 @@
 </div>
 <div class="reply even">
 <h3 id="20230207-1556-2">2023/02/07 15:56 — [人名2]<a class="headerlink" href="#20230207-1556-2" title="Permanent link">&para;</a></h3>
-<p>Hi fason，</p>
+<p>Hi [人名6]，</p>
 <p>见附件；</p>
 <p>[附件: Logging230207_154509_COM6.rar]</p>
 </div>
 <div class="reply odd">
-<h3 id="20230208-1051-5">2023/02/08 10:51 — [人名5]<a class="headerlink" href="#20230208-1051-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230208-1051-6">2023/02/08 10:51 — [人名6]<a class="headerlink" href="#20230208-1051-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>有配置左右声道吗？看起来进了comm mode接收pattern失败，确认充电仓发的pattern 正确吗？</p>
 <p>[图片: image-2023-02-08-10-51-36-314.png]</p>
 </div>
 <div class="reply even">
-<h3 id="20230208-1146-5">2023/02/08 11:46 — [人名5]<a class="headerlink" href="#20230208-1146-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230208-1146-6">2023/02/08 11:46 — [人名6]<a class="headerlink" href="#20230208-1146-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>目前log看起来进了comm mode之后不到1s钟就out of case，这边怀疑可能是充电仓给的电压降到了1.5V一下，导致耳机识别为出仓，之后再送什么pattern耳机都识别不聊了，麻烦量一下是否有这种情况，感谢</p>
 </div>
 <div class="reply odd">
 <h3 id="20230208-1600-2">2023/02/08 16:00 — [人名2]<a class="headerlink" href="#20230208-1600-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>其他项目1wire出货的底座，不会有问题的；</p>
 </div>
 <div class="reply even">
-<h3 id="20230208-1733-5">2023/02/08 17:33 — [人名5]<a class="headerlink" href="#20230208-1733-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230208-1733-6">2023/02/08 17:33 — [人名6]<a class="headerlink" href="#20230208-1733-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>还是请量一下，确保没问题</p>
 </div>
 <div class="reply odd">
 <h3 id="20230209-1539-2">2023/02/09 15:39 — [人名2]<a class="headerlink" href="#20230209-1539-2" title="Permanent link">&para;</a></h3>
-<p>Hi fason，</p>
+<p>Hi [人名6]，</p>
 <p>看了客户测量的图没有问题；</p>
 <p>[图片: 微信图片_[序列号已隐藏].jpg]</p>
 </div>
 <div class="reply even">
-<h3 id="20230209-1617-5">2023/02/09 16:17 — [人名5]<a class="headerlink" href="#20230209-1617-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230209-1617-6">2023/02/09 16:17 — [人名6]<a class="headerlink" href="#20230209-1617-6" title="Permanent link">&para;</a></h3>
 <p>[图片: image-2023-02-09-16-16-27-436.png]</p>
 <p>[图片: image-2023-02-09-16-16-48-449.png]</p>
 <p>[图片: image-2023-02-09-16-17-11-092.png]</p>
@@ -505,7 +505,7 @@
 <p>[图片: image-2023-02-09-16-17-52-107.png]</p>
 </div>
 <div class="reply odd">
-<h3 id="20230209-1620-5">2023/02/09 16:20 — [人名5]<a class="headerlink" href="#20230209-1620-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230209-1620-6">2023/02/09 16:20 — [人名6]<a class="headerlink" href="#20230209-1620-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>由于EVK测试不了，麻烦用客户样机，按照以上发的1wire debug 方法，帮忙分析一下：</p>
 <p>需要量測及回答幾個問題 :
@@ -516,7 +516,7 @@
 </div>
 <div class="reply even">
 <h3 id="20230209-1740-2">2023/02/09 17:40 — [人名2]<a class="headerlink" href="#20230209-1740-2" title="Permanent link">&para;</a></h3>
-<p>hi [人名5]</p>
+<p>hi [人名6]</p>
 <p>降 COM mode 後 ( e.g. 1.8V or 2.8V) 多久送 CMD</p>
 <blockquote>
 <blockquote>
@@ -540,22 +540,22 @@
 <p>[图片: 微信图片_[序列号已隐藏].jpg]</p>
 </div>
 <div class="reply odd">
-<h3 id="20230210-0952-5">2023/02/10 09:52 — [人名5]<a class="headerlink" href="#20230210-0952-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230210-0952-6">2023/02/10 09:52 — [人名6]<a class="headerlink" href="#20230210-0952-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>你们最新量的没有上传 sys log啊，其他cmd也无效吗</p>
 </div>
 <div class="reply even">
 <h3 id="20230210-1144-2">2023/02/10 11:44 — [人名2]<a class="headerlink" href="#20230210-1144-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>如沟通，下周一上午到贵司现场调试；</p>
 </div>
 <div class="reply odd">
-<h3 id="20230210-1616-5">2023/02/10 16:16 — [人名5]<a class="headerlink" href="#20230210-1616-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230210-1616-6">2023/02/10 16:16 — [人名6]<a class="headerlink" href="#20230210-1616-6" title="Permanent link">&para;</a></h3>
 <p>OK</p>
 </div>
 <div class="reply even">
 <h3 id="20230213-1625-2">2023/02/13 16:25 — [人名2]<a class="headerlink" href="#20230213-1625-2" title="Permanent link">&para;</a></h3>
-<p>Hi fason，</p>
+<p>Hi [人名6]，</p>
 <p>如现场沟通，发现R8 虽然摘掉了，但是又接回了细铜线，导致了发码时C33电容充电，5V端只能拉倒1.7V（com mode 中算高电平）；</p>
 <p>去掉细铜线后能够正常关机了；</p>
 <p>[图片: Snipaste_2023-02-13_16-14-40.jpg]</p>

@@ -362,7 +362,7 @@
 <p><a href="../ABT-537/">← 上一个工单：ABT-537</a>　<a href="../ABT-539/">→ 下一个工单：ABT-539</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>如沟通，我还在测试output 输出自由控制的API 接口，请帮此两个指令的完整指令提供给我。</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
@@ -372,7 +372,7 @@
 <p>[图片: PixPin_2025-04-22_21-00-37.png]</p>
 </div>
 <div class="reply even">
-<h3 id="20250424-1513-10">2025/04/24 15:13 — [人名10]<a class="headerlink" href="#20250424-1513-10" title="Permanent link">&para;</a></h3>
+<h3 id="20250424-1513-12">2025/04/24 15:13 — [人名12]<a class="headerlink" href="#20250424-1513-12" title="Permanent link">&para;</a></h3>
 <p>1.  AT+EAUDIO=VOL_STREAM_OUT,-3050,-200   (十进制数据，第一个参数是dgain, 第二个参数是 again)</p>
 <p>SDK的stream out index 填的参数是0 ，你是要调A2DP的音量吗，如果是A2DP的话，可以参考截图的修改2059行</p>
 <p>[图片: image-2025-04-24-15-12-42-984.png]</p>
@@ -382,18 +382,18 @@
 </div>
 <div class="reply odd">
 <h3 id="20250424-2003-2">2025/04/24 20:03 — [人名2]<a class="headerlink" href="#20250424-2003-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>更新了什么？变为 waiting for customer</p>
 </div>
 <div class="reply even">
-<h3 id="20250425-0939-10">2025/04/25 09:39 — [人名10]<a class="headerlink" href="#20250425-0939-10" title="Permanent link">&para;</a></h3>
+<h3 id="20250425-0939-12">2025/04/25 09:39 — [人名12]<a class="headerlink" href="#20250425-0939-12" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] </p>
-<p>黄工，刷新jira下，前面更新了</p>
+<p>[人名11]，刷新jira下，前面更新了</p>
 <p>谢谢</p>
 </div>
 <div class="reply odd">
 <h3 id="20250425-1206-2">2025/04/25 12:06 — [人名2]<a class="headerlink" href="#20250425-1206-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名10] ([人名10])，</p>
+<p>Hi [人名12] ([人名12])，</p>
 <p>AT+EAUDIO=VOL_STREAM_OUT,-3050,-200 测试了有效；</p>
 <p>我说一下客户的原始需求，进入到通透后，音乐输出音量变为60%输出；退出之后恢复到原来的音量输出。</p>
 <p>我需要做几个事情：</p>
@@ -406,7 +406,7 @@
 <h1 id="digital-gain-dsp">设置digital gain 给 DSP（已经找到）<a class="headerlink" href="#digital-gain-dsp" title="Permanent link">&para;</a></h1>
 </div>
 <div class="reply even">
-<h3 id="20250425-1834-10">2025/04/25 18:34 — [人名10]<a class="headerlink" href="#20250425-1834-10" title="Permanent link">&para;</a></h3>
+<h3 id="20250425-1834-12">2025/04/25 18:34 — [人名12]<a class="headerlink" href="#20250425-1834-12" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] 
  # 记录当前的digital gain，这个如何获取？—》 这个需要你自己记录下，目前没有直接从dsp 获取当前设定的dgain,  
  # gain 是如何转换为db值跟config tool 对应的？ ---&gt; 前面发的指令带的参数就是 db 值了，有乘100，  比如前面的指令，设定的dgain =  -30.5，Again = -2db,  截图API可以将 level 转为config tool 对应的dgian , Again 通常是固定的，不需要调，默认是 -2db</p>
@@ -414,7 +414,7 @@
 </div>
 <div class="reply odd">
 <h3 id="20250427-1643-2">2025/04/27 16:43 — [人名2]<a class="headerlink" href="#20250427-1643-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名10] ([人名10])，</p>
+<p>Hi [人名12] ([人名12])，</p>
 <p>感谢，此功能我已经实现。</p>
 </div>
 <div class="ticket-nav">

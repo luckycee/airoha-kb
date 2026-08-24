@@ -362,7 +362,7 @@
 <p><a href="../ABT-514/">← 上一个工单：ABT-514</a>　<a href="../ABT-516/">→ 下一个工单：ABT-516</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>见附件log，SDK5.5.0 demo code 直接编译，line in detect pin 是GPIO24（默认），我插入line in 之后，log 没有收到 line in 的中断， 子板的GPIO24 我已经量到拉低了（默认高），但是 audio 无法切换到line in，就想没有收到中断，请帮忙看看。</p>
 <p>USB audio 的规格是？支持 96Kbps/24bit 吗？</p>
 <p>cmd：</p>
@@ -376,36 +376,36 @@
 <p>[图片: PixPin_2025-03-04_17-49-21.png]</p>
 </div>
 <div class="reply even">
-<h3 id="20250310-1606-5">2025/03/10 16:06 — [人名5]<a class="headerlink" href="#20250310-1606-5" title="Permanent link">&para;</a></h3>
+<h3 id="20250310-1606-6">2025/03/10 16:06 — [人名6]<a class="headerlink" href="#20250310-1606-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>USB in 默认输出就是96K 24bit哈</p>
 </div>
 <div class="reply odd">
-<h3 id="20250312-1522-5">2025/03/12 15:22 — [人名5]<a class="headerlink" href="#20250312-1522-5" title="Permanent link">&para;</a></h3>
+<h3 id="20250312-1522-6">2025/03/12 15:22 — [人名6]<a class="headerlink" href="#20250312-1522-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>AB1585 evk 需要rework 才能检测到line in，你一定要用插拔的方式去开Line in嘛？AT+APP=Key,0200也可以开</p>
 <p>如果是样机或者EVK的话，麻烦找硬件rework 一下才能检测到中断</p>
 </div>
 <div class="reply even">
 <h3 id="20250313-1148-2">2025/03/13 11:48 — [人名2]<a class="headerlink" href="#20250313-1148-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>怎么改板子，有指导文档吗？</p>
 </div>
 <div class="reply odd">
-<h3 id="20250313-1555-29">2025/03/13 15:55 — [人名29]<a class="headerlink" href="#20250313-1555-29" title="Permanent link">&para;</a></h3>
+<h3 id="20250313-1555-31">2025/03/13 15:55 — [人名31]<a class="headerlink" href="#20250313-1555-31" title="Permanent link">&para;</a></h3>
 <p>@[邮箱已隐藏]  Line in接法请你们硬件参考AB158x_Series_EVK_Users_Guide ，EVK有更新到【C804】,请你们硬件看下电路图协助下</p>
 <p><em>4.1.1       Line in</em></p>
-<p>AB158X chipsets support a set of line in interfaces; J706 is at the bottom-right corner of the EVK motherboard, as shown in Figure 4‑18. Figure 4‑18Figure 4‑19 is bias jumper of U702 switch, the switch will detect the Line [人名83] to switch the line path or mic path.
+<p>AB158X chipsets support a set of line in interfaces; J706 is at the bottom-right corner of the EVK motherboard, as shown in Figure 4‑18. Figure 4‑18Figure 4‑19 is bias jumper of U702 switch, the switch will detect the Line [人名89] to switch the line path or mic path.
  * Line-in for AU_VIN2/3 (ACC 10k): Remove J414/J418/J420/J422 and connect J411/J417/J419/J421 pin1-2 to switch 5.1kohm as shown in Figure 4‑20Figure 4‑18.
  * Line-in for AU_VIN2/3 (ACC 20k): Remove J414/J418/J420/J422 and connect J411/J417/J419/J421 pin2-3 to switch 12kohm as shown in Figure 4‑20.</p>
 </div>
 <div class="reply even">
-<h3 id="20250314-1441-29">2025/03/14 14:41 — [人名29]<a class="headerlink" href="#20250314-1441-29" title="Permanent link">&para;</a></h3>
+<h3 id="20250314-1441-31">2025/03/14 14:41 — [人名31]<a class="headerlink" href="#20250314-1441-31" title="Permanent link">&para;</a></h3>
 <p>@[邮箱已隐藏]  C804 Line-in default GPIO  is GPIO26,你FW配置是GPIO24，GPIO24用镊子拉低会检测到Line in吗？感觉这一题还是偏软件  !image-2025-03-14-14-39-39-244.png|width=663,height=132!</p>
 </div>
 <div class="reply odd">
 <h3 id="20250314-1641-2">2025/03/14 16:41 — [人名2]<a class="headerlink" href="#20250314-1641-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名29]，</p>
+<p>Hi [人名31]，</p>
 <p>我看到EPT配置，line in det 使用的GPIO24，GPIO26 是用来选择 analog 还是I2S 。不行的原因找到了，daughter board 上（GPIO24） R308 接了E2 ROM ，改到结左边才能连接到 main board 上；</p>
 <p>[图片: PixPin_2025-03-14_15-22-43.png]</p>
 <p>[图片: PixPin_2025-03-14_15-22-28.png]</p>

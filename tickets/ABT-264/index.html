@@ -21,7 +21,7 @@
     
     
       
-        <title>【[客户E]】耳机连接dongle 触发了语音助手问题 - ABT 工单知识库</title>
+        <title>【[客户H]】耳机连接dongle 触发了语音助手问题 - ABT 工单知识库</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#abt-264-edongle" class="md-skip">
+        <a href="#abt-264-hdongle" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              【[客户E]】耳机连接dongle 触发了语音助手问题
+              【[客户H]】耳机连接dongle 触发了语音助手问题
             
           </span>
         </div>
@@ -354,7 +354,7 @@
   
 
 
-<h1 id="abt-264-edongle">ABT-264 【[客户E]】耳机连接dongle 触发了语音助手问题<a class="headerlink" href="#abt-264-edongle" title="Permanent link">&para;</a></h1>
+<h1 id="abt-264-hdongle">ABT-264 【[客户H]】耳机连接dongle 触发了语音助手问题<a class="headerlink" href="#abt-264-hdongle" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>📅 2023/09/27 16:35　🔗 <a href="https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-264">原始工单链接</a></p>
 </blockquote>
@@ -362,7 +362,7 @@
 <p><a href="../ABT-263/">← 上一个工单：ABT-263</a>　<a href="../ABT-265/">→ 下一个工单：ABT-265</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>附件log，耳机连接了dongle（dongle 插入到Android 手机上） ULL下，按键触发事件KEY_WAKE_UP_VOICE_ASSISTANT ，手机这边没有看到对应的动作，但耳机就一直保持在 APP_STATE_VA 状态下了，因为状态不对，导致了比如播放暂停不能使用。LEA下也是一样情况。</p>
 <p>问：这个情况是预期的吗？如果不是如何修改？</p>
 <p>COM56 左边</p>
@@ -375,7 +375,7 @@
 <p>[附件: 触发语音助手.7z]</p>
 </div>
 <div class="reply even">
-<h3 id="20230928-1601-9">2023/09/28 16:01 — [人名9]<a class="headerlink" href="#20230928-1601-9" title="Permanent link">&para;</a></h3>
+<h3 id="20230928-1601-10">2023/09/28 16:01 — [人名10]<a class="headerlink" href="#20230928-1601-10" title="Permanent link">&para;</a></h3>
 <p>Hi Sir</p>
 <p>请加入下面红框代码：</p>
 <p>mcu/[project/apps/bt_audio_common/src/apps/app_hfp/app_hfp_utils.c|http://gerrit.ABT.com.tw:8080/c/geneva/project/sdk_v3/apps/bt_audio_common/+/320950/3/src/apps/app_hfp/app_hfp_utils.c]</p>
@@ -383,13 +383,13 @@
 </div>
 <div class="reply odd">
 <h3 id="20230928-1629-2">2023/09/28 16:29 — [人名2]<a class="headerlink" href="#20230928-1629-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名9] ([人名9])，</p>
+<p>Hi [人名10] ([人名10])，</p>
 <p>这个修改的意思，只有在连接EDR 才让触发语音助手吗？在ULL 和LEA下就限制，不去触发了。</p>
 </div>
 <div class="reply even">
-<h3 id="20230928-1735-9">2023/09/28 17:35 — [人名9]<a class="headerlink" href="#20230928-1735-9" title="Permanent link">&para;</a></h3>
+<h3 id="20230928-1735-10">2023/09/28 17:35 — [人名10]<a class="headerlink" href="#20230928-1735-10" title="Permanent link">&para;</a></h3>
 <p>是的. </p>
-<p>VOICE_RECOGNITION是[人名9]P profile才有的功能。 ULL和LEA没有HPF profile</p>
+<p>VOICE_RECOGNITION是[人名10]P profile才有的功能。 ULL和LEA没有HPF profile</p>
 </div>
 <div class="ticket-nav">
 <p><a href="../ABT-263/">← 上一个工单：ABT-263</a>　<a href="../ABT-265/">→ 下一个工单：ABT-265</a></p>

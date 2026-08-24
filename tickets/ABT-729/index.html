@@ -21,7 +21,7 @@
     
     
       
-        <title>【[客户O]】AB1577AM SDK5.7.0 动态修改LDAC sample rate - ABT 工单知识库</title>
+        <title>【[客户S]】AB1577AM SDK5.7.0 动态修改LDAC sample rate - ABT 工单知识库</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#abt-729-oab1577am-sdk570-ldac-sample-rate" class="md-skip">
+        <a href="#abt-729-sab1577am-sdk570-ldac-sample-rate" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              【[客户O]】AB1577AM SDK5.7.0 动态修改LDAC sample rate
+              【[客户S]】AB1577AM SDK5.7.0 动态修改LDAC sample rate
             
           </span>
         </div>
@@ -354,7 +354,7 @@
   
 
 
-<h1 id="abt-729-oab1577am-sdk570-ldac-sample-rate">ABT-729 【[客户O]】AB1577AM SDK5.7.0 动态修改LDAC sample rate<a class="headerlink" href="#abt-729-oab1577am-sdk570-ldac-sample-rate" title="Permanent link">&para;</a></h1>
+<h1 id="abt-729-sab1577am-sdk570-ldac-sample-rate">ABT-729 【[客户S]】AB1577AM SDK5.7.0 动态修改LDAC sample rate<a class="headerlink" href="#abt-729-sab1577am-sdk570-ldac-sample-rate" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>📅 2026/04/23 17:59　🔗 <a href="https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-729">原始工单链接</a></p>
 </blockquote>
@@ -362,15 +362,15 @@
 <p><a href="../ABT-728/">← 上一个工单：ABT-728</a>　<a href="../ABT-730/">→ 下一个工单：ABT-730</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
-<p>[客户O]那边有支持Dolby audio和LDAC，我们LDAC 是 96K的，但是Dolby audio 只能处理48K的内容，他们问：</p>
+<p>Hi [人名6]，</p>
+<p>[客户S]那边有支持Dolby audio和LDAC，我们LDAC 是 96K的，但是Dolby audio 只能处理48K的内容，他们问：</p>
 <p>LDAC 能不能改到位48K</p>
 <p>能的话，需要给出接口动态修改 48K和96K</p>
 <p>他们想在Dolby Audio 生效的时候使用48K，其他时间依然使用96K。</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
-<h3 id="20260428-1718-80">2026/04/28 17:18 — [人名80]<a class="headerlink" href="#20260428-1718-80" title="Permanent link">&para;</a></h3>
+<h3 id="20260428-1718-86">2026/04/28 17:18 — [人名86]<a class="headerlink" href="#20260428-1718-86" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] </p>
 <p>sample rate一般是跟手机协商的结果，是follow手机的设定的，耳机这边没办法主动调</p>
 <p>一般其它codec可以在协商的过程中告诉手机我们不支持96K，从而让手机选择48K，但是根据LDAC spec，96K是必须支持的，所以不建议这样改</p>
@@ -378,91 +378,91 @@
 </div>
 <div class="reply even">
 <h3 id="20260430-1026-2">2026/04/30 10:26 — [人名2]<a class="headerlink" href="#20260430-1026-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名80] (szciic)，</p>
+<p>Hi [人名86] (szciic)，</p>
 <p>看能不能这样处理，保持手机过来的96K，Dolby 没有开启，压缩成48K给到Dolby 那边；如果Dolby 没有开启，则还是维持96K。</p>
 </div>
 <div class="reply odd">
-<h3 id="20260430-1144-80">2026/04/30 11:44 — [人名80]<a class="headerlink" href="#20260430-1144-80" title="Permanent link">&para;</a></h3>
+<h3 id="20260430-1144-86">2026/04/30 11:44 — [人名86]<a class="headerlink" href="#20260430-1144-86" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] 
 DSP目前没有这样的处理，这个改动挺大的，需要找CPM评估一下能不能做</p>
 <p>Thanks.</p>
 </div>
 <div class="reply even">
 <h3 id="20260430-1408-2">2026/04/30 14:08 — [人名2]<a class="headerlink" href="#20260430-1408-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名80] (szciic),</p>
+<p>Hi [人名86] (szciic),</p>
 <p>一般只要是 LDAC+Dolby，都会遇到这个问题的，有处理的案例吗？是需要客户找CPM 吗？</p>
 </div>
 <div class="reply odd">
-<h3 id="20260430-1505-80">2026/04/30 15:05 — [人名80]<a class="headerlink" href="#20260430-1505-80" title="Permanent link">&para;</a></h3>
+<h3 id="20260430-1505-86">2026/04/30 15:05 — [人名86]<a class="headerlink" href="#20260430-1505-86" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] 
 没找到相关案例呢，请找CPM评估吧</p>
 <p>Thanks.</p>
 </div>
 <div class="reply even">
 <h3 id="20260506-1831-2">2026/05/06 18:31 — [人名2]<a class="headerlink" href="#20260506-1831-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名80] (szciic)，</p>
+<p>Hi [人名86] (szciic)，</p>
 <p>请指导一下如何在中间加个subsample，把96K的内容改为48K 。</p>
 </div>
 <div class="reply odd">
 <h3 id="20260511-1139-2">2026/05/11 11:39 — [人名2]<a class="headerlink" href="#20260511-1139-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名80] (szciic)，</p>
+<p>Hi [人名86] (szciic)，</p>
 <p>或者有什么文档参考吗？我跟客户那边都不知道怎么修改</p>
 </div>
 <div class="reply even">
-<h3 id="20260511-1149-80">2026/05/11 11:49 — [人名80]<a class="headerlink" href="#20260511-1149-80" title="Permanent link">&para;</a></h3>
+<h3 id="20260511-1149-86">2026/05/11 11:49 — [人名86]<a class="headerlink" href="#20260511-1149-86" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] 
 这个feature SDK里面是没有的，所以也没有文档。</p>
 <p>如果你们要做的话，我们会提供大致思路给你们，需要时间整理一下</p>
 <p>Thanks.</p>
 </div>
 <div class="reply odd">
-<h3 id="20260518-1646-116">2026/05/18 16:46 — [人名116]<a class="headerlink" href="#20260518-1646-116" title="Permanent link">&para;</a></h3>
+<h3 id="20260518-1646-123">2026/05/18 16:46 — [人名123]<a class="headerlink" href="#20260518-1646-123" title="Permanent link">&para;</a></h3>
 <p>Hi, @[邮箱已隐藏] </p>
 <p>我預計在5/26會出個patch和一份文件說明如何讓你們加入dolby的改動，請問這個時間方便嗎?</p>
 <p>Best Regards
-[人名116]</p>
+[人名123]</p>
 </div>
 <div class="reply even">
 <h3 id="20260518-1657-2">2026/05/18 16:57 — [人名2]<a class="headerlink" href="#20260518-1657-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名116] ([人名116])</p>
+<p>Hi [人名123] ([人名123])</p>
 <p>好的，没问题</p>
 </div>
 <div class="reply odd">
-<h3 id="20260526-2201-116">2026/05/26 22:01 — [人名116]<a class="headerlink" href="#20260526-2201-116" title="Permanent link">&para;</a></h3>
+<h3 id="20260526-2201-123">2026/05/26 22:01 — [人名123]<a class="headerlink" href="#20260526-2201-123" title="Permanent link">&para;</a></h3>
 <p>[附件: <a href="./">ABT-729</a>_patch_0526.zip]</p>
 </div>
 <div class="reply even">
-<h3 id="20260526-2202-116">2026/05/26 22:02 — [人名116]<a class="headerlink" href="#20260526-2202-116" title="Permanent link">&para;</a></h3>
+<h3 id="20260526-2202-123">2026/05/26 22:02 — [人名123]<a class="headerlink" href="#20260526-2202-123" title="Permanent link">&para;</a></h3>
 <p>hi, @[邮箱已隐藏] </p>
 <p>patch已經完成，請參考[附件: <a href="./">ABT-729</a>_patch_0526.zip]
 明天會再補齊文件說明</p>
 <p>謝謝!</p>
 </div>
 <div class="reply odd">
-<h3 id="20260527-2149-116">2026/05/27 21:49 — [人名116]<a class="headerlink" href="#20260527-2149-116" title="Permanent link">&para;</a></h3>
+<h3 id="20260527-2149-123">2026/05/27 21:49 — [人名123]<a class="headerlink" href="#20260527-2149-123" title="Permanent link">&para;</a></h3>
 <p>hi, @[邮箱已隐藏] 
 已補上文件說明：[附件: Dolby_sw_src_integration.pptx]</p>
 </div>
 <div class="reply even">
 <h3 id="20260529-1128-2">2026/05/29 11:28 — [人名2]<a class="headerlink" href="#20260529-1128-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名116] ([人名116])</p>
+<p>Hi [人名123] ([人名123])</p>
 <p>按你提供的文档修改之后，一连上手机播音乐就死机。</p>
 <p>[附件: Logging260529_110847_COM20.zip]</p>
 </div>
 <div class="reply odd">
-<h3 id="20260529-1702-116">2026/05/29 17:02 — [人名116]<a class="headerlink" href="#20260529-1702-116" title="Permanent link">&para;</a></h3>
+<h3 id="20260529-1702-123">2026/05/29 17:02 — [人名123]<a class="headerlink" href="#20260529-1702-123" title="Permanent link">&para;</a></h3>
 <p>hi, @[邮箱已隐藏] </p>
 <p>抱歉，請幫我把新增的這支api圈起來的部分改成圖中的enum</p>
 <p>[图片: image-2026-05-29-17-01-57-389.png]</p>
 </div>
 <div class="reply even">
 <h3 id="20260601-1632-2">2026/06/01 16:32 — [人名2]<a class="headerlink" href="#20260601-1632-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名116] ([人名116])，</p>
+<p>Hi [人名123] ([人名123])，</p>
 <p>已经不会宕机了，但是遇到问题，现LDAC的时候跑不到杜比算法里面去，帮忙看看LDAC的时候杜比要摆在哪里。</p>
 <p>[图片: image001(06-01-16-28-32).jpg]</p>
 </div>
 <div class="reply odd">
-<h3 id="20260603-1153-116">2026/06/03 11:53 — [人名116]<a class="headerlink" href="#20260603-1153-116" title="Permanent link">&para;</a></h3>
+<h3 id="20260603-1153-123">2026/06/03 11:53 — [人名123]<a class="headerlink" href="#20260603-1153-123" title="Permanent link">&para;</a></h3>
 <p>hi, @[邮箱已隐藏] </p>
 <p>理論上來說杜比就是擺在FUNC_SW_SRC後面
 請問您說的進不到算法裡是在甚麼樣的條件下跳出處理的嗎? 我想比較可能發生的會是在一些參數上的設定不符合預期所導致，請問能協助在算法裡加LOG來確認參數的設定嗎?</p>
@@ -470,12 +470,12 @@ DSP目前没有这样的处理，这个改动挺大的，需要找CPM评估一�
 </div>
 <div class="reply even">
 <h3 id="20260603-1510-2">2026/06/03 15:10 — [人名2]<a class="headerlink" href="#20260603-1510-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名116] ([人名116])，</p>
+<p>Hi [人名123] ([人名123])，</p>
 <p>不是的，目前看起来好像LDAC不跑这个链路里去，因为我直接在下面加了log，只要切SBC 就有log打印出来，但是LDAC 就没有log打印。Log没有加任何条件限制。</p>
 </div>
 <div class="reply odd">
 <h3 id="20260605-1031-2">2026/06/05 10:31 — [人名2]<a class="headerlink" href="#20260605-1031-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名116] ([人名116])，</p>
+<p>Hi [人名123] ([人名123])，</p>
 <p>这个Downsample的Patch 我刚又试了一边，现在有两个问题</p>
 <p>1．Codec为LDAC的时候能看到log打印新的patch中的信息，但是未看到任何dolby log，因为sbc的时候是能看到dolby  log的，所以我觉得LDAC的时候应该没有在这个a2dp 的链路下。</p>
 <p>2．加了downsample log之后切换codec到sbc会死机，附上log，时间点14：59：51</p>
@@ -484,21 +484,21 @@ DSP目前没有这样的处理，这个改动挺大的，需要找CPM评估一�
 </div>
 <div class="reply even">
 <h3 id="20260608-1754-2">2026/06/08 17:54 — [人名2]<a class="headerlink" href="#20260608-1754-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名116] ([人名116])，</p>
+<p>Hi [人名123] ([人名123])，</p>
 <p>请问这题有回复吗？</p>
 </div>
 <div class="reply odd">
 <h3 id="20260612-1508-2">2026/06/12 15:08 — [人名2]<a class="headerlink" href="#20260612-1508-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名116] ([人名116])，</p>
+<p>Hi [人名123] ([人名123])，</p>
 <p>请帮忙继续看看</p>
 </div>
 <div class="reply even">
-<h3 id="20260615-1304-116">2026/06/15 13:04 — [人名116]<a class="headerlink" href="#20260615-1304-116" title="Permanent link">&para;</a></h3>
+<h3 id="20260615-1304-123">2026/06/15 13:04 — [人名123]<a class="headerlink" href="#20260615-1304-123" title="Permanent link">&para;</a></h3>
 <p>hi, @[邮箱已隐藏] </p>
 <p>抱歉 我今天會更新</p>
 </div>
 <div class="reply odd">
-<h3 id="20260615-1856-116">2026/06/15 18:56 — [人名116]<a class="headerlink" href="#20260615-1856-116" title="Permanent link">&para;</a></h3>
+<h3 id="20260615-1856-123">2026/06/15 18:56 — [人名123]<a class="headerlink" href="#20260615-1856-123" title="Permanent link">&para;</a></h3>
 <p>hi, @[邮箱已隐藏] </p>
 <p>請使用這版再試一次，與上一版差別在於dsp_sdk.c
 [附件: <a href="./">ABT-729</a>_patch_0615.zip]</p>
@@ -506,7 +506,7 @@ DSP目前没有这样的处理，这个改动挺大的，需要找CPM评估一�
 </div>
 <div class="reply even">
 <h3 id="20260617-0953-2">2026/06/17 09:53 — [人名2]<a class="headerlink" href="#20260617-0953-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名116] ([人名116])，</p>
+<p>Hi [人名123] ([人名123])，</p>
 <p>我看这次的patch仅是把这个移到以下地方，移到这里后SBC 不会死机了，但是LDAC的时候好像还是不会跑这里来，加了log没有打印。</p>
 <p>[图片: image003(06-17-09-47-49).jpg]</p>
 </div>
@@ -517,23 +517,23 @@ DSP目前没有这样的处理，这个改动挺大的，需要找CPM评估一�
 </div>
 <div class="reply even">
 <h3 id="20260624-1049-2">2026/06/24 10:49 — [人名2]<a class="headerlink" href="#20260624-1049-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名116] ([人名116])，</p>
+<p>Hi [人名123] ([人名123])，</p>
 <p>客户在追这个问题。</p>
 </div>
 <div class="reply odd">
 <h3 id="20260629-1422-2">2026/06/29 14:22 — [人名2]<a class="headerlink" href="#20260629-1422-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名116] ([人名116])，</p>
+<p>Hi [人名123] ([人名123])，</p>
 <p>我看到设置为 waiting for customer 了，是更新了内容吗？</p>
 </div>
 <div class="reply even">
-<h3 id="20260629-1429-80">2026/06/29 14:29 — [人名80]<a class="headerlink" href="#20260629-1429-80" title="Permanent link">&para;</a></h3>
+<h3 id="20260629-1429-86">2026/06/29 14:29 — [人名86]<a class="headerlink" href="#20260629-1429-86" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] </p>
 <p>我看應該是加錯feature list了</p>
 <p>!image-2026-06-24-12-12-50-418.png|width=1000,height=230,thumbnail!</p>
 </div>
 <div class="reply odd">
 <h3 id="20260630-1444-2">2026/06/30 14:44 — [人名2]<a class="headerlink" href="#20260630-1444-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名80] ([人名80])，</p>
+<p>Hi [人名86] ([人名86])，</p>
 <p>放在这里可以了，客户确认了杜比支持96K，测试也没有问题。此题关闭。</p>
 </div>
 <div class="ticket-nav">

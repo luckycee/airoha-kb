@@ -362,7 +362,7 @@
 <p><a href="../ABT-135/">← 上一个工单：ABT-135</a>　<a href="../ABT-137/">→ 下一个工单：ABT-137</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>HI [人名5]，</p>
+<p>HI [人名6]，</p>
 <p>使用demo code，加上dongle的 add on，编译出来后直接写SIRK，重启后earbuds 能跟dongle连接，但是dongle （连接了电脑）播放音乐，earbuds 跟dongle的连接就断开，也没有声音。看log发现 dongle 在L3707死机了。codec 暂时保持旧软件一致，使用 ABT的CELT，LC3 plus 后面客户使用在开启；</p>
 <p>./build.sh ab1565_8m_evk earbuds_ref_design_ull2</p>
 <p>./build.sh  ab1565_evk dongle_ref_design_ull2</p>
@@ -376,39 +376,39 @@
 </div>
 <div class="reply even">
 <h3 id="20230111-1601-2">2023/01/11 16:01 — [人名2]<a class="headerlink" href="#20230111-1601-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>AIR_AUDIO_VEND_CODEC_ENABLE    MCU和DSP这边都需要打开，然后把AIR_AUDIO_LC3PLUS_CODEC_ENABLE 关掉，还是一样的死机；应该是dongle哪里没有设置对；因为只有dongle死机</p>
 <p>[附件: Logging230111_154732_COM54.7z]</p>
 </div>
 <div class="reply odd">
-<h3 id="20230111-1741-5">2023/01/11 17:41 — [人名5]<a class="headerlink" href="#20230111-1741-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230111-1741-6">2023/01/11 17:41 — [人名6]<a class="headerlink" href="#20230111-1741-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>dongle 按照一下修改试试，earbuds default 不用改</p>
 <p>[图片: image-2023-01-11-17-39-48-330.png]</p>
 </div>
 <div class="reply even">
 <h3 id="20230112-1818-2">2023/01/12 18:18 — [人名2]<a class="headerlink" href="#20230112-1818-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>截图的是默认配置，还是死机；</p>
 </div>
 <div class="reply odd">
-<h3 id="20230113-1442-5">2023/01/13 14:42 — [人名5]<a class="headerlink" href="#20230113-1442-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230113-1442-6">2023/01/13 14:42 — [人名6]<a class="headerlink" href="#20230113-1442-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>你们DSP 有开这个option吗</p>
 <p>[图片: image-2023-01-13-14-41-04-280.png]</p>
 </div>
 <div class="reply even">
 <h3 id="20230113-1811-2">2023/01/13 18:11 — [人名2]<a class="headerlink" href="#20230113-1811-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5],</p>
+<p>Hi [人名6],</p>
 <p>默认开启的；</p>
 </div>
 <div class="reply odd">
 <h3 id="20230113-1824-2">2023/01/13 18:24 — [人名2]<a class="headerlink" href="#20230113-1824-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5],</p>
+<p>Hi [人名6],</p>
 <p>在 feature_65_8m_evb_ull2_earbuds.mk 中 AIR_AUDIO_LC3PLUS_CODEC_ENABLE 关闭的，而在 feature_65_evb_ull2_dongle.mk 又是开启的，我并没有加入了LC3PLUS的add on，所以把  feature_65_evb_ull2_dongle.mk 的 AIR_AUDIO_LC3PLUS_CODEC_ENABLE 关闭了，但还是一样的死机。</p>
 </div>
 <div class="reply even">
-<h3 id="20230117-0927-5">2023/01/17 09:27 — [人名5]<a class="headerlink" href="#20230117-0927-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230117-0927-6">2023/01/17 09:27 — [人名6]<a class="headerlink" href="#20230117-0927-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>你们没有拿到LC3PLUS，所以里面被改为了n；可以把这个地方先mask掉试试看；</p>
 <p>geneva-mp-bta3/156x_2023_0116_1/code/dsp/project/ab156x/apps/dsp0_headset_ref_design/XT-XCC/Makefile</p>
@@ -422,22 +422,22 @@ endif</p>
 </div>
 <div class="reply odd">
 <h3 id="20230117-0956-2">2023/01/17 09:56 — [人名2]<a class="headerlink" href="#20230117-0956-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>这里默认是关闭；</p>
 </div>
 <div class="reply even">
-<h3 id="20230118-1353-5">2023/01/18 13:53 — [人名5]<a class="headerlink" href="#20230118-1353-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230118-1353-6">2023/01/18 13:53 — [人名6]<a class="headerlink" href="#20230118-1353-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>同样的软件，添加LC3PLUS add on 还有问题吗</p>
 </div>
 <div class="reply odd">
 <h3 id="20230130-1612-2">2023/01/30 16:12 — [人名2]<a class="headerlink" href="#20230130-1612-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>加入了LC3PLUS的add on，并修改.mk 文件，可以正常播放的；</p>
 <p>[图片: Snipaste_2023-01-30_16-11-10.jpg]</p>
 </div>
 <div class="reply even">
-<h3 id="20230131-1805-5">2023/01/31 18:05 — [人名5]<a class="headerlink" href="#20230131-1805-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230131-1805-6">2023/01/31 18:05 — [人名6]<a class="headerlink" href="#20230131-1805-6" title="Permanent link">&para;</a></h3>
 <p>你们没有拿到LC3PLUS，所以里面被改为了n；可以把这个地方先mask掉试试看；</p>
 <p>geneva-mp-bta3/156x_2023_0116_1/code/dsp/project/ab156x/apps/dsp0_headset_ref_design/XT-XCC/Makefile</p>
 <p>LC3PLUS_LIB = $(strip $(ROOTDIR))/middleware/third_party/dspalg/lc3plus_codec/module.mk
@@ -452,7 +452,7 @@ endif</p>
 </div>
 <div class="reply odd">
 <h3 id="20230201-1520-2">2023/02/01 15:20 — [人名2]<a class="headerlink" href="#20230201-1520-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>删掉这个OK了；</p>
 </div>
 <div class="ticket-nav">

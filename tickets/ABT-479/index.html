@@ -362,7 +362,7 @@
 <p><a href="../ABT-478/">← 上一个工单：ABT-478</a>　<a href="../ABT-480/">→ 下一个工单：ABT-480</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>客户想用1565去控制一个LED灯，时序要求需要去到0.3us，想咨询一下是否支持？IO的 clock source 是多少？</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
@@ -372,36 +372,36 @@
 <p>[图片: PixPin_2024-11-19_16-49-22.png]</p>
 </div>
 <div class="reply even">
-<h3 id="20241120-0950-5">2024/11/20 09:50 — [人名5]<a class="headerlink" href="#20241120-0950-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241120-0950-6">2024/11/20 09:50 — [人名6]<a class="headerlink" href="#20241120-0950-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>ISNK 可以支持，可以用ISINK 试试</p>
 </div>
 <div class="reply odd">
 <h3 id="20241121-1645-2">2024/11/21 16:45 — [人名2]<a class="headerlink" href="#20241121-1645-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5] ,</p>
+<p>Hi [人名6] ,</p>
 <p>不能呀，clock source 只有2M，最低的间隔是0.5ms，到不了 0.3ms，而且结构体里面都是 ms级的。</p>
 <p>[图片: PixPin_2024-11-21_16-43-57.png]</p>
 <p>[图片: PixPin_2024-11-21_16-42-38.png]</p>
 </div>
 <div class="reply even">
 <h3 id="20241121-1647-2">2024/11/21 16:47 — [人名2]<a class="headerlink" href="#20241121-1647-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>上个回复打错了。clock source 为2M，最低的间隔是0.5us，到不了 0.3us，而且结构体里面都是 ms级的。</p>
 </div>
 <div class="reply odd">
-<h3 id="20241126-1631-5">2024/11/26 16:31 — [人名5]<a class="headerlink" href="#20241126-1631-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241126-1631-6">2024/11/26 16:31 — [人名6]<a class="headerlink" href="#20241126-1631-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>你们控制gpio 量LED是怎样的逻辑，能否说明一下</p>
 <p>[图片: PixPin_2024-11-19_16-49-22.png]</p>
 </div>
 <div class="reply even">
 <h3 id="20241126-1650-2">2024/11/26 16:50 — [人名2]<a class="headerlink" href="#20241126-1650-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>一帧发送24bit（3bytes）的数据内容，包含了RGB的颜色信息；每个bit可以是0或者1，0码要求高电平时间0.3us，1码要求高电平时间0.9us ；</p>
 <p>[图片: PixPin_2024-11-26_16-46-27.png]</p>
 </div>
 <div class="reply odd">
-<h3 id="20241202-1451-5">2024/12/02 14:51 — [人名5]<a class="headerlink" href="#20241202-1451-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241202-1451-6">2024/12/02 14:51 — [人名6]<a class="headerlink" href="#20241202-1451-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>看起来PWM实现不了客户需求，GPIO也控制不了这么多时间的拉高拉低。</p>
 </div>

@@ -362,29 +362,29 @@
 <p><a href="../ABT-40/">← 上一个工单：ABT-40</a>　<a href="../ABT-42/">→ 下一个工单：ABT-42</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名8],</p>
+<p>Hi [人名9],</p>
 <p>从哪个地址段开始，可以让我添加使用，在AB1562x系列上，0xFE00 后面都能自由使用；</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
-<h3 id="20220429-1057-11">2022/04/29 10:57 — [人名11]<a class="headerlink" href="#20220429-1057-11" title="Permanent link">&para;</a></h3>
+<h3 id="20220429-1057-13">2022/04/29 10:57 — [人名13]<a class="headerlink" href="#20220429-1057-13" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏],</p>
 <p>1565 系列 0xFE00之后的也是都可以自由使用, 请问是有遇到什么问题了吗？</p>
 <p>thanks</p>
 </div>
 <div class="reply even">
 <h3 id="20220429-1113-2">2022/04/29 11:13 — [人名2]<a class="headerlink" href="#20220429-1113-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名11]Huang,</p>
+<p>Hi [人名13]Huang,</p>
 <p>暂时没有遇到问题，就是确认这个其实地址。</p>
 </div>
 <div class="reply odd">
 <h3 id="20220429-2032-2">2022/04/29 20:32 — [人名2]<a class="headerlink" href="#20220429-2032-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名11]Huang,</p>
+<p>Hi [人名13]Huang,</p>
 <p>新增的0xFE00 放在什么地方，如果放在 ..\mcu\project\ab1565_ab1568_evk\apps\earbuds_ref_design\config_bin\ab1565_evk\nvkey.xml 编译不过；</p>
 <p>如果放在 \out\ab1565_evk\earbuds_ref_design_ull\download\syskey.xml 中，读取的时候提示 NVKEY_STATUS_ITEM_NOT_FOUND；</p>
 </div>
 <div class="reply even">
-<h3 id="20220505-0859-11">2022/05/05 08:59 — [人名11]<a class="headerlink" href="#20220505-0859-11" title="Permanent link">&para;</a></h3>
+<h3 id="20220505-0859-13">2022/05/05 08:59 — [人名13]<a class="headerlink" href="#20220505-0859-13" title="Permanent link">&para;</a></h3>
 <p>Hi  @[邮箱已隐藏],</p>
 <p>放在即可：..\mcu\project\ab1565_ab1568_evk\apps\earbuds_ref_design\config_bin\ab1565_evk\nvkey.xml </p>
 <p>你是怎么加的，我这边可以编译通过</p>
@@ -393,7 +393,7 @@
 </div>
 <div class="reply odd">
 <h3 id="20220505-1040-2">2022/05/05 10:40 — [人名2]<a class="headerlink" href="#20220505-1040-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名11]Huang,</p>
+<p>Hi [人名13]Huang,</p>
 <p>可以编译pass了；</p>
 <p>但是提示没有这个ID ；</p>
 <p>[图片: Snipaste_2022-05-05_10-40-01.png]</p>
@@ -403,20 +403,20 @@
 <p>[附件: 读取不到.pcapng]</p>
 </div>
 <div class="reply even">
-<h3 id="20220505-1329-11">2022/05/05 13:29 — [人名11]<a class="headerlink" href="#20220505-1329-11" title="Permanent link">&para;</a></h3>
+<h3 id="20220505-1329-13">2022/05/05 13:29 — [人名13]<a class="headerlink" href="#20220505-1329-13" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>麻烦参照这份文档再验证下，</p>
 <p>[附件: NVKey User Guide.pptx]</p>
 </div>
 <div class="reply odd">
 <h3 id="20220505-1505-2">2022/05/05 15:05 — [人名2]<a class="headerlink" href="#20220505-1505-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名11]Huang,</p>
+<p>Hi [人名13]Huang,</p>
 <p>可以了，代码没有问题；</p>
 <p>我一直保留着 filesystem.bin、nvdm.bin、syskey.xml 这个三个文件（包含了voice prompt、LED 等设置），编译出来之后就用旧的覆盖编译出来的内容，导致了新增的nvkey始终不在FW中。</p>
 <p>为了使用新增的nvkey内容，不能使用之前保留的三个文件，有什么方法可以快速添加以前的内容？</p>
 </div>
 <div class="reply even">
-<h3 id="20220505-1549-11">2022/05/05 15:49 — [人名11]<a class="headerlink" href="#20220505-1549-11" title="Permanent link">&para;</a></h3>
+<h3 id="20220505-1549-13">2022/05/05 15:49 — [人名13]<a class="headerlink" href="#20220505-1549-13" title="Permanent link">&para;</a></h3>
 <p>Hi  @[邮箱已隐藏],</p>
 <p>不好意思，请以这份资料为准</p>
 <p>[图片: image-2022-05-05-15-43-43-527.png]</p>
@@ -426,7 +426,7 @@
 [附件: Customize NVKeys.pdf] [图片: image-2022-05-05-15-40-17-868.png] [图片: image-2022-05-05-15-43-43-527.png]</p>
 </div>
 <div class="reply odd">
-<h3 id="20220506-1024-11">2022/05/06 10:24 — [人名11]<a class="headerlink" href="#20220506-1024-11" title="Permanent link">&para;</a></h3>
+<h3 id="20220506-1024-13">2022/05/06 10:24 — [人名13]<a class="headerlink" href="#20220506-1024-13" title="Permanent link">&para;</a></h3>
 <p>Hi  @[邮箱已隐藏],</p>
 <p>修改NVKEY.XML 编译后改到的只有nvdm.bin, 只更新nvdm.bin 应该就可以了，麻烦测试看看</p>
 <p>(filesystem.bin是用于vp保存的，只有vp有增删才会改到，system.xml这是什么路径下的文件呢）</p>
@@ -434,12 +434,12 @@
 </div>
 <div class="reply even">
 <h3 id="20220506-1147-2">2022/05/06 11:47 — [人名2]<a class="headerlink" href="#20220506-1147-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名11]Huang,</p>
+<p>Hi [人名13]Huang,</p>
 <p>在config tool上选择“save file”在对应的目录下，就会有一个 system.xml</p>
 <p>[图片: Snipaste_2022-05-06_11-47-42.png]</p>
 </div>
 <div class="reply odd">
-<h3 id="20220506-1657-11">2022/05/06 16:57 — [人名11]<a class="headerlink" href="#20220506-1657-11" title="Permanent link">&para;</a></h3>
+<h3 id="20220506-1657-13">2022/05/06 16:57 — [人名13]<a class="headerlink" href="#20220506-1657-13" title="Permanent link">&para;</a></h3>
 <p>Hi  @[邮箱已隐藏],
  # 编译后我们会得到一个新的nvdm.bin，
  # 在config tool打开新的nvdm.bin所在的文件夹后， 导入原本的nvr,
@@ -448,7 +448,7 @@
 </div>
 <div class="reply even">
 <h3 id="20220506-1704-2">2022/05/06 17:04 — [人名2]<a class="headerlink" href="#20220506-1704-2" title="Permanent link">&para;</a></h3>
-<p>Hi Hi [人名11]Huang,</p>
+<p>Hi Hi [人名13]Huang,</p>
 <p>是的，已经解决；</p>
 </div>
 <div class="ticket-nav">

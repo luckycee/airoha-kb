@@ -21,7 +21,7 @@
     
     
       
-        <title>AB1565 regen脚长按10s复位相关文档（[客户E]） - ABT 工单知识库</title>
+        <title>AB1565 regen脚长按10s复位相关文档（[客户H]） - ABT 工单知识库</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#abt-457-ab1565-regen10se" class="md-skip">
+        <a href="#abt-457-ab1565-regen10sh" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              AB1565 regen脚长按10s复位相关文档（[客户E]）
+              AB1565 regen脚长按10s复位相关文档（[客户H]）
             
           </span>
         </div>
@@ -354,7 +354,7 @@
   
 
 
-<h1 id="abt-457-ab1565-regen10se">ABT-457 AB1565 regen脚长按10s复位相关文档（[客户E]）<a class="headerlink" href="#abt-457-ab1565-regen10se" title="Permanent link">&para;</a></h1>
+<h1 id="abt-457-ab1565-regen10sh">ABT-457 AB1565 regen脚长按10s复位相关文档（[客户H]）<a class="headerlink" href="#abt-457-ab1565-regen10sh" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>📅 2024/10/12 10:17　🔗 <a href="https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-457">原始工单链接</a></p>
 </blockquote>
@@ -362,18 +362,18 @@
 <p><a href="../ABT-456/">← 上一个工单：ABT-456</a>　<a href="../ABT-458/">→ 下一个工单：ABT-458</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]：</p>
+<p>Hi [人名6]：</p>
 <p>1、regen脚长按10S硬复位是否有文档说明，我们需要给到客户。</p>
 <p>2、还有开机键长安10S硬复位，怎么判断是硬复位的？</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
-<h3 id="20241012-1034-5">2024/10/12 10:34 — [人名5]<a class="headerlink" href="#20241012-1034-5" title="Permanent link">&para;</a></h3>
-<p>Hi @[人名88] ，</p>
+<h3 id="20241012-1034-6">2024/10/12 10:34 — [人名6]<a class="headerlink" href="#20241012-1034-6" title="Permanent link">&para;</a></h3>
+<p>Hi @[人名94] ，</p>
 <p>耳机长按regen 10s  LPSD 进 hw RTC，你有相关文档吗</p>
 </div>
 <div class="reply even">
-<h3 id="20241012-1444-29">2024/10/12 14:44 — [人名29]<a class="headerlink" href="#20241012-1444-29" title="Permanent link">&para;</a></h3>
+<h3 id="20241012-1444-31">2024/10/12 14:44 — [人名31]<a class="headerlink" href="#20241012-1444-31" title="Permanent link">&para;</a></h3>
 <p>1、regen脚长按10S硬复位是否有文档说明，我们需要给到客户。</p>
 <p>Ans：&gt;&gt;please refer to Design notice chapter “{<em>}REGEN LPSD function{</em>}”</p>
 <p>2、还有开机键长安10S硬复位，怎么判断是硬复位的？</p>
@@ -382,30 +382,30 @@
 <p>▪AB1565 will power on after triggering the LPSD function</p>
 </div>
 <div class="reply odd">
-<h3 id="20241014-1112-23-24">2024/10/14 11:12 — [人名23] [人名24]<a class="headerlink" href="#20241014-1112-23-24" title="Permanent link">&para;</a></h3>
-<p>Hi [人名29]：</p>
+<h3 id="20241014-1112-25-26">2024/10/14 11:12 — [人名25] [人名26]<a class="headerlink" href="#20241014-1112-25-26" title="Permanent link">&para;</a></h3>
+<p>Hi [人名31]：</p>
 <p>1、和SYSRSTB有何区别？</p>
 <p>2、测试Headset的工程（./build.sh ab1565_8m_evk headset_ref_design_ull2_full），长按regen 10s后，是直接重启了；但是同样测试earbuds（ ./build.sh ab1565_8m_evk earbuds_ref_design_ull2）和dongle（./build.sh ab1565_8m_evk dongle_ref_design_ull2_afe_in）的是log停了，再次长按regen会开机（如果是点按则进rtc）。为何这样？是否可以修改一致？</p>
 </div>
 <div class="reply even">
-<h3 id="20241014-1342-29">2024/10/14 13:42 — [人名29]<a class="headerlink" href="#20241014-1342-29" title="Permanent link">&para;</a></h3>
+<h3 id="20241014-1342-31">2024/10/14 13:42 — [人名31]<a class="headerlink" href="#20241014-1342-31" title="Permanent link">&para;</a></h3>
 <p>SYSRSTB有何区别&gt;&gt;SYSRSTB和Regen LPSD 都是硬复位,即使软件死机也能救回来.</p>
 <p>测试Headset的工程（./build.sh ab1565_8m_evk headset_ref_design_ull2_full），长按regen 10s后，是直接重启了；但是同样测试earbuds（ ./build.sh ab1565_8m_evk earbuds_ref_design_ull2）和dongle（./build.sh ab1565_8m_evk dongle_ref_design_ull2_afe_in）的是log停了，再次长按regen会开机（如果是点按则进rtc）。为何这样？是否可以修改一致</p>
-<p>{color:#de350b}<em>Ans:这要提供log 给fason 分析.</em>{color}</p>
+<p>{color:#de350b}<em>Ans:这要提供log 给[人名6] 分析.</em>{color}</p>
 </div>
 <div class="reply odd">
-<h3 id="20241014-1412-5">2024/10/14 14:12 — [人名5]<a class="headerlink" href="#20241014-1412-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241014-1412-6">2024/10/14 14:12 — [人名6]<a class="headerlink" href="#20241014-1412-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>LPSD都是log直接停止的，麻烦提供headset log看看为啥会重启</p>
 </div>
 <div class="reply even">
-<h3 id="20241014-1420-23-24">2024/10/14 14:20 — [人名23] [人名24]<a class="headerlink" href="#20241014-1420-23-24" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]：</p>
+<h3 id="20241014-1420-25-26">2024/10/14 14:20 — [人名25] [人名26]<a class="headerlink" href="#20241014-1420-25-26" title="Permanent link">&para;</a></h3>
+<p>Hi [人名6]：</p>
 <p>Headset regen lpsd重启的log。</p>
 <p>[附件: 2262_headset_regen_lpsd_重启.pcapng]</p>
 </div>
 <div class="reply odd">
-<h3 id="20241014-1448-5">2024/10/14 14:48 — [人名5]<a class="headerlink" href="#20241014-1448-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241014-1448-6">2024/10/14 14:48 — [人名6]<a class="headerlink" href="#20241014-1448-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>headset reset是因为有个漏電bug</p>
 <p>考慮到earbuds跟dongle的產品通常不會把power key放在外面給人按，所以earbuds 跟 dongle没加这个漏电bug的patch。</p>
@@ -413,13 +413,13 @@
 <p>建議客戶不要用這個做甚麼功能</p>
 </div>
 <div class="reply even">
-<h3 id="20241014-1455-23-24">2024/10/14 14:55 — [人名23] [人名24]<a class="headerlink" href="#20241014-1455-23-24" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]：</p>
+<h3 id="20241014-1455-25-26">2024/10/14 14:55 — [人名25] [人名26]<a class="headerlink" href="#20241014-1455-25-26" title="Permanent link">&para;</a></h3>
+<p>Hi [人名6]：</p>
 <p>客户是在使用dongle和headset的regen lpsd的过程中，发现不同的表现，因此有疑问。</p>
 <p>漏电bug具体是什么问题？不加这个漏电bug patch对headset会有什么影响？</p>
 </div>
 <div class="reply odd">
-<h3 id="20241014-1458-5">2024/10/14 14:58 — [人名5]<a class="headerlink" href="#20241014-1458-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241014-1458-6">2024/10/14 14:58 — [人名6]<a class="headerlink" href="#20241014-1458-6" title="Permanent link">&para;</a></h3>
 <p>在RTC mode觸發任何PMU intterrupt會使系統增加約10mA耗電。</p>
 <p>Root cause : PWR key 按壓完後釋會進入到 RTC mode ; 此問題乃因為放系統進入RTC mode時，SW 有些事情沒有做完 (尚未關閉 intterrupt上拉電源) 導致持續漏電 </p>
 <p>Patch 主要針對 Power off or Power on sequence 分別加了一些判斷
@@ -427,8 +427,8 @@
  * Power on 過程 : 開機 PMU init 過程, 利用 一個 PWR key press timer 保護, 一定要確保時間要 &gt; 這設定值才給開機  ; 避免按得不夠久, 遇到此問題</p>
 </div>
 <div class="reply even">
-<h3 id="20241014-1540-23-24">2024/10/14 15:40 — [人名23] [人名24]<a class="headerlink" href="#20241014-1540-23-24" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]：</p>
+<h3 id="20241014-1540-25-26">2024/10/14 15:40 — [人名25] [人名26]<a class="headerlink" href="#20241014-1540-25-26" title="Permanent link">&para;</a></h3>
+<p>Hi [人名6]：</p>
 <p>建議客戶不要用這個做甚麼功能</p>
 <blockquote>
 <blockquote>
@@ -437,18 +437,18 @@
 </blockquote>
 </div>
 <div class="reply odd">
-<h3 id="20241014-1745-5">2024/10/14 17:45 — [人名5]<a class="headerlink" href="#20241014-1745-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241014-1745-6">2024/10/14 17:45 — [人名6]<a class="headerlink" href="#20241014-1745-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>可以用LPSD，但是不要搭配LPSD做其他功能</p>
 </div>
 <div class="reply even">
 <h3 id="20241015-1438-2">2024/10/15 14:38 — [人名2]<a class="headerlink" href="#20241015-1438-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>dongle 代码中已经包含ECPM-77 的内容，只需要在Makefile 中开启，就能在LPSD 后系统reboot ；</p>
 <p>[图片: PixPin_2024-10-15_14-37-48.png]</p>
 </div>
 <div class="reply odd">
-<h3 id="20241015-1443-5">2024/10/15 14:43 — [人名5]<a class="headerlink" href="#20241015-1443-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241015-1443-6">2024/10/15 14:43 — [人名6]<a class="headerlink" href="#20241015-1443-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>对的，打开这个define就好啦</p>
 </div>

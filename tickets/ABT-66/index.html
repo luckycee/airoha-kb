@@ -362,39 +362,39 @@
 <p><a href="../ABT-65/">← 上一个工单：ABT-65</a>　<a href="../ABT-67/">→ 下一个工单：ABT-67</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>请看一下如何关闭长按power key导致的sys reset，客户需要支持10秒以上的长按功能键；</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
-<h3 id="20220729-1504-5">2022/07/29 15:04 — [人名5]<a class="headerlink" href="#20220729-1504-5" title="Permanent link">&para;</a></h3>
+<h3 id="20220729-1504-6">2022/07/29 15:04 — [人名6]<a class="headerlink" href="#20220729-1504-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>可以参考pmu_enable_lpsd_lp 这个函数来修改</p>
 </div>
 <div class="reply even">
 <h3 id="20220801-1018-2">2022/08/01 10:18 — [人名2]<a class="headerlink" href="#20220801-1018-2" title="Permanent link">&para;</a></h3>
-<p>Hi fason,</p>
+<p>Hi [人名6],</p>
 <p>这个接口是我可以看到的嘛？搜索不出来。</p>
 </div>
 <div class="reply odd">
-<h3 id="20220801-1118-5">2022/08/01 11:18 — [人名5]<a class="headerlink" href="#20220801-1118-5" title="Permanent link">&para;</a></h3>
+<h3 id="20220801-1118-6">2022/08/01 11:18 — [人名6]<a class="headerlink" href="#20220801-1118-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏],</p>
 <p>在hal_pmu_internal_2565.c文件里面，我搜SDK 也是有的</p>
 </div>
 <div class="reply even">
 <h3 id="20220801-1140-2">2022/08/01 11:40 — [人名2]<a class="headerlink" href="#20220801-1140-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5],</p>
+<p>Hi [人名6],</p>
 <p>找到了 V3.2.0 是你写，V2.9.0、V2.11.0 是 void pmu_enable_lpsd_2565(void)；</p>
 </div>
 <div class="reply odd">
 <h3 id="20220801-1210-2">2022/08/01 12:10 — [人名2]<a class="headerlink" href="#20220801-1210-2" title="Permanent link">&para;</a></h3>
-<p>Hi  [人名5],</p>
+<p>Hi  [人名6],</p>
 <p>修改了，没有作用；</p>
 <p>我添加了部分log，但是init的时候，看不到我的log，这会是什么问题？</p>
 <p>[图片: Snipaste_2022-08-01_12-09-25.png]</p>
 </div>
 <div class="reply even">
-<h3 id="20220801-1611-5">2022/08/01 16:11 — [人名5]<a class="headerlink" href="#20220801-1611-5" title="Permanent link">&para;</a></h3>
+<h3 id="20220801-1611-6">2022/08/01 16:11 — [人名6]<a class="headerlink" href="#20220801-1611-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏],</p>
 <p>开机之后不会跑这里，需要你们开机之后自己调用，我这边调用一下，再长按10s 都不会reset了</p>
 </div>

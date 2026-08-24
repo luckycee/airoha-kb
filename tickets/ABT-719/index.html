@@ -21,7 +21,7 @@
     
     
       
-        <title>【[客户F]】AB1565AM 设置通透增益效果反馈慢 - ABT 工单知识库</title>
+        <title>【[客户J]】AB1565AM 设置通透增益效果反馈慢 - ABT 工单知识库</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#abt-719-fab1565am" class="md-skip">
+        <a href="#abt-719-jab1565am" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              【[客户F]】AB1565AM 设置通透增益效果反馈慢
+              【[客户J]】AB1565AM 设置通透增益效果反馈慢
             
           </span>
         </div>
@@ -354,7 +354,7 @@
   
 
 
-<h1 id="abt-719-fab1565am">ABT-719 【[客户F]】AB1565AM 设置通透增益效果反馈慢<a class="headerlink" href="#abt-719-fab1565am" title="Permanent link">&para;</a></h1>
+<h1 id="abt-719-jab1565am">ABT-719 【[客户J]】AB1565AM 设置通透增益效果反馈慢<a class="headerlink" href="#abt-719-jab1565am" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>📅 2026/03/26 11:06　🔗 <a href="https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-719">原始工单链接</a></p>
 </blockquote>
@@ -362,10 +362,10 @@
 <p><a href="../ABT-718/">← 上一个工单：ABT-718</a>　<a href="../ABT-720/">→ 下一个工单：ABT-720</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>在开启通透之后，如果外围有巨大的声音，检测到之后客户希望关闭通透，以此来保护听到。</p>
 <p>一开始的时候客户选择了内置的power detect来做，效果出来之后，反应速度非常快，但是效果不太好，因为power detect 只有一个档位，不管时巴掌声还是鞭炮都是直接降到这个档位，体验上跟客户的要求有距离。</p>
-<p>然后[客户F]那边自己做的一个方案，工作流程如下：</p>
+<p>然后[客户J]那边自己做的一个方案，工作流程如下：</p>
 <p>DSP实时采取FF麦数据，进行运算，得到DB值，分6个等级 → DSP发送等级给到MCU → MCU根据等级通过降噪切换函数设置通透增益。</p>
 <p>bool app_anc_service_enable(audio_anc_control_filter_id_t filter_id,
                             audio_anc_control_type_t anc_type,
@@ -377,7 +377,7 @@
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
 <h3 id="20260326-1121-2">2026/03/26 11:21 — [人名2]<a class="headerlink" href="#20260326-1121-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>这是我使用App修改通透的gain后的log，整个过程确认是需要200ms左右；</p>
 <p>[图片: PixPin_2026-03-26_11-17-01.png]</p>
 </div>
@@ -391,7 +391,7 @@
 <p>$ ./build.sh ab1565_8m_evk earbuds_ref_design</p>
 </div>
 <div class="reply even">
-<h3 id="20260326-1654-10">2026/03/26 16:54 — [人名10]<a class="headerlink" href="#20260326-1654-10" title="Permanent link">&para;</a></h3>
+<h3 id="20260326-1654-12">2026/03/26 16:54 — [人名12]<a class="headerlink" href="#20260326-1654-12" title="Permanent link">&para;</a></h3>
 <p>Hi  @[邮箱已隐藏] </p>
 <p>因为是TWS有连接，需要双耳同步控制 runtime gain,  所以会需要做delay ,   这份log，收到set runtime gain 的race cmd 后，会delay 194ms 在去执行， 这个delay 多少ms 是根据 bt clock 来计算同步的时间的，没办法一定能控制在100ms 内</p>
 <p>所以要做到双耳同步控制就会避免不了有delay </p>
@@ -399,12 +399,12 @@
 </div>
 <div class="reply odd">
 <h3 id="20260327-1607-2">2026/03/27 16:07 — [人名2]<a class="headerlink" href="#20260327-1607-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名10] ([人名10])，</p>
+<p>Hi [人名12] ([人名12])，</p>
 <p>这个我能理解。 power detect 反应比较快是因为没有sync 给partner吗？有什么地方可以借用的？</p>
 <p>[附件: Logging260327_155316_COM3.rar]</p>
 </div>
 <div class="reply even">
-<h3 id="20260331-1025-10">2026/03/31 10:25 — [人名10]<a class="headerlink" href="#20260331-1025-10" title="Permanent link">&para;</a></h3>
+<h3 id="20260331-1025-12">2026/03/31 10:25 — [人名12]<a class="headerlink" href="#20260331-1025-12" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] </p>
 <p>DSP实时采取FF麦数据，进行运算，得到DB值，分6个等级 → DSP发送等级给到MCU → MCU根据等级通过降噪切换函数设置通透增益。</p>
 <p>---》 这个看下是否能使用 ED来达到，可以先验证下看，谢谢</p>
@@ -412,11 +412,11 @@
 </div>
 <div class="reply odd">
 <h3 id="20260331-1037-2">2026/03/31 10:37 — [人名2]<a class="headerlink" href="#20260331-1037-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名10] ([人名10])</p>
+<p>Hi [人名12] ([人名12])</p>
 <p>检测的就慢，客户之前做过这个功能，环境变化需要时间。</p>
 </div>
 <div class="reply even">
-<h3 id="20260331-1610-10">2026/03/31 16:10 — [人名10]<a class="headerlink" href="#20260331-1610-10" title="Permanent link">&para;</a></h3>
+<h3 id="20260331-1610-12">2026/03/31 16:10 — [人名12]<a class="headerlink" href="#20260331-1610-12" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] </p>
 <p>power detect 反应比较快是因为没有sync 给partner吗？有什么地方可以借用的？</p>
 <p>--》 对啊，power detect 是dsp 直接处理的，侦测达到阈值就控制关闭，通常是用来处理啸叫， 不会做双耳同步的控制的， 没有什么可以借用让你去控制，只有config tool 上的参数可以调</p>
@@ -426,11 +426,11 @@
 </div>
 <div class="reply odd">
 <h3 id="20260401-1016-2">2026/04/01 10:16 — [人名2]<a class="headerlink" href="#20260401-1016-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名10] ([人名10])，</p>
+<p>Hi [人名12] ([人名12])，</p>
 <p>能不能通过MCU 或者DSP 发送一个msg 给power detect的控制，让DSP执行power detect的内容？</p>
 </div>
 <div class="reply even">
-<h3 id="20260401-1640-10">2026/04/01 16:40 — [人名10]<a class="headerlink" href="#20260401-1640-10" title="Permanent link">&para;</a></h3>
+<h3 id="20260401-1640-12">2026/04/01 16:40 — [人名12]<a class="headerlink" href="#20260401-1640-12" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] </p>
 <p>能不能通过MCU 或者DSP 发送一个msg 给power detect的控制，让DSP执行power detect的内容？</p>
 <p>---&gt; 没有这样的做法</p>

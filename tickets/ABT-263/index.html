@@ -21,7 +21,7 @@
     
     
       
-        <title>【[客户E]】BIS 下关机再开机回连声音出得慢问题 - ABT 工单知识库</title>
+        <title>【[客户H]】BIS 下关机再开机回连声音出得慢问题 - ABT 工单知识库</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#abt-263-ebis" class="md-skip">
+        <a href="#abt-263-hbis" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              【[客户E]】BIS 下关机再开机回连声音出得慢问题
+              【[客户H]】BIS 下关机再开机回连声音出得慢问题
             
           </span>
         </div>
@@ -354,7 +354,7 @@
   
 
 
-<h1 id="abt-263-ebis">ABT-263 【[客户E]】BIS 下关机再开机回连声音出得慢问题<a class="headerlink" href="#abt-263-ebis" title="Permanent link">&para;</a></h1>
+<h1 id="abt-263-hbis">ABT-263 【[客户H]】BIS 下关机再开机回连声音出得慢问题<a class="headerlink" href="#abt-263-hbis" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>📅 2023/09/27 11:38　🔗 <a href="https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-263">原始工单链接</a></p>
 </blockquote>
@@ -362,7 +362,7 @@
 <p><a href="../ABT-262/">← 上一个工单：ABT-262</a>　<a href="../ABT-264/">→ 下一个工单：ABT-264</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>HI [人名5]，</p>
+<p>HI [人名6]，</p>
 <p>在添加了 <a href="../ABT-248/">ABT-248</a> 2023/09/12 15:20 提供的补丁之后，dongle 没有宕机了，但是当一只耳机关机后，再开机回连，需要大约15s才能听到声音，请帮忙看看这是否正常，每次都是如此。</p>
 <ol>
 <li>
@@ -389,32 +389,32 @@
 <p>[附件: LEABIS下听歌，把一个耳机（主或副）放入充电盒内合盖，17点1分15秒拿出充电盒，29秒才恢复有音乐.zip]</p>
 </div>
 <div class="reply even">
-<h3 id="20231007-1412-57">2023/10/07 14:12 — [人名57]<a class="headerlink" href="#20231007-1412-57" title="Permanent link">&para;</a></h3>
+<h3 id="20231007-1412-63">2023/10/07 14:12 — [人名63]<a class="headerlink" href="#20231007-1412-63" title="Permanent link">&para;</a></h3>
 <p>hi @[邮箱已隐藏],</p>
 <p>麻烦使用合入[附件: bt_app_common_dongle_c53sp_1007.patch][附件: bt_device_manager_gatt_cache_c53sp_1007.patch]测试</p>
 <p>root casue:在回连时没有GATT 没有获取到正确的cache信息，导致重新做了discovery，这样会拉长回连时间</p>
 <p>Thanks</p>
-<p>[人名57]</p>
+<p>[人名63]</p>
 </div>
 <div class="reply odd">
 <h3 id="20231007-1455-2">2023/10/07 14:55 — [人名2]<a class="headerlink" href="#20231007-1455-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名57] ([人名57])，</p>
+<p>Hi [人名63] ([人名63])，</p>
 <p>这是需要 dongle 和earbuds 同时修改吗？我的earbuds 是SDK V3.6.0， dongle 是V3.5.1 。</p>
 </div>
 <div class="reply even">
-<h3 id="20231009-1646-57">2023/10/09 16:46 — [人名57]<a class="headerlink" href="#20231009-1646-57" title="Permanent link">&para;</a></h3>
+<h3 id="20231009-1646-63">2023/10/09 16:46 — [人名63]<a class="headerlink" href="#20231009-1646-63" title="Permanent link">&para;</a></h3>
 <p>[附件: bt_device_manager_gatt_cache_c75sp_1009.patch] [附件: bt_app_common_dongle_c75sp_1009.patch]</p>
 </div>
 <div class="reply odd">
-<h3 id="20231009-1648-57">2023/10/09 16:48 — [人名57]<a class="headerlink" href="#20231009-1648-57" title="Permanent link">&para;</a></h3>
+<h3 id="20231009-1648-63">2023/10/09 16:48 — [人名63]<a class="headerlink" href="#20231009-1648-63" title="Permanent link">&para;</a></h3>
 <p>hi @[邮箱已隐藏]， </p>
 <p>麻烦使用[附件: bt_device_manager_gatt_cache_c75sp_1009.patch]只需要修改dongle即可，基于3.5.1</p>
 <p>Thanks</p>
-<p>[人名57]</p>
+<p>[人名63]</p>
 </div>
 <div class="reply even">
 <h3 id="20231013-1708-2">2023/10/13 17:08 — [人名2]<a class="headerlink" href="#20231013-1708-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名57] ([人名57])，</p>
+<p>Hi [人名63] ([人名63])，</p>
 <p>客户那边决定先不加此补丁，问题先关闭，感谢。</p>
 </div>
 <div class="ticket-nav">

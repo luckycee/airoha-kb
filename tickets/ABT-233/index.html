@@ -21,7 +21,7 @@
     
     
       
-        <title>【[客户E]】AB1565AM SDK V3.6.0 ClassAB 改ClassD导致降噪无效 - ABT 工单知识库</title>
+        <title>【[客户H]】AB1565AM SDK V3.6.0 ClassAB 改ClassD导致降噪无效 - ABT 工单知识库</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#abt-233-eab1565am-sdk-v360-classab-classd" class="md-skip">
+        <a href="#abt-233-hab1565am-sdk-v360-classab-classd" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              【[客户E]】AB1565AM SDK V3.6.0 ClassAB 改ClassD导致降噪无效
+              【[客户H]】AB1565AM SDK V3.6.0 ClassAB 改ClassD导致降噪无效
             
           </span>
         </div>
@@ -354,7 +354,7 @@
   
 
 
-<h1 id="abt-233-eab1565am-sdk-v360-classab-classd">ABT-233 【[客户E]】AB1565AM SDK V3.6.0 ClassAB 改ClassD导致降噪无效<a class="headerlink" href="#abt-233-eab1565am-sdk-v360-classab-classd" title="Permanent link">&para;</a></h1>
+<h1 id="abt-233-hab1565am-sdk-v360-classab-classd">ABT-233 【[客户H]】AB1565AM SDK V3.6.0 ClassAB 改ClassD导致降噪无效<a class="headerlink" href="#abt-233-hab1565am-sdk-v360-classab-classd" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>📅 2023/08/18 11:58　🔗 <a href="https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-233">原始工单链接</a></p>
 </blockquote>
@@ -371,48 +371,48 @@
 <p>[图片: Snipaste_2023-08-18_11-56-25.jpg]</p>
 </div>
 <div class="reply even">
-<h3 id="20230821-1117-5">2023/08/21 11:17 — [人名5]<a class="headerlink" href="#20230821-1117-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230821-1117-6">2023/08/21 11:17 — [人名6]<a class="headerlink" href="#20230821-1117-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>如电话沟通，因为这些nvkey 每台样机都不一样，目前看来只fota nvkey这条路行不通，需要修改代码。</p>
 <p>可以在初始化的时候把要修改的nvkey读出来，然后只修改需要修改的byte，再写回去。</p>
 </div>
 <div class="reply odd">
 <h3 id="20230822-1717-2">2023/08/22 17:17 — [人名2]<a class="headerlink" href="#20230822-1717-2" title="Permanent link">&para;</a></h3>
-<p>Hi  [人名5] ,</p>
+<p>Hi  [人名6] ,</p>
 <p>看着tool 中的反相勾选/不勾选，并不是某个byte由0到1，或者由1到0，而是所有频点的频点，按照我们所的走不通了。</p>
 <p>[图片: Snipaste_2023-08-22_17-15-45.jpg]</p>
 </div>
 <div class="reply even">
-<h3 id="20230824-1152-29">2023/08/24 11:52 — [人名29]<a class="headerlink" href="#20230824-1152-29" title="Permanent link">&para;</a></h3>
+<h3 id="20230824-1152-31">2023/08/24 11:52 — [人名31]<a class="headerlink" href="#20230824-1152-31" title="Permanent link">&para;</a></h3>
 <p>为什么改了ClassD会影响ANC参数，并且是只要不勾选反相降噪效果就会恢复？</p>
 <p>Ans：ClassD和ClassAB 增益和相位都不一样。原来用ClassAB调的ANC filter不能完全套用到ClassD。</p>
 </div>
 <div class="reply odd">
-<h3 id="20230824-1334-29">2023/08/24 13:34 — [人名29]<a class="headerlink" href="#20230824-1334-29" title="Permanent link">&para;</a></h3>
+<h3 id="20230824-1334-31">2023/08/24 13:34 — [人名31]<a class="headerlink" href="#20230824-1334-31" title="Permanent link">&para;</a></h3>
 <ol>
-<li>[客户E]新加坡那边有一批样机，需要通过OTA升级，改这里反相勾选了，相当于一个全新的ANC参数了，每个样机出去之前都独立调过参数的，不能直接给统一的新的参数，这个怎么处理好？</li>
+<li>[客户H]新加坡那边有一批样机，需要通过OTA升级，改这里反相勾选了，相当于一个全新的ANC参数了，每个样机出去之前都独立调过参数的，不能直接给统一的新的参数，这个怎么处理好？</li>
 </ol>
-<p>Ans：@[邮箱已隐藏] @[人名13] OTA升级可以只升级ClassD和Phase 这两个NV key吗？</p>
+<p>Ans：@[邮箱已隐藏] @[人名16] OTA升级可以只升级ClassD和Phase 这两个NV key吗？</p>
 </div>
 <div class="reply even">
 <h3 id="20230824-1420-2">2023/08/24 14:20 — [人名2]<a class="headerlink" href="#20230824-1420-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名29]，</p>
+<p>Hi [人名31]，</p>
 <p>反相是通过tool 计算后，形成了新的内容，并不是nvkey 中的某个byte发生了变化，不能直接更新某条nvkey的内容。</p>
 </div>
 <div class="reply odd">
-<h3 id="20230824-1448-29">2023/08/24 14:48 — [人名29]<a class="headerlink" href="#20230824-1448-29" title="Permanent link">&para;</a></h3>
-<p>@[邮箱已隐藏] @[人名13] 提供一个prospal可以这样吗?</p>
+<h3 id="20230824-1448-31">2023/08/24 14:48 — [人名31]<a class="headerlink" href="#20230824-1448-31" title="Permanent link">&para;</a></h3>
+<p>@[邮箱已隐藏] @[人名16] 提供一个prospal可以这样吗?</p>
 <p>step1:先把ANC参数读出来</p>
 <p>step2:样机更新ClassD bin</p>
 <p>step3:把setp1的ANC 参数以write NV key的方式更新进去</p>
 </div>
 <div class="reply even">
 <h3 id="20230824-2021-2">2023/08/24 20:21 — [人名2]<a class="headerlink" href="#20230824-2021-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名29]，</p>
+<p>Hi [人名31]，</p>
 <p>这么做跟单独更新 ClassD没有区别，问题是现在更新了ClassD 会导致ANC 效果不对了。</p>
 </div>
 <div class="reply odd">
-<h3 id="20230825-0805-29">2023/08/25 08:05 — [人名29]<a class="headerlink" href="#20230825-0805-29" title="Permanent link">&para;</a></h3>
+<h3 id="20230825-0805-31">2023/08/25 08:05 — [人名31]<a class="headerlink" href="#20230825-0805-31" title="Permanent link">&para;</a></h3>
 <p>那没办法了，样机拿回来更新ClassD重新校准吧！</p>
 </div>
 <div class="ticket-nav">

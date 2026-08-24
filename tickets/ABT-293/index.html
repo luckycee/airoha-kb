@@ -362,7 +362,7 @@
 <p><a href="../ABT-292/">← 上一个工单：ABT-292</a>　<a href="../ABT-294/">→ 下一个工单：ABT-294</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>HI [人名5]，</p>
+<p>HI [人名6]，</p>
 <p>客户使用了 speaker_ref_design 这个工程，连接手机之后，发现连接界面的图片跟 earbuds_ref_design 一样，需要修改为普通蓝牙，不需要这个耳机的图标；</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
@@ -371,56 +371,56 @@
 <p>[图片: 微信图片编辑_[序列号已隐藏].jpg]</p>
 </div>
 <div class="reply even">
-<h3 id="20231114-1558-5">2023/11/14 15:58 — [人名5]<a class="headerlink" href="#20231114-1558-5" title="Permanent link">&para;</a></h3>
+<h3 id="20231114-1558-6">2023/11/14 15:58 — [人名6]<a class="headerlink" href="#20231114-1558-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>在bt_custom_config.c</p>
 <p>BT_SINK_SRV_CM_DB_COD  改成 0x240414 试试</p>
 </div>
 <div class="reply odd">
 <h3 id="20231114-1645-2">2023/11/14 16:45 — [人名2]<a class="headerlink" href="#20231114-1645-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>修改有效，但是仍然是耳机图标（少了对讲mic 柄），能否改为蓝牙图标？</p>
 <p>[图片: 微信图片编辑_[序列号已隐藏].jpg]</p>
 <p>[图片: 微信图片编辑_[序列号已隐藏].jpg]</p>
 </div>
 <div class="reply even">
-<h3 id="20231114-1803-5">2023/11/14 18:03 — [人名5]<a class="headerlink" href="#20231114-1803-5" title="Permanent link">&para;</a></h3>
+<h3 id="20231114-1803-6">2023/11/14 18:03 — [人名6]<a class="headerlink" href="#20231114-1803-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>0x240414 最后的14，你们从 0-14之间改一下看看哪个符合需求不</p>
 </div>
 <div class="reply odd">
 <h3 id="20231114-1847-2">2023/11/14 18:47 — [人名2]<a class="headerlink" href="#20231114-1847-2" title="Permanent link">&para;</a></h3>
-<p>HI [人名5]，</p>
+<p>HI [人名6]，</p>
 <p>没有变，还是原来的耳机图标；</p>
 </div>
 <div class="reply even">
-<h3 id="20231115-1106-5">2023/11/15 11:06 — [人名5]<a class="headerlink" href="#20231115-1106-5" title="Permanent link">&para;</a></h3>
+<h3 id="20231115-1106-6">2023/11/15 11:06 — [人名6]<a class="headerlink" href="#20231115-1106-6" title="Permanent link">&para;</a></h3>
 <p>[图片: image-2023-11-15-11-06-33-821.png]</p>
 </div>
 <div class="reply odd">
 <h3 id="20231115-1705-2">2023/11/15 17:05 — [人名2]<a class="headerlink" href="#20231115-1705-2" title="Permanent link">&para;</a></h3>
-<p>HI [人名5]，</p>
+<p>HI [人名6]，</p>
 <p>bit0 bit1 都是0 吗？bit2 - 7 就按照图片的来。</p>
 </div>
 <div class="reply even">
-<h3 id="20231115-1725-5">2023/11/15 17:25 — [人名5]<a class="headerlink" href="#20231115-1725-5" title="Permanent link">&para;</a></h3>
+<h3 id="20231115-1725-6">2023/11/15 17:25 — [人名6]<a class="headerlink" href="#20231115-1725-6" title="Permanent link">&para;</a></h3>
 <p>对</p>
 </div>
 <div class="reply odd">
 <h3 id="20231115-1901-2">2023/11/15 19:01 — [人名2]<a class="headerlink" href="#20231115-1901-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5],</p>
+<p>Hi [人名6],</p>
 <p>无论我修改什么值，在Android 端搜索到的设备图片都是耳机带mic，连接上之后都是耳机不带mic。</p>
 <p>我图片中有显示手机、打印机、电脑、蓝牙图标，这些在未连接时已经可以看到，是怎么实现的？</p>
 </div>
 <div class="reply even">
-<h3 id="20231116-1753-5">2023/11/16 17:53 — [人名5]<a class="headerlink" href="#20231116-1753-5" title="Permanent link">&para;</a></h3>
+<h3 id="20231116-1753-6">2023/11/16 17:53 — [人名6]<a class="headerlink" href="#20231116-1753-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>可以百度COD ，修改每个bit </p>
 <p>[https://blog.csdn.net/XiaoXiaoPengBo/article/details/108366776]</p>
 </div>
 <div class="reply odd">
 <h3 id="20231121-1748-2">2023/11/21 17:48 — [人名2]<a class="headerlink" href="#20231121-1748-2" title="Permanent link">&para;</a></h3>
-<p>HI [人名5]，</p>
+<p>HI [人名6]，</p>
 <p>修改OK了，感谢。</p>
 </div>
 <div class="ticket-nav">

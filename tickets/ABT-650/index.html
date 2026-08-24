@@ -21,7 +21,7 @@
     
     
       
-        <title>【[客户L]】TWS回连设定主副机问题 - ABT 工单知识库</title>
+        <title>【[客户P]】TWS回连设定主副机问题 - ABT 工单知识库</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#abt-650-ltws" class="md-skip">
+        <a href="#abt-650-ptws" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              【[客户L]】TWS回连设定主副机问题
+              【[客户P]】TWS回连设定主副机问题
             
           </span>
         </div>
@@ -354,7 +354,7 @@
   
 
 
-<h1 id="abt-650-ltws">ABT-650 【[客户L]】TWS回连设定主副机问题<a class="headerlink" href="#abt-650-ltws" title="Permanent link">&para;</a></h1>
+<h1 id="abt-650-ptws">ABT-650 【[客户P]】TWS回连设定主副机问题<a class="headerlink" href="#abt-650-ptws" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>📅 2025/11/25 21:51　🔗 <a href="https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-650">原始工单链接</a></p>
 </blockquote>
@@ -362,7 +362,7 @@
 <p><a href="../ABT-649/">← 上一个工单：ABT-649</a>　<a href="../ABT-651/">→ 下一个工单：ABT-651</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>前置条件：</p>
 <p>TWS 有连接记录，有连接手机记录；</p>
 <p>长按3s开机，到7s不松手进入手机配对；</p>
@@ -376,7 +376,7 @@
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
 <h3 id="20251126-1641-2">2025/11/26 16:41 — [人名2]<a class="headerlink" href="#20251126-1641-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>异常流程 </p>
 <p>R边中：</p>
 <ul>
@@ -395,7 +395,7 @@
 <p>[附件: 正常流程-L.pcapng]</p>
 </div>
 <div class="reply even">
-<h3 id="20251127-1945-5">2025/11/27 19:45 — [人名5]<a class="headerlink" href="#20251127-1945-5" title="Permanent link">&para;</a></h3>
+<h3 id="20251127-1945-6">2025/11/27 19:45 — [人名6]<a class="headerlink" href="#20251127-1945-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>看起来是agent 进配对之后没有退出recovery，切到partner去回连agent了，麻烦进配对的时候，调用bt_aws_mce_role_recovery_lock 去 固定agent，然后退出配对就调用bt_aws_mce_role_recovery_unlock恢复试试。</p>
 <h1 id="include-bt_aws_mce_role_recoveryh">include "bt_aws_mce_role_recovery.h"<a class="headerlink" href="#include-bt_aws_mce_role_recoveryh" title="Permanent link">&para;</a></h1>
@@ -404,7 +404,7 @@
 </div>
 <div class="reply odd">
 <h3 id="20251128-1204-2">2025/11/28 12:04 — [人名2]<a class="headerlink" href="#20251128-1204-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>问题流程：</p>
 <p>R边在11:54:05 配对状态，partner</p>
 <p>R边在11:54:06 固定role</p>
@@ -412,24 +412,24 @@
 <p>[附件: 进入配对之后，role 还是保持在partner.pcapng]</p>
 </div>
 <div class="reply even">
-<h3 id="20251129-1349-5">2025/11/29 13:49 — [人名5]<a class="headerlink" href="#20251129-1349-5" title="Permanent link">&para;</a></h3>
+<h3 id="20251129-1349-6">2025/11/29 13:49 — [人名6]<a class="headerlink" href="#20251129-1349-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>不会主动切agent，长按到第7s 进配对的话，假如当时是出于partner状态，就会等切到agent之后再进配对，可以等进配对之后再调用bt_aws_mce_role_recovery_lock，不然会固定在partner。</p>
 </div>
 <div class="reply odd">
 <h3 id="20251129-1508-2">2025/11/29 15:08 — [人名2]<a class="headerlink" href="#20251129-1508-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>再帮我看看怎么晚点去回连手机？在按到7s的时候有时候回连上手机，又必须断开手机的动作，虽然结果都是进入配对了，但是客户不要这个回连。</p>
 </div>
 <div class="reply even">
-<h3 id="20251129-1638-5">2025/11/29 16:38 — [人名5]<a class="headerlink" href="#20251129-1638-5" title="Permanent link">&para;</a></h3>
+<h3 id="20251129-1638-6">2025/11/29 16:38 — [人名6]<a class="headerlink" href="#20251129-1638-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>可以参考附件debug sop connection 部分去尝试修改哈
 [https://eservicedocs.ABT.com.tw/pages/viewpage.action?pageId=140739227]</p>
 </div>
 <div class="reply odd">
 <h3 id="20251202-1020-2">2025/12/02 10:20 — [人名2]<a class="headerlink" href="#20251202-1020-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>找到了发起回连的地方，delay 了2s 对SP 发起回连，解决了在长按到7s之前出现的回连上手机的问题；</p>
 </div>
 <div class="ticket-nav">

@@ -362,13 +362,13 @@
 <p><a href="../ABT-706/">← 上一个工单：ABT-706</a>　<a href="../ABT-708/">→ 下一个工单：ABT-708</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>客户使用的SDK5.4.0，做Headset，支持ANC和USB audio，在接入USB audio 之后开启ANC，Android / PC / iPhone15、16系列 都没有问题，但是在 iPhone 17 上就有电流声杂音的，请看看你们其他项目有没有遇到过这个问题，是否已经有解决？</p>
 <p>cmd: ./build.sh ab1577am_evk headset_ref_desin</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
-<h3 id="20260302-1439-80">2026/03/02 14:39 — [人名80]<a class="headerlink" href="#20260302-1439-80" title="Permanent link">&para;</a></h3>
+<h3 id="20260302-1439-86">2026/03/02 14:39 — [人名86]<a class="headerlink" href="#20260302-1439-86" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] </p>
 <p>用的是什么anc呢？电流声是持续的吗？
 没看到有客户报上来过iphone 17有这个问题，麻烦先提供syslog，开6M抓audio dump，并描述开anc听到电流声的时间点</p>
@@ -379,24 +379,24 @@
 </div>
 <div class="reply even">
 <h3 id="20260302-1459-2">2026/03/02 14:59 — [人名2]<a class="headerlink" href="#20260302-1459-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名80] (szciic)，</p>
+<p>Hi [人名86] (szciic)，</p>
 <p>使用的是FF+FB，电流声是持续的；今天稍微提供log 内容；</p>
 </div>
 <div class="reply odd">
 <h3 id="20260303-1421-2">2026/03/03 14:21 — [人名2]<a class="headerlink" href="#20260303-1421-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名80] (szciic)，</p>
+<p>Hi [人名86] (szciic)，</p>
 <p>见附件log</p>
 <p>[附件: Logging260303_135627_COM36.rar]</p>
 </div>
 <div class="reply even">
-<h3 id="20260303-1734-80">2026/03/03 17:34 — [人名80]<a class="headerlink" href="#20260303-1734-80" title="Permanent link">&para;</a></h3>
+<h3 id="20260303-1734-86">2026/03/03 17:34 — [人名86]<a class="headerlink" href="#20260303-1734-86" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] 
 usb dump没听到电流声，是必先的吗？从log看anc切换是：passthru-hybrid-passthru-hybrid，请问是在打开passthru就会持续有电流声吗？如果不是，请标注时间点</p>
 <p>Thanks.</p>
 </div>
 <div class="reply odd">
 <h3 id="20260303-1758-2">2026/03/03 17:58 — [人名2]<a class="headerlink" href="#20260303-1758-2" title="Permanent link">&para;</a></h3>
-<p>[人名80] (szciic)，</p>
+<p>[人名86] (szciic)，</p>
 <p>每次在开启 hybrid 的时候都有</p>
 </div>
 <div class="reply even">
@@ -406,34 +406,34 @@ usb dump没听到电流声，是必先的吗？从log看anc切换是：passthru-
 <p>[附件: 开降噪播放歌曲时，跟放鞭炮一样.m4a]</p>
 </div>
 <div class="reply odd">
-<h3 id="20260304-1033-80">2026/03/04 10:33 — [人名80]<a class="headerlink" href="#20260304-1033-80" title="Permanent link">&para;</a></h3>
+<h3 id="20260304-1033-86">2026/03/04 10:33 — [人名86]<a class="headerlink" href="#20260304-1033-86" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] 
 请提供fw给我们看一下配置</p>
 <p>Thanks.</p>
 </div>
 <div class="reply even">
 <h3 id="20260304-1054-2">2026/03/04 10:54 — [人名2]<a class="headerlink" href="#20260304-1054-2" title="Permanent link">&para;</a></h3>
-<p>[附件: VIETA_HAD13A_V6.0.5__0122_MP.rar]</p>
+<p>[附件: [项目A]_HAD13A_V6.0.5__0122_MP.rar]</p>
 </div>
 <div class="reply odd">
-<h3 id="20260304-1637-29">2026/03/04 16:37 — [人名29]<a class="headerlink" href="#20260304-1637-29" title="Permanent link">&para;</a></h3>
+<h3 id="20260304-1637-31">2026/03/04 16:37 — [人名31]<a class="headerlink" href="#20260304-1637-31" title="Permanent link">&para;</a></h3>
 <p>@[邮箱已隐藏]  两个问题：
  * 如果只开FF ANC，播放USB Audio会有杂音吗？
  * 如果开Hybrid ANC，iPhone 17 播放音乐小声一点，喇叭还会有杂音吗？</p>
 </div>
 <div class="reply even">
 <h3 id="20260305-1017-2">2026/03/05 10:17 — [人名2]<a class="headerlink" href="#20260305-1017-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名29] ([人名29])</p>
+<p>Hi [人名31] ([人名31])</p>
 <h1 id="ff-fb">只开FF ，不会有杂音；只开FB ，会有杂音；<a class="headerlink" href="#ff-fb" title="Permanent link">&para;</a></h1>
 <h1 id="usb">跟音乐、通话没有关系，接入USB 之后不播放音乐也有杂音；<a class="headerlink" href="#usb" title="Permanent link">&para;</a></h1>
 </div>
 <div class="reply odd">
 <h3 id="20260305-1650-2">2026/03/05 16:50 — [人名2]<a class="headerlink" href="#20260305-1650-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名29] ([人名29])，</p>
+<p>Hi [人名31] ([人名31])，</p>
 <p>这题还有其他方法找问题吗？</p>
 </div>
 <div class="reply even">
-<h3 id="20260306-1418-89">2026/03/06 14:18 — [人名89]<a class="headerlink" href="#20260306-1418-89" title="Permanent link">&para;</a></h3>
+<h3 id="20260306-1418-96">2026/03/06 14:18 — [人名96]<a class="headerlink" href="#20260306-1418-96" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>1、请问接入USB 之后不播放音乐，不开启降噪，有没有杂音？</p>
 <p>2、dump数据：</p>
@@ -442,7 +442,7 @@ usb dump没听到电流声，是必先的吗？从log看anc切换是：passthru-
 </div>
 <div class="reply odd">
 <h3 id="20260306-1606-2">2026/03/06 16:06 — [人名2]<a class="headerlink" href="#20260306-1606-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名89] ([人名89])</p>
+<p>Hi [人名96] ([人名96])</p>
 <p>1、请问接入USB 之后不播放音乐，不开启降噪，有没有杂音？</p>
 <blockquote>
 <blockquote>
@@ -459,15 +459,15 @@ usb dump没听到电流声，是必先的吗？从log看anc切换是：passthru-
 </blockquote>
 <p>客户比较着急，下周一下午方便吗，我带样机和手机一起过去给您听听。</p>
 <p>[附件: Logging260306_160137_COM8.7z]</p>
-<p>[附件: VIETA_HAD13A_V6.0.5__0122_MP.7z]</p>
+<p>[附件: [项目A]_HAD13A_V6.0.5__0122_MP.7z]</p>
 </div>
 <div class="reply even">
-<h3 id="20260306-1811-89">2026/03/06 18:11 — [人名89]<a class="headerlink" href="#20260306-1811-89" title="Permanent link">&para;</a></h3>
+<h3 id="20260306-1811-96">2026/03/06 18:11 — [人名96]<a class="headerlink" href="#20260306-1811-96" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>可以的，下周一过来一起看下吧</p>
 </div>
 <div class="reply odd">
-<h3 id="20260309-1647-89">2026/03/09 16:47 — [人名89]<a class="headerlink" href="#20260309-1647-89" title="Permanent link">&para;</a></h3>
+<h3 id="20260309-1647-96">2026/03/09 16:47 — [人名96]<a class="headerlink" href="#20260309-1647-96" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>今天跟帅工在现场一起看了，</p>
 <p>1、不止iPhone17有这个问题，用帅工的红米手机连接usb audio也有杂音</p>
@@ -475,17 +475,17 @@ usb dump没听到电流声，是必先的吗？从log看anc切换是：passthru-
 </div>
 <div class="reply even">
 <h3 id="20260309-1738-2">2026/03/09 17:38 — [人名2]<a class="headerlink" href="#20260309-1738-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名89] ([人名89])，</p>
+<p>Hi [人名96] ([人名96])，</p>
 <p>好的，感谢，今天辛苦了。</p>
 <p>但是客户有疑问，大部分的手机和电脑都是没有问题，只有特定的手机才有问题，说参数有问题客户不太认可，除了dump 之前还有其他方法来确认问题点吗？</p>
 </div>
 <div class="reply odd">
 <h3 id="20260310-1513-2">2026/03/10 15:13 — [人名2]<a class="headerlink" href="#20260310-1513-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名89] ([人名89])，</p>
+<p>Hi [人名96] ([人名96])，</p>
 <p>需要这边再走一趟吗？客户需要定位到根本原因。；</p>
 </div>
 <div class="reply even">
-<h3 id="20260310-1755-89">2026/03/10 17:55 — [人名89]<a class="headerlink" href="#20260310-1755-89" title="Permanent link">&para;</a></h3>
+<h3 id="20260310-1755-96">2026/03/10 17:55 — [人名96]<a class="headerlink" href="#20260310-1755-96" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>1、找台三星的手机测试下是否有问题？</p>
 <p>2、找个充电头插入，在仅充电模式下，打开降噪，播放歌曲，是否有问题？</p>
@@ -494,7 +494,7 @@ usb dump没听到电流声，是必先的吗？从log看anc切换是：passthru-
 </div>
 <div class="reply odd">
 <h3 id="20260311-1026-2">2026/03/11 10:26 — [人名2]<a class="headerlink" href="#20260311-1026-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名89] ([人名89])，</p>
+<p>Hi [人名96] ([人名96])，</p>
 <p>1、找台三星的手机测试下是否有问题？</p>
 <blockquote>
 <blockquote>
@@ -521,19 +521,19 @@ usb dump没听到电流声，是必先的吗？从log看anc切换是：passthru-
 </blockquote>
 </div>
 <div class="reply even">
-<h3 id="20260311-1745-89">2026/03/11 17:45 — [人名89]<a class="headerlink" href="#20260311-1745-89" title="Permanent link">&para;</a></h3>
+<h3 id="20260311-1745-96">2026/03/11 17:45 — [人名96]<a class="headerlink" href="#20260311-1745-96" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>1、可以改下USB 的sample rate 试下，固定在一个采样率</p>
 <p>2、用EVK+腔体+SDK5.4.0测试，是否有问题？</p>
 </div>
 <div class="reply odd">
-<h3 id="20260311-1817-5">2026/03/11 18:17 — [人名5]<a class="headerlink" href="#20260311-1817-5" title="Permanent link">&para;</a></h3>
+<h3 id="20260311-1817-6">2026/03/11 18:17 — [人名6]<a class="headerlink" href="#20260311-1817-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，固定采样率可以修改这里试试哈</p>
 <p>[图片: image-2026-03-11-18-16-45-182.png]</p>
 </div>
 <div class="reply even">
 <h3 id="20260311-1933-2">2026/03/11 19:33 — [人名2]<a class="headerlink" href="#20260311-1933-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>已经把这里改到了48K，还是一样的结果了。</p>
 <p>用EVK+腔体+SDK5.4.0测试</p>
 <blockquote>
@@ -543,23 +543,23 @@ usb dump没听到电流声，是必先的吗？从log看anc切换是：passthru-
 </blockquote>
 </div>
 <div class="reply odd">
-<h3 id="20260312-0916-89">2026/03/12 09:16 — [人名89]<a class="headerlink" href="#20260312-0916-89" title="Permanent link">&para;</a></h3>
+<h3 id="20260312-0916-96">2026/03/12 09:16 — [人名96]<a class="headerlink" href="#20260312-0916-96" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>请安排寄一台uart样机过来继续debug，谢谢</p>
 </div>
 <div class="reply even">
-<h3 id="20260312-1020-5">2026/03/12 10:20 — [人名5]<a class="headerlink" href="#20260312-1020-5" title="Permanent link">&para;</a></h3>
+<h3 id="20260312-1020-6">2026/03/12 10:20 — [人名6]<a class="headerlink" href="#20260312-1020-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>帮忙确认这个file有没有这个api哈</p>
 <p>[图片: image-2026-03-12-10-20-35-093.png]</p>
 </div>
 <div class="reply odd">
 <h3 id="20260312-1149-2">2026/03/12 11:49 — [人名2]<a class="headerlink" href="#20260312-1149-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>有这个api</p>
 </div>
 <div class="reply even">
-<h3 id="20260312-1745-89">2026/03/12 17:45 — [人名89]<a class="headerlink" href="#20260312-1745-89" title="Permanent link">&para;</a></h3>
+<h3 id="20260312-1745-96">2026/03/12 17:45 — [人名96]<a class="headerlink" href="#20260312-1745-96" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>再麻烦重新抓下log，谢谢</p>
 <p>1、dump点:</p>
@@ -577,7 +577,7 @@ usb dump没听到电流声，是必先的吗？从log看anc切换是：passthru-
 <p>[附件: Logging260312_175812_COM12.7z]</p>
 </div>
 <div class="reply even">
-<h3 id="20260313-0903-89">2026/03/13 09:03 — [人名89]<a class="headerlink" href="#20260313-0903-89" title="Permanent link">&para;</a></h3>
+<h3 id="20260313-0903-96">2026/03/13 09:03 — [人名96]<a class="headerlink" href="#20260313-0903-96" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>这份log里面没有dump数据</p>
 </div>
@@ -597,8 +597,8 @@ usb dump没听到电流声，是必先的吗？从log看anc切换是：passthru-
 <p>[附件: iglory_HAD13-A_MAIN_AB1577AM_V1.0_20231129.pdf]</p>
 </div>
 <div class="reply even">
-<h3 id="20260317-1610-89">2026/03/17 16:10 — [人名89]<a class="headerlink" href="#20260317-1610-89" title="Permanent link">&para;</a></h3>
-<p>Hi 黄工：</p>
+<h3 id="20260317-1610-96">2026/03/17 16:10 — [人名96]<a class="headerlink" href="#20260317-1610-96" title="Permanent link">&para;</a></h3>
+<p>Hi [人名11]：</p>
 <p>1、请发一下layout图，或者你们内部是否检查过：FB mic的data/clk 與 USB audio的 layout走線狀況？</p>
 <p>2、帮忙出一版FW，將FB mic clock rate改成1.625M</p>
 </div>
@@ -620,7 +620,7 @@ usb dump没听到电流声，是必先的吗？从log看anc切换是：passthru-
 </div>
 <div class="reply even">
 <h3 id="20260318-1709-2">2026/03/18 17:09 — [人名2]<a class="headerlink" href="#20260318-1709-2" title="Permanent link">&para;</a></h3>
-<p>Hi 刘工/ 李工，</p>
+<p>Hi 刘工/ [人名45]，</p>
 <p>辛苦了，感谢。已经将回复转发给客户。客户的 layout 并没有给美优评审，因为当时只在iPhone 17 上测试到有问题，没有怀疑硬件的问题。</p>
 </div>
 <div class="ticket-nav">

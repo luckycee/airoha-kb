@@ -362,29 +362,29 @@
 <p><a href="../ABT-463/">← 上一个工单：ABT-463</a>　<a href="../ABT-465/">→ 下一个工单：ABT-465</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名29]：</p>
+<p>Hi [人名31]：</p>
 <p>如附图，客户的Line6.35，检测脚接到了GPIO19，EPT将GPIO19配置为pulldown（120K）。</p>
 <p>按照附件原理图，插入line6.35线后，GPIO19的电压为1.30v，拔出后为0.092v。</p>
 <p>按照规格书要求，高电平要大于1.35V，那么对于上面的低于1.35V的，软件在获取IO状态时，会是处于什么状态？有什么风险？</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
-<h3 id="20241017-1732-23-24">2024/10/17 17:32 — [人名23] [人名24]<a class="headerlink" href="#20241017-1732-23-24" title="Permanent link">&para;</a></h3>
+<h3 id="20241017-1732-25-26">2024/10/17 17:32 — [人名25] [人名26]<a class="headerlink" href="#20241017-1732-25-26" title="Permanent link">&para;</a></h3>
 <p>[图片: 2cfcb59449a8e10e9eed0b95414c407.jpg]</p>
 <p>[图片: [序列号已隐藏]d4fbb7679c118fb9.png]</p>
 <p>[图片: d98082c9a2b64412fa98cd391f3b7c7.jpg]</p>
 <p>[图片: image.png]</p>
 </div>
 <div class="reply even">
-<h3 id="20241018-1002-29">2024/10/18 10:02 — [人名29]<a class="headerlink" href="#20241018-1002-29" title="Permanent link">&para;</a></h3>
+<h3 id="20241018-1002-31">2024/10/18 10:02 — [人名31]<a class="headerlink" href="#20241018-1002-31" title="Permanent link">&para;</a></h3>
 <p>按照规格书要求，高电平要大于1.35V，那么对于上面的低于1.35V的，软件在获取IO状态时，会是处于什么状态？有什么风险？</p>
 <p>Ans: 不确定的状态，软件会误判。</p>
 <p>Line 电路和det 设计可以参考：[AB156X Line in信号进入Dongle,通过BIS发送给耳机|https://eservicedocs.ABT.com.tw/pages/viewpage.action?pageId=79138514&amp;src=contextnavpagetreemode]</p>
 <p>!image-2024-10-18-10-02-35-016.png|width=574,height=224!</p>
 </div>
 <div class="reply odd">
-<h3 id="20241018-1031-23-24">2024/10/18 10:31 — [人名23] [人名24]<a class="headerlink" href="#20241018-1031-23-24" title="Permanent link">&para;</a></h3>
-<p>Hi [人名29]：
+<h3 id="20241018-1031-25-26">2024/10/18 10:31 — [人名25] [人名26]<a class="headerlink" href="#20241018-1031-25-26" title="Permanent link">&para;</a></h3>
+<p>Hi [人名31]：
 好的</p>
 </div>
 <div class="ticket-nav">

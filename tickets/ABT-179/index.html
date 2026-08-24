@@ -362,7 +362,7 @@
 <p><a href="../ABT-178/">← 上一个工单：ABT-178</a>　<a href="../ABT-180/">→ 下一个工单：ABT-180</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>SDK V3.4.0 通过 LightBlue 连接手机BLE 后，点击UUID 为“....3141....”的Notify，发现BT端收到收，BT 无法发送内容给App，附件是log；BT 接受App的数据没有问题；</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
@@ -373,34 +373,34 @@
 <p>[图片: Snipaste_2023-05-24_19-08-33.jpg]</p>
 </div>
 <div class="reply even">
-<h3 id="20230606-1701-5">2023/06/06 17:01 — [人名5]<a class="headerlink" href="#20230606-1701-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230606-1701-6">2023/06/06 17:01 — [人名6]<a class="headerlink" href="#20230606-1701-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>这题你bt 需要发送怎样的数据给app，这里只能发送race cmd</p>
 </div>
 <div class="reply odd">
 <h3 id="20230606-1718-2">2023/06/06 17:18 — [人名2]<a class="headerlink" href="#20230606-1718-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>跟之前AB1562X那样，bt 收到 App指令后，需要返回一个确认收到的内容。</p>
 </div>
 <div class="reply even">
-<h3 id="20230607-0958-5">2023/06/07 09:58 — [人名5]<a class="headerlink" href="#20230607-0958-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230607-0958-6">2023/06/07 09:58 — [人名6]<a class="headerlink" href="#20230607-0958-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>这里跟62x 不一样，62是发送任意数据，可以选择发送mac 地址，也可以发送其他数据，这里只能发送race cmd</p>
 </div>
 <div class="reply odd">
 <h3 id="20230607-1028-2">2023/06/07 10:28 — [人名2]<a class="headerlink" href="#20230607-1028-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>我不理解，为什么ble不能notify。。。App是通过ble 发数据给的bt，然后bt 通过race cmd 回给App吗？不在同一个地方，App怎么处理？</p>
 </div>
 <div class="reply even">
-<h3 id="20230608-1703-5">2023/06/08 17:03 — [人名5]<a class="headerlink" href="#20230608-1703-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230608-1703-6">2023/06/08 17:03 — [人名6]<a class="headerlink" href="#20230608-1703-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>mcu\middleware\ABT\ble_bas\inc\ble_bas.h</p>
 <p>这里有一些notify的sample code，你们可以研究一下怎么玩</p>
 </div>
 <div class="reply odd">
 <h3 id="20230608-1848-2">2023/06/08 18:48 — [人名2]<a class="headerlink" href="#20230608-1848-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>在 ble_air_service.c 下同样有 ble_air_srv_notification() 给我参考，但是使用你们的notify 同样不行。</p>
 </div>
 <div class="reply even">
@@ -409,7 +409,7 @@
 <p>[图片: Snipaste_2023-06-08_19-16-09.jpg]</p>
 </div>
 <div class="reply odd">
-<h3 id="20230626-1135-5">2023/06/26 11:35 — [人名5]<a class="headerlink" href="#20230626-1135-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230626-1135-6">2023/06/26 11:35 — [人名6]<a class="headerlink" href="#20230626-1135-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>我用以下写法，是可以发送notify成功的。你们可以玩一下。</p>
 <p>void ble_air_notify_test(uint8_t value)
@@ -430,7 +430,7 @@
  notification-&gt;att_req.opcode = BT_ATT_OPCODE_HANDLE_VALUE_NOTIFICATION;
  notification-&gt;att_req.handle = 85;
  memcpy(notification-&gt;att_req.attribute_value, (void *)(&amp;battery_level), sizeof(uint8_t));</p>
-<p>printf("[人名5] bt_gatts_send_charc_value_notification_indication 5 ", 0);
+<p>printf("[人名6] bt_gatts_send_charc_value_notification_indication 5 ", 0);
  status = bt_gatts_send_charc_value_notification_indication(5, notification);
  if (status != BT_STATUS_SUCCESS) {
  LOG_MSGID_I(AIR, "[BLE][AIR] notification fail status = %02x", 1, status);
@@ -440,7 +440,7 @@
 </div>
 <div class="reply even">
 <h3 id="20230626-1523-2">2023/06/26 15:23 — [人名2]<a class="headerlink" href="#20230626-1523-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5],</p>
+<p>Hi [人名6],</p>
 <p>验证了OK，可以notify。</p>
 </div>
 <div class="ticket-nav">

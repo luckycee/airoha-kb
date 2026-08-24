@@ -362,14 +362,14 @@
 <p><a href="../ABT-43/">← 上一个工单：ABT-43</a>　<a href="../ABT-45/">→ 下一个工单：ABT-45</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>外加的光感控制器，使用的中断、回调函数处理，客户要求，光感检测到入耳之后，播放一个提示音。但是你们的eService Docs 中提示，在中断中加入vp会导致死机；实测不单加vp会死机，加timer也会死机。有方法可以规避死机吗？</p>
 <p>加timer，主要是为了做消抖，防止客户快速出入耳导致功能错乱；</p>
 <p>https://eservicedocs.ABT.com.tw/pages/viewpage.action?pageId=54035258</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
-<h3 id="20220507-1426-11">2022/05/07 14:26 — [人名11]<a class="headerlink" href="#20220507-1426-11" title="Permanent link">&para;</a></h3>
+<h3 id="20220507-1426-13">2022/05/07 14:26 — [人名13]<a class="headerlink" href="#20220507-1426-13" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，
  # 防抖可以用eint 本身的sw deounce timing, 具体参考bsp_gsensor_platform_eint_init 这个func
  # 中断播vp死机 ，一般做法则是中断通过ui_shell_send_event 到APP层去播放vp,具体参考该func在code中的使用</p>
@@ -377,7 +377,7 @@
 </div>
 <div class="reply even">
 <h3 id="20220507-1627-2">2022/05/07 16:27 — [人名2]<a class="headerlink" href="#20220507-1627-2" title="Permanent link">&para;</a></h3>
-<p>hi  [人名11]Huang,</p>
+<p>hi  [人名13]Huang,</p>
 <p>使用 ui_shell_send_event  也会导致死机；</p>
 <p>Miuix_SendKeyAction() 参考的bt_race_key_app_event_callback() 来写；</p>
 <p>[图片: Snipaste_2022-05-07_16-11-25.png]</p>
@@ -385,7 +385,7 @@
 <p>[附件: 中断中使用ui_shell_send_event会死机.pcapng]</p>
 </div>
 <div class="reply odd">
-<h3 id="20220507-1705-11">2022/05/07 17:05 — [人名11]<a class="headerlink" href="#20220507-1705-11" title="Permanent link">&para;</a></h3>
+<h3 id="20220507-1705-13">2022/05/07 17:05 — [人名13]<a class="headerlink" href="#20220507-1705-13" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>你已经在那个event那里做了播放vp的处理了对吧？</p>
 <p>518 2022-05-07 16:09:21.452880 [M:ui_shell C:info F: L: ]: ui_shell_send_event: 0x2, 0xffff, delay:0</p>
@@ -393,7 +393,7 @@
 </div>
 <div class="reply even">
 <h3 id="20220507-1719-2">2022/05/07 17:19 — [人名2]<a class="headerlink" href="#20220507-1719-2" title="Permanent link">&para;</a></h3>
-<p>hi [人名11]Huang,</p>
+<p>hi [人名13]Huang,</p>
 <p>你已经在那个event那里做了播放vp的处理了对吧？</p>
 <blockquote>
 <blockquote>
@@ -409,33 +409,33 @@
 </div>
 <div class="reply odd">
 <h3 id="20220507-1818-2">2022/05/07 18:18 — [人名2]<a class="headerlink" href="#20220507-1818-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名11]Huang,</p>
+<p>Hi [人名13]Huang,</p>
 <p>附件是我使用的中断及sendKeyEvent的接口，应该你也能复现问题；</p>
 <p>[附件: Interrupt.c]</p>
 </div>
 <div class="reply even">
 <h3 id="20220510-1103-2">2022/05/10 11:03 — [人名2]<a class="headerlink" href="#20220510-1103-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名11]Huang,</p>
+<p>Hi [人名13]Huang,</p>
 <p>此题有解决方法了吗？</p>
 </div>
 <div class="reply odd">
-<h3 id="20220510-1649-11">2022/05/10 16:49 — [人名11]<a class="headerlink" href="#20220510-1649-11" title="Permanent link">&para;</a></h3>
+<h3 id="20220510-1649-13">2022/05/10 16:49 — [人名13]<a class="headerlink" href="#20220510-1649-13" title="Permanent link">&para;</a></h3>
 <p>Hi  @[邮箱已隐藏],</p>
 <p>麻烦按照下图修改再测试下</p>
 <p>[图片: image-2022-05-10-16-49-35-327.png]</p>
 </div>
 <div class="reply even">
 <h3 id="20220510-1806-2">2022/05/10 18:06 — [人名2]<a class="headerlink" href="#20220510-1806-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名11]Huang,</p>
+<p>Hi [人名13]Huang,</p>
 <p>问题解决了；</p>
 </div>
 <div class="reply odd">
 <h3 id="20220510-1811-2">2022/05/10 18:11 — [人名2]<a class="headerlink" href="#20220510-1811-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名11]Huang,</p>
+<p>Hi [人名13]Huang,</p>
 <p>好奇问一下，在内部处理，from_isr 这个参数true 和false，处理上有什么不同？</p>
 </div>
 <div class="reply even">
-<h3 id="20220510-1815-11">2022/05/10 18:15 — [人名11]<a class="headerlink" href="#20220510-1815-11" title="Permanent link">&para;</a></h3>
+<h3 id="20220510-1815-13">2022/05/10 18:15 — [人名13]<a class="headerlink" href="#20220510-1815-13" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>在中断中调用true,非中断调用false,</p>
 <p>freertos 操作系统里面中断和非中断中调用使用的API有些是不同的，比如此题用的信号量这个API</p>
@@ -443,13 +443,13 @@
 </div>
 <div class="reply odd">
 <h3 id="20220510-1937-2">2022/05/10 19:37 — [人名2]<a class="headerlink" href="#20220510-1937-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名11]Huang,</p>
+<p>Hi [人名13]Huang,</p>
 <p>是不是在中断状态下，左右耳不能sync data，我希望把所有的入耳处理放到agent做处理，在partner入耳时，把data给到agent，让agent来控制。但是我又发现死机了。</p>
 <p>平常用没有发现问题；</p>
 <p>[附件: syncData.c]</p>
 </div>
 <div class="reply even">
-<h3 id="20220511-0900-11">2022/05/11 09:00 — [人名11]<a class="headerlink" href="#20220511-0900-11" title="Permanent link">&para;</a></h3>
+<h3 id="20220511-0900-13">2022/05/11 09:00 — [人名13]<a class="headerlink" href="#20220511-0900-13" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>中断下请不要处理任何太复杂或者耗时长的问题，有什么action，shell event 到上层处理</p>
 <p>中断下不能播vp是因为app_voice_prompt_play中拿了mutex，按照这个方式，只要拿了mutex,都会assert在同一位置，</p>
@@ -458,7 +458,7 @@ thanks</p>
 </div>
 <div class="reply odd">
 <h3 id="20220511-1122-2">2022/05/11 11:22 — [人名2]<a class="headerlink" href="#20220511-1122-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名11]Huang,</p>
+<p>Hi [人名13]Huang,</p>
 <p>好的，我知道如何实现想要的功能了。</p>
 <p>感谢支持；</p>
 </div>

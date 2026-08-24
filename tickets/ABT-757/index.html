@@ -362,7 +362,7 @@
 <p><a href="../ABT-756/">← 上一个工单：ABT-756</a>　<a href="../ABT-758/">→ 下一个工单：ABT-758</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>config 见附件，输出从 Analog Speaker 改为 I2S master output，sample rate fix 到96K，在这个设置下，A2DP\LINE-IN 输出都没问题的，到了USB Audio 就没有声音输出了，如果改为48K，又能够有声音。附件还有两个log， 请帮忙看看这是为什么。</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
@@ -381,60 +381,60 @@
 <p>[附件: 96k 五声音log.pcapng]</p>
 </div>
 <div class="reply even">
-<h3 id="20260630-1651-5">2026/06/30 16:51 — [人名5]<a class="headerlink" href="#20260630-1651-5" title="Permanent link">&para;</a></h3>
+<h3 id="20260630-1651-6">2026/06/30 16:51 — [人名6]<a class="headerlink" href="#20260630-1651-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>输出从 Analog Speaker 改为 I2S master output，sample rate fix 到96K，在这个设置下，A2DP\LINE-IN 输出都是{<em>}没{</em>}问题的？</p>
 </div>
 <div class="reply odd">
 <h3 id="20260630-2015-2">2026/06/30 20:15 — [人名2]<a class="headerlink" href="#20260630-2015-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]</p>
+<p>Hi [人名6]</p>
 <p>是的，没有问题。</p>
 </div>
 <div class="reply even">
-<h3 id="20260701-1102-5">2026/07/01 11:02 — [人名5]<a class="headerlink" href="#20260701-1102-5" title="Permanent link">&para;</a></h3>
+<h3 id="20260701-1102-6">2026/07/01 11:02 — [人名6]<a class="headerlink" href="#20260701-1102-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>你们是怎么改96K 的呢？可以截图看看？
 软件不知道版本 tool打不开</p>
 </div>
 <div class="reply odd">
 <h3 id="20260701-1114-2">2026/07/01 11:14 — [人名2]<a class="headerlink" href="#20260701-1114-2" title="Permanent link">&para;</a></h3>
-<p>Hi  [人名5]</p>
+<p>Hi  [人名6]</p>
 <p>FW  是SDK5.1.0.0 的，修改的是config 上 I2S的 sample rate 。</p>
 <p>[图片: PixPin_2026-07-01_11-14-16.jpg]</p>
 </div>
 <div class="reply even">
-<h3 id="20260701-1556-5">2026/07/01 15:56 — [人名5]<a class="headerlink" href="#20260701-1556-5" title="Permanent link">&para;</a></h3>
+<h3 id="20260701-1556-6">2026/07/01 15:56 — [人名6]<a class="headerlink" href="#20260701-1556-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>feature.mk 这里改一下试试呢</p>
 <p>[图片: image-2026-07-01-15-55-57-261.png]</p>
 </div>
 <div class="reply odd">
 <h3 id="20260702-1630-2">2026/07/02 16:30 — [人名2]<a class="headerlink" href="#20260702-1630-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]</p>
+<p>Hi [人名6]</p>
 <p>修改之后还是没有声音。</p>
 <p>3949    16:10:56.945693 [M:dsp_mw C:error F: L: ]: [SW_MIXER] config error, res 1 [图片: = 1, in size 576 ]= 1152</p>
 <p>出现了在这里宕机；</p>
 <p>[图片: PixPin_2026-07-02_16-30-30.jpg]</p>
 </div>
 <div class="reply even">
-<h3 id="20260706-1537-5">2026/07/06 15:37 — [人名5]<a class="headerlink" href="#20260706-1537-5" title="Permanent link">&para;</a></h3>
+<h3 id="20260706-1537-6">2026/07/06 15:37 — [人名6]<a class="headerlink" href="#20260706-1537-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>麻烦提供下log呢</p>
 </div>
 <div class="reply odd">
 <h3 id="20260708-1435-2">2026/07/08 14:35 — [人名2]<a class="headerlink" href="#20260708-1435-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]</p>
+<p>Hi [人名6]</p>
 <p>见附件，再次抓又不会宕机了。</p>
 <p>[附件: 96K无声音.pcapng]</p>
 </div>
 <div class="reply even">
-<h3 id="20260708-1502-5">2026/07/08 15:02 — [人名5]<a class="headerlink" href="#20260708-1502-5" title="Permanent link">&para;</a></h3>
+<h3 id="20260708-1502-6">2026/07/08 15:02 — [人名6]<a class="headerlink" href="#20260708-1502-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>这个看看dump 81，91分开dump，开6M 避免有log drop 哈</p>
 </div>
 <div class="reply odd">
 <h3 id="20260708-1538-2">2026/07/08 15:38 — [人名2]<a class="headerlink" href="#20260708-1538-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]</p>
+<p>Hi [人名6]</p>
 <p>按照修改是没有问题的。测试不行是因为我的电脑USB Audio 不输出了，可能是连接USB 连接电脑和EVK的时候烧录多了导致识别有误，USB接到手机上，声音杠杠的.</p>
 </div>
 <div class="ticket-nav">

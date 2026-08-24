@@ -21,7 +21,7 @@
     
     
       
-        <title>【[客户O]】Dolby DAW算法遇到杂音问题 - ABT 工单知识库</title>
+        <title>【[客户S]】Dolby DAW算法遇到杂音问题 - ABT 工单知识库</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#abt-691-odolby-daw" class="md-skip">
+        <a href="#abt-691-sdolby-daw" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              【[客户O]】Dolby DAW算法遇到杂音问题
+              【[客户S]】Dolby DAW算法遇到杂音问题
             
           </span>
         </div>
@@ -354,7 +354,7 @@
   
 
 
-<h1 id="abt-691-odolby-daw">ABT-691 【[客户O]】Dolby DAW算法遇到杂音问题<a class="headerlink" href="#abt-691-odolby-daw" title="Permanent link">&para;</a></h1>
+<h1 id="abt-691-sdolby-daw">ABT-691 【[客户S]】Dolby DAW算法遇到杂音问题<a class="headerlink" href="#abt-691-sdolby-daw" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>📅 2026/01/13 14:19　🔗 <a href="https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-691">原始工单链接</a></p>
 </blockquote>
@@ -362,7 +362,7 @@
 <p><a href="../ABT-690/">← 上一个工单：ABT-690</a>　<a href="../ABT-692/">→ 下一个工单：ABT-692</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>调试Dolby DAW算法是遇到一个问题需要你们帮忙，问题描述如下：</p>
 <p>Dolby算法要求输入的audio stream是以block为单位，1 block=256 samples;</p>
 <p>当播放A2DP stream时，stream format是：32bit, 1024 samples=4 blocks, 输出正常；</p>
@@ -378,37 +378,37 @@
 <p>[图片: usb_audio_format.png]</p>
 </div>
 <div class="reply even">
-<h3 id="20260114-1547-5">2026/01/14 15:47 — [人名5]<a class="headerlink" href="#20260114-1547-5" title="Permanent link">&para;</a></h3>
+<h3 id="20260114-1547-6">2026/01/14 15:47 — [人名6]<a class="headerlink" href="#20260114-1547-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>line的话可以配置成256sample，代价也是latency会增加，或者选择使用96K的linein, usbin就要FrameAdjustor，代价也是latency会增加</p>
 </div>
 <div class="reply odd">
 <h3 id="20260114-1553-2">2026/01/14 15:53 — [人名2]<a class="headerlink" href="#20260114-1553-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>没有关系的，先看效果给他们测试一下，请提供修改指导。</p>
 </div>
 <div class="reply even">
 <h3 id="20260116-1413-2">2026/01/16 14:13 — [人名2]<a class="headerlink" href="#20260116-1413-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>这里还需要更新一下。</p>
 </div>
 <div class="reply odd">
 <h3 id="20260119-1540-2">2026/01/19 15:40 — [人名2]<a class="headerlink" href="#20260119-1540-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>是不是忘记了？</p>
 </div>
 <div class="reply even">
-<h3 id="20260120-1212-9">2026/01/20 12:12 — [人名9]<a class="headerlink" href="#20260120-1212-9" title="Permanent link">&para;</a></h3>
+<h3 id="20260120-1212-10">2026/01/20 12:12 — [人名10]<a class="headerlink" href="#20260120-1212-10" title="Permanent link">&para;</a></h3>
 <p>Hi  Sir </p>
 <p>ABT有支持Frame Size调整的feature， SOP已经通过FEX发送。</p>
 <p>[附件: MIUIBTA_Frame_Size_Adj.7z]-&gt; 这是给ULL加Frame size的demo code，请自行调整wired audio/lea</p>
 </div>
 <div class="reply odd">
-<h3 id="20260121-1152-9">2026/01/21 11:52 — [人名9]<a class="headerlink" href="#20260121-1152-9" title="Permanent link">&para;</a></h3>
+<h3 id="20260121-1152-10">2026/01/21 11:52 — [人名10]<a class="headerlink" href="#20260121-1152-10" title="Permanent link">&para;</a></h3>
 <p>SOP 和demo code已经送出， 此Jira就关单了，  后续遇到问题再提Jira跟踪。</p>
 </div>
 <div class="reply even">
-<h3 id="20260121-1414-9">2026/01/21 14:14 — [人名9]<a class="headerlink" href="#20260121-1414-9" title="Permanent link">&para;</a></h3>
+<h3 id="20260121-1414-10">2026/01/21 14:14 — [人名10]<a class="headerlink" href="#20260121-1414-10" title="Permanent link">&para;</a></h3>
 <p><em>SOP</em>  <em>Download Link:</em> [https://transfer.mediatek.com/Detail/Received/Mail30046193680]</p>
 <p># FUNC_FRAMESIZE_ADJUSTOR_v6.pdf</p>
 </div>

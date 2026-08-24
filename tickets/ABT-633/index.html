@@ -21,7 +21,7 @@
     
     
       
-        <title>【[客户O]】SPI 使用问题（后续） - ABT 工单知识库</title>
+        <title>【[客户S]】SPI 使用问题（后续） - ABT 工单知识库</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#abt-633-ospi" class="md-skip">
+        <a href="#abt-633-sspi" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              【[客户O]】SPI 使用问题（后续）
+              【[客户S]】SPI 使用问题（后续）
             
           </span>
         </div>
@@ -354,7 +354,7 @@
   
 
 
-<h1 id="abt-633-ospi">ABT-633 【[客户O]】SPI 使用问题（后续）<a class="headerlink" href="#abt-633-ospi" title="Permanent link">&para;</a></h1>
+<h1 id="abt-633-sspi">ABT-633 【[客户S]】SPI 使用问题（后续）<a class="headerlink" href="#abt-633-sspi" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>📅 2025/11/10 11:45　🔗 <a href="https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-633">原始工单链接</a></p>
 </blockquote>
@@ -362,8 +362,8 @@
 <p><a href="../ABT-632/">← 上一个工单：ABT-632</a>　<a href="../ABT-634/">→ 下一个工单：ABT-634</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名100] ([人名100])，</p>
-<p>[客户O]那边有新的回复：</p>
+<p>Hi [人名107] ([人名107])，</p>
+<p>[客户S]那边有新的回复：</p>
 <p>在使用SPI DMA block的读写API操作中，公版程序就会出现这些sleep 不unsleep的动作。</p>
 <p>读 API  hal_spi_master_send_and_receive_dma_blocking(HAL_SPI_MASTER_0, &amp;spi_master_send_and_receive_config);</p>
 <p>写 API hal_spi_master_send_dma_blocking(HAL_SPI_MASTER_0, recv_data, len + 1)</p>
@@ -371,25 +371,25 @@
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
-<h3 id="20251111-1003-100">2025/11/11 10:03 — [人名100]<a class="headerlink" href="#20251111-1003-100" title="Permanent link">&para;</a></h3>
+<h3 id="20251111-1003-107">2025/11/11 10:03 — [人名107]<a class="headerlink" href="#20251111-1003-107" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] </p>
 <p>可以提供下log吗</p>
 </div>
 <div class="reply even">
 <h3 id="20251111-1441-2">2025/11/11 14:41 — [人名2]<a class="headerlink" href="#20251111-1441-2" title="Permanent link">&para;</a></h3>
-<p>[人名100] ([人名100])，</p>
+<p>[人名107] ([人名107])，</p>
 <p>见附件log；</p>
 <p>[附件: Logging251106_163255_COM22开机完整版.7z]</p>
 </div>
 <div class="reply odd">
-<h3 id="20251112-0949-100">2025/11/12 09:49 — [人名100]<a class="headerlink" href="#20251112-0949-100" title="Permanent link">&para;</a></h3>
+<h3 id="20251112-0949-107">2025/11/12 09:49 — [人名107]<a class="headerlink" href="#20251112-0949-107" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] </p>
 <p>unlock sleep 一般在 DMA 传输完成的中断回调里做，请确认下下面流程是否有进行</p>
 <p>[图片: image-2025-11-12-09-47-42-860.png]</p>
 </div>
 <div class="reply even">
 <h3 id="20251112-1841-2">2025/11/12 18:41 — [人名2]<a class="headerlink" href="#20251112-1841-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名100] ([人名100])</p>
+<p>Hi [人名107] ([人名107])</p>
 <p>关于sleep full的问题，这个不是deinit SPI的问题。</p>
 <p>“”
 我们的SPI操作中，还没来得及deinit就已经数据满了。我看了代码，每次读数据，（hal_spi_master_send_and_receive_dma_blocking--&gt;spi_master_start_transfer(master_port, SPI_MASTER_MODE_DMA);--&gt;hal_sleep_manager_lock_sleep(g_spi_master_sleep_handle[master_port])）都会往SLEEP存一次数据。
@@ -397,36 +397,36 @@
 <p>“”</p>
 </div>
 <div class="reply odd">
-<h3 id="20251113-0952-100">2025/11/13 09:52 — [人名100]<a class="headerlink" href="#20251113-0952-100" title="Permanent link">&para;</a></h3>
+<h3 id="20251113-0952-107">2025/11/13 09:52 — [人名107]<a class="headerlink" href="#20251113-0952-107" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] </p>
 <p>请提供下 build cmd，SDK版本</p>
 </div>
 <div class="reply even">
 <h3 id="20251113-0955-2">2025/11/13 09:55 — [人名2]<a class="headerlink" href="#20251113-0955-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名100] ([人名100])，</p>
+<p>Hi [人名107] ([人名107])，</p>
 <p>SDK5.7.0 Ab1577AM:          </p>
 <p>./build.sh ab1577am_dual_evk headset_master_ull3</p>
 </div>
 <div class="reply odd">
 <h3 id="20251113-1117-2">2025/11/13 11:17 — [人名2]<a class="headerlink" href="#20251113-1117-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名100] ([人名100])，</p>
+<p>Hi [人名107] ([人名107])，</p>
 <p>补充一些信息，客户使用了polling 和普通 DMA，都么有调通，最后使用的dma block 调通了，客户使用的也是block mode；</p>
 <p>[附件: DMA block.txt]</p>
 </div>
 <div class="reply even">
-<h3 id="20251113-1135-55">2025/11/13 11:35 — [人名55]<a class="headerlink" href="#20251113-1135-55" title="Permanent link">&para;</a></h3>
-<p>Hi @[人名109]   @[邮箱已隐藏] ,</p>
+<h3 id="20251113-1135-61">2025/11/13 11:35 — [人名61]<a class="headerlink" href="#20251113-1135-61" title="Permanent link">&para;</a></h3>
+<p>Hi @[人名116]   @[邮箱已隐藏] ,</p>
 <p>让客户帮忙把bocking的api里，更改如下的code试试：</p>
 <p>[图片: image-2025-11-13-11-35-23-401.png]</p>
 </div>
 <div class="reply odd">
 <h3 id="20251113-1749-2">2025/11/13 17:49 — [人名2]<a class="headerlink" href="#20251113-1749-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名55] ([人名55])，</p>
+<p>Hi [人名61] ([人名61])，</p>
 <p>客户反馈还是不行；</p>
 <p>[附件: spi 改fifo模式log.7z]</p>
 </div>
 <div class="reply even">
-<h3 id="20251114-1441-55">2025/11/14 14:41 — [人名55]<a class="headerlink" href="#20251114-1441-55" title="Permanent link">&para;</a></h3>
+<h3 id="20251114-1441-61">2025/11/14 14:41 — [人名61]<a class="headerlink" href="#20251114-1441-61" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>麻烦帮忙合入下面的patch，再试一下。</p>
 <p>[附件: hal_spi_master.c] [附件: hal_spi_master_internal.c]</p>

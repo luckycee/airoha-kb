@@ -362,7 +362,7 @@
 <p><a href="../ABT-722/">← 上一个工单：ABT-722</a>　<a href="../ABT-724/">→ 下一个工单：ABT-724</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>headset 的 source input ：SP、line in (ADC0/ADC1, I2S_master_in )、USB audio、dongle</p>
 <p>headset 的 output ：analog speaker output、I2S master/slave out</p>
 <p>现在有个项目需要新增一个SPI 作为 source input 和 output 。有个UWB 芯片只能接收SPI，蓝牙需要把 output 打包成SPI 能够传送的data，经过了UWB的TX和RX 之后，再给回蓝牙作为蓝牙的 input ，最后经过speaker 播放出来。请帮忙看看我们AB1577M能不能做？</p>
@@ -377,18 +377,18 @@
 <p>[附件: MK8000 UWB Audio Solution(with Bluetooth) .pdf]</p>
 </div>
 <div class="reply even">
-<h3 id="20260403-1118-80">2026/04/03 11:18 — [人名80]<a class="headerlink" href="#20260403-1118-80" title="Permanent link">&para;</a></h3>
+<h3 id="20260403-1118-86">2026/04/03 11:18 — [人名86]<a class="headerlink" href="#20260403-1118-86" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] 
 不行，AB157x 只有SPI Master没有SPI Slave</p>
 <p>Thanks.</p>
 </div>
 <div class="reply odd">
 <h3 id="20260403-1132-2">2026/04/03 11:32 — [人名2]<a class="headerlink" href="#20260403-1132-2" title="Permanent link">&para;</a></h3>
-<p>[人名80] (szciic)</p>
+<p>[人名86] (szciic)</p>
 <p>是的，我留意到了。65M和85是支持slave ，能做吗？</p>
 </div>
 <div class="reply even">
-<h3 id="20260403-1334-80">2026/04/03 13:34 — [人名80]<a class="headerlink" href="#20260403-1334-80" title="Permanent link">&para;</a></h3>
+<h3 id="20260403-1334-86">2026/04/03 13:34 — [人名86]<a class="headerlink" href="#20260403-1334-86" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] </p>
 <p>65M和85是支持slave ，能做吗？
 -&gt;这两颗可以</p>
@@ -396,22 +396,22 @@
 </div>
 <div class="reply odd">
 <h3 id="20260403-1417-2">2026/04/03 14:17 — [人名2]<a class="headerlink" href="#20260403-1417-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名80] (szciic)，</p>
+<p>Hi [人名86] (szciic)，</p>
 <p>请指导一下如何如何配置这个SPI，谢谢。</p>
 </div>
 <div class="reply even">
-<h3 id="20260403-1509-80">2026/04/03 15:09 — [人名80]<a class="headerlink" href="#20260403-1509-80" title="Permanent link">&para;</a></h3>
+<h3 id="20260403-1509-86">2026/04/03 15:09 — [人名86]<a class="headerlink" href="#20260403-1509-86" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] 
 hal_spi_slave.h里面有demo，请先参考着进行配置，后续如果通信有问题，请再提jira处理。</p>
 <p>Thanks.</p>
 </div>
 <div class="reply odd">
 <h3 id="20260403-1536-2">2026/04/03 15:36 — [人名2]<a class="headerlink" href="#20260403-1536-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名80] (szciic)，</p>
+<p>Hi [人名86] (szciic)，</p>
 <p>是的，这部分demo 有说明。还有一部分，以USB audio 为例，我不知道如何把USB audio的内容转为SPI 发送出去。</p>
 </div>
 <div class="reply even">
-<h3 id="20260403-1605-80">2026/04/03 16:05 — [人名80]<a class="headerlink" href="#20260403-1605-80" title="Permanent link">&para;</a></h3>
+<h3 id="20260403-1605-86">2026/04/03 16:05 — [人名86]<a class="headerlink" href="#20260403-1605-86" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] 
 噢，你们要传audio data，SDK里面没有现成的code能支持的，sw部分需要你们自行客制化，hw上是支持的。</p>
 <p>若需要ABT支持，请给CPM提需求吧，开发的effort较大，需要CPM评估</p>
@@ -419,7 +419,7 @@ hal_spi_slave.h里面有demo，请先参考着进行配置，后续如果通信�
 </div>
 <div class="reply odd">
 <h3 id="20260403-1619-2">2026/04/03 16:19 — [人名2]<a class="headerlink" href="#20260403-1619-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名80] (szciic)，</p>
+<p>Hi [人名86] (szciic)，</p>
 <p>了解。我让商务沟通一下，后续需要再另起一提。感谢</p>
 </div>
 <div class="ticket-nav">

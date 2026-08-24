@@ -362,7 +362,7 @@
 <p><a href="../ABT-82/">← 上一个工单：ABT-82</a>　<a href="../ABT-84/">→ 下一个工单：ABT-84</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>客户测试，在音乐播放状态下回连后，发现音乐不会流转到耳机端。在来电状态下回连后（客制化UI，回连后来电状态自动接听），发现话音信号仍在手机端，不会流转到耳机端。概率大约是30次有2次 。</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
@@ -375,14 +375,14 @@
 <h3 id="20220914-1147-1">2022/09/14 11:47 — [人名1]<a class="headerlink" href="#20220914-1147-1" title="Permanent link">&para;</a></h3>
 <p>Hi,</p>
 <p>这份log "回连接听电话声音在手机端 \ L.pcapng " 中, 根据你标记的时间 : 16点12分.</p>
-<p>12分06连上[人名9]P, 12分10就检测到charger, 然后断开了蓝牙. 说的是这个时间点吗?</p>
+<p>12分06连上[人名10]P, 12分10就检测到charger, 然后断开了蓝牙. 说的是这个时间点吗?</p>
 <p>[附件: 苹果12-IOS15.6.1系统-耳机回连手机音乐声音在手机端抓包.rar]  这份log时间请标记一下, 你也可以检查一下是否有检测充电导致蓝牙断开.</p>
 <p>[图片: image-2022-09-14-11-24-52-883.png]</p>
 </div>
 <div class="reply odd">
 <h3 id="20220915-1712-2">2022/09/15 17:12 — [人名2]<a class="headerlink" href="#20220915-1712-2" title="Permanent link">&para;</a></h3>
 <p>Hi [人名1] ([人名1])，</p>
-<p>时间大约在 16:12:29 左右，发送了一个 接听电话的action，但是过了一会出现了BT_[人名9]P_DISCONNECT_IND ，之后每隔5s都会有 BT_[人名9]P_DISCONNECT_IND ，现象就是话音信号在耳机端；</p>
+<p>时间大约在 16:12:29 左右，发送了一个 接听电话的action，但是过了一会出现了BT_[人名10]P_DISCONNECT_IND ，之后每隔5s都会有 BT_[人名10]P_DISCONNECT_IND ，现象就是话音信号在耳机端；</p>
 </div>
 <div class="reply even">
 <h3 id="20220915-1712-2_1">2022/09/15 17:12 — [人名2]<a class="headerlink" href="#20220915-1712-2_1" title="Permanent link">&para;</a></h3>
@@ -403,8 +403,8 @@
 <h3 id="20220921-1419-1">2022/09/21 14:19 — [人名1]<a class="headerlink" href="#20220921-1419-1" title="Permanent link">&para;</a></h3>
 <p>Hi, @[邮箱已隐藏]</p>
 <p>从你提供的log [附件: 回连接听电话声音在手机端.rar]  耳机连接了2个手机, </p>
-<p>一个[人名9]P连上了, channel:1422dc3c</p>
-<p>一个[人名9]P没连上. channel:1422dbf0,  </p>
+<p>一个[人名10]P连上了, channel:1422dc3c</p>
+<p>一个[人名10]P没连上. channel:1422dbf0,  </p>
 <p>[图片: image-2022-09-21-11-31-21-890.png]</p>
 <p>[图片: image-2022-09-21-11-32-49-630.png]</p>
 <p>接电话的这台是  1422dc3c .</p>
@@ -415,7 +415,7 @@
 <div class="reply even">
 <h3 id="20220921-1440-1">2022/09/21 14:40 — [人名1]<a class="headerlink" href="#20220921-1440-1" title="Permanent link">&para;</a></h3>
 <p>Hi, @[邮箱已隐藏]</p>
-<p>[附件: 苹果12-IOS15.6.1系统-耳机回连手机音乐声音在手机端抓包.rar]   这个log里面也是看到有2个[人名9]P的连接.  连接两个手机是预期行为吗? </p>
+<p>[附件: 苹果12-IOS15.6.1系统-耳机回连手机音乐声音在手机端抓包.rar]   这个log里面也是看到有2个[人名10]P的连接.  连接两个手机是预期行为吗? </p>
 <p>建议确认一下客户的测试操作步骤 和 时间点 还有SDK版本 , 并提供完整的log(syslog和HCI log).</p>
 <p>谢谢.</p>
 </div>

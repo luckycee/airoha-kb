@@ -21,7 +21,7 @@
     
     
       
-        <title>AB1565 TWS mic收集环境音输出另一路DAC（[客户F]） - ABT 工单知识库</title>
+        <title>AB1565 TWS mic收集环境音输出另一路DAC（[客户J]） - ABT 工单知识库</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#abt-511-ab1565-tws-micdacf" class="md-skip">
+        <a href="#abt-511-ab1565-tws-micdacj" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              AB1565 TWS mic收集环境音输出另一路DAC（[客户F]）
+              AB1565 TWS mic收集环境音输出另一路DAC（[客户J]）
             
           </span>
         </div>
@@ -354,7 +354,7 @@
   
 
 
-<h1 id="abt-511-ab1565-tws-micdacf">ABT-511 AB1565 TWS mic收集环境音输出另一路DAC（[客户F]）<a class="headerlink" href="#abt-511-ab1565-tws-micdacf" title="Permanent link">&para;</a></h1>
+<h1 id="abt-511-ab1565-tws-micdacj">ABT-511 AB1565 TWS mic收集环境音输出另一路DAC（[客户J]）<a class="headerlink" href="#abt-511-ab1565-tws-micdacj" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>📅 2025/02/20 18:27　🔗 <a href="https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-511">原始工单链接</a></p>
 </blockquote>
@@ -362,43 +362,43 @@
 <p><a href="../ABT-510/">← 上一个工单：ABT-510</a>　<a href="../ABT-512/">→ 下一个工单：ABT-512</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>HI [人名5]：</p>
+<p>HI [人名6]：</p>
 <p>客户要做AB1565 TWS，通过mic收集环境音，传输到另一路DAC输出，然后外接MCU采集蓝牙芯片DAC输出的麦信号，进而控制LED闪烁。</p>
-<p>比如A2DP和[人名9]P downlink通过SPK L输出给喇叭，LED需要的信号则通过mic进来后走SPK R输出给到MCU。</p>
+<p>比如A2DP和[人名10]P downlink通过SPK L输出给喇叭，LED需要的信号则通过mic进来后走SPK R输出给到MCU。</p>
 <p>是否可以实现？建议用哪颗芯片？麻烦提供相关demo ？</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
-<h3 id="20250220-1837-23-24">2025/02/20 18:37 — [人名23] [人名24]<a class="headerlink" href="#20250220-1837-23-24" title="Permanent link">&para;</a></h3>
-<p>HI [人名5]：</p>
+<h3 id="20250220-1837-25-26">2025/02/20 18:37 — [人名25] [人名26]<a class="headerlink" href="#20250220-1837-25-26" title="Permanent link">&para;</a></h3>
+<p>HI [人名6]：</p>
 <p>补充：mic采集到的声音，需要<em>放大</em>后，再通过另一路DAC输出。</p>
 </div>
 <div class="reply even">
-<h3 id="20250305-1457-23-24">2025/03/05 14:57 — [人名23] [人名24]<a class="headerlink" href="#20250305-1457-23-24" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]：</p>
+<h3 id="20250305-1457-25-26">2025/03/05 14:57 — [人名25] [人名26]<a class="headerlink" href="#20250305-1457-25-26" title="Permanent link">&para;</a></h3>
+<p>Hi [人名6]：</p>
 <p>1）模拟输出。</p>
 <p>2）mcu adc 采样后 会计算等级 然后刷灯</p>
 <p>3）麦信号要整体增益放大</p>
 <p>目前没有项目推动，客户只是了解可不可行。之前是 bes 方案（采集的是喇叭的输出，那不唱歌的时候，就没有灯效了），如果可行，他们二代考虑切平台。</p>
 </div>
 <div class="reply odd">
-<h3 id="20250305-1508-99">2025/03/05 15:08 — [人名99]<a class="headerlink" href="#20250305-1508-99" title="Permanent link">&para;</a></h3>
+<h3 id="20250305-1508-106">2025/03/05 15:08 — [人名106]<a class="headerlink" href="#20250305-1508-106" title="Permanent link">&para;</a></h3>
 <p>@[邮箱已隐藏]
 请问是要amic还是dmic？</p>
 </div>
 <div class="reply even">
-<h3 id="20250305-1516-5">2025/03/05 15:16 — [人名5]<a class="headerlink" href="#20250305-1516-5" title="Permanent link">&para;</a></h3>
+<h3 id="20250305-1516-6">2025/03/05 15:16 — [人名6]<a class="headerlink" href="#20250305-1516-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>这题65 sidetone 跟 通话绑定了，其他场景不太适用。能只能用 7x ，Sidetone 要改用 IIR 才能設定不影響 SPK R 的mic 訊號</p>
 <p>这题也可以走line in 或者直接hw loopback，直接hw loopback的话就没有sw 处理，就没有增益。</p>
 </div>
 <div class="reply odd">
-<h3 id="20250305-1521-23-24">2025/03/05 15:21 — [人名23] [人名24]<a class="headerlink" href="#20250305-1521-23-24" title="Permanent link">&para;</a></h3>
-<p>Hi [人名99] ([人名99])：</p>
+<h3 id="20250305-1521-25-26">2025/03/05 15:21 — [人名25] [人名26]<a class="headerlink" href="#20250305-1521-25-26" title="Permanent link">&para;</a></h3>
+<p>Hi [人名106] ([人名106])：</p>
 <p>Amic 硅麦</p>
 </div>
 <div class="reply even">
-<h3 id="20250305-1645-5">2025/03/05 16:45 — [人名5]<a class="headerlink" href="#20250305-1645-5" title="Permanent link">&para;</a></h3>
+<h3 id="20250305-1645-6">2025/03/05 16:45 — [人名6]<a class="headerlink" href="#20250305-1645-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>看起来没有提到必要sw处理的地方 ，应该直接走hwloopback的方式就可以
 麦克风信号增益放大amic的话有gain可以调</p>

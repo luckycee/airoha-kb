@@ -362,7 +362,7 @@
 <p><a href="../ABT-528/">← 上一个工单：ABT-528</a>　<a href="../ABT-530/">→ 下一个工单：ABT-530</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5],</p>
+<p>Hi [人名6],</p>
 <p>附件 execl 是config tool 中的一些配置，其中黄色部分请帮忙填充和确认。</p>
 <p>除了 AAC和SBC，客户还支持LDAC codec， 是否也支持game mode ？</p>
 <p>通常来说有，normal mode和low latency mode，客户还想加一个 stable mode（不在乎延迟），但是我们的codec 中只有两个，能增加吗？如果能的话如何配置？</p>
@@ -382,14 +382,14 @@
 <p>[链接二|https://eservice.ABT.com.tw/servicedesk/customer/kb/view/69276124?applicationId=9482afc3-0910-3e92-b259-083cfa42dda4&amp;spaceKey=DC&amp;portalId=1038&amp;title=%5BDual%20AP%5D%20Latency%20%E6%B5%8B%E8%AF%95%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%E6%B1%87%E6%80%BB]</p>
 </div>
 <div class="reply odd">
-<h3 id="20250403-1512-102">2025/04/03 15:12 — [人名102]<a class="headerlink" href="#20250403-1512-102" title="Permanent link">&para;</a></h3>
-<p>Hi 黄工，</p>
+<h3 id="20250403-1512-109">2025/04/03 15:12 — [人名109]<a class="headerlink" href="#20250403-1512-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名11]，</p>
 <p>LDAC不支持game mode。
 关于mode的部分，确实就是您提到的，codec中只有两种，目前无法新增mode，可并不是简单的配置就可以的。</p>
 </div>
 <div class="reply even">
-<h3 id="20250403-1533-102">2025/04/03 15:33 — [人名102]<a class="headerlink" href="#20250403-1533-102" title="Permanent link">&para;</a></h3>
-<p>Hi 黄工，</p>
+<h3 id="20250403-1533-109">2025/04/03 15:33 — [人名109]<a class="headerlink" href="#20250403-1533-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名11]，</p>
 <p>另外，excel表格，我看您是直接从config tool中把数据导出来对吗？codec type部分，目前就是SBC和AAC这两种。</p>
 </div>
 <div class="reply odd">
@@ -405,8 +405,8 @@
 <p>[图片: 图片1.png]</p>
 </div>
 <div class="reply even">
-<h3 id="20250403-1619-102">2025/04/03 16:19 — [人名102]<a class="headerlink" href="#20250403-1619-102" title="Permanent link">&para;</a></h3>
-<p>Hi 黄工，
+<h3 id="20250403-1619-109">2025/04/03 16:19 — [人名109]<a class="headerlink" href="#20250403-1619-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名11]，
 Config tool中，重点关注前面4个参数就好，分别对应的含义如下，这几个默认值请保持不动，我看您那边前面两个值都是0x8C对应140。</p>
 <p>正常环境下的latency，默认是0xC8对应200ms
 ALC (adaptive latency control)开启时候的latency，也就是Auto Latency，默认是0x190对应400ms
@@ -415,43 +415,43 @@ APP开启gaming mode后恶劣环境下的latency，默认是0x8C对应140ms</p>
 </div>
 <div class="reply odd">
 <h3 id="20250403-1639-2">2025/04/03 16:39 — [人名2]<a class="headerlink" href="#20250403-1639-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名102] ([人名102])，</p>
+<p>Hi [人名109] ([人名109])，</p>
 <p>我Excel 中的数据来自于demo FW 编译出来的，并没有修改；Excel 中的图片来自于我提供的文档链接；附件是  config tool 的截图；</p>
 <p>所以我理解是AB1571AM demo FW的 latency 设置，正常环境下的latency和
 ALC (adaptive latency control)开启时候的 latency<em>都是 140ms</em>；</p>
 <p>[图片: PixPin_2025-04-02_16-51-21-1.png]</p>
 </div>
 <div class="reply even">
-<h3 id="20250403-1720-102">2025/04/03 17:20 — [人名102]<a class="headerlink" href="#20250403-1720-102" title="Permanent link">&para;</a></h3>
-<p>Hi 黄工，</p>
+<h3 id="20250403-1720-109">2025/04/03 17:20 — [人名109]<a class="headerlink" href="#20250403-1720-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名11]，</p>
 <p>了解，那就是没有开启ALC。
 如果开启ALC的话，第二行的值是大于第一行的。
 如果要开启ALC的话，修改设置第二行的值大于第一行就可以开启了，建议设置为0x190。</p>
 </div>
 <div class="reply odd">
 <h3 id="20250403-1904-2">2025/04/03 19:04 — [人名2]<a class="headerlink" href="#20250403-1904-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名102] ([人名102])，</p>
+<p>Hi [人名109] ([人名109])，</p>
 <p>我再补充一下，LE audio 下也是不支持 low latency 的吧？</p>
 </div>
 <div class="reply even">
-<h3 id="20250407-1146-102">2025/04/07 11:46 — [人名102]<a class="headerlink" href="#20250407-1146-102" title="Permanent link">&para;</a></h3>
-<p>Hi 黄工，</p>
+<h3 id="20250407-1146-109">2025/04/07 11:46 — [人名109]<a class="headerlink" href="#20250407-1146-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名11]，</p>
 <p>您的理解是对的，是的，LE audio 下不支持 low latency 。</p>
 <p>再补充一点，其实LE Audio相对于EDR来说就已经是low latency，目前SDK中的low latency是针对A2DP而言的。</p>
 </div>
 <div class="reply odd">
-<h3 id="20250408-1018-102">2025/04/08 10:18 — [人名102]<a class="headerlink" href="#20250408-1018-102" title="Permanent link">&para;</a></h3>
-<p>Hi 黄工，</p>
+<h3 id="20250408-1018-109">2025/04/08 10:18 — [人名109]<a class="headerlink" href="#20250408-1018-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名11]，</p>
 <p>low latency部分还有其他疑问吗？</p>
 </div>
 <div class="reply even">
 <h3 id="20250408-1213-2">2025/04/08 12:13 — [人名2]<a class="headerlink" href="#20250408-1213-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名102] ([人名102]),</p>
+<p>Hi [人名109] ([人名109]),</p>
 <p>没有了，感谢支持</p>
 </div>
 <div class="reply odd">
 <h3 id="20250409-1501-2">2025/04/09 15:01 — [人名2]<a class="headerlink" href="#20250409-1501-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名102] ([人名102]),</p>
+<p>Hi [人名109] ([人名109]),</p>
 <p>不好意思，还有个问题。</p>
 <p>{quote}正常环境下的latency，默认是0xC8对应200ms
 ALC (adaptive latency control)开启时候的latency，也就是Auto Latency，默认是0x190对应400ms。
@@ -460,14 +460,14 @@ APP开启gaming mode后恶劣环境下的latency，默认是0x8C对应140ms{quot
 <p>从上面的描述来看，400ms、200ms、100ms，是不是就有三个档位了？是否有API 能把这个ALC的400ms 开放出来？</p>
 </div>
 <div class="reply even">
-<h3 id="20250409-1526-102">2025/04/09 15:26 — [人名102]<a class="headerlink" href="#20250409-1526-102" title="Permanent link">&para;</a></h3>
-<p>Hi 黄工，</p>
+<h3 id="20250409-1526-109">2025/04/09 15:26 — [人名109]<a class="headerlink" href="#20250409-1526-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名11]，</p>
 <p>上次有说过哦，要开启ALC不需要修改代码的，直接修改设置第二行的值大于第一行就可以开启了，建议设置为0x190。
 您这边是需要去修改代码吗？</p>
 </div>
 <div class="reply odd">
 <h3 id="20250409-1645-2">2025/04/09 16:45 — [人名2]<a class="headerlink" href="#20250409-1645-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名102] ([人名102]),</p>
+<p>Hi [人名109] ([人名109]),</p>
 <p>是的，我计划是这么给客户做这三个模式：</p>
 <ul>
 <li>stable mode 400ms</li>
@@ -484,8 +484,8 @@ APP开启gaming mode后恶劣环境下的latency，默认是0x8C对应140ms{quot
 <p>现在是想了解，怎么在API 中修改值，和怎么在音乐播放中起效。</p>
 </div>
 <div class="reply even">
-<h3 id="20250409-1801-102">2025/04/09 18:01 — [人名102]<a class="headerlink" href="#20250409-1801-102" title="Permanent link">&para;</a></h3>
-<p>Hi 黄工，</p>
+<h3 id="20250409-1801-109">2025/04/09 18:01 — [人名109]<a class="headerlink" href="#20250409-1801-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名11]，</p>
 <p>您的三个模式：</p>
 <p>stable mode 400ms
 修改 A2DP_SINK_LATENCY_STRU.Time 为0xC8，修改 A2DP_SINK_LATENCY_STRU.ExtendTime 为 0x190；就是200ms和400ms</p>
@@ -505,7 +505,7 @@ A2DP_SINK_LATENCY_STRU.Time 为0x64，修改 A2DP_SINK_LATENCY_STRU.ExtendTime�
 </div>
 <div class="reply odd">
 <h3 id="20250409-1924-2">2025/04/09 19:24 — [人名2]<a class="headerlink" href="#20250409-1924-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名102] ([人名102]),</p>
+<p>Hi [人名109] ([人名109]),</p>
 <p>这3个模式是在智能手机App上设置控制157x这边切换mode吗？mode的切换都要重新起播才生效，不是实时生效的。</p>
 <blockquote>
 <blockquote>
@@ -515,8 +515,8 @@ A2DP_SINK_LATENCY_STRU.Time 为0x64，修改 A2DP_SINK_LATENCY_STRU.ExtendTime�
 <p>切换不同的mode，想确认切换成功，有具体log打印出来吗？</p>
 </div>
 <div class="reply even">
-<h3 id="20250409-2028-102">2025/04/09 20:28 — [人名102]<a class="headerlink" href="#20250409-2028-102" title="Permanent link">&para;</a></h3>
-<p>Hi 黄工，</p>
+<h3 id="20250409-2028-109">2025/04/09 20:28 — [人名109]<a class="headerlink" href="#20250409-2028-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名11]，</p>
 <p>是的，这3种mode都是要重新起播才生效的，无法实时生效的，都是要暂停重新播放才生效的。</p>
 <p>log可以看下面这两个APP打印出来的这两条log
 bt_sink_srv_music_get_configured_latency
@@ -526,13 +526,13 @@ bt_sink_srv_report_id("[sink][music] get_music_latency_by_mode</p>
 </div>
 <div class="reply odd">
 <h3 id="20250410-1923-2">2025/04/10 19:23 — [人名2]<a class="headerlink" href="#20250410-1923-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名102] ([人名102]),</p>
+<p>Hi [人名109] ([人名109]),</p>
 <p>见附件我的测试，以及帮忙解答一些问题；</p>
 <p>[附件: A2DP latency-1.xlsx]</p>
 </div>
 <div class="reply even">
-<h3 id="20250411-0858-102">2025/04/11 08:58 — [人名102]<a class="headerlink" href="#20250411-0858-102" title="Permanent link">&para;</a></h3>
-<p>Hi 黄工，</p>
+<h3 id="20250411-0858-109">2025/04/11 08:58 — [人名109]<a class="headerlink" href="#20250411-0858-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名11]，</p>
 <p>首选，需要再重新说一下config tool中前面4个值分别代表的含义，您的normal mode/stable mode用到的都是前面2个值，
 game mode（low latency mode）用到的是第3和第4这2个值。</p>
 <p>[图片: image-2025-04-11-09-00-32-102.png]</p>
@@ -540,18 +540,18 @@ game mode（low latency mode）用到的是第3和第4这2个值。</p>
  [图片: screenshot-1.png]</p>
 </div>
 <div class="reply odd">
-<h3 id="20250414-1049-102">2025/04/14 10:49 — [人名102]<a class="headerlink" href="#20250414-1049-102" title="Permanent link">&para;</a></h3>
-<p>Hi 黄工，</p>
+<h3 id="20250414-1049-109">2025/04/14 10:49 — [人名109]<a class="headerlink" href="#20250414-1049-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名11]，</p>
 <p>最后有实现对应的功能了吗？您前面有提到说，需要重新起播满足不了客户需求，所以后面没做这个功能了对吗？</p>
 </div>
 <div class="reply even">
 <h3 id="20250414-1101-2">2025/04/14 11:01 — [人名2]<a class="headerlink" href="#20250414-1101-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名102] ([人名102]),</p>
+<p>Hi [人名109] ([人名109]),</p>
 <p>功能有实现的，还在等客户确认中。</p>
 </div>
 <div class="reply odd">
-<h3 id="20250415-1929-102">2025/04/15 19:29 — [人名102]<a class="headerlink" href="#20250415-1929-102" title="Permanent link">&para;</a></h3>
-<p>Hi 黄工，</p>
+<h3 id="20250415-1929-109">2025/04/15 19:29 — [人名109]<a class="headerlink" href="#20250415-1929-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名11]，</p>
 <p>好的，如果客户那边确认需要等比较久，也可以先关闭这题，后续有疑问再提交上来继续跟进。</p>
 </div>
 <div class="ticket-nav">

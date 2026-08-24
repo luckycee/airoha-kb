@@ -362,34 +362,34 @@
 <p><a href="../ABT-99/">← 上一个工单：ABT-99</a>　<a href="../ABT-101/">→ 下一个工单：ABT-101</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>在demo App上，客户要求，每修改一个动作都要出对应的提示音，但是对应的callback函数中 bt_race_audio_event_callback() ，并没有把每个动作都区分开来，只有on和off两个，并且同时一个模式，调整Real Time gain也会跑，让人区分不出来；</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
-<h3 id="20221017-1544-5">2022/10/17 15:44 — [人名5]<a class="headerlink" href="#20221017-1544-5" title="Permanent link">&para;</a></h3>
+<h3 id="20221017-1544-6">2022/10/17 15:44 — [人名6]<a class="headerlink" href="#20221017-1544-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>看看log，跑不同模式的时候log是不是不一样？</p>
 <p>找到差异log对应的code，加个VP进去是不是可以实现？</p>
 </div>
 <div class="reply even">
 <h3 id="20221017-1614-2">2022/10/17 16:14 — [人名2]<a class="headerlink" href="#20221017-1614-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5],</p>
+<p>Hi [人名6],</p>
 <p>在 bt_race_audio_event_callback() 内，log是一样的；</p>
 <p>不同模式ANC的log不同，打印出来anc_enable, filter ,type 不同。关键是同一个模式，调试不同realtime gain也会跑bt_race_audio_event_callback() 内，这时的anc_enable,filter,type 就一样了，有更底层的接口给我吗？区分指令的地方？</p>
 </div>
 <div class="reply odd">
-<h3 id="20221018-1000-5">2022/10/18 10:00 — [人名5]<a class="headerlink" href="#20221018-1000-5" title="Permanent link">&para;</a></h3>
+<h3 id="20221018-1000-6">2022/10/18 10:00 — [人名6]<a class="headerlink" href="#20221018-1000-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>gain 值的调整在底层库里面，你们看不到的。目前只可以根据ANC enable，filter type 不同播放客制化VP</p>
 </div>
 <div class="reply even">
 <h3 id="20221018-1041-2">2022/10/18 10:41 — [人名2]<a class="headerlink" href="#20221018-1041-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>看看有其他可以区分执行指令的接口吗？考虑的情况太多了</p>
 </div>
 <div class="reply odd">
-<h3 id="20221019-1347-5">2022/10/19 13:47 — [人名5]<a class="headerlink" href="#20221019-1347-5" title="Permanent link">&para;</a></h3>
+<h3 id="20221019-1347-6">2022/10/19 13:47 — [人名6]<a class="headerlink" href="#20221019-1347-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>这些都是在底层处理的，没有放在上层！</p>
 </div>

@@ -21,7 +21,7 @@
     
     
       
-        <title>【[客户L]】AB1571AM EMP +PC Teams call 问题 - ABT 工单知识库</title>
+        <title>【[客户P]】AB1571AM EMP +PC Teams call 问题 - ABT 工单知识库</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#abt-560-lab1571am-emp-pc-teams-call" class="md-skip">
+        <a href="#abt-560-pab1571am-emp-pc-teams-call" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              【[客户L]】AB1571AM EMP +PC Teams call 问题
+              【[客户P]】AB1571AM EMP +PC Teams call 问题
             
           </span>
         </div>
@@ -354,7 +354,7 @@
   
 
 
-<h1 id="abt-560-lab1571am-emp-pc-teams-call">ABT-560 【[客户L]】AB1571AM EMP +PC Teams call 问题<a class="headerlink" href="#abt-560-lab1571am-emp-pc-teams-call" title="Permanent link">&para;</a></h1>
+<h1 id="abt-560-pab1571am-emp-pc-teams-call">ABT-560 【[客户P]】AB1571AM EMP +PC Teams call 问题<a class="headerlink" href="#abt-560-pab1571am-emp-pc-teams-call" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>📅 2025/05/29 16:17　🔗 <a href="https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-560">原始工单链接</a></p>
 </blockquote>
@@ -362,7 +362,7 @@
 <p><a href="../ABT-559/">← 上一个工单：ABT-559</a>　<a href="../ABT-561/">→ 下一个工单：ABT-561</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>两个手机的EMP 在call的时候没有问题，遇到问题是PC Teams + 手机。</p>
 <p>earbuds 同事连接了PC 和手机，PC 上先使用Teams 通话[1]，此时 MMI state 是 APP_STATE_VA ，然后手机上来电[2]（时间 15:59:44），MMI state 还是保持在 APP_STATE_VA，要执行按键key的时候如何[1][2]区分？</p>
 <hr />
@@ -372,57 +372,57 @@
 <p>[附件: Logging250529_154301_COM43.7z]</p>
 </div>
 <div class="reply even">
-<h3 id="20250605-0939-5">2025/06/05 09:39 — [人名5]<a class="headerlink" href="#20250605-0939-5" title="Permanent link">&para;</a></h3>
+<h3 id="20250605-0939-6">2025/06/05 09:39 — [人名6]<a class="headerlink" href="#20250605-0939-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>当前PC call 用VA  state,  我们耳机上不支持VA state 跟其他state remap，所以这种情况没办法操控第二通来电了。</p>
 </div>
 <div class="reply odd">
 <h3 id="20250605-1144-2">2025/06/05 11:44 — [人名2]<a class="headerlink" href="#20250605-1144-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>我手上有一个他们之前使用1565做的样机，相同的场景下，我感觉他们不在VA state，而是在普通的call state，这里能修改吗？</p>
 </div>
 <div class="reply even">
-<h3 id="20250605-1150-5">2025/06/05 11:50 — [人名5]<a class="headerlink" href="#20250605-1150-5" title="Permanent link">&para;</a></h3>
+<h3 id="20250605-1150-6">2025/06/05 11:50 — [人名6]<a class="headerlink" href="#20250605-1150-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>如沟通，麻烦再确认一下对比机的行为哈</p>
 </div>
 <div class="reply odd">
 <h3 id="20250605-1218-2">2025/06/05 12:18 — [人名2]<a class="headerlink" href="#20250605-1218-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>附加为SDK3.8.0 的log，没有切换到普通call state，还是在VA 状态，但是在PC 上的音乐能停止。</p>
 <p>另外，在stereo 是speaker 是没有声音的，在Hand-free AG audio才听得到对方的声音。</p>
 <p>[附件: SDK3.8.0 2000行附近开启了Teams 通话，2600行附近切换到Hand-free AG audio.pcapng]</p>
 <p>[图片: PixPin_2025-06-05_11-03-18.png]</p>
 </div>
 <div class="reply even">
-<h3 id="20250605-1410-5">2025/06/05 14:10 — [人名5]<a class="headerlink" href="#20250605-1410-5" title="Permanent link">&para;</a></h3>
+<h3 id="20250605-1410-6">2025/06/05 14:10 — [人名6]<a class="headerlink" href="#20250605-1410-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>还是需要确认客户的测试方法是否行为一直，目前来看耳机无法兼顾两种状态~</p>
 </div>
 <div class="reply odd">
 <h3 id="20250605-1434-2">2025/06/05 14:34 — [人名2]<a class="headerlink" href="#20250605-1434-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>SDK3.8.0 默认的EMP 不支持，客户样机可以。</p>
 </div>
 <div class="reply even">
-<h3 id="20250605-1453-5">2025/06/05 14:53 — [人名5]<a class="headerlink" href="#20250605-1453-5" title="Permanent link">&para;</a></h3>
+<h3 id="20250605-1453-6">2025/06/05 14:53 — [人名6]<a class="headerlink" href="#20250605-1453-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>具体实现可能需要你们研究一下修改哈，我们这边无法支持了~</p>
 </div>
 <div class="reply odd">
-<h3 id="20250606-1450-5">2025/06/06 14:50 — [人名5]<a class="headerlink" href="#20250606-1450-5" title="Permanent link">&para;</a></h3>
+<h3 id="20250606-1450-6">2025/06/06 14:50 — [人名6]<a class="headerlink" href="#20250606-1450-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>麻烦添加以下patch，在 PC 通话中、SP 来电的场景下，接听 SP 来电时将 focus_call_device 设置为 SP</p>
 <p>[附件: sink.diff]</p>
 </div>
 <div class="reply even">
-<h3 id="20250609-0932-5">2025/06/09 09:32 — [人名5]<a class="headerlink" href="#20250609-0932-5" title="Permanent link">&para;</a></h3>
+<h3 id="20250609-0932-6">2025/06/09 09:32 — [人名6]<a class="headerlink" href="#20250609-0932-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>这题还有问题吗？没有的话今天会关闭JIRA</p>
 </div>
 <div class="reply odd">
 <h3 id="20250609-1048-2">2025/06/09 10:48 — [人名2]<a class="headerlink" href="#20250609-1048-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>可以接听了，还有一些细节问题，我处理不好再提jira。此题关闭。</p>
 </div>
 <div class="ticket-nav">

@@ -362,7 +362,7 @@
 <p><a href="../ABT-432/">← 上一个工单：ABT-432</a>　<a href="../ABT-434/">→ 下一个工单：ABT-434</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>HI [人名5]：</p>
+<p>HI [人名6]：</p>
 <p>使用evk的dmic做fb测试时（evk断开了所有amic的电源），发现开机后第一次操作fb on后，扫频数据是对的，如音频数据图的Ch1；</p>
 <p>然后realtime参数，再扫频，发现没有数据了，如音频数据图的Ch1 2；</p>
 <p>然后操作anc off，再fb on，再realtime，再扫频，数据又和第一次扫频的一样了，如音频数据图的Ch1 3；</p>
@@ -372,31 +372,31 @@
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
-<h3 id="20240806-1629-23-24">2024/08/06 16:29 — [人名23] [人名24]<a class="headerlink" href="#20240806-1629-23-24" title="Permanent link">&para;</a></h3>
+<h3 id="20240806-1629-25-26">2024/08/06 16:29 — [人名25] [人名26]<a class="headerlink" href="#20240806-1629-25-26" title="Permanent link">&para;</a></h3>
 <p>[附件: 77AM_FB.pcapng]</p>
 <p>[图片: fb mic切到了ff mic.png]</p>
 <p>[图片: 音频数据.png]</p>
 </div>
 <div class="reply even">
 <h3 id="20240807-1200-jiang-miuix">2024/08/07 12:00 — Jiang Miuix<a class="headerlink" href="#20240807-1200-jiang-miuix" title="Permanent link">&para;</a></h3>
-<p>[人名29] ；</p>
+<p>[人名31] ；</p>
 <p>AP525仪器什么时间有空  ，我约个时间在EVK上测试FB数字麦克风数据，我们仪器测试不了数字麦克风电信号，验证下滤波器调试是否稳定，大概半天时间就好。</p>
 </div>
 <div class="reply odd">
-<h3 id="20240807-1343-29">2024/08/07 13:43 — [人名29]<a class="headerlink" href="#20240807-1343-29" title="Permanent link">&para;</a></h3>
+<h3 id="20240807-1343-31">2024/08/07 13:43 — [人名31]<a class="headerlink" href="#20240807-1343-31" title="Permanent link">&para;</a></h3>
 <p>发现开机后第一次操作fb on后，扫频数据是对的，如音频数据图的Ch1；</p>
 <p>然后realtime参数，再扫频，发现没有数据了，如音频数据图的Ch1 2；</p>
 <p>@[邮箱已隐藏]  我们建议先ANC off-FB on-Realtime这样的操作顺序，第一次到第二次是怎么操作的？</p>
 </div>
 <div class="reply even">
-<h3 id="20240807-1444-23-24">2024/08/07 14:44 — [人名23] [人名24]<a class="headerlink" href="#20240807-1444-23-24" title="Permanent link">&para;</a></h3>
-<p>HI [人名29] ([人名29])：</p>
+<h3 id="20240807-1444-25-26">2024/08/07 14:44 — [人名25] [人名26]<a class="headerlink" href="#20240807-1444-25-26" title="Permanent link">&para;</a></h3>
+<p>HI [人名31] ([人名31])：</p>
 <p>如附件log，按照建议操作（ANC off-FB on-Realtime），开机时的第一次操作后，仍会出现mic被切到amic的现象。</p>
 <p>[图片: fb mic切到了ff mic_0807.png]</p>
 <p>[附件: 77AM_FB_0807.pcapng]</p>
 </div>
 <div class="reply odd">
-<h3 id="20240827-1439-5">2024/08/27 14:39 — [人名5]<a class="headerlink" href="#20240827-1439-5" title="Permanent link">&para;</a></h3>
+<h3 id="20240827-1439-6">2024/08/27 14:39 — [人名6]<a class="headerlink" href="#20240827-1439-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>麻烦提供你们是用的ANC option，如果選用的是STATIC_ANC</p>
 <p>[图片: image-2024-08-26-17-35-56-020.png]</p>
@@ -404,12 +404,12 @@
 <p>[附件: MIUIX1565_433_patchv1_dsp_prebuilt_10111_middleware_ABT_dspfw_anc_ab157x.rar]</p>
 </div>
 <div class="reply even">
-<h3 id="20240828-1136-23-24">2024/08/28 11:36 — [人名23] [人名24]<a class="headerlink" href="#20240828-1136-23-24" title="Permanent link">&para;</a></h3>
-<p>HI [人名5]：</p>
+<h3 id="20240828-1136-25-26">2024/08/28 11:36 — [人名25] [人名26]<a class="headerlink" href="#20240828-1136-25-26" title="Permanent link">&para;</a></h3>
+<p>HI [人名6]：</p>
 <p>选择的是STATIC_ANC，合入此patch后，声学测试OK。从log上看也不会切到FF的amic了。</p>
 </div>
 <div class="reply odd">
-<h3 id="20240830-1015-5">2024/08/30 10:15 — [人名5]<a class="headerlink" href="#20240830-1015-5" title="Permanent link">&para;</a></h3>
+<h3 id="20240830-1015-6">2024/08/30 10:15 — [人名6]<a class="headerlink" href="#20240830-1015-6" title="Permanent link">&para;</a></h3>
 <p>好的</p>
 </div>
 <div class="ticket-nav">

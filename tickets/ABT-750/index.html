@@ -362,7 +362,7 @@
 <p><a href="../ABT-749/">← 上一个工单：ABT-749</a>　<a href="../ABT-751/">→ 下一个工单：ABT-751</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]</p>
+<p>Hi [人名6]</p>
 <p>line in 使用I2S输入的时候，只能有MASTER_IN 这个选项，请帮忙看看是否支持SLAVE_IN（由外部DSP作為 Master 提供 BCLK 與 WS）</p>
 <p>MCLK 依賴性與頻率當配置為 I2S Slave 時，晶片是否強制需要外部輸入 MCLK？</p>
 <p>若不需要： 是否能僅靠外部 BCLK (6.144MHz) 與 WS (48kHz) 透過內部 PLL 完成時脈同步？（No-MCLK 模式）</p>
@@ -374,18 +374,18 @@
 <p>[图片: PixPin_2026-06-12_15-15-42.jpg]</p>
 </div>
 <div class="reply even">
-<h3 id="20260615-1536-80">2026/06/15 15:36 — [人名80]<a class="headerlink" href="#20260615-1536-80" title="Permanent link">&para;</a></h3>
+<h3 id="20260615-1536-86">2026/06/15 15:36 — [人名86]<a class="headerlink" href="#20260615-1536-86" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] 
 这个是新开的项目吗？请问是用哪版SDK？会有line out吗？</p>
 <p>Thanks.</p>
 </div>
 <div class="reply odd">
 <h3 id="20260615-1701-2">2026/06/15 17:01 — [人名2]<a class="headerlink" href="#20260615-1701-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名80] (szciic)，</p>
+<p>Hi [人名86] (szciic)，</p>
 <p>使用的是SDK5.10.0 ，新的项目，没有line out；</p>
 </div>
 <div class="reply even">
-<h3 id="20260615-1718-80">2026/06/15 17:18 — [人名80]<a class="headerlink" href="#20260615-1718-80" title="Permanent link">&para;</a></h3>
+<h3 id="20260615-1718-86">2026/06/15 17:18 — [人名86]<a class="headerlink" href="#20260615-1718-86" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] 
 这个接的外部dsp是干什么的呢？具体的应用场景(场景并发)有哪些，我们内部需要先评估一下是否可行</p>
 <p>另外，是什么形态的产品呢，headset or earbuds？project准备用哪个？</p>
@@ -393,14 +393,14 @@
 </div>
 <div class="reply odd">
 <h3 id="20260615-1727-2">2026/06/15 17:27 — [人名2]<a class="headerlink" href="#20260615-1727-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名80] (szciic)，</p>
+<p>Hi [人名86] (szciic)，</p>
 <p>外部的STM32 DSP 处理过之后把 Audio 以 line in （I2S）的方式进入蓝牙，通过蓝牙的ADC 播放出来。可以理解为普通line in 功能，只不过是以数字的方式；</p>
 <p>整个source 只有 BT、line in ;</p>
 <p>产品形态是 头戴式耳机（headset），project 使用：</p>
 <p>./build.sh ab1577am_evk headset_ref_design</p>
 </div>
 <div class="reply even">
-<h3 id="20260616-1641-80">2026/06/16 16:41 — [人名80]<a class="headerlink" href="#20260616-1641-80" title="Permanent link">&para;</a></h3>
+<h3 id="20260616-1641-86">2026/06/16 16:41 — [人名86]<a class="headerlink" href="#20260616-1641-86" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] 
 那这个line in跟77am的BT audio会一起跑吗？还是说两个场景不会并发，这个需要确认清楚，</p>
 <p>最好画一个框架图给我们</p>
@@ -408,26 +408,26 @@
 </div>
 <div class="reply odd">
 <h3 id="20260617-1018-2">2026/06/17 10:18 — [人名2]<a class="headerlink" href="#20260617-1018-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名80] (szciic)，</p>
-<p>在line in 插入的情况，如果当前有蓝牙连接（A2DP[人名9]P 未播放），则播放line in 的内容; 播放 line in 时， A2DP 不能中断当前的 line in， 但是[人名9]P 可以，[人名9]P 通话结束之后再回到 line in ;</p>
+<p>Hi [人名86] (szciic)，</p>
+<p>在line in 插入的情况，如果当前有蓝牙连接（A2DP[人名10]P 未播放），则播放line in 的内容; 播放 line in 时， A2DP 不能中断当前的 line in， 但是[人名10]P 可以，[人名10]P 通话结束之后再回到 line in ;</p>
 <p>这样描述清楚吗？</p>
 </div>
 <div class="reply even">
-<h3 id="20260623-1853-99">2026/06/23 18:53 — [人名99]<a class="headerlink" href="#20260623-1853-99" title="Permanent link">&para;</a></h3>
+<h3 id="20260623-1853-106">2026/06/23 18:53 — [人名106]<a class="headerlink" href="#20260623-1853-106" title="Permanent link">&para;</a></h3>
 <p>@[邮箱已隐藏]
 添加如图code, 并且在dsp feature.mk里添加，AIR_I2S_SLAVE_ENABLE = y
  [图片: screenshot-1.png]</p>
 </div>
 <div class="reply odd">
 <h3 id="20260626-1411-2">2026/06/26 14:11 — [人名2]<a class="headerlink" href="#20260626-1411-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名99] ([人名99])</p>
+<p>Hi [人名106] ([人名106])</p>
 <p>不好意思意思，原本来以为用不上 slave in了，结果应为clock source 问题，外部DSP 又需要BT这边做 slave in。</p>
 <p>我按照code修改之后，再有个EPT config 了对应I2S0 的GPIO， 测试是有声音的。但是如果在 dsp_feature.mk 加上 AIR_I2S_SLAVE_ENABLE = y 之后，就一点声音都没有了，附件是log，请看看。</p>
 <p>[附件: I2S line in 改为 slave in 没有输出；.pcapng]</p>
 </div>
 <div class="reply even">
 <h3 id="20260626-1426-2">2026/06/26 14:26 — [人名2]<a class="headerlink" href="#20260626-1426-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名99] ([人名99])</p>
+<p>Hi [人名106] ([人名106])</p>
 <p>补充一些GPIO 的config ，使用的 I2S_SLV0 ;</p>
 <p>I2S_SLV0_WS 接入 DSP_LRCK</p>
 <p>I2S_SLV0_RX 接入 DSP_DATA</p>
@@ -436,7 +436,7 @@
 <p>[图片: PixPin_2026-06-26_14-20-22.jpg]</p>
 </div>
 <div class="reply odd">
-<h3 id="20260629-1005-99">2026/06/29 10:05 — [人名99]<a class="headerlink" href="#20260629-1005-99" title="Permanent link">&para;</a></h3>
+<h3 id="20260629-1005-106">2026/06/29 10:05 — [人名106]<a class="headerlink" href="#20260629-1005-106" title="Permanent link">&para;</a></h3>
 <p>@[邮箱已隐藏]
 这题时间有点久了，中途还关过，可以重开一笔吗？</p>
 </div>

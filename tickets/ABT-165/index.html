@@ -362,13 +362,13 @@
 <p><a href="../ABT-164/">← 上一个工单：ABT-164</a>　<a href="../ABT-166/">→ 下一个工单：ABT-166</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi fason，</p>
+<p>Hi [人名6]，</p>
 <p>去年4月（<a href="../ABT-31/">ABT-31</a>）你回复，dongle不支持line in 做音源，现在支持了吗？之前说I2S做音源开发中，是否支持了？</p>
 <p>另外，如果支持line-in，客户想这么做，使用电池供电时line in做音源，接type-c充电时使用USB做音源，能实现吗？</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
-<h3 id="20230421-1514-9">2023/04/21 15:14 — [人名9]<a class="headerlink" href="#20230421-1514-9" title="Permanent link">&para;</a></h3>
+<h3 id="20230421-1514-10">2023/04/21 15:14 — [人名10]<a class="headerlink" href="#20230421-1514-10" title="Permanent link">&para;</a></h3>
 <p>Hi Sir</p>
 <p>首先你要有dongle line做到gaming addon里，首先你要有这个addon，请向贵司对应的PM申请。</p>
 <p>dongle -&gt; ./build.sh ab1565_evk dongle_ref_design_ull2_afe_in</p>
@@ -378,11 +378,11 @@
 </div>
 <div class="reply even">
 <h3 id="20230421-1532-2">2023/04/21 15:32 — [人名2]<a class="headerlink" href="#20230421-1532-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名9] ([人名9])，</p>
+<p>Hi [人名10] ([人名10])，</p>
 <p>好的。在做line in输入源时，是否有接口切换到USB做输入源？客户想这么做，使用电池供电时line in做音源，接type-c充电时使用USB做音源。</p>
 </div>
 <div class="reply odd">
-<h3 id="20230424-1617-9">2023/04/24 16:17 — [人名9]<a class="headerlink" href="#20230424-1617-9" title="Permanent link">&para;</a></h3>
+<h3 id="20230424-1617-10">2023/04/24 16:17 — [人名10]<a class="headerlink" href="#20230424-1617-10" title="Permanent link">&para;</a></h3>
 <p>Hi Sir</p>
 <p>在做line in输入源时，是否有接口切换到USB做输入源
 -&gt;没有。</p>
@@ -391,12 +391,12 @@
 </div>
 <div class="reply even">
 <h3 id="20230424-1711-2">2023/04/24 17:11 — [人名2]<a class="headerlink" href="#20230424-1711-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名9] ([人名9])，</p>
+<p>Hi [人名10] ([人名10])，</p>
 <p>是否可以这里理解，就是5V的时候让系统处于plug out 状态，用USB 到音源。没有5V时，处于plug in 状态，用line in做音源，这个过程不需要做切换，自动取识别当前的source。</p>
 <p>如果客户做这样一个测试，在5V在的情况下，强行插入line in，我应该可以做屏蔽line in的动作吗？我看line in用的中断方式。</p>
 </div>
 <div class="reply odd">
-<h3 id="20230424-1731-9">2023/04/24 17:31 — [人名9]<a class="headerlink" href="#20230424-1731-9" title="Permanent link">&para;</a></h3>
+<h3 id="20230424-1731-10">2023/04/24 17:31 — [人名10]<a class="headerlink" href="#20230424-1731-10" title="Permanent link">&para;</a></h3>
 <p>如果客户做这样一个测试，在5V在的情况下，强行插入line in，我应该可以做屏蔽line in的动作吗？我看line in用的中断方式。
 -&gt; hal_eint_mask(LINE_IN_DETECT_EINT_NUM); -&gt;屏蔽LINEIN EINT
 hal_eint_unmask(LINE_IN_DETECT_EINT_NUM); -&gt;放开LINEIN EINT</p>
@@ -404,7 +404,7 @@ hal_eint_unmask(LINE_IN_DETECT_EINT_NUM); -&gt;放开LINEIN EINT</p>
 </div>
 <div class="reply even">
 <h3 id="20230424-1734-2">2023/04/24 17:34 — [人名2]<a class="headerlink" href="#20230424-1734-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名9] ([人名9])，</p>
+<p>Hi [人名10] ([人名10])，</p>
 <p>我这边先试一下实际情况，有问题再请教，感谢。</p>
 </div>
 <div class="ticket-nav">

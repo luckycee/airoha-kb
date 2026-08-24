@@ -21,7 +21,7 @@
     
     
       
-        <title>【[客户O]】dual chip USB in咨询 - ABT 工单知识库</title>
+        <title>【[客户S]】dual chip USB in咨询 - ABT 工单知识库</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#abt-678-odual-chip-usb-in" class="md-skip">
+        <a href="#abt-678-sdual-chip-usb-in" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              【[客户O]】dual chip USB in咨询
+              【[客户S]】dual chip USB in咨询
             
           </span>
         </div>
@@ -354,7 +354,7 @@
   
 
 
-<h1 id="abt-678-odual-chip-usb-in">ABT-678 【[客户O]】dual chip USB in咨询<a class="headerlink" href="#abt-678-odual-chip-usb-in" title="Permanent link">&para;</a></h1>
+<h1 id="abt-678-sdual-chip-usb-in">ABT-678 【[客户S]】dual chip USB in咨询<a class="headerlink" href="#abt-678-sdual-chip-usb-in" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>📅 2025/12/23 10:46　🔗 <a href="https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-678">原始工单链接</a></p>
 </blockquote>
@@ -362,7 +362,7 @@
 <p><a href="../ABT-677/">← 上一个工单：ABT-677</a>　<a href="../ABT-679/">→ 下一个工单：ABT-679</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>目前他们调试遇到几个问题：</p>
 <p>接入USB 5V（77AM），77AM 开机，71没有开机，怎么做可以让两边同时开机？</p>
 <p>参考设计中，77AM 和71的 RTC_GPIO1 这部分相连接有什么作用？</p>
@@ -375,25 +375,25 @@
 </div>
 <div class="reply even">
 <h3 id="20251225-1128-2">2025/12/25 11:28 — [人名2]<a class="headerlink" href="#20251225-1128-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>这题呢？</p>
 </div>
 <div class="reply odd">
-<h3 id="20251226-1636-94">2025/12/26 16:36 — [人名94]<a class="headerlink" href="#20251226-1636-94" title="Permanent link">&para;</a></h3>
+<h3 id="20251226-1636-101">2025/12/26 16:36 — [人名101]<a class="headerlink" href="#20251226-1636-101" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] </p>
 <p>接入USB 5V（77AM），77AM 开机，71没有开机，怎么做可以让两边同时开机？</p>
 <p>-&gt;&gt; 这个是因为硬件上77am先开机后拉71的pin，71后续才开机的。这是正常行为。</p>
 <p>参考设计中，77AM 和71的 RTC_GPIO1 这部分相连接有什么作用？</p>
 <p>参考设计中，71的 RESET 脚接到了77AM的GPIO8（IO8_INT_77），目的是什么？</p>
-<p>-&gt;&gt; 剩余这两个问题，我请HW同事帮忙解答下~@[人名88]</p>
+<p>-&gt;&gt; 剩余这两个问题，我请HW同事帮忙解答下~@[人名94]</p>
 </div>
 <div class="reply even">
 <h3 id="20251226-1654-2">2025/12/26 16:54 — [人名2]<a class="headerlink" href="#20251226-1654-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名94] ([人名94])，</p>
+<p>Hi [人名101] ([人名101])，</p>
 <p>可以做接入 USB 5V 同时开机吗？</p>
 </div>
 <div class="reply odd">
-<h3 id="20251229-1006-29">2025/12/29 10:06 — [人名29]<a class="headerlink" href="#20251229-1006-29" title="Permanent link">&para;</a></h3>
+<h3 id="20251229-1006-31">2025/12/29 10:06 — [人名31]<a class="headerlink" href="#20251229-1006-31" title="Permanent link">&para;</a></h3>
 <p>@[邮箱已隐藏] </p>
 <p>参考设计中，77AM 和71的 RTC_GPIO1 这部分相连接有什么作用？</p>
 <p>Ans：在双芯片架构中，AB1577AM 作为主控（Master），负责整个系统的电源策略。AB157A 作为协处理器（Slave），在没有音频处理任务时需要进入低功耗模式（Deep Sleep）。
@@ -418,17 +418,17 @@
 </div>
 <div class="reply even">
 <h3 id="20251230-1014-2">2025/12/30 10:14 — [人名2]<a class="headerlink" href="#20251230-1014-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名29]，</p>
+<p>Hi [人名31]，</p>
 <p>非常详细，感谢；</p>
 </div>
 <div class="reply odd">
 <h3 id="20251230-1015-2">2025/12/30 10:15 — [人名2]<a class="headerlink" href="#20251230-1015-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5],</p>
-<p>[客户O]有追问：</p>
+<p>Hi [人名6],</p>
+<p>[客户S]有追问：</p>
 <p>如 SDK代码中BSP_DUAL_CHIP_TRIGGER_WAKEUP_PIN，BSP_DUAL_CHIP_TRIGGER_RESET_PIN，BSP_DUAL_CHIP_TRIGGER_POWER_KEY_PIN这3个pin没有被使用。从名字上看这几个定义是有实际功能，改如何去根据硬件的设计去配置它呢？</p>
 </div>
 <div class="reply even">
-<h3 id="20251230-1020-94">2025/12/30 10:20 — [人名94]<a class="headerlink" href="#20251230-1020-94" title="Permanent link">&para;</a></h3>
+<h3 id="20251230-1020-101">2025/12/30 10:20 — [人名101]<a class="headerlink" href="#20251230-1020-101" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] </p>
 <p>此题是否还有疑问？新的问题请另提jira哈~</p>
 <p>若无其他疑问，今天将会关闭此单~</p>
@@ -436,7 +436,7 @@
 </div>
 <div class="reply odd">
 <h3 id="20251230-1049-2">2025/12/30 10:49 — [人名2]<a class="headerlink" href="#20251230-1049-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名94] ([人名94])，</p>
+<p>Hi [人名101] ([人名101])，</p>
 <p>此题关闭，移步至 <a href="../ABT-686/">ABT-686</a></p>
 </div>
 <div class="ticket-nav">

@@ -21,7 +21,7 @@
     
     
       
-        <title>【[客户L]】 AB1571AM 连接电脑使用微信语音通话无法使用mic mute - ABT 工单知识库</title>
+        <title>【[客户P]】 AB1571AM 连接电脑使用微信语音通话无法使用mic mute - ABT 工单知识库</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#abt-554-l-ab1571am-mic-mute" class="md-skip">
+        <a href="#abt-554-p-ab1571am-mic-mute" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              【[客户L]】 AB1571AM 连接电脑使用微信语音通话无法使用mic mute
+              【[客户P]】 AB1571AM 连接电脑使用微信语音通话无法使用mic mute
             
           </span>
         </div>
@@ -354,7 +354,7 @@
   
 
 
-<h1 id="abt-554-l-ab1571am-mic-mute">ABT-554 【[客户L]】 AB1571AM 连接电脑使用微信语音通话无法使用mic mute<a class="headerlink" href="#abt-554-l-ab1571am-mic-mute" title="Permanent link">&para;</a></h1>
+<h1 id="abt-554-p-ab1571am-mic-mute">ABT-554 【[客户P]】 AB1571AM 连接电脑使用微信语音通话无法使用mic mute<a class="headerlink" href="#abt-554-p-ab1571am-mic-mute" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>📅 2025/05/26 18:35　🔗 <a href="https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-554">原始工单链接</a></p>
 </blockquote>
@@ -362,8 +362,8 @@
 <p><a href="../ABT-553/">← 上一个工单：ABT-553</a>　<a href="../ABT-555/">→ 下一个工单：ABT-555</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
-<p>见附件log，TWS连接上Windows10 微信之后，开启语音通话，发现通话状态不在 APP_[人名9]P_CALL_ACTIVE，而是在 APP_STATE_VA ，客户有个 mic mute 的动作，无法执行。</p>
+<p>Hi [人名6]，</p>
+<p>见附件log，TWS连接上Windows10 微信之后，开启语音通话，发现通话状态不在 APP_[人名10]P_CALL_ACTIVE，而是在 APP_STATE_VA ，客户有个 mic mute 的动作，无法执行。</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
@@ -371,9 +371,9 @@
 <p>[附件: 连接了联想电脑，开启微信通话发现mmi state 为26，触发mic mute 无效.7z]</p>
 </div>
 <div class="reply even">
-<h3 id="20250527-0927-102">2025/05/27 09:27 — [人名102]<a class="headerlink" href="#20250527-0927-102" title="Permanent link">&para;</a></h3>
-<p>Hi 黄工，
-这题同<a href="../ABT-546/">ABT-546</a> ，请与李工核对确认一下，当时已经提供了解法了。</p>
+<h3 id="20250527-0927-109">2025/05/27 09:27 — [人名109]<a class="headerlink" href="#20250527-0927-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名11]，
+这题同<a href="../ABT-546/">ABT-546</a> ，请与[人名45]核对确认一下，当时已经提供了解法了。</p>
 <p>在app_call_va_activity.c中，模仿框起来的地方，加一段代码，加上KEY_MUTE_MIC和KEY_UNMUTE_MIC的处理，确保会发mute_mic的srv action下去。
 [图片: image-2025-05-27-09-36-12-403.png]</p>
 <p>/////////////////////////////////////////////////////////////////////////////////////////////////
@@ -382,9 +382,9 @@ Logging250526_153957_COM43
 [图片: image-2025-05-27-09-34-07-195.png]</p>
 </div>
 <div class="reply odd">
-<h3 id="20250527-1229-102">2025/05/27 12:29 — [人名102]<a class="headerlink" href="#20250527-1229-102" title="Permanent link">&para;</a></h3>
-<p>Hi 黄工，</p>
-<p><a href="../ABT-546/">ABT-546</a>李工那边已经验证状态26是可以mute mic，可以直接与李工对一下。
+<h3 id="20250527-1229-109">2025/05/27 12:29 — [人名109]<a class="headerlink" href="#20250527-1229-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名11]，</p>
+<p><a href="../ABT-546/">ABT-546</a>[人名45]那边已经验证状态26是可以mute mic，可以直接与[人名45]对一下。
  [图片: screenshot-1.png]</p>
 </div>
 <div class="ticket-nav">

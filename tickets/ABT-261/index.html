@@ -362,25 +362,25 @@
 <p><a href="../ABT-260/">← 上一个工单：ABT-260</a>　<a href="../ABT-262/">→ 下一个工单：ABT-262</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>HI [人名5]：</p>
+<p>HI [人名6]：</p>
 <p>无线麦不需要USB、LineIn方式的mic out。只需要dongle+Wireless mic的方式。都需要关闭哪些feature？麻烦指导下。</p>
 <p>dongle：./build.sh ab1565_evk wireless_mic_rx</p>
 <p>mic：./build.sh ab1565_evk wireless_mic_tx_uld</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
-<h3 id="20230925-1540-23-24">2023/09/25 15:40 — [人名23] [人名24]<a class="headerlink" href="#20230925-1540-23-24" title="Permanent link">&para;</a></h3>
-<p>HI [人名5]：
+<h3 id="20230925-1540-25-26">2023/09/25 15:40 — [人名25] [人名26]<a class="headerlink" href="#20230925-1540-25-26" title="Permanent link">&para;</a></h3>
+<p>HI [人名6]：
 补充下，需要通过USB，Windows UT进行OTA升级。</p>
 </div>
 <div class="reply even">
-<h3 id="20230925-1934-9">2023/09/25 19:34 — [人名9]<a class="headerlink" href="#20230925-1934-9" title="Permanent link">&para;</a></h3>
+<h3 id="20230925-1934-10">2023/09/25 19:34 — [人名10]<a class="headerlink" href="#20230925-1934-10" title="Permanent link">&para;</a></h3>
 <p>请关掉下面option试试
 AIR_USB_AUDIO_MICROPHONE_ENABLE = y</p>
 <p>AIR_GAMING_MODE_DONGLE_LINE_OUT_ENABLE = y</p>
 </div>
 <div class="reply odd">
-<h3 id="20230925-2208-23-24">2023/09/25 22:08 — [人名23] [人名24]<a class="headerlink" href="#20230925-2208-23-24" title="Permanent link">&para;</a></h3>
+<h3 id="20230925-2208-25-26">2023/09/25 22:08 — [人名25] [人名26]<a class="headerlink" href="#20230925-2208-25-26" title="Permanent link">&para;</a></h3>
 <p>HI 
 修改文件：headset：feature_65_evk_mic_tx_uld.mk；dongle：feature_65_evk_mic_rx.mk
 修改后，测试dongle和headset连接后，headset端通过key_mute_mic静音，然后将headset充电，headset（mic）端发生了死机。麻烦看下死机原因。</p>
@@ -388,7 +388,7 @@ AIR_USB_AUDIO_MICROPHONE_ENABLE = y</p>
 <p>[附件: Logging230925_214319_COM23_Mic.7z]</p>
 </div>
 <div class="reply even">
-<h3 id="20230926-2356-23-24">2023/09/26 23:56 — [人名23] [人名24]<a class="headerlink" href="#20230926-2356-23-24" title="Permanent link">&para;</a></h3>
+<h3 id="20230926-2356-25-26">2023/09/26 23:56 — [人名25] [人名26]<a class="headerlink" href="#20230926-2356-25-26" title="Permanent link">&para;</a></h3>
 <p>HI 
 昨天是dongle：feature_65_evk_mic_rx.mk只关闭了一个AIR_GAMING_MODE_DONGLE_LINE_OUT_ENABLE = n，附件log为两个都修改为n，将软件烧录到EVK中，EVK USB上电即死机。
 Logging230926_235419_COM22.7z：为标准软件测试；
@@ -397,47 +397,47 @@ Logging230926_233854_COM22.7z：为加了客户UI后的软件测试。</p>
 <p>[附件: Logging230926_235419_COM22.7z]</p>
 </div>
 <div class="reply odd">
-<h3 id="20231012-1752-9">2023/10/12 17:52 — [人名9]<a class="headerlink" href="#20231012-1752-9" title="Permanent link">&para;</a></h3>
+<h3 id="20231012-1752-10">2023/10/12 17:52 — [人名10]<a class="headerlink" href="#20231012-1752-10" title="Permanent link">&para;</a></h3>
 <p>Hi Sir</p>
 <p>有个疑问确认一下，wireless mic不开USB mic out， 那这应该不具备mic功能了吧？</p>
 </div>
 <div class="reply even">
-<h3 id="20231012-1932-23-24">2023/10/12 19:32 — [人名23] [人名24]<a class="headerlink" href="#20231012-1932-23-24" title="Permanent link">&para;</a></h3>
-<p>HI [人名9] ([人名9])：
+<h3 id="20231012-1932-25-26">2023/10/12 19:32 — [人名25] [人名26]<a class="headerlink" href="#20231012-1932-25-26" title="Permanent link">&para;</a></h3>
+<p>HI [人名10] ([人名10])：
 我这边现在遇到的是，当TX端进行充电的时候，TX会进入APP_LE_AUDIO_WIRED_USB_IN，退出了LEA模式。
 可否无论TX是否充电，都保持和RX的LEA模式。</p>
 </div>
 <div class="reply odd">
-<h3 id="20231013-0927-9">2023/10/13 09:27 — [人名9]<a class="headerlink" href="#20231013-0927-9" title="Permanent link">&para;</a></h3>
+<h3 id="20231013-0927-10">2023/10/13 09:27 — [人名10]<a class="headerlink" href="#20231013-0927-10" title="Permanent link">&para;</a></h3>
 <p>那你应该是要把TX的USB Wired Audio关掉，而不是把MIC功能关掉。</p>
 <p>AIR_USB_AUDIO_MICROPHONE_ENABLE = n</p>
 <p>AIR_USB_AUDIO_SPEAKER_ENABLE  = n</p>
 <p>AIR_USB_AUDIO_2ND_SPEAKER_ENABLE = n</p>
 </div>
 <div class="reply even">
-<h3 id="20231013-1108-23-24">2023/10/13 11:08 — [人名23] [人名24]<a class="headerlink" href="#20231013-1108-23-24" title="Permanent link">&para;</a></h3>
-<p>HI [人名9] ([人名9])：
+<h3 id="20231013-1108-25-26">2023/10/13 11:08 — [人名25] [人名26]<a class="headerlink" href="#20231013-1108-25-26" title="Permanent link">&para;</a></h3>
+<p>HI [人名10] ([人名10])：
 测试关闭这三个feature后，TX端充电会死机。</p>
 <p>[附件: Logging231013_110605_COM23.7z]</p>
 </div>
 <div class="reply odd">
-<h3 id="20231020-1136-9">2023/10/20 11:36 — [人名9]<a class="headerlink" href="#20231020-1136-9" title="Permanent link">&para;</a></h3>
+<h3 id="20231020-1136-10">2023/10/20 11:36 — [人名10]<a class="headerlink" href="#20231020-1136-10" title="Permanent link">&para;</a></h3>
 <p>Hi Sir</p>
 <p>请帮这里的USB_AUDIO换成USB_HID</p>
 <p>[图片: image-2023-10-20-11-35-53-671.png]</p>
 </div>
 <div class="reply even">
-<h3 id="20231020-1419-23-24">2023/10/20 14:19 — [人名23] [人名24]<a class="headerlink" href="#20231020-1419-23-24" title="Permanent link">&para;</a></h3>
-<p>HI [人名9] ([人名9])：
+<h3 id="20231020-1419-25-26">2023/10/20 14:19 — [人名25] [人名26]<a class="headerlink" href="#20231020-1419-25-26" title="Permanent link">&para;</a></h3>
+<p>HI [人名10] ([人名10])：
 是只改这一点，之前对feature的修改要改为默认的吗？</p>
 </div>
 <div class="reply odd">
-<h3 id="20231023-0930-9">2023/10/23 09:30 — [人名9]<a class="headerlink" href="#20231023-0930-9" title="Permanent link">&para;</a></h3>
+<h3 id="20231023-0930-10">2023/10/23 09:30 — [人名10]<a class="headerlink" href="#20231023-0930-10" title="Permanent link">&para;</a></h3>
 <p>需要</p>
 </div>
 <div class="reply even">
-<h3 id="20231023-2058-23-24">2023/10/23 20:58 — [人名23] [人名24]<a class="headerlink" href="#20231023-2058-23-24" title="Permanent link">&para;</a></h3>
-<p>HI [人名9] ([人名9])：
+<h3 id="20231023-2058-25-26">2023/10/23 20:58 — [人名25] [人名26]<a class="headerlink" href="#20231023-2058-25-26" title="Permanent link">&para;</a></h3>
+<p>HI [人名10] ([人名10])：
 好的。感谢！</p>
 </div>
 <div class="ticket-nav">

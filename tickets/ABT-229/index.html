@@ -362,7 +362,7 @@
 <p><a href="../ABT-228/">← 上一个工单：ABT-228</a>　<a href="../ABT-230/">→ 下一个工单：ABT-230</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>dongle这边切换BIS和CIS，由CIS到BIS[15:25:50]，耳机声音输出变小了，BIS到CIS [15:25:59]声音变大了，这个是不是正常的？如果不是，怎么才能让声音没有变化？</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
@@ -380,7 +380,7 @@
 <p>./build.sh ab1565_8m_evk earbuds_ref_design_ull2</p>
 </div>
 <div class="reply even">
-<h3 id="20230810-1140-9">2023/08/10 11:40 — [人名9]<a class="headerlink" href="#20230810-1140-9" title="Permanent link">&para;</a></h3>
+<h3 id="20230810-1140-10">2023/08/10 11:40 — [人名10]<a class="headerlink" href="#20230810-1140-10" title="Permanent link">&para;</a></h3>
 <p>Hi Sir</p>
 <p>这是正常现象，两个下的音量等级都不同，CIS的volume只有7，BIS的是0xf</p>
 <p>1176 2023-08-04 15:25:50.965672 2497008 MCU 36 [M:LE_AUDIO C:info F: L: ]: [CAP][AM] DL config_info [codec:6][sampling_freq:8][frame_payload_length:0064][{color:#d04437}<em>volume:7</em>{color}][mute:0]</p>
@@ -388,18 +388,18 @@
 </div>
 <div class="reply odd">
 <h3 id="20230811-1202-2">2023/08/11 12:02 — [人名2]<a class="headerlink" href="#20230811-1202-2" title="Permanent link">&para;</a></h3>
-<p>Hi  [人名9] ([人名9]),</p>
+<p>Hi  [人名10] ([人名10]),</p>
 <p>CIS下耳机关机再开机，耳机能回连dongle，BIS下就不会回连了，是否正常？</p>
 </div>
 <div class="reply even">
-<h3 id="20230812-1151-9">2023/08/12 11:51 — [人名9]<a class="headerlink" href="#20230812-1151-9" title="Permanent link">&para;</a></h3>
+<h3 id="20230812-1151-10">2023/08/12 11:51 — [人名10]<a class="headerlink" href="#20230812-1151-10" title="Permanent link">&para;</a></h3>
 <p>Hi Sir</p>
 <p>BIS本身就是无连接，不存在回连这种行为。</p>
 <p>请问BIS dongle是不是保持开机，然后headset关机再开机和后，headset是不是听不到dongle的音乐？</p>
 </div>
 <div class="reply odd">
 <h3 id="20230812-1212-2">2023/08/12 12:12 — [人名2]<a class="headerlink" href="#20230812-1212-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名9] ([人名9]),</p>
+<p>Hi [人名10] ([人名10]),</p>
 <p>请问BIS dongle是不是保持开机，然后headset关机再开机和后，headset是不是听不到dongle的音乐？ </p>
 <blockquote>
 <blockquote>
@@ -414,7 +414,7 @@
 <p>十分感谢。</p>
 </div>
 <div class="reply even">
-<h3 id="20230815-1349-9">2023/08/15 13:49 — [人名9]<a class="headerlink" href="#20230815-1349-9" title="Permanent link">&para;</a></h3>
+<h3 id="20230815-1349-10">2023/08/15 13:49 — [人名10]<a class="headerlink" href="#20230815-1349-10" title="Permanent link">&para;</a></h3>
 <p>刚刚我做了一些验证和疑问，也请帮忙确认：
 1. CIS的默认音量等级能够设置吗？能的话，在哪里设置？</p>
 <h1 id="define-app_le_audio_ucst_vcp_default_volume-0xff">define APP_LE_AUDIO_UCST_VCP_DEFAULT_VOLUME 0xFF<a class="headerlink" href="#define-app_le_audio_ucst_vcp_default_volume-0xff" title="Permanent link">&para;</a></h1>
@@ -435,11 +435,11 @@ app_le_audio_usb_handle_volume_event里听音量变化试试</p>
 </div>
 <div class="reply odd">
 <h3 id="20230815-1537-2">2023/08/15 15:37 — [人名2]<a class="headerlink" href="#20230815-1537-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名9] ([人名9]),</p>
+<p>Hi [人名10] ([人名10]),</p>
 <p>不好意思，APP_LE_AUDIO_UCST_VCP_DEFAULT_VOLUME 在我这边没有能找到，bt_sink_srv_am_volume_level_out_t g_broadcast_volume 找到了。</p>
 </div>
 <div class="reply even">
-<h3 id="20230815-1759-5">2023/08/15 17:59 — [人名5]<a class="headerlink" href="#20230815-1759-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230815-1759-6">2023/08/15 17:59 — [人名6]<a class="headerlink" href="#20230815-1759-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>可以找到吧，dongle的project</p>
 </div>

@@ -362,52 +362,52 @@
 <p><a href="../ABT-452/">← 上一个工单：ABT-452</a>　<a href="../ABT-454/">→ 下一个工单：ABT-454</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]：</p>
+<p>Hi [人名6]：</p>
 <p>如附件log，为V5.0.0 标准软件抓取的，测试到充电状态amp口一直是高电平。客户不希望此时在没有输出的情况下有高电平出现。</p>
 <p>因为客户的硬件linein和bt amp是两路输出，做了电子开关来切换音频，电子开关由gpio控制，gpio在充电时不会打开电子开关，但是如果此时amp口打开了，会导致烧芯片。</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
-<h3 id="20241009-1207-23-24">2024/10/09 12:07 — [人名23] [人名24]<a class="headerlink" href="#20241009-1207-23-24" title="Permanent link">&para;</a></h3>
+<h3 id="20241009-1207-25-26">2024/10/09 12:07 — [人名25] [人名26]<a class="headerlink" href="#20241009-1207-25-26" title="Permanent link">&para;</a></h3>
 <p>[附件: 6167行后，关机状态下充电，amp口会一直是高.pcapng]</p>
 </div>
 <div class="reply even">
-<h3 id="20241010-1345-5">2024/10/10 13:45 — [人名5]<a class="headerlink" href="#20241010-1345-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241010-1345-6">2024/10/10 13:45 — [人名6]<a class="headerlink" href="#20241010-1345-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>log 这里看起来charge in 的时候 有 AMP control set 1，麻烦看看是在哪里set 1 的呢，可以取消掉试试</p>
 <p>[图片: image-2024-10-10-13-44-59-826.png]</p>
 </div>
 <div class="reply odd">
-<h3 id="20241010-1438-23-24">2024/10/10 14:38 — [人名23] [人名24]<a class="headerlink" href="#20241010-1438-23-24" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]：</p>
+<h3 id="20241010-1438-25-26">2024/10/10 14:38 — [人名25] [人名26]<a class="headerlink" href="#20241010-1438-25-26" title="Permanent link">&para;</a></h3>
+<p>Hi [人名6]：</p>
 <p>1、log为标准软件抓取的，我暂时还未找到哪个地方导致的打开的</p>
 <p>2、如附图，我注释掉之后，耳机即使开机有声音，amp也一直不会变高了</p>
 <p>[图片: image.png]</p>
 </div>
 <div class="reply even">
-<h3 id="20241010-1532-5">2024/10/10 15:32 — [人名5]<a class="headerlink" href="#20241010-1532-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241010-1532-6">2024/10/10 15:32 — [人名6]<a class="headerlink" href="#20241010-1532-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>需要准确找一下，看看是哪里调用HAL_AUDIO_CONTROL_ON 开AMP了</p>
 </div>
 <div class="reply odd">
-<h3 id="20241010-1920-23-24">2024/10/10 19:20 — [人名23] [人名24]<a class="headerlink" href="#20241010-1920-23-24" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]：</p>
+<h3 id="20241010-1920-25-26">2024/10/10 19:20 — [人名25] [人名26]<a class="headerlink" href="#20241010-1920-25-26" title="Permanent link">&para;</a></h3>
+<p>Hi [人名6]：</p>
 <p>是从下图地方打开的，但是要如何关闭呢？</p>
 <p>我尝试注释掉，但是播放音乐也不会打开了。</p>
 <p>[图片: image-1.png]</p>
 </div>
 <div class="reply even">
-<h3 id="20241010-1925-23-24">2024/10/10 19:25 — [人名23] [人名24]<a class="headerlink" href="#20241010-1925-23-24" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]：</p>
+<h3 id="20241010-1925-25-26">2024/10/10 19:25 — [人名25] [人名26]<a class="headerlink" href="#20241010-1925-25-26" title="Permanent link">&para;</a></h3>
+<p>Hi [人名6]：</p>
 <p>换成截图上面的那个判断，充电时也会变高</p>
 </div>
 <div class="reply odd">
-<h3 id="20241012-1635-23-24">2024/10/12 16:35 — [人名23] [人名24]<a class="headerlink" href="#20241012-1635-23-24" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]：</p>
+<h3 id="20241012-1635-25-26">2024/10/12 16:35 — [人名25] [人名26]<a class="headerlink" href="#20241012-1635-25-26" title="Permanent link">&para;</a></h3>
+<p>Hi [人名6]：</p>
 <p>此题进度如何？</p>
 </div>
 <div class="reply even">
-<h3 id="20241014-1339-42">2024/10/14 13:39 — [人名42]<a class="headerlink" href="#20241014-1339-42" title="Permanent link">&para;</a></h3>
+<h3 id="20241014-1339-47">2024/10/14 13:39 — [人名47]<a class="headerlink" href="#20241014-1339-47" title="Permanent link">&para;</a></h3>
 <p>hello @[邮箱已隐藏] </p>
 <p>以log为例，请问6167行以后一直是高，是指的6167行到log全部结束都是高？</p>
 <p>我这边看到6167到6399行是高，6399到7335是低，7335后才是高！</p>
@@ -416,36 +416,36 @@
 <p>[附件: 6167行后，关机状态下充电，amp口会一直是高.pcapng]</p>
 </div>
 <div class="reply odd">
-<h3 id="20241014-1414-23-24">2024/10/14 14:14 — [人名23] [人名24]<a class="headerlink" href="#20241014-1414-23-24" title="Permanent link">&para;</a></h3>
-<p>Hi [人名42] ([人名42])：</p>
+<h3 id="20241014-1414-25-26">2024/10/14 14:14 — [人名25] [人名26]<a class="headerlink" href="#20241014-1414-25-26" title="Permanent link">&para;</a></h3>
+<p>Hi [人名47] ([人名47])：</p>
 <p>是的，6167是指这一次充电系统跑起来，amp变高是到7335</p>
 </div>
 <div class="reply even">
-<h3 id="20241014-1736-23-24">2024/10/14 17:36 — [人名23] [人名24]<a class="headerlink" href="#20241014-1736-23-24" title="Permanent link">&para;</a></h3>
-<p>Hi [人名42] ([人名42])：</p>
+<h3 id="20241014-1736-25-26">2024/10/14 17:36 — [人名25] [人名26]<a class="headerlink" href="#20241014-1736-25-26" title="Permanent link">&para;</a></h3>
+<p>Hi [人名47] ([人名47])：</p>
 <p>是我描述不清晰。6167是指这一次充电系统跑起来，跑起来的时候是低，直到7335 amp才变高，然后就一直是高了</p>
 </div>
 <div class="reply odd">
-<h3 id="20241014-2051-42">2024/10/14 20:51 — [人名42]<a class="headerlink" href="#20241014-2051-42" title="Permanent link">&para;</a></h3>
+<h3 id="20241014-2051-47">2024/10/14 20:51 — [人名47]<a class="headerlink" href="#20241014-2051-47" title="Permanent link">&para;</a></h3>
 <p>hello @[邮箱已隐藏] </p>
 <p>请提供你们使能AMP GPIO的全部改动，LOG看起来，我怀疑你们改错了逻辑。</p>
 <p>尤其是下图红标最后一次set gpio high，这个看不到呼叫来源！</p>
 <p>[图片: image-2024-10-14-20-51-25-663.png]</p>
 </div>
 <div class="reply even">
-<h3 id="20241015-1029-23-24">2024/10/15 10:29 — [人名23] [人名24]<a class="headerlink" href="#20241015-1029-23-24" title="Permanent link">&para;</a></h3>
-<p>Hi [人名42] ([人名42])：</p>
+<h3 id="20241015-1029-25-26">2024/10/15 10:29 — [人名25] [人名26]<a class="headerlink" href="#20241015-1029-25-26" title="Permanent link">&para;</a></h3>
+<p>Hi [人名47] ([人名47])：</p>
 <p>log是V5.0.0 标准软件（./build.sh ab1565_8m_evk headset_ref_design_ull2_full）抓取的，是不是要在哪里添加些log，有助于分析。</p>
 </div>
 <div class="reply odd">
-<h3 id="20241015-1035-42">2024/10/15 10:35 — [人名42]<a class="headerlink" href="#20241015-1035-42" title="Permanent link">&para;</a></h3>
+<h3 id="20241015-1035-47">2024/10/15 10:35 — [人名47]<a class="headerlink" href="#20241015-1035-47" title="Permanent link">&para;</a></h3>
 <p>hello @[邮箱已隐藏] </p>
 <p>标准SDK，没有开AMP GPIO。</p>
 <p>你们确定没改代码？</p>
 </div>
 <div class="reply even">
 <h3 id="20241015-1203-2">2024/10/15 12:03 — [人名2]<a class="headerlink" href="#20241015-1203-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名42] ([人名42])，</p>
+<p>Hi [人名47] ([人名47])，</p>
 <p>您说得对，demo code 中 AMP_GPIO 为 0xFF， 我们有修改为GPIO6 ；附件是我修改和demo的对比，c 文件中增加了log，h 文件修改了amp gpio 。</p>
 <p>见附件log ，关机状态下插入充电，开始是low 的，但是中间回经过100ms 的timer 拉高了。c文件我们只加了log，没有修改逻辑；</p>
 <p>[附件: hal_audio_control_new.c]</p>
@@ -456,27 +456,27 @@
 <p>[图片: PixPin_2024-10-15_11-55-45.png]</p>
 </div>
 <div class="reply odd">
-<h3 id="20241015-1420-42">2024/10/15 14:20 — [人名42]<a class="headerlink" href="#20241015-1420-42" title="Permanent link">&para;</a></h3>
+<h3 id="20241015-1420-47">2024/10/15 14:20 — [人名47]<a class="headerlink" href="#20241015-1420-47" title="Permanent link">&para;</a></h3>
 <p>hello @[邮箱已隐藏] </p>
 <p>请将这个delay off timer关闭：</p>
 <p>!image-2024-10-15-14-19-09-304.png|width=490,height=158!</p>
 </div>
 <div class="reply even">
-<h3 id="20241015-1443-23-24">2024/10/15 14:43 — [人名23] [人名24]<a class="headerlink" href="#20241015-1443-23-24" title="Permanent link">&para;</a></h3>
-<p>Hi [人名42] ([人名42])</p>
+<h3 id="20241015-1443-25-26">2024/10/15 14:43 — [人名25] [人名26]<a class="headerlink" href="#20241015-1443-25-26" title="Permanent link">&para;</a></h3>
+<p>Hi [人名47] ([人名47])</p>
 <p>将{{HAL_AUDIO_DELAY_GPIO_ON_TIME_MS}}设置为0后，仍会有36ms的高，可以将此也修改掉吗？</p>
 <p>[图片: 85940ac460384f755a9d1ee03813c34.jpg]</p>
 </div>
 <div class="reply odd">
-<h3 id="20241015-1446-42">2024/10/15 14:46 — [人名42]<a class="headerlink" href="#20241015-1446-42" title="Permanent link">&para;</a></h3>
+<h3 id="20241015-1446-47">2024/10/15 14:46 — [人名47]<a class="headerlink" href="#20241015-1446-47" title="Permanent link">&para;</a></h3>
 <p>hello @[邮箱已隐藏] </p>
 <p>我解释下这个36ms高，</p>
 <p>芯片开机后，会做DAC校准，会打开DAC，校准过程大约36ms。这个时候DAC其实是开了的。拉高也合理吧？</p>
 <p>你再评估下呐？</p>
 </div>
 <div class="reply even">
-<h3 id="20241015-1707-23-24">2024/10/15 17:07 — [人名23] [人名24]<a class="headerlink" href="#20241015-1707-23-24" title="Permanent link">&para;</a></h3>
-<p>Hi [人名42] ([人名42])：
+<h3 id="20241015-1707-25-26">2024/10/15 17:07 — [人名25] [人名26]<a class="headerlink" href="#20241015-1707-25-26" title="Permanent link">&para;</a></h3>
+<p>Hi [人名47] ([人名47])：
 好的，感谢支持！</p>
 </div>
 <div class="ticket-nav">

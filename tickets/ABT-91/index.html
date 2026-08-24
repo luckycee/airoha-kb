@@ -362,12 +362,12 @@
 <p><a href="../ABT-90/">← 上一个工单：ABT-90</a>　<a href="../ABT-92/">→ 下一个工单：ABT-92</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi 帝木，</p>
+<p>Hi [人名4]，</p>
 <p>客户调试PEQ，在AAC和SBC这两个编码格式下，PEQ都是起效的，换到LDAC就无效了，请看看这是为什么？</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
-<h3 id="20220927-1824-29">2022/09/27 18:24 — [人名29]<a class="headerlink" href="#20220927-1824-29" title="Permanent link">&para;</a></h3>
+<h3 id="20220927-1824-31">2022/09/27 18:24 — [人名31]<a class="headerlink" href="#20220927-1824-31" title="Permanent link">&para;</a></h3>
 <p>@[邮箱已隐藏] 麻烦提供FW &amp; ATK版本号</p>
 </div>
 <div class="reply even">
@@ -386,12 +386,12 @@
 </div>
 <div class="reply even">
 <h3 id="20220928-1102-2">2022/09/28 11:02 — [人名2]<a class="headerlink" href="#20220928-1102-2" title="Permanent link">&para;</a></h3>
-<p>Hi 帝木，</p>
+<p>Hi [人名4]，</p>
 <p>LDAC 是后面加的，LDAC也起效了，就是PEQ使用是没有用。</p>
 </div>
 <div class="reply odd">
 <h3 id="20220928-1130-2">2022/09/28 11:30 — [人名2]<a class="headerlink" href="#20220928-1130-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>使用SBC时：
 1283    2022-09-28 11:20:13.058921   [M:dsp_mw C:info F: L: ]: peq mxing finish, status: 1 0\n</p>
 <p>使用功能LDAC 时：
@@ -405,7 +405,7 @@
 <p>再帮客户处理一下</p>
 </div>
 <div class="reply odd">
-<h3 id="20220928-1732-30">2022/09/28 17:32 — [人名30]<a class="headerlink" href="#20220928-1732-30" title="Permanent link">&para;</a></h3>
+<h3 id="20220928-1732-32">2022/09/28 17:32 — [人名32]<a class="headerlink" href="#20220928-1732-32" title="Permanent link">&para;</a></h3>
 <p>Dear Customer,</p>
 <p>请先检查下feature是否有正确打开：</p>
 <p>MCU:</p>
@@ -425,11 +425,11 @@
 </div>
 <div class="reply even">
 <h3 id="20220929-1029-2">2022/09/29 10:29 — [人名2]<a class="headerlink" href="#20220929-1029-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名30] ([人名30])，</p>
+<p>Hi [人名32] ([人名32])，</p>
 <p>我使用的是V2.9.0 ，AIR_FIXED_DL_SAMPLING_RATE_TO_96KHZ_ENABLE 没有找到这个define，我找V3.2.0 也是没有。直接加在feature.mak 和dsp中可以吗？</p>
 </div>
 <div class="reply odd">
-<h3 id="20220929-1919-30">2022/09/29 19:19 — [人名30]<a class="headerlink" href="#20220929-1919-30" title="Permanent link">&para;</a></h3>
+<h3 id="20220929-1919-32">2022/09/29 19:19 — [人名32]<a class="headerlink" href="#20220929-1919-32" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏],</p>
 <p>AIR_FIXED_DL_SAMPLING_RATE_TO_96KHZ_ENABLE </p>
 <p>这个feature需要在贵司project对应的feature_xx.mk里面打开</p>
@@ -437,18 +437,18 @@
 </div>
 <div class="reply even">
 <h3 id="20220930-1127-2">2022/09/30 11:27 — [人名2]<a class="headerlink" href="#20220930-1127-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名30] ([人名30])，</p>
+<p>Hi [人名32] ([人名32])，</p>
 <p>有的， ./build.sh ab1565_8m_evk earbuds_ref_design , 找到了 feature_65_8m_evk.mk ，的确没有 AIR_FIXED_DL_SAMPLING_RATE_TO_96KHZ_ENABLE 此define， 只有 FIXED_SAMPLING_RATE_TO_48KHZ ；</p>
 <p>除了这点，其他按照指导，LDAC下PEQ也能够起效了，是否有问题？</p>
 </div>
 <div class="reply odd">
-<h3 id="20220930-1151-30">2022/09/30 11:51 — [人名30]<a class="headerlink" href="#20220930-1151-30" title="Permanent link">&para;</a></h3>
+<h3 id="20220930-1151-32">2022/09/30 11:51 — [人名32]<a class="headerlink" href="#20220930-1151-32" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏],</p>
 <p>按照我上面贴出来的配置就好，其他没有要注意的了。</p>
 <p>Thanks！</p>
 </div>
 <div class="reply even">
-<h3 id="20220930-1609-30">2022/09/30 16:09 — [人名30]<a class="headerlink" href="#20220930-1609-30" title="Permanent link">&para;</a></h3>
+<h3 id="20220930-1609-32">2022/09/30 16:09 — [人名32]<a class="headerlink" href="#20220930-1609-32" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>该题如果没有其他疑问就先关掉了，后续有问题再提jira分析</p>
 <p>Thanks！</p>

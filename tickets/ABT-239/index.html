@@ -21,7 +21,7 @@
     
     
       
-        <title>【[客户E]】dongle 第一次连接没有声音问题 - ABT 工单知识库</title>
+        <title>【[客户H]】dongle 第一次连接没有声音问题 - ABT 工单知识库</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#abt-239-edongle" class="md-skip">
+        <a href="#abt-239-hdongle" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              【[客户E]】dongle 第一次连接没有声音问题
+              【[客户H]】dongle 第一次连接没有声音问题
             
           </span>
         </div>
@@ -354,7 +354,7 @@
   
 
 
-<h1 id="abt-239-edongle">ABT-239 【[客户E]】dongle 第一次连接没有声音问题<a class="headerlink" href="#abt-239-edongle" title="Permanent link">&para;</a></h1>
+<h1 id="abt-239-hdongle">ABT-239 【[客户H]】dongle 第一次连接没有声音问题<a class="headerlink" href="#abt-239-hdongle" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>📅 2023/09/04 15:39　🔗 <a href="https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-239">原始工单链接</a></p>
 </blockquote>
@@ -362,7 +362,7 @@
 <p><a href="../ABT-238/">← 上一个工单：ABT-238</a>　<a href="../ABT-240/">→ 下一个工单：ABT-240</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>dongle连接时，有概率出来连接没有声音，看了一下是dongle 那边出现了error，请帮忙看看是什么原因。</p>
 <p>COM7 是dongle，C0M3\COM6 分别是左右。</p>
 <hr />
@@ -374,29 +374,29 @@
 </div>
 <div class="reply even">
 <h3 id="20230904-1543-2">2023/09/04 15:43 — [人名2]<a class="headerlink" href="#20230904-1543-2" title="Permanent link">&para;</a></h3>
-<p>HI [人名5]，</p>
+<p>HI [人名6]，</p>
 <p>请帮忙顺带确认一下，是否这是因为SDK V3.5.1 dongle 跟SDK V3.6.0 之间是SDK 差异而导致的。</p>
 </div>
 <div class="reply odd">
-<h3 id="20230905-1043-5">2023/09/05 10:43 — [人名5]<a class="headerlink" href="#20230905-1043-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230905-1043-6">2023/09/05 10:43 — [人名6]<a class="headerlink" href="#20230905-1043-6" title="Permanent link">&para;</a></h3>
 <p>HI @[邮箱已隐藏]，</p>
 <p>这是Controller没有给audio打CCNI IRQ让DSP做事，看起来可能是版本差异造成的，你们可以测试一下V3.6.0的dongle</p>
 </div>
 <div class="reply even">
 <h3 id="20230905-2036-2">2023/09/05 20:36 — [人名2]<a class="headerlink" href="#20230905-2036-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>我自己使用SDK V3.6.0的来测试了，发现也是一样的log，8678    2023-09-05 19:59:56.200569  [M:audio_transmitter C:info F: L: ]: [audio_transmitter][BLE Audio Dongle][USB_RX_DEBUG 1]Not enough share buffer space</p>
 <p>COM60 是dongle log ；</p>
 <p>[附件: 19点59分56秒播放音乐无声，连接的是LEA.zip]</p>
 </div>
 <div class="reply odd">
-<h3 id="20230911-1540-5">2023/09/11 15:40 — [人名5]<a class="headerlink" href="#20230911-1540-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230911-1540-6">2023/09/11 15:40 — [人名6]<a class="headerlink" href="#20230911-1540-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>这道题也用<a href="../ABT-244/">ABT-244</a> 的 修改方法试一下看还能不能复现哈</p>
 </div>
 <div class="reply even">
 <h3 id="20230911-1726-2">2023/09/11 17:26 — [人名2]<a class="headerlink" href="#20230911-1726-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>这题确认了FOTA了SIRK 导致的，目前测试已经解决了；问题关闭。</p>
 </div>
 <div class="ticket-nav">

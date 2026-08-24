@@ -362,11 +362,11 @@
 <p><a href="../ABT-33/">← 上一个工单：ABT-33</a>　<a href="../ABT-35/">→ 下一个工单：ABT-35</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>发现在通话状态有几个问题：</p>
 <ol>
 <li>
-<p>通过log看到，音乐播放状态，来电，state 由APP_ULTRA_LOW_LATENCY_PLAYING 改为 APP_CONNECTED，不是在APP_[人名9]P_INCOMING ；</p>
+<p>通过log看到，音乐播放状态，来电，state 由APP_ULTRA_LOW_LATENCY_PLAYING 改为 APP_CONNECTED，不是在APP_[人名10]P_INCOMING ；</p>
 </li>
 <li>
 <p>接听的短按，看到发送的KeyEvent 是0x53，但是实际又能跟接听电话，但是长按无法拒绝电话；</p>
@@ -383,21 +383,21 @@
 </div>
 <div class="reply even">
 <h3 id="20220411-1158-2">2022/04/11 11:58 — [人名2]<a class="headerlink" href="#20220411-1158-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>来电没有同步铃声，是不是也因为state 不对？</p>
 </div>
 <div class="reply odd">
-<h3 id="20220412-1514-5">2022/04/12 15:14 — [人名5]<a class="headerlink" href="#20220412-1514-5" title="Permanent link">&para;</a></h3>
+<h3 id="20220412-1514-6">2022/04/12 15:14 — [人名6]<a class="headerlink" href="#20220412-1514-6" title="Permanent link">&para;</a></h3>
 <p>!https://statics.teams.cdn.office.net/evergreen-assets/personal-expressions/v1/assets/emoticons/cwl/default/100_f.png|width=50!</p>
 </div>
 <div class="reply even">
-<h3 id="20220414-0932-5">2022/04/14 09:32 — [人名5]<a class="headerlink" href="#20220414-0932-5" title="Permanent link">&para;</a></h3>
-<p>Hi 黄工，</p>
-<p>我们ULL dongle 连接电脑之后，在跟耳机连接就没有[人名9]P 跟 A2DP 协议了，所以不支持这些状态。</p>
+<h3 id="20220414-0932-6">2022/04/14 09:32 — [人名6]<a class="headerlink" href="#20220414-0932-6" title="Permanent link">&para;</a></h3>
+<p>Hi [人名11]，</p>
+<p>我们ULL dongle 连接电脑之后，在跟耳机连接就没有[人名10]P 跟 A2DP 协议了，所以不支持这些状态。</p>
 </div>
 <div class="reply odd">
 <h3 id="20220414-1007-2">2022/04/14 10:07 — [人名2]<a class="headerlink" href="#20220414-1007-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>啊，这样子的话，我该如何处理客户的问题：</p>
 <ol>
 <li>手机连接了dongle，但是无铃声；</li>
@@ -406,13 +406,13 @@
 </ol>
 </div>
 <div class="reply even">
-<h3 id="20220414-1426-5">2022/04/14 14:26 — [人名5]<a class="headerlink" href="#20220414-1426-5" title="Permanent link">&para;</a></h3>
+<h3 id="20220414-1426-6">2022/04/14 14:26 — [人名6]<a class="headerlink" href="#20220414-1426-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
-<p>没得做，手机通过USB传给dongle就没得[人名9]P协议，你看你客户有什么其他产品是有得做的，可以提需求给PLM评估。</p>
+<p>没得做，手机通过USB传给dongle就没得[人名10]P协议，你看你客户有什么其他产品是有得做的，可以提需求给PLM评估。</p>
 </div>
 <div class="reply odd">
 <h3 id="20220415-1444-2">2022/04/15 14:44 — [人名2]<a class="headerlink" href="#20220415-1444-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>有结果吗？我需要回复客户。</p>
 </div>
 <div class="reply even">
@@ -421,7 +421,7 @@
 <p>[附件: dongle_log_来电接听.pcapng]</p>
 </div>
 <div class="reply odd">
-<h3 id="20220417-1612-5">2022/04/17 16:12 — [人名5]<a class="headerlink" href="#20220417-1612-5" title="Permanent link">&para;</a></h3>
+<h3 id="20220417-1612-6">2022/04/17 16:12 — [人名6]<a class="headerlink" href="#20220417-1612-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>如电话沟通，我们USB HID协议发送paly/pause指令的时候，会对指令引脚输出不同信号电平，默认情况下，play/pause 这个bit 拉高1ms，手机收到这个信号之后，假如这情况下有来电，就可能会识别为接通，但是这也看手机，有些手机就不识别为接听。</p>
 <p>假如把play/pause 这个bit 拉高1ms改成拉高2ms左右，识别为接听的手机就会识别成拒绝。</p>
@@ -473,23 +473,23 @@
 </div>
 <div class="reply even">
 <h3 id="20220418-1738-2">2022/04/18 17:38 — [人名2]<a class="headerlink" href="#20220418-1738-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>dongle端怎么发消息给耳机端？</p>
 </div>
 <div class="reply odd">
-<h3 id="20220420-1427-5">2022/04/20 14:27 — [人名5]<a class="headerlink" href="#20220420-1427-5" title="Permanent link">&para;</a></h3>
+<h3 id="20220420-1427-6">2022/04/20 14:27 — [人名6]<a class="headerlink" href="#20220420-1427-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>这个API是dongle和耳机都可以用的，可以在代码里面搜一下看看怎么用</p>
 <p>[图片: image-2022-04-20-14-26-56-199.png]</p>
 </div>
 <div class="reply even">
-<h3 id="20220427-1003-8">2022/04/27 10:03 — [人名8]<a class="headerlink" href="#20220427-1003-8" title="Permanent link">&para;</a></h3>
+<h3 id="20220427-1003-9">2022/04/27 10:03 — [人名9]<a class="headerlink" href="#20220427-1003-9" title="Permanent link">&para;</a></h3>
 <p>@[邮箱已隐藏]</p>
 <p>这题还有其他疑问吗？</p>
 </div>
 <div class="reply odd">
 <h3 id="20220427-1105-2">2022/04/27 11:05 — [人名2]<a class="headerlink" href="#20220427-1105-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名8],</p>
+<p>Hi [人名9],</p>
 <p>没有了，问题关闭；</p>
 </div>
 <div class="ticket-nav">

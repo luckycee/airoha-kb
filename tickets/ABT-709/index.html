@@ -362,7 +362,7 @@
 <p><a href="../ABT-708/">← 上一个工单：ABT-708</a>　<a href="../ABT-710/">→ 下一个工单：ABT-710</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>把 AIR_AUDIO_DL_STREAM_MIX_ENABLE = y  和新增 AIR_AUDIO_ONE_CHIP_MIXING_MODE = 1 之后，发现编译error ；请帮忙看看这是为什么？</p>
 <p>cmd ： ./build.sh ab1577am_evk headset_ref_design_ull2</p>
 <hr />
@@ -372,7 +372,7 @@
 <p>[附件: err.log]</p>
 </div>
 <div class="reply even">
-<h3 id="20260304-1746-80">2026/03/04 17:46 — [人名80]<a class="headerlink" href="#20260304-1746-80" title="Permanent link">&para;</a></h3>
+<h3 id="20260304-1746-86">2026/03/04 17:46 — [人名86]<a class="headerlink" href="#20260304-1746-86" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] </p>
 <p>你们为什么会用到mixer stream呢? </p>
 <p>这个feature option不能随便开的，我们有提供了标准project，headset_ref_design_full_mixer_stream</p>
@@ -380,29 +380,29 @@
 </div>
 <div class="reply odd">
 <h3 id="20260304-1759-2">2026/03/04 17:59 — [人名2]<a class="headerlink" href="#20260304-1759-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名80] (szciic),</p>
+<p>Hi [人名86] (szciic),</p>
 <p>客户要做ULL2，希望蓝牙和dongle两个source 同时存在，他们拿到了evk 的demo已经实现了这个功能；</p>
 </div>
 <div class="reply even">
-<h3 id="20260304-1805-80">2026/03/04 18:05 — [人名80]<a class="headerlink" href="#20260304-1805-80" title="Permanent link">&para;</a></h3>
+<h3 id="20260304-1805-86">2026/03/04 18:05 — [人名86]<a class="headerlink" href="#20260304-1805-86" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] 
 为什么要用mixer_stream呢，你的意思是期望单芯片实现ull跟BT的mixing吗？</p>
 <p>Thanks.</p>
 </div>
 <div class="reply odd">
 <h3 id="20260304-1810-2">2026/03/04 18:10 — [人名2]<a class="headerlink" href="#20260304-1810-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名80] (szciic)，</p>
+<p>Hi [人名86] (szciic)，</p>
 <p>是的，单芯片实现ull跟BT的mixing</p>
 </div>
 <div class="reply even">
-<h3 id="20260304-1826-80">2026/03/04 18:26 — [人名80]<a class="headerlink" href="#20260304-1826-80" title="Permanent link">&para;</a></h3>
+<h3 id="20260304-1826-86">2026/03/04 18:26 — [人名86]<a class="headerlink" href="#20260304-1826-86" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] </p>
 <p>mixer_stream不支持ull跟BT mixing，single chip做不到，只有dual chip才支持</p>
 <p>!image-2026-03-04-18-26-26-701.png|width=546,height=333!</p>
 </div>
 <div class="reply odd">
 <h3 id="20260304-1844-2">2026/03/04 18:44 — [人名2]<a class="headerlink" href="#20260304-1844-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名80] (szciic)，</p>
+<p>Hi [人名86] (szciic)，</p>
 <p>见附件的FW（77am+71D） ，发送下面的指令可以做到BT 跟ULL2 mixing ；</p>
 <p>headset使用AT CMD ： <br />
 AT+APP=Key,009B
@@ -412,18 +412,18 @@ AT+LEULL=A2DPSTANDBY,ON</p>
 <p>[附件: download1571d.7z]</p>
 </div>
 <div class="reply even">
-<h3 id="20260305-1000-80">2026/03/05 10:00 — [人名80]<a class="headerlink" href="#20260305-1000-80" title="Permanent link">&para;</a></h3>
+<h3 id="20260305-1000-86">2026/03/05 10:00 — [人名86]<a class="headerlink" href="#20260305-1000-86" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] 
 抱歉，更正一下，5.6.0之后的SDK是可以支持EDR跟ull mixing了，但这个跟mixer_stream没有关系，你们不需要打开</p>
 <p>Thanks.</p>
 </div>
 <div class="reply odd">
 <h3 id="20260305-1016-2">2026/03/05 10:16 — [人名2]<a class="headerlink" href="#20260305-1016-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名80] (szciic)，</p>
+<p>Hi [人名86] (szciic)，</p>
 <p>好的，请指导一下如何实现，我使用的是71X SDK5.9.0</p>
 </div>
 <div class="reply even">
-<h3 id="20260305-1039-80">2026/03/05 10:39 — [人名80]<a class="headerlink" href="#20260305-1039-80" title="Permanent link">&para;</a></h3>
+<h3 id="20260305-1039-86">2026/03/05 10:39 — [人名86]<a class="headerlink" href="#20260305-1039-86" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] 
 目前只有77am支持，题目不是说的77am吗？为什么又变成了71，可以参考这笔FAQ</p>
 <p>[https://eservicedocs.ABT.com.tw/display/DC/%5BAB1577am%5D+Single+chip+mixing+config] </p>
@@ -431,7 +431,7 @@ AT+LEULL=A2DPSTANDBY,ON</p>
 </div>
 <div class="reply odd">
 <h3 id="20260305-1043-2">2026/03/05 10:43 — [人名2]<a class="headerlink" href="#20260305-1043-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名80] (szciic),</p>
+<p>Hi [人名86] (szciic),</p>
 <p>是77am，我想表达的7x SDK，文档很清晰，谢谢。</p>
 </div>
 <div class="ticket-nav">

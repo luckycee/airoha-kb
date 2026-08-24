@@ -21,7 +21,7 @@
     
     
       
-        <title>【[客户I]】使用过程中出现了asset - ABT 工单知识库</title>
+        <title>【[客户M]】使用过程中出现了asset - ABT 工单知识库</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#abt-374-iasset" class="md-skip">
+        <a href="#abt-374-masset" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              【[客户I]】使用过程中出现了asset
+              【[客户M]】使用过程中出现了asset
             
           </span>
         </div>
@@ -354,7 +354,7 @@
   
 
 
-<h1 id="abt-374-iasset">ABT-374 【[客户I]】使用过程中出现了asset<a class="headerlink" href="#abt-374-iasset" title="Permanent link">&para;</a></h1>
+<h1 id="abt-374-masset">ABT-374 【[客户M]】使用过程中出现了asset<a class="headerlink" href="#abt-374-masset" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>📅 2024/04/29 12:13　🔗 <a href="https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-374">原始工单链接</a></p>
 </blockquote>
@@ -362,7 +362,7 @@
 <p><a href="../ABT-373/">← 上一个工单：ABT-373</a>　<a href="../ABT-375/">→ 下一个工单：ABT-375</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>HI [人名5]，</p>
+<p>HI [人名6]，</p>
 <p>见附件log，请看看是什么导致了assert，里面有 full dump 。</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
@@ -371,67 +371,67 @@
 <p>[附件: Logging240429_084822_COM3.7z]</p>
 </div>
 <div class="reply even">
-<h3 id="20240429-1358-80">2024/04/29 13:58 — [人名80]<a class="headerlink" href="#20240429-1358-80" title="Permanent link">&para;</a></h3>
+<h3 id="20240429-1358-86">2024/04/29 13:58 — [人名86]<a class="headerlink" href="#20240429-1358-86" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏],
 请说清楚是什么使用场景下导致的死机，另外提供一下build cmd，是哪版的SDK呢？</p>
 <p>文件里面没有full dump，目前来看是发生了LPOSC recali error,请问有外接模块吗，抓log的板子也算。</p>
 <p>Thanks.</p>
 </div>
 <div class="reply odd">
-<h3 id="20240429-1359-80">2024/04/29 13:59 — [人名80]<a class="headerlink" href="#20240429-1359-80" title="Permanent link">&para;</a></h3>
+<h3 id="20240429-1359-86">2024/04/29 13:59 — [人名86]<a class="headerlink" href="#20240429-1359-86" title="Permanent link">&para;</a></h3>
 <p>[图片: image-2024-03-14-11-02-31-519.png]</p>
 </div>
 <div class="reply even">
 <h3 id="20240429-1418-2">2024/04/29 14:18 — [人名2]<a class="headerlink" href="#20240429-1418-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名80],</p>
+<p>Hi [人名86],</p>
 <p>./build.sh ab1577s_evk earbuds_ref_design_ull2_full
 SDK3.10.0</p>
 <p>有外接两个 iic sensor ；解释log稍后再提供；</p>
 </div>
 <div class="reply odd">
-<h3 id="20240429-1422-80">2024/04/29 14:22 — [人名80]<a class="headerlink" href="#20240429-1422-80" title="Permanent link">&para;</a></h3>
+<h3 id="20240429-1422-86">2024/04/29 14:22 — [人名86]<a class="headerlink" href="#20240429-1422-86" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，
  那大概率是外接I2C的IO电压不对，要1.8v。请尝试一下。</p>
 <p>Thanks.</p>
 </div>
 <div class="reply even">
 <h3 id="20240506-1134-2">2024/05/06 11:34 — [人名2]<a class="headerlink" href="#20240506-1134-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名80],</p>
+<p>Hi [人名86],</p>
 <p>跟客户确认过，IO电压是使用的就是1.8V。这一次是触发Siri的时候assert，提供了解析log ;</p>
 <p>[附件: Logging240429_084822_COM3-1.7z]</p>
 </div>
 <div class="reply odd">
-<h3 id="20240506-1357-80">2024/05/06 13:57 — [人名80]<a class="headerlink" href="#20240506-1357-80" title="Permanent link">&para;</a></h3>
+<h3 id="20240506-1357-86">2024/05/06 13:57 — [人名86]<a class="headerlink" href="#20240506-1357-86" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，
 是按键触发的siri吗？请检查一下对应IO配置电压是不是1.8v，请把所有IO都设成1.8v试一下。</p>
 <p>Thanks.</p>
 </div>
 <div class="reply even">
 <h3 id="20240506-2028-2">2024/05/06 20:28 — [人名2]<a class="headerlink" href="#20240506-2028-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名80],</p>
+<p>Hi [人名86],</p>
 <p>是按键触发的，配置上已经是1.8V，硬件上客户确认过。</p>
 <p>[附件: X2_AB1577S_EPT_20231122.ews]</p>
 </div>
 <div class="reply odd">
-<h3 id="20240507-1019-80">2024/05/07 10:19 — [人名80]<a class="headerlink" href="#20240507-1019-80" title="Permanent link">&para;</a></h3>
+<h3 id="20240507-1019-86">2024/05/07 10:19 — [人名86]<a class="headerlink" href="#20240507-1019-86" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，
 從 Log 分析，VIO18 有不穩的現象，可以直接將 VIO18 拉出來看一下 (用電表觀察即可)</p>
 <p>[图片: image-2024-05-07-10-13-50-523.png]</p>
 </div>
 <div class="reply even">
 <h3 id="20240507-1711-2">2024/05/07 17:11 — [人名2]<a class="headerlink" href="#20240507-1711-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名80],</p>
+<p>Hi [人名86],</p>
 <p>是这些BUCK_IO吗？还是其他？</p>
 <p>[图片: 微信图片_[序列号已隐藏].png]</p>
 </div>
 <div class="reply odd">
-<h3 id="20240507-1722-80">2024/05/07 17:22 — [人名80]<a class="headerlink" href="#20240507-1722-80" title="Permanent link">&para;</a></h3>
+<h3 id="20240507-1722-86">2024/05/07 17:22 — [人名86]<a class="headerlink" href="#20240507-1722-86" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ,
 是的，难道还有其它VIO18吗？</p>
 <p>Thanks.</p>
 </div>
 <div class="reply even">
-<h3 id="20240507-1739-83">2024/05/07 17:39 — [人名83]<a class="headerlink" href="#20240507-1739-83" title="Permanent link">&para;</a></h3>
+<h3 id="20240507-1739-89">2024/05/07 17:39 — [人名89]<a class="headerlink" href="#20240507-1739-89" title="Permanent link">&para;</a></h3>
 <p>[图片: image-2024-05-07-17-39-33-651.png]</p>
 </div>
 <div class="ticket-nav">

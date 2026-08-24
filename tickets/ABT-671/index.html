@@ -21,7 +21,7 @@
     
     
       
-        <title>[{'DSP Assert': 'Assert Failed'}, 'filename:hal_audio_control.c', 'line:810'] - ABT 工单知识库</title>
+        <title>[DSP Assert: Assert Failed, filename:hal_audio_control.c,line:810] - ABT 工单知识库</title>
       
     
     
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              [{'DSP Assert': 'Assert Failed'}, 'filename:hal_audio_control.c', 'line:810']
+              [DSP Assert: Assert Failed, filename:hal_audio_control.c,line:810]
             
           </span>
         </div>
@@ -362,7 +362,7 @@
 <p><a href="../ABT-670/">← 上一个工单：ABT-670</a>　<a href="../ABT-672/">→ 下一个工单：ABT-672</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>SDK5.7.0 在测试mic的时候出现了宕机，流程：</p>
 <p>发送 05 5A 08 00 20 0E 01 08 09 0A 0B FF  Open All Mic</p>
 <p>发送 05 5A 03 00 0D 0E 00  Disable AECNR</p>
@@ -377,18 +377,18 @@
 <p>[附件: Logging251215_153236_COM29.7z]</p>
 </div>
 <div class="reply even">
-<h3 id="20251216-1753-100">2025/12/16 17:53 — [人名100]<a class="headerlink" href="#20251216-1753-100" title="Permanent link">&para;</a></h3>
+<h3 id="20251216-1753-107">2025/12/16 17:53 — [人名107]<a class="headerlink" href="#20251216-1753-107" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] </p>
 <p>同一UL不能同时开AMIC、DMIC</p>
 <p>[图片: image-2025-12-16-17-45-59-690.png]</p>
 </div>
 <div class="reply odd">
 <h3 id="20251216-1918-2">2025/12/16 19:18 — [人名2]<a class="headerlink" href="#20251216-1918-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名100] ([人名100])，</p>
+<p>Hi [人名107] ([人名107])，</p>
 <p>了解，这个dual chip的项目，是不是有什么特别的限定？相关问题：<a href="../ABT-667/">ABT-667</a></p>
 </div>
 <div class="reply even">
-<h3 id="20251217-1732-100">2025/12/17 17:32 — [人名100]<a class="headerlink" href="#20251217-1732-100" title="Permanent link">&para;</a></h3>
+<h3 id="20251217-1732-107">2025/12/17 17:32 — [人名107]<a class="headerlink" href="#20251217-1732-107" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] </p>
 <p>1、OPEN ALL MIC 的指令时还是要遵守这个A/D MIC不能同时在同一路UL路径上</p>
 <p>2、DUAL CHIP 一次只能配一个MIC来测</p>

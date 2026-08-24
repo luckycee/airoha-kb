@@ -362,7 +362,7 @@
 <p><a href="../ABT-738/">← 上一个工单：ABT-738</a>　<a href="../ABT-740/">→ 下一个工单：ABT-740</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5],</p>
+<p>Hi [人名6],</p>
 <p>耳机充电的时候有充电指示灯，在开机状态下接入5V下，指示灯几乎是秒亮，但是在关机下接入5V需要差不多2s 才能看到指示灯？这个时间符合预期吗？能有改进的地方？</p>
 <p>SDK5.9.0 </p>
 <p>./build.sh ab1565_8m_evk headset_ref_design</p>
@@ -373,67 +373,67 @@
 <p>[附件: 关机状态下接入5V，LED指示灯慢.pcapng]</p>
 </div>
 <div class="reply even">
-<h3 id="20260604-1207-5">2026/06/04 12:07 — [人名5]<a class="headerlink" href="#20260604-1207-5" title="Permanent link">&para;</a></h3>
+<h3 id="20260604-1207-6">2026/06/04 12:07 — [人名6]<a class="headerlink" href="#20260604-1207-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，这个这个USB 的初始化会卡1s，你们耳机有需要用到USB吗？没有可以设0试试</p>
 <p>[图片: image-2026-06-04-12-07-02-082.png]</p>
 </div>
 <div class="reply odd">
 <h3 id="20260605-1209-2">2026/06/05 12:09 — [人名2]<a class="headerlink" href="#20260605-1209-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]</p>
+<p>Hi [人名6]</p>
 <p>改为0了，貌似没有改进。</p>
 <p>[附件: Logging260605_113812_COM29.7z]</p>
 </div>
 <div class="reply even">
-<h3 id="20260610-1439-5">2026/06/10 14:39 — [人名5]<a class="headerlink" href="#20260610-1439-5" title="Permanent link">&para;</a></h3>
+<h3 id="20260610-1439-6">2026/06/10 14:39 — [人名6]<a class="headerlink" href="#20260610-1439-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>预期要有改进才对</p>
 <p>是不是没有clean build 或者烧错load 了？</p>
 </div>
 <div class="reply odd">
 <h3 id="20260611-1045-2">2026/06/11 10:45 — [人名2]<a class="headerlink" href="#20260611-1045-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>有效，从 2.9s 降到了 1.9s；USB 功能不能使用了；</p>
 </div>
 <div class="reply even">
-<h3 id="20260611-1629-5">2026/06/11 16:29 — [人名5]<a class="headerlink" href="#20260611-1629-5" title="Permanent link">&para;</a></h3>
+<h3 id="20260611-1629-6">2026/06/11 16:29 — [人名6]<a class="headerlink" href="#20260611-1629-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>所以这个还需要优化吗？</p>
 </div>
 <div class="reply odd">
 <h3 id="20260611-1711-2">2026/06/11 17:11 — [人名2]<a class="headerlink" href="#20260611-1711-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>还要，2s 还是慢了。</p>
 </div>
 <div class="reply even">
-<h3 id="20260612-1021-5">2026/06/12 10:21 — [人名5]<a class="headerlink" href="#20260612-1021-5" title="Permanent link">&para;</a></h3>
+<h3 id="20260612-1021-6">2026/06/12 10:21 — [人名6]<a class="headerlink" href="#20260612-1021-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>之前不是差不多2s吗？怎么减去1s 还剩2s</p>
 <p>[图片: image-2026-06-12-10-21-47-929.png]</p>
 </div>
 <div class="reply odd">
-<h3 id="20260615-1550-5">2026/06/15 15:50 — [人名5]<a class="headerlink" href="#20260615-1550-5" title="Permanent link">&para;</a></h3>
+<h3 id="20260615-1550-6">2026/06/15 15:50 — [人名6]<a class="headerlink" href="#20260615-1550-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>所以这个还需要优化吗？</p>
 </div>
 <div class="reply even">
 <h3 id="20260615-1958-2">2026/06/15 19:58 — [人名2]<a class="headerlink" href="#20260615-1958-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]</p>
+<p>Hi [人名6]</p>
 <p>我测试回之前的FW，不是1.9s ，是2.9s的，define 修改为1 之后是 1.9s；之前的数据测试有误了。客户需要USB 功能做升级，这里不能修改，测试发现修改了无法升级了。</p>
 </div>
 <div class="reply odd">
-<h3 id="20260616-1551-5">2026/06/16 15:51 — [人名5]<a class="headerlink" href="#20260616-1551-5" title="Permanent link">&para;</a></h3>
+<h3 id="20260616-1551-6">2026/06/16 15:51 — [人名6]<a class="headerlink" href="#20260616-1551-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>你们怎么测试的这么久呢？是通过拉GPIO手法去测试的吗？</p>
 <p>公版软件就这么久吗？</p>
 </div>
 <div class="reply even">
 <h3 id="20260616-1613-2">2026/06/16 16:13 — [人名2]<a class="headerlink" href="#20260616-1613-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]</p>
+<p>Hi [人名6]</p>
 <p>这是SDK5.9.0 的demo，使用EVK测试，从波动开关接入到量蓝灯大约是2.9s ；</p>
 <p>[附件: headset_ref_design.7z]</p>
 </div>
 <div class="reply odd">
-<h3 id="20260617-1754-5">2026/06/17 17:54 — [人名5]<a class="headerlink" href="#20260617-1754-5" title="Permanent link">&para;</a></h3>
+<h3 id="20260617-1754-6">2026/06/17 17:54 — [人名6]<a class="headerlink" href="#20260617-1754-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ,</p>
 <p>从 log 看这个是正常现象，耳机系统初始化需要600ms，USB 初始化需要1000ms，初始化完之后，还不能马上点灯，需要等main跑完之后，IRQ起来了，才能点灯，从以下log看，这过程花了1.3s，所以加起来就是2.9s。</p>
 <p>如果没有彻底关机，就可以直接点灯，就会很快</p>
@@ -442,7 +442,7 @@
 </div>
 <div class="reply even">
 <h3 id="20260618-1014-2">2026/06/18 10:14 — [人名2]<a class="headerlink" href="#20260618-1014-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]</p>
+<p>Hi [人名6]</p>
 <p>说得很细致，了解，感谢。</p>
 </div>
 <div class="ticket-nav">

@@ -362,7 +362,7 @@
 <p><a href="../ABT-579/">← 上一个工单：ABT-579</a>　<a href="../ABT-581/">→ 下一个工单：ABT-581</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>客户有个项目对BLE的传说速率要求，需要60-500Kbps[1]，延时在10ms左右[2]，请帮忙确认一下我们能否满足。</p>
 <p>我看到code 中BLE部分有两个MTU</p>
 <p>// ble_air_service.c</p>
@@ -375,11 +375,11 @@
 <h1 id="define-ble_air_receive_buffer_size-1024">define BLE_AIR_RECEIVE_BUFFER_SIZE       (1024)<a class="headerlink" href="#define-ble_air_receive_buffer_size-1024" title="Permanent link">&para;</a></h1>
 <p>所以实际的BLE 传输MTU 是哪一个[3]？SPP的MTU我没有找到[4]</p>
 <p>如果是512，Android（SPP）的发包间隔为10ms，iOS（BLE）的发包间隔15ms，那么Android 和iOS的速率分别是 50Kbps和33Kbps，是这样计算吗[5]？</p>
-<p>在A2DP playing 和[人名9]P 下，data的传输是否有影响[6]？</p>
+<p>在A2DP playing 和[人名10]P 下，data的传输是否有影响[6]？</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
-<h3 id="20250721-1558-80">2025/07/21 15:58 — [人名80]<a class="headerlink" href="#20250721-1558-80" title="Permanent link">&para;</a></h3>
+<h3 id="20250721-1558-86">2025/07/21 15:58 — [人名86]<a class="headerlink" href="#20250721-1558-86" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] </p>
 <p>你们是连PC、手机吗？最终使用的MTU、interval是和对端协商的结果，和手机连估计到不了60Kbps，另位播歌、通话等会升主频，预计也会影响速率，你们自己可以实测一下。</p>
 <p>调MTU是下面这支api，最大是512，MTU是根据spec定的最大传输size，但是耳机这边最大发送的data length是256 byte，计算以实际每包传输的数据长度为准。</p>
@@ -388,7 +388,7 @@
 </div>
 <div class="reply even">
 <h3 id="20250721-1624-2">2025/07/21 16:24 — [人名2]<a class="headerlink" href="#20250721-1624-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名80] (szciic) ，</p>
+<p>Hi [人名86] (szciic) ，</p>
 <p>感谢。</p>
 </div>
 <div class="ticket-nav">

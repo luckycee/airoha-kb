@@ -362,25 +362,25 @@
 <p><a href="../ABT-358/">← 上一个工单：ABT-358</a>　<a href="../ABT-360/">→ 下一个工单：ABT-360</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>HI [人名5]：</p>
+<p>HI [人名6]：</p>
 <p>查看文档“ABT_IoT_SDK_for_BT_Audio_LE_Audio_Dongle_User_Guide.pdf”，如图（dongle&amp;Earbuds.png）中第2步，三击耳机端，可以使dongle和耳机连接，但是查找对应的文档，并未看到可行的相应的按键事件。</p>
 <p>将dongle切到BIS或者CIS后，耳机端要如何操作，才可以和dongle“连接”？</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
-<h3 id="20240325-2002-23-24">2024/03/25 20:02 — [人名23] [人名24]<a class="headerlink" href="#20240325-2002-23-24" title="Permanent link">&para;</a></h3>
+<h3 id="20240325-2002-25-26">2024/03/25 20:02 — [人名25] [人名26]<a class="headerlink" href="#20240325-2002-25-26" title="Permanent link">&para;</a></h3>
 <p>[图片: dongle&amp;Earbuds.png]</p>
 <p>[图片: QQ截图[序列号已隐藏].png]</p>
 <p>[图片: QQ截图[序列号已隐藏].png]</p>
 </div>
 <div class="reply even">
-<h3 id="20240326-1451-5">2024/03/26 14:51 — [人名5]<a class="headerlink" href="#20240326-1451-5" title="Permanent link">&para;</a></h3>
+<h3 id="20240326-1451-6">2024/03/26 14:51 — [人名6]<a class="headerlink" href="#20240326-1451-6" title="Permanent link">&para;</a></h3>
 <p>试试这个呢</p>
 <p>[图片: image-2024-03-26-14-51-00-822.png]</p>
 </div>
 <div class="reply odd">
-<h3 id="20240326-1547-23-24">2024/03/26 15:47 — [人名23] [人名24]<a class="headerlink" href="#20240326-1547-23-24" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]：
+<h3 id="20240326-1547-25-26">2024/03/26 15:47 — [人名25] [人名26]<a class="headerlink" href="#20240326-1547-25-26" title="Permanent link">&para;</a></h3>
+<p>Hi [人名6]：
 earbuds：./build.sh ab1577s_evk earbuds_ref_design_ull2_full
 dongle：./build.sh ab1571d_evk dongle_ref_design_ull2_leaudio
 我这边测试，dongle端执行AT+DONGLE_MODE=BROADCAST后，耳机端执行KEY_AIR_PAIRING，耳机端确实可以通过BIS收听到音乐。
@@ -389,35 +389,35 @@ dongle：./build.sh ab1571d_evk dongle_ref_design_ull2_leaudio
 <p>[图片: QQ截图[序列号已隐藏].png]</p>
 </div>
 <div class="reply even">
-<h3 id="20240326-1610-5">2024/03/26 16:10 — [人名5]<a class="headerlink" href="#20240326-1610-5" title="Permanent link">&para;</a></h3>
+<h3 id="20240326-1610-6">2024/03/26 16:10 — [人名6]<a class="headerlink" href="#20240326-1610-6" title="Permanent link">&para;</a></h3>
 <p>dongle 在执行一下KEY_LE_AUDIO_SCAN呢</p>
 </div>
 <div class="reply odd">
-<h3 id="20240326-1624-23-24">2024/03/26 16:24 — [人名23] [人名24]<a class="headerlink" href="#20240326-1624-23-24" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]：
+<h3 id="20240326-1624-25-26">2024/03/26 16:24 — [人名25] [人名26]<a class="headerlink" href="#20240326-1624-25-26" title="Permanent link">&para;</a></h3>
+<p>Hi [人名6]：
 执行了，也还是不行。并且用at指令切mode时，rsp里面也有体现到dongle在scanning</p>
 <p>[图片: QQ截图[序列号已隐藏].png]</p>
 </div>
 <div class="reply even">
-<h3 id="20240327-1337-5">2024/03/27 13:37 — [人名5]<a class="headerlink" href="#20240327-1337-5" title="Permanent link">&para;</a></h3>
+<h3 id="20240327-1337-6">2024/03/27 13:37 — [人名6]<a class="headerlink" href="#20240327-1337-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏],</p>
 <p>在dongle端发 <em>{color:#ff0000}KEY_DONGLE_COMMON_PAIRING{color}</em>，在earbuds发 <em>KEY_ULL_AIR_PAIRING</em>，这样再测试看看。</p>
 </div>
 <div class="reply odd">
-<h3 id="20240327-1427-23-24">2024/03/27 14:27 — [人名23] [人名24]<a class="headerlink" href="#20240327-1427-23-24" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]：
+<h3 id="20240327-1427-25-26">2024/03/27 14:27 — [人名25] [人名26]<a class="headerlink" href="#20240327-1427-25-26" title="Permanent link">&para;</a></h3>
+<p>Hi [人名6]：
 两个按键事件在ULL模式连接的时候是有作用的，但是切到BIS和CIS时是没有作用的。
 然后看文档有SIRK设置，并且要求每一对都不一样，这个要如何操作？</p>
 <p>[图片: QQ截图[序列号已隐藏].png]</p>
 </div>
 <div class="reply even">
-<h3 id="20240410-1829-5">2024/04/10 18:29 — [人名5]<a class="headerlink" href="#20240410-1829-5" title="Permanent link">&para;</a></h3>
+<h3 id="20240410-1829-6">2024/04/10 18:29 — [人名6]<a class="headerlink" href="#20240410-1829-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>确认了，LE audio 只能通过写 sirk 方式去 配对连接</p>
 </div>
 <div class="reply odd">
-<h3 id="20240411-1126-23-24">2024/04/11 11:26 — [人名23] [人名24]<a class="headerlink" href="#20240411-1126-23-24" title="Permanent link">&para;</a></h3>
-<p>HI [人名5]：
+<h3 id="20240411-1126-25-26">2024/04/11 11:26 — [人名25] [人名26]<a class="headerlink" href="#20240411-1126-25-26" title="Permanent link">&para;</a></h3>
+<p>HI [人名6]：
 感谢！</p>
 </div>
 <div class="ticket-nav">

@@ -362,7 +362,7 @@
 <p><a href="../ABT-51/">← 上一个工单：ABT-51</a>　<a href="../ABT-53/">→ 下一个工单：ABT-53</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi 帝木，</p>
+<p>Hi [人名4]，</p>
 <p>客户做的headset，支持ANC的。他们想把TWS那一套调试ANC的设备和指令放到headset上，但是TWS是1wire，headset是5V常在。他们想用uart0来发送接收指令，uart1和uart2都被他们的key用去了；</p>
 <ol>
 <li>
@@ -376,7 +376,7 @@
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
-<h3 id="20220530-1646-5">2022/05/30 16:46 — [人名5]<a class="headerlink" href="#20220530-1646-5" title="Permanent link">&para;</a></h3>
+<h3 id="20220530-1646-6">2022/05/30 16:46 — [人名6]<a class="headerlink" href="#20220530-1646-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>如电话沟通，客户上位机可以通过发送cmd的方式把log暂时关掉</p>
 <p>RACE_SLEEP_CONTROL
@@ -391,18 +391,18 @@
 </div>
 <div class="reply even">
 <h3 id="20220530-1732-2">2022/05/30 17:32 — [人名2]<a class="headerlink" href="#20220530-1732-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>关不掉，还是会有出来；</p>
 </div>
 <div class="reply odd">
 <h3 id="20220530-1736-2">2022/05/30 17:36 — [人名2]<a class="headerlink" href="#20220530-1736-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>准确来说应该是可以了，关了部分的log（MCU的？），但是仍有一些出来（DSP的？）。</p>
 <p>[附件: log.pcapng]</p>
 </div>
 <div class="reply even">
 <h3 id="20220530-1756-2">2022/05/30 17:56 — [人名2]<a class="headerlink" href="#20220530-1756-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>本次开机有效
 AT+SYSLOG=0,0,1,1 关mcu log
 AT+SYSLOG=0,1,1,1 关dsp log</p>
@@ -410,18 +410,18 @@ AT+SYSLOG=0,1,1,1 关dsp log</p>
 <p>上面的内容是客户咨询你们RD还是其他人获取到的信息，我试了有效；但是客户的上位机怎么发送 AT cmd ？</p>
 </div>
 <div class="reply odd">
-<h3 id="20220530-1820-8">2022/05/30 18:20 — [人名8]<a class="headerlink" href="#20220530-1820-8" title="Permanent link">&para;</a></h3>
+<h3 id="20220530-1820-9">2022/05/30 18:20 — [人名9]<a class="headerlink" href="#20220530-1820-9" title="Permanent link">&para;</a></h3>
 <p>@[邮箱已隐藏]</p>
 <p>AT CMD 是我回复给客户的， 上位机怎么发AT ，这是不是要问客户了啊？哈哈</p>
 </div>
 <div class="reply even">
-<h3 id="20220531-0933-5">2022/05/31 09:33 — [人名5]<a class="headerlink" href="#20220531-0933-5" title="Permanent link">&para;</a></h3>
+<h3 id="20220531-0933-6">2022/05/31 09:33 — [人名6]<a class="headerlink" href="#20220531-0933-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>发送055A0600200F00090D0A （cm4） 后再发送 055A0600200F01090D0A （DSP）就可以了~</p>
 </div>
 <div class="reply odd">
 <h3 id="20220531-0955-2">2022/05/31 09:55 — [人名2]<a class="headerlink" href="#20220531-0955-2" title="Permanent link">&para;</a></h3>
-<p>hi  [人名5],</p>
+<p>hi  [人名6],</p>
 <p>可以了！</p>
 </div>
 <div class="ticket-nav">

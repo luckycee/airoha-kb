@@ -362,134 +362,134 @@
 <p><a href="../ABT-176/">← 上一个工单：ABT-176</a>　<a href="../ABT-178/">→ 下一个工单：ABT-178</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>现在客户的硬件做出来是DMIC0 + AMIC0的方式想做双mic ENC， 但是配置工具上不允许这么设置，所以看能否把GPIO2\3改为DMIC2，这样就能解决配置工具上不允许的问题了。</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
-<h3 id="20230519-1834-39">2023/05/19 18:34 — [人名39]<a class="headerlink" href="#20230519-1834-39" title="Permanent link">&para;</a></h3>
+<h3 id="20230519-1834-42">2023/05/19 18:34 — [人名42]<a class="headerlink" href="#20230519-1834-42" title="Permanent link">&para;</a></h3>
 <p>@[邮箱已隐藏]</p>
 <p>HI 您之前提供的FW ，里面没有抓LOG的BIN，您可以提供吗？</p>
 <p>[图片: image-2023-05-19-18-34-28-075.png]</p>
 </div>
 <div class="reply even">
 <h3 id="20230519-1919-2">2023/05/19 19:19 — [人名2]<a class="headerlink" href="#20230519-1919-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名39] ([人名39])，</p>
+<p>Hi [人名42] ([人名42])，</p>
 <p>见附件；</p>
 <p>[附件: debug.7z]</p>
 <p>[附件: download_all.7z]</p>
 </div>
 <div class="reply odd">
-<h3 id="20230522-0900-39">2023/05/22 09:00 — [人名39]<a class="headerlink" href="#20230522-0900-39" title="Permanent link">&para;</a></h3>
+<h3 id="20230522-0900-42">2023/05/22 09:00 — [人名42]<a class="headerlink" href="#20230522-0900-42" title="Permanent link">&para;</a></h3>
 <p>@[邮箱已隐藏]</p>
 <p>Hi 很抱歉，经反复测试，用附件是FW ，DIM2 通话是有声音的，估计是我外挂DMIC的小板接触不良导致，另客户确测指令是做美格信吗？我计划用美格信试下这些指令。</p>
 </div>
 <div class="reply even">
-<h3 id="20230522-0901-39">2023/05/22 09:01 — [人名39]<a class="headerlink" href="#20230522-0901-39" title="Permanent link">&para;</a></h3>
+<h3 id="20230522-0901-42">2023/05/22 09:01 — [人名42]<a class="headerlink" href="#20230522-0901-42" title="Permanent link">&para;</a></h3>
 <p>[图片: image-2023-05-22-09-01-12-162.png]</p>
 </div>
 <div class="reply odd">
 <h3 id="20230522-1147-2">2023/05/22 11:47 — [人名2]<a class="headerlink" href="#20230522-1147-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名39] ([人名39])，</p>
+<p>Hi [人名42] ([人名42])，</p>
 <p>客户使用的是美格信的设备。</p>
-<p>按照你的测试结果，fason 给我修改说是针对DMIC0，但其实仍然是DMIC2的，这样也搞清楚了什么DMIC0为什么没有声音。</p>
+<p>按照你的测试结果，[人名6] 给我修改说是针对DMIC0，但其实仍然是DMIC2的，这样也搞清楚了什么DMIC0为什么没有声音。</p>
 </div>
 <div class="reply even">
-<h3 id="20230522-1407-39">2023/05/22 14:07 — [人名39]<a class="headerlink" href="#20230522-1407-39" title="Permanent link">&para;</a></h3>
+<h3 id="20230522-1407-42">2023/05/22 14:07 — [人名42]<a class="headerlink" href="#20230522-1407-42" title="Permanent link">&para;</a></h3>
 <p>@[邮箱已隐藏]</p>
 <p>Hi 虽然配置是DMIC2 但硬件还是接GPIO2和3的</p>
 </div>
 <div class="reply odd">
 <h3 id="20230522-1421-2">2023/05/22 14:21 — [人名2]<a class="headerlink" href="#20230522-1421-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名39] ([人名39])，</p>
+<p>Hi [人名42] ([人名42])，</p>
 <p>我刚刚没有反应过来，这样的话，我的指令是不是应该修改一下？</p>
 <p>Open all Mic 05 5A 08 00 20 0E 0A 00 01 02 03 FF</p>
 <p>你们测试  05 5A 03 00 0C 0E 03、05 5A 03 00 0C 0E 04 有信息吗？</p>
 </div>
 <div class="reply even">
-<h3 id="20230522-1439-39">2023/05/22 14:39 — [人名39]<a class="headerlink" href="#20230522-1439-39" title="Permanent link">&para;</a></h3>
+<h3 id="20230522-1439-42">2023/05/22 14:39 — [人名42]<a class="headerlink" href="#20230522-1439-42" title="Permanent link">&para;</a></h3>
 <p>@[邮箱已隐藏] </p>
 <p>Hi   05 5A 03 00 0C 0E 03、05 5A 03 00 0C 0E 04  这两个在确认中...</p>
 </div>
 <div class="reply odd">
-<h3 id="20230523-0939-5">2023/05/23 09:39 — [人名5]<a class="headerlink" href="#20230523-0939-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230523-0939-6">2023/05/23 09:39 — [人名6]<a class="headerlink" href="#20230523-0939-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>麻烦帮忙对一下你们code有没有添加附件patch
 [附件: multi_mic_test (1).diff]</p>
 </div>
 <div class="reply even">
 <h3 id="20230523-1440-2">2023/05/23 14:40 — [人名2]<a class="headerlink" href="#20230523-1440-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>你这个是不是 V3.0 之前的，我使用的SDK 是V3.2.0 ，发现没有 dsp/middleware/MTK/stream 这个路径，并且ENABLE_2A2D_TEST 这个define 相关的部分也是没有的；</p>
 </div>
 <div class="reply odd">
-<h3 id="20230523-1553-5">2023/05/23 15:53 — [人名5]<a class="headerlink" href="#20230523-1553-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230523-1553-6">2023/05/23 15:53 — [人名6]<a class="headerlink" href="#20230523-1553-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>是这个路径</p>
 <p>dsp\middleware\ABT\stream</p>
 </div>
 <div class="reply even">
 <h3 id="20230523-1600-2">2023/05/23 16:00 — [人名2]<a class="headerlink" href="#20230523-1600-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>ENABLE_2A2D_TEST 这个define 相关的部分也是没有的；</p>
 </div>
 <div class="reply odd">
-<h3 id="20230523-1737-5">2023/05/23 17:37 — [人名5]<a class="headerlink" href="#20230523-1737-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230523-1737-6">2023/05/23 17:37 — [人名6]<a class="headerlink" href="#20230523-1737-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>请合入ENABLE_2A2D_TEST 这个define 相关的部分的patch，没有就不支持multi mic测试，只支持2mic交叉测试</p>
 </div>
 <div class="reply even">
-<h3 id="20230524-1100-39">2023/05/24 11:00 — [人名39]<a class="headerlink" href="#20230524-1100-39" title="Permanent link">&para;</a></h3>
+<h3 id="20230524-1100-42">2023/05/24 11:00 — [人名42]<a class="headerlink" href="#20230524-1100-42" title="Permanent link">&para;</a></h3>
 <p>@[邮箱已隐藏]</p>
 <p>HI 加PATCH后有最新情况吗？</p>
 </div>
 <div class="reply odd">
-<h3 id="20230524-1103-39">2023/05/24 11:03 — [人名39]<a class="headerlink" href="#20230524-1103-39" title="Permanent link">&para;</a></h3>
+<h3 id="20230524-1103-42">2023/05/24 11:03 — [人名42]<a class="headerlink" href="#20230524-1103-42" title="Permanent link">&para;</a></h3>
 <p>@[邮箱已隐藏]</p>
 <p>Hi 另请问下这一题，是同一个产品吗？https://eservice.ABT.com.tw/browse/MU-1525</p>
 </div>
 <div class="reply even">
 <h3 id="20230524-1112-2">2023/05/24 11:12 — [人名2]<a class="headerlink" href="#20230524-1112-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名39] ([人名39])，</p>
+<p>Hi [人名42] ([人名42])，</p>
 <p>跟 MU-1525 是同一个产品；</p>
 </div>
 <div class="reply odd">
-<h3 id="20230524-1114-5">2023/05/24 11:14 — [人名5]<a class="headerlink" href="#20230524-1114-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230524-1114-6">2023/05/24 11:14 — [人名6]<a class="headerlink" href="#20230524-1114-6" title="Permanent link">&para;</a></h3>
 <p>@[邮箱已隐藏]</p>
 <p>HI 加PATCH后有最新情况吗？</p>
 </div>
 <div class="reply even">
 <h3 id="20230524-1114-2">2023/05/24 11:14 — [人名2]<a class="headerlink" href="#20230524-1114-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名39] ([人名39])，</p>
+<p>Hi [人名42] ([人名42])，</p>
 <p>加PATCH后有最新情况吗？</p>
 <blockquote>
 <blockquote>
-<p>加code 有点问题，我在和fason沟通；</p>
+<p>加code 有点问题，我在和[人名6]沟通；</p>
 </blockquote>
 </blockquote>
 </div>
 <div class="reply odd">
-<h3 id="20230524-1116-39">2023/05/24 11:16 — [人名39]<a class="headerlink" href="#20230524-1116-39" title="Permanent link">&para;</a></h3>
+<h3 id="20230524-1116-42">2023/05/24 11:16 — [人名42]<a class="headerlink" href="#20230524-1116-42" title="Permanent link">&para;</a></h3>
 <p>@[邮箱已隐藏]</p>
 <p>Hi 有新情况麻烦共享，感谢！</p>
 </div>
 <div class="reply even">
 <h3 id="20230524-1142-2">2023/05/24 11:42 — [人名2]<a class="headerlink" href="#20230524-1142-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名39] ([人名39])，</p>
+<p>Hi [人名42] ([人名42])，</p>
 <p>好的，这个问题的讨论都会在这里。</p>
 </div>
 <div class="reply odd">
 <h3 id="20230524-1143-2">2023/05/24 11:43 — [人名2]<a class="headerlink" href="#20230524-1143-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>如沟通，我找不到原来就有的code ，导致了无法加入此patch；即使在最新SDK V3.6.0 上，相关原文件中也找不到 ENABLE_2A2D_TEST ；</p>
 </div>
 <div class="reply even">
-<h3 id="20230524-1515-5">2023/05/24 15:15 — [人名5]<a class="headerlink" href="#20230524-1515-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230524-1515-6">2023/05/24 15:15 — [人名6]<a class="headerlink" href="#20230524-1515-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>不用找ENABLE_2A2D_TEST ，看起来patch已经有加了，可以查一下patch是不是被define包起来，需要打开</p>
 </div>
 <div class="reply odd">
-<h3 id="20230524-1541-5">2023/05/24 15:41 — [人名5]<a class="headerlink" href="#20230524-1541-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230524-1541-6">2023/05/24 15:41 — [人名6]<a class="headerlink" href="#20230524-1541-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>以下cmd好像没有发，麻烦确认一下cmd是否发正确</p>
 <p>[图片: image-2023-05-24-15-40-40-362.png]</p>
@@ -497,77 +497,77 @@
 </div>
 <div class="reply even">
 <h3 id="20230524-1552-2">2023/05/24 15:52 — [人名2]<a class="headerlink" href="#20230524-1552-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5] ,</p>
+<p>Hi [人名6] ,</p>
 <p>发送了呀，这个截图不是我提供的log吗？</p>
 </div>
 <div class="reply odd">
-<h3 id="20230524-1554-5">2023/05/24 15:54 — [人名5]<a class="headerlink" href="#20230524-1554-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230524-1554-6">2023/05/24 15:54 — [人名6]<a class="headerlink" href="#20230524-1554-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>看起来没法对啊</p>
 </div>
 <div class="reply even">
 <h3 id="20230525-0947-2">2023/05/25 09:47 — [人名2]<a class="headerlink" href="#20230525-0947-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>发对了的，应提示音 open multic mic extend 了。</p>
 </div>
 <div class="reply odd">
-<h3 id="20230525-1035-39">2023/05/25 10:35 — [人名39]<a class="headerlink" href="#20230525-1035-39" title="Permanent link">&para;</a></h3>
+<h3 id="20230525-1035-42">2023/05/25 10:35 — [人名42]<a class="headerlink" href="#20230525-1035-42" title="Permanent link">&para;</a></h3>
 <p>@[邮箱已隐藏]</p>
-<p>HI 请按这步骤下指令，目前我这边测试没有问题。注意,先下完这几条指令再切[人名9]P.!![图片:  您这边也试下。</p>
+<p>HI 请按这步骤下指令，目前我这边测试没有问题。注意,先下完这几条指令再切[人名10]P.!![图片:  您这边也试下。</p>
 <p>055A 0800 200E 0C 00 01 02 03 FF </p>
 <p>05 5A 03 00 C1 0C 00</p>
 <p>05 5A 03 00 10 0E 00</p>
 <p>05 5A 03 00 0D 0E 00</p>
-<p>建立[人名9]P</p>
+<p>建立[人名10]P</p>
 <p>]image-2023-05-25-10-35-45-679.png!</p>
 </div>
 <div class="reply even">
 <h3 id="20230525-1552-2">2023/05/25 15:52 — [人名2]<a class="headerlink" href="#20230525-1552-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名39] ([人名39])，</p>
+<p>Hi [人名42] ([人名42])，</p>
 <p>好的，我这边等客户回复。</p>
 </div>
 <div class="reply odd">
 <h3 id="20230529-1859-2">2023/05/29 18:59 — [人名2]<a class="headerlink" href="#20230529-1859-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名39] ([人名39])，</p>
+<p>Hi [人名42] ([人名42])，</p>
 <p>客户反馈还是不行；</p>
 <p>[图片: Snipaste_2023-05-29_18-52-28.jpg]</p>
 <p>[附件: Logging230529_164338_COM4.zip]</p>
 </div>
 <div class="reply even">
-<h3 id="20230531-1042-39">2023/05/31 10:42 — [人名39]<a class="headerlink" href="#20230531-1042-39" title="Permanent link">&para;</a></h3>
+<h3 id="20230531-1042-42">2023/05/31 10:42 — [人名42]<a class="headerlink" href="#20230531-1042-42" title="Permanent link">&para;</a></h3>
 <p>@[邮箱已隐藏]</p>
 <p>我有更新了下指令，请注意</p>
 <p>[图片: image-2023-05-31-10-42-20-858.png]</p>
 </div>
 <div class="reply odd">
-<h3 id="20230531-1100-39">2023/05/31 11:00 — [人名39]<a class="headerlink" href="#20230531-1100-39" title="Permanent link">&para;</a></h3>
+<h3 id="20230531-1100-42">2023/05/31 11:00 — [人名42]<a class="headerlink" href="#20230531-1100-42" title="Permanent link">&para;</a></h3>
 <p>@[邮箱已隐藏]</p>
 <p>055A 0800 200E 0C 00 01 02 03 FF </p>
 <p>05 5A 03 00 C1 0C 00</p>
 <p>05 5A 03 00 10 0E 00</p>
 <p>05 5A 03 00 0D 0E 00</p>
-<p>再建立[人名9]P</p>
-<p>注意 先发上面4条指令，再A2DP FROM [人名9]P 再发切咪指令。我这边有用美格信验证过了，都是通的</p>
+<p>再建立[人名10]P</p>
+<p>注意 先发上面4条指令，再A2DP FROM [人名10]P 再发切咪指令。我这边有用美格信验证过了，都是通的</p>
 </div>
 <div class="reply even">
-<h3 id="20230531-1112-39">2023/05/31 11:12 — [人名39]<a class="headerlink" href="#20230531-1112-39" title="Permanent link">&para;</a></h3>
+<h3 id="20230531-1112-42">2023/05/31 11:12 — [人名42]<a class="headerlink" href="#20230531-1112-42" title="Permanent link">&para;</a></h3>
 <p>[图片: image-2023-05-31-11-12-53-768.png]</p>
 </div>
 <div class="reply odd">
 <h3 id="20230531-1134-2">2023/05/31 11:34 — [人名2]<a class="headerlink" href="#20230531-1134-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名39] (李伟</p>
+<p>Hi [人名42] (李伟</p>
 <p>这是客户实际的硬件连接，是不是这里有问题啊。</p>
 <p>[图片: Snipaste_2023-05-11_10-43-06.jpg]</p>
 </div>
 <div class="reply even">
-<h3 id="20230531-1141-39">2023/05/31 11:41 — [人名39]<a class="headerlink" href="#20230531-1141-39" title="Permanent link">&para;</a></h3>
+<h3 id="20230531-1141-42">2023/05/31 11:41 — [人名42]<a class="headerlink" href="#20230531-1141-42" title="Permanent link">&para;</a></h3>
 <p>@[邮箱已隐藏]</p>
 <p>HI 我看到客户下ALL OPEN MIC TEST 指令不对，另我边是用一个AMIC去试 01/02/03/04的指令，MIC BIAC我是用同一个给这个AMIC供电。</p>
 </div>
 <div class="reply odd">
-<h3 id="20230531-1348-39">2023/05/31 13:48 — [人名39]<a class="headerlink" href="#20230531-1348-39" title="Permanent link">&para;</a></h3>
+<h3 id="20230531-1348-42">2023/05/31 13:48 — [人名42]<a class="headerlink" href="#20230531-1348-42" title="Permanent link">&para;</a></h3>
 <p>@[邮箱已隐藏]</p>
-<p>HI  当进到[人名9]P MODE后， 所以的MIC BIAS 都会有1.8V 所以硬件没有问题。</p>
+<p>HI  当进到[人名10]P MODE后， 所以的MIC BIAS 都会有1.8V 所以硬件没有问题。</p>
 </div>
 <div class="reply even">
 <h3 id="20230531-1621-2">2023/05/31 16:21 — [人名2]<a class="headerlink" href="#20230531-1621-2" title="Permanent link">&para;</a></h3>
@@ -575,7 +575,7 @@
 <p>客户那边测试情况跟之前没有差异，你有时间吗？想到贵司，加上客户，现场看看是什么问题。</p>
 </div>
 <div class="reply odd">
-<h3 id="20230531-1653-39">2023/05/31 16:53 — [人名39]<a class="headerlink" href="#20230531-1653-39" title="Permanent link">&para;</a></h3>
+<h3 id="20230531-1653-42">2023/05/31 16:53 — [人名42]<a class="headerlink" href="#20230531-1653-42" title="Permanent link">&para;</a></h3>
 <p>@[邮箱已隐藏]</p>
 <p>HI 我刚又重新再确认一次，按 2023/05/25  10：35的指令正常。如沟通，我这周按排排满了，你先跟客户梳理下流程，如果还在有问题，下周再约时间过来现场理。</p>
 </div>
@@ -585,7 +585,7 @@
 <p>感谢你的严重，现在基本确认了问题是客户样机或者测试指令上了。我跟客户电话沟通过，他们是按照今天早上十一点发出来的流程走的，所以看下下周哪天你方便，我约上客户。</p>
 </div>
 <div class="reply odd">
-<h3 id="20230531-1745-39">2023/05/31 17:45 — [人名39]<a class="headerlink" href="#20230531-1745-39" title="Permanent link">&para;</a></h3>
+<h3 id="20230531-1745-42">2023/05/31 17:45 — [人名42]<a class="headerlink" href="#20230531-1745-42" title="Permanent link">&para;</a></h3>
 <p>@[邮箱已隐藏]</p>
 <p>HI 暂定下周一（6月5号）。</p>
 </div>
@@ -595,12 +595,12 @@
 <p>具体下午可以吗？</p>
 </div>
 <div class="reply odd">
-<h3 id="20230601-1055-39">2023/06/01 10:55 — [人名39]<a class="headerlink" href="#20230601-1055-39" title="Permanent link">&para;</a></h3>
+<h3 id="20230601-1055-42">2023/06/01 10:55 — [人名42]<a class="headerlink" href="#20230601-1055-42" title="Permanent link">&para;</a></h3>
 <p>@[邮箱已隐藏]</p>
 <p>可以。</p>
 </div>
 <div class="reply even">
-<h3 id="20230605-1537-39">2023/06/05 15:37 — [人名39]<a class="headerlink" href="#20230605-1537-39" title="Permanent link">&para;</a></h3>
+<h3 id="20230605-1537-42">2023/06/05 15:37 — [人名42]<a class="headerlink" href="#20230605-1537-42" title="Permanent link">&para;</a></h3>
 <p>[附件: 洛达1577S系列230330-add mic test.aes]</p>
 </div>
 <div class="reply odd">
@@ -609,7 +609,7 @@
 <p>感谢支持，我这边等客户确认是美格信AudioExport 的版本，还是 .ase 不对之后，再把问题关闭。</p>
 </div>
 <div class="reply even">
-<h3 id="20230605-1641-39">2023/06/05 16:41 — [人名39]<a class="headerlink" href="#20230605-1641-39" title="Permanent link">&para;</a></h3>
+<h3 id="20230605-1641-42">2023/06/05 16:41 — [人名42]<a class="headerlink" href="#20230605-1641-42" title="Permanent link">&para;</a></h3>
 <p>OK</p>
 </div>
 <div class="reply odd">

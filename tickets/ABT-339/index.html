@@ -362,7 +362,7 @@
 <p><a href="../ABT-338/">← 上一个工单：ABT-338</a>　<a href="../ABT-340/">→ 下一个工单：ABT-340</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>客户一个头戴耳机项目，比如line in，经典蓝牙，ull2三个音源都连接，目前是检测哪个音源有音频播放，就播放哪个音源。</p>
 <p>客户现在想做的是，音源优先级：ull2&gt;经典蓝牙&gt;linein，那么即使经典蓝牙和line in有音频要播放，现在也不能切换，只能播放ull2的音频。</p>
 <p>这个问题应该怎么解决呢？音源的切换控制在哪里做的呢？</p>
@@ -378,64 +378,64 @@
 <p>[附件: feature_85_ull2_headset_full.mk]</p>
 </div>
 <div class="reply even">
-<h3 id="20240221-1445-5">2024/02/21 14:45 — [人名5]<a class="headerlink" href="#20240221-1445-5" title="Permanent link">&para;</a></h3>
+<h3 id="20240221-1445-6">2024/02/21 14:45 — [人名6]<a class="headerlink" href="#20240221-1445-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>把这个ULL2 优先级改成high   AUDIO_SRC_SRV_PRIORITY_ABOVE_NORMAL 试试呢</p>
 <p>[图片: image-2024-02-21-14-44-41-475.png]</p>
 </div>
 <div class="reply odd">
 <h3 id="20240221-1526-2">2024/02/21 15:26 — [人名2]<a class="headerlink" href="#20240221-1526-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>这个项目包括usb，linein，bt，ull2；</p>
 <p>你提供调整ull2，其他三个呢？</p>
 </div>
 <div class="reply even">
-<h3 id="20240221-1528-5">2024/02/21 15:28 — [人名5]<a class="headerlink" href="#20240221-1528-5" title="Permanent link">&para;</a></h3>
+<h3 id="20240221-1528-6">2024/02/21 15:28 — [人名6]<a class="headerlink" href="#20240221-1528-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>这里提高ULL2优先级，播放音乐的时候就优先播放ULL2了，其他的预期就不会播放出来</p>
 </div>
 <div class="reply odd">
 <h3 id="20240221-1555-2">2024/02/21 15:55 — [人名2]<a class="headerlink" href="#20240221-1555-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5],</p>
+<p>Hi [人名6],</p>
 <p>是的，然后如果没有ull2，只有其他几个呢？
 他们期望的顺序是：line in &gt; ull &gt; bt &gt; usb</p>
 </div>
 <div class="reply even">
 <h3 id="20240227-1008-2">2024/02/27 10:08 — [人名2]<a class="headerlink" href="#20240227-1008-2" title="Permanent link">&para;</a></h3>
-<p>HI [人名5]，</p>
+<p>HI [人名6]，</p>
 <p>这题[客户A]那边还在问</p>
 </div>
 <div class="reply odd">
-<h3 id="20240229-2103-5">2024/02/29 21:03 — [人名5]<a class="headerlink" href="#20240229-2103-5" title="Permanent link">&para;</a></h3>
+<h3 id="20240229-2103-6">2024/02/29 21:03 — [人名6]<a class="headerlink" href="#20240229-2103-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>CALL &gt; LINE IN &gt; usb &gt; music</p>
 <p>目前是这样子的</p>
-<p>BT里面，[人名9]P A2DP LEA这些细化了 ，要拆开看</p>
+<p>BT里面，[人名10]P A2DP LEA这些细化了 ，要拆开看</p>
 <p>你们的需求最好细化，细化了是可以调节的哈</p>
 </div>
 <div class="reply even">
 <h3 id="20240301-1052-2">2024/03/01 10:52 — [人名2]<a class="headerlink" href="#20240301-1052-2" title="Permanent link">&para;</a></h3>
-<p>HI [人名5]，</p>
+<p>HI [人名6]，</p>
 <p>不好意思，客户之前没有表达清楚，这个项目有4种音源模式，LINEIN &gt; ULL &gt; BT &gt; USB,这四种模式可以同时保持连接。可以使用按键切换模式，如果切换到ULL模式，那么LINEIN和BT以及ULL都不能播放音源。其实优先等级不重要，要的是循环切换当前音源。</p>
 </div>
 <div class="reply odd">
-<h3 id="20240301-1113-5">2024/03/01 11:13 — [人名5]<a class="headerlink" href="#20240301-1113-5" title="Permanent link">&para;</a></h3>
+<h3 id="20240301-1113-6">2024/03/01 11:13 — [人名6]<a class="headerlink" href="#20240301-1113-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>确认一下</p>
 <p>切换到ULL模式，那么LINEIN和BT以及{color:#d04437}USB{color}都不能播放音源？</p>
 </div>
 <div class="reply even">
-<h3 id="20240301-1116-5">2024/03/01 11:16 — [人名5]<a class="headerlink" href="#20240301-1116-5" title="Permanent link">&para;</a></h3>
+<h3 id="20240301-1116-6">2024/03/01 11:16 — [人名6]<a class="headerlink" href="#20240301-1116-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>这个需求此前有客户做过，不过问题很多，你们用哪版SDK 做呢？项目计划怎样安排时间</p>
 </div>
 <div class="reply odd">
 <h3 id="20240301-1120-2">2024/03/01 11:20 — [人名2]<a class="headerlink" href="#20240301-1120-2" title="Permanent link">&para;</a></h3>
-<p>HI [人名5]，</p>
+<p>HI [人名6]，</p>
 <p>切换到ULL，那么LINE IN 和USB 虽然另外一头在播，耳机出的ULL声音。SDK V3.10.0</p>
 </div>
 <div class="reply even">
-<h3 id="20240301-1233-18">2024/03/01 12:33 — [人名18]<a class="headerlink" href="#20240301-1233-18" title="Permanent link">&para;</a></h3>
+<h3 id="20240301-1233-5">2024/03/01 12:33 — [人名5]<a class="headerlink" href="#20240301-1233-5" title="Permanent link">&para;</a></h3>
 <p>这种多音源的切换工作量很大，请问这是哪家客户的需求，项目的量怎么样?  如果量小，建议waive 掉，RD不会去投resource 开发的，谢谢</p>
 </div>
 <div class="ticket-nav">

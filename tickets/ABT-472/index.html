@@ -21,7 +21,7 @@
     
     
       
-        <title>【[客户E]】AB1565 修改 single link mode 的延时 - ABT 工单知识库</title>
+        <title>【[客户H]】AB1565 修改 single link mode 的延时 - ABT 工单知识库</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#abt-472-eab1565-single-link-mode" class="md-skip">
+        <a href="#abt-472-hab1565-single-link-mode" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              【[客户E]】AB1565 修改 single link mode 的延时
+              【[客户H]】AB1565 修改 single link mode 的延时
             
           </span>
         </div>
@@ -354,7 +354,7 @@
   
 
 
-<h1 id="abt-472-eab1565-single-link-mode">ABT-472 【[客户E]】AB1565 修改 single link mode 的延时<a class="headerlink" href="#abt-472-eab1565-single-link-mode" title="Permanent link">&para;</a></h1>
+<h1 id="abt-472-hab1565-single-link-mode">ABT-472 【[客户H]】AB1565 修改 single link mode 的延时<a class="headerlink" href="#abt-472-hab1565-single-link-mode" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>📅 2024/11/01 15:25　🔗 <a href="https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-472">原始工单链接</a></p>
 </blockquote>
@@ -362,22 +362,22 @@
 <p><a href="../ABT-471/">← 上一个工单：ABT-471</a>　<a href="../ABT-473/">→ 下一个工单：ABT-473</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>在 <a href="../ABT-430/">ABT-430</a> 咨询过dongle 跟 headset 的延时，但是最后还是没有给出一个方法，请帮忙评估能否修改。</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
 <h3 id="20241101-1553-2">2024/11/01 15:53 — [人名2]<a class="headerlink" href="#20241101-1553-2" title="Permanent link">&para;</a></h3>
-<p>Hi fason，</p>
+<p>Hi [人名6]，</p>
 <p>补充一下，客户提出一个想法，能否根据 dongle 跟 headset 的 RSSI 来自动调节 latency ？</p>
 </div>
 <div class="reply even">
 <h3 id="20241104-1743-2">2024/11/04 17:43 — [人名2]<a class="headerlink" href="#20241104-1743-2" title="Permanent link">&para;</a></h3>
-<p>Hi  [人名5]，</p>
+<p>Hi  [人名6]，</p>
 <p>这个客户追得比较急呀，能否抓紧看看。</p>
 </div>
 <div class="reply odd">
-<h3 id="20241104-1811-5">2024/11/04 18:11 — [人名5]<a class="headerlink" href="#20241104-1811-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241104-1811-6">2024/11/04 18:11 — [人名6]<a class="headerlink" href="#20241104-1811-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>Get RSSI可以用bt_gap_read_raw_rssi这个api来获取，要获取那种类型的RSSI根据参数handle来决定。</p>
 <p>然后用之前的修改latency的方法来修改latency试试呢</p>
@@ -385,69 +385,69 @@
 </div>
 <div class="reply even">
 <h3 id="20241104-1842-2">2024/11/04 18:42 — [人名2]<a class="headerlink" href="#20241104-1842-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>你在 <a href="../ABT-430/">ABT-430</a> 提供的方法，源头是通过 link mode 来确认latency的，对应在文档中我找到了位置。但这个项目是single mode 的，怎么设置？</p>
 <p>[图片: PixPin_2024-11-04_18-40-29.png]</p>
 <p>[图片: PixPin_2024-11-04_18-39-37.png]</p>
 </div>
 <div class="reply odd">
 <h3 id="20241105-1055-2">2024/11/05 10:55 — [人名2]<a class="headerlink" href="#20241105-1055-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>今天能帮忙继续看看吗？</p>
 </div>
 <div class="reply even">
-<h3 id="20241105-1458-5">2024/11/05 14:58 — [人名5]<a class="headerlink" href="#20241105-1458-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241105-1458-6">2024/11/05 14:58 — [人名6]<a class="headerlink" href="#20241105-1458-6" title="Permanent link">&para;</a></h3>
 <p>latency 可以这里改，现在还会宕机吗</p>
 <p>[图片: image-2024-11-05-14-58-39-540.png]</p>
 </div>
 <div class="reply odd">
 <h3 id="20241105-1624-2">2024/11/05 16:24 — [人名2]<a class="headerlink" href="#20241105-1624-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>如沟通，客户客户想调整两个延时，40ms和100ms，请帮忙能否实现。他们11月7号就要封板软件了，如果不能修改也请一并回复。</p>
 </div>
 <div class="reply even">
-<h3 id="20241106-1031-5">2024/11/06 10:31 — [人名5]<a class="headerlink" href="#20241106-1031-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241106-1031-6">2024/11/06 10:31 — [人名6]<a class="headerlink" href="#20241106-1031-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>100ms 实现不了哈，目前最大FT 为 5，差不多40ms的样子</p>
 </div>
 <div class="reply odd">
 <h3 id="20241106-1036-2">2024/11/06 10:36 — [人名2]<a class="headerlink" href="#20241106-1036-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>FT 是什么？哪里修改这个数字，我给客户试一下。</p>
 </div>
 <div class="reply even">
-<h3 id="20241106-1414-5">2024/11/06 14:14 — [人名5]<a class="headerlink" href="#20241106-1414-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241106-1414-6">2024/11/06 14:14 — [人名6]<a class="headerlink" href="#20241106-1414-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>single link mode latency 改成 40ms可按照以下方法修改</p>
 <p>[图片: image-2024-11-06-14-13-47-158.png]</p>
 </div>
 <div class="reply odd">
 <h3 id="20241107-1133-2">2024/11/07 11:33 — [人名2]<a class="headerlink" href="#20241107-1133-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>修改有效，问题关闭。</p>
 </div>
 <div class="reply even">
 <h3 id="20241107-1152-2">2024/11/07 11:52 — [人名2]<a class="headerlink" href="#20241107-1152-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>客户有两个疑问：</p>
 <p>1 能否改到120ms；</p>
 <p>2 不能的话为什么？</p>
 </div>
 <div class="reply odd">
-<h3 id="20241107-1421-5">2024/11/07 14:21 — [人名5]<a class="headerlink" href="#20241107-1421-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241107-1421-6">2024/11/07 14:21 — [人名6]<a class="headerlink" href="#20241107-1421-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>改不了120ms</p>
 <p>改到120ms的话要queue跟多封包，buffer会撑不住。</p>
 </div>
 <div class="reply even">
 <h3 id="20241107-1817-2">2024/11/07 18:17 — [人名2]<a class="headerlink" href="#20241107-1817-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>获取RSSI的值，返回是0 ，需要怎么看这个RSSI值？</p>
 <p>bt_gap_read_raw_rssi（）</p>
 </div>
 <div class="reply odd">
 <h3 id="20241108-1024-2">2024/11/08 10:24 — [人名2]<a class="headerlink" href="#20241108-1024-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>客户需要就20ms和40ms的latency 根据headset 跟dongle 的RSSI来切换，RSSI在小于 -70时改为40ms，大于时默认 20ms；现在有几个需要帮忙：</p>
 <h1 id="headset-dongle-rssi">如何获取headset 跟 dongle 之间的RSSI值？<a class="headerlink" href="#headset-dongle-rssi" title="Permanent link">&para;</a></h1>
 <h1 id="bt_app_common_apply_ultra_low_latency_retry_count-latency">使用 bt_app_common_apply_ultra_low_latency_retry_count() 修改 latency 是否可行？<a class="headerlink" href="#bt_app_common_apply_ultra_low_latency_retry_count-latency" title="Permanent link">&para;</a></h1>
@@ -455,7 +455,7 @@
 <p>[图片: PixPin_2024-11-07_18-35-19.png]</p>
 </div>
 <div class="reply even">
-<h3 id="20241108-1109-5">2024/11/08 11:09 — [人名5]<a class="headerlink" href="#20241108-1109-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241108-1109-6">2024/11/08 11:09 — [人名6]<a class="headerlink" href="#20241108-1109-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>这里有个范例，app层注册一个call back 去 收 BT_GAP_READ_RAW_RSSI_CNF 这个msg 传过来的rssi，可以参考这个范例来试一下。</p>
 <p>[图片: image-2024-11-08-11-09-29-548.png]</p>
@@ -463,79 +463,79 @@
 </div>
 <div class="reply odd">
 <h3 id="20241108-1457-2">2024/11/08 14:57 — [人名2]<a class="headerlink" href="#20241108-1457-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>连接手机，可以了；连接dongle ，无法通过addr 来获取handle ，导致了无法获取RSSI值，获取 dongle 的RSSI 是不是有其他接口 ？</p>
 <p>bt_cm_get_gap_handle(addr)</p>
 <p>bt_gap_get_handle_by_address(addr)</p>
 <p>这两个接口都无法获取dongle的 handle</p>
 </div>
 <div class="reply even">
-<h3 id="20241108-1527-5">2024/11/08 15:27 — [人名5]<a class="headerlink" href="#20241108-1527-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241108-1527-6">2024/11/08 15:27 — [人名6]<a class="headerlink" href="#20241108-1527-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>那个get handle 是edr 用的，ULL get handle 要用app_ull_dongle_le_get_conn_handle_by_addr 这个哈</p>
 </div>
 <div class="reply odd">
 <h3 id="20241108-1554-2">2024/11/08 15:54 — [人名2]<a class="headerlink" href="#20241108-1554-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5] ,</p>
+<p>Hi [人名6] ,</p>
 <p>这里应该在dongle 端使用的，我无法在headset 的project include app_ull_dongle_le.h 这个头文件。</p>
 </div>
 <div class="reply even">
-<h3 id="20241108-1720-5">2024/11/08 17:20 — [人名5]<a class="headerlink" href="#20241108-1720-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241108-1720-6">2024/11/08 17:20 — [人名6]<a class="headerlink" href="#20241108-1720-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>ULL连上后上报的event中有带handle BT_ULL_EVENT_LE_CONNECTED</p>
 <p>可以把这个handle 存下来用</p>
 </div>
 <div class="reply odd">
 <h3 id="20241108-1756-2">2024/11/08 17:56 — [人名2]<a class="headerlink" href="#20241108-1756-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>试了，会在 {{bt_gap_read_raw_rssi}} 里面发生宕机</p>
 </div>
 <div class="reply even">
 <h3 id="20241108-1758-2">2024/11/08 17:58 — [人名2]<a class="headerlink" href="#20241108-1758-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>SP 根据mac 地址获取到的 handle 是[67267500]，一个比较的值；dongle 连接时保存下来的handl 是1，应该是不同的handle 了，所以发生了预期的宕机；</p>
 </div>
 <div class="reply odd">
 <h3 id="20241111-1024-2">2024/11/11 10:24 — [人名2]<a class="headerlink" href="#20241111-1024-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>这题还有解放方法，客户又来问了🤦‍♂️</p>
 </div>
 <div class="reply even">
 <h3 id="20241111-1559-2">2024/11/11 15:59 — [人名2]<a class="headerlink" href="#20241111-1559-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>如沟通，见附件。</p>
 <p>[图片: PixPin_2024-11-11_15-58-14.png]</p>
 <p>[图片: PixPin_2024-11-11_15-59-06.png]</p>
 <p>[图片: PixPin_2024-11-11_15-57-31.png]</p>
 </div>
 <div class="reply odd">
-<h3 id="20241111-1647-5">2024/11/11 16:47 — [人名5]<a class="headerlink" href="#20241111-1647-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241111-1647-6">2024/11/11 16:47 — [人名6]<a class="headerlink" href="#20241111-1647-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>看起来没什么问题呢，可以参考app 这边的demo codec呢，你那边拿到handle可以打印出来</p>
 <p>[图片: image-2024-11-11-16-47-24-601.png]</p>
 </div>
 <div class="reply even">
 <h3 id="20241111-1734-2">2024/11/11 17:34 — [人名2]<a class="headerlink" href="#20241111-1734-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>还是会宕机，你给出的handle 都是 {{uint16_t}}，但是函数里面要求的是 {{uint32_t}}，但不一定就是类型的问题。</p>
 </div>
 <div class="reply odd">
 <h3 id="20241111-1759-2">2024/11/11 17:59 — [人名2]<a class="headerlink" href="#20241111-1759-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>明天或者后天有时间吗？客户要过去找你搞。🤦‍♂️</p>
 </div>
 <div class="reply even">
-<h3 id="20241112-0930-5">2024/11/12 09:30 — [人名5]<a class="headerlink" href="#20241112-0930-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241112-0930-6">2024/11/12 09:30 — [人名6]<a class="headerlink" href="#20241112-0930-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>如沟通，可以在dongle获取一下rssi，然后发给耳机去调latency</p>
 </div>
 <div class="reply odd">
 <h3 id="20241112-1137-2">2024/11/12 11:37 — [人名2]<a class="headerlink" href="#20241112-1137-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>指导一下dongle 的发送，headset的接收在哪里，还没做过。</p>
 </div>
 <div class="reply even">
-<h3 id="20241112-1152-5">2024/11/12 11:52 — [人名5]<a class="headerlink" href="#20241112-1152-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241112-1152-6">2024/11/12 11:52 — [人名6]<a class="headerlink" href="#20241112-1152-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>举个例子，这是发送的api</p>
 <p>bt_bd_addr_t addr_list =</p>
@@ -559,29 +559,29 @@ tx_data.user_data = buf;
 </div>
 <div class="reply odd">
 <h3 id="20241112-1731-2">2024/11/12 17:31 — [人名2]<a class="headerlink" href="#20241112-1731-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>在dongle 端拿到了RSSI 值，但是dongle 发送msg 给headset 失败了，附件这个if 无法跑进去。</p>
 <p>[图片: PixPin_2024-11-12_17-26-01.png]</p>
 <p>[图片: PixPin_2024-11-12_17-27-11.png]</p>
 </div>
 <div class="reply even">
-<h3 id="20241112-1735-5">2024/11/12 17:35 — [人名5]<a class="headerlink" href="#20241112-1735-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241112-1735-6">2024/11/12 17:35 — [人名6]<a class="headerlink" href="#20241112-1735-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>再app_le_ull_callback这个api 获取呀</p>
 </div>
 <div class="reply odd">
 <h3 id="20241113-1600-2">2024/11/13 16:00 — [人名2]<a class="headerlink" href="#20241113-1600-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>可以通过dongle 获取RSSI 来告诉headset 切换latency了，现在出现了更新latency有个po声，有什么可以添加处理，让po声消失的动作吗？</p>
 </div>
 <div class="reply even">
 <h3 id="20241113-1605-2">2024/11/13 16:05 — [人名2]<a class="headerlink" href="#20241113-1605-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>见附件，我是参考 bt_app_common_apply_ultra_low_latency_retry_count(); 来修改的。</p>
 <p>[图片: PixPin_2024-11-13_16-04-00.png]</p>
 </div>
 <div class="reply odd">
-<h3 id="20241113-1617-5">2024/11/13 16:17 — [人名5]<a class="headerlink" href="#20241113-1617-5" title="Permanent link">&para;</a></h3>
+<h3 id="20241113-1617-6">2024/11/13 16:17 — [人名6]<a class="headerlink" href="#20241113-1617-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>消不掉的，latency切换本来就会有时间差变化，可以用一个VP 把pop声盖住</p>
 </div>

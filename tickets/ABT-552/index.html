@@ -21,7 +21,7 @@
     
     
       
-        <title>【[客户L]】AB1571AM 充电两分钟左右自动停充了 - ABT 工单知识库</title>
+        <title>【[客户P]】AB1571AM 充电两分钟左右自动停充了 - ABT 工单知识库</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#abt-552-lab1571am" class="md-skip">
+        <a href="#abt-552-pab1571am" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              【[客户L]】AB1571AM 充电两分钟左右自动停充了
+              【[客户P]】AB1571AM 充电两分钟左右自动停充了
             
           </span>
         </div>
@@ -354,7 +354,7 @@
   
 
 
-<h1 id="abt-552-lab1571am">ABT-552 【[客户L]】AB1571AM 充电两分钟左右自动停充了<a class="headerlink" href="#abt-552-lab1571am" title="Permanent link">&para;</a></h1>
+<h1 id="abt-552-pab1571am">ABT-552 【[客户P]】AB1571AM 充电两分钟左右自动停充了<a class="headerlink" href="#abt-552-pab1571am" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>📅 2025/05/22 11:23　🔗 <a href="https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-552">原始工单链接</a></p>
 </blockquote>
@@ -362,7 +362,7 @@
 <p><a href="../ABT-551/">← 上一个工单：ABT-551</a>　<a href="../ABT-553/">→ 下一个工单：ABT-553</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>见附件log，是不是有什么保护机制，我看到这个函数被调用了；</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
@@ -373,7 +373,7 @@
 <p>[图片: PixPin_2025-05-22_11-24-16.png]</p>
 </div>
 <div class="reply even">
-<h3 id="20250522-1731-100">2025/05/22 17:31 — [人名100]<a class="headerlink" href="#20250522-1731-100" title="Permanent link">&para;</a></h3>
+<h3 id="20250522-1731-107">2025/05/22 17:31 — [人名107]<a class="headerlink" href="#20250522-1731-107" title="Permanent link">&para;</a></h3>
 <p>hi @[邮箱已隐藏] </p>
 <p>这是一个过充保护机制，充电超过4小时会进入RTC mode停充，但是现在发生了overflow。</p>
 <p>麻烦合入patch再测试看看 [附件: patch 5 (1).diff]</p>
@@ -381,33 +381,33 @@
 </div>
 <div class="reply odd">
 <h3 id="20250529-1128-2">2025/05/29 11:28 — [人名2]<a class="headerlink" href="#20250529-1128-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名100] ([人名100])，</p>
+<p>Hi [人名107] ([人名107])，</p>
 <p>不好意思，当时没有验仔细。</p>
 <p>在充电状态用flash tool 烧录后，看这个充电电流，是不没有进入保护的。如果在开机状态下，给5V充电了，还是跟之前一样进入保护。附件是log；</p>
 <p>[附件: Logging250529_112231_COM41.7z]</p>
 </div>
 <div class="reply even">
-<h3 id="20250529-1433-105">2025/05/29 14:33 — [人名105]<a class="headerlink" href="#20250529-1433-105" title="Permanent link">&para;</a></h3>
+<h3 id="20250529-1433-112">2025/05/29 14:33 — [人名112]<a class="headerlink" href="#20250529-1433-112" title="Permanent link">&para;</a></h3>
 <p>hi @[邮箱已隐藏] ，</p>
 <p>想确认一下，这边使用SDK 的版本是哪一版的？</p>
 </div>
 <div class="reply odd">
 <h3 id="20250529-1439-2">2025/05/29 14:39 — [人名2]<a class="headerlink" href="#20250529-1439-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名105] ([人名105])，</p>
+<p>Hi [人名112] ([人名112])，</p>
 <p>SDK5.5.0</p>
 </div>
 <div class="reply even">
-<h3 id="20250529-1454-105">2025/05/29 14:54 — [人名105]<a class="headerlink" href="#20250529-1454-105" title="Permanent link">&para;</a></h3>
+<h3 id="20250529-1454-112">2025/05/29 14:54 — [人名112]<a class="headerlink" href="#20250529-1454-112" title="Permanent link">&para;</a></h3>
 <p>hi @[邮箱已隐藏] ，</p>
 <p>麻烦合入这个patch试一下，是否还会复现到类似问题。 [附件: patch.diff]</p>
 </div>
 <div class="reply odd">
 <h3 id="20250529-1529-2">2025/05/29 15:29 — [人名2]<a class="headerlink" href="#20250529-1529-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名105] ([人名105])，</p>
+<p>Hi [人名112] ([人名112])，</p>
 <p>我这边测试了OK ，发给客户看看。</p>
 </div>
 <div class="reply even">
-<h3 id="20250529-1538-100">2025/05/29 15:38 — [人名100]<a class="headerlink" href="#20250529-1538-100" title="Permanent link">&para;</a></h3>
+<h3 id="20250529-1538-107">2025/05/29 15:38 — [人名107]<a class="headerlink" href="#20250529-1538-107" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] </p>
 <p>那这边先close了哈，有问题再reopen或者另提jira，谢谢</p>
 </div>

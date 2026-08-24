@@ -21,7 +21,7 @@
     
     
       
-        <title>【[客户O]】AB1577AM SDK5.7.0 动态修改LDAC sample rate(后续) - ABT 工单知识库</title>
+        <title>【[客户S]】AB1577AM SDK5.7.0 动态修改LDAC sample rate(后续) - ABT 工单知识库</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#abt-763-oab1577am-sdk570-ldac-sample-rate" class="md-skip">
+        <a href="#abt-763-sab1577am-sdk570-ldac-sample-rate" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              【[客户O]】AB1577AM SDK5.7.0 动态修改LDAC sample rate(后续)
+              【[客户S]】AB1577AM SDK5.7.0 动态修改LDAC sample rate(后续)
             
           </span>
         </div>
@@ -354,7 +354,7 @@
   
 
 
-<h1 id="abt-763-oab1577am-sdk570-ldac-sample-rate">ABT-763 【[客户O]】AB1577AM SDK5.7.0 动态修改LDAC sample rate(后续)<a class="headerlink" href="#abt-763-oab1577am-sdk570-ldac-sample-rate" title="Permanent link">&para;</a></h1>
+<h1 id="abt-763-sab1577am-sdk570-ldac-sample-rate">ABT-763 【[客户S]】AB1577AM SDK5.7.0 动态修改LDAC sample rate(后续)<a class="headerlink" href="#abt-763-sab1577am-sdk570-ldac-sample-rate" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>📅 2026/07/03 20:19　🔗 <a href="https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-763">原始工单链接</a></p>
 </blockquote>
@@ -375,7 +375,7 @@
 <p>[附件: Logging260703_155551_COM7.zip]</p>
 </div>
 <div class="reply even">
-<h3 id="20260707-1442-80">2026/07/07 14:42 — [人名80]<a class="headerlink" href="#20260707-1442-80" title="Permanent link">&para;</a></h3>
+<h3 id="20260707-1442-86">2026/07/07 14:42 — [人名86]<a class="headerlink" href="#20260707-1442-86" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] 
 宕机是必先的吗？什么场景下打出来的呢？</p>
 </div>
@@ -385,7 +385,7 @@
 <p>宕机的场景在LDAC的情况下，开杜比合MIMI， 比较容易出现，不是必现的。</p>
 </div>
 <div class="reply even">
-<h3 id="20260716-1111-116">2026/07/16 11:11 — [人名116]<a class="headerlink" href="#20260716-1111-116" title="Permanent link">&para;</a></h3>
+<h3 id="20260716-1111-123">2026/07/16 11:11 — [人名123]<a class="headerlink" href="#20260716-1111-123" title="Permanent link">&para;</a></h3>
 <p>hi, @[邮箱已隐藏] </p>
 <p>請使用[附件: MIUIX1565-763_patch_0716.zip]再試試看</p>
 <p>與上次提供的patch不一樣的是這裡，再麻煩將dolby的option開在這</p>
@@ -395,12 +395,12 @@
 </div>
 <div class="reply odd">
 <h3 id="20260720-1025-2">2026/07/20 10:25 — [人名2]<a class="headerlink" href="#20260720-1025-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名116] ([人名116])</p>
+<p>Hi [人名123] ([人名123])</p>
 <p>这版发现采样率好像是有降的。但是如果先打开杜比再播音乐会死机，百分百死机，如果先播音乐再开杜比不会死机，但是还是会很卡很卡。请再帮忙看下。</p>
 <p>[附件: Logging260717_182603_COM20.zip]</p>
 </div>
 <div class="reply even">
-<h3 id="20260724-1134-116">2026/07/24 11:34 — [人名116]<a class="headerlink" href="#20260724-1134-116" title="Permanent link">&para;</a></h3>
+<h3 id="20260724-1134-123">2026/07/24 11:34 — [人名123]<a class="headerlink" href="#20260724-1134-123" title="Permanent link">&para;</a></h3>
 <p>hi, @[邮箱已隐藏] </p>
 <p>有關死機的問題，能幫我跟據上一版提供的patch，在我下方標示的地方(line 1179)先把FUNC_QUEUE_BUFFER關掉試試嗎?
 [图片: image-2026-07-24-11-28-27-327.png]</p>
@@ -410,7 +410,7 @@
 </div>
 <div class="reply odd">
 <h3 id="20260729-1014-2">2026/07/29 10:14 — [人名2]<a class="headerlink" href="#20260729-1014-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名116] ([人名116])</p>
+<p>Hi [人名123] ([人名123])</p>
 <p>附件是还未关掉FUNC_QUEUE_BUFFER先播音乐再开杜比，不会死机的log。以及ch_select_interface.c 是杜比初始化的文件，初始化接口Dolby_lwh_initialize。</p>
 <p>Logging260728_205029_COM6 是关闭FUNC_QUEUE_BUFFER后的log，不会死机了。但是一直断音杂音。</p>
 <p>[附件: ch_select_interface.c]</p>
@@ -419,16 +419,16 @@
 </div>
 <div class="reply even">
 <h3 id="20260803-0951-2">2026/08/03 09:51 — [人名2]<a class="headerlink" href="#20260803-0951-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名116] ([人名116])</p>
+<p>Hi [人名123] ([人名123])</p>
 <p>客户还有问题，请帮继续看看，谢谢。</p>
 </div>
 <div class="reply odd">
 <h3 id="20260805-1458-2">2026/08/05 14:58 — [人名2]<a class="headerlink" href="#20260805-1458-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名116] ([人名116])</p>
+<p>Hi [人名123] ([人名123])</p>
 <p>请帮继续看看，谢谢</p>
 </div>
 <div class="reply even">
-<h3 id="20260806-1015-116">2026/08/06 10:15 — [人名116]<a class="headerlink" href="#20260806-1015-116" title="Permanent link">&para;</a></h3>
+<h3 id="20260806-1015-123">2026/08/06 10:15 — [人名123]<a class="headerlink" href="#20260806-1015-123" title="Permanent link">&para;</a></h3>
 <p>hi, @[邮箱已隐藏] </p>
 <p>我正在檢查log中</p>
 <p>有關還保有queue_buffer的情況下，先開與後開dolby的狀況，請問能用甚麼log來看開dolby的時間點嗎?
@@ -437,25 +437,25 @@
 </div>
 <div class="reply odd">
 <h3 id="20260806-1057-2">2026/08/06 10:57 — [人名2]<a class="headerlink" href="#20260806-1057-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名116] ([人名116]</p>
+<p>Hi [人名123] ([人名123]</p>
 <p>可以过滤“Dolby LWH init”来看杜比相关log。ch_select_interface.c 是杜比初始化的文件。</p>
 <p>[附件: ch_select_interface-1.c]</p>
 </div>
 <div class="reply even">
-<h3 id="20260806-1133-116">2026/08/06 11:33 — [人名116]<a class="headerlink" href="#20260806-1133-116" title="Permanent link">&para;</a></h3>
+<h3 id="20260806-1133-123">2026/08/06 11:33 — [人名123]<a class="headerlink" href="#20260806-1133-123" title="Permanent link">&para;</a></h3>
 <p>hi, @[邮箱已隐藏] </p>
 <p>我知道Dolby LWH init
 我想知道的是你們如何enable dolby，因為你們有提到杜比與音樂開啟的先後順序對測是有不同的影響，表示杜比和音樂是可以分開來啟動，所以我想知道的是你們是否有另外下command來開杜比以及下完這個command後還有沒有其他的初始化?</p>
 </div>
 <div class="reply odd">
 <h3 id="20260806-1149-2">2026/08/06 11:49 — [人名2]<a class="headerlink" href="#20260806-1149-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名116] ([人名116]</p>
+<p>Hi [人名123] ([人名123]</p>
 <p>使能杜比的时候调用的是lwh_enable_set, 这个函数好像封在库了看不到,同时启用杜比的时候会打开传感器，只是设置下寄存器</p>
 <p>[图片: 微信图片_[序列号已隐藏]_12_234.png]</p>
 <p>[图片: 微信图片_[序列号已隐藏]_9_234111.png]</p>
 </div>
 <div class="reply even">
-<h3 id="20260806-1439-116">2026/08/06 14:39 — [人名116]<a class="headerlink" href="#20260806-1439-116" title="Permanent link">&para;</a></h3>
+<h3 id="20260806-1439-123">2026/08/06 14:39 — [人名123]<a class="headerlink" href="#20260806-1439-123" title="Permanent link">&para;</a></h3>
 <p>hi, @[邮箱已隐藏] </p>
 <p>請問這裡你們有改到嗎? (這是之前在<a href="../ABT-729/">ABT-729</a>提供的說明文件)
 要在這裡加入你們判斷是否有開enable dolby的條件，有的話就設定48K，沒有的話就會維持原來的rate，這裡應該是造成聲音斷續的主因</p>
@@ -463,27 +463,27 @@
 </div>
 <div class="reply odd">
 <h3 id="20260806-1454-2">2026/08/06 14:54 — [人名2]<a class="headerlink" href="#20260806-1454-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名116] ([人名116])</p>
+<p>Hi [人名123] ([人名123])</p>
 <p>确认了这部分有修改到的。</p>
 </div>
 <div class="reply even">
-<h3 id="20260806-1717-116">2026/08/06 17:17 — [人名116]<a class="headerlink" href="#20260806-1717-116" title="Permanent link">&para;</a></h3>
+<h3 id="20260806-1717-123">2026/08/06 17:17 — [人名123]<a class="headerlink" href="#20260806-1717-123" title="Permanent link">&para;</a></h3>
 <p>hi, @[邮箱已隐藏] </p>
 <p>由這條Log來看，out sample rate仍然是被設定在96K，表示所以我才有這個疑問的
 [图片: image-2026-08-06-15-32-28-499.png]</p>
 </div>
 <div class="reply odd">
 <h3 id="20260806-1946-2">2026/08/06 19:46 — [人名2]<a class="headerlink" href="#20260806-1946-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名116] ([人名116])</p>
+<p>Hi [人名123] ([人名123])</p>
 <p>第一份log是先播音乐再开杜比,所以是9600</p>
 </div>
 <div class="reply even">
-<h3 id="20260806-2302-116">2026/08/06 23:02 — [人名116]<a class="headerlink" href="#20260806-2302-116" title="Permanent link">&para;</a></h3>
+<h3 id="20260806-2302-123">2026/08/06 23:02 — [人名123]<a class="headerlink" href="#20260806-2302-123" title="Permanent link">&para;</a></h3>
 <p>hi, @[邮箱已隐藏] </p>
 <p>了解，我這裡正在local模擬你的環境，預計下禮拜能再給出一版新的patch</p>
 </div>
 <div class="reply odd">
-<h3 id="20260811-1821-116">2026/08/11 18:21 — [人名116]<a class="headerlink" href="#20260811-1821-116" title="Permanent link">&para;</a></h3>
+<h3 id="20260811-1821-123">2026/08/11 18:21 — [人名123]<a class="headerlink" href="#20260811-1821-123" title="Permanent link">&para;</a></h3>
 <p>hi, @[邮箱已隐藏] </p>
 <p>麻煩將之前的patch退掉，並改使用[附件: MIUIX1565-763_patch_0811.zip]，其中還需要參照[附件: Dolby_sw_src_integration_0811-2.pptx]做點修改
 完成後再麻煩測試看看</p>
@@ -491,7 +491,7 @@
 </div>
 <div class="reply even">
 <h3 id="20260818-1022-2">2026/08/18 10:22 — [人名2]<a class="headerlink" href="#20260818-1022-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名116] ([人名116])</p>
+<p>Hi [人名123] ([人名123])</p>
 <p>集成parth之后还是会死机，无论播不播音乐。</p>
 <p>[附件: Logging260812_143203_USB-HID.zip]</p>
 </div>

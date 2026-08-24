@@ -21,7 +21,7 @@
     
     
       
-        <title>【[客户E]】BIS 连接和播放问题 - ABT 工单知识库</title>
+        <title>【[客户H]】BIS 连接和播放问题 - ABT 工单知识库</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#abt-256-ebis" class="md-skip">
+        <a href="#abt-256-hbis" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              【[客户E]】BIS 连接和播放问题
+              【[客户H]】BIS 连接和播放问题
             
           </span>
         </div>
@@ -354,7 +354,7 @@
   
 
 
-<h1 id="abt-256-ebis">ABT-256 【[客户E]】BIS 连接和播放问题<a class="headerlink" href="#abt-256-ebis" title="Permanent link">&para;</a></h1>
+<h1 id="abt-256-hbis">ABT-256 【[客户H]】BIS 连接和播放问题<a class="headerlink" href="#abt-256-hbis" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>📅 2023/09/18 20:21　🔗 <a href="https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-256">原始工单链接</a></p>
 </blockquote>
@@ -362,7 +362,7 @@
 <p><a href="../ABT-255/">← 上一个工单：ABT-255</a>　<a href="../ABT-257/">→ 下一个工单：ABT-257</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>HI [人名5]，</p>
+<p>HI [人名6]，</p>
 <p>在dongle 上操作了从CIS 切换到BIS，但是如果dongle 连接的电脑没有播放音乐，则dongle 那边一直没有给ind过来提示已连接，播放音乐就有了，就好像silence detect 控制BIS 的广播那样，请帮确认这个现象是否符合预期，已经是否可有画画。</p>
 <p>COM54 dongle 20:13:58 切换到了 BIS，20:14:18 电脑上播放音乐，才出现ind 过来告诉耳机已连接。</p>
 <p>COM56 COM74 左右耳log</p>
@@ -373,17 +373,17 @@
 <p>[附件: LEA-CIS 下切换到BIS，需要等待播放器播放音乐才提示BIS连接.7z]</p>
 </div>
 <div class="reply even">
-<h3 id="20230919-1017-5">2023/09/19 10:17 — [人名5]<a class="headerlink" href="#20230919-1017-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230919-1017-6">2023/09/19 10:17 — [人名6]<a class="headerlink" href="#20230919-1017-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>你们是状态不对切换不了音乐还是咋滴</p>
 </div>
 <div class="reply odd">
 <h3 id="20230919-1046-2">2023/09/19 10:46 — [人名2]<a class="headerlink" href="#20230919-1046-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>问题是提示音，需要出提示音告知当前连接状态。</p>
 </div>
 <div class="reply even">
-<h3 id="20230919-1443-5">2023/09/19 14:43 — [人名5]<a class="headerlink" href="#20230919-1443-5" title="Permanent link">&para;</a></h3>
+<h3 id="20230919-1443-6">2023/09/19 14:43 — [人名6]<a class="headerlink" href="#20230919-1443-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>CIS 切 BIS，dongle只有播音乐才开始broadcast，才会有EVENT_ID_LE_AUDIO_BIS_START_STREAMING event上来表示BIS 播成功了。</p>
 <p>对于耳机来说，耳机是被动的，没有broadcast，耳机也不知道dongle是什么行为。无法指导当前是什么状态</p>

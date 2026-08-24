@@ -362,20 +362,20 @@
 <p><a href="../ABT-572/">← 上一个工单：ABT-572</a>　<a href="../ABT-574/">→ 下一个工单：ABT-574</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>客户终端想做一个功能，利用dongle的双卡，区分媒体音量和聊天音量，调节媒体和聊天的独立音量，headset的 volume control 给到dongle，不是只有一个音量吗？请帮忙看看如何处理</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
-<h3 id="20250624-1342-102">2025/06/24 13:42 — [人名102]<a class="headerlink" href="#20250624-1342-102" title="Permanent link">&para;</a></h3>
-<p>Hi 黄工，</p>
+<h3 id="20250624-1342-109">2025/06/24 13:42 — [人名109]<a class="headerlink" href="#20250624-1342-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名11]，</p>
 <p>需求是在dongle和headset连ULL的情况下，要单独控制spk的DL音量和mic的UL音量对吗？</p>
 <p>如果是针对DL的不同应用设置spk音量，是做不到的哦，因为无法区分当前的应用属于哪个应用，走的都是同一条DL通路。</p>
 <p>这里的媒体音量和聊天音量，媒体对应到音乐声音的DL下行声音，聊天音量对应到连Teams/微信聊天时候的UL上行音量吗？</p>
 </div>
 <div class="reply even">
 <h3 id="20250625-1625-2">2025/06/25 16:25 — [人名2]<a class="headerlink" href="#20250625-1625-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名102] ([人名102])</p>
+<p>Hi [人名109] ([人名109])</p>
 <p>这里的媒体音量和聊天音量，媒体对应到音乐声音的DL下行声音，聊天音量对应到连Teams/微信聊天时候的UL上行音量吗？</p>
 <blockquote>
 <blockquote>
@@ -384,14 +384,14 @@
 </blockquote>
 </div>
 <div class="reply odd">
-<h3 id="20250626-0903-102">2025/06/26 09:03 — [人名102]<a class="headerlink" href="#20250626-0903-102" title="Permanent link">&para;</a></h3>
-<p>Hi 黄工，</p>
+<h3 id="20250626-0903-109">2025/06/26 09:03 — [人名109]<a class="headerlink" href="#20250626-0903-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名11]，</p>
 <p>直接在config tool上修改USB audio默认初始音量，设置区分spk和mic的音量，初始音量设置为不同值，看是否可以满足需求。
  [图片: screenshot-2.png]</p>
 </div>
 <div class="reply even">
 <h3 id="20250626-1154-2">2025/06/26 11:54 — [人名2]<a class="headerlink" href="#20250626-1154-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名102] ([人名102])，</p>
+<p>Hi [人名109] ([人名109])，</p>
 <p>你这里这是默认的level 设置，跟客户要求的不太符合。开机双声卡，开启Teams + 媒体播放器，我在PC 上测试遇到几种情况：</p>
 <p>1 headset 这边音量控制，影响了媒体播放器，没有影响Teams</p>
 <p>2 headset 这边音量控制，同时影响Teams + 媒体播放器，一起加或者一起减</p>
@@ -401,14 +401,14 @@
 <p>[图片: PixPin_2025-06-26_11-53-36.png]</p>
 </div>
 <div class="reply odd">
-<h3 id="20250626-1721-102">2025/06/26 17:21 — [人名102]<a class="headerlink" href="#20250626-1721-102" title="Permanent link">&para;</a></h3>
-<p>Hi 黄工，
+<h3 id="20250626-1721-109">2025/06/26 17:21 — [人名109]<a class="headerlink" href="#20250626-1721-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名11]，
 为避免概念上的混淆，这里先理一下这两张声卡。
 对于SDK而言，有两张声卡：
 Chat：有UL+DL
 Game: 只有DL
 通常情况下，会根据应用选择对应的声卡。
-Team是同时需要有UL+DL的，因此就是对应使用chat这张声卡，对应到你电脑上的显示，是[客户G]那个吧？
+Team是同时需要有UL+DL的，因此就是对应使用chat这张声卡，对应到你电脑上的显示，是[客户K]那个吧？
 音频播放器只需要下行，因此使用game那张声卡。
 这两张声卡的音量(DL)可以单独控制的。</p>
 <p>Headset控制音量的时候，当时如果只有一张声卡在跑，应该就是控制这张声卡的音量，这个是没有问题的对吧？
@@ -417,8 +417,8 @@ Team是同时需要有UL+DL的，因此就是对应使用chat这张声卡，对�
  [图片: screenshot-3.png]</p>
 </div>
 <div class="reply even">
-<h3 id="20250627-1520-102">2025/06/27 15:20 — [人名102]<a class="headerlink" href="#20250627-1520-102" title="Permanent link">&para;</a></h3>
-<p>Hi 黄工，</p>
+<h3 id="20250627-1520-109">2025/06/27 15:20 — [人名109]<a class="headerlink" href="#20250627-1520-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名11]，</p>
 <p>如前面所说明的，音量的部分，headset控制DL音量的时候，是pass音量到dongle端，dongle端发给PC，PC收到之后它会自己决定到底当前要去调哪张声卡（比如，有些PC的做法可能是：Teams属于前面的声卡，媒体播放器属于背景声卡，因此PC可能会调Teams的声卡音量），这个不是我们dongle或者headset端可以决定的。</p>
 <p>请与你们的客户解释说明清楚，如果这题没有其他疑问，这里就关闭这题了。</p>
 </div>

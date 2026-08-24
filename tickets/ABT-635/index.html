@@ -21,7 +21,7 @@
     
     
       
-        <title>【[客户L]】32BIT符号整数溢出 unix计时到2038年到期问题 - ABT 工单知识库</title>
+        <title>【[客户P]】32BIT符号整数溢出 unix计时到2038年到期问题 - ABT 工单知识库</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#abt-635-l32bit-unix2038" class="md-skip">
+        <a href="#abt-635-p32bit-unix2038" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              【[客户L]】32BIT符号整数溢出 unix计时到2038年到期问题
+              【[客户P]】32BIT符号整数溢出 unix计时到2038年到期问题
             
           </span>
         </div>
@@ -354,7 +354,7 @@
   
 
 
-<h1 id="abt-635-l32bit-unix2038">ABT-635 【[客户L]】32BIT符号整数溢出 unix计时到2038年到期问题<a class="headerlink" href="#abt-635-l32bit-unix2038" title="Permanent link">&para;</a></h1>
+<h1 id="abt-635-p32bit-unix2038">ABT-635 【[客户P]】32BIT符号整数溢出 unix计时到2038年到期问题<a class="headerlink" href="#abt-635-p32bit-unix2038" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>📅 2025/11/11 11:25　🔗 <a href="https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-635">原始工单链接</a></p>
 </blockquote>
@@ -362,7 +362,7 @@
 <p><a href="../ABT-634/">← 上一个工单：ABT-634</a>　<a href="../ABT-636/">→ 下一个工单：ABT-636</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>见附件文档，请帮忙回复一下有关这个2038年到期的问题怎么处理？项目使用AB1571AM SDK5.5.0</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
@@ -371,51 +371,51 @@
 <p>[附件: 2038年問題_技術確認質問書_20251010.docx]</p>
 </div>
 <div class="reply even">
-<h3 id="20251111-1612-80">2025/11/11 16:12 — [人名80]<a class="headerlink" href="#20251111-1612-80" title="Permanent link">&para;</a></h3>
+<h3 id="20251111-1612-86">2025/11/11 16:12 — [人名86]<a class="headerlink" href="#20251111-1612-86" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] 
 SDK没有用到这个unix时间，不会有这个2038的问题</p>
 <p>Thanks.</p>
 </div>
 <div class="reply odd">
 <h3 id="20251111-1616-2">2025/11/11 16:16 — [人名2]<a class="headerlink" href="#20251111-1616-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名80]，</p>
+<p>Hi [人名86]，</p>
 <p>如果客户的app做了这部分功能，使用到我们的nvkey 记录Unix 时间，会不会有问题？</p>
 </div>
 <div class="reply even">
-<h3 id="20251111-1622-80">2025/11/11 16:22 — [人名80]<a class="headerlink" href="#20251111-1622-80" title="Permanent link">&para;</a></h3>
+<h3 id="20251111-1622-86">2025/11/11 16:22 — [人名86]<a class="headerlink" href="#20251111-1622-86" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] 
 他要怎么做呢？SDK底层都没有实现</p>
 <p>Thanks.</p>
 </div>
 <div class="reply odd">
 <h3 id="20251111-1852-2">2025/11/11 18:52 — [人名2]<a class="headerlink" href="#20251111-1852-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名80]，</p>
+<p>Hi [人名86]，</p>
 <p>我们的SDK 没有这个“标准时间库”的lib，是这样吗？</p>
 </div>
 <div class="reply even">
-<h3 id="20251112-0952-80">2025/11/12 09:52 — [人名80]<a class="headerlink" href="#20251112-0952-80" title="Permanent link">&para;</a></h3>
+<h3 id="20251112-0952-86">2025/11/12 09:52 — [人名86]<a class="headerlink" href="#20251112-0952-86" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] 
 应该有，但是底层拿到的可能不是正确的RTC时间，客户一定要用吗？是什么case下的什么应用场景呢？</p>
 </div>
 <div class="reply odd">
 <h3 id="20251112-1020-2">2025/11/12 10:20 — [人名2]<a class="headerlink" href="#20251112-1020-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名80] (szciic)，</p>
+<p>Hi [人名86] (szciic)，</p>
 <p>我们过去在其他平台，有这么一个场景，客户做的是睡眠耳机，记录睡眠状态。耳机跟app同步过时间之后，在睡觉之前假定用户把app强制退出，这是耳机就不会跟app连接了。通过G-sensor，记录用户的翻身、起床等情况，待用户起床后再次连接app，把这些记录情况同步给app，会连同发生情况的时间一起同步，在app端显示。</p>
 <p>既然有这个lib，所以这个2038的问题还是会影响，是这样吗？</p>
 </div>
 <div class="reply even">
-<h3 id="20251112-1430-80">2025/11/12 14:30 — [人名80]<a class="headerlink" href="#20251112-1430-80" title="Permanent link">&para;</a></h3>
+<h3 id="20251112-1430-86">2025/11/12 14:30 — [人名86]<a class="headerlink" href="#20251112-1430-86" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] 
 看了一下SDK的time_t是64bit的，应该不会有2038的问题</p>
 <p>Thanks.</p>
 </div>
 <div class="reply odd">
 <h3 id="20251112-1501-2">2025/11/12 15:01 — [人名2]<a class="headerlink" href="#20251112-1501-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名80] (szciic)，</p>
+<p>Hi [人名86] (szciic)，</p>
 <p>具体位置能截图，我给客户参考一下。</p>
 </div>
 <div class="reply even">
-<h3 id="20251112-1503-80">2025/11/12 15:03 — [人名80]<a class="headerlink" href="#20251112-1503-80" title="Permanent link">&para;</a></h3>
+<h3 id="20251112-1503-86">2025/11/12 15:03 — [人名86]<a class="headerlink" href="#20251112-1503-86" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] 
 直接打印出来就行
 [图片: image-2025-11-12-15-02-56-794.png]</p>

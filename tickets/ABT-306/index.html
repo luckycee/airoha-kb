@@ -21,7 +21,7 @@
     
     
       
-        <title>【[客户E]】Pixel 7 连接后的VP提示音错误 - ABT 工单知识库</title>
+        <title>【[客户H]】Pixel 7 连接后的VP提示音错误 - ABT 工单知识库</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#abt-306-epixel-7-vp" class="md-skip">
+        <a href="#abt-306-hpixel-7-vp" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              【[客户E]】Pixel 7 连接后的VP提示音错误
+              【[客户H]】Pixel 7 连接后的VP提示音错误
             
           </span>
         </div>
@@ -354,7 +354,7 @@
   
 
 
-<h1 id="abt-306-epixel-7-vp">ABT-306 【[客户E]】Pixel 7 连接后的VP提示音错误<a class="headerlink" href="#abt-306-epixel-7-vp" title="Permanent link">&para;</a></h1>
+<h1 id="abt-306-hpixel-7-vp">ABT-306 【[客户H]】Pixel 7 连接后的VP提示音错误<a class="headerlink" href="#abt-306-hpixel-7-vp" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>📅 2023/12/15 17:00　🔗 <a href="https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-306">原始工单链接</a></p>
 </blockquote>
@@ -362,7 +362,7 @@
 <p><a href="../ABT-305/">← 上一个工单：ABT-305</a>　<a href="../ABT-307/">→ 下一个工单：ABT-307</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>HI [人名62] ([人名62])，</p>
+<p>HI [人名68] ([人名68])，</p>
 <p>如 <a href="../ABT-272/">ABT-272</a>  2023/12/15 16:39 中沟通，另起一提处理。</p>
 <p>问题描述：</p>
 <p>我在 app_lea_conn_mgr_bt_event_group() 的 BT_GAP_LE_CONNECT_IND 中添加了 LE Audio的提示音(LE audio connected)，BT_GAP_LE_DISCONNECT_IND 也添加了(LE audio disconnect)，在第一连接Google Pixel 7的时候，总会提示 LE audio connected，然后过了十多秒是又提示 LE audio disconnect，实际上我从未在手机界面上开启“LE 音频”，这会导致提示音错误。跟 dongle 连接使用时，提示音正常。</p>
@@ -374,12 +374,12 @@
 <p>[附件: 第一次连接Pixel 7会自动开启LE Audio（16点13分31秒），过了十多秒又断开（16点13分45秒），导致了提示音乱出.7z]</p>
 </div>
 <div class="reply even">
-<h3 id="20231220-1653-61">2023/12/20 16:53 — [人名61]<a class="headerlink" href="#20231220-1653-61" title="Permanent link">&para;</a></h3>
+<h3 id="20231220-1653-67">2023/12/20 16:53 — [人名67]<a class="headerlink" href="#20231220-1653-67" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]</p>
 <p>我在 app_lea_conn_mgr_bt_event_group() 的 BT_GAP_LE_CONNECT_IND 中添加了 LE Audio的提示音(LE audio connected)，BT_GAP_LE_DISCONNECT_IND 也添加了(LE audio disconnect)，在第一连接Google Pixel 7的时候，总会提示 LE audio connected，然后过了十多秒是又提示 LE audio disconnect，实际上我从未在手机界面上开启“LE 音频”，这会导致提示音错误。
  * 这是不对的
  * 因为手机支持LEA dual mode，可能先连接LEA ADV（BT_GAP_LE_CONNECT_IND ），但最后使用EDR，断开LEA link，使得LEA ADV连接断开引起VP。不同手机连接断开LEA时机、Rule还有差别
- * 类比EDR，EDR也不是EDR ACL连接就播放connected VP，而是等EDR encrypted且A2DP/[人名9]P/AVRCP profile任一连接时才播放connected VP
+ * 类比EDR，EDR也不是EDR ACL连接就播放connected VP，而是等EDR encrypted且A2DP/[人名10]P/AVRCP profile任一连接时才播放connected VP
  ** 这样就避免了，EDR ACL连接，但是user不去配对，而误响connected VP等问题
  * 我们SDK 默认是LEA connect、bond、discovery peer services complete后，收到底层LE_SINK_SRV_EVENT_REMOTE_INFO_UPDATE，才播放LEA connection VP。
  * {color:#d04437}建议你恢复SDK默认行为{color}</p>
@@ -389,7 +389,7 @@
 </div>
 <div class="reply odd">
 <h3 id="20231220-1822-2">2023/12/20 18:22 — [人名2]<a class="headerlink" href="#20231220-1822-2" title="Permanent link">&para;</a></h3>
-<p>HI [人名61] ([人名61])，</p>
+<p>HI [人名67] ([人名67])，</p>
 <p>改为原来的逻辑，还是一样的情况，是手机问题？</p>
 <p>[附件: BUG_REPORT.txt]</p>
 <p>[附件: bugreport-panther-UP1A.231105.003-2023-12-20-18-19-51.zip]</p>
@@ -397,7 +397,7 @@
 <p>[附件: log.7z]</p>
 </div>
 <div class="reply even">
-<h3 id="20231220-1832-61">2023/12/20 18:32 — [人名61]<a class="headerlink" href="#20231220-1832-61" title="Permanent link">&para;</a></h3>
+<h3 id="20231220-1832-67">2023/12/20 18:32 — [人名67]<a class="headerlink" href="#20231220-1832-67" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]</p>
 <p>是的，这个手机既连接EDR profile，又connect/bond/discovery LEA，再断开LEA</p>
 <p>6045 2023-12-20 18:15:54.263884 785671 8 [M:apps C:info F: L: ]: [APP_CONN] BT_CM event, [40] phone_conn=1 addr=AC3EB16FB3D6 acl=5-&gt;5 srv=0x0110-&gt;0x0112</p>
@@ -407,12 +407,12 @@
 </div>
 <div class="reply odd">
 <h3 id="20231220-1917-2">2023/12/20 19:17 — [人名2]<a class="headerlink" href="#20231220-1917-2" title="Permanent link">&para;</a></h3>
-<p>HI [人名61] ([人名61])，</p>
+<p>HI [人名67] ([人名67])，</p>
 <p>我手上这个手机是Pixel 7，系统Build 号 UP1A.231105.003，你们QA是否碰到有相似的问题？你们的 Pixel 7 pro 工程版 AP1A.231103.002 会有问题吗？</p>
 <p>[图片: Snipaste_2023-12-20_19-16-53.png]</p>
 </div>
 <div class="reply even">
-<h3 id="20231221-1127-61">2023/12/21 11:27 — [人名61]<a class="headerlink" href="#20231221-1127-61" title="Permanent link">&para;</a></h3>
+<h3 id="20231221-1127-67">2023/12/21 11:27 — [人名67]<a class="headerlink" href="#20231221-1127-67" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]</p>
 <p>pixel 7 pro, Android 14， AP1A.20231103.002</p>
 <p>我们内部测试也是一样，phone连接EDR/LEA，响两次connected VP</p>
@@ -425,7 +425,7 @@
 </div>
 <div class="reply odd">
 <h3 id="20231221-1446-2">2023/12/21 14:46 — [人名2]<a class="headerlink" href="#20231221-1446-2" title="Permanent link">&para;</a></h3>
-<p>HI [人名61] ([人名61])，</p>
+<p>HI [人名67] ([人名67])，</p>
 <p>了解，解释很细致，感谢。</p>
 </div>
 <div class="ticket-nav">

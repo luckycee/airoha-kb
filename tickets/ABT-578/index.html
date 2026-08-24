@@ -21,7 +21,7 @@
     
     
       
-        <title>【[客户L]】FOTA 之后无法重启问题，RTC mode功耗高问题 - ABT 工单知识库</title>
+        <title>【[客户P]】FOTA 之后无法重启问题，RTC mode功耗高问题 - ABT 工单知识库</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#abt-578-lfota-rtc-mode" class="md-skip">
+        <a href="#abt-578-pfota-rtc-mode" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              【[客户L]】FOTA 之后无法重启问题，RTC mode功耗高问题
+              【[客户P]】FOTA 之后无法重启问题，RTC mode功耗高问题
             
           </span>
         </div>
@@ -354,7 +354,7 @@
   
 
 
-<h1 id="abt-578-lfota-rtc-mode">ABT-578 【[客户L]】FOTA 之后无法重启问题，RTC mode功耗高问题<a class="headerlink" href="#abt-578-lfota-rtc-mode" title="Permanent link">&para;</a></h1>
+<h1 id="abt-578-pfota-rtc-mode">ABT-578 【[客户P]】FOTA 之后无法重启问题，RTC mode功耗高问题<a class="headerlink" href="#abt-578-pfota-rtc-mode" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>📅 2025/07/11 16:25　🔗 <a href="https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-578">原始工单链接</a></p>
 </blockquote>
@@ -362,21 +362,21 @@
 <p><a href="../ABT-577/">← 上一个工单：ABT-577</a>　<a href="../ABT-579/">→ 下一个工单：ABT-579</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>在参考 <a href="../ABT-574/">ABT-574</a> 的修改之后，虽然解决了功耗问题，但是引出一个另外一个问题。就是FOTA 结束之后，DUT无法重启开机，长按、充电也无法开机，需要看看这是为什么。</p>
 <p>无法提供log，以为是FOTA后重启的，前面log bin 时间不对，出现都是log error；</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
-<h3 id="20250715-1004-102">2025/07/15 10:04 — [人名102]<a class="headerlink" href="#20250715-1004-102" title="Permanent link">&para;</a></h3>
-<p>Hi 黄工，</p>
+<h3 id="20250715-1004-109">2025/07/15 10:04 — [人名109]<a class="headerlink" href="#20250715-1004-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名11]，</p>
 <p>这里再确认一下，已经有做过实验，直接回退   <a href="../ABT-574/">ABT-574</a> 的修改后，就没有这个   FOTA 之后无法重启   的问题  了对吗？
 当时   <a href="../ABT-574/">ABT-574</a>   的改动仅仅只有一个地方，只是hal_pmu_internal_lp.c中的函数  pmu_press_pk_time  中添加了一个语句。
 pmu_set_register_value_lp(FAST_BUFFER_ENB_ADDR, FAST_BUFFER_ENB_MASK, FAST_BUFFER_ENB_SHIFT, 1);</p>
 </div>
 <div class="reply even">
 <h3 id="20250715-1014-2">2025/07/15 10:14 — [人名2]<a class="headerlink" href="#20250715-1014-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名102] ([人名102])</p>
+<p>Hi [人名109] ([人名109])</p>
 <p>已经有做过实验，直接回退 <a href="../ABT-574/">ABT-574</a> 的修改后，就没有这个 FOTA 之后无法重启 的问题 了对吗？</p>
 <blockquote>
 <blockquote>
@@ -385,13 +385,13 @@ pmu_set_register_value_lp(FAST_BUFFER_ENB_ADDR, FAST_BUFFER_ENB_MASK, FAST_BUFFE
 </blockquote>
 </div>
 <div class="reply odd">
-<h3 id="20250715-1449-102">2025/07/15 14:49 — [人名102]<a class="headerlink" href="#20250715-1449-102" title="Permanent link">&para;</a></h3>
-<p>Hi 黄工，</p>
+<h3 id="20250715-1449-109">2025/07/15 14:49 — [人名109]<a class="headerlink" href="#20250715-1449-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名11]，</p>
 <p>ok，请先回退 <a href="../ABT-574/">ABT-574</a> 的修改。</p>
 </div>
 <div class="reply even">
-<h3 id="20250716-1806-102">2025/07/16 18:06 — [人名102]<a class="headerlink" href="#20250716-1806-102" title="Permanent link">&para;</a></h3>
-<p>Hi 黄工，</p>
+<h3 id="20250716-1806-109">2025/07/16 18:06 — [人名109]<a class="headerlink" href="#20250716-1806-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名11]，</p>
 <p>请提供一下，当前使用的 hal_pmu_internal_lp.c</p>
 </div>
 <div class="reply odd">
@@ -399,8 +399,8 @@ pmu_set_register_value_lp(FAST_BUFFER_ENB_ADDR, FAST_BUFFER_ENB_MASK, FAST_BUFFE
 <p>[附件: hal_pmu_internal_lp.c]</p>
 </div>
 <div class="reply even">
-<h3 id="20250717-1110-102">2025/07/17 11:10 — [人名102]<a class="headerlink" href="#20250717-1110-102" title="Permanent link">&para;</a></h3>
-<p>Hi  黄工，</p>
+<h3 id="20250717-1110-109">2025/07/17 11:10 — [人名109]<a class="headerlink" href="#20250717-1110-109" title="Permanent link">&para;</a></h3>
+<p>Hi  [人名11]，</p>
 <p>有几个地方可以排查一下</p>
 <p>1.   </p>
 <p>当前FW中 {color:#172b4d}PMIC_SHORT_TOUCH_PWR_ON_PROTECTION  是不是1，请修改为0关闭这个后，再看是否加上  <a href="../ABT-574/">ABT-574</a>  也不会导致 发生  {color}FOTA 之后无法重启问题   的问题。</p>
@@ -410,19 +410,19 @@ pmu_set_register_value_lp(FAST_BUFFER_ENB_ADDR, FAST_BUFFER_ENB_MASK, FAST_BUFFE
 <h1 id="define-pmu_press_pk_time-300000-300ms">define PMU_PRESS_PK_TIME 300000 //300ms<a class="headerlink" href="#define-pmu_press_pk_time-300000-300ms" title="Permanent link">&para;</a></h1>
 </div>
 <div class="reply odd">
-<h3 id="20250718-0931-102">2025/07/18 09:31 — [人名102]<a class="headerlink" href="#20250718-0931-102" title="Permanent link">&para;</a></h3>
-<p>Hi  黄工，</p>
+<h3 id="20250718-0931-109">2025/07/18 09:31 — [人名109]<a class="headerlink" href="#20250718-0931-109" title="Permanent link">&para;</a></h3>
+<p>Hi  [人名11]，</p>
 <p>昨天说的2个地方有排查了吗？</p>
 </div>
 <div class="reply even">
 <h3 id="20250718-1018-2">2025/07/18 10:18 — [人名2]<a class="headerlink" href="#20250718-1018-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名102] ([人名102]) </p>
+<p>Hi [人名109] ([人名109]) </p>
 <p>PMIC_SHORT_TOUCH_PWR_ON_PROTECTION  改为1 之后FOTA 后可以reset 开机了，但是会带来另外的问题：断短按会开机，客户要求长按5s开机的；这个值已经修改到很大。</p>
 <p>[图片: PixPin_2025-07-18_10-17-44.png]</p>
 </div>
 <div class="reply odd">
-<h3 id="20250718-1431-102">2025/07/18 14:31 — [人名102]<a class="headerlink" href="#20250718-1431-102" title="Permanent link">&para;</a></h3>
-<p>Hi 黄工，</p>
+<h3 id="20250718-1431-109">2025/07/18 14:31 — [人名109]<a class="headerlink" href="#20250718-1431-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名11]，</p>
 <p>所以之前是没有开启功能 PMIC_SHORT_TOUCH_PWR_ON_PROTECTION，现在是开启了这个功能，这个功能就是防止短按。</p>
 <p>下面这个值请保持默认值就好，不要去调整。</p>
 <p>{color:#1e53a3}#define PMU_PRESS_PK_TIME 300000 //300ms  {color}</p>

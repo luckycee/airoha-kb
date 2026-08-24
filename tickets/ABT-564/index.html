@@ -362,31 +362,31 @@
 <p><a href="../ABT-563/">← 上一个工单：ABT-563</a>　<a href="../ABT-565/">→ 下一个工单：ABT-565</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>客户自己写了DSP的通话算法，他们想减少链路延时？想咨询一下如何做？</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
-<h3 id="20250610-0927-102">2025/06/10 09:27 — [人名102]<a class="headerlink" href="#20250610-0927-102" title="Permanent link">&para;</a></h3>
-<p>Hi 黄工，
+<h3 id="20250610-0927-109">2025/06/10 09:27 — [人名109]<a class="headerlink" href="#20250610-0927-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名11]，
 这题描述得过于简单了。
 这个项目是headset还是earbuds呢？
 这里的延迟具体指的是哪方面，请帮忙详细说明一下，另外就是DSP客制化通话算法那边对于延迟有没有具体的要求，比如多少时间内的延迟是可以接受的。</p>
 </div>
 <div class="reply even">
 <h3 id="20250613-1428-2">2025/06/13 14:28 — [人名2]<a class="headerlink" href="#20250613-1428-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名102] ([人名102])，</p>
+<p>Hi [人名109] ([人名109])，</p>
 <p>延迟控制在10ms以内，mic链路见图。从mic到HP output的延时，不是通话算法，是类似passrhrough的算法。</p>
 <p>[图片: 微信图片_[序列号已隐藏].jpg]</p>
 </div>
 <div class="reply odd">
 <h3 id="20250617-1002-2">2025/06/17 10:02 — [人名2]<a class="headerlink" href="#20250617-1002-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名102] ([人名102])，</p>
+<p>Hi [人名109] ([人名109])，</p>
 <p>这题请优先回复。</p>
 </div>
 <div class="reply even">
-<h3 id="20250617-1706-102">2025/06/17 17:06 — [人名102]<a class="headerlink" href="#20250617-1706-102" title="Permanent link">&para;</a></h3>
-<p>Hi 黄工，</p>
+<h3 id="20250617-1706-109">2025/06/17 17:06 — [人名109]<a class="headerlink" href="#20250617-1706-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名11]，</p>
 <p>微信截图图片中是1585，确认一下，你们现在这个平台就是1585对吗？
 客制化算法中需要用到mic进来的声音进DSP做算法处理，然后再从spk出来。
 现在是需要确认硬件通路上的延时是否在10ms以内，相当于DSP算法那边的要求最大可以接受10ms对吗？
@@ -394,31 +394,31 @@
 </div>
 <div class="reply odd">
 <h3 id="20250617-1709-2">2025/06/17 17:09 — [人名2]<a class="headerlink" href="#20250617-1709-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名102] ([人名102])，</p>
+<p>Hi [人名109] ([人名109])，</p>
 <p>是1585平台，客户预期链路最大可以接受10ms</p>
 </div>
 <div class="reply even">
-<h3 id="20250618-1148-89">2025/06/18 11:48 — [人名89]<a class="headerlink" href="#20250618-1148-89" title="Permanent link">&para;</a></h3>
+<h3 id="20250618-1148-96">2025/06/18 11:48 — [人名96]<a class="headerlink" href="#20250618-1148-96" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>用AP测试mic到HP output的延时是3.004ms。</p>
 <p>[图片: image-2025-06-18-11-47-28-731.png]</p>
 </div>
 <div class="reply odd">
 <h3 id="20250619-1135-2">2025/06/19 11:35 — [人名2]<a class="headerlink" href="#20250619-1135-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名89] ([人名89])，</p>
+<p>Hi [人名96] ([人名96])，</p>
 <p>感谢你的测试，我已经把测试结果提供给客户。并要求他们确定经过算法的延迟是多来再来讨论。</p>
 <p>此外，他们想知道怎么具体修改frame size，想通过减小frame size来降低延时，就是采样进来的mic数据frame size如何修改 ？</p>
 </div>
 <div class="reply even">
-<h3 id="20250623-0916-102">2025/06/23 09:16 — [人名102]<a class="headerlink" href="#20250623-0916-102" title="Permanent link">&para;</a></h3>
-<p>Hi 黄工，</p>
+<h3 id="20250623-0916-109">2025/06/23 09:16 — [人名109]<a class="headerlink" href="#20250623-0916-109" title="Permanent link">&para;</a></h3>
+<p>Hi [人名11]，</p>
 <p>确认一下，到时候你们将会使用哪个API来操作呢？
 本身的loopback纯粹是硬件行为，只是声音从mic进来再从spk出来，并没有进DSP。
 而你们的操作是进DSP算法处理后再出来的，是走record那一路吗？</p>
 </div>
 <div class="reply odd">
 <h3 id="20250623-1110-2">2025/06/23 11:10 — [人名2]<a class="headerlink" href="#20250623-1110-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名102] ([人名102])</p>
+<p>Hi [人名109] ([人名109])</p>
 <p>我已经要求何况，计算经过算法之后延时，先把这部分确定了，再来看硬件端。问题先关闭，有问题再提。</p>
 </div>
 <div class="ticket-nav">

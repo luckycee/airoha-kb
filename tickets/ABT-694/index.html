@@ -21,7 +21,7 @@
     
     
       
-        <title>【[客户O]】手动选择 USB audio - ABT 工单知识库</title>
+        <title>【[客户S]】手动选择 USB audio - ABT 工单知识库</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#abt-694-o-usb-audio" class="md-skip">
+        <a href="#abt-694-s-usb-audio" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              【[客户O]】手动选择 USB audio
+              【[客户S]】手动选择 USB audio
             
           </span>
         </div>
@@ -354,7 +354,7 @@
   
 
 
-<h1 id="abt-694-o-usb-audio">ABT-694 【[客户O]】手动选择 USB audio<a class="headerlink" href="#abt-694-o-usb-audio" title="Permanent link">&para;</a></h1>
+<h1 id="abt-694-s-usb-audio">ABT-694 【[客户S]】手动选择 USB audio<a class="headerlink" href="#abt-694-s-usb-audio" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>📅 2026/01/14 15:52　🔗 <a href="https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-694">原始工单链接</a></p>
 </blockquote>
@@ -362,27 +362,27 @@
 <p><a href="../ABT-693/">← 上一个工单：ABT-693</a>　<a href="../ABT-695/">→ 下一个工单：ABT-695</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>他们客户想要手动选择USB audio开启和关闭，具体场景下是：</p>
 <p>USB 接到电脑上，不自动开启，需要有一个自定义按键，比如说双击，才能接入USB audio；再双击则关闭USB audio，回到经典蓝牙状态；</p>
 <p>想法就是在BT source 和USB audio source 之间切换，请看看有没有这样的接口。之前的<a href="../ABT-679/">ABT-679</a> 提供的接口可以暂停USB audio，但是不是客户想要的；请帮忙再看看。</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
-<h3 id="20260116-1416-91">2026/01/16 14:16 — [人名91]<a class="headerlink" href="#20260116-1416-91" title="Permanent link">&para;</a></h3>
+<h3 id="20260116-1416-98">2026/01/16 14:16 — [人名98]<a class="headerlink" href="#20260116-1416-98" title="Permanent link">&para;</a></h3>
 <p>hi @[邮箱已隐藏] </p>
 <p>参考下面的code实现你们的方式呢。逻辑大概为你们要切换的时候call下这个api，他会trigger一次强制调度，调度的时候根据USB的选择情况以及实际情况判断要选择USB还是不选择。请根据reference code实作你们的逻辑或是进一步提出更细节的如场景切换等UI让我更新逻辑，记得自己实现的话务必加上你们的log，这样后面有issue分析的时候可以判断情况</p>
 <p>[图片: image-2026-01-16-14-14-58-818.png]</p>
 </div>
 <div class="reply even">
 <h3 id="20260119-1716-2">2026/01/19 17:16 — [人名2]<a class="headerlink" href="#20260119-1716-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名91] ([人名91])，</p>
+<p>Hi [人名98] ([人名98])，</p>
 <p>上周给的代码没有作用；</p>
 <p>[图片: 微信图片_[序列号已隐藏]_300_1618.png]</p>
 <p>[附件: Logging260119_171236_COM6.7z]</p>
 </div>
 <div class="reply odd">
-<h3 id="20260119-1728-91">2026/01/19 17:28 — [人名91]<a class="headerlink" href="#20260119-1728-91" title="Permanent link">&para;</a></h3>
+<h3 id="20260119-1728-98">2026/01/19 17:28 — [人名98]<a class="headerlink" href="#20260119-1728-98" title="Permanent link">&para;</a></h3>
 <p>HI @[邮箱已隐藏] </p>
 <p>请问是哪个需求没有实现呢？或者你们可能需要列下scenario，让我理解里面的UI design</p>
 <p>目前的patch实现是</p>
@@ -393,26 +393,26 @@
 </div>
 <div class="reply even">
 <h3 id="20260119-1759-2">2026/01/19 17:59 — [人名2]<a class="headerlink" href="#20260119-1759-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名91] ([人名91])，</p>
+<p>Hi [人名98] ([人名98])，</p>
 <p>目前提供的API，还是在控制音量的阶段。</p>
 <p>客户的双击，切换蓝牙和USB audio。当前在蓝牙，双击后电脑才能识别USB；当前在USB，双击后即使USB接到电脑上，也需要跟USB 拔出来的效果一样，电脑不能再识别到USB 。</p>
 <p>[图片: 微信图片_[序列号已隐藏]_311_1618.png]</p>
 </div>
 <div class="reply odd">
-<h3 id="20260119-1842-91">2026/01/19 18:42 — [人名91]<a class="headerlink" href="#20260119-1842-91" title="Permanent link">&para;</a></h3>
+<h3 id="20260119-1842-98">2026/01/19 18:42 — [人名98]<a class="headerlink" href="#20260119-1842-98" title="Permanent link">&para;</a></h3>
 <p>hi @[邮箱已隐藏] </p>
 <p>所以你们是双击enable/disable USB driver...，并不是audio上面的控制...，那USB枚举后的UI有要求嘛？SDK在有USB Audio的情况下默认是call &gt; aux &gt; usb &gt; music</p>
 </div>
 <div class="reply even">
 <h3 id="20260120-1207-2">2026/01/20 12:07 — [人名2]<a class="headerlink" href="#20260120-1207-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名91] ([人名91])，</p>
+<p>Hi [人名98] ([人名98])，</p>
 <p>下面是整理客户的UI要求</p>
 <h1 id="usbbtbtusbusbpower-key">接入USB时，BT播放音乐/来电/通话，切换到BT，关闭USB枚举；转到USB，需要power key 重新单击。<a class="headerlink" href="#usbbtbtusbusbpower-key" title="Permanent link">&para;</a></h1>
 <h1 id="bt-usbbtusb">在BT 时，接入USB，保持在BT，不需要USB 枚举 ；<a class="headerlink" href="#bt-usbbtusb" title="Permanent link">&para;</a></h1>
 <h1 id="bt-usbpower-key">在BT 时，未接入USB，power key 单击无动作;<a class="headerlink" href="#bt-usbpower-key" title="Permanent link">&para;</a></h1>
 </div>
 <div class="reply odd">
-<h3 id="20260120-1508-80">2026/01/20 15:08 — [人名80]<a class="headerlink" href="#20260120-1508-80" title="Permanent link">&para;</a></h3>
+<h3 id="20260120-1508-86">2026/01/20 15:08 — [人名86]<a class="headerlink" href="#20260120-1508-86" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] </p>
 <p>先提供一个方案给你们测试看符不符合你们的预期：
 1.在对应的apps_customer_config.h把default的USB mode改为HID，即插入usb进入hid mode
@@ -425,7 +425,7 @@
 </div>
 <div class="reply even">
 <h3 id="20260123-1021-2">2026/01/23 10:21 — [人名2]<a class="headerlink" href="#20260123-1021-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名80] (szciic)，</p>
+<p>Hi [人名86] (szciic)，</p>
 <p>有不预期的行为，稍晚提供log</p>
 </div>
 <div class="reply odd">
@@ -434,37 +434,37 @@
 <p>[附件: Logging260123_102048_COM6.7z]</p>
 </div>
 <div class="reply even">
-<h3 id="20260123-1444-80">2026/01/23 14:44 — [人名80]<a class="headerlink" href="#20260123-1444-80" title="Permanent link">&para;</a></h3>
+<h3 id="20260123-1444-86">2026/01/23 14:44 — [人名86]<a class="headerlink" href="#20260123-1444-86" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] 
 这个是符合预期的，USB的开关就是会重启，然后重新枚举，不然跟PC的交互会有IOT问题，你们可以把VP去掉，重启应该不影响其他东西呀</p>
 <p>Thanks.</p>
 </div>
 <div class="reply odd">
 <h3 id="20260123-1515-2">2026/01/23 15:15 — [人名2]<a class="headerlink" href="#20260123-1515-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名80] (szciic),</p>
+<p>Hi [人名86] (szciic),</p>
 <p>了解。</p>
 </div>
 <div class="reply even">
 <h3 id="20260123-1521-2">2026/01/23 15:21 — [人名2]<a class="headerlink" href="#20260123-1521-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名80] (szciic),</p>
+<p>Hi [人名86] (szciic),</p>
 <p>重启会看到经典蓝牙回连。如果有App在，也能看到BLE断开；</p>
 </div>
 <div class="reply odd">
-<h3 id="20260123-1732-80">2026/01/23 17:32 — [人名80]<a class="headerlink" href="#20260123-1732-80" title="Permanent link">&para;</a></h3>
+<h3 id="20260123-1732-86">2026/01/23 17:32 — [人名86]<a class="headerlink" href="#20260123-1732-86" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] 
 上面提供的只是usb audio的切换方法，BT还需要你们继续客制化，可以在BT开的地方加个判断，当usb mode是IOT mode的时候不开BT
 !image-2026-01-23-17-31-52-254.png|width=704,height=184!</p>
 </div>
 <div class="reply even">
-<h3 id="20260127-1126-80">2026/01/27 11:26 — [人名80]<a class="headerlink" href="#20260127-1126-80" title="Permanent link">&para;</a></h3>
+<h3 id="20260127-1126-86">2026/01/27 11:26 — [人名86]<a class="headerlink" href="#20260127-1126-86" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] 
 请问这题验证OK吗？如果没有其它疑问，将在今天关闭Jira</p>
 <p>Thanks.</p>
 </div>
 <div class="reply odd">
 <h3 id="20260127-1131-2">2026/01/27 11:31 — [人名2]<a class="headerlink" href="#20260127-1131-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名80] (szciic)，</p>
-<p>好的，可以关闭，[客户O]那边需要拿到客户的样机再定UI，到时候有需要会另起一题。感谢。</p>
+<p>Hi [人名86] (szciic)，</p>
+<p>好的，可以关闭，[客户S]那边需要拿到客户的样机再定UI，到时候有需要会另起一题。感谢。</p>
 </div>
 <div class="ticket-nav">
 <p><a href="../ABT-693/">← 上一个工单：ABT-693</a>　<a href="../ABT-695/">→ 下一个工单：ABT-695</a></p>

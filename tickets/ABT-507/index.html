@@ -362,7 +362,7 @@
 <p><a href="../ABT-506/">← 上一个工单：ABT-506</a>　<a href="../ABT-508/">→ 下一个工单：ABT-508</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>请看一下如何在一条执行下，擦除两段不同的地址区域。我这边写的指令虽然显示done ，但只执行了后一个 -f 的内容，前面的 -f 没有执行；</p>
 <p>erase [ROM_ROFS + ROM_RTOS] </p>
 <p>CODA.exe --UART COM17 -f --erase_addr 0x0845F000 --erase_len 0x41FFF -f --erase_addr 0x08133000 --erase_len 0x187B53</p>
@@ -374,12 +374,12 @@
 <p>[附件: slot1_250217_150357_p7316.txt]</p>
 </div>
 <div class="reply even">
-<h3 id="20250217-1602-5">2025/02/17 16:02 — [人名5]<a class="headerlink" href="#20250217-1602-5" title="Permanent link">&para;</a></h3>
-<p>Hi @[人名97] 哥，</p>
+<h3 id="20250217-1602-6">2025/02/17 16:02 — [人名6]<a class="headerlink" href="#20250217-1602-6" title="Permanent link">&para;</a></h3>
+<p>Hi @[人名104] 哥，</p>
 <p>麻烦指导下客户coda的使用哈~</p>
 </div>
 <div class="reply odd">
-<h3 id="20250217-1728-46">2025/02/17 17:28 — [人名46]<a class="headerlink" href="#20250217-1728-46" title="Permanent link">&para;</a></h3>
+<h3 id="20250217-1728-51">2025/02/17 17:28 — [人名51]<a class="headerlink" href="#20250217-1728-51" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] </p>
 <p>請問你erase 完成之後， 就要燒新的FW 嗎 ?</p>
 <p>如果是， 那直接用燒錄的就可以</p>
@@ -388,7 +388,7 @@
 </div>
 <div class="reply even">
 <h3 id="20250217-1809-2">2025/02/17 18:09 — [人名2]<a class="headerlink" href="#20250217-1809-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名46] ([人名46])，</p>
+<p>Hi [人名51] ([人名51])，</p>
 <p>請問你erase 完成之後， 就要燒新的FW 嗎 ?</p>
 <blockquote>
 <blockquote>
@@ -399,7 +399,7 @@
 <p>如何用一条执行下，擦除两段不同的地址区域？</p>
 </div>
 <div class="reply odd">
-<h3 id="20250217-1818-46">2025/02/17 18:18 — [人名46]<a class="headerlink" href="#20250217-1818-46" title="Permanent link">&para;</a></h3>
+<h3 id="20250217-1818-51">2025/02/17 18:18 — [人名51]<a class="headerlink" href="#20250217-1818-51" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] </p>
 <p>那請你直接改 .cfg </p>
 <p>就會直接erase 掉  .cfg 裡面的 區段  ,  並且燒錄 .cfg 指定的 bin file </p>
@@ -408,12 +408,12 @@
 </div>
 <div class="reply even">
 <h3 id="20250217-1838-2">2025/02/17 18:38 — [人名2]<a class="headerlink" href="#20250217-1838-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名46] ([人名46])，</p>
+<p>Hi [人名51] ([人名51])，</p>
 <p>在 tool 上面我看到 erase 的绿色进度条在跑，但是在 log 中没有看到 erase 相关log；这是为什么？</p>
 <p>[附件: slot0_250217_163218_p2100.txt]</p>
 </div>
 <div class="reply odd">
-<h3 id="20250217-1842-46">2025/02/17 18:42 — [人名46]<a class="headerlink" href="#20250217-1842-46" title="Permanent link">&para;</a></h3>
+<h3 id="20250217-1842-51">2025/02/17 18:42 — [人名51]<a class="headerlink" href="#20250217-1842-51" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] </p>
 <p>flash 特性，就是 寫入前 一定需要erase </p>
 <p>所以 tool 一定會erase ,  你可以看到很多類似的log</p>

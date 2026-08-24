@@ -362,66 +362,66 @@
 <p><a href="../ABT-126/">← 上一个工单：ABT-126</a>　<a href="../ABT-128/">→ 下一个工单：ABT-128</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5],</p>
+<p>Hi [人名6],</p>
 <p>如在 <a href="../ABT-67/">ABT-67</a> 要求的，请提供相应的 patch，[客户A]那边硬件ready了，需要我这边提供软件；</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
-<h3 id="20221212-1028-5">2022/12/12 10:28 — [人名5]<a class="headerlink" href="#20221212-1028-5" title="Permanent link">&para;</a></h3>
+<h3 id="20221212-1028-6">2022/12/12 10:28 — [人名6]<a class="headerlink" href="#20221212-1028-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>之前你们不是按<a href="../ABT-85/">ABT-85</a>的改法修改了吗</p>
 </div>
 <div class="reply even">
 <h3 id="20221212-1037-2">2022/12/12 10:37 — [人名2]<a class="headerlink" href="#20221212-1037-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>在 <a href="../ABT-67/">ABT-67</a> 要求的是，即使没有播放时，也要出0信号，需要修改lib；
 在 <a href="../ABT-85/">ABT-85</a> 要求的是，零信号时，也要有提示音。这里通过接口可以实现；</p>
 </div>
 <div class="reply odd">
-<h3 id="20221213-1758-5">2022/12/13 17:58 — [人名5]<a class="headerlink" href="#20221213-1758-5" title="Permanent link">&para;</a></h3>
+<h3 id="20221213-1758-6">2022/12/13 17:58 — [人名6]<a class="headerlink" href="#20221213-1758-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>麻烦替换附件patch试试
 [附件: hal_audio_dsp_controller (2).c] [附件: hal_audio_control (2).c]</p>
 </div>
 <div class="reply even">
 <h3 id="20221214-1117-2">2022/12/14 11:17 — [人名2]<a class="headerlink" href="#20221214-1117-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>编译结束，烧录到板子上无法开机，无法抓log；</p>
 </div>
 <div class="reply odd">
-<h3 id="20221214-1144-5">2022/12/14 11:44 — [人名5]<a class="headerlink" href="#20221214-1144-5" title="Permanent link">&para;</a></h3>
+<h3 id="20221214-1144-6">2022/12/14 11:44 — [人名6]<a class="headerlink" href="#20221214-1144-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>不好意思，这版本是V3.3.0的，麻烦这两个文件对比一下V3.3.0的，然后吧修改merge进V3.4.0</p>
 </div>
 <div class="reply even">
 <h3 id="20221214-1214-2">2022/12/14 12:14 — [人名2]<a class="headerlink" href="#20221214-1214-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>你对比一下，两个C文件应该是V3.4.0的内容；跟V3.3.0 对比，怎么都感觉不对。</p>
 </div>
 <div class="reply odd">
 <h3 id="20221216-1432-2">2022/12/16 14:32 — [人名2]<a class="headerlink" href="#20221216-1432-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>这题有更新吗？</p>
 </div>
 <div class="reply even">
-<h3 id="20221216-1626-5">2022/12/16 16:26 — [人名5]<a class="headerlink" href="#20221216-1626-5" title="Permanent link">&para;</a></h3>
+<h3 id="20221216-1626-6">2022/12/16 16:26 — [人名6]<a class="headerlink" href="#20221216-1626-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏],</p>
 <p>麻烦帮忙替换附件patch，hal_audio_control.c還是要換喔
 [附件: hal_audio_dsp_controller (1).c]</p>
 </div>
 <div class="reply odd">
 <h3 id="20221216-1825-2">2022/12/16 18:25 — [人名2]<a class="headerlink" href="#20221216-1825-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>按照文档，两个.c 文件都修改了，这次没有死机，但是只有power on 的VP 有信号，connected 的vp还有播放音乐都没有信号出了；</p>
 <p>[附件: 只有power_on 的vp出了信号，其他vp和播放音乐，没有信号.pcapng]</p>
 </div>
 <div class="reply even">
 <h3 id="20221222-1126-2">2022/12/22 11:26 — [人名2]<a class="headerlink" href="#20221222-1126-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>这题有解吗？</p>
 </div>
 <div class="reply odd">
-<h3 id="20221229-1645-5">2022/12/29 16:45 — [人名5]<a class="headerlink" href="#20221229-1645-5" title="Permanent link">&para;</a></h3>
+<h3 id="20221229-1645-6">2022/12/29 16:45 — [人名6]<a class="headerlink" href="#20221229-1645-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>mcu/dsp這option要開</p>
 <p>AIR_DOWNLINK_RATE = 48k</p>
@@ -429,29 +429,29 @@
 </div>
 <div class="reply even">
 <h3 id="20221230-1040-2">2022/12/30 10:40 — [人名2]<a class="headerlink" href="#20221230-1040-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
-<p>fason 一样的记过，只有power on 这个vp，后面的vp和音乐都没有了</p>
+<p>Hi [人名6]，</p>
+<p>[人名6] 一样的记过，只有power on 这个vp，后面的vp和音乐都没有了</p>
 </div>
 <div class="reply odd">
-<h3 id="20221230-1042-5">2022/12/30 10:42 — [人名5]<a class="headerlink" href="#20221230-1042-5" title="Permanent link">&para;</a></h3>
+<h3 id="20221230-1042-6">2022/12/30 10:42 — [人名6]<a class="headerlink" href="#20221230-1042-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>麻烦提供一下log</p>
 </div>
 <div class="reply even">
 <h3 id="20221230-1053-2">2022/12/30 10:53 — [人名2]<a class="headerlink" href="#20221230-1053-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>见附件</p>
 <p>[附件: I2S log.pcapng]</p>
 </div>
 <div class="reply odd">
-<h3 id="20221230-1431-5">2022/12/30 14:31 — [人名5]<a class="headerlink" href="#20221230-1431-5" title="Permanent link">&para;</a></h3>
+<h3 id="20221230-1431-6">2022/12/30 14:31 — [人名6]<a class="headerlink" href="#20221230-1431-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>麻烦替换附件patch试试
 [附件: hal_audio_control (3).c]</p>
 </div>
 <div class="reply even">
 <h3 id="20230104-1036-2">2023/01/04 10:36 — [人名2]<a class="headerlink" href="#20230104-1036-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>昨天到客户公司，沟通得知他们找了另外的方法解决pop 声，已经不用添加此功能了，感谢支持。</p>
 </div>
 <div class="ticket-nav">

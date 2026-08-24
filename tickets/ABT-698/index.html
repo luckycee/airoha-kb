@@ -21,7 +21,7 @@
     
     
       
-        <title>【[客户O]】Dolby DAW算法遇到杂音问题（后续） - ABT 工单知识库</title>
+        <title>【[客户S]】Dolby DAW算法遇到杂音问题（后续） - ABT 工单知识库</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#abt-698-odolby-daw" class="md-skip">
+        <a href="#abt-698-sdolby-daw" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              【[客户O]】Dolby DAW算法遇到杂音问题（后续）
+              【[客户S]】Dolby DAW算法遇到杂音问题（后续）
             
           </span>
         </div>
@@ -354,7 +354,7 @@
   
 
 
-<h1 id="abt-698-odolby-daw">ABT-698 【[客户O]】Dolby DAW算法遇到杂音问题（后续）<a class="headerlink" href="#abt-698-odolby-daw" title="Permanent link">&para;</a></h1>
+<h1 id="abt-698-sdolby-daw">ABT-698 【[客户S]】Dolby DAW算法遇到杂音问题（后续）<a class="headerlink" href="#abt-698-sdolby-daw" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>📅 2026/01/27 10:22　🔗 <a href="https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-698">原始工单链接</a></p>
 </blockquote>
@@ -362,7 +362,7 @@
 <p><a href="../ABT-697/">← 上一个工单：ABT-697</a>　<a href="../ABT-699/">→ 下一个工单：ABT-699</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>在 <a href="../ABT-691/">ABT-691</a> 中咨询过有关修改frame size的问题，现在客户那边还是有问题，请帮忙继续看看。</p>
 <p>提供的代码和ab1577SDK5.7.0的”framesize_adjustor_interface.h”不一样，所以那个代码这边无法直接移植。</p>
 <p>但按照提供的pdf的指引对USB audio stream做了处理，但出现死机。</p>
@@ -378,11 +378,11 @@
 </div>
 <div class="reply even">
 <h3 id="20260129-2206-2">2026/01/29 22:06 — [人名2]<a class="headerlink" href="#20260129-2206-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>这题有继续帮忙看看吗？</p>
 </div>
 <div class="reply odd">
-<h3 id="20260130-1152-9">2026/01/30 11:52 — [人名9]<a class="headerlink" href="#20260130-1152-9" title="Permanent link">&para;</a></h3>
+<h3 id="20260130-1152-10">2026/01/30 11:52 — [人名10]<a class="headerlink" href="#20260130-1152-10" title="Permanent link">&para;</a></h3>
 <p>Hi Sir</p>
 <p>feature 要的working buffer小了， AAC frame size是1K。</p>
 <p>你的framesize_adjustor_interface.c/framesize_adjustor_interface.h 放上来。 </p>
@@ -390,59 +390,59 @@
 </div>
 <div class="reply even">
 <h3 id="20260130-1311-2">2026/01/30 13:11 — [人名2]<a class="headerlink" href="#20260130-1311-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名9] ([人名9])，</p>
+<p>Hi [人名10] ([人名10])，</p>
 <p>SDK是5.7.0, 附件就有这两个文件。</p>
 <p>[附件: frame_size_adj-1.7z]</p>
 </div>
 <div class="reply odd">
-<h3 id="20260202-1157-9">2026/02/02 11:57 — [人名9]<a class="headerlink" href="#20260202-1157-9" title="Permanent link">&para;</a></h3>
+<h3 id="20260202-1157-10">2026/02/02 11:57 — [人名10]<a class="headerlink" href="#20260202-1157-10" title="Permanent link">&para;</a></h3>
 <p>Hi  Sir</p>
 <p>请把这里的代码换一下试试</p>
 <p>[图片: image-2026-02-02-11-57-02-615.png]</p>
 </div>
 <div class="reply even">
 <h3 id="20260202-1409-2">2026/02/02 14:09 — [人名2]<a class="headerlink" href="#20260202-1409-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名9] ([人名9])，</p>
+<p>Hi [人名10] ([人名10])，</p>
 <p>修改了，现在播放没有死机，但还是很大噪声。</p>
 <p>附件是修改前后的代码和log。</p>
 <p>[附件: frame_size_adj-2.7z]</p>
 <p>[附件: Logging260202_133226_COM4.7z]</p>
 </div>
 <div class="reply odd">
-<h3 id="20260202-1524-9">2026/02/02 15:24 — [人名9]<a class="headerlink" href="#20260202-1524-9" title="Permanent link">&para;</a></h3>
+<h3 id="20260202-1524-10">2026/02/02 15:24 — [人名10]<a class="headerlink" href="#20260202-1524-10" title="Permanent link">&para;</a></h3>
 <p>现在算法里看到是多少sample一帧？</p>
 </div>
 <div class="reply even">
 <h3 id="20260202-1608-2">2026/02/02 16:08 — [人名2]<a class="headerlink" href="#20260202-1608-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名9] ([人名9])，</p>
+<p>Hi [人名10] ([人名10])，</p>
 <p>还是144 samples，没有变成256 samples。</p>
 </div>
 <div class="reply odd">
-<h3 id="20260202-1746-9">2026/02/02 17:46 — [人名9]<a class="headerlink" href="#20260202-1746-9" title="Permanent link">&para;</a></h3>
+<h3 id="20260202-1746-10">2026/02/02 17:46 — [人名10]<a class="headerlink" href="#20260202-1746-10" title="Permanent link">&para;</a></h3>
 <p>你跑的是use wired audio，你怎么确定是144byte 一帧</p>
 </div>
 <div class="reply even">
-<h3 id="20260202-1746-9_1">2026/02/02 17:46 — [人名9]<a class="headerlink" href="#20260202-1746-9_1" title="Permanent link">&para;</a></h3>
+<h3 id="20260202-1746-10_1">2026/02/02 17:46 — [人名10]<a class="headerlink" href="#20260202-1746-10_1" title="Permanent link">&para;</a></h3>
 <p>[图片: image-2026-02-02-17-46-46-905.png]</p>
 </div>
 <div class="reply odd">
 <h3 id="20260202-1828-2">2026/02/02 18:28 — [人名2]<a class="headerlink" href="#20260202-1828-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名9] ([人名9])，</p>
+<p>Hi [人名10] ([人名10])，</p>
 <p>客户在杜比算法里面设置了log，打印看的</p>
 <p>[附件: code.txt]</p>
 </div>
 <div class="reply even">
-<h3 id="20260203-1815-9">2026/02/03 18:15 — [人名9]<a class="headerlink" href="#20260203-1815-9" title="Permanent link">&para;</a></h3>
+<h3 id="20260203-1815-10">2026/02/03 18:15 — [人名10]<a class="headerlink" href="#20260203-1815-10" title="Permanent link">&para;</a></h3>
 <p>看起来Frame adjust吃的不应该是144喔， usb audio 应该是192 byte一帧</p>
 <p>[图片: image-2026-02-03-18-15-22-886.png]</p>
 </div>
 <div class="reply odd">
-<h3 id="20260203-1824-9">2026/02/03 18:24 — [人名9]<a class="headerlink" href="#20260203-1824-9" title="Permanent link">&para;</a></h3>
+<h3 id="20260203-1824-10">2026/02/03 18:24 — [人名10]<a class="headerlink" href="#20260203-1824-10" title="Permanent link">&para;</a></h3>
 <p>另外你demo code才能的是A2DP的参数设定，这不适合在usb audio</p>
 </div>
 <div class="reply even">
 <h3 id="20260204-1015-2">2026/02/04 10:15 — [人名2]<a class="headerlink" href="#20260204-1015-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名9] ([人名9])，</p>
+<p>Hi [人名10] ([人名10])，</p>
 <p>如果这几个函数只用于A2DP：</p>
 <p>{noformat}stream_samplerate_t sampling_rate = stream_function_get_samplingrate(para);</p>
 <p>U16 Length     = (U16)stream_function_get_output_size(para);</p>
@@ -451,13 +451,13 @@
 <p>Dolby算法需要用到这几个参数。</p>
 </div>
 <div class="reply odd">
-<h3 id="20260204-1439-9">2026/02/04 14:39 — [人名9]<a class="headerlink" href="#20260204-1439-9" title="Permanent link">&para;</a></h3>
+<h3 id="20260204-1439-10">2026/02/04 14:39 — [人名10]<a class="headerlink" href="#20260204-1439-10" title="Permanent link">&para;</a></h3>
 <p>不要其他，你首先得搞定USB scenario：</p>
 <p>[图片: image-2026-02-04-14-39-06-958.png]</p>
 </div>
 <div class="reply even">
 <h3 id="20260204-1558-2">2026/02/04 15:58 — [人名2]<a class="headerlink" href="#20260204-1558-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名9] ([人名9])，</p>
+<p>Hi [人名10] ([人名10])，</p>
 <p>修改为192.</p>
 <p>{noformat}     buffer_config.total_channels = 2;</p>
 <pre><code> buffer_config.trustInitParam = FALSE;
@@ -475,26 +475,26 @@
 <p>[图片: image002(02-04-15-55-51).png]</p>
 </div>
 <div class="reply odd">
-<h3 id="20260204-1846-9">2026/02/04 18:46 — [人名9]<a class="headerlink" href="#20260204-1846-9" title="Permanent link">&para;</a></h3>
+<h3 id="20260204-1846-10">2026/02/04 18:46 — [人名10]<a class="headerlink" href="#20260204-1846-10" title="Permanent link">&para;</a></h3>
 <p>你现在的inout frame size变成了576， 先前还是768和384. </p>
 <p>frame size是576， 你的buffer_config.inout_sample_num就得是144</p>
 </div>
 <div class="reply even">
 <h3 id="20260205-1234-2">2026/02/05 12:34 — [人名2]<a class="headerlink" href="#20260205-1234-2" title="Permanent link">&para;</a></h3>
-<p>[人名9] ([人名9])</p>
+<p>[人名10] ([人名10])</p>
 <p>附件是修改前和修改后的代码，麻烦检查看看我改对了没有？需要做什么改动，请帮忙改了发给我，谢谢！</p>
 <p>或者什么时候去你那里现场调这个功能？</p>
 <p>[附件: frame_size_adj-3.7z]</p>
 </div>
 <div class="reply odd">
-<h3 id="20260205-1347-9">2026/02/05 13:47 — [人名9]<a class="headerlink" href="#20260205-1347-9" title="Permanent link">&para;</a></h3>
+<h3 id="20260205-1347-10">2026/02/05 13:47 — [人名10]<a class="headerlink" href="#20260205-1347-10" title="Permanent link">&para;</a></h3>
 <p>Hi  Sir</p>
 <p>已经指出你的错误之处 -&gt; frame size是576， 你的buffer_config.inout_sample_num就得是144</p>
 <p>我自己跑144 byte是在usb wired audio是正常出声音</p>
 </div>
 <div class="reply even">
 <h3 id="20260205-1743-2">2026/02/05 17:43 — [人名2]<a class="headerlink" href="#20260205-1743-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名9] ([人名9])，</p>
+<p>Hi [人名10] ([人名10])，</p>
 <p>改为144，不加dolby算法，没有噪声。</p>
 <p>{noformat}buffer_config.total_channels = 2;</p>
 <p>buffer_config.trustInitParam = FALSE;</p>
@@ -508,29 +508,29 @@
 <p>[图片: image008(02-05-16-50-40).png]</p>
 </div>
 <div class="reply odd">
-<h3 id="20260205-1750-9">2026/02/05 17:50 — [人名9]<a class="headerlink" href="#20260205-1750-9" title="Permanent link">&para;</a></h3>
+<h3 id="20260205-1750-10">2026/02/05 17:50 — [人名10]<a class="headerlink" href="#20260205-1750-10" title="Permanent link">&para;</a></h3>
 <p>Hi Sir</p>
 <p>首先你的保证加上FrameAdjust 没有噪声，且framesize_adjustor_sample_Fun1_process 中拿到的frame size是256 byte -&gt; 这个是ABT支持</p>
 <p>如果上面正确了，那就是已经按照要求提供输入，还有噪声请联系Dolby提供商FAQ提供技术支持。</p>
 </div>
 <div class="reply even">
 <h3 id="20260205-1827-2">2026/02/05 18:27 — [人名2]<a class="headerlink" href="#20260205-1827-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名9] ([人名9])</p>
+<p>Hi [人名10] ([人名10])</p>
 <p>现在加上FrameAdjust是没有噪声，可是从log看frame size并不是256 byte，这里还需要解决。</p>
-<p>修改就是以前附件的那几个文件了，如果可以，[客户O]那边想约您现场看看。</p>
+<p>修改就是以前附件的那几个文件了，如果可以，[客户S]那边想约您现场看看。</p>
 </div>
 <div class="reply odd">
-<h3 id="20260205-1842-9">2026/02/05 18:42 — [人名9]<a class="headerlink" href="#20260205-1842-9" title="Permanent link">&para;</a></h3>
+<h3 id="20260205-1842-10">2026/02/05 18:42 — [人名10]<a class="headerlink" href="#20260205-1842-10" title="Permanent link">&para;</a></h3>
 <p>可是从log看frame size并不是256 byte</p>
 <p>-&gt;你说的是什么log？</p>
 </div>
 <div class="reply even">
 <h3 id="20260205-1857-2">2026/02/05 18:57 — [人名2]<a class="headerlink" href="#20260205-1857-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名9] ([人名9])</p>
+<p>Hi [人名10] ([人名10])</p>
 <p>2026/02/05 17:43 回复的图片内容</p>
 </div>
 <div class="reply odd">
-<h3 id="20260209-1340-9">2026/02/09 13:40 — [人名9]<a class="headerlink" href="#20260209-1340-9" title="Permanent link">&para;</a></h3>
+<h3 id="20260209-1340-10">2026/02/09 13:40 — [人名10]<a class="headerlink" href="#20260209-1340-10" title="Permanent link">&para;</a></h3>
 <p>Hi Sir</p>
 <p>在默认SDK中用一下代码不会出现你说的log，并且播放声音正常， frame size的输出也是符合预期 out  sample 1024</p>
 <p>[附件: <a href="./">ABT-698</a>.7z]</p>
@@ -540,30 +540,30 @@
 </div>
 <div class="reply even">
 <h3 id="20260209-1541-2">2026/02/09 15:41 — [人名2]<a class="headerlink" href="#20260209-1541-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名9] ([人名9])</p>
+<p>Hi [人名10] ([人名10])</p>
 <p>感谢。</p>
 <p>对比您的代码，我们adjustment摆放的地方不一样，我按你的方法改，我用是原版的SDK5.7.0。出现的log和你给的不一样，也没有调整为256。请问你用的也是SDK5.7.0吗？我这里出现的log如附件。下面是客户的cmd</p>
 <p>/build.sh ab1577am_evk headset_ref_design</p>
 <p>[图片: image001(02-09-15-39-44).png]</p>
 </div>
 <div class="reply odd">
-<h3 id="20260209-1653-9">2026/02/09 16:53 — [人名9]<a class="headerlink" href="#20260209-1653-9" title="Permanent link">&para;</a></h3>
+<h3 id="20260209-1653-10">2026/02/09 16:53 — [人名10]<a class="headerlink" href="#20260209-1653-10" title="Permanent link">&para;</a></h3>
 <p>Hi  Sir</p>
 <p>是原生SDK 5.7.0， 在Frame adjust里加了一些打印log</p>
 </div>
 <div class="reply even">
 <h3 id="20260209-1718-2">2026/02/09 17:18 — [人名2]<a class="headerlink" href="#20260209-1718-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名9] ([人名9])</p>
-<p>明天或者后天能安排一下吗？[客户O]那边想现场请教一下，困扰很久了，他们还是没能处理好。</p>
+<p>Hi [人名10] ([人名10])</p>
+<p>明天或者后天能安排一下吗？[客户S]那边想现场请教一下，困扰很久了，他们还是没能处理好。</p>
 </div>
 <div class="reply odd">
-<h3 id="20260209-1806-9">2026/02/09 18:06 — [人名9]<a class="headerlink" href="#20260209-1806-9" title="Permanent link">&para;</a></h3>
+<h3 id="20260209-1806-10">2026/02/09 18:06 — [人名10]<a class="headerlink" href="#20260209-1806-10" title="Permanent link">&para;</a></h3>
 <p>可以，明天来吧。</p>
 <p>这题就先关闭，明天现场解决</p>
 </div>
 <div class="reply even">
 <h3 id="20260209-1811-2">2026/02/09 18:11 — [人名2]<a class="headerlink" href="#20260209-1811-2" title="Permanent link">&para;</a></h3>
-<p><em>Hi [人名9] ([人名9])，</em></p>
+<p><em>Hi [人名10] ([人名10])，</em></p>
 <p>好的，感谢，明天早上预计十点到。</p>
 </div>
 <div class="ticket-nav">

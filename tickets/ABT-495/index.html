@@ -362,41 +362,41 @@
 <p><a href="../ABT-494/">← 上一个工单：ABT-494</a>　<a href="../ABT-496/">→ 下一个工单：ABT-496</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]：</p>
+<p>Hi [人名6]：</p>
 <p>测试AB1571AM V5.4.0。从app端切换anc和at</p>
 <p>测试从ANC Filter 1（FF）模式切到HybirdPassThrough 1（mode：PassThrough），如附图，mic会从FF的mic1，切到mic0。实际配置的PassThrough是mic1。</p>
 <p>编译指令：./build.sh ab1571am_evk earbuds_ref_design</p>
 <hr />
 <h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
-<h3 id="20250108-1200-23-24">2025/01/08 12:00 — [人名23] [人名24]<a class="headerlink" href="#20250108-1200-23-24" title="Permanent link">&para;</a></h3>
+<h3 id="20250108-1200-25-26">2025/01/08 12:00 — [人名25] [人名26]<a class="headerlink" href="#20250108-1200-25-26" title="Permanent link">&para;</a></h3>
 <p>[附件: COM27.pcapng]</p>
 <p>[附件: COM29.pcapng]</p>
 <p>[图片: COM29.png]</p>
 <p>[图片: image.png]</p>
 </div>
 <div class="reply even">
-<h3 id="20250108-1630-5">2025/01/08 16:30 — [人名5]<a class="headerlink" href="#20250108-1630-5" title="Permanent link">&para;</a></h3>
+<h3 id="20250108-1630-6">2025/01/08 16:30 — [人名6]<a class="headerlink" href="#20250108-1630-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>HB PT的nvkey不是那個，直接检查下这个呢</p>
 <p>[图片: image-2025-01-08-16-29-51-784.png]</p>
 </div>
 <div class="reply odd">
-<h3 id="20250108-1638-23-24">2025/01/08 16:38 — [人名23] [人名24]<a class="headerlink" href="#20250108-1638-23-24" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]：</p>
+<h3 id="20250108-1638-25-26">2025/01/08 16:38 — [人名25] [人名26]<a class="headerlink" href="#20250108-1638-25-26" title="Permanent link">&para;</a></h3>
+<p>Hi [人名6]：</p>
 <p>按照理解，HB PT应该是共用的anc的mic的设置吧。但是如前面描述，切换到FF type的HB PT时，mic切到了mic0。</p>
 <p>如附图，输入密码后看到了0xE1E7的配置，也没有mic的配置。</p>
 <p>[图片: image-1.png]</p>
 </div>
 <div class="reply even">
-<h3 id="20250113-1551-89">2025/01/13 15:51 — [人名89]<a class="headerlink" href="#20250113-1551-89" title="Permanent link">&para;</a></h3>
+<h3 id="20250113-1551-96">2025/01/13 15:51 — [人名96]<a class="headerlink" href="#20250113-1551-96" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>请问如果将FF mic配置为MIC0，FB mic配置为MIC1，Passthru mic配置为MIC0。</p>
 <p>切换到passthru的时候会不会出现变成MIC1的问题？</p>
 </div>
 <div class="reply odd">
-<h3 id="20250113-1830-23-24">2025/01/13 18:30 — [人名23] [人名24]<a class="headerlink" href="#20250113-1830-23-24" title="Permanent link">&para;</a></h3>
-<p>HI [人名89] ([人名89])：</p>
+<h3 id="20250113-1830-25-26">2025/01/13 18:30 — [人名25] [人名26]<a class="headerlink" href="#20250113-1830-25-26" title="Permanent link">&para;</a></h3>
+<p>HI [人名96] ([人名96])：</p>
 <p>修改mic配置后，如附件log。</p>
 <p>image-2.png所示，Hybird anc调用的mic是对的，但是切到ff anc时，却调用了mic1，切到fb anc时，却调用了mic0。</p>
 <p>image-4.png所示，从Hybird anc切到FF type的HB PT时，mic切到了mic1。</p>
@@ -409,7 +409,7 @@
 <p>[图片: image-6.png]</p>
 </div>
 <div class="reply even">
-<h3 id="20250115-0943-89">2025/01/15 09:43 — [人名89]<a class="headerlink" href="#20250115-0943-89" title="Permanent link">&para;</a></h3>
+<h3 id="20250115-0943-96">2025/01/15 09:43 — [人名96]<a class="headerlink" href="#20250115-0943-96" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ,</p>
 <p><em>将FF mic配置为MIC0，FB mic配置为MIC1，Passthru mic配置为MIC0。</em></p>
 <p>请问是我下面描述的这个现象吗？
@@ -418,8 +418,8 @@
  # 从{<em>}{color:#ff8b00}Hybird anc{color}{</em>}切到ff anc，切到fb anc时，mic调用{<em>}{color:#de350b}不对{color}{</em>}</p>
 </div>
 <div class="reply odd">
-<h3 id="20250115-0954-23-24">2025/01/15 09:54 — [人名23] [人名24]<a class="headerlink" href="#20250115-0954-23-24" title="Permanent link">&para;</a></h3>
-<p>HI [人名89] ([人名89])：</p>
+<h3 id="20250115-0954-25-26">2025/01/15 09:54 — [人名25] [人名26]<a class="headerlink" href="#20250115-0954-25-26" title="Permanent link">&para;</a></h3>
+<p>HI [人名96] ([人名96])：</p>
 <p><em>将FF mic配置为MIC0，FB mic配置为MIC1，Passthru mic配置为MIC0。</em></p>
 <p>请问是我下面描述的这个现象吗？</p>
 <h1 id="offff-ancfb-ancff-typehb-ptmic">从<em>off</em>切换到ff anc，切到fb anc，切到FF type的HB PT，mic都是<em>对的</em><a class="headerlink" href="#offff-ancfb-ancff-typehb-ptmic" title="Permanent link">&para;</a></h1>
@@ -430,15 +430,15 @@
 <p>——切到ff anc时，应该是mic0，log显示是mic1；切到fb anc是，应该是mic1，log显示是mic0。因此mic也是<em>错的</em></p>
 </div>
 <div class="reply even">
-<h3 id="20250115-1800-89">2025/01/15 18:00 — [人名89]<a class="headerlink" href="#20250115-1800-89" title="Permanent link">&para;</a></h3>
+<h3 id="20250115-1800-96">2025/01/15 18:00 — [人名96]<a class="headerlink" href="#20250115-1800-96" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>请问这两条链路MIC切换正常吗？用config tool调试ANC顺序就是要先点OFF。
  * OFF-&gt;Hybrid ANC-&gt;Hybrid PT
  * OFF-&gt;Hybrid ANC-&gt;FF ANC-&gt;FB ANC</p>
 </div>
 <div class="reply odd">
-<h3 id="20250120-1007-23-24">2025/01/20 10:07 — [人名23] [人名24]<a class="headerlink" href="#20250120-1007-23-24" title="Permanent link">&para;</a></h3>
-<p>HI [人名89] ([人名89])：</p>
+<h3 id="20250120-1007-25-26">2025/01/20 10:07 — [人名25] [人名26]<a class="headerlink" href="#20250120-1007-25-26" title="Permanent link">&para;</a></h3>
+<p>HI [人名96] ([人名96])：</p>
 <p>两个流程的具体log如附件，图片COM27.png有标注。</p>
 <p>[附件: download_L.zip]</p>
 <p>[附件: download_R.zip]</p>
@@ -449,7 +449,7 @@
 <p>[附件: COM27_mic2.pcapng]</p>
 </div>
 <div class="reply even">
-<h3 id="20250206-1534-89">2025/02/06 15:34 — [人名89]<a class="headerlink" href="#20250206-1534-89" title="Permanent link">&para;</a></h3>
+<h3 id="20250206-1534-96">2025/02/06 15:34 — [人名96]<a class="headerlink" href="#20250206-1534-96" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] ，</p>
 <p>1、看ANC Path和Passthru Path的MIC配置是没问题的</p>
 <p>2、从图片COM27.png看到，同时我这边也做了验证，从HYANC切换到HYPT时，mic是对的（中间有一次Switch，但最终会切回来）</p>

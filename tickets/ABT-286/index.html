@@ -21,7 +21,7 @@
     
     
       
-        <title>【[客户E]】AB1565 概率性无法识别关机pattern - ABT 工单知识库</title>
+        <title>【[客户H]】AB1565 概率性无法识别关机pattern - ABT 工单知识库</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#abt-286-eab1565-pattern" class="md-skip">
+        <a href="#abt-286-hab1565-pattern" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              【[客户E]】AB1565 概率性无法识别关机pattern
+              【[客户H]】AB1565 概率性无法识别关机pattern
             
           </span>
         </div>
@@ -354,7 +354,7 @@
   
 
 
-<h1 id="abt-286-eab1565-pattern">ABT-286 【[客户E]】AB1565 概率性无法识别关机pattern<a class="headerlink" href="#abt-286-eab1565-pattern" title="Permanent link">&para;</a></h1>
+<h1 id="abt-286-hab1565-pattern">ABT-286 【[客户H]】AB1565 概率性无法识别关机pattern<a class="headerlink" href="#abt-286-hab1565-pattern" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>📅 2023/11/04 10:42　🔗 <a href="https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-286">原始工单链接</a></p>
 </blockquote>
@@ -362,7 +362,7 @@
 <p><a href="../ABT-285/">← 上一个工单：ABT-285</a>　<a href="../ABT-287/">→ 下一个工单：ABT-287</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>HI [人名5]，</p>
+<p>HI [人名6]，</p>
 <p>见附件log，COM60 在入仓关机之后 在 09:58:18 的位置无法识别关机码，在相同的时间位置 COM61 可以识别，看看这是为什么。</p>
 <p>问题比较概率性出现，在耳机电量较低的时候比较容易出现，电量高的时候暂时没有遇到过。</p>
 <hr />
@@ -375,11 +375,11 @@
 </div>
 <div class="reply even">
 <h3 id="20231104-1613-2">2023/11/04 16:13 — [人名2]<a class="headerlink" href="#20231104-1613-2" title="Permanent link">&para;</a></h3>
-<p>HI [人名5]，</p>
+<p>HI [人名6]，</p>
 <p>这个问题之前在MU-1578 处理过类似；</p>
 </div>
 <div class="reply odd">
-<h3 id="20231106-1128-5">2023/11/06 11:28 — [人名5]<a class="headerlink" href="#20231106-1128-5" title="Permanent link">&para;</a></h3>
+<h3 id="20231106-1128-6">2023/11/06 11:28 — [人名6]<a class="headerlink" href="#20231106-1128-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，
  # 你们有改chg in debounce時間嗎?
  # 你们充電倉發送指令跟操作vbus uart電壓的spec是甚麼?   chg in, chg out, 發command，中間的timing有按照user guide嗎? 現在是設多少時間?
@@ -387,7 +387,7 @@
 </div>
 <div class="reply even">
 <h3 id="20231106-1436-2">2023/11/06 14:36 — [人名2]<a class="headerlink" href="#20231106-1436-2" title="Permanent link">&para;</a></h3>
-<p>HI fason</p>
+<p>HI [人名6]</p>
 <p>你们有改chg in debounce時間嗎?</p>
 <blockquote>
 <blockquote>
@@ -417,7 +417,7 @@
 <p>[图片: 微信图片编辑_[序列号已隐藏].jpg]</p>
 </div>
 <div class="reply odd">
-<h3 id="20231106-1555-5">2023/11/06 15:55 — [人名5]<a class="headerlink" href="#20231106-1555-5" title="Permanent link">&para;</a></h3>
+<h3 id="20231106-1555-6">2023/11/06 15:55 — [人名6]<a class="headerlink" href="#20231106-1555-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>问题应该在充电仓在com mode的时候给电压3.7V。user guide 说明是1.8-3V。</p>
 <p>超过3V可能就会有问题。</p>
@@ -428,7 +428,7 @@
 <p>[附件: Sheet1(1).pdf]</p>
 </div>
 <div class="reply odd">
-<h3 id="20231106-1933-5">2023/11/06 19:33 — [人名5]<a class="headerlink" href="#20231106-1933-5" title="Permanent link">&para;</a></h3>
+<h3 id="20231106-1933-6">2023/11/06 19:33 — [人名6]<a class="headerlink" href="#20231106-1933-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>vbus在電池電壓附近上下的話，會導致我們偵測是否plug in這邊有時插有時拔 (因為1wire chg mode&lt;-&gt;com mode會一直動EOC_EN)</p>
 <p>然後EOC_EN的問題是，之前65有切EOC時會發dummy irq的問題所以有做workaround偵測vbus是否plug in</p>

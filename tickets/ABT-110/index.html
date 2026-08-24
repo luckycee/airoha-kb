@@ -362,7 +362,7 @@
 <p><a href="../ABT-109/">← 上一个工单：ABT-109</a>　<a href="../ABT-111/">→ 下一个工单：ABT-111</a></p>
 </div>
 <h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>V2.9.0 支持EMP的软件，连接了两个手机，触发Siri后，没有退出VA状态，一直保持着,导致了key识别不到；</p>
 <p>问题出现在R边，18:18:28 触发了Siri，其实过了几秒钟手机端就退出了Siri了，但是state 还维持在VA；单个连接手机时，没有这样的问题。</p>
 <hr />
@@ -373,14 +373,14 @@
 <p>[附件: VA_state没有退出-R.pcapng]</p>
 </div>
 <div class="reply even">
-<h3 id="20221109-1110-5">2022/11/09 11:10 — [人名5]<a class="headerlink" href="#20221109-1110-5" title="Permanent link">&para;</a></h3>
+<h3 id="20221109-1110-6">2022/11/09 11:10 — [人名6]<a class="headerlink" href="#20221109-1110-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>麻烦添加一下patch修改试试
 [附件: app_hfp_va_activity.c] [附件: app_hfp_idle_activity.c]</p>
 </div>
 <div class="reply odd">
 <h3 id="20221109-1149-2">2022/11/09 11:49 — [人名2]<a class="headerlink" href="#20221109-1149-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>测试了OK；</p>
 <p>另外，之前就存在问题，A手机播放音乐，双击暂停之后，再长按触发Siri，发现触发的是B手机，客户期望的是触发A手机Siri；</p>
 <p>附件log有上面的操作过程；</p>
@@ -388,27 +388,27 @@
 <p>[附件: L.pcapng]</p>
 </div>
 <div class="reply even">
-<h3 id="20221125-1000-5">2022/11/25 10:00 — [人名5]<a class="headerlink" href="#20221125-1000-5" title="Permanent link">&para;</a></h3>
+<h3 id="20221125-1000-6">2022/11/25 10:00 — [人名6]<a class="headerlink" href="#20221125-1000-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>麻烦添加以下两个patch试试</p>
 <p>[附件: SDK2.9.0_VA.diff] [附件: app_hfp_idle_activity.c]</p>
 </div>
 <div class="reply odd">
 <h3 id="20221125-1131-2">2022/11/25 11:31 — [人名2]<a class="headerlink" href="#20221125-1131-2" title="Permanent link">&para;</a></h3>
-<p>Hi [人名5]，</p>
+<p>Hi [人名6]，</p>
 <p>连接两个手机，已经做到了那边播放音乐，Siri出在那边；</p>
 <p>但是开机回连后无法触发Siri，必须要播放一次音乐后才能触发；</p>
 <p>[附件: 开机回连后无法激活Siri-R.pcapng]</p>
 <p>[附件: 开机回连后无法激活Siri-L.pcapng]</p>
 </div>
 <div class="reply even">
-<h3 id="20221128-1357-5">2022/11/28 13:57 — [人名5]<a class="headerlink" href="#20221128-1357-5" title="Permanent link">&para;</a></h3>
+<h3 id="20221128-1357-6">2022/11/28 13:57 — [人名6]<a class="headerlink" href="#20221128-1357-6" title="Permanent link">&para;</a></h3>
 <p>HI @[邮箱已隐藏]，</p>
 <p>麻烦添加一下patch试试
 [附件: <a href="./">ABT-110</a>_app_patch.diff]</p>
 </div>
 <div class="reply odd">
-<h3 id="20221205-1346-5">2022/12/05 13:46 — [人名5]<a class="headerlink" href="#20221205-1346-5" title="Permanent link">&para;</a></h3>
+<h3 id="20221205-1346-6">2022/12/05 13:46 — [人名6]<a class="headerlink" href="#20221205-1346-6" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>
 <p>这题还有问题吗？没有麻烦关闭JIRA。</p>
 </div>
