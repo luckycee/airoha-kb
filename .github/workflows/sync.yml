@@ -39,8 +39,15 @@ jobs:
           ${{ secrets.COOKIES }}
           EOF
 
+      - name: 恢复 raw 缓存（避免每周重新下载全部工单）
+        uses: actions/cache@v4
+        with:
+          path: raw
+          key: raw-${{ github.run_date }}
+          restore-keys: raw-
+
       - name: 增量抓取新工单
-        run: python scripts/download_raw.py --range 15 999 --delay 1.0
+        run: python scripts/download_raw.py --range 15 999 --delay 0.8
         continue-on-error: true
 
       - name: 收集人名并全量解析
