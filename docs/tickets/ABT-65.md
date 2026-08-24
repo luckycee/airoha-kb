@@ -32,16 +32,16 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ### 2022/07/27 10:30 — [人名4]
 
-hi 黄工,
-
- 
-
-v2.11.4以後就有把limiter加回engineer mode
-
- 
-
-另外
-
+hi 黄工,
+
+ 
+
+v2.11.4以後就有把limiter加回engineer mode
+
+ 
+
+另外
+
 v3.x 和 v2.x 的 tool 是完全不能相容的
 
 </div>

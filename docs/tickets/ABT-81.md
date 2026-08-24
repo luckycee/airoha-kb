@@ -22,8 +22,8 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ### 2022/09/09 11:30 — [人名10]
 
-hi @[邮箱已隐藏]
-
+hi @[邮箱已隐藏]
+
 请问你是使用什么方式进行FOTA ，谢谢
 
 </div>
@@ -129,10 +129,10 @@ Hi [人名10] ([人名10])，
 
 ### 2022/09/13 10:34 — [人名10]
 
-Hi @[邮箱已隐藏]
-
-我再EVK上验证，可以FOTA success
-
+Hi @[邮箱已隐藏]
+
+我再EVK上验证，可以FOTA success
+
 你那边可以提供下log看下吗，log从升级前开始录，谢谢
 
 </div>
