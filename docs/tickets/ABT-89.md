@@ -16,6 +16,70 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 回复记录
+
+<div class="reply odd" markdown="1">
+
+### 2022/09/26 20:07 — [人名2]
+
+[图片: 修改之前.jpg]
+
+[图片: 修改之后.jpg]
+
+</div>
+
+<div class="reply even" markdown="1">
+
+### 2022/09/27 18:27 — [人名29]
+
+@[邮箱已隐藏] 如果不需要EQ又想保存FW，先开一组PEQ，gain都设0 就好了.
+
+</div>
+
+<div class="reply odd" markdown="1">
+
+### 2022/09/27 18:40 — [人名2]
+
+Hi Sanmuel,
+
+config tool 2.11.4, FW是AB1565AM
+
+[附件: AB1565AM_V2.9.0_D86_V20_20220926_V0.25_L.7z]
+
+[附件: AB1565AM_V2.9.0_D86_V20_20220926_V0.25_R.7z]
+
+[附件: debug.7z]
+
+</div>
+
+<div class="reply even" markdown="1">
+
+### 2022/09/30 18:16 — [人名2]
+
+Hi [人名29]，
+
+确认了问题在第一个频点上，把这个频点去掉就无法保存了，即使再勾选回来还是无法保存软件；
+
+[图片: Snipaste_2022-09-30_18-15-03.jpg]
+
+</div>
+
+<div class="reply odd" markdown="1">
+
+### 2022/10/11 11:29 — [人名4]
+
+未勾選頻點算出來的NV長度為0,
+
+nvdm driver不允許寫入長度為0的nv key
+
+ 
+
+<div class="ticket-nav" markdown="1">
+
+[← 上一个工单：ABT-88](ABT-88.md)　[→ 下一个工单：ABT-90](ABT-90.md)
+
+</div>
+
 ## 问题描述
 
 Hi 帝木，

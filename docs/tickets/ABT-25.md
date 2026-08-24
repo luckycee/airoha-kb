@@ -16,6 +16,46 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 </div>
 
+## 回复记录
+
+<div class="reply odd" markdown="1">
+
+### 2022/03/04 18:01 — [人名2]
+
+Hi [人名5]，
+
+继续补充客户问题
+
+1. 用1565D做dongle需要加射频PA吗？不加PA射频功率有多大？能到多远距离？
+
+</div>
+
+<div class="reply even" markdown="1">
+
+### 2022/03/08 15:54 — [人名5]
+
+Hi @[人名6]，
+
+麻烦帮忙评估一下，感谢啊~
+
+</div>
+
+<div class="reply odd" markdown="1">
+
+### 2022/03/08 16:22 — [人名4]
+
+1： 1565D是否支持USB输入，模拟输出，做有线立体声耳机
+
+*你是想做头戴式有线耳机吧？可以用1565A，通常65D是用来做ULL dongle的*
+
+*65A支持USB audio , 支持模拟输出*
+2：1565D是否支持做普通蓝牙适配器（能够听音乐，通话，连接其他家的蓝牙设备）
+
+*可以做普通蓝牙适配器，但是不能连接其他家的device ，我们是做私有协议，不是标准的AG功能*
+3：1565D是否支持过Teams认证
+
+</div>
+
 ## 问题描述
 
 Hi fason，
