@@ -1,6 +1,6 @@
 ---
 id: ABT-91
-title: LDAC下调试PEQ无效
+title: "LDAC下调试PEQ无效"
 date: 2022/09/27 11:15
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-91
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi 帝木，
+Hi [人名4]，
 
 客户调试PEQ，在AAC和SBC这两个编码格式下，PEQ都是起效的，换到LDAC就无效了，请看看这是为什么？
 
@@ -28,7 +28,7 @@ Hi 帝木，
 
 <div class="reply odd" markdown="1">
 
-### 2022/09/27 18:24 — [人名29]
+### 2022/09/27 18:24 — [人名31]
 
 @[邮箱已隐藏] 麻烦提供FW & ATK版本号
 
@@ -66,7 +66,7 @@ code里面默认是没开LDAC的哦
 
 ### 2022/09/28 11:02 — [人名2]
 
-Hi 帝木，
+Hi [人名4]，
 
 LDAC 是后面加的，LDAC也起效了，就是PEQ使用是没有用。
 
@@ -76,7 +76,7 @@ LDAC 是后面加的，LDAC也起效了，就是PEQ使用是没有用。
 
 ### 2022/09/28 11:30 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 使用SBC时：
 1283	2022-09-28 11:20:13.058921	 [M:dsp_mw C:info F: L: ]: peq mxing finish, status: 1 0\n
@@ -102,7 +102,7 @@ Hi [人名5]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/09/28 17:32 — [人名30]
+### 2022/09/28 17:32 — [人名32]
 
 Dear Customer,
 
@@ -136,7 +136,7 @@ MTK_BT_A2DP_VENDOR_1_ENABLE = y
 
 ### 2022/09/29 10:29 — [人名2]
 
-Hi [人名30] ([人名30])，
+Hi [人名32] ([人名32])，
 
 我使用的是V2.9.0 ，AIR_FIXED_DL_SAMPLING_RATE_TO_96KHZ_ENABLE 没有找到这个define，我找V3.2.0 也是没有。直接加在feature.mak 和dsp中可以吗？
 
@@ -144,7 +144,7 @@ Hi [人名30] ([人名30])，
 
 <div class="reply odd" markdown="1">
 
-### 2022/09/29 19:19 — [人名30]
+### 2022/09/29 19:19 — [人名32]
 
 Hi @[邮箱已隐藏],
 
@@ -160,7 +160,7 @@ AIR_FIXED_DL_SAMPLING_RATE_TO_96KHZ_ENABLE 
 
 ### 2022/09/30 11:27 — [人名2]
 
-Hi [人名30] ([人名30])，
+Hi [人名32] ([人名32])，
 
 有的， ./build.sh ab1565_8m_evk earbuds_ref_design , 找到了 feature_65_8m_evk.mk ，的确没有 AIR_FIXED_DL_SAMPLING_RATE_TO_96KHZ_ENABLE 此define， 只有 FIXED_SAMPLING_RATE_TO_48KHZ ；
 
@@ -170,7 +170,7 @@ Hi [人名30] ([人名30])，
 
 <div class="reply odd" markdown="1">
 
-### 2022/09/30 11:51 — [人名30]
+### 2022/09/30 11:51 — [人名32]
 
 Hi @[邮箱已隐藏],
 
@@ -182,7 +182,7 @@ Thanks！
 
 <div class="reply even" markdown="1">
 
-### 2022/09/30 16:09 — [人名30]
+### 2022/09/30 16:09 — [人名32]
 
 Hi @[邮箱已隐藏]，
 

@@ -1,6 +1,6 @@
 ---
 id: ABT-65
-title: V2.11.2 TOOL 缺少Limiter
+title: "V2.11.2 TOOL 缺少Limiter"
 date: 2022/07/26 16:13
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-65
@@ -42,7 +42,7 @@ Hi，
 
 ### 2022/07/27 10:30 — [人名4]
 
-hi 黄工,
+hi [人名11],
 
  
 
@@ -60,7 +60,7 @@ v3.x 和 v2.x 的 tool 是完全不能相容的
 
 ### 2022/07/27 10:34 — [人名2]
 
-Hi 帝木，
+Hi [人名4]，
 
 请提供V2.11.4 给我，我在MOL 上看到的是V2.11.2
 
@@ -68,7 +68,7 @@ Hi 帝木，
 
 <div class="reply even" markdown="1">
 
-### 2022/07/28 10:37 — [人名20]
+### 2022/07/28 10:37 — [人名22]
 
 Hi @[邮箱已隐藏],
 

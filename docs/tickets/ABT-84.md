@@ -46,7 +46,7 @@ dongle 要找 PLM 申请 add on 包
 
 <div class="reply odd" markdown="1">
 
-### 2022/09/15 14:51 — [人名21]
+### 2022/09/15 14:51 — [人名5]
 
 请问加dongle 做什么功能？  ULL 吗？
 
@@ -64,7 +64,7 @@ Hi [人名5]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/09/15 15:08 — [人名21]
+### 2022/09/15 15:08 — [人名5]
 
 hi [人名2]，
 
@@ -86,7 +86,7 @@ Hi [人名5]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/09/16 17:02 — [人名21]
+### 2022/09/16 17:02 — [人名5]
 
 那就先去下载SDK3.3.0，  从这一版开始才有ULL2.0 的相关代码
 
@@ -104,7 +104,7 @@ V3.3.0 也有下载，但是里面没有dongle project。
 
 <div class="reply odd" markdown="1">
 
-### 2022/09/19 17:42 — [人名21]
+### 2022/09/19 17:42 — [人名5]
 
 Download Link: https://transfer.mediatek.com/Detail/Received/Mail30018382227
 

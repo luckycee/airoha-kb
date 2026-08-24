@@ -1,6 +1,6 @@
 ---
 id: ABT-64
-title: 暂停后立刻播放，发现无法播放
+title: "暂停后立刻播放，发现无法播放"
 date: 2022/07/22 12:06
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-64
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名5]，
+Hi [人名6]，
 
 附件是使用IQOO Neo5手机测试播放暂停，连续测试几次之后，发现暂停后无法播放，看log发现暂停后key发送的居然是0x55（KEY_AVRCP_PAUSE），也就是发送了两次0x55，这是手机还是耳机的问题？荣耀V20也有这问题，iPhone 7、荣耀V30、Google Pixel 4a、Samsung Galaxy On7 均没有问题；
 
@@ -40,7 +40,7 @@ Hi [人名5]，
 
 ### 2022/07/22 12:11 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 附件是iPhone 7 的log，也是连续多次发送的0x55，但是播放暂停没有影响；
 
@@ -50,7 +50,7 @@ Hi [人名5]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/07/25 10:44 — [人名8] [人名19]
+### 2022/07/25 10:44 — [人名9] [人名21]
 
 hi @[邮箱已隐藏]
 
@@ -62,7 +62,7 @@ hi @[邮箱已隐藏]
 
 ### 2022/07/25 11:00 — [人名2]
 
-Hi [人名8]huaZhang，
+Hi [人名9]huaZhang，
 
 V2.9.0
 
@@ -70,7 +70,7 @@ V2.9.0
 
 <div class="reply odd" markdown="1">
 
-### 2022/07/25 14:59 — [人名8] [人名19]
+### 2022/07/25 14:59 — [人名9] [人名21]
 
 hi @[邮箱已隐藏]
 
@@ -140,7 +140,7 @@ Message Send
 
 ### 2022/07/25 16:42 — [人名2]
 
-Hi [人名8]huaZhang，
+Hi [人名9]huaZhang，
 
 好的，预计明天能收到客户的样机；
 
@@ -152,7 +152,7 @@ Hi [人名8]huaZhang，
 
 ### 2022/07/26 18:02 — [人名2]
 
-Hi [人名8]huaZhang，
+Hi [人名9]huaZhang，
 
 收到客户的手机了，明天看那个时间段你方便，我带上手机过去抓Air log；
 
@@ -160,7 +160,7 @@ Hi [人名8]huaZhang，
 
 <div class="reply even" markdown="1">
 
-### 2022/07/26 18:06 — [人名8] [人名19]
+### 2022/07/26 18:06 — [人名9] [人名21]
 
 hi @[邮箱已隐藏]
 
@@ -172,7 +172,7 @@ hi @[邮箱已隐藏]
 
 ### 2022/07/26 18:50 — [人名2]
 
-Hi [人名8]huaZhang，
+Hi [人名9]huaZhang，
 
 好的，明天早上10:00 到；
 
@@ -182,7 +182,7 @@ Hi [人名8]huaZhang，
 
 ### 2022/07/27 10:02 — [人名2]
 
-Hi [人名8]huaZhang，
+Hi [人名9]huaZhang，
 
 [M:BT_DM_EDR C:info F: L: ]: [BT_DM] Addr type 1, address:0x00:0x00:0x00:0x00:0x09:0x43
 [M:BT_DM_EDR C:info F: L: ]: [BT_DM] link key:77,ee,3a,58,  82,dc,f3,a6,  43,86,7e,9d,  72,f1,40,55
@@ -203,7 +203,7 @@ Hi [人名8]huaZhang，
 
 <div class="reply even" markdown="1">
 
-### 2022/07/27 11:23 — [人名8] [人名19]
+### 2022/07/27 11:23 — [人名9] [人名21]
 
 时间点 2022-07-27 10:12:54.520982
 
@@ -218,7 +218,7 @@ _匹配的Air log_
 
 ### 2022/07/27 14:37 — [人名2]
 
-Hi [人名8]huaZhang，
+Hi [人名9]huaZhang，
 
 在高通 3020 ，Realtek 8753 也试到了。
 
@@ -228,7 +228,7 @@ Hi [人名8]huaZhang，
 
 <div class="reply even" markdown="1">
 
-### 2022/07/28 11:14 — [人名8] [人名19]
+### 2022/07/28 11:14 — [人名9] [人名21]
 
 hi  @[邮箱已隐藏]
 

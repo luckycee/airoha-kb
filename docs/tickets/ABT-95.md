@@ -64,7 +64,7 @@ App设置PEQ101，导出前后的nvkey变化，导入到config tool 是可以看
 
 <div class="reply even" markdown="1">
 
-### 2022/10/12 11:13 — [人名35]
+### 2022/10/12 11:13 — [人名33]
 
 Hi @[邮箱已隐藏]
 
@@ -83,7 +83,7 @@ boolean IS_SUPPORT_LDAC = {color:#d04437}true{color};
 
 ### 2022/10/12 14:43 — [人名2]
 
-Hi [人名35] ([人名35]),
+Hi [人名33] ([人名33]),
 
 解决了，问题关闭；
 

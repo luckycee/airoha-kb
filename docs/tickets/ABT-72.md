@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名24]hua / [人名6]，
+Hi [人名23]hua / [人名6]，
 
 请帮忙提供以上内容给[客户A]；
 
@@ -28,7 +28,7 @@ Hi [人名24]hua / [人名6]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/08/22 14:36 — [人名21]
+### 2022/08/22 14:36 — [人名5]
 
 请问这是headset 吗？  如果是headset 需要更新到SDK3.2.0
 
@@ -46,7 +46,7 @@ Hi [人名5]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/08/22 14:52 — [人名21]
+### 2022/08/22 14:52 — [人名5]
 
 不需要，我直接申请SDK3.2.0 吧
 
@@ -64,7 +64,7 @@ Hi [人名5]，
 
 <div class="reply odd" markdown="1">
 
-### 2022/08/30 08:22 — [人名21]
+### 2022/08/30 08:22 — [人名5]
 
 [附件: IoT_SDK_for_BT_Audio_V3.2.0.AB1565_AB1568_adaptive_anc.7z]
 

@@ -1,6 +1,6 @@
 ---
 id: ABT-25
-title: AB1565D 问题咨询
+title: "AB1565D 问题咨询"
 date: 2022/03/03 14:39
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-25
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi fason，
+Hi [人名6]，
 
 请帮忙回复以下内容：
 
@@ -36,7 +36,7 @@ Hi fason，
 
 ### 2022/03/04 18:01 — [人名2]
 
-Hi [人名5]，
+Hi [人名6]，
 
 继续补充客户问题
 
@@ -46,9 +46,9 @@ Hi [人名5]，
 
 <div class="reply even" markdown="1">
 
-### 2022/03/08 15:54 — [人名5]
+### 2022/03/08 15:54 — [人名6]
 
-Hi @[人名6]，
+Hi @[人名7]，
 
 麻烦帮忙评估一下，感谢啊~
 
@@ -76,7 +76,7 @@ Hi @[人名6]，
 
 ### 2022/03/08 17:27 — [人名2]
 
-Hi 帝木，
+Hi [人名4]，
 
 1. 用1565D做dongle需要加射频PA吗？不加PA射频功率有多大？能到多远距离？
 

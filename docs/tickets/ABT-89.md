@@ -1,6 +1,6 @@
 ---
 id: ABT-89
-title: 去掉了PEQ后无法保存
+title: "去掉了PEQ后无法保存"
 date: 2022/09/26 20:07
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-89
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi 帝木，
+Hi [人名4]，
 
 发现去掉PEQ频点之后，无法保存到软件中；
 
@@ -40,7 +40,7 @@ Hi 帝木，
 
 <div class="reply even" markdown="1">
 
-### 2022/09/27 18:27 — [人名29]
+### 2022/09/27 18:27 — [人名31]
 
 @[邮箱已隐藏] 如果不需要EQ又想保存FW，先开一组PEQ，gain都设0 就好了.
 
@@ -66,7 +66,7 @@ config tool 2.11.4, FW是AB1565AM
 
 ### 2022/09/30 18:16 — [人名2]
 
-Hi [人名29]，
+Hi [人名31]，
 
 确认了问题在第一个频点上，把这个频点去掉就无法保存了，即使再勾选回来还是无法保存软件；
 

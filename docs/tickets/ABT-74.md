@@ -1,6 +1,6 @@
 ---
 id: ABT-74
-title: AB1565 V3.2.0 ConfigTool打不开软件
+title: "AB1565 V3.2.0 ConfigTool打不开软件"
 date: 2022/08/23 19:16
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-74
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi [人名5]：
+Hi [人名6]：
 
 编译AB1565 V3.2.0 8m headset后，使用v3.1.5_20220530_112718 Tool打开软件时会报错，
 
@@ -30,7 +30,7 @@ Hi [人名5]：
 
 <div class="reply odd" markdown="1">
 
-### 2022/08/23 19:16 — [人名23] [人名24]
+### 2022/08/23 19:16 — [人名25] [人名26]
 
 [图片: QQ截图[序列号已隐藏].png]
 
@@ -38,7 +38,7 @@ Hi [人名5]：
 
 <div class="reply even" markdown="1">
 
-### 2022/08/24 10:53 — [人名5]
+### 2022/08/24 10:53 — [人名6]
 
 Hi @[邮箱已隐藏],
 
@@ -49,7 +49,7 @@ Hi @[邮箱已隐藏],
 
 <div class="reply odd" markdown="1">
 
-### 2022/08/25 10:38 — [人名22]
+### 2022/08/25 10:38 — [人名24]
 
 Hi @[邮箱已隐藏]
 
@@ -65,9 +65,9 @@ MOL的部分已申請上傳，尚在處理中。
 
 <div class="reply even" markdown="1">
 
-### 2022/08/25 10:44 — [人名23] [人名24]
+### 2022/08/25 10:44 — [人名25] [人名26]
 
-Hi [人名22]：
+Hi [人名24]：
 已确认可以打开，谢谢！
 
 </div>

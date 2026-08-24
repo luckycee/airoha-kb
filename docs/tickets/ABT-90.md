@@ -1,6 +1,6 @@
 ---
 id: ABT-90
-title: 关闭了PEQ2 PEQ无效
+title: "关闭了PEQ2 PEQ无效"
 date: 2022/09/27 11:06
 status: Closed
 source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX1565-90
@@ -18,7 +18,7 @@ source: https://eservice.airoha.com.tw/servicedesk/customer/portal/1038/MIUIX156
 
 ## 问题描述
 
-Hi 帝木，
+Hi [人名4]，
 
 你们的demo FW编译出来，默认 PEQ1\PEQ2都是开启的，并且播放音乐的时候，PEQ也是有效的，调试了PEQ1的频点后，也是有效的。但是，如果我把PEQ2关闭之后，还剩下PEQ1，发现PEQ不起效果了，再加回又有了，这是什么回事？你们这个PEQ的逻辑跟1562x不同吗？
 
@@ -36,7 +36,7 @@ Hi 帝木，
 
 <div class="reply even" markdown="1">
 
-### 2022/09/27 18:31 — [人名29]
+### 2022/09/27 18:31 — [人名31]
 
 @[邮箱已隐藏] SDK版本麻烦提供一下，thanks
 
@@ -46,7 +46,7 @@ Hi 帝木，
 
 ### 2022/09/27 18:37 — [人名2]
 
-Hi [人名29],
+Hi [人名31],
 
 SDK V2.9.0 , config tool V2.11.4
 
@@ -56,7 +56,7 @@ SDK V2.9.0 , config tool V2.11.4
 
 ### 2022/09/27 20:06 — [人名4]
 
-hi 黄工,
+hi [人名11],
 
  
 
@@ -70,7 +70,7 @@ hi 黄工,
 
 ### 2022/09/28 11:00 — [人名2]
 
-Hi 帝木，
+Hi [人名4]，
 
 客户只要一个PEQ1，就关闭了PEQ2，但是发现PEQ1怎么调试都是无效的。问题是，为什么关闭PEQ2 整个PEQ就不行了？
 
@@ -90,7 +90,7 @@ Hi 帝木，
 
 ### 2022/09/29 10:52 — [人名2]
 
-Hi 帝木，
+Hi [人名4]，
 
 疑问是，为什么在PEQ Subset 中关掉PEQ2就不行了？
 
@@ -110,7 +110,7 @@ Hi 帝木，
 
 ### 2022/09/30 11:23 — [人名2]
 
-Hi 帝木，
+Hi [人名4]，
 
 按照贵司同仁的指导，修改好LDAC支持PEQ后，即使关闭PEQ2，PEQ也起效，问题关闭；
 
