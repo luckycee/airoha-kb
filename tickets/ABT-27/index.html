@@ -361,7 +361,24 @@
 <div class="ticket-nav">
 <p><a href="ABT-26.md">← 上一个工单：ABT-26</a>　<a href="ABT-28.md">→ 下一个工单：ABT-28</a></p>
 </div>
-<h2 id="_1">回复记录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Hi [人名5]，</p>
+<p>因为现在ABT 的方案还不支持空间音频，所以客户想使用第三方算法来实现，但是第三方算法消耗的RAM资源预计超过300KB。</p>
+<p>客户计算过SDK 2.10.1版本CM4剩余RAM约86KB，DSP DRAM剩余约428KB，第三方算法如果单独使用CM4的RAM肯定不能满足，因此唯一的方法就是只将陀螺仪的驱动部分放到CM4，其它部分放DSP。目的就是想使用DSP部分的ROM/RAM资源，不知是否可行？</p>
+<p>客户有看到ABT DSP是可用导入第三方的声音算法，但是空间音频算法应该属于一般控制算法，所以不确定能否导入到DSP FW。</p>
+<ol>
+<li>
+<p>能导入的话该如何导入？导入后CM4如果跟DSP算法进行交互？</p>
+</li>
+<li>
+<p>不能导入的话DSP内部的DRAM能不能share出来给CM4使用？</p>
+</li>
+<li>
+<p>如果都可以，请提供方法；</p>
+</li>
+</ol>
+<hr />
+<h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
 <h3 id="20220311-1347-5">2022/03/11 13:47 — [人名5]<a class="headerlink" href="#20220311-1347-5" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>

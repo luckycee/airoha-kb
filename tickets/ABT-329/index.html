@@ -361,7 +361,58 @@
 <div class="ticket-nav">
 <p><a href="../ABT-328/">← 上一个工单：ABT-328</a>　<a href="../ABT-330/">→ 下一个工单：ABT-330</a></p>
 </div>
-<h2 id="_1">回复记录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>HI fason，</p>
+<p>客户参考洛达提供的ABT_IoT_SDK_for_BT_Audio_EVK_Debug_Application_Note 关于针对cm4 的debug 步骤</p>
+<p>For JTAG debugging, the default software configuration may cause JTAG debug to fail, such as incorrect GPIO</p>
+<p>configuration that cause JTAG to be unable to connect, or system entering deep sleep that cause JTAG to</p>
+<p>disconnect. Therefore, it is necessary to make some code changes.</p>
+<p>1， Modify GPIO Pinmux configuration for DSP JTAG.</p>
+<p>2， Disable sleep feature.</p>
+<p>3， Disable system hang feature.</p>
+<p>4， Disable mask IRQ time check feature. </p>
+<p>编译出来没有问题；然后再cmd 中执行指令</p>
+<p>D:\3040_code_v128.1\AB1565_AB1568\bta_sdk\mcu\tools\gcc9.2.1\win\OpenOCD-20211118-0.11.0\bin&gt;openocd_hla_multicore.exe -f air_chip.cfg</p>
+<p>Open On-Chip Debugger 0.10.0 (2020-05-30) https://github.com/sysprogs/openocd</p>
+<p>Licensed under GNU GPL v2</p>
+<p>libusb1 09e75e98b4d9ea7909e8837b7a3f00dda4589dc3</p>
+<p>For bug reports, read</p>
+<p>http://openocd.org/doc/doxygen/bugs.html</p>
+<p>Load air_chip configuration</p>
+<p>air_chip configuration done</p>
+<p>Info : Listening on port 6666 for tcl connections</p>
+<p>Info : Listening on port 4444 for telnet connections</p>
+<p>Info : J-Link V9 compiled May  7 2021 16:26:12</p>
+<p>Info : Hardware version: 9.40</p>
+<p>Info : VTarget = 1.804 V</p>
+<p>Info : clock speed 1000 kHz</p>
+<p>Info : SWD DPIDR 00000000</p>
+<p>以上步骤没发现问题。</p>
+<p>以下步骤出现了丢失主机，请看看为什么。</p>
+<p>D:\3040_code_v128.1\AB1565_AB1568\bta_sdk\mcu\tools\gcc9.2.1\win\gcc-arm-none-eabi\bin&gt;arm-none-eabi-gdb.exe -f headset_ref_design.elf</p>
+<p>D:\3040_code_v128.1\AB1565_AB1568\bta_sdk\mcu\tools\gcc9.2.1\win\gcc-arm-none-eabi\bin\arm-none-eabi-gdb.exe: warning: Couldn't determine a path for the index cache directory.</p>
+<p>GNU gdb (GNU Tools for Arm Embedded Processors 9-2019-q4-major) 8.3.0.20190709-git</p>
+<p>Copyright (C) 2019 Free Software Foundation, Inc.</p>
+<p>License GPLv3+: GNU GPL version 3 or later <a href="http://gnu.org/licenses/gpl.html">http://gnu.org/licenses/gpl.html</a></p>
+<p>This is free software: you are free to change and redistribute it.</p>
+<p>There is NO WARRANTY, to the extent permitted by law.</p>
+<p>Type "show copying" and "show warranty" for details.</p>
+<p>This GDB was configured as "--host=i686-w64-mingw32 --target=arm-none-eabi".</p>
+<p>Type "show configuration" for configuration details.</p>
+<p>For bug reporting instructions, please see:</p>
+<p><a href="http://www.gnu.org/software/gdb/bugs/">http://www.gnu.org/software/gdb/bugs/</a>.</p>
+<p>Find the GDB manual and other documentation resources online at:</p>
+<pre><code>&lt;http://www.gnu.org/software/gdb/documentation/&gt;.
+</code></pre>
+<p>For help, type "help".</p>
+<p>Type "apropos word" to search for commands related to "word"...</p>
+<p>Reading symbols from headset_ref_design.elf...</p>
+<p>(gdb) target remote localhost:3333</p>
+<p>localhost:3333: 由于目标计算机积极拒绝，无法连接。</p>
+<p>.</p>
+<p>(gdb)</p>
+<hr />
+<h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
 <h3 id="20240109-1225-2">2024/01/09 12:25 — [人名2]<a class="headerlink" href="#20240109-1225-2" title="Permanent link">&para;</a></h3>
 <p>[附件: 1565x gdb error.docx]</p>

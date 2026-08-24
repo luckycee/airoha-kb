@@ -361,7 +361,19 @@
 <div class="ticket-nav">
 <p><a href="../ABT-602/">← 上一个工单：ABT-602</a>　<a href="../ABT-604/">→ 下一个工单：ABT-604</a></p>
 </div>
-<h2 id="_1">回复记录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Hi，</p>
+<p>见附件L边的log ，L为agent， R边为partner，L边在更新自己的电量给手机的同时，还更新partner的电量给手机，这导致了电量显示在手机端乱跳。（期望只更新agent 的电量）</p>
+<p>发送partner 电量这应该是底层 lib 的行为，在查找 BT_SINK_SRV_ACTION_REPORT_BATTERY_EXT 时只找到了 app_call_utils.c 有下调用。</p>
+<p>L电池电量100% ；R电池电量82%</p>
+<p>开机连接手机后，手机显示电池电量100%，</p>
+<p>单击播放，手机端显示82%</p>
+<p>102355单击暂停，手机端显示82%</p>
+<p>102730单击播放，手机端显示79%</p>
+<p>102808单击暂停，手机端显示79%，维持暂停</p>
+<p>103611 手机端显示耳机99%</p>
+<hr />
+<h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
 <h3 id="20250902-1611-2">2025/09/02 16:11 — [人名2]<a class="headerlink" href="#20250902-1611-2" title="Permanent link">&para;</a></h3>
 <p>[附件: L电池电量显示问题.pcapng]</p>

@@ -361,7 +361,13 @@
 <div class="ticket-nav">
 <p><a href="../ABT-623/">← 上一个工单：ABT-623</a>　<a href="../ABT-625/">→ 下一个工单：ABT-625</a></p>
 </div>
-<h2 id="_1">回复记录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Hi [人名5]，</p>
+<p>把 PMIC_SHORT_TOUCH_PWR_ON_PROTECTION 改为 1之后，短按之后就不会开机了，需要满足长按设置的时候才会开机。平时短按不到开机时间的话会进入到RTC mode。</p>
+<p>客户触发了一个比较奇怪的bug。power key 触发了短按，然后在几乎相同的时间内把耳机入仓进行charge，此时发现只有 power key 触发之后进入RTC的log，没有charge的log，这导致了耳机无法充电、无法显示充电灯。请看看有什么方法解。触发的概率有2-5%的样子，客户使用的外挂touch接power key。</p>
+<p>附件是demo 编译出来的FW，把PMIC_SHORT_TOUCH_PWR_ON_PROTECTION 改为 1 。EVK 上也是很容易发现问题。</p>
+<hr />
+<h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
 <h3 id="20251028-1549-2">2025/10/28 15:49 — [人名2]<a class="headerlink" href="#20251028-1549-2" title="Permanent link">&para;</a></h3>
 <p>[附件: earbuds_ref_design.7z]</p>

@@ -361,7 +361,12 @@
 <div class="ticket-nav">
 <p><a href="../ABT-452/">← 上一个工单：ABT-452</a>　<a href="../ABT-454/">→ 下一个工单：ABT-454</a></p>
 </div>
-<h2 id="_1">回复记录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Hi [人名5]：</p>
+<p>如附件log，为V5.0.0 标准软件抓取的，测试到充电状态amp口一直是高电平。客户不希望此时在没有输出的情况下有高电平出现。</p>
+<p>因为客户的硬件linein和bt amp是两路输出，做了电子开关来切换音频，电子开关由gpio控制，gpio在充电时不会打开电子开关，但是如果此时amp口打开了，会导致烧芯片。</p>
+<hr />
+<h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
 <h3 id="20241009-1207-23-24">2024/10/09 12:07 — [人名23] [人名24]<a class="headerlink" href="#20241009-1207-23-24" title="Permanent link">&para;</a></h3>
 <p>[附件: 6167行后，关机状态下充电，amp口会一直是高.pcapng]</p>

@@ -361,7 +361,17 @@
 <div class="ticket-nav">
 <p><a href="../ABT-722/">← 上一个工单：ABT-722</a>　<a href="../ABT-724/">→ 下一个工单：ABT-724</a></p>
 </div>
-<h2 id="_1">回复记录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Hi [人名5]，</p>
+<p>headset 的 source input ：SP、line in (ADC0/ADC1, I2S_master_in )、USB audio、dongle</p>
+<p>headset 的 output ：analog speaker output、I2S master/slave out</p>
+<p>现在有个项目需要新增一个SPI 作为 source input 和 output 。有个UWB 芯片只能接收SPI，蓝牙需要把 output 打包成SPI 能够传送的data，经过了UWB的TX和RX 之后，再给回蓝牙作为蓝牙的 input ，最后经过speaker 播放出来。请帮忙看看我们AB1577M能不能做？</p>
+<p>蓝牙SPI的要求：</p>
+<p>做 slave</p>
+<p>clock source 支持到 31MHz</p>
+<p>SNR 好于 -110dB</p>
+<hr />
+<h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
 <h3 id="20260401-1628-2">2026/04/01 16:28 — [人名2]<a class="headerlink" href="#20260401-1628-2" title="Permanent link">&para;</a></h3>
 <p>[附件: MK8000 UWB Audio Solution(with Bluetooth) .pdf]</p>

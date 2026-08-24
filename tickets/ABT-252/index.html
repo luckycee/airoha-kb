@@ -361,7 +361,19 @@
 <div class="ticket-nav">
 <p><a href="../ABT-251/">← 上一个工单：ABT-251</a>　<a href="../ABT-253/">→ 下一个工单：ABT-253</a></p>
 </div>
-<h2 id="_1">回复记录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Hi [人名5]：</p>
+<p>dongle和headset端通过AT+LEULL=SIRK建立连接后，按照Wireless_MIC_Quick_Start_V1.2.pdf文档进行如下操作：</p>
+<p>1、通过指令AT+LEULL=DISCONNECT，将headset和dongle断开连接</p>
+<p>2、然后将dongle拔插下，并发指令KEY POWER ON进行开机，dongle未回连headset。</p>
+<p>附件log为以上两步的。</p>
+<p>3、也有尝试AT+LEULL=ADDR,GET获取Headset端的地址，然后05 5A 0A 00 A0 2C 01 + 1byte address type(default 01) + 6 bytes address to reconnect the </p>
+<p>device，指令回连，但是也未回连上。</p>
+<p>以上测试在标准软件SDK：V3.8.0。</p>
+<p>dongle：./build.sh ab1565_evk wireless_mic_rx</p>
+<p>mic：./build.sh ab1565_evk wireless_mic_tx_uld</p>
+<hr />
+<h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
 <h3 id="20230916-1620-23-24">2023/09/16 16:20 — [人名23] [人名24]<a class="headerlink" href="#20230916-1620-23-24" title="Permanent link">&para;</a></h3>
 <p>[附件: dongle端和headset断连后，5694通过指令回连，未回连上.pcapng]</p>

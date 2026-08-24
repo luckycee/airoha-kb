@@ -361,7 +361,16 @@
 <div class="ticket-nav">
 <p><a href="../ABT-432/">← 上一个工单：ABT-432</a>　<a href="../ABT-434/">→ 下一个工单：ABT-434</a></p>
 </div>
-<h2 id="_1">回复记录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>HI [人名5]：</p>
+<p>使用evk的dmic做fb测试时（evk断开了所有amic的电源），发现开机后第一次操作fb on后，扫频数据是对的，如音频数据图的Ch1；</p>
+<p>然后realtime参数，再扫频，发现没有数据了，如音频数据图的Ch1 2；</p>
+<p>然后操作anc off，再fb on，再realtime，再扫频，数据又和第一次扫频的一样了，如音频数据图的Ch1 3；</p>
+<p>查看log发下第一次realtime后，进行了mic switch的操作，操作切换到了amic。</p>
+<p>SDK：V5.1.0</p>
+<p>编译指令：./build.sh ab1577am_evk headset_ref_design_ull2_full</p>
+<hr />
+<h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
 <h3 id="20240806-1629-23-24">2024/08/06 16:29 — [人名23] [人名24]<a class="headerlink" href="#20240806-1629-23-24" title="Permanent link">&para;</a></h3>
 <p>[附件: 77AM_FB.pcapng]</p>

@@ -361,7 +361,23 @@
 <div class="ticket-nav">
 <p><a href="../ABT-721/">← 上一个工单：ABT-721</a>　<a href="../ABT-723/">→ 下一个工单：ABT-723</a></p>
 </div>
-<h2 id="_1">回复记录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Hi [人名5]，</p>
+<p>[客户O]头戴式耳机项目，在添加了LDAC 的codec 后发现一些问题，请帮忙看看；</p>
+<p>产生了两个副作用，造成已经调好的Dolby算法出了问题：</p>
+<p>1，LINE IN</p>
+<p>在增加LDAC之前，line in的audio stream format是： 48khz，32bit，144samples；</p>
+<p>增加LDAC之后，audio format变成了：                     96khz，32bit，256samples；</p>
+<p>由于Dolby算法无法支持96khz sample rate，只能支持48khz或以下。</p>
+<p>我们希望Line in维持没加LDAC前的audio format。</p>
+<p>2，USB audio；</p>
+<p>在增加LDAC之前，USB的audio stream format是：   48khz，32bit，144samples；</p>
+<p>增加LDAC之后，audio format变成了：                     48khz，32bit，288samples；</p>
+<p>增加LDAC之前，我们用ABT提供的方法把144samples变成256samples传给Dolby算法，结果OK。</p>
+<p>增加LDAC之后，我们用ABT提供的方法把288samples变成512samples传给Dolby算法，噪声很大。只转变成512samples不经过Dolby算法直接输出没有噪声，说明转换没有问题，是DSP处理速度不够。</p>
+<p>我们也希望USB audio维持没加LDAC前的audio format。</p>
+<hr />
+<h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
 <h3 id="20260403-1014-2">2026/04/03 10:14 — [人名2]<a class="headerlink" href="#20260403-1014-2" title="Permanent link">&para;</a></h3>
 <p>Hi [人名5]，</p>

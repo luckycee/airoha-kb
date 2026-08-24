@@ -361,7 +361,18 @@
 <div class="ticket-nav">
 <p><a href="../ABT-32/">← 上一个工单：ABT-32</a>　<a href="../ABT-34/">→ 下一个工单：ABT-34</a></p>
 </div>
-<h2 id="_1">回复记录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Hi 帝木，</p>
+<p>客户使用附件的指令来做量产测试，发现发完ANC_ON后DSP没有输出，找了log我发现在有5V的时候DSP mute掉，没有输出。</p>
+<p>客户希望普通使用的时候，接入5V就mute，通过race cmd控制ANC的时候，DSP不能mute，AB1562上已经验证并通过了的，客户希望AB1565跟AB1562保持一致；</p>
+<p>对比1565 和1562的指令，我发现1565 少了两组的，是否这两组影响了？</p>
+<p>ENTER_TEST_MODE_CMD =           '055A0400060E0010';</p>
+<p>ENTER_TEST_MODE_RESPONSE =      '055B0400060E0010';</p>
+<p>EXIT_TEST_MODE_CMD =            '055A0400060E0011';</p>
+<p>EXIT_TEST_MODE_RESPONSE =       '055B0400060E0011';</p>
+<p>即使加上这两组指令，发现也是不行的。</p>
+<hr />
+<h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
 <h3 id="20220407-1814-2">2022/04/07 18:14 — [人名2]<a class="headerlink" href="#20220407-1814-2" title="Permanent link">&para;</a></h3>
 <p>[附件: AB1565_race_cmd.txt]</p>

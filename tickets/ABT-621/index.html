@@ -361,33 +361,38 @@
 <div class="ticket-nav">
 <p><a href="../ABT-620/">← 上一个工单：ABT-620</a>　<a href="../ABT-622/">→ 下一个工单：ABT-622</a></p>
 </div>
-<h2 id="_1">回复记录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Hi [人名5]，</p>
+<p>帮忙确认一下附件文档的安全性、IP 保护性和固件完整的要求。我这边无法给出确定的回复客户。主要是2-7点；</p>
+<p>已经帮忙推荐能够满足这些要求的选型，他们希望使用最新的芯片。除此之外，也需要支持第三方算法。</p>
+<hr />
+<h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
 <h3 id="20251028-1404-2">2025/10/28 14:04 — [人名2]<a class="headerlink" href="#20251028-1404-2" title="Permanent link">&para;</a></h3>
 <p>[附件: Harmonix UltraTalk Code Protection Policy Oct 2025.docx]</p>
 </div>
 <div class="reply even">
 <h3 id="20251029-1645-2">2025/10/29 16:45 — [人名2]<a class="headerlink" href="#20251029-1645-2" title="Permanent link">&para;</a></h3>
-<h1 id="_2">法律和商业保障<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h1>
+<h1 id="_3">法律和商业保障<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h1>
 <ul>
 <li>所有 ODM/EMS/合作伙伴协议都必须包含禁止逆向工程、固件提取和密钥披露的强有力的 NDA 和知识产权条款。</li>
 <li>DSP/AI 算法和固件架构的版权登记和可选专利。</li>
 <li>代码托管和开发库的安全访问管理。</li>
 </ul>
-<h1 id="_3">安全启动和代码签名<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h1>
+<h1 id="_4">安全启动和代码签名<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h1>
 <ul>
 <li>在所有生产单元上启用安全启动。只有签名固件才能执行。</li>
 <li>使用 Harmonix 私钥签署引导加载器、应用程序和 DSP 二进制文件。</li>
 <li>将公共密钥哈希值编入片上 OTP/保险丝。</li>
 <li>启用防回滚保护，防止降级攻击。</li>
 </ul>
-<h1 id="_4">固件保密和加密<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h1>
+<h1 id="_5">固件保密和加密<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h1>
 <ul>
 <li>在静态和传输过程中使用加密固件映像。</li>
 <li>密钥按产品线衍生并定期轮换。</li>
 <li>使用硬件密钥梯或 OTP 存储器在设备上解密。</li>
 </ul>
-<h1 id="_5">调试和接口锁定<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h1>
+<h1 id="_6">调试和接口锁定<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h1>
 <ul>
 <li>在生产中永久禁用 JTAG、UART 和 SWD 端口。</li>
 <li>删除或加密限制出厂调试指令（RACE/工程模式）。</li>
@@ -399,25 +404,25 @@
 <li>执行基于 Nonce 的版本控制和防重播。</li>
 <li>OTA 机制必须在验证失败时关闭。</li>
 </ul>
-<h1 id="_6">人工智能模型和算法保护<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h1>
+<h1 id="_7">人工智能模型和算法保护<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h1>
 <ul>
 <li>尽可能将核心 DSP/AI 资产放在设备外。</li>
 <li>需要在设备上存储时，进行混淆和加密。</li>
 <li>使用模型水印追踪未经授权的副本。</li>
 </ul>
-<h1 id="_7">运行时和防篡改控制<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h1>
+<h1 id="_8">运行时和防篡改控制<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h1>
 <ul>
 <li>对固件完整性实施校验和/自检验证。</li>
 <li>增加看门狗、时序一致性和调试检测机制。</li>
 <li>在出现违规时故障安全关机或限制模式运行。</li>
 </ul>
-<h1 id="_8">工厂安全与密钥管理<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h1>
+<h1 id="_9">工厂安全与密钥管理<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h1>
 <ul>
 <li>工厂只接收公钥和短期签名令牌。</li>
 <li>金色图像和哈希值仅由 Harmonix 安全存储。</li>
 <li>生产后随机抽样检查，以确认保险丝和密钥状态。</li>
 </ul>
-<h1 id="_9">供应链与漏洞响应<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h1>
+<h1 id="_10">供应链与漏洞响应<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h1>
 <ul>
 <li>为所有构建维护 SBOM，包括 ABT SDK 依赖项。</li>
 <li>订阅 ABT 和蓝牙技术联盟公告。</li>
@@ -435,7 +440,7 @@
 </div>
 <div class="reply odd">
 <h3 id="20251103-1931-5">2025/11/03 19:31 — [人名5]<a class="headerlink" href="#20251103-1931-5" title="Permanent link">&para;</a></h3>
-<h1 id="_10">法律和商业保障<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h1>
+<h1 id="_11">法律和商业保障<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h1>
 <ul>
 <li>所有 ODM/EMS/合作伙伴协议都必须包含禁止逆向工程、固件提取和密钥披露的强有力的 NDA 和知识产权条款。</li>
 <li>DSP/AI 算法和固件架构的版权登记和可选专利。</li>

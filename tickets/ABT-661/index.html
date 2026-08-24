@@ -361,7 +361,113 @@
 <div class="ticket-nav">
 <p><a href="../ABT-660/">← 上一个工单：ABT-660</a>　<a href="../ABT-662/">→ 下一个工单：ABT-662</a></p>
 </div>
-<h2 id="_1">回复记录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Hi [人名5]，</p>
+<p>[客户O]那边自己merge DAW和MIMI算法到ab1577AM headset中，SDK5.7.0，已经merge进去，audio 输出正常。但是Dolby提醒：DAW算法放在audio chain的什么地方，让找你们讨论一下。</p>
+<p>比如A2DP，现在放DAW和MIMI的地方如下深颜色部分，麻烦帮忙检查对不对：</p>
+<p>stream_feature_list_t stream_feature_list_a2dp[] = {</p>
+<pre><code>CODEC_DECODER_SBC,
+
+/*
+
+    FUNC_MUTE_SMOOTHER,
+
+    //FUNC_PROC_SIZE_CONV,
+
+*/
+</code></pre>
+<h1 id="ifdef-air_sine_gen_enable">ifdef AIR_SINE_GEN_ENABLE<a class="headerlink" href="#ifdef-air_sine_gen_enable" title="Permanent link">&para;</a></h1>
+<pre><code>FUNC_SINE_GEN,
+</code></pre>
+<h1 id="endif">endif<a class="headerlink" href="#endif" title="Permanent link">&para;</a></h1>
+<pre><code>FUNC_CH_SEL,
+</code></pre>
+<h1 id="ifdef-mtk_audio_plc_enable">ifdef MTK_AUDIO_PLC_ENABLE<a class="headerlink" href="#ifdef-mtk_audio_plc_enable" title="Permanent link">&para;</a></h1>
+<pre><code>FUNC_AUDIO_PLC,
+</code></pre>
+<h1 id="endif_1">endif<a class="headerlink" href="#endif_1" title="Permanent link">&para;</a></h1>
+<h1 id="ifdef-dolby_lwh_enable-richard-for-dolby-lwh">ifdef DOLBY_LWH_ENABLE    // richard for dolby lwh<a class="headerlink" href="#ifdef-dolby_lwh_enable-richard-for-dolby-lwh" title="Permanent link">&para;</a></h1>
+<pre><code>FUNC_DOLBY_LWH,
+</code></pre>
+<h1 id="endif_2">endif<a class="headerlink" href="#endif_2" title="Permanent link">&para;</a></h1>
+<pre><code>FUNC_QUEUE_BUFFER,
+</code></pre>
+<h1 id="ifdef-mtk_hwsrc_in_stream">ifdef MTK_HWSRC_IN_STREAM<a class="headerlink" href="#ifdef-mtk_hwsrc_in_stream" title="Permanent link">&para;</a></h1>
+<pre><code>FUNC_CLK_SKEW_A2DP_DL,
+
+DSP_SRC,
+</code></pre>
+<h1 id="endif_3">endif<a class="headerlink" href="#endif_3" title="Permanent link">&para;</a></h1>
+<h1 id="ifdef-feature_mimi_enable">ifdef FEATURE_MIMI_ENABLE<a class="headerlink" href="#ifdef-feature_mimi_enable" title="Permanent link">&para;</a></h1>
+<p>FUNC_MIMI_A2DP,</p>
+<h1 id="endif-feature_mimi_enable">endif /<em> FEATURE_MIMI_ENABLE </em>/<a class="headerlink" href="#endif-feature_mimi_enable" title="Permanent link">&para;</a></h1>
+<h1 id="ifdef-air_headroom_eq_enable">ifdef AIR_HEADROOM_EQ_ENABLE<a class="headerlink" href="#ifdef-air_headroom_eq_enable" title="Permanent link">&para;</a></h1>
+<h1 id="ifdef-air_audio_downlink_sw_gain_enable">ifdef AIR_AUDIO_DOWNLINK_SW_GAIN_ENABLE<a class="headerlink" href="#ifdef-air_audio_downlink_sw_gain_enable" title="Permanent link">&para;</a></h1>
+<pre><code>FUNC_DL_SW_GAIN,
+</code></pre>
+<h1 id="endif_4">endif<a class="headerlink" href="#endif_4" title="Permanent link">&para;</a></h1>
+<h1 id="endif_5">endif<a class="headerlink" href="#endif_5" title="Permanent link">&para;</a></h1>
+<h1 id="ifdef-mtk_peq_enable">ifdef MTK_PEQ_ENABLE<a class="headerlink" href="#ifdef-mtk_peq_enable" title="Permanent link">&para;</a></h1>
+<pre><code>FUNC_SW_PEQ,
+
+FUNC_SW_PEQ,
+
+FUNC_SW_DRC,
+</code></pre>
+<h1 id="ifndef-air_audio_one_chip_mixing_enable">ifndef AIR_AUDIO_ONE_CHIP_MIXING_ENABLE<a class="headerlink" href="#ifndef-air_audio_one_chip_mixing_enable" title="Permanent link">&para;</a></h1>
+<h1 id="if-definedair_fd_peq_enable-definedair_audio_multiple_stream_out_enable">if defined(AIR_FD_PEQ_ENABLE) &amp;&amp; !defined(AIR_AUDIO_MULTIPLE_STREAM_OUT_ENABLE)<a class="headerlink" href="#if-definedair_fd_peq_enable-definedair_audio_multiple_stream_out_enable" title="Permanent link">&para;</a></h1>
+<pre><code>FUNC_SW_PEQ,
+
+FUNC_SW_DRC,
+
+FUNC_SW_PEQ,
+
+FUNC_SW_DRC,
+</code></pre>
+<h1 id="endif_6">endif<a class="headerlink" href="#endif_6" title="Permanent link">&para;</a></h1>
+<h1 id="ifdef-air_adaptive_eq_enable">ifdef AIR_ADAPTIVE_EQ_ENABLE<a class="headerlink" href="#ifdef-air_adaptive_eq_enable" title="Permanent link">&para;</a></h1>
+<pre><code>FUNC_SW_PEQ,
+
+#ifdef AIR_DSP_PRODUCT_CATEGORY_HEADSET
+
+FUNC_SW_PEQ,
+
+#endif
+
+FUNC_SW_DRC,
+</code></pre>
+<h1 id="endif_7">endif<a class="headerlink" href="#endif_7" title="Permanent link">&para;</a></h1>
+<h1 id="endif_8">endif<a class="headerlink" href="#endif_8" title="Permanent link">&para;</a></h1>
+<h1 id="endif_9">endif<a class="headerlink" href="#endif_9" title="Permanent link">&para;</a></h1>
+<h1 id="ifndef-air_headroom_eq_enable">ifndef AIR_HEADROOM_EQ_ENABLE<a class="headerlink" href="#ifndef-air_headroom_eq_enable" title="Permanent link">&para;</a></h1>
+<h1 id="ifdef-air_audio_downlink_sw_gain_enable_1">ifdef AIR_AUDIO_DOWNLINK_SW_GAIN_ENABLE<a class="headerlink" href="#ifdef-air_audio_downlink_sw_gain_enable_1" title="Permanent link">&para;</a></h1>
+<pre><code>FUNC_DL_SW_GAIN,
+</code></pre>
+<h1 id="endif_10">endif<a class="headerlink" href="#endif_10" title="Permanent link">&para;</a></h1>
+<h1 id="endif_11">endif<a class="headerlink" href="#endif_11" title="Permanent link">&para;</a></h1>
+<h1 id="ifdef-air_audio_multiple_stream_out_enable">ifdef AIR_AUDIO_MULTIPLE_STREAM_OUT_ENABLE<a class="headerlink" href="#ifdef-air_audio_multiple_stream_out_enable" title="Permanent link">&para;</a></h1>
+<pre><code>FUNC_CH_SEL_MULTISTREAM_MEMCPY,
+</code></pre>
+<h1 id="ifdef-air_fd_peq_enable">ifdef AIR_FD_PEQ_ENABLE<a class="headerlink" href="#ifdef-air_fd_peq_enable" title="Permanent link">&para;</a></h1>
+<pre><code>FUNC_SW_PEQ,
+
+FUNC_SW_DRC,
+
+FUNC_SW_PEQ,
+
+FUNC_SW_DRC,
+</code></pre>
+<h1 id="endif_12">endif<a class="headerlink" href="#endif_12" title="Permanent link">&para;</a></h1>
+<h1 id="endif_13">endif<a class="headerlink" href="#endif_13" title="Permanent link">&para;</a></h1>
+<h1 id="ifndef-mtk_hwsrc_in_stream">ifndef MTK_HWSRC_IN_STREAM<a class="headerlink" href="#ifndef-mtk_hwsrc_in_stream" title="Permanent link">&para;</a></h1>
+<pre><code>FUNC_CLK_SKEW_A2DP_DL,
+</code></pre>
+<h1 id="endif_14">endif<a class="headerlink" href="#endif_14" title="Permanent link">&para;</a></h1>
+<pre><code>FUNC_END,
+</code></pre>
+<p>};</p>
+<hr />
+<h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
 <h3 id="20251208-1204-2">2025/12/08 12:04 — [人名2]<a class="headerlink" href="#20251208-1204-2" title="Permanent link">&para;</a></h3>
 <p>[图片: PixPin_2025-12-08_12-03-33.png]</p>

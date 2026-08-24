@@ -361,7 +361,17 @@
 <div class="ticket-nav">
 <p><a href="../ABT-338/">← 上一个工单：ABT-338</a>　<a href="../ABT-340/">→ 下一个工单：ABT-340</a></p>
 </div>
-<h2 id="_1">回复记录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Hi [人名5]，</p>
+<p>客户一个头戴耳机项目，比如line in，经典蓝牙，ull2三个音源都连接，目前是检测哪个音源有音频播放，就播放哪个音源。</p>
+<p>客户现在想做的是，音源优先级：ull2&gt;经典蓝牙&gt;linein，那么即使经典蓝牙和line in有音频要播放，现在也不能切换，只能播放ull2的音频。</p>
+<p>这个问题应该怎么解决呢？音源的切换控制在哪里做的呢？</p>
+<p>编译指令 ./build.sh ab1585_evk headset_ref_design_ull2_full</p>
+<p>附件的mk 去掉了AMA\GSOUND\GFP ；</p>
+<p>...\V3.10.0\dsp\project\ab158x\apps\dsp0_headset_ref_design\XT-XCC\feature_85_ull2_headset_full.mk</p>
+<p>...\V3.10.0\mcu\project\ab158x\apps\headset_ref_design\GCC\feature_85_evk_ull2_full.mk</p>
+<hr />
+<h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
 <h3 id="20240220-1006-2">2024/02/20 10:06 — [人名2]<a class="headerlink" href="#20240220-1006-2" title="Permanent link">&para;</a></h3>
 <p>[附件: feature_85_evk_ull2_full.mk]</p>

@@ -361,7 +361,24 @@
 <div class="ticket-nav">
 <p><a href="../ABT-622/">← 上一个工单：ABT-622</a>　<a href="../ABT-624/">→ 下一个工单：ABT-624</a></p>
 </div>
-<h2 id="_1">回复记录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Hi [人名5]，</p>
+<p>[客户O]自己做的板子在AB1577AM端收不到来自DONGLE端的音频流。</p>
+<p>软件SDK5.7.0 。板子分别烧录下面3个软件</p>
+<p>1，ab1571d EVK: dongle软件直接使用SDK公版的软件</p>
+<p>用./build.sh ab1571d_evk dongle_ref_design_ull3命令编译并烧录；</p>
+<p>2，Ab1571(BT): 直接使用sdk公版软件</p>
+<p>./build.sh ab1571_dual_evk headset_slave</p>
+<p>3，ab1571am EVK:  我们自己的软件，主要是配置了相关的gpio口</p>
+<p>用./build.sh ab1577am_dual_evk headset_master_ull3命令编译并烧录；</p>
+<p>4，烧录完成后 （把1571D的软件烧录到EVK，1577AM+1571AM烧录到我们的板子），通过race cmd 分别给dongle(1571D)和1577AM发送配对命令，如下：</p>
+<p>用UART tool分别给ab1571d EVK, ab1577am EVK写入相同的SIRK key:   AT+LEULL=SIRK,SET,10,12,3,4,5,6,7,8,9,0,A,B,C,D,E,F\0d\0a,</p>
+<p>5，再重新开启dongle和1577AM，dongle和1577AM成功配对。</p>
+<p>6，电脑通过dongle播放音乐。在1577AM可以控制dongle流的播放/暂停，但是无法听到dongle流的音乐。</p>
+<p>附件是3个软件和一份抓到dongle没声音的log。</p>
+<p>同样的软件(1577AM+1571AM)我们烧录到EVK板是可以收听到DONGLE的声音。（EVK板子型号 【C833 】AB157X_EVK with [c858] AB1577AM_1571_EVK 和AB157X_EVK with [c843] AB1571D_EVK ）</p>
+<hr />
+<h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
 <h3 id="20251028-1527-82">2025/10/28 15:27 — [人名82]<a class="headerlink" href="#20251028-1527-82" title="Permanent link">&para;</a></h3>
 <p>[附件: ab1571d dongle stream didn't output from ab1577am headset.7z]</p>

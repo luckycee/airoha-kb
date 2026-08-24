@@ -361,7 +361,28 @@
 <div class="ticket-nav">
 <p><a href="../ABT-189/">← 上一个工单：ABT-189</a>　<a href="../ABT-191/">→ 下一个工单：ABT-191</a></p>
 </div>
-<h2 id="_1">回复记录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Hi [人名5]，</p>
+<p>开启mult mode 之后，第一次连接后发现，控制音量加减有效，但是无法跟手机同步（表现为音量进度条没有发生变化），但是如果重启、回连又能跟同步了，请看看这是为什么。</p>
+<p>两份log的操作相同，显示R边操作两次音量加，再是L边操作两次音量减。</p>
+<p>我们对于multi mode 修改过不少：</p>
+<ol>
+<li>
+<p><a href="../ABT-142/">ABT-142</a> 2023/03/28 15:04, solve connecte tws SP, and SP2 play\pause music, plugg in dongle, two SP disconnect problem</p>
+</li>
+<li>
+<p><a href="../ABT-142/">ABT-142</a> fix a2dp not connect </p>
+</li>
+<li>
+<p><a href="../ABT-157/">ABT-157</a> 2023/03/29 17:45 fix a2dp not connect</p>
+</li>
+<li>
+<p><a href="../ABT-155/">ABT-155</a> solve power on reconnect AG, the plugg-in dongle, dongle can't reconnect earbuds</p>
+</li>
+</ol>
+<p>即使保留这部分内容，改为 signle mode，问题也不会有。所以，应该是multi mode的问题；跟你给的补丁关系不大；</p>
+<hr />
+<h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
 <h3 id="20230612-1952-2">2023/06/12 19:52 — [人名2]<a class="headerlink" href="#20230612-1952-2" title="Permanent link">&para;</a></h3>
 <p>[附件: Desktop.7z]</p>

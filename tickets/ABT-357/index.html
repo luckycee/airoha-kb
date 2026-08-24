@@ -361,7 +361,16 @@
 <div class="ticket-nav">
 <p><a href="../ABT-356/">← 上一个工单：ABT-356</a>　<a href="../ABT-358/">→ 下一个工单：ABT-358</a></p>
 </div>
-<h2 id="_1">回复记录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>HI [人名5]：</p>
+<p>我们A137项目用到了POWER DETECT 功能，是要实现输出不大于85db,现在不同的触发条件，配置工具只能降低固定的增益</p>
+<p>为了过认证，测试信号115db时，要降低30DB,这样90DB触发信号时也是降低30DB, 这样就听不到边上的人声说话。</p>
+<p>我们希望实现不同的触发点降低不同的增益 比如 115db时降低30DB 、90DB时降低5DB  、100db时降低15db这样</p>
+<p>RD处理这个事情的同时，我们希望自己做些事情，计划在DSP 拿到FFmic 原始数据，我们算一个简单的DB值，然后发送给APP层，去控制三组降噪滤波器切换</p>
+<p>麻烦提供，dsp 读取FFmic的原始数据 PATCH   </p>
+<p>【SDK 3.7.0】</p>
+<hr />
+<h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
 <h3 id="20240325-1521-5">2024/03/25 15:21 — [人名5]<a class="headerlink" href="#20240325-1521-5" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>

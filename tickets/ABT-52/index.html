@@ -361,7 +361,20 @@
 <div class="ticket-nav">
 <p><a href="../ABT-51/">← 上一个工单：ABT-51</a>　<a href="../ABT-53/">→ 下一个工单：ABT-53</a></p>
 </div>
-<h2 id="_1">回复记录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Hi 帝木，</p>
+<p>客户做的headset，支持ANC的。他们想把TWS那一套调试ANC的设备和指令放到headset上，但是TWS是1wire，headset是5V常在。他们想用uart0来发送接收指令，uart1和uart2都被他们的key用去了；</p>
+<ol>
+<li>
+<p>把uart0的波特率改为115200；</p>
+</li>
+<li>
+<p>把syslog不要，但是发送指令后要有指令的返回；</p>
+</li>
+</ol>
+<p>请看看如何实现；</p>
+<hr />
+<h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
 <h3 id="20220530-1646-5">2022/05/30 16:46 — [人名5]<a class="headerlink" href="#20220530-1646-5" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>

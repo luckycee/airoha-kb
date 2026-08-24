@@ -361,6 +361,23 @@
 <div class="ticket-nav">
 <p><span class="nav-disabled">← 上一个工单</span>　<span class="nav-disabled">→ 下一个工单</span></p>
 </div>
+<h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Hi [人名5]</p>
+<p>客户要求有个功能，希望普通 ANC 跟 Smart adaptive ANC 能够通过按键动作自动切换。我看到ANC type 是在 mk 里面选择，是否可以这样做？</p>
+<p>如果可以，在进行切换的时候普通ANC 传送 type 是 0，Smart adaptive ANC 传送type 是 5即可。</p>
+<h1 id="if-definedair_anc_v5-definedair_full_adaptive_anc_enable">if defined(AIR_ANC_V5) &amp;&amp; defined(AIR_FULL_ADAPTIVE_ANC_ENABLE)<a class="headerlink" href="#if-definedair_anc_v5-definedair_full_adaptive_anc_enable" title="Permanent link">&para;</a></h1>
+<p>/*<em> @brief The default filter number of enable ANC. </em>/</p>
+<h1 id="define-audio_anc_control_anc_filter_default-1">define AUDIO_ANC_CONTROL_ANC_FILTER_DEFAULT       (1)<a class="headerlink" href="#define-audio_anc_control_anc_filter_default-1" title="Permanent link">&para;</a></h1>
+<p>/*<em> @brief The default type of enable ANC. </em>/</p>
+<h1 id="define-audio_anc_control_anc_type_default-5">define AUDIO_ANC_CONTROL_ANC_TYPE_DEFAULT         (5)<a class="headerlink" href="#define-audio_anc_control_anc_type_default-5" title="Permanent link">&para;</a></h1>
+<h1 id="else">else<a class="headerlink" href="#else" title="Permanent link">&para;</a></h1>
+<p>/*<em> @brief The default filter number of enable ANC. </em>/</p>
+<h1 id="define-audio_anc_control_anc_filter_default-1_1">define AUDIO_ANC_CONTROL_ANC_FILTER_DEFAULT       (1)<a class="headerlink" href="#define-audio_anc_control_anc_filter_default-1_1" title="Permanent link">&para;</a></h1>
+<p>/*<em> @brief The default type of enable ANC. </em>/</p>
+<h1 id="define-audio_anc_control_anc_type_default-0">define AUDIO_ANC_CONTROL_ANC_TYPE_DEFAULT         (0)<a class="headerlink" href="#define-audio_anc_control_anc_type_default-0" title="Permanent link">&para;</a></h1>
+<h1 id="endif">endif<a class="headerlink" href="#endif" title="Permanent link">&para;</a></h1>
+<p>最后是tuning，普通ANC 跟 Smart adaptive ANC的参数是公用还是分开的，这部分是否有影响？</p>
+<hr />
 <div class="ticket-nav">
 <p><span class="nav-disabled">← 上一个工单</span>　<span class="nav-disabled">→ 下一个工单</span></p>
 </div>

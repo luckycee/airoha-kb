@@ -361,7 +361,13 @@
 <div class="ticket-nav">
 <p><a href="../ABT-120/">← 上一个工单：ABT-120</a>　<a href="../ABT-122/">→ 下一个工单：ABT-122</a></p>
 </div>
-<h2 id="_1">回复记录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Hi [人名5]，</p>
+<p>客使用5V常在方案，在舱内充满电之后会进入deep sleep，如果充电时ANC状态为关闭（降噪、通透、关闭三个模式切换），满电后再次开机会显示为上一次的通透（假设倒数第二ANC操作为通透）。</p>
+<p>如果是通过按键关机，则不会有这个问题，再次开机仍然为关闭状态。通过查找发现，按键关机的流程中有个叫 “_trigger_power_off_flow()”，在充电关机中加入这个就能实现记录ANC和PEQ了，但是充电就在瞬间就结束而无法充电了。</p>
+<p>请帮忙解决，此问题；</p>
+<hr />
+<h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
 <h3 id="20221202-1855-2">2022/12/02 18:55 — [人名2]<a class="headerlink" href="#20221202-1855-2" title="Permanent link">&para;</a></h3>
 <p>Hi [人名5]，</p>

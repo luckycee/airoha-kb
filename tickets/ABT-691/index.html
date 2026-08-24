@@ -361,7 +361,17 @@
 <div class="ticket-nav">
 <p><a href="../ABT-690/">← 上一个工单：ABT-690</a>　<a href="../ABT-692/">→ 下一个工单：ABT-692</a></p>
 </div>
-<h2 id="_1">回复记录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Hi [人名5]，</p>
+<p>调试Dolby DAW算法是遇到一个问题需要你们帮忙，问题描述如下：</p>
+<p>Dolby算法要求输入的audio stream是以block为单位，1 block=256 samples;</p>
+<p>当播放A2DP stream时，stream format是：32bit, 1024 samples=4 blocks, 输出正常；</p>
+<p>当播放USB/Line In时，  stream format是：32bit, 144 samples=1 block，因为不满1 block，输出有noise；</p>
+<p>当播放LE audio时，      stream format是：16bit, 480 samples=2 blocks, 因为不满2 blocks，输出有noise;</p>
+<p>附件是打印的LE audio和USB audio的图片。</p>
+<p>Dolby问：ABT的audio stream可以是256 samples的倍数吗？</p>
+<hr />
+<h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
 <h3 id="20260113-1419-2">2026/01/13 14:19 — [人名2]<a class="headerlink" href="#20260113-1419-2" title="Permanent link">&para;</a></h3>
 <p>[图片: Leaudio_format.png]</p>

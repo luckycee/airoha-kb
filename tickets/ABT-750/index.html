@@ -361,7 +361,14 @@
 <div class="ticket-nav">
 <p><a href="../ABT-749/">← 上一个工单：ABT-749</a>　<a href="../ABT-751/">→ 下一个工单：ABT-751</a></p>
 </div>
-<h2 id="_1">回复记录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Hi [人名5]</p>
+<p>line in 使用I2S输入的时候，只能有MASTER_IN 这个选项，请帮忙看看是否支持SLAVE_IN（由外部DSP作為 Master 提供 BCLK 與 WS）</p>
+<p>MCLK 依賴性與頻率當配置為 I2S Slave 時，晶片是否強制需要外部輸入 MCLK？</p>
+<p>若不需要： 是否能僅靠外部 BCLK (6.144MHz) 與 WS (48kHz) 透過內部 PLL 完成時脈同步？（No-MCLK 模式）</p>
+<p>若需要： MCLK 是否可支援 6.144MHz？還是嚴格限定為 12.288MHz (256 x Fs)？</p>
+<hr />
+<h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
 <h3 id="20260612-1516-2">2026/06/12 15:16 — [人名2]<a class="headerlink" href="#20260612-1516-2" title="Permanent link">&para;</a></h3>
 <p>[图片: PixPin_2026-06-12_15-15-42.jpg]</p>

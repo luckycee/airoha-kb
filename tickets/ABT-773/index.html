@@ -361,7 +361,46 @@
 <div class="ticket-nav">
 <p><span class="nav-disabled">← 上一个工单</span>　<span class="nav-disabled">→ 下一个工单</span></p>
 </div>
-<h2 id="_1">回复记录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Hi [人名5]</p>
+<p>以前这个机种调试的是DAW basic，我们已经调好。</p>
+<p>客人的要求是DAW advanced。DAW basic只包含了HiFi mini的library(liblwh_hifi-mini_gr16x32_basic.a)。</p>
+<p>DAW advanced除了包含HiFi mini的library(liblwh_hifi-mini_gr16x32_advanced.a)外，还包含了CM4的library(libhop_cortex-m4_gf32_advanced.a和libiht_cortex-m4_gf32_advanced.a)。HiFi mini的library调试没有问题，我们在调试CM4的library时出现死机，代码如下：</p>
+<pre><code>    size_t iht_persistent_size;
+    size_t hop_persistent_size;
+
+    iht_init_info iht_info;
+    hop_init_info hop_info;
+
+    /* Update init parameter according to daw_params. */
+    iht_info.sample_rate = IHT_SENSOR_DATA_SAMPLERATE_DEFAULT;
+    iht_info.mode = IHT_MODE_EARBUDS;
+    hop_info.lookahead_ms = 0;          /* hop lookahead default */
+    hop_info.sample_rate = HOP_SENSOR_DATA_SAMPLERATE_DEFAULT;
+
+    /* Allocte memory based on new initialization information */
+    if(iht_persistent_memory==NULL)
+    {
+        iht_persistent_size = iht_query_memory(&amp;iht_info);
+        log_hal_msgid_info("[CCNI DAW] iht persistent memory size=0x%x",1, iht_persistent_size);
+        iht_persistent_memory = malloc(iht_persistent_size);
+    }
+
+    if(hop_persistent_memory==NULL)
+    {
+        hop_persistent_size = hop_query_memory(&amp;hop_info);
+        log_hal_msgid_info("[CCNI DAW] hop persistent memory size=0x%x",1, hop_persistent_size);
+        hop_persistent_memory = malloc(hop_persistent_size);
+    }
+
+    /* The iht_init_info struct passed here must be the same as the one
+    * passed to iht_query_memory(). */
+
+    p_iht = iht_init(&amp;iht_info, iht_persistent_memory);
+</code></pre>
+<p>前面申请memory没有问题，iht_init 的是死机的函数，这是DAW library的函数，附件是log，麻烦帮看看。</p>
+<hr />
+<h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
 <h3 id="20260723-1810-2">2026/07/23 18:10 — [人名2]<a class="headerlink" href="#20260723-1810-2" title="Permanent link">&para;</a></h3>
 <p>[附件: Logging260723_134458_COM4.7z]</p>

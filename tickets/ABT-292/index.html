@@ -361,7 +361,24 @@
 <div class="ticket-nav">
 <p><a href="../ABT-291/">← 上一个工单：ABT-291</a>　<a href="../ABT-293/">→ 下一个工单：ABT-293</a></p>
 </div>
-<h2 id="_1">回复记录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>HI [人名5]，</p>
+<ol>
+<li>
+<p>demo code在 power off 之后会进入RTC mode；</p>
+</li>
+<li>
+<p>RTC mode 下收取 BT on patter 没有问题</p>
+</li>
+<li>
+<p>RTC mode 下功耗为 19uA左右；</p>
+</li>
+</ol>
+<p>因为功耗问题，[客户A]那边要求修改 power off 之后 进入到OFF mode（相关<a href="../ABT-162/">ABT-162</a>），能够达到要求的功耗了。但是客户发现如果耳机充满电的状态（就是耳机进入了OFF mode），开盖后比较快的速度拿出来无法开机（客户有要求直接掉5V不能开机，只能收码开机）。</p>
+<p>通过专区VBUS_UART的信号发现，在OFF mode下，耳机不识别BT on pattern ，等pattern 过了才能够识别，如果从5V上来后计算，大约需要1.8s才能识别pattern。在RTC mode 下不会有此问题，第一个BT on pattern 就识别了。</p>
+<p>OFF mode 下是否能够加快开机流程？</p>
+<hr />
+<h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
 <h3 id="20231113-1616-5">2023/11/13 16:16 — [人名5]<a class="headerlink" href="#20231113-1616-5" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏]，</p>

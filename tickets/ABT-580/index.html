@@ -361,7 +361,23 @@
 <div class="ticket-nav">
 <p><a href="../ABT-579/">← 上一个工单：ABT-579</a>　<a href="../ABT-581/">→ 下一个工单：ABT-581</a></p>
 </div>
-<h2 id="_1">回复记录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Hi [人名5]，</p>
+<p>客户有个项目对BLE的传说速率要求，需要60-500Kbps[1]，延时在10ms左右[2]，请帮忙确认一下我们能否满足。</p>
+<p>我看到code 中BLE部分有两个MTU</p>
+<p>// ble_air_service.c</p>
+<h1 id="define-ble_air_srv_max_mtu-512">define BLE_AIR_SRV_MAX_MTU               512<a class="headerlink" href="#define-ble_air_srv_max_mtu-512" title="Permanent link">&para;</a></h1>
+<p>另外一个是</p>
+<p>// ble_air_interface.h
+/*<em>
+ * @brief The deault value of the BLE_AIR service RX buffer.
+ </em>/</p>
+<h1 id="define-ble_air_receive_buffer_size-1024">define BLE_AIR_RECEIVE_BUFFER_SIZE       (1024)<a class="headerlink" href="#define-ble_air_receive_buffer_size-1024" title="Permanent link">&para;</a></h1>
+<p>所以实际的BLE 传输MTU 是哪一个[3]？SPP的MTU我没有找到[4]</p>
+<p>如果是512，Android（SPP）的发包间隔为10ms，iOS（BLE）的发包间隔15ms，那么Android 和iOS的速率分别是 50Kbps和33Kbps，是这样计算吗[5]？</p>
+<p>在A2DP playing 和[人名9]P 下，data的传输是否有影响[6]？</p>
+<hr />
+<h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
 <h3 id="20250721-1558-80">2025/07/21 15:58 — [人名80]<a class="headerlink" href="#20250721-1558-80" title="Permanent link">&para;</a></h3>
 <p>Hi @[邮箱已隐藏] </p>

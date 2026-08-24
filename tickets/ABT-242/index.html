@@ -361,7 +361,15 @@
 <div class="ticket-nav">
 <p><a href="../ABT-241/">← 上一个工单：ABT-241</a>　<a href="../ABT-243/">→ 下一个工单：ABT-243</a></p>
 </div>
-<h2 id="_1">回复记录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>HI [人名5]，</p>
+<p>ULL2下连接了 earbuds，使用skype 通话或者微信通话，发现 earbuds 这边的state还是在 APP_CONNECTED, 这里我理解应该还是保持在 APP_ULTRA_LOW_LATENCY_PLAYING 。请帮忙确认这是是否为预期之内。</p>
+<p>客户要求，在 APP_CONNECTED 不能调节音量，如果skype 通话或者微信通话处于 APP_CONNECTED 是预期之内的，是不是只能要求客户接受了。</p>
+<p>com54 dongle log</p>
+<p>COM56 左边，连接上dongle 后，电脑一直在播放音乐，14:35:25 立刻就是 APP_ULTRA_LOW_LATENCY_PLAYING 了。14:35:52 在电脑端暂停了音乐， state 变为 APP_CONNECTED</p>
+<p>14:35:59 在电脑端开启skype 通话， state 短暂变为 APP_ULTRA_LOW_LATENCY_PLAYING 后，又变为了 APP_CONNECTED，但是其实现在是已经通话了。</p>
+<hr />
+<h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
 <h3 id="20230907-1530-2">2023/09/07 15:30 — [人名2]<a class="headerlink" href="#20230907-1530-2" title="Permanent link">&para;</a></h3>
 <p>[附件: skype.7z]</p>

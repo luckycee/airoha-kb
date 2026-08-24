@@ -361,7 +361,29 @@
 <div class="ticket-nav">
 <p><a href="../ABT-262/">← 上一个工单：ABT-262</a>　<a href="../ABT-264/">→ 下一个工单：ABT-264</a></p>
 </div>
-<h2 id="_1">回复记录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>HI [人名5]，</p>
+<p>在添加了 <a href="../ABT-248/">ABT-248</a> 2023/09/12 15:20 提供的补丁之后，dongle 没有宕机了，但是当一只耳机关机后，再开机回连，需要大约15s才能听到声音，请帮忙看看这是否正常，每次都是如此。</p>
+<ol>
+<li>
+<p>COM11 、COM63 双耳BIS播放音乐的状态；</p>
+</li>
+<li>
+<p>C0M63 17:00:58 入仓关机</p>
+</li>
+<li>
+<p>C0M63 17:01:15 出仓</p>
+</li>
+<li>
+<p>C0M63 17:01:15 提示BIS 回连成功</p>
+</li>
+<li>
+<p>C0M63 17:01:29 才有声音，MMI state才变为 APP_LE_AUDIO_BIS_PLAYING</p>
+</li>
+</ol>
+<p>COM11 为另外一边耳机，COM60 为dongle log</p>
+<hr />
+<h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
 <h3 id="20230927-1138-2">2023/09/27 11:38 — [人名2]<a class="headerlink" href="#20230927-1138-2" title="Permanent link">&para;</a></h3>
 <p>[附件: LEABIS下听歌，把一个耳机（主或副）放入充电盒内合盖，17点1分15秒拿出充电盒，29秒才恢复有音乐.zip]</p>

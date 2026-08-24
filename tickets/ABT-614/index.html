@@ -361,7 +361,34 @@
 <div class="ticket-nav">
 <p><a href="../ABT-613/">← 上一个工单：ABT-613</a>　<a href="../ABT-615/">→ 下一个工单：ABT-615</a></p>
 </div>
-<h2 id="_1">回复记录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Hi [人名5],</p>
+<p>客户有个需要项目，AB1565AM（headset ）+AB165D，并支持第三方杜比音效算法，算法要求如下：</p>
+<p>(0) SDK version:
+SDK : BT_Audio_Windows_Build_Env_V5_exe_V5
+Compiler: RI-2023.11-win32
+(1) The LWH core lib size is 56415 bytes.
+(2) The persist and scratch memory size are below.
+- sample rate = 96KHz
+    persistent_size = 110730 byte
+    scratch_size = 15546 byte
+ - sample rate = 48KHz
+    persistent_size = 70986 byte
+    scratch_size = 15546 byte
+(3) The complexity numbers without headtracking. Pls focus on the “mono output” cases, if the product is earbud.
+- sample rate = 96KHz
+    Virtualizer    + Stereo output : 101MCPS
+    Reverb only + Stereo output : 101MCPS
+    Virtualizer    + Mono output   : 81MCPS
+    Reverb only + Mono output   : 81MCPS
+- sample rate = 48KHz
+    Virtualizer    + Stereo output : 45MCPS
+    Reverb only + Stereo output : 45MCPS
+    Virtualizer    + Mono output   : 36MCPS
+    Reverb only + Mono output   : 36MCPS</p>
+<p>附件是headset 编译后 DSP、MCU资源情况，请帮忙看看是否满足。</p>
+<hr />
+<h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
 <h3 id="20251009-1540-2">2025/10/09 15:40 — [人名2]<a class="headerlink" href="#20251009-1540-2" title="Permanent link">&para;</a></h3>
 <p>[附件: dsp0_headset_ref_design.map.csv]</p>

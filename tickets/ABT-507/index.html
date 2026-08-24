@@ -361,7 +361,13 @@
 <div class="ticket-nav">
 <p><a href="../ABT-506/">← 上一个工单：ABT-506</a>　<a href="../ABT-508/">→ 下一个工单：ABT-508</a></p>
 </div>
-<h2 id="_1">回复记录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">问题描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Hi [人名5]，</p>
+<p>请看一下如何在一条执行下，擦除两段不同的地址区域。我这边写的指令虽然显示done ，但只执行了后一个 -f 的内容，前面的 -f 没有执行；</p>
+<p>erase [ROM_ROFS + ROM_RTOS] </p>
+<p>CODA.exe --UART COM17 -f --erase_addr 0x0845F000 --erase_len 0x41FFF -f --erase_addr 0x08133000 --erase_len 0x187B53</p>
+<hr />
+<h2 id="_2">回复记录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="reply odd">
 <h3 id="20250217-1506-2">2025/02/17 15:06 — [人名2]<a class="headerlink" href="#20250217-1506-2" title="Permanent link">&para;</a></h3>
 <p>[图片: PixPin_2025-02-17_15-04-19.png]</p>
