@@ -1,9 +1,12 @@
 # 工单列表
 
-共 765 条工单（ABT-783 ~ ABT-15）。
+共 768 条工单（ABT-786 ~ ABT-15）。
 
 | 工单号 | 主题 | 日期 | 状态 |
 |---|---|---|---|
+| [ABT-786](ABT-786.md) | ["【\[客户S\]】USB_AUDIO 试用96K后扫频出现高频下掉"](ABT-786.md) | 2026/08/28 17:43 | Working |
+| [ABT-785](ABT-785.md) | ["AB1577AM/M ECPM-96 patch"](ABT-785.md) | 2026/08/27 11:12 | Waiting for customer |
+| [ABT-784](ABT-784.md) | ["AB1565 V5.9.0 LINE通话效果差"](ABT-784.md) | 2026/08/26 18:11 | Working |
 | [ABT-783](ABT-783.md) | ["【\[客户J\]】AB1571AM smart adaptive ANC 切换"](ABT-783.md) | 2026/08/21 14:49 | Working |
 | [ABT-782](ABT-782.md) | ["\[客户R\] 项目请求 smart adaptive ANC"](ABT-782.md) | 2026/08/21 14:14 | Working |
 | [ABT-781](ABT-781.md) | ["【\[客户J\]】AB1571AM VIVI_PT无法调试"](ABT-781.md) | 2026/08/20 16:19 | Working |
