@@ -369,9 +369,9 @@
 <h1 id="define-ble_air_srv_max_mtu-512">define BLE_AIR_SRV_MAX_MTU               512<a class="headerlink" href="#define-ble_air_srv_max_mtu-512" title="Permanent link">&para;</a></h1>
 <p>另外一个是</p>
 <p>// ble_air_interface.h
-/*<em>
+/**
  * @brief The deault value of the BLE_AIR service RX buffer.
- </em>/</p>
+ */</p>
 <h1 id="define-ble_air_receive_buffer_size-1024">define BLE_AIR_RECEIVE_BUFFER_SIZE       (1024)<a class="headerlink" href="#define-ble_air_receive_buffer_size-1024" title="Permanent link">&para;</a></h1>
 <p>所以实际的BLE 传输MTU 是哪一个[3]？SPP的MTU我没有找到[4]</p>
 <p>如果是512，Android（SPP）的发包间隔为10ms，iOS（BLE）的发包间隔15ms，那么Android 和iOS的速率分别是 50Kbps和33Kbps，是这样计算吗[5]？</p>

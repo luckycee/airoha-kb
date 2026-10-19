@@ -411,10 +411,10 @@
 <p>Hi , @[邮箱已隐藏]</p>
 <p>dongle 是 RX , 在它主动断开之后, 不会继续回连TX,  若需要回连,则应该主动连接 TX . 比如可以使用 AT+LEULL=CONN,SIRK</p>
 <p>其他指令可以参考: </p>
-<p>App_ull_idle_activity.c (mcu\project\ab156x\apps\bt_audio_common\src\apps\app_ull): .command_head = "AT+LEULL", /*<em>&lt; AT command string. </em>/</p>
+<p>App_ull_idle_activity.c (mcu\project\ab156x\apps\bt_audio_common\src\apps\app_ull): .command_head = "AT+LEULL", /**&lt; AT command string. */</p>
 <p>MIC 是 TX , 在它主动断开之后,  不会继续广播. 若需要回连, 则应该主动开启广播. 比如可以使用 AT+LEULL=ADV,start</p>
 <p>其他指令可以参考: </p>
-<p>Bt_app_common_at_cmd.c (mcu\project\ab156x\apps\dongle_ref_design\src\bt_app_utility): .command_head = "AT+LEULL", /*<em>&lt; AT command string. </em>/</p>
+<p>Bt_app_common_at_cmd.c (mcu\project\ab156x\apps\dongle_ref_design\src\bt_app_utility): .command_head = "AT+LEULL", /**&lt; AT command string. */</p>
 <p>谢谢</p>
 </div>
 <div class="reply odd">

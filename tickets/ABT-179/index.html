@@ -425,7 +425,7 @@
  return BT_STATUS_FAIL;
  }</p>
 <h1 id="endif">endif<a class="headerlink" href="#endif" title="Permanent link">&para;</a></h1>
-<p>bt_gattc_charc_value_notification_indication_t <em>notification = (bt_gattc_charc_value_notification_indication_t </em>)send_buffer;
+<p>bt_gattc_charc_value_notification_indication_t *notification = (bt_gattc_charc_value_notification_indication_t *)send_buffer;
  notification-&gt;attribute_value_length = 3 + test_length;
  notification-&gt;att_req.opcode = BT_ATT_OPCODE_HANDLE_VALUE_NOTIFICATION;
  notification-&gt;att_req.handle = 85;

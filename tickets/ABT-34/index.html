@@ -436,14 +436,14 @@
  ull_report("[ULL] usb_hid_control, current is XBOX mode, ignore the HID control event", 0);
  return BT_STATUS_FAIL;
  }</p>
-<h1 id="endif-mtk_usb_demo_enabled">endif /<em> MTK_USB_DEMO_ENABLED </em>/<a class="headerlink" href="#endif-mtk_usb_demo_enabled" title="Permanent link">&para;</a></h1>
+<h1 id="endif-mtk_usb_demo_enabled">endif /* MTK_USB_DEMO_ENABLED */<a class="headerlink" href="#endif-mtk_usb_demo_enabled" title="Permanent link">&para;</a></h1>
 <p>if (ctx-&gt;is_ull_connected) {
  if (BT_ULL_ROLE_CLIENT == ctx-&gt;ull_role) {</p>
 <h1 id="ifdef-mtk_aws_mce_enable">ifdef MTK_AWS_MCE_ENABLE<a class="headerlink" href="#ifdef-mtk_aws_mce_enable" title="Permanent link">&para;</a></h1>
 <p>bt_aws_mce_role_t cur_role = bt_device_manager_aws_local_info_get_role();
  if (BT_AWS_MCE_ROLE_PARTNER == cur_role
  || BT_AWS_MCE_ROLE_CLINET == cur_role) {
- /<em> partner role cannot switch latency </em>/
+ /* partner role cannot switch latency */
  return BT_STATUS_FAIL;
  }</p>
 <h1 id="endif">endif<a class="headerlink" href="#endif" title="Permanent link">&para;</a></h1>

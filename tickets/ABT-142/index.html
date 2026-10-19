@@ -775,24 +775,24 @@ AT+BTSINKIT=AG-OFF\0d\0a</p>
  break;
  }</p>
 <h1 id="endif_4">endif<a class="headerlink" href="#endif_4" title="Permanent link">&para;</a></h1>
-<p>/<em> When dongle connected,
+<p>/* When dongle connected,
  * if single mode, disconnect all other device.
  * if multi mode, keep HPF only.
- </em>/
+ <em>/
  app_ull_get_connected_devices_list(connect_sp, &amp;connect_num, NULL);
  for (i = 0; i &lt; connect_num; i++) {
  if (ULL_LINK_MODE_SINGLE == s_ull_context.link_mode) {
  if (s_single_link_disconnecting ]= ULL_SINGLE_LINK_DISCONNECTING_DONGLE) {
- /<em> Disconnect SP. </em>/
+ /</em> Disconnect SP. <em>/
  s_single_link_disconnecting = ULL_SINGLE_LINK_DISCONNECTING_SP;
  cm_param.profile = BT_CM_PROFILE_SERVICE_MASK_ALL;
  } else {
- /<em> This case should be actively connect both SRC successfully at the same time, so do not disconnect SP when disconnecting dongle.</em>/
+ /</em> This case should be actively connect both SRC successfully at the same time, so do not disconnect SP when disconnecting dongle.<em>/
  continue;
  }
  } else {
  {color:#d04437}if (i &gt;= 0){color} {
- /<em> Multi link mode support the first SP connect [人名10]P. </em>/
+ /</em> Multi link mode support the first SP connect [人名10]P. */
  connected_sp = &amp;connect_sp[i];
  cm_param.profile = ~(BT_CM_PROFILE_SERVICE_MASK(BT_CM_PROFILE_SERVICE_[人名10]P)
  |BT_CM_PROFILE_SERVICE_MASK(BT_CM_PROFILE_SERVICE_AWS));</p>

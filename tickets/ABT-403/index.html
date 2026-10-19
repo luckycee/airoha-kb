@@ -582,7 +582,7 @@
 <div class="reply even">
 <h3 id="20240717-1745-2">2024/07/17 17:45 — [人名2]<a class="headerlink" href="#20240717-1745-2" title="Permanent link">&para;</a></h3>
 <p>Hi [人名6]，</p>
-<p>pka_Get_EDR_Security_Connection_Enable() 里面的两个define 都是没有开启的，开启的是 <em>AIR_LE_AUDIO_DUAL_MODE_ENABLE</em> ， 不是 <em>AIR_LE_AUDIO_DUALMODE_ENABLE，</em>根据 </p>
+<p>pka_Get_EDR_Security_Connection_Enable() 里面的两个define 都是没有开启的，开启的是 <em>AIR_LE_AUDIO_DUAL_MODE_ENABLE</em> ， 不是 *AIR_LE_AUDIO_DUALMODE_ENABLE，*根据 </p>
 <p>{quote}Security_Connection:cod = 0,0,0
 Security_Connection:LMP_Version = 12{quote}</p>
 <p>没有 #if 来算的话，无论使用 &amp;&amp; 还是 || 都的确会跑到 return true；</p>
